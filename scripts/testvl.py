@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 
 import pandas  # http://pandas.pydata.org
+import numpy
 import json    # built-in
 import os      # built-in
 from subprocess import Popen, PIPE, STDOUT # built-in
-
-import matplotlib
-import matplotlib.pyplot as plt, mpld3
 
 ## Load all JSON files into an array of dicts.
 ## Each array element is one JSON input file (one run).
@@ -44,13 +42,15 @@ bar = {
     "encoding": {
         "y": {"scale": {"type": "log"},
               "type": "Q",
-              "name": "m_teps",
+              # "type": "quantitative",
+              "field": "m_teps",
               "axis": {
                   "title": "MTEPS"
               }
         },
         "x": {"type": "O",
-              "name": "dataset"
+              # "type": "ordinal",
+              "field": "dataset"
         }
     }
 }
@@ -78,22 +78,24 @@ gbar = {
   "marktype": "bar",
   "encoding": {
     "y": {"scale": {"type": "log"},
-          "name": "m_teps",
-          "type": "Q",
+          "field": "m_teps",
+          "type": "quantitative",
           "axis": {
               "title": "MTEPS"
           }
     },
-    "x": {"name": "dataset",
-          "type": "N"
+    "x": {"field": "dataset",
+          "type": "nominal"
     },
-    "row": {"name": "parameters",
-            "type": "O"
+    "row": {"field": "parameters",
+            "type": "ordinal"
     },
   },
 }
 
 gbar["data"] = {"values" : df_gbar.to_dict(orient='records')}
+print
+print
 print(json.dumps(gbar))
 
 f_gbar = open('_g_gbar.json', 'w')
@@ -109,3 +111,57 @@ f_gbart = open('_g_gbart.json', 'w')
 p = Popen(["vl2vg"], stdout=f_gbart, stdin=PIPE)
 gbart_vg = p.communicate(input=json.dumps(gbart))[0]
 f_gbart.close()
+
+jsondir = '../../gunrock/output/ab/'
+
+json_files = [f for f in os.listdir(jsondir)
+              if (os.path.isfile(jsondir + f) and
+                  (os.path.basename(f).startswith("DOBFS_soc")) and
+                  (os.path.splitext(f)[1] == ".json") and
+                  not os.path.basename(f).startswith("_"))]
+data_unfiltered = [json.load(open(jsondir + jf)) for jf in json_files]
+dfab = pandas.DataFrame(data_unfiltered)
+## All data is now stored in the pandas DataFrame "dfab".
+dfab = dfab[['dataset', 'm_teps', 'alpha', 'beta']]
+## rint is numpy's vectorized round-to-int
+dfab = dfab.assign(m_teps_rounded = numpy.rint(dfab['m_teps']))
+
+print dfab
+
+heatmap = {
+    "marktype": "text",
+    "encoding": {
+        "row": {
+            "field": "alpha",
+            # "type": "ordinal",
+            "type": "O"
+        },
+        "column": {
+            "field": "beta",
+            "type": "O"
+            # "type": "ordinal"
+        },
+        "color": {
+            "field": "m_teps",
+            "type": "Q",
+            # "type": "quantitative",
+        },
+        "text": {
+            "field": "m_teps_rounded",
+            "type": "Q",
+            # "type": "quantitative",
+            "format": ""
+        }
+    },
+    "config": {
+        "textCellWidth": 28, # We haven't documented this because we are considering to move this to be either encoding.col(umn).width or encoding.text.cellWidth in 0.9.
+    }
+}
+
+heatmap["data"] = {"values" : dfab.to_dict(orient='records')}
+f_heatmap = open('_g_heatmap.json', 'w')
+p = Popen(["vl2vg"], stdout=f_heatmap, stdin=PIPE)
+heatmap_vg = p.communicate(input=json.dumps(heatmap))[0]
+f_heatmap.close()
+
+print(json.dumps(heatmap))          # uses double-quotes, not single
