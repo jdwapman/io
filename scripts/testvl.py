@@ -38,18 +38,16 @@ df_mteps = df[df['parameters'] == "BFS, undirected, mark predecessors"]
 
 ## draw bar graph
 bar = {
-    "marktype": "bar",
+    "mark": "point",
     "encoding": {
         "y": {"scale": {"type": "log"},
-              "type": "Q",
-              # "type": "quantitative",
+              "type": "quantitative",
               "field": "m_teps",
               "axis": {
                   "title": "MTEPS"
               }
         },
-        "x": {"type": "O",
-              # "type": "ordinal",
+        "x": {"type": "ordinal",
               "field": "dataset"
         }
     }
@@ -75,7 +73,7 @@ df_gbar = df[['dataset','parameters','m_teps',
               'algorithm', 'undirected', 'mark_predecessors']]
 
 gbar = {
-  "marktype": "bar",
+  "mark": "point",
   "encoding": {
     "y": {"scale": {"type": "log"},
           "field": "m_teps",
@@ -129,33 +127,29 @@ dfab = dfab.assign(m_teps_rounded = numpy.rint(dfab['m_teps']))
 print dfab
 
 heatmap = {
-    "marktype": "text",
+    "mark": "text",
     "encoding": {
         "row": {
             "field": "alpha",
-            # "type": "ordinal",
-            "type": "O"
+            "type": "ordinal",
         },
         "column": {
             "field": "beta",
-            "type": "O"
-            # "type": "ordinal"
+            "type": "ordinal"
         },
         "color": {
             "field": "m_teps",
-            "type": "Q",
-            # "type": "quantitative",
+            "type": "quantitative",
         },
         "text": {
             "field": "m_teps_rounded",
-            "type": "Q",
-            # "type": "quantitative",
+            "type": "quantitative",
             "format": ""
         }
     },
-    "config": {
-        "textCellWidth": 28, # We haven't documented this because we are considering to move this to be either encoding.col(umn).width or encoding.text.cellWidth in 0.9.
-    }
+    # "config": {
+    #     "textCellWidth": 28, # We haven't documented this because we are considering to move this to be either encoding.col(umn).width or encoding.text.cellWidth in 0.9.
+    # }
 }
 
 heatmap["data"] = {"values" : dfab.to_dict(orient='records')}
