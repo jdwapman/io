@@ -4,7 +4,16 @@ import pandas  # http://pandas.pydata.org
 import numpy
 import json    # built-in
 import os      # built-in
+import copy    # built-in
 from subprocess import Popen, PIPE, STDOUT # built-in
+
+def write_json(json_in, json_name):
+    # pipe it through vl2vg to turn it into vega
+    file = open('_g_%s.json' % json_name, 'w')
+    p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
+    bar_vg = p.communicate(input=json.dumps(json_in))[0]
+    file.close()
+
 
 ## Load all JSON files into an array of dicts.
 ## Each array element is one JSON input file (one run).
@@ -38,18 +47,16 @@ df_mteps = df[df['parameters'] == "BFS, undirected, mark predecessors"]
 
 ## draw bar graph
 bar = {
-    "marktype": "bar",
+    "mark": "point",
     "encoding": {
         "y": {"scale": {"type": "log"},
-              "type": "Q",
-              # "type": "quantitative",
+              "type": "quantitative",
               "field": "m_teps",
               "axis": {
                   "title": "MTEPS"
               }
         },
-        "x": {"type": "O",
-              # "type": "ordinal",
+        "x": {"type": "ordinal",
               "field": "dataset"
         }
     }
@@ -64,18 +71,13 @@ df_mteps = df_mteps.reset_index()
 # bar now has a full vega-lite description
 bar["data"] = {"values" : df_mteps.to_dict(orient='records')}
 print(json.dumps(bar))          # uses double-quotes, not single
-
-# pipe it through vl2vg to turn it into vega
-f_bar = open('_g_bar.json', 'w')
-p = Popen(["vl2vg"], stdout=f_bar, stdin=PIPE)
-bar_vg = p.communicate(input=json.dumps(bar))[0]
-f_bar.close()
+write_json(bar, "bar")
 
 df_gbar = df[['dataset','parameters','m_teps',
               'algorithm', 'undirected', 'mark_predecessors']]
 
 gbar = {
-  "marktype": "bar",
+  "mark": "point",
   "encoding": {
     "y": {"scale": {"type": "log"},
           "field": "m_teps",
@@ -88,29 +90,27 @@ gbar = {
           "type": "nominal"
     },
     "row": {"field": "parameters",
-            "type": "ordinal"
+            "type": "nominal"
     },
   },
 }
 
 gbar["data"] = {"values" : df_gbar.to_dict(orient='records')}
-print
-print
 print(json.dumps(gbar))
+write_json(gbar, "gbar")
 
-f_gbar = open('_g_gbar.json', 'w')
-p = Popen(["vl2vg"], stdout=f_gbar, stdin=PIPE)
-gbar_vg = p.communicate(input=json.dumps(gbar))[0]
-f_gbar.close()
-
-gbart = gbar
+gbart = copy.deepcopy(gbar)
 # swap "x" and "row"
 gbart["encoding"]["x"], gbart["encoding"]["row"] = gbart["encoding"]["row"], gbart["encoding"]["x"]
+write_json(gbart, "gbart")
 
-f_gbart = open('_g_gbart.json', 'w')
-p = Popen(["vl2vg"], stdout=f_gbart, stdin=PIPE)
-gbart_vg = p.communicate(input=json.dumps(gbart))[0]
-f_gbart.close()
+gbar1 = copy.deepcopy(gbar)
+gbar1["encoding"]["color"] = gbar1["encoding"].pop("row") # rename key
+write_json(gbar1, "gbar1")
+
+gbart1 = copy.deepcopy(gbart)
+gbart1["encoding"]["color"] = gbart1["encoding"].pop("row")
+write_json(gbart1, "gbart1")
 
 jsondir = '../../gunrock/output/ab/'
 
@@ -129,33 +129,29 @@ dfab = dfab.assign(m_teps_rounded = numpy.rint(dfab['m_teps']))
 print dfab
 
 heatmap = {
-    "marktype": "text",
+    "mark": "text",
     "encoding": {
         "row": {
             "field": "alpha",
-            # "type": "ordinal",
-            "type": "O"
+            "type": "ordinal",
         },
         "column": {
             "field": "beta",
-            "type": "O"
-            # "type": "ordinal"
+            "type": "ordinal"
         },
         "color": {
             "field": "m_teps",
-            "type": "Q",
-            # "type": "quantitative",
+            "type": "quantitative",
         },
         "text": {
             "field": "m_teps_rounded",
-            "type": "Q",
-            # "type": "quantitative",
+            "type": "quantitative",
             "format": ""
         }
     },
-    "config": {
-        "textCellWidth": 28, # We haven't documented this because we are considering to move this to be either encoding.col(umn).width or encoding.text.cellWidth in 0.9.
-    }
+    # "config": {
+    #     "textCellWidth": 28, # We haven't documented this because we are considering to move this to be either encoding.col(umn).width or encoding.text.cellWidth in 0.9.
+    # }
 }
 
 heatmap["data"] = {"values" : dfab.to_dict(orient='records')}
