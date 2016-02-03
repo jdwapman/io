@@ -1,0 +1,7 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron", 
+    "elapsed": 20.6, 
+    "engine": "Ligra", 
+    "time": "Tue Jan 19 17:20:37 2016"
+}

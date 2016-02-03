@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron", 
+    "edges_visited": 182081864, 
+    "elapsed": 162.665, 
+    "engine": "MapGraph", 
+    "m_teps": 1119.367190237605, 
+    "time": "Wed Sep  9 03:18:55 2015", 
+    "vertices_visited": 2097152
+}

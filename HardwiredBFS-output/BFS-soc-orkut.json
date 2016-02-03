@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc", 
+    "edges_visited": 212698418, 
+    "elapsed": 45.434, 
+    "engine": "Hardwired-BFS", 
+    "m_teps": 4681.483, 
+    "time": "Wed Sep  9 01:58:04 2015", 
+    "vertices_visited": 2997166
+}

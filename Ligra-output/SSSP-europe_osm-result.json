@@ -1,0 +1,7 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "osm", 
+    "elapsed": 20500.0, 
+    "engine": "Ligra", 
+    "time": "Mon Sep  7 21:14:25 2015"
+}

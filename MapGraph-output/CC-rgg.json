@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "rgg", 
+    "edges_visited": 265114400, 
+    "engine": "MapGraph", 
+    "time": "Wed Sep  9 23:03:13 2015", 
+    "vertices_visited": 16777216
+}

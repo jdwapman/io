@@ -1,0 +1,9 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "roadNet-CA", 
+    "edges_visited": 5533214, 
+    "elapsed": 1185.199951, 
+    "engine": "CuSha", 
+    "time": "Wed Sep  9 03:02:09 2015", 
+    "vertices_visited": 1971281
+}

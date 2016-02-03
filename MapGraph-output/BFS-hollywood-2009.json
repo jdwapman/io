@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood", 
+    "edges_visited": 112751422, 
+    "elapsed": 62.9047, 
+    "engine": "MapGraph", 
+    "m_teps": 1792.4164967005647, 
+    "time": "Wed Sep  9 03:14:19 2015", 
+    "vertices_visited": 1139905
+}

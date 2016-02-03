@@ -1,0 +1,10 @@
+{
+    "algorithm": "BC", 
+    "dataset": "kron", 
+    "edges_visited": 64426176, 
+    "elapsed": 488.325, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 263.8659745046844, 
+    "time": "Wed Sep  9 02:34:21 2015", 
+    "vertices_visited": 2097152
+}

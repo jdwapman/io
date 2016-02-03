@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "kron", 
+    "edges_visited": 182081864, 
+    "engine": "MapGraph", 
+    "time": "Fri Sep 11 02:05:30 2015", 
+    "vertices_visited": 2097152
+}

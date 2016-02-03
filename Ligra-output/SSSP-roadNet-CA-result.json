@@ -1,0 +1,7 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "roadNet-CA", 
+    "elapsed": 425.0, 
+    "engine": "Ligra", 
+    "time": "Tue Jan 19 17:24:57 2016"
+}

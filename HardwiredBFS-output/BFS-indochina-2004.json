@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "indochina", 
+    "edges_visited": 383567862, 
+    "elapsed": 84.08, 
+    "engine": "Hardwired-BFS", 
+    "m_teps": 4561.939, 
+    "time": "Wed Sep  9 01:59:59 2015", 
+    "vertices_visited": 7320539
+}

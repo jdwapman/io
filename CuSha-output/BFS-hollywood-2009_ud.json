@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood", 
+    "edges_visited": 112751422, 
+    "elapsed": 244.089005, 
+    "engine": "CuSha", 
+    "m_teps": 461.92749239155614, 
+    "time": "Wed Sep  9 02:45:58 2015", 
+    "vertices_visited": 1139888
+}

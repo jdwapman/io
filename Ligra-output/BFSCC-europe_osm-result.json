@@ -1,0 +1,7 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "osm", 
+    "elapsed": 2300.0, 
+    "engine": "Ligra", 
+    "time": "Mon Sep  7 21:27:01 2015"
+}

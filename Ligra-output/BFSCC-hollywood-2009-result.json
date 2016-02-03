@@ -1,0 +1,7 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood", 
+    "elapsed": 143.0, 
+    "engine": "Ligra", 
+    "time": "Wed Sep  9 01:49:12 2015"
+}

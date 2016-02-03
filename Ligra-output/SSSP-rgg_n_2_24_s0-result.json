@@ -1,0 +1,7 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rgg", 
+    "elapsed": 103000.0, 
+    "engine": "Ligra", 
+    "time": "Tue Jan 19 17:24:56 2016"
+}

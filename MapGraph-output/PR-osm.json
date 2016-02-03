@@ -1,0 +1,9 @@
+{
+    "algorithm": "PR", 
+    "dataset": "osm", 
+    "edges_visited": 108109320, 
+    "elapsed": 3967.54, 
+    "engine": "MapGraph", 
+    "time": "Wed Sep  9 00:32:04 2015", 
+    "vertices_visited": 50912018
+}

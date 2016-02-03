@@ -1,0 +1,10 @@
+{
+    "algorithm": "BC", 
+    "dataset": "soc", 
+    "edges_visited": 212698418, 
+    "elapsed": 1043.94, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 407.4916527769795, 
+    "time": "Wed Sep  9 02:28:30 2015", 
+    "vertices_visited": 2997166
+}

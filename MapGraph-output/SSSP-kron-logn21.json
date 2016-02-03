@@ -1,0 +1,9 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "kron", 
+    "edges_visited": 182081864, 
+    "elapsed": 540.834, 
+    "engine": "MapGraph", 
+    "time": "Wed Sep  9 03:30:49 2015", 
+    "vertices_visited": 2097152
+}

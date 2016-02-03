@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg", 
+    "edges_visited": 265114400, 
+    "elapsed": 52522.285156, 
+    "engine": "CuSha", 
+    "m_teps": 5.04765547067432, 
+    "time": "Wed Sep  9 02:58:00 2015", 
+    "vertices_visited": 16777216
+}

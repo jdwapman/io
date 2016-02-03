@@ -1,0 +1,7 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc", 
+    "elapsed": 35.9, 
+    "engine": "Ligra", 
+    "time": "Wed Sep  9 01:49:11 2015"
+}

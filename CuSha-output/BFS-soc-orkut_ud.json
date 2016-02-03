@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc", 
+    "edges_visited": 212698418, 
+    "elapsed": 251.923004, 
+    "engine": "CuSha", 
+    "m_teps": 844.299308212441, 
+    "time": "Fri Sep 11 01:13:47 2015", 
+    "vertices_visited": 2997166
+}

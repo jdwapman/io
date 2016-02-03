@@ -1,0 +1,9 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rgg", 
+    "edges_visited": 265114400, 
+    "elapsed": 61742.589844, 
+    "engine": "CuSha", 
+    "time": "Wed Sep  9 03:00:27 2015", 
+    "vertices_visited": 16777216
+}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "roadnet", 
+    "edges_visited": 5533214, 
+    "elapsed": 61.6675, 
+    "engine": "MapGraph", 
+    "m_teps": 89.72658207321524, 
+    "time": "Wed Sep  9 03:21:55 2015", 
+    "vertices_visited": 1971281
+}

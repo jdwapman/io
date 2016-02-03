@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc", 
+    "edges_visited": 212698418, 
+    "engine": "MapGraph", 
+    "time": "Wed Sep  9 03:13:11 2015", 
+    "vertices_visited": 2997166
+}

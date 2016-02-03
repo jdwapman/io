@@ -1,0 +1,10 @@
+{
+    "algorithm": "BC", 
+    "dataset": "delaunay", 
+    "edges_visited": 100663202, 
+    "elapsed": 8402.189999999999, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 23.961182025162493, 
+    "time": "Wed Sep  9 02:35:31 2015", 
+    "vertices_visited": 16777216
+}

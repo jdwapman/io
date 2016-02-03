@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron", 
+    "edges_visited": 182081864, 
+    "elapsed": 237.932999, 
+    "engine": "CuSha", 
+    "m_teps": 765.2652837784808, 
+    "time": "Wed Sep  9 02:53:13 2015", 
+    "vertices_visited": 2097152
+}

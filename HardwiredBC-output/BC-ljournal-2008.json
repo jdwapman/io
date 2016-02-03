@@ -1,0 +1,10 @@
+{
+    "algorithm": "BC", 
+    "dataset": "ljournal", 
+    "edges_visited": 99028542, 
+    "elapsed": 687.03, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 288.280110038863, 
+    "time": "Wed Sep  9 02:29:49 2015", 
+    "vertices_visited": 5363260
+}

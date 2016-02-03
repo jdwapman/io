@@ -1,0 +1,10 @@
+{
+    "algorithm": "BC", 
+    "dataset": "rgg", 
+    "edges_visited": 265114400, 
+    "elapsed": 25307.7, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 20.951283601433556, 
+    "time": "Wed Sep  9 02:38:07 2015", 
+    "vertices_visited": 16777216
+}

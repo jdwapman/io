@@ -1,0 +1,9 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "kron", 
+    "edges_visited": 182081864, 
+    "elapsed": 315.532013, 
+    "engine": "CuSha", 
+    "time": "Wed Sep  9 02:54:44 2015", 
+    "vertices_visited": 2097152
+}

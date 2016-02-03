@@ -1,0 +1,9 @@
+{
+    "algorithm": "PR", 
+    "dataset": "hollywood", 
+    "edges_visited": 112751422, 
+    "elapsed": 20941.203125, 
+    "engine": "CuSha", 
+    "time": "Wed Sep  9 02:47:33 2015", 
+    "vertices_visited": 1139888
+}

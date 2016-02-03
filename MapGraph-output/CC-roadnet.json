@@ -1,0 +1,9 @@
+{
+    "algorithm": "CC", 
+    "dataset": "roadnet", 
+    "edges_visited": 5533214, 
+    "elapsed": 1984.65, 
+    "engine": "MapGraph", 
+    "time": "Fri Sep 11 02:05:46 2015", 
+    "vertices_visited": 1971281
+}

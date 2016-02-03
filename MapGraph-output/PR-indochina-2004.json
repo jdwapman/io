@@ -1,0 +1,8 @@
+{
+    "algorithm": "PR", 
+    "dataset": "indochina", 
+    "edges_visited": 301969638, 
+    "engine": "MapGraph", 
+    "time": "Wed Sep  9 03:41:06 2015", 
+    "vertices_visited": 7414866
+}

@@ -1,0 +1,9 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "soc", 
+    "edges_visited": 212698418, 
+    "elapsed": 264.19101, 
+    "engine": "CuSha", 
+    "time": "Fri Sep 11 01:15:14 2015", 
+    "vertices_visited": 2997166
+}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg", 
+    "edges_visited": 265114400, 
+    "elapsed": 202.542, 
+    "engine": "Hardwired-BFS", 
+    "m_teps": 1308.933, 
+    "time": "Wed Sep  9 02:01:52 2015", 
+    "vertices_visited": 16777215
+}

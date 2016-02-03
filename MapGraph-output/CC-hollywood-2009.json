@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "hollywood", 
+    "edges_visited": 112751422, 
+    "engine": "MapGraph", 
+    "time": "Fri Sep 11 02:03:25 2015", 
+    "vertices_visited": 1139905
+}

@@ -1,0 +1,7 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "indochina", 
+    "elapsed": 849.0, 
+    "engine": "Ligra", 
+    "time": "Tue Jan 19 17:23:06 2016"
+}

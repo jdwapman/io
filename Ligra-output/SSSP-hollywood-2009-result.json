@@ -1,0 +1,7 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "hollywood", 
+    "elapsed": 295.0, 
+    "engine": "Ligra", 
+    "time": "Tue Jan 19 17:23:01 2016"
+}
