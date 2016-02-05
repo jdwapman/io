@@ -1,10 +1,11 @@
 {
     "algorithm": "BFS", 
-    "dataset": "osm", 
+    "dataset": "europe_osm", 
     "edges_visited": 108109320, 
     "elapsed": 2130.83, 
     "engine": "MapGraph", 
     "m_teps": 50.73577901568872, 
-    "time": "Tue Sep  8 23:40:39 2015", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/osm.txt", 
+    "time": "Tue Sep  8 23:40:39 2015\n", 
     "vertices_visited": 50912018
 }

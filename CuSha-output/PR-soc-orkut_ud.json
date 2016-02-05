@@ -1,9 +1,0 @@
-{
-    "algorithm": "PR", 
-    "dataset": "soc", 
-    "edges_visited": 212698418, 
-    "elapsed": 439.062988, 
-    "engine": "CuSha", 
-    "time": "Fri Sep 11 01:16:30 2015", 
-    "vertices_visited": 2997166
-}

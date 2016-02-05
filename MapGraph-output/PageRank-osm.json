@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "europe_osm", 
+    "edges_visited": 108109320, 
+    "elapsed": 3967.54, 
+    "engine": "MapGraph", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/PR/osm.txt", 
+    "time": "Wed Sep  9 00:32:04 2015\n", 
+    "vertices_visited": 50912018
+}

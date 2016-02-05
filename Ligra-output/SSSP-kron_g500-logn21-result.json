@@ -1,7 +1,8 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "kron", 
+    "dataset": "kron_g500-logn21", 
     "elapsed": 430.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:23:09 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/SSSP-kron_g500-logn21-result", 
+    "time": "Tue Jan 19 17:23:09 2016\n"
 }

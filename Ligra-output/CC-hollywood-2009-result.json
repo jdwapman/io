@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "hollywood", 
+    "dataset": "hollywood-2009", 
     "elapsed": 143.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:25:27 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/CC-hollywood-2009-result", 
+    "time": "Tue Jan 19 17:25:27 2016\n"
 }

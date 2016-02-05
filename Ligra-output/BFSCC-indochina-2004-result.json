@@ -1,7 +1,8 @@
 {
     "algorithm": "BFS", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "elapsed": 278.0, 
     "engine": "Ligra", 
-    "time": "Wed Sep  9 01:49:16 2015"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFSCC-indochina-2004-result", 
+    "time": "Wed Sep  9 01:49:16 2015\n"
 }

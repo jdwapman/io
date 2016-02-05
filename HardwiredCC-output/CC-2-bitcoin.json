@@ -3,5 +3,6 @@
     "dataset": "bitcoin", 
     "elapsed": 28.0, 
     "engine": "Hardwired-CC", 
-    "time": "Mon Sep  1 18:58:46 2014"
+    "rawfile": "/data/Compare/conn/test_results/2-bitcoin.txt", 
+    "time": "Mon Sep  1 18:58:46 2014\n"
 }

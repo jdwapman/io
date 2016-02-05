@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "rgg", 
+    "dataset": "rgg_n_2_24_s0", 
     "elapsed": 113.183998, 
     "engine": "Hardwired-CC", 
-    "time": "Mon Sep 28 21:59:50 2015"
+    "rawfile": "/data/Compare/conn/test_results/rgg.txt", 
+    "time": "Mon Sep 28 21:59:50 2015\n"
 }

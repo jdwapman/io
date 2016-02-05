@@ -1,10 +1,11 @@
 {
     "algorithm": "BFS", 
-    "dataset": "kron", 
+    "dataset": "kron_g500-logn21", 
     "edges_visited": 182081864, 
     "elapsed": 162.665, 
     "engine": "MapGraph", 
     "m_teps": 1119.367190237605, 
-    "time": "Wed Sep  9 03:18:55 2015", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/kron-logn21.txt", 
+    "time": "Wed Sep  9 03:18:55 2015\n", 
     "vertices_visited": 2097152
 }

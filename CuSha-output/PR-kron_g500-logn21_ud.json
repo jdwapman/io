@@ -1,9 +1,0 @@
-{
-    "algorithm": "PR", 
-    "dataset": "kron", 
-    "edges_visited": 182081864, 
-    "elapsed": 1117.572998, 
-    "engine": "CuSha", 
-    "time": "Wed Sep  9 02:55:58 2015", 
-    "vertices_visited": 2097152
-}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "elapsed": 58981.570312, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/CuSha/results/pr/indochina-2004_ud.txt", 
+    "time": "Sat Nov 21 12:45:15 2015\n", 
+    "vertices_visited": 7414865
+}

@@ -5,6 +5,7 @@
     "elapsed": 256.804, 
     "engine": "Hardwired-BC", 
     "m_teps": 43.09289574928739, 
-    "time": "Wed Sep  9 02:38:23 2015", 
+    "rawfile": "/data/Compare/gpu_BC/ppopp16/roadNet-CA.txt", 
+    "time": "Wed Sep  9 02:38:23 2015\n", 
     "vertices_visited": 1971281
 }

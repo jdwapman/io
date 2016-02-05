@@ -1,0 +1,9 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698418, 
+    "engine": "MapGraph", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/PR/soc-orkut.txt", 
+    "time": "Wed Sep  9 03:36:33 2015\n", 
+    "vertices_visited": 2997166
+}

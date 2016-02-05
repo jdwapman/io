@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "soc", 
+    "dataset": "soc-orkut", 
     "elapsed": 90.115997, 
     "engine": "Hardwired-CC", 
-    "time": "Mon Sep 28 22:00:19 2015"
+    "rawfile": "/data/Compare/conn/test_results/soc-orkut.txt", 
+    "time": "Mon Sep 28 22:00:19 2015\n"
 }

@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "osm", 
+    "dataset": "europe_osm", 
     "elapsed": 27900.0, 
     "engine": "Ligra", 
-    "time": "Mon Sep  7 21:30:22 2015"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/CC-europe_osm-result", 
+    "time": "Mon Sep  7 21:30:22 2015\n"
 }

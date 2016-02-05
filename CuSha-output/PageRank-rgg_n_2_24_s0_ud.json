@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265114400, 
+    "elapsed": 1991.123047, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/CuSha/results/pr/rgg_n_2_24_s0_ud.txt", 
+    "time": "Wed Sep  9 03:01:43 2015\n", 
+    "vertices_visited": 16777216
+}

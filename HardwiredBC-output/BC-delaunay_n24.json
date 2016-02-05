@@ -1,10 +1,11 @@
 {
     "algorithm": "BC", 
-    "dataset": "delaunay", 
+    "dataset": "delaunay_n24", 
     "edges_visited": 100663202, 
     "elapsed": 8402.189999999999, 
     "engine": "Hardwired-BC", 
     "m_teps": 23.961182025162493, 
-    "time": "Wed Sep  9 02:35:31 2015", 
+    "rawfile": "/data/Compare/gpu_BC/ppopp16/delaunay_n24.txt", 
+    "time": "Wed Sep  9 02:35:31 2015\n", 
     "vertices_visited": 16777216
 }

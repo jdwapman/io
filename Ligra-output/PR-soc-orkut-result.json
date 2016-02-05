@@ -1,7 +1,8 @@
 {
-    "algorithm": "PR", 
-    "dataset": "soc", 
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
     "elapsed": 728.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:25:14 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/PR-soc-orkut-result", 
+    "time": "Tue Jan 19 17:25:14 2016\n"
 }

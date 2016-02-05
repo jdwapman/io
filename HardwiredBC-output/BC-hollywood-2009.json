@@ -1,10 +1,11 @@
 {
     "algorithm": "BC", 
-    "dataset": "hollywood", 
+    "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
     "elapsed": 479.481, 
     "engine": "Hardwired-BC", 
     "m_teps": 470.3061101482645, 
-    "time": "Wed Sep  9 02:30:42 2015", 
+    "rawfile": "/data/Compare/gpu_BC/ppopp16/hollywood-2009.txt", 
+    "time": "Wed Sep  9 02:30:42 2015\n", 
     "vertices_visited": 1139905
 }

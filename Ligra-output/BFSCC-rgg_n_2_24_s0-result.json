@@ -1,7 +1,8 @@
 {
     "algorithm": "BFS", 
-    "dataset": "rgg", 
+    "dataset": "rgg_n_2_24_s0", 
     "elapsed": 1100.0, 
     "engine": "Ligra", 
-    "time": "Wed Sep  9 01:49:23 2015"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFSCC-rgg_n_2_24_s0-result", 
+    "time": "Wed Sep  9 01:49:23 2015\n"
 }

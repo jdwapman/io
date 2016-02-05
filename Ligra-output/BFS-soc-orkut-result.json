@@ -1,7 +1,8 @@
 {
     "algorithm": "BFS", 
-    "dataset": "soc", 
+    "dataset": "soc-orkut", 
     "elapsed": 27.799999999999997, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:20:31 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFS-soc-orkut-result", 
+    "time": "Tue Jan 19 17:20:31 2016\n"
 }

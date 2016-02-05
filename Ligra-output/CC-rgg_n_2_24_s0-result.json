@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "rgg", 
+    "dataset": "rgg_n_2_24_s0", 
     "elapsed": 3200.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:25:38 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/CC-rgg_n_2_24_s0-result", 
+    "time": "Tue Jan 19 17:25:38 2016\n"
 }

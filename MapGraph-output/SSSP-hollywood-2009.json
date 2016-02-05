@@ -1,8 +1,9 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "hollywood", 
+    "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
     "engine": "MapGraph", 
-    "time": "Wed Sep  9 03:25:35 2015", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/SSSP/hollywood-2009.txt", 
+    "time": "Wed Sep  9 03:25:35 2015\n", 
     "vertices_visited": 1139905
 }

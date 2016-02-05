@@ -1,10 +1,11 @@
 {
     "algorithm": "BC", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
     "elapsed": 1388.86, 
     "engine": "Hardwired-BC", 
     "m_teps": 434.8453235027289, 
-    "time": "Wed Sep  9 02:33:06 2015", 
+    "rawfile": "/data/Compare/gpu_BC/ppopp16/indochina-2004.txt", 
+    "time": "Wed Sep  9 02:33:06 2015\n", 
     "vertices_visited": 7414866
 }

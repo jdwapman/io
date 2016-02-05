@@ -1,8 +1,9 @@
 {
     "algorithm": "BFS", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
     "engine": "MapGraph", 
-    "time": "Wed Sep  9 03:17:06 2015", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/indochina-2004.txt", 
+    "time": "Wed Sep  9 03:17:06 2015\n", 
     "vertices_visited": 7414866
 }

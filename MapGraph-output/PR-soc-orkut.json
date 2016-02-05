@@ -1,8 +1,0 @@
-{
-    "algorithm": "PR", 
-    "dataset": "soc", 
-    "edges_visited": 212698418, 
-    "engine": "MapGraph", 
-    "time": "Wed Sep  9 03:36:33 2015", 
-    "vertices_visited": 2997166
-}

@@ -1,9 +1,10 @@
 {
-    "algorithm": "PR", 
+    "algorithm": "PageRank", 
     "dataset": "roadNet-CA", 
     "edges_visited": 5533214, 
     "elapsed": 418.174011, 
     "engine": "CuSha", 
-    "time": "Wed Sep  9 03:02:21 2015", 
+    "rawfile": "/data/Compare/CuSha/results/pr/roadNet-CA_ud.txt", 
+    "time": "Wed Sep  9 03:02:21 2015\n", 
     "vertices_visited": 1971281
 }

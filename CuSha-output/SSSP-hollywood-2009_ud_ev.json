@@ -1,9 +1,10 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "hollywood", 
+    "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
     "elapsed": 1042.753052, 
     "engine": "CuSha", 
-    "time": "Wed Sep  9 02:46:41 2015", 
+    "rawfile": "/data/Compare/CuSha/results/sssp/hollywood-2009_ud_ev.txt", 
+    "time": "Wed Sep  9 02:46:41 2015\n", 
     "vertices_visited": 1139888
 }

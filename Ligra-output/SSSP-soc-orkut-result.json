@@ -1,7 +1,8 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "soc", 
+    "dataset": "soc-orkut", 
     "elapsed": 920.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:22:59 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/SSSP-soc-orkut-result", 
+    "time": "Tue Jan 19 17:22:59 2016\n"
 }

@@ -1,9 +1,10 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
     "elapsed": 1797.797974, 
     "engine": "CuSha", 
-    "time": "Sat Nov 21 12:43:11 2015", 
+    "rawfile": "/data/Compare/CuSha/results/sssp/indochina-2004_ud_ev.txt", 
+    "time": "Sat Nov 21 12:43:11 2015\n", 
     "vertices_visited": 7414865
 }

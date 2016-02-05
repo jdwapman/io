@@ -1,7 +1,8 @@
 {
     "algorithm": "BFS", 
-    "dataset": "hollywood", 
+    "dataset": "hollywood-2009", 
     "elapsed": 143.0, 
     "engine": "Ligra", 
-    "time": "Wed Sep  9 01:49:12 2015"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFSCC-hollywood-2009-result", 
+    "time": "Wed Sep  9 01:49:12 2015\n"
 }

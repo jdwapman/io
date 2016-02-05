@@ -1,7 +1,8 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "elapsed": 849.0, 
     "engine": "Ligra", 
-    "time": "Tue Jan 19 17:23:06 2016"
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/SSSP-indochina-2004-result", 
+    "time": "Tue Jan 19 17:23:06 2016\n"
 }

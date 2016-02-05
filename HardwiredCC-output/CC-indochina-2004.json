@@ -1,7 +1,8 @@
 {
     "algorithm": "CC", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "elapsed": 109.779999, 
     "engine": "Hardwired-CC", 
-    "time": "Mon Sep 28 21:58:34 2015"
+    "rawfile": "/data/Compare/conn/test_results/indochina-2004.txt", 
+    "time": "Mon Sep 28 21:58:34 2015\n"
 }

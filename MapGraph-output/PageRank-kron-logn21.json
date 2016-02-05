@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 34291.0, 
+    "engine": "MapGraph", 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/PR/kron-logn21.txt", 
+    "time": "Wed Sep  9 03:43:46 2015\n", 
+    "vertices_visited": 2097152
+}

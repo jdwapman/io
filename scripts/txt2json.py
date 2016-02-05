@@ -11,14 +11,19 @@ class GPUEngineOutputParserBase(object):
 
 	# Constructor
 	def __init__(self, input_path = "", regex_array = [], \
-			   dataset_names = ["roadNet-CA", "osm", "rgg", "indochina", \
-					    "roadnet", "kron", "soc", "hollywood", \
-					    "europe", "bitcoin", "delaunay", "ljournal"]):
+			   dataset_names = ["roadNet-CA", "europe_osm", "rgg", "indochina-2004", \
+					    "roadnet", "kron", "soc-orkut", "soc", "hollywood-2009", \
+					    "osm", "bitcoin", "delaunay_n24", "ljournal-2008"]):
 		self.input_path = input_path
                 self.regex_array = regex_array
 		self.dataset_names = dataset_names
 		self.parsed_data = {}
 		self.possible_algs = ["BFS", "CC", "BC", "SSSP", "PR"]
+		self.algname_translator = {"PR" : "PageRank"}
+		# translate to "standard" names
+		self.datasetname_translator = {"kron" : "kron_g500-logn21", "rgg" : "rgg_n_2_24_s0", \
+					       "soc" : "soc-orkut", "osm" : "europe_osm", \
+					       "roadnet" : "roadNet-CA" }
 		self.engine = "Generic"
 		self.m_teps_switcher = {
 			"BFS"	: lambda edges, elapsed: float(edges) / elapsed / 1000.0,
@@ -47,6 +52,8 @@ class GPUEngineOutputParserBase(object):
 		for name in self.dataset_names:
 			cleaned_name = name_cleaner.sub('', name).lower()
 			if alphanumerical_name.find(cleaned_name) >= 0:
+				if name in self.datasetname_translator:
+					name = self.datasetname_translator[name]
 				return name
 		guessing_name = (re.findall('[a-zA-Z0-9]+', filename) or ["Unknown"])[0]
 		print "Warning: Filename \"{}\" does not contain known dataset names.".format(filename)
@@ -65,6 +72,9 @@ class GPUEngineOutputParserBase(object):
 				break
 		if alg and not "algorithm" in param_dict:
 			param_dict["algorithm"] = alg
+		if "algorithm" in param_dict:
+			if param_dict["algorithm"] in self.algname_translator:
+				param_dict["algorithm"] = self.algname_translator[param_dict["algorithm"]]
 		return alg
 
 	# Post-processing data, e.g., calculate m_teps
@@ -83,6 +93,7 @@ class GPUEngineOutputParserBase(object):
 	def ParseSingleFile(self, filename):
 		param_dict = {}
 		with open(filename) as f:
+			param_dict["rawfile"] = os.path.abspath(filename)
 			for line in f:
 				for r in self.regex_array:
 					matched = r["regex"].match(" ".join(line.split()))
@@ -100,11 +111,15 @@ class GPUEngineOutputParserBase(object):
 		for filename in file_list:
 			param_dict = self.ParseSingleFile(filename)
 			param_dict['dataset'] = self.GuessDatasetName(filename)
-			param_dict['time'] = time.ctime(os.path.getmtime(filename))
+			param_dict['time'] = time.ctime(os.path.getmtime(filename)) + '\n'
 			self.DetectAlgorithm(param_dict, filename)
 			filename = self.PostProcess(param_dict, filename)
 			filename = os.path.basename(filename)
-			if 'algorithm' in param_dict:
+			update_filename = True
+			for name in self.possible_algs:
+				if filename.upper().find(name) >= 0:
+					update_filename = False
+			if update_filename and 'algorithm' in param_dict:
 				if filename.upper().find(param_dict['algorithm'].upper()) < 0:
 					filename = param_dict['algorithm'] + '-' + filename
 			filename = os.path.splitext(os.path.basename(filename))[0]+'.json'

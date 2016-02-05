@@ -1,10 +1,11 @@
 {
     "algorithm": "BFS", 
-    "dataset": "indochina", 
+    "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
     "elapsed": 1815.493042, 
     "engine": "CuSha", 
     "m_teps": 166.32927310332263, 
-    "time": "Sat Nov 21 12:41:50 2015", 
+    "rawfile": "/data/Compare/CuSha/results/bfs/indochina-2004_ud.txt", 
+    "time": "Sat Nov 21 12:41:50 2015\n", 
     "vertices_visited": 7414865
 }

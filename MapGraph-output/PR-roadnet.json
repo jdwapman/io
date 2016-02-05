@@ -1,9 +1,0 @@
-{
-    "algorithm": "PR", 
-    "dataset": "roadnet", 
-    "edges_visited": 5533214, 
-    "elapsed": 158.969, 
-    "engine": "MapGraph", 
-    "time": "Wed Sep  9 03:47:09 2015", 
-    "vertices_visited": 1971281
-}
