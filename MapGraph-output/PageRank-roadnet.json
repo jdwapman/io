@@ -4,7 +4,16 @@
     "edges_visited": 5533214, 
     "elapsed": 158.969, 
     "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 6500, 
+        "total_global_mem": "12079136768"
+    }, 
     "rawfile": "/data/Compare/MapGraph/Algorithms/results/PR/roadnet.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
     "time": "Wed Sep  9 03:47:09 2015\n", 
     "vertices_visited": 1971281
 }

@@ -36,8 +36,10 @@ class GPUEngineOutputParserBase(object):
 		return file_list
 	# A utility function to convert a string to another type (float, int, etc)
 	# given the name of that type
-	def ConvertToType(self, string, typename):
-		exp = "{}(\"{}\")".format(typename, string)
+	def ConvertToType(self, string, exp):
+		if exp.find("{}") < 0:
+			exp = exp + "({})"
+		exp = exp.format("\"" + string + "\"")
 		try:
 			ret = eval(exp)
 		except ValueError:
@@ -99,8 +101,12 @@ class GPUEngineOutputParserBase(object):
 					matched = r["regex"].match(" ".join(line.split()))
 					if matched:
 						for i in range(0, r["regex"].groups):
-							param_dict[r["keys"][i]["name"]] = \
-							self.ConvertToType(matched.group(i+1), r["keys"][i]["type"]);
+							k = r["keys"][i]["name"]
+							o = self.ConvertToType(matched.group(i+1), r["keys"][i]["type"])
+							if k in param_dict and isinstance(o, dict):
+								param_dict[k].update(o)
+							else:
+								param_dict[k] = o
 		param_dict["engine"] = self.engine
 		return param_dict
 
@@ -165,6 +171,19 @@ class GPUEngineOutputParserMapGraph(GPUEngineOutputParserBase):
 				    },
 				    {	"regex": re.compile("Wall time took: (\d+(?:\.\d+)?) ms"),
 					"keys" : [{ "name" : "elapsed", "type" : "float"}]
+				    },
+				    {	"regex": re.compile("Device [0-9]: \"(.+)\""),
+					"keys" : [{ "name" : "gpuinfo", "type" : "dict(name={})" }]
+				    },
+				    {	"regex": re.compile("Total amount of global memory: [0-9]+ MBytes \(([0-9]+) bytes"),
+					"keys" : [{ "name" : "gpuinfo", "type" : "dict(total_global_mem={})" }]
+				    },
+				    {	"regex": re.compile("CUDA Driver Version / Runtime Version ([0-9]+\.[0-9]+) / ([0-9]+\.[0-9]+)"),
+					"keys" : [{ "name" : "gpuinfo", "type" : "dict(driver_version=int(float({})*1000))"},
+						  { "name" : "gpuinfo", "type" : "dict(runtime_version=int(float({})*1000))"}]
+				    },
+				    {	"regex": re.compile("Running on host: (.+)"),
+					"keys" : [{ "name" : "sysinfo", "type" : "dict(nodename={})"}]
 				    }
 		]
 		self.engine = "MapGraph"
@@ -179,9 +198,6 @@ class GPUEngineOutputParserLigra(GPUEngineOutputParserBase):
 				    }
 		]
 		self.engine = "Ligra"
-	# def PostProcess(self, param_dict, filename):
-	#	filename = super(GPUEngineOutputParserLigra, self).PostProcess(param_dict, filename)
-	#	return filename
 
 # Parser class for parsing Hardwired BC output
 class GPUEngineOutputParserHardwiredBC(GPUEngineOutputParserBase):
@@ -227,6 +243,9 @@ class GPUEngineOutputParserHardwiredBFS(GPUEngineOutputParserBase):
 				    },
 				    {	"regex": re.compile("\[Rate MiEdges/s\]: u: (\d+(?:\.\d+)?)"),
 					"keys" : [{ "name" : "m_teps", "type" : "float"}]
+				    },
+				    {	"regex": re.compile("Using device [0-9]: (.+)"),
+					"keys" : [{ "name" : "gpuinfo", "type" : "dict(name={})"}]
 				    }
 		]
 		self.engine = "Hardwired-BFS"

@@ -4,8 +4,17 @@
     "edges_visited": 182081864, 
     "elapsed": 162.665, 
     "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
     "m_teps": 1119.367190237605, 
     "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/kron-logn21.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
     "time": "Wed Sep  9 03:18:55 2015\n", 
     "vertices_visited": 2097152
 }

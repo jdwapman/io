@@ -4,6 +4,9 @@
     "edges_visited": 212698418, 
     "elapsed": 45.434, 
     "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
     "m_teps": 4681.483, 
     "rawfile": "/data/Compare/b40c/test/bfs/eval/PPOPP16/soc-orkut.txt", 
     "time": "Wed Sep  9 01:58:04 2015\n", 

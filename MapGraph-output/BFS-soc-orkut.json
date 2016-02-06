@@ -3,7 +3,16 @@
     "dataset": "soc-orkut", 
     "edges_visited": 212698418, 
     "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
     "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/soc-orkut.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
     "time": "Wed Sep  9 03:13:11 2015\n", 
     "vertices_visited": 2997166
 }
