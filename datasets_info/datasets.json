@@ -1,0 +1,588 @@
+{
+    "ego-Facebook": {
+        "category":"Social networks",
+        "type":"undirected",
+        "nodes":4039,
+        "edges":88234,
+        "description":"Social circles from Facebook (anonymized)"
+    },
+    "ego-Gplus": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":107614,
+        "edges":13673453,
+        "description":"Social circles from Google+"
+    },
+    "ego-Twitter": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":81306,
+        "edges":1768149,
+        "description":"Social circles from Twitter"
+    },
+    "soc-Epinions1": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":75879,
+        "edges":508837,
+        "description":"Who-trusts-whom network of Epinions.com"
+    },
+    "soc-LiveJournal1": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":4847571,
+        "edges":68993773,
+        "diameter":16,
+        "description":"LiveJournal online social network"
+    },
+    "soc-Pokec": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":1632803,
+        "edges":30622564,
+        "description":"Pokec online social network"
+    },
+    "soc-Slashdot0811": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":77360,
+        "edges":905468,
+        "description":"Slashdot social network from November 2008"
+    },
+    "soc-Slashdot0922": {
+        "category":"Social networks",
+        "type":"directed",
+        "nodes":82168,
+        "edges":948464,
+        "description":"Slashdot social network from February 2009"
+    },
+    "com-LiveJournal": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":3997962,
+        "edges":34681189,
+        "Communities":287512,
+        "description":"LiveJournal online social network"
+    },
+    "com-Friendster": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":65608366,
+        "edges":1806067135,
+        "Communities":957154,
+        "description":"Friendster online social network"
+    },
+    "com-Orkut": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":3072441,
+        "edges":117185083,
+        "Communities":6288363,
+        "description":"Orkut online social network"
+    },
+    "com-Youtube": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":1134890,
+        "edges":2987624,
+        "Communities":8385,
+        "description":"Youtube online social network",
+        "source":"http://networkrepository.com/soc_youtube_snap.php"
+    },
+    "com-DBLP": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":317080,
+        "edges":1049866,
+        "Communities":13477,
+        "description":"DBLP collaboration network",
+        "source":"http://law.di.unimi.it/webdata/dblp-2011/"
+    },
+    "com-Amazon": {
+        "category":"Networks with ground-truth communities",
+        "type":"undirected, Communities",
+        "nodes":334863,
+        "edges":925872,
+        "Communities":75149,
+        "description":"Amazon product network",
+        "source":"http://www.cise.ufl.edu/research/sparse/matrices/LAW/amazon-2008.html"
+    },
+    "email-EuAll": {
+        "category":"Communication networks",
+        "type":"directed",
+        "nodes":265214,
+        "edges":420045,
+        "description":"Email network from a EU research institution"
+    },
+    "email-Enron": {
+        "category":"Communication networks",
+        "type":"undirected",
+        "nodes":36692,
+        "edges":183831,
+        "description":"Email communication network from Enron"
+    },
+    "cit-HepPh": {
+        "category":"Citation networks",
+        "type":"directed, Temporal, Labeled",
+        "nodes":34546,
+        "edges":421578,
+        "description":"Arxiv High Energy Physics paper citation network"
+    },
+    "cit-HepTh": {
+        "category":"Citation networks",
+        "type":"directed, Temporal, Labeled",
+        "nodes":27770,
+        "edges":352807,
+        "description":"Arxiv High Energy Physics paper citation network"
+    },
+    "cit-Patents": {
+        "category":"Citation networks",
+        "type":"directed, Temporal, Labeled",
+        "nodes":3774768,
+        "edges":16518948,
+        "diameter":22,
+        "description":"Citation network among US Patents"
+    },
+    "ca-AstroPh": {
+        "category":"Citation networks",
+        "type":"undirected",
+        "nodes":18772,
+        "edges":198110,
+        "description":"Collaboration network of Arxiv Astro Physics"
+    },
+    "ca-CondMat": {
+        "category":"Citation networks",
+        "type":"undirected",
+        "nodes":23133,
+        "edges":93497,
+        "description":"Collaboration network of Arxiv Condensed Matter"
+    },
+    "ca-GrQc": {
+        "category":"Citation networks",
+        "type":"undirected",
+        "nodes":5242,
+        "edges":14496,
+        "description":"Collaboration network of Arxiv General Relativity"
+    },
+    "ca-HepPh": {
+        "category":"Citation networks",
+        "type":"undirected",
+        "nodes":12008,
+        "edges":118521,
+        "description":"Collaboration network of Arxiv High Energy Physics"
+    },
+    "ca-HepTh": {
+        "category":"Citation networks",
+        "type":"undirected",
+        "nodes":9877,
+        "edges":25998,
+        "description":"Collaboration network of Arxiv High Energy Physics Theory"
+    },
+    "web-BerkStan": {
+        "category":"Web graphs",
+        "type":"directed",
+        "nodes":685230,
+        "edges":7600595,
+        "description":"Web graph of Berkeley and Stanford"
+    },
+    "web-Google": {
+        "category":"Web graphs",
+        "type":"directed",
+        "nodes":875713,
+        "edges":5105039,
+        "description":"Web graph from Google"
+    },
+    "web-NotreDame": {
+        "category":"Web graphs",
+        "type":"directed",
+        "nodes":325729,
+        "edges":1497134,
+        "description":"Web graph of Notre Dame"
+    },
+    "web-Stanford": {
+        "category":"Web graphs",
+        "type":"directed",
+        "nodes":281903,
+        "edges":2312497,
+        "description":"Web graph of Stanford.edu"
+    },
+    "amazon0302": {
+        "category":"Product co-purchasing networks",
+        "type":"directed",
+        "nodes":262111,
+        "edges":1234877,
+        "description":"Amazon product co-purchasing network from March 2 2003"
+    },
+    "amazon0312": {
+        "category":"Product co-purchasing networks",
+        "type":"directed",
+        "nodes":400727,
+        "edges":3200440,
+        "description":"Amazon product co-purchasing network from March 12 2003"
+    },
+    "amazon0505": {
+        "category":"Product co-purchasing networks",
+        "type":"directed",
+        "nodes":410236,
+        "edges":3356824,
+        "description":"Amazon product co-purchasing network from May 5 2003"
+    },
+    "amazon0601": {
+        "category":"Product co-purchasing networks",
+        "type":"directed",
+        "nodes":403394,
+        "edges":3387388,
+        "description":"Amazon product co-purchasing network from June 1 2003"
+    },
+    "amazon-meta": {
+        "category":"Product co-purchasing networks",
+        "type":"Metadata",
+        "nodes":548552,
+        "edges":1788725,
+        "description":"Amazon product metadata: product info and all reviews on around 548552 products."
+    },
+    "p2p-Gnutella04": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":10876,
+        "edges":39994,
+        "description":"Gnutella peer to peer network from August 4 2002"
+    },
+    "p2p-Gnutella05": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":8846,
+        "edges":31839,
+        "description":"Gnutella peer to peer network from August 5 2002"
+    },
+    "p2p-Gnutella06": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":8717,
+        "edges":31525,
+        "description":"Gnutella peer to peer network from August 6 2002"
+    },
+    "p2p-Gnutella08": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":6301,
+        "edges":20777,
+        "description":"Gnutella peer to peer network from August 8 2002"
+    },
+    "p2p-Gnutella09": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":8114,
+        "edges":26013,
+        "description":"Gnutella peer to peer network from August 9 2002"
+    },
+    "p2p-Gnutella24": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":26518,
+        "edges":65369,
+        "description":"Gnutella peer to peer network from August 24 2002"
+    },
+    "p2p-Gnutella25": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":22687,
+        "edges":54705,
+        "description":"Gnutella peer to peer network from August 25 2002"
+    },
+    "p2p-Gnutella30": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":36682,
+        "edges":88328,
+        "description":"Gnutella peer to peer network from August 30 2002"
+    },
+    "p2p-Gnutella31": {
+        "category":"Internet peer-to-peer networks",
+        "type":"directed",
+        "nodes":62586,
+        "edges":147892,
+        "description":"Gnutella peer to peer network from August 31 2002"
+    },
+    "roadNet-CA": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":1965206,
+        "edges":2766607,
+        "description":"Road network of California"
+    },
+    "roadNet-PA": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":1088092,
+        "edges":1541898,
+        "description":"Road network of Pennsylvania"
+    },
+    "roadNet-TX": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":1379917,
+        "edges":1921660,
+        "description":"Road network of Texas"
+    },
+    "as-733 (733 graphs)": {
+        "category":"Autonomous systems graphs",
+        "type":"undirected",
+        "nodes":"103-6474",
+        "edges":"243-13233",
+        "description":"733 daily instances(graphs) from November 8 1997 to January 2 2000"
+    },
+    "as-Skitter": {
+        "category":"Autonomous systems graphs",
+        "type":"undirected",
+        "nodes":1696415,
+        "edges":11095298,
+        "description":"Internet topology graph, from traceroutes run daily in 2005 <!--http://www.caida.org/tools/measurement/skitter-->"
+    },
+    "as-Caida (122 graphs)": {
+        "category":"Autonomous systems graphs",
+        "type":"directed",
+        "nodes":"8020-26475",
+        "edges":"36406-106762",
+        "description":"The CAIDA AS Relationships Datasets, from January 2004 to November 2007 <!--http://www.caida.org/data/active/as-relationships/-->"
+    },
+    "Oregon-1 (9 graphs)": {
+        "category":"Autonomous systems graphs",
+        "type":"undirected",
+        "nodes":"10670-11174",
+        "edges":"22002-23409",
+        "description":"AS peering information inferred from Oregon route-views between March 31 and May 26 2001"
+    },
+    "Oregon-2 (9 graphs)": {
+        "category":"Autonomous systems graphs",
+        "type":"undirected",
+        "nodes":"10900-11461",
+        "edges":"31180-32730",
+        "description":"AS peering information inferred from Oregon route-views between March 31 and May 26 2001"
+    },
+    "soc-sign-epinions": {
+        "category":"Signed networks",
+        "type":"directed",
+        "nodes":131828,
+        "edges":841372,
+        "description":"Epinions signed social network"
+    },
+    "soc-sign-Slashdot081106": {
+        "category":"Signed networks",
+        "type":"directed",
+        "nodes":77357,
+        "edges":516575,
+        "description":"Slashdot Zoo signed social network from November 6 2008"
+    },
+    "soc-sign-Slashdot090216": {
+        "category":"Signed networks",
+        "type":"directed",
+        "nodes":81871,
+        "edges":545671,
+        "description":"Slashdot Zoo signed social network from February 16 2009"
+    },
+    "soc-sign-Slashdot090221": {
+        "category":"Signed networks",
+        "type":"directed",
+        "nodes":82144,
+        "edges":549202,
+        "description":"Slashdot Zoo signed social network from February 21 2009"
+    },
+    "loc-Gowalla": {
+        "category":"Location-based online networks",
+        "type":"undirected, Geo-Location",
+        "nodes":196591,
+        "edges":950327,
+        "description":"Gowalla location based online social network"
+    },
+    "loc-Brightkite": {
+        "category":"Location-based online networks",
+        "type":"Unirected, Geo-Location",
+        "nodes":58228,
+        "edges":214078,
+        "description":"Brightkite location based online social network"
+    },
+    "wikispeedia": {
+        "category":"Wikipedia networks and metadata",
+        "type":"Navigation paths",
+        "nodes":4604,
+        "edges":119882,
+        "description":"Navigation paths on the Wikipedia hyperlink network, collected by the human-computation game Wikispeedia"
+    },
+    "wiki-Vote": {
+        "category":"Wikipedia networks and metadata, Social networks",
+        "type":"directed",
+        "nodes":7115,
+        "edges":103689,
+        "description":"Wikipedia who-votes-on-whom network"
+    },
+    "wiki-Talk": {
+        "category":"Wikipedia networks and metadata, Communication networks",
+        "type":"directed",
+        "nodes":2394385,
+        "edges":5021410,
+        "description":"Wikipedia talk (communication) network",
+        "source":"http://www.cise.ufl.edu/research/sparse/matrices/SNAP/wiki-Talk.html"
+    },
+    "wiki-Elec": {
+        "category":"Wikipedia networks and metadata, Signed networks",
+        "type":"Bipartite",
+        "nodes":"~7000",
+        "edges":"~100000",
+        "description":"Wikipedia adminship election data"
+    },
+    "wiki-RfA": {
+        "category":"Wikipedia networks and metadata, Social networks, Signed networks",
+        "type":"directed, Signed",
+        "nodes":10835,
+        "edges":159388,
+        "description":"Wikipedia Requests for Adminship (with text)"
+    },
+    "wiki-meta": {
+        "category":"Wikipedia networks and metadata",
+        "type":"Edits",
+        "nodes":"2.3M users, 3.5M pages",
+        "edges":"250M edits",
+        "description":"Complete Wikipedia edit history (who edited what page)"
+    },
+    "twitter7": {
+        "category":"Memetracker and Twitter",
+        "type":"Tweets",
+        "nodes":"17069982 users",
+        "edges":"476553560 tweets",
+        "description":"A collection of 476 million tweets collected between June-Dec 2009",
+        "source":"http://an.kaist.ac.kr/traces/WWW2010.html"
+    },
+    "memetracker9": {
+        "category":"Memetracker and Twitter",
+        "type":"Memes",
+        "nodes":"96 million",
+        "edges":"418 million links",
+        "description":"Memetracker phrases and hyperlinks between 96 million blog posts from Aug 2008 to Apr 2009"
+    },
+    "ksc-time-series": {
+        "category":"Memetracker and Twitter",
+        "type":"Time  Series",
+        "nodes":2000,
+        "edges":"",
+        "description":"Time series of volume of 1000 most popular Memetracker phrases and 1000 most popular Twitter hashtags"
+    },
+    "higgs-twitter": {
+        "category":"Memetracker and Twitter",
+        "type":"Tweets",
+        "nodes":456631,
+        "edges":14855875,
+        "description":"Spreading processes of the announcement of the discovery of a new particle with the features of the Higgs boson on 4th July 2012."
+    },
+    "Reddit": {
+        "category":"Online Communities",
+        "type":"Reddit submissions",
+        "Number of items":"132308 submissions",
+        "description":"Resubmitted content on reddit.com"
+    },
+    "flickr": {
+        "category":"Online Communities",
+        "type":"Images",
+        "Number of items":"2316948 related images",
+        "description":"Images sharing common metadata on Flickr"
+    },
+    "BeerAdvocate": {
+        "category":"Online Reviews",
+        "type":"Beer reviews",
+        "Number of items":"1586259 beer reviews",
+        "description":"Beer reviews from BeerAdvocate"
+    },
+    "RateBeer": {
+        "category":"Online Reviews",
+        "type":"Beer reviews",
+        "Number of items":"2924127 beer reviews",
+        "description":"Beer reviews from RateBeer"
+    },
+    "CellarTracker": {
+        "category":"Online Reviews",
+        "type":"Wine reviews",
+        "Number of items":"2025995 wine reviews",
+        "description":"Wine reviews from CellarTracker"
+    },
+    "Amazon reviews": {
+        "category":"Online Reviews",
+        "type":"Amazon reviews (all categories)",
+        "Number of items":"34686770 product reviews",
+        "description":"Reviews from Amazon"
+    },
+    "Fine Foods": {
+        "category":"Online Reviews",
+        "type":"Food reviews",
+        "Number of items":"568454 food reviews",
+        "description":"Food reviews from Amazon"
+    },
+    "Movies": {
+        "category":"Online Reviews",
+        "type":"Movie reviews",
+        "Number of items":"7911684 movie reviews",
+        "description":"Movie reviews from Amazon"
+    },
+    "kron_g500-logn21": {
+        "category":"kron",
+        "type":"undirected",
+        "nodes":2097152,
+        "edges":182082942,
+        "description":"DIMACS10 set/synthetic graphs from the Graph500 benchmark "
+    },
+    "delaunay_n21": {
+        "category":"unknown",
+        "type":"undirected",
+        "nodes":2097152,
+        "edges":12582816,
+        "description":"DIMACS10 set/Delaunay triangulations of random points in the plane"
+    },
+    "delaunay_n13": {
+        "category":"unknown",
+        "type":"undirected",
+        "nodes":8192,
+        "edges":49094,
+        "description":"DIMACS10 set/Delaunay triangulations of random points in the plane"
+    },
+    "delaunay_n24": {
+        "category":"unknown",
+        "type":"undirected",
+        "nodes":16777216,
+        "edges":100663202,
+        "description":"DIMACS10 set/Delaunay triangulations of random points in the plane"
+    },
+    "belgium_osm": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":1441295,
+        "edges":3099940,
+        "description":"DIMACS10 set/Road network of Belgium"
+    },
+    "europe_osm": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":50912018,
+        "edges":108109320,
+        "description":"DIMACS10 set/Road network of Europe"
+    },
+    "road_usa": {
+        "category":"Road networks",
+        "type":"undirected",
+        "nodes":23947347,
+        "edges":57708624,
+        "description":"DIMACS10 set/Road network of USA"
+    },
+    "ak2010": {
+        "category":"Redistricting",
+        "type":"undirected",
+        "nodes":45292,
+        "edges":217098,
+        "description":"DIMACS10 set/redistricting"
+    },
+    "coAuthorsDBLP": {
+        "category":"coauthor networks",
+        "type":"undirected",
+        "nodes":299067,
+        "edges":1955352,
+        "description":"DIMACS10 set/DBLP collaboration network"
+    }
+}
