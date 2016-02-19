@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "kron_g500-logn21", 
+    "elapsed": 48.0, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/conn/test_results/3-kron.txt", 
+    "time": "Mon Sep  1 19:00:36 2014\n"
+}

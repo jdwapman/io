@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "ljournal-2008", 
+    "edges_visited": 99028542, 
+    "elapsed": 687.03, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 288.280110038863, 
+    "rawfile": "/data/Compare/gpu_BC/ppopp16/ljournal-2008.txt", 
+    "time": "Wed Sep  9 02:29:49 2015\n", 
+    "vertices_visited": 5363260
+}

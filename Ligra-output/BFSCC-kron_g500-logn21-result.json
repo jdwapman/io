@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron_g500-logn21", 
+    "elapsed": 604.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFSCC-kron_g500-logn21-result", 
+    "time": "Wed Sep  9 01:49:18 2015\n"
+}

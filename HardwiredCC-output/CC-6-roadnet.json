@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "roadNet-CA", 
+    "elapsed": 8.0, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/conn/test_results/6-roadnet.txt", 
+    "time": "Mon Sep  1 19:02:27 2014\n"
+}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698418, 
+    "elapsed": 264.19101, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/CuSha/results/sssp/soc-orkut_ud_ev.txt", 
+    "time": "Fri Sep 11 01:15:14 2015\n", 
+    "vertices_visited": 2997166
+}

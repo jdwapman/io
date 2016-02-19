@@ -1,0 +1,18 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265114400, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/rgg.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Wed Sep  9 03:21:39 2015\n", 
+    "vertices_visited": 16777216
+}

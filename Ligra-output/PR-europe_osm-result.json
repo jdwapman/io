@@ -1,0 +1,8 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "europe_osm", 
+    "elapsed": 380.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/PR-europe_osm-result", 
+    "time": "Mon Sep  7 22:02:04 2015\n"
+}

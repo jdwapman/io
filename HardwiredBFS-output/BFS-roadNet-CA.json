@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "roadNet-CA", 
+    "edges_visited": 5520776, 
+    "elapsed": 8.205, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 672.856, 
+    "rawfile": "/data/Compare/b40c/test/bfs/eval/PPOPP16/roadNet-CA.txt", 
+    "time": "Wed Sep  9 02:01:55 2015\n", 
+    "vertices_visited": 1957027
+}

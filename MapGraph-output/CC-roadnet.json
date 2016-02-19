@@ -1,0 +1,19 @@
+{
+    "algorithm": "CC", 
+    "dataset": "roadNet-CA", 
+    "edges_visited": 5533214, 
+    "elapsed": 1984.65, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 6500, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/CC/roadnet.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Fri Sep 11 02:05:46 2015\n", 
+    "vertices_visited": 1971281
+}

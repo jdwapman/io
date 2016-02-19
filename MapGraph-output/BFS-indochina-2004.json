@@ -1,0 +1,18 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/indochina-2004.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Wed Sep  9 03:17:06 2015\n", 
+    "vertices_visited": 7414866
+}

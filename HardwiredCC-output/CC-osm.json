@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "europe_osm", 
+    "elapsed": 165.598999, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/conn/test_results/osm.txt", 
+    "time": "Mon Sep 28 21:59:18 2015\n"
+}

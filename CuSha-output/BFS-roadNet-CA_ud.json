@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "roadNet-CA", 
+    "edges_visited": 5533214, 
+    "elapsed": 288.460999, 
+    "engine": "CuSha", 
+    "m_teps": 19.18184440593995, 
+    "rawfile": "/data/Compare/CuSha/results/bfs/roadNet-CA_ud.txt", 
+    "time": "Wed Sep  9 03:01:54 2015\n", 
+    "vertices_visited": 1971281
+}

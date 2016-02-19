@@ -1,0 +1,18 @@
+{
+    "algorithm": "CC", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 6500, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/CC/indochina-2004.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Fri Sep 11 02:00:54 2015\n", 
+    "vertices_visited": 7414866
+}

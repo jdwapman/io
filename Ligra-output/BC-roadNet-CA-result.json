@@ -1,0 +1,8 @@
+{
+    "algorithm": "BC", 
+    "dataset": "roadNet-CA", 
+    "elapsed": 205.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BC-roadNet-CA-result", 
+    "time": "Tue Jan 19 17:25:11 2016\n"
+}

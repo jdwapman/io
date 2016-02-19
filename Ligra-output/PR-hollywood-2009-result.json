@@ -1,0 +1,8 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "hollywood-2009", 
+    "elapsed": 98.8, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/PR-hollywood-2009-result", 
+    "time": "Tue Jan 19 17:25:15 2016\n"
+}

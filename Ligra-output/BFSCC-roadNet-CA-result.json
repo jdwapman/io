@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "roadNet-CA", 
+    "elapsed": 153.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFSCC-roadNet-CA-result", 
+    "time": "Wed Sep  9 01:49:23 2015\n"
+}

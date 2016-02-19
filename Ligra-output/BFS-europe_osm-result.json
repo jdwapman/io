@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "europe_osm", 
+    "elapsed": 2250.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/ligra_may22-2014/ppopp16/BFS-europe_osm-result", 
+    "time": "Mon Sep  7 20:54:19 2015\n"
+}

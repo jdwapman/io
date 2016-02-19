@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 1117.572998, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/CuSha/results/pr/kron_g500-logn21_ud.txt", 
+    "time": "Wed Sep  9 02:55:58 2015\n", 
+    "vertices_visited": 2097152
+}

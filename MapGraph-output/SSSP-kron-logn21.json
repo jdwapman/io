@@ -1,0 +1,19 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 540.834, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 6500, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/SSSP/kron-logn21.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Wed Sep  9 03:30:49 2015\n", 
+    "vertices_visited": 2097152
+}

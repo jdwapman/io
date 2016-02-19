@@ -1,0 +1,18 @@
+{
+    "algorithm": "CC", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 6500, 
+        "total_global_mem": "12079136768"
+    }, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/CC/kron-logn21.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Fri Sep 11 02:05:30 2015\n", 
+    "vertices_visited": 2097152
+}

@@ -1,0 +1,20 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood-2009", 
+    "edges_visited": 112751422, 
+    "elapsed": 62.9047, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
+    "m_teps": 1792.4164967005647, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/hollywood-2009.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Wed Sep  9 03:14:19 2015\n", 
+    "vertices_visited": 1139905
+}

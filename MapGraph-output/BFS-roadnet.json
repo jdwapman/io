@@ -1,0 +1,20 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "roadNet-CA", 
+    "edges_visited": 5533214, 
+    "elapsed": 61.6675, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 7500, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7000, 
+        "total_global_mem": "12079136768"
+    }, 
+    "m_teps": 89.72658207321524, 
+    "rawfile": "/data/Compare/MapGraph/Algorithms/results/BFS/roadnet.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Wed Sep  9 03:21:55 2015\n", 
+    "vertices_visited": 1971281
+}
