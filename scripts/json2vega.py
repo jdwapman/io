@@ -3,7 +3,7 @@
 #Author: Farmehr Farhour f.farhour@gmail.com
 
 import pandas, numpy, json, os
-import sys, getopt, argparse
+import sys, argparse
 
 #class: bcolors
 #Class for coloring terminal outputs using ANSI color codes
@@ -28,24 +28,7 @@ def inputArgs(argv):
     parser.add_argument('-d', metavar='<directory>', type=str, help='directory containing input JSON files', default='/')
     parser.add_argument('-o', metavar='<directory>', type=str, help='directory for output files', default='/output/')
     args = parser.parse_args()
-"""
-    try:
-        opts, args = getopt.getopt(argv,"hd:o:",["idir=","odir="])
-    except getopt.GetoptError:
-        print bcolors.FAIL + "json2vega.py -d <inputdir> -o <outputdir>" + bcolors.ENDC
-        sys.exit(2)
-    #save in variables
-    for opt, arg in opts:
-        if opt == '-h':
-            print "json2vega.py -d <inputdir> -o <outputdir>"
-            sys.exit()
-        elif opt in ("-d", "--idir"):
-            g_iDir = arg
-        elif opt in ("-o", "--odir"):
-            g_oDir = arg
-    print 'Input file is "', g_iDir
-    print 'Output file is "', g_oDir
-"""
+
 #---<<MAIN function starts here>>---
 def main(argv):
     #---<<PRINT HEADER>> ---
