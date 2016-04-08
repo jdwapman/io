@@ -3,8 +3,10 @@
 #Author: Farmehr Farhour f.farhour@gmail.com
 
 import pandas, numpy, json, os
+import sys, getopt, argparse
 
-#Class for coloring terminal outputs
+#class: bcolors
+#Class for coloring terminal outputs using ANSI color codes
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -16,8 +18,49 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
+#function: inputArgs
+def inputArgs(argv):
+    #define global variablesbeing used as input args
+    global g_iDir
+    global g_oDir
+    #parse args
+    parser = argparse.ArgumentParser(description=bcolors.HEADER + 'IO Options' + bcolors.ENDC)
+    parser.add_argument('-d', metavar='<directory>', type=str, help='directory containing input JSON files', default='/')
+    parser.add_argument('-o', metavar='<directory>', type=str, help='directory for output files', default='/output/')
+    args = parser.parse_args()
+"""
+    try:
+        opts, args = getopt.getopt(argv,"hd:o:",["idir=","odir="])
+    except getopt.GetoptError:
+        print bcolors.FAIL + "json2vega.py -d <inputdir> -o <outputdir>" + bcolors.ENDC
+        sys.exit(2)
+    #save in variables
+    for opt, arg in opts:
+        if opt == '-h':
+            print "json2vega.py -d <inputdir> -o <outputdir>"
+            sys.exit()
+        elif opt in ("-d", "--idir"):
+            g_iDir = arg
+        elif opt in ("-o", "--odir"):
+            g_oDir = arg
+    print 'Input file is "', g_iDir
+    print 'Output file is "', g_oDir
+"""
+#---<<MAIN function starts here>>---
+def main(argv):
+    #---<<PRINT HEADER>> ---
+    print bcolors.HEADER + "Script to convert generated JSON files to vega-format JSONs" + bcolors.ENDC
+    print bcolors.HEADER + "Author: Farmehr Farhour f.farhour@gmail.com" + bcolors.ENDC
 
-#main function starts here
-print bcolors.HEADER + "Script to convert generated JSON files to vega-format JSONs" + bcolors.ENDC
+    #process input arguments passed
+    inputArgs(argv)
 
-input 
+    #function: User_Input
+    #In:    disp_name: display name of the variable required to ask the user.
+    #In:    default_val: default value of the variable
+    #Out:   variable value as given by user
+    def User_Input(disp_name, default_val):
+        print "hello"
+
+if __name__ == "__main__":
+   main(sys.argv[1:])
