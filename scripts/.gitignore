@@ -3,6 +3,7 @@
 ### Others ###
 *.txt
 output/
+*~
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

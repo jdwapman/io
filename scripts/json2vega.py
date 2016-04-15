@@ -25,7 +25,7 @@ class VegaGraphBase(object):
     'Base class for converting json outputs of different algorithms to vega-specific graph json files.'
 
     #list containing all jsons
-    input_jsons = []
+    __input_jsons = []
 
     #Constructor
     def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name):
@@ -41,7 +41,7 @@ class VegaGraphBase(object):
         #read in all json files in the input_path, that match the algorithm_name and are not outputs
         for f in os.listdir(self.input_path):
             if(os.path.splitext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
-                self.input_jsons += [json.load(open(self.input_path + f))]
+                self.__input_jsons += [json.load(open(self.input_path + f))]
 
     #function: read_config
     def read_config(self):
@@ -51,7 +51,7 @@ class VegaGraphBase(object):
     #function: parse_jsons
     def parse_jsons(self):
         #store all data in a pandas DataFrame
-        pandas_df = pandas.DataFrame(self.input_jsons)
+        pandas_df = pandas.DataFrame(self.__input_jsons)
         return pandas_df
     #function: write_json
     #output json to the output_path and with a specific name
@@ -93,7 +93,6 @@ class VegaGraphBar(VegaGraphBase):
         bar["encoding"]["y"]["axis"] = {"title":self.axes_vars['y']}
         #check whether axis is quantitative or ordinal. add respective attributes to json
         for key in self.axes_vars:
-            print df_restricted[self.axes_vars[key]].dtype
             if(df_restricted[self.axes_vars[key]].dtype=='float64'):
                 bar["encoding"][key]["type"]="quantitative"
             else:
@@ -104,28 +103,7 @@ class VegaGraphBar(VegaGraphBase):
         #return json
         return bar
 
-"""
 
-{
-    "mark": "point",
-    "encoding": {
-        "y": {"scale": {"type": "log"},
-
-        },
-        "x": {
-        }
-    }
-}
-
-#function: write_json
-#write json to a specified file.
-def write_json(json_in, json_name, algorithm_name):
-    # pipe it through vl2vg to turn it into vega
-    file = open('%s_%s_%s.json' %(args.o,algorithm_name,json_name), 'w')
-    p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
-    vg = p.communicate(input=json.dumps(json_in))[0]
-    file.close()
-"""
 
 #function: inputArgs
 #Processes input arguments
@@ -137,6 +115,7 @@ def inputArgs(argv):
     parser = argparse.ArgumentParser(description=bcolors.HEADER + 'IO Options' + bcolors.ENDC)
     parser.add_argument('-d', metavar='<directory>', type=str, help='directory containing input JSON files. Default = /', default='/')
     parser.add_argument('-o', metavar='<directory>', type=str, help='directory for output files. Default = output/', default='output/')
+    #TODO add additional arguments: engine_name, algorithm_name,axes_vars,conditions,config_path
     global args
     args = parser.parse_args()
 
@@ -155,32 +134,11 @@ def main(argv):
 
 #TESTS
 
-    ## Sample bar graph json for testing
-    bar = {
-        "mark": "point",
-        "encoding": {
-            "y": {"scale": {"type": "log"},
-                  "type": "quantitative",
-                  "field": "m_teps",
-                  "axis": {
-                      "title": "MTEPS"
-                  }
-            },
-            "x": {"type": "ordinal",
-                  "field": "dataset"
-            }
-        }
-    }
-
-    #instantiate base class object for testing
-    base1 = VegaGraphBase(args.o,args.d,"/","g","BFS")
-    base1.read_json()
-    base1.write_json(bar,"bar")
-
     #instantite bar class object for testing
     conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
     axes_vars = {'x':'dataset','y':'m_teps'}
     bar1 = VegaGraphBar(args.o,args.d,"","g","BFS",conditions,axes_vars)
+    bar1.read_json()
     bar = bar1.parse_jsons()
     bar1.write_json(bar,"0")
 
