@@ -24,10 +24,11 @@ class bcolors:
 class VegaGraphBase(object):
     'Base class for converting json outputs of different algorithms to vega-specific graph json files.'
 
-    input_json_files = []
+    #list containing all jsons
+    input_jsons = []
 
     #Constructor
-    def __init__(self,output_path,input_path,config_path,engine_name,alrogithm_name):
+    def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name):
         self.output_path = output_path
         self.input_path = input_path
         self.config_path = config_path
@@ -39,18 +40,19 @@ class VegaGraphBase(object):
     def read_json(self):
         #read in all json files in the input_path, that match the algorithm_name and are not outputs
         for f in os.listdir(self.input_path):
-            if(os.path.splittext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
-                self.input_json_files.append(f)
-
+            if(os.path.splitext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
+                self.input_jsons += [json.load(open(self.input_path + f))]
 
     #function: read_config
     def read_config(self):
+        #something here
+        print "help"
 
     #function: write_json
     #output json to the output_path and with a specific name
-    def write_json(self,json_in,json_name):
+    def write_json(self,json_in,suffix):
         # pipe it through vl2vg to turn it into vega
-        file = open('%s_%s_%s.json' %(self.output_path,self.algorithm_name,json_name), 'w')
+        file = open('%s_%s_%s,%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
         p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
         vg = p.communicate(input=json.dumps(json_in))[0]
         file.close()
@@ -111,7 +113,12 @@ def main(argv):
             }
         }
     }
-    write_json(bar, "json_name","g")
+
+    #instantiate base class object for testing
+    base1 = VegaGraphBase(args.o,args.d,"/","g","BFS")
+    base1.read_json()
+    print base1.input_jsons
+    base1.write_json(bar,"bar")
 
 
 if __name__ == "__main__":
