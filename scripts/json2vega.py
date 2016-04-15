@@ -44,21 +44,20 @@ class VegaGraphBase(object):
                 self.input_jsons += [json.load(open(self.input_path + f))]
 
     #function: read_config
-    #TODO
     def read_config(self):
         #return the json config file
         return json.load(open(self.config_path + "bar_config.json"))
 
     #function: parse_jsons
     def parse_jsons(self):
-        #nothing to do here
-        raise NotImplementedError
-
+        #store all data in a pandas DataFrame
+        pandas_df = pandas.DataFrame(self.input_jsons)
+        return pandas_df
     #function: write_json
     #output json to the output_path and with a specific name
-    def write_json(self,json_in,suffix):
+    def write_json(self,json_in,suffix=""):
         # pipe it through vl2vg to turn it into vega
-        file = open('%s_%s_%s%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
+        file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
         p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
         vg = p.communicate(input=json.dumps(json_in))[0]
         file.close()
@@ -75,9 +74,7 @@ class VegaGraphBar(VegaGraphBase):
 
 
     def parse_jsons(self):
-        #store all data in a pandas DataFrame
-        pandas_df = pandas.DataFrame(self.input_jsons)
-
+        pandas_df = super(VegaGraphBar,self).parse_jsons()
         #restricted bar graph, based on conditions_dict provided
         df_restricted = pandas_df
         for key,value in self.conditions_dict.iteritems():
@@ -87,10 +84,23 @@ class VegaGraphBar(VegaGraphBase):
         df_restricted = pandas.DataFrame(df_restricted.set_index(self.axes_vars['x'])[self.axes_vars['y']])
         #turn dataset back to vanilla column instead of index
         df_restricted = df_restricted.reset_index()
-
         #complete vega-lite bar description
         bar = self.read_config()
+        # add extracted data to json
         bar["data"] = {"values":df_restricted.to_dict(orient='records')}
+        # add relevant attributes to y and x axes based on input data
+        bar["encoding"]["y"]["field"]=self.axes_vars['y']
+        bar["encoding"]["y"]["axis"] = {"title":self.axes_vars['y']}
+        #check whether axis is quantitative or ordinal. add respective attributes to json
+        for key in self.axes_vars:
+            print df_restricted[self.axes_vars[key]].dtype
+            if(df_restricted[self.axes_vars[key]].dtype=='float64'):
+                bar["encoding"][key]["type"]="quantitative"
+            else:
+                bar["encoding"][key]["type"]="ordinal"
+        bar["encoding"]["x"]["field"]=self.axes_vars['x']
+
+        #print(json.dumps(bar))
         #return json
         return bar
 

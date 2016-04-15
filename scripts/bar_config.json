@@ -1,15 +1,9 @@
 {
     "mark": "point",
     "encoding": {
-        "y": {"scale": {"type": "log"},
-              "type": "quantitative",
-              "field": "m_teps",
-              "axis": {
-                  "title": "MTEPS"
-              }
+        "y": {"scale": {"type": "log"}
         },
-        "x": {"type": "ordinal",
-              "field": "dataset"
+        "x": {
         }
     }
 }
