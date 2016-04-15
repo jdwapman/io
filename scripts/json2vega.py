@@ -20,7 +20,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-#class: VegaGraphBase
+#Base class to produce vega-spec jsons
 class VegaGraphBase(object):
     'Base class for converting json outputs of different algorithms to vega-specific graph json files.'
 
@@ -44,21 +44,69 @@ class VegaGraphBase(object):
                 self.input_jsons += [json.load(open(self.input_path + f))]
 
     #function: read_config
+    #TODO
     def read_config(self):
-        #something here
-        print "help"
+        #return the json config file
+        return json.load(open(self.config_path + "bar_config.json"))
+
+    #function: parse_jsons
+    def parse_jsons(self):
+        #nothing to do here
+        raise NotImplementedError
 
     #function: write_json
     #output json to the output_path and with a specific name
     def write_json(self,json_in,suffix):
         # pipe it through vl2vg to turn it into vega
-        file = open('%s_%s_%s,%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
+        file = open('%s_%s_%s%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
         p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
         vg = p.communicate(input=json.dumps(json_in))[0]
         file.close()
 
+#Class to produce vega bar graphs
+class VegaGraphBar(VegaGraphBase):
+    'Class to produce bar graphs from specified data'
+
+    #Constructor
+    def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name,conditions_dict,axes_vars):
+        self.conditions_dict = conditions_dict
+        self.axes_vars = axes_vars
+        super(VegaGraphBar,self).__init__(output_path,input_path,config_path,engine_name,algorithm_name)
+
+
+    def parse_jsons(self):
+        #store all data in a pandas DataFrame
+        pandas_df = pandas.DataFrame(self.input_jsons)
+
+        #restricted bar graph, based on conditions_dict provided
+        df_restricted = pandas_df
+        for key,value in self.conditions_dict.iteritems():
+            df_restricted = df_restricted.loc[df_restricted[key]==value]
+
+        # delete everything except dataset (index) and the desired variable
+        df_restricted = pandas.DataFrame(df_restricted.set_index(self.axes_vars['x'])[self.axes_vars['y']])
+        #turn dataset back to vanilla column instead of index
+        df_restricted = df_restricted.reset_index()
+
+        #complete vega-lite bar description
+        bar = self.read_config()
+        bar["data"] = {"values":df_restricted.to_dict(orient='records')}
+        #return json
+        return bar
 
 """
+
+{
+    "mark": "point",
+    "encoding": {
+        "y": {"scale": {"type": "log"},
+
+        },
+        "x": {
+        }
+    }
+}
+
 #function: write_json
 #write json to a specified file.
 def write_json(json_in, json_name, algorithm_name):
@@ -117,9 +165,14 @@ def main(argv):
     #instantiate base class object for testing
     base1 = VegaGraphBase(args.o,args.d,"/","g","BFS")
     base1.read_json()
-    print base1.input_jsons
     base1.write_json(bar,"bar")
 
+    #instantite bar class object for testing
+    conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
+    axes_vars = {'x':'dataset','y':'m_teps'}
+    bar1 = VegaGraphBar(args.o,args.d,"","g","BFS",conditions,axes_vars)
+    bar = bar1.parse_jsons()
+    bar1.write_json(bar,"0")
 
 if __name__ == "__main__":
    main(sys.argv)
