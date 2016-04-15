@@ -115,7 +115,7 @@ gbart1 = copy.deepcopy(gbart)
 gbart1["encoding"]["color"] = gbart1["encoding"].pop("row")
 write_json(gbart1, "gbart1")
 
-abjsondir = '../gunrock-output/ab/'
+abjsondir = '../../gunrock-io/gunrock-output/ab/'
 
 json_files = [f for f in os.listdir(abjsondir)
               if (os.path.isfile(abjsondir + f) and
