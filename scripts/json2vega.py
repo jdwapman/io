@@ -1,53 +1,80 @@
 #!/usr/bin/env python
-"""
+"""Converts JSON outputs from graph algorithms to vega-spec json files to be plotted.
 
 Author: Farmehr Farhour f.farhour@gmail.com
 Some code refactored and re-used from testvl.py script written by JDO
+
+This file contains a base class, and a child class for each type of graph to be plotted.
 """
 
 import pandas, numpy
-import json, os, sys, argparse  #built-in
-from subprocess import Popen, PIPE, STDOUT # built-in
+import json, os, sys, argparse          #built-in
+from subprocess import Popen, PIPE, STDOUT          #built-in
 
-#class: bcolors
-#Class for coloring terminal outputs using ANSI color codes
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+	"""Used to implement ANSI colors without the need to remember the numbers.
 
+	Does not contain any methods. Only contains variables.
+
+	Usage: simply concatenate bcolors.<color> at the start of string to be printed,
+		and bcolors.ENDC at the end of the string, to color the string with the
+		specified color.
+	"""
+
+	HEADER = '\033[95m'
+	OKBLUE = '\033[94m'
+	OKGREEN = '\033[92m'
+	WARNING = '\033[93m'
+	FAIL = '\033[91m'
+	ENDC = '\033[0m'
+	BOLD = '\033[1m'
+	UNDERLINE = '\033[4m'
 
 #Base class to produce vega-spec jsons
 class VegaGraphBase(object):
-    'Base class for converting json outputs of different algorithms to vega-specific graph json files.'
+    """Base class for converting json outputs of different algorithms to vega-specific graph json files.
+
+    This class is the base class, and the child classes inherit the methods and variables of this class.
+    The purpose of this class is to centralise the main functionalities shared by all child classes.
+
+    Attributes:
+        output_path: the output directory to write the vega-spec json files to.
+        input_path: the input path containing the input json files to be processed.
+        config_path: the directory containing the json config files relevant to each plot type.
+            Each config file will need to have a specific name of the format: '<plot type>_config.json'
+        engine_name: the name of the engine used to run the algorithm (e.g. Gunrock). This is
+            used to name the output files.
+        algorithm_name: the name of the algorithm (e.g. BFS). This is used to name the
+            output files.
+    """
 
     #list containing all jsons
     __input_jsons = []
 
-    #Constructor
+
     def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name):
+        """Initis base class with provided atrributes."""
         self.output_path = output_path
         self.input_path = input_path
         self.config_path = config_path
         self.engine_name = engine_name
         self.algorithm_name = algorithm_name
 
-    #function: read_json
-    #reads json files with the right specs to input_json_files list
+
     def read_json(self):
+        """Reads json files wiht the right specs into __input_jsons list
+
+        Does not take any arguments.
+        Does not return any variables.
+        """
         #read in all json files in the input_path, that match the algorithm_name and are not outputs
         for f in os.listdir(self.input_path):
             if(os.path.splitext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
                 self.__input_jsons += [json.load(open(self.input_path + f))]
 
-    #function: read_config
+
     def read_config(self):
-        #return the json config file
+        """Returns the json config file as a python object"""
         return json.load(open(self.config_path + "bar_config.json"))
 
     #function: parse_jsons
