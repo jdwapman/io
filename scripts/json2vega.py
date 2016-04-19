@@ -72,7 +72,7 @@ class VegaGraphBase(object):
             if(os.path.splitext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
                 self.__input_jsons += [json.load(open(self.input_path + f))]
 
-
+#TODO method to check whether config files exist. If not use default.
     def read_config(self):
         """Returns the json config file as a python object"""
         return json.load(open(self.config_path + "bar_config.json"))
