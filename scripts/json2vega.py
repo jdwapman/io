@@ -1,7 +1,9 @@
 #!/usr/bin/env python
+"""
 
-#Author: Farmehr Farhour f.farhour@gmail.com
-#Some code refactored and re-used from testvl.py script written by JDO
+Author: Farmehr Farhour f.farhour@gmail.com
+Some code refactored and re-used from testvl.py script written by JDO
+"""
 
 import pandas, numpy
 import json, os, sys, argparse  #built-in
@@ -102,45 +104,3 @@ class VegaGraphBar(VegaGraphBase):
         #print(json.dumps(bar))
         #return json
         return bar
-
-
-
-#function: inputArgs
-#Processes input arguments
-def inputArgs(argv):
-    #define global variablesbeing used as input args
-    global g_iDir
-    global g_oDir
-    #parse args
-    parser = argparse.ArgumentParser(description=bcolors.HEADER + 'IO Options' + bcolors.ENDC)
-    parser.add_argument('-d', metavar='<directory>', type=str, help='directory containing input JSON files. Default = /', default='/')
-    parser.add_argument('-o', metavar='<directory>', type=str, help='directory for output files. Default = output/', default='output/')
-    #TODO add additional arguments: engine_name, algorithm_name,axes_vars,conditions,config_path
-    global args
-    args = parser.parse_args()
-
-#---<<MAIN function starts here>>---
-def main(argv):
-    #---<<PRINT HEADER>> ---
-    print bcolors.HEADER + "Script to convert generated JSON files to vega-format JSONs" + bcolors.ENDC
-    print bcolors.HEADER + "Author: Farmehr Farhour f.farhour@gmail.com" + bcolors.ENDC
-
-    #process input arguments passed
-    inputArgs(argv)
-    #create output directory
-    if not os.path.exists(args.o):
-        os.makedirs(args.o)
-
-
-#TESTS
-
-    #instantite bar class object for testing
-    conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
-    axes_vars = {'x':'dataset','y':'m_teps'}
-    bar1 = VegaGraphBar(args.o,args.d,"","g","BFS",conditions,axes_vars)
-    bar1.read_json()
-    bar = bar1.parse_jsons()
-    bar1.write_json(bar,"0")
-
-if __name__ == "__main__":
-   main(sys.argv)
