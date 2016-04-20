@@ -11,8 +11,6 @@ Usage: simply run the script to create a sample bar graph.
 import os,argparse,sys			#built-in
 import json2vega
 
-#class: bcolors
-#Class for coloring terminal outputs using ANSI color codes
 class bcolors:
 	"""Used to implement ANSI colors without the need to remember the numbers.
 
@@ -71,6 +69,7 @@ def main(argv):
 
 	# TESTS
 	# Call json2vega.py's docstring
+	print bcolors.OKBLUE + "---<<<json2vega.py dosctring>>>---" + bcolors.ENDC
 	print bcolors.OKBLUE + json2vega.__doc__ + bcolors.ENDC
 
     # Create required arguments and instantite bar class object for testing.
