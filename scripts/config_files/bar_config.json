@@ -1,0 +1,9 @@
+{
+    "mark": "point",
+    "encoding": {
+        "y": {"scale": {"type": "log"}
+        },
+        "x": {
+        }
+    }
+}
