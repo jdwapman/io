@@ -3,6 +3,7 @@
 This folder contains the scripts to generate visual representation of graph engine outputs.
 
 The main scripts are listed below, with a brief description of their functionality:
+
 * **text2json.py**: Parses the engine outputs (in txt format) and generates jsons containing important information regarding the output results.
 * **testvl.py**: A test script that uses the engine output jsons (converted with text2json.py) to generate vega-spec jsons to be able to visualize the data.
 * **json2vega.py**: Converts JSON outputs from graph algorithms to vega-spec json files to be plotted.
@@ -21,18 +22,18 @@ The main file to look at is json2vega.py which takes in json outputs in a specif
 * There is a base class, which contains the main methods used for file IO, plus some other functionalities that would overlap across child classes
 * The child classes which inherit all the methods of the base class will be responsible for the specific details of each type of graph that needs to be outputted. So there is a child class for every type of graph to be made. At the moment there is only 1 child class for creating bar graphs.
 * Each child class has a set of attributes, which are required for construction:
-	* **output_path**: the output directory to write the vega-spec json files to.
-	* **input_path**: the input path containing the input json files to be processed.
-	* **config_path**: the directory containing the json config files relevant to each plot type.
-		Each config file will need to have a specific name of the format: '<plot type>\_config.json'
-	* **engine_name**: the name of the engine used to run the algorithm (e.g. Gunrock). This is used to name the output files.
-	* **algorithm_name**: the name of the algorithm (e.g. BFS). This is used to name the output files.
-	* **conditions_dict**: a dictionary containing the conditions to limit the input files to a specific category. For instance choosing files that were outputs of a BFS algorith.
+    * **output_path**: the output directory to write the vega-spec json files to.
+    * **input_path**: the input path containing the input json files to be processed.
+    * **config_path**: the directory containing the json config files relevant to each plot type.
+        Each config file will need to have a specific name of the format: '<plot type>\_config.json'
+    * **engine_name**: the name of the engine used to run the algorithm (e.g. Gunrock). This is used to name the output files.
+    * **algorithm_name**: the name of the algorithm (e.g. BFS). This is used to name the output files.
+    * **conditions_dict**: a dictionary containing the conditions to limit the input files to a specific category. For instance choosing files that were outputs of a BFS algorith.
 
-		For instance the following dictionary limits the inputs to BFS algorithms that are undirected and mark_predecessors is true:
-		`{"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}`
-	* **axes_vars**: a dictionary of the variables to be evaluated for the x and y axes. There are 2 keys: 'x' and 'y'.For instance:
-	`{'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)`
+        For instance the following dictionary limits the inputs to BFS algorithms that are undirected and mark_predecessors is true:
+        `{"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}`
+    * **axes_vars**: a dictionary of the variables to be evaluated for the x and y axes. There are 2 keys: 'x' and 'y'.For instance:
+    `{'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)`
 
 * In order to generate the vega-spec JSONs, the program takes in a config file, one specific for each type of graph. The _config file_ which is  a json with vega-lite specs, details how the graph should look visually!
 * The python library **argparse** is used to process input commandline arguments. It is very easy to implement new arguments.
@@ -42,34 +43,38 @@ The main file to look at is json2vega.py which takes in json outputs in a specif
 1. import json2vega
 2. Create an object of a child class by calling the class name. Make sure you do so by calling the constructor with the above attributes as arguments.
 
-	For example, in order to create a bargraph, create an object of `VegaGraphBar`:
-	```
-	import json2vega
-	# Create required arguments and instantite bar class object for testing.
-	conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
-	axes_vars = {'x':'dataset','y':'m_teps'}
-	bar1 = json2vega.VegaGraphBar("","","","g","BFS",conditions,axes_vars)
-	```
-	The above code imports json2vega, creates the required dictionaries for **conditions** and **axes_vars**, and creates an object of type **VegaGraphBar** named **bar1**.
-	Note that it is assumed that the output_path, input_path, and config_path are at current directory.
-	Furthermore, the engine_name is given as "g", and algorithm_name is given as "BFS".
+    For example, in order to create a bargraph, create an object of `VegaGraphBar`:
+    ```
+    import json2vega
+    # Create required arguments and instantite bar class object for testing.
+    conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
+    axes_vars = {'x':'dataset','y':'m_teps'}
+    bar1 = json2vega.VegaGraphBar("","","","g","BFS",conditions,axes_vars)
+    ```
+
+    The above code imports json2vega, creates the required dictionaries for **conditions** and **axes_vars**, and creates an object of type **VegaGraphBar** named **bar1**.
+    Note that it is assumed that the output_path, input_path, and config_path are at current directory.
+    Furthermore, the engine_name is given as "g", and algorithm_name is given as "BFS".
+
 3. Read the input JSONs by calling the `read_json()` method of the object **bar1**:
 
-	```
-	bar1.read_json()
-	```
+    ```
+    bar1.read_json()
+    ```
+
 4. Parse the JSONs by calling the `parse_jsons()` method of the object **bar1**:
 
-	```
-	parsed = bar1.parse_jsons()
-	```
+    ```
+    parsed = bar1.parse_jsons()
+    ```
+
 5. Write the output vega-spec JSONs to file by calling the `write_json(json_in,suffix="")` method of the object **bar1**.
 
-	```
-	bar1.write_json(parsed,"0")
-	```
+    ```
+    bar1.write_json(parsed, "0")
+    ```
 
-	Note that the parsed JSONs (**bar**) are passed in as an argument to the `wirte_json` method. The second argument passed is the suffix of the file being written. In this case it is "0".
+    Note that the parsed JSONs (**bar**) are passed in as an argument to the `write_json` method. The second argument passed is the suffix of the file being written. In this case it is "0".
 
 **Complete example**:
 ```
