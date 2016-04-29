@@ -12,28 +12,7 @@ import os
 import argparse
 import sys  # built-in
 import json2vega
-
-
-class bcolors:
-    """Used to implement ANSI colors without the need to remember the numbers.
-
-    Does not contain any methods. Only contains variables.
-
-    Usage: simply concatenate bcolors.<color> at the start of string
-        to be printed, and bcolors.ENDC at the end of the string, to
-        color the string with the specified color.
-
-    """
-
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
+from utils import bcolors           #bcolors class used to color commandline output
 
 # function: inputArgs
 # Processes input arguments
@@ -67,20 +46,9 @@ def inputArgs(argv):
 
 def main(argv):
     """Creates a bar graph by calling methods in json2vega.py"""
-
-    # PRINT HEADERS in commandline
-    print bcolors.HEADER + __doc__ + bcolors.ENDC
-    # print bcolors.HEADER + "Author: Farmehr Farhour f.farhour@gmail.com" +
-    # bcolors.ENDC
-
-    args = inputArgs(argv)  # process input arguments passed
-    if not os.path.exists(args.o):  # create output directory
+    args = inputArgs(argv)            #process input arguments passed
+    if not os.path.exists(args.o):            #create output directory
         os.makedirs(args.o)
-
-    # TESTS
-    # Call json2vega.py's docstring
-    print bcolors.OKBLUE + "---<<<json2vega.py dosctring>>>---" + bcolors.ENDC
-    print bcolors.OKBLUE + json2vega.__doc__ + bcolors.ENDC
 
     # Create required arguments and instantite bar class object for testing.
     conditions = {"algorithm": "BFS",
@@ -90,8 +58,7 @@ def main(argv):
         args.o, args.d, "config_files/", "g", "BFS", conditions, axes_vars)
     bar1.read_json()
     bar = bar1.parse_jsons()
-    bar1.write_json(bar, "0")
-
+    bar1.write_json(bar,"0",True)
 
 if __name__ == "__main__":
     main(sys.argv)

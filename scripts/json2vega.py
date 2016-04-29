@@ -69,7 +69,7 @@ class VegaGraphBase(object):
         pandas_df = pandas.DataFrame(self.__input_jsons)
         return pandas_df
 
-    def write_json(self, json_in, suffix=""):
+    def write_json(self,json_in,suffix="",verbose=False):
         """Output json to the output_path and with a specific name.
 
         The filename is in the format: '_<engine_name>_<algorithm_name>_suffix.json'.
@@ -81,10 +81,10 @@ class VegaGraphBase(object):
         """
 
         # pipe it through vl2vg to turn it into vega
-        file = open('%s_%s_%s_%s.json' % (self.output_path,
-                                          self.engine_name, self.algorithm_name, suffix), 'w')
-        p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
+        file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
+        p = Popen(["vl2vg"], stdout=file, stdin=PIPE,shell=True)
         vg = p.communicate(input=json.dumps(json_in))[0]
+        if(verbose): print("Created " + file.name)
         file.close()
 
 
