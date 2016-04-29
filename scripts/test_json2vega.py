@@ -60,6 +60,7 @@ def main(argv):
 =======
     conditions = {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
     axes_vars = {'x':'dataset','y':'m_teps'}
+<<<<<<< d2faaa731d3b0c33158616bd668d1ff533f38f7c
     bar1 = json2vega.VegaGraphBar(output_path=args.o,input_path=args.d,config_dir="config_files",engine_name="g",algorithm_name="BFS",conditions_dict=conditions,axes_vars=axes_vars)
     bar1.run(True)
     """
@@ -67,6 +68,11 @@ def main(argv):
     bar1.read_json()
     bar = bar1.parse_jsons()
     bar1.write_json(bar,"0",True)"""
+=======
+    names = {'engine_name':'g','algorithm_name':'BFS','x_axis':'Datasets','y_axis':'MTEPS','file_suffix':'0'}
+    bar1 = json2vega.VegaGraphBar(output_path=args.o,input_path=args.d,config_dir="config_files",labels=names,conditions_dict=conditions,axes_vars=axes_vars)
+    bar1.run(verbose=True)
+>>>>>>> Changed input attributes to create the object. Now there is a labels dict that contains the algorithm_name, engine_name, file_suffix, as well as x and y axes labels. So now the file name suffix can be specified. So can the x and y axes labels.
 
 if __name__ == "__main__":
     main(sys.argv)
