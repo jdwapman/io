@@ -7,9 +7,13 @@ Some code refactored and re-used from testvl.py script written by JDO
 This file contains a base class, and a child class for each type of graph to be plotted.
 """
 
-import pandas, numpy
-import json, os, argparse          #built-in
-from subprocess import Popen, PIPE, STDOUT          #built-in
+import pandas
+import numpy
+import json
+import os
+import argparse  # built-in
+from subprocess import Popen, PIPE, STDOUT  # built-in
+
 
 class bcolors:
     """Used to implement ANSI colors without the need to remember the numbers.
@@ -30,7 +34,9 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-#Base class to produce vega-spec jsons
+# Base class to produce vega-spec jsons
+
+
 class VegaGraphBase(object):
     """Base class for converting json outputs of different algorithms to vega-specific graph json files.
 
@@ -48,10 +54,10 @@ class VegaGraphBase(object):
             output files.
     """
 
-    #list containing all jsons
+    # list containing all jsons
     __input_jsons = []
 
-    def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name):
+    def __init__(self, output_path, input_path, config_path, engine_name, algorithm_name):
         """Initis base class with provided atrributes."""
         self.output_path = output_path
         self.input_path = input_path
@@ -59,35 +65,33 @@ class VegaGraphBase(object):
         self.engine_name = engine_name
         self.algorithm_name = algorithm_name
 
-
     def read_json(self):
         """Reads json files wiht the right specs into __input_jsons list
 
         Does not take any arguments.
         Does not return any variables.
         """
-        #read in all json files in the input_path, that match the algorithm_name and are not outputs
+        # read in all json files in the input_path, that match the
+        # algorithm_name and are not outputs
         for f in os.listdir(self.input_path):
-            if(os.path.splitext(f)[1]==".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
+            if(os.path.splitext(f)[1] == ".json") and (os.path.basename(f).startswith(self.algorithm_name)) and (not os.path.basename(f).startswith("_")):
                 self.__input_jsons += [json.load(open(self.input_path + f))]
 
-#TODO method to check whether config files exist. If not use default.
+# TODO method to check whether config files exist. If not use default.
     def read_config(self):
         """Returns the json config file as a python object"""
         return json.load(open(self.config_path + "bar_config.json"))
-
 
     def parse_jsons(self):
         """Parses the input json files using Pandas.
 
         Returns: a pandas dataframe containting the data processed from input jsons.
         """
-        #store all data in a pandas DataFrame
+        # store all data in a pandas DataFrame
         pandas_df = pandas.DataFrame(self.__input_jsons)
         return pandas_df
 
-
-    def write_json(self,json_in,suffix=""):
+    def write_json(self, json_in, suffix=""):
         """Output json to the output_path and with a specific name.
 
         The filename is in the format: '_<engine_name>_<algorithm_name>_suffix.json'.
@@ -99,7 +103,8 @@ class VegaGraphBase(object):
         """
 
         # pipe it through vl2vg to turn it into vega
-        file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
+        file = open('%s_%s_%s_%s.json' % (self.output_path,
+                                          self.engine_name, self.algorithm_name, suffix), 'w')
         p = Popen(["vl2vg"], stdout=file, stdin=PIPE)
         vg = p.communicate(input=json.dumps(json_in))[0]
         file.close()
@@ -130,44 +135,45 @@ class VegaGraphBar(VegaGraphBase):
 
     """
 
-
-    def __init__(self,output_path,input_path,config_path,engine_name,algorithm_name,conditions_dict,axes_vars):
+    def __init__(self, output_path, input_path, config_path, engine_name, algorithm_name, conditions_dict, axes_vars):
         """Instantiate the input arguments. References the base class __init__ to instantiate recurring ones."""
         self.conditions_dict = conditions_dict
         self.axes_vars = axes_vars
-        super(VegaGraphBar,self).__init__(output_path,input_path,config_path,engine_name,algorithm_name)
-
+        super(VegaGraphBar, self).__init__(output_path,
+                                           input_path, config_path, engine_name, algorithm_name)
 
     def parse_jsons(self):
         """Parses the input json files using Pandas.
 
         Returns: the json file to be written to file.
         """
-        pandas_df = super(VegaGraphBar,self).parse_jsons()
-        #restricted bar graph, based on conditions_dict provided
+        pandas_df = super(VegaGraphBar, self).parse_jsons()
+        # restricted bar graph, based on conditions_dict provided
         df_restricted = pandas_df
-        for key,value in self.conditions_dict.iteritems():
-            df_restricted = df_restricted.loc[df_restricted[key]==value]
+        for key, value in self.conditions_dict.iteritems():
+            df_restricted = df_restricted.loc[df_restricted[key] == value]
 
         # delete everything except dataset (index) and the desired variable
-        df_restricted = pandas.DataFrame(df_restricted.set_index(self.axes_vars['x'])[self.axes_vars['y']])
-        #turn dataset back to vanilla column instead of index
+        df_restricted = pandas.DataFrame(df_restricted.set_index(
+            self.axes_vars['x'])[self.axes_vars['y']])
+        # turn dataset back to vanilla column instead of index
         df_restricted = df_restricted.reset_index()
-        #complete vega-lite bar description
+        # complete vega-lite bar description
         bar = self.read_config()
         # add extracted data to json
-        bar["data"] = {"values":df_restricted.to_dict(orient='records')}
+        bar["data"] = {"values": df_restricted.to_dict(orient='records')}
         # add relevant attributes to y and x axes based on input data
-        bar["encoding"]["y"]["field"]=self.axes_vars['y']
-        bar["encoding"]["y"]["axis"] = {"title":self.axes_vars['y']}
-        #check whether axis is quantitative or ordinal. add respective attributes to json
+        bar["encoding"]["y"]["field"] = self.axes_vars['y']
+        bar["encoding"]["y"]["axis"] = {"title": self.axes_vars['y']}
+        # check whether axis is quantitative or ordinal. add respective
+        # attributes to json
         for key in self.axes_vars:
-            if(df_restricted[self.axes_vars[key]].dtype=='float64'):
-                bar["encoding"][key]["type"]="quantitative"
+            if(df_restricted[self.axes_vars[key]].dtype == 'float64'):
+                bar["encoding"][key]["type"] = "quantitative"
             else:
-                bar["encoding"][key]["type"]="ordinal"
-        bar["encoding"]["x"]["field"]=self.axes_vars['x']
+                bar["encoding"][key]["type"] = "ordinal"
+        bar["encoding"]["x"]["field"] = self.axes_vars['x']
 
-        #print(json.dumps(bar))
-        #return json
+        # print(json.dumps(bar))
+        # return json
         return bar
