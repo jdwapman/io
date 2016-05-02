@@ -9,50 +9,15 @@ Usage: simply run the script to create a sample bar graph.
 """
 
 import os
-import argparse
 import sys  # built-in
 import json2vega
-from utils import bcolors  # bcolors class used to color commandline output
-
-
-# function: inputArgs
-# Processes input arguments
-def inputArgs(argv):
-    """Function to process input args.
-
-    The various input arguments are defined here. parser.add_argument
-        creates a new argument. The function parses the various input
-        args passed, and stores them in a list (args). The argparse
-        library automatically takes care of the help command.
-
-    Args:
-        argv: the input arguments passed through commandline. Simply
-            pass in sys.argv from the main function.
-
-    Returns:
-        args: a  populated namespace of all the inputted command-line arguments.
-
-    """
-    # parse args
-    parser = argparse.ArgumentParser(
-        description=bcolors.HEADER + 'IO Options' + bcolors.ENDC)
-    # add the arguments available to user
-    parser.add_argument('-d', metavar='<directory>', type=str,
-                        help='directory containing input JSON files. Default= / ',
-                        default='../gunrock-output/')
-    parser.add_argument('-o', metavar='<directory>', type=str,
-                        help='directory for output files. Default= output/',
-                        default='output/')
-    # TODO add additional arguments: engine_name,
-    # algorithm_name,axes_vars,conditions,config_path
-    args = parser.parse_args()
-    return args
+from utils import bcolors, parseCmdLineArgs  # bcolors class used to color commandline output. parseCmdLineArgs used to parse commandline arguments
 
 
 def main(argv):
     """Creates a bar graph by calling methods in json2vega.py"""
 
-    args = inputArgs(argv)  # process input arguments passed
+    args = parseCmdLineArgs(argv)  # process input arguments passed
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
 
