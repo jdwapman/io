@@ -1,0 +1,1160 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362622713.442808
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,140067943,140067943
+STAT,(NULL),MeminfoPost,1,923,923
+STAT,(NULL),MeminfoPre,1,865,865
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,87916,87916
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362622953.249153
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,140067943,140067943
+STAT,(NULL),MeminfoPost,1,923,923
+STAT,(NULL),MeminfoPre,1,865,865
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,88125,88125
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623056.724586
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,140067943,140067943
+STAT,(NULL),MeminfoPost,1,923,923
+STAT,(NULL),MeminfoPre,1,865,865
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,88222,88222
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623160.306281
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,140067943,140067943
+STAT,(NULL),MeminfoPost,1,923,923
+STAT,(NULL),MeminfoPre,1,865,865
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,88226,88226
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623263.852921
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 1 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,140067943,140067943
+STAT,(NULL),MeminfoPost,1,923,923
+STAT,(NULL),MeminfoPre,1,865,865
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,87926,87926
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623367.161727
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,169444967,10424833,10495293,11922214,10551803,10415174,10262088,9561182,12179982,11898226,11833962,9275415,8808278,11060648,10999130,9314132,10442607
+STAT,(NULL),MeminfoPost,16,1153,1153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,884,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,8307,8307,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623391.012576
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,186081626,10710703,13008228,12386257,10646434,10706051,14998852,10750583,12309280,15470666,14970611,9306353,8259793,9302543,10997600,11436738,10820934
+STAT,(NULL),MeminfoPost,16,1218,1218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,884,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,9247,9247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623415.779075
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,164450907,9509930,14262060,10881025,9480565,9445621,9458694,9412947,12294171,9504784,9518794,9266204,9076018,9213606,10700549,13100142,9325797
+STAT,(NULL),MeminfoPost,16,1091,1091,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,884,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7892,7892,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623439.179827
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,182570465,10528340,11678669,11904143,10424160,10498777,11901951,10584588,11894404,12526510,10633211,10115893,9580323,11849640,13849297,13176325,11424234
+STAT,(NULL),MeminfoPost,16,1219,1219,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,884,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,9089,9089,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623463.831569
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 16 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,171005544,10241604,12135542,12155675,12264390,10020098,10164186,10176705,12045349,12468297,10156015,9186828,8254077,9374869,9460389,11857239,11044281
+STAT,(NULL),MeminfoPost,16,1155,1155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,884,884,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,8373,8373,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623487.690009
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,139992232,69430627,70561605
+STAT,(NULL),MeminfoPost,2,925,925,0
+STAT,(NULL),MeminfoPre,2,866,866,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,44468,44468,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623547.470889
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,139985033,69959092,70025941
+STAT,(NULL),MeminfoPost,2,925,925,0
+STAT,(NULL),MeminfoPre,2,866,866,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,44151,44151,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623607.102613
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,140005591,70270025,69735566
+STAT,(NULL),MeminfoPost,2,925,925,0
+STAT,(NULL),MeminfoPre,2,866,866,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,44303,44303,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623666.740806
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,140024123,70000656,70023467
+STAT,(NULL),MeminfoPost,2,925,925,0
+STAT,(NULL),MeminfoPre,2,866,866,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,44198,44198,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623726.286636
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 2 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,140048170,69949425,70098745
+STAT,(NULL),MeminfoPost,2,926,926,0
+STAT,(NULL),MeminfoPre,2,866,866,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,44336,44336,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623785.932646
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,199856875,5096635,7685698,6753668,6233712,6231901,6657158,7702312,5111963,6206529,5146693,6423074,5343752,7701207,6692942,9404181,5353795,6604894,6597472,6386455,6963283,5083360,6899845,5207046,6904836,5200744,7311800,5193588,6199885,5201771,6910030,4729647,4716999
+STAT,(NULL),MeminfoPost,32,1302,1302,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,916,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,7155,7155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623808.636172
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,211810237,5150249,7610177,8494923,5974686,4762824,5088424,6419808,5043069,8511964,5061233,9028797,9158830,5060744,9227689,6325588,5059559,5009824,8110064,6347170,7717953,4982697,5422153,8248447,6183252,6407418,6683091,6171743,8246276,6708485,6193912,6738015,6661173
+STAT,(NULL),MeminfoPost,32,1347,1347,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,916,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,7544,7544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623831.757831
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,193779496,4461590,5444628,4497216,5528748,5483401,4904851,5446445,4449566,5278661,4515652,5382077,6339173,4511139,4896098,5652076,4468594,5737262,5603099,5721005,4569329,5710379,6709496,5792682,8034963,10061216,8487286,8486086,6916603,6664541,5760453,13037390,5227791
+STAT,(NULL),MeminfoPost,32,1282,1282,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,916,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,7805,7805,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623855.030589
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,191621684,4416396,4443227,7537938,5857636,4553485,6175551,5580175,4365540,4393832,4374062,7771861,6592025,4447610,7974458,4490686,4624360,4418250,6423018,4418277,7453305,6328063,6385391,5118682,5114910,6755921,6776280,8675490,5124059,6787774,6783868,10216179,7243375
+STAT,(NULL),MeminfoPost,32,1268,1268,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,916,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,7084,7084,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623877.608959
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 32 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,190612276,5118917,6071697,5979855,6340446,7454091,5245415,6238061,5072319,5074070,5086618,4585303,5865813,4545900,5569564,6249274,4562645,4553549,5563350,5780246,4660701,5638871,5535438,7841694,6445857,7773993,6675531,7003044,7756978,5519432,6698908,5719632,8385064
+STAT,(NULL),MeminfoPost,32,1276,1276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,916,916,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,7031,7031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623900.172485
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,140625138,35134321,35215401,35197809,35077607
+STAT,(NULL),MeminfoPost,4,936,936,0,0,0
+STAT,(NULL),MeminfoPre,4,868,868,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,23387,23387,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623938.888074
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,140107070,35158658,35038683,34991659,34918070
+STAT,(NULL),MeminfoPost,4,932,932,0,0,0
+STAT,(NULL),MeminfoPre,4,868,868,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,23328,23328,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362623977.569082
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,140610218,35013053,35310044,35191470,35095651
+STAT,(NULL),MeminfoPost,4,935,935,0,0,0
+STAT,(NULL),MeminfoPre,4,868,868,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,23349,23349,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624016.224800
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,140998094,35258220,35285175,35307988,35146711
+STAT,(NULL),MeminfoPost,4,938,938,0,0,0
+STAT,(NULL),MeminfoPre,4,868,868,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,23415,23415,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624054.958805
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 4 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,140393098,35144338,35153480,35072556,35022724
+STAT,(NULL),MeminfoPost,4,932,932,0,0,0
+STAT,(NULL),MeminfoPre,4,868,868,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,23363,23363,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624093.643673
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,217602815,4448211,5710939,4461694,5181489,4987815,5928736,8327981,4434329,4886094,4866014,4509838,5107543,4633320,5923466,4625362,4337625,4105262,4593960,4139670,4138808,4962778,6161653,4272208,5160551,5136653,5491850,6429548,6406830,4618334,5323297,5571983,6507003,7114319,5207975,6119776,8274563,6098701,5883211,5179881,8333545
+STAT,(NULL),MeminfoPost,40,1439,1439,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,924,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,9798,9798,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624118.936366
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,212710681,4562552,6730138,4494464,7734759,9712577,7573487,5135364,4413884,5601775,5573023,3891213,4625804,4575685,3946004,4935366,3884370,4436377,3955282,3878076,4601400,4187726,5816828,4267754,4660307,6555391,6350450,5805009,5805357,8498342,5829937,4475172,5113971,6568896,5403590,5053050,5041535,5039286,5024346,4467831,4484303
+STAT,(NULL),MeminfoPost,40,1371,1371,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,924,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,9707,9707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624144.143954
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,219359684,3909129,4994205,3882634,5867704,3857142,4577109,8521370,3798054,6176765,4089535,4672847,9355763,8424405,5588510,5720777,3756906,5149438,5486273,5234108,3579660,3945596,5758360,4999718,5552952,5277170,4860857,9249046,4891746,4884310,4231794,3934456,5498088,3938326,8936354,5486251,4793873,5104123,8675295,7648253,5050782
+STAT,(NULL),MeminfoPost,40,1378,1378,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,924,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,9026,9026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624168.670914
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,207504952,3574628,4763615,7066026,4800853,5226865,4906002,5820961,4006201,5372354,4110472,3810775,4489593,3789998,3769782,8064627,3782166,4438498,5433733,3784982,6637029,3817387,4591364,5651999,3970323,4578868,8415443,3980830,4582256,4930999,4604551,8627789,4267208,6762053,4273987,5272350,7316588,6370776,7299090,5264500,5277431
+STAT,(NULL),MeminfoPost,40,1351,1351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,924,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,8377,8377,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624192.562074
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,205911636,3926681,6925988,3922399,4662868,4667601,3861909,4614909,3844867,5574987,3903581,3665039,3740772,4360677,4692472,3654529,3636610,4276558,5080205,3643657,5557666,4025202,6822608,5190168,4879801,4886684,4874212,4218075,6100950,6498686,6675894,7699868,7027693,5501536,8257469,4442324,7649671,6064054,4423037,5415823,7043906
+STAT,(NULL),MeminfoPost,40,1332,1332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,924,924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,8027,8027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624216.096158
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,161046675,19322727,22472419,18963665,19129948,21940552,19240035,20656018,19321311
+STAT,(NULL),MeminfoPost,8,1085,1085,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,14793,14793,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624246.354782
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,155084148,18891049,21738298,18660724,18667156,18583754,18723680,18776368,21043119
+STAT,(NULL),MeminfoPost,8,1045,1045,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,14259,14259,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624276.093581
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,145909409,17808308,20426449,17873012,17969208,17928911,17998593,17927685,17977243
+STAT,(NULL),MeminfoPost,8,981,981,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13480,13480,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624305.009718
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,174168681,20399236,23731990,20036723,20318541,23061004,20183300,23545536,22892351
+STAT,(NULL),MeminfoPost,8,1163,1163,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,16091,16091,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624336.562358
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,173964175,20428473,23325711,20151993,20246298,23178857,20218649,23325481,23088713
+STAT,(NULL),MeminfoPost,8,1162,1162,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,16066,16066,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624368.127882
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,242594872,3082300,2012232,5625322,3741745,4094729,4970266,3809136,1992400,3733899,3880425,1932490,1835189,1825781,2182010,1808697,2343638,1788716,1839315,2215126,2511013,2481716,3044173,3361649,3596471,1982832,3577408,2841013,2927720,3132139,2063839,2278526,6202277,3890871,3105327,4462206,2652898,2258303,2616270,4048264,3075021,5077641,2542827,5632190,2028904,2025612,5984398,2709378,6632352,2015295,3384376,2351660,2502312,2537412,3157777,1840085,2451309,2259936,2181979,3281188,2200534,3119347,3441527,2931377,1997863,5095316,1992964,1999332,2850023,2526846,2746973,4513313,3051409,2917364,3049428,2642325,2820983,2724314,2806376,2802697,2944578
+STAT,(NULL),MeminfoPost,80,1540,1540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,964,964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11500,11500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624395.186231
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,242038275,2930615,2022944,1998626,2623936,2983246,2748814,3988679,3383740,2848547,2967183,2391184,2164476,2929863,2218612,2202839,5130081,2486133,5251672,2470245,2865466,3113407,2032463,3500095,2599209,4096740,3587096,4151970,4042065,8317358,2630235,1913453,2528303,2587777,1761968,2707583,2528129,1919175,1960723,2596942,2541750,2152522,5156396,2974576,5041289,1991873,2608214,3291088,1997721,5073565,3315730,3841334,2468382,2240313,2837208,2463130,2902683,2819980,3267147,2500124,3257335,2596385,3654018,3136824,2003926,3326384,3615876,3422226,2597053,2627381,4127019,6891330,2162389,2177269,3154864,1927613,2520139,2607118,3221636,2172883,2171990
+STAT,(NULL),MeminfoPost,80,1543,1543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,964,964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11474,11474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624422.211390
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,249346857,2131178,2023515,2291909,2788113,4536752,2127225,2295913,2279286,2144743,2202882,4296534,5359664,4192504,5361261,2174272,3399098,2956177,4625174,2181493,1819085,2662822,3038404,5784100,3343606,4058608,2815026,7500335,3251456,2832926,2772251,1956408,1986848,2646488,1457810,2602770,2196426,1972121,2202569,3313556,2741461,3253507,2582860,3087439,2299830,1919412,1907348,2687652,3211853,3580041,2594716,2197543,4672595,4542099,5251478,4907968,3914962,3629947,2203059,4512085,2807866,2680947,2106675,2731359,4853537,2752749,2816300,3963367,2778606,2780797,2310722,2846275,2648032,1987848,4239850,2296118,2663781,3707667,3180894,5711019,2203285
+STAT,(NULL),MeminfoPost,80,1561,1561,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,964,964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11604,11604,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624449.364417
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,246313713,2528216,2387558,8017498,3238861,2254025,2606492,2799949,3349246,4606586,2252913,2481136,2703871,2950115,2097370,2075623,2717858,3404606,4861256,2076262,2079980,2459871,3500070,4460054,3153445,3126758,4161446,2877345,4380945,2772758,2807393,2276595,2894071,2278007,2552414,3064649,2283953,2297260,2270529,2896332,3562346,4591989,2603198,2884878,3173597,2608945,3614439,2597058,2263878,4706199,2880947,2116603,2753508,2424387,4464143,2966618,2076076,2659482,2936248,3312943,4570171,2525893,4551186,2604604,2437955,4537555,3062871,2487100,3066138,2769074,2517364,2561201,5990900,2539760,2296719,3033167,4433282,2856448,2839551,2566897,2865079
+STAT,(NULL),MeminfoPost,80,1605,1605,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,964,964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11455,11455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362624476.394161
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 80 -startNode 1 -delta 2 -algo asyncWithCas /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted.gr -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component-weighted-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,229926062,2073676,2080419,2850144,4599874,4172958,4202016,2008409,2435633,3291448,2251599,2812432,2850535,2209571,2228608,2283871,3256301,2932678,2213818,2201818,2857515,1976830,4756370,2717930,2565787,1953483,2192903,1986096,2706408,5911396,2587662,1984749,2742658,2482962,3131881,2017340,2500600,1953159,2554007,2556166,2344883,2789605,2852889,3138427,2079227,3272788,2396305,4157719,2037093,3064159,3275375,2842953,2852348,4589767,3517558,4563525,3509886,4558637,3509725,3056617,2253103,4511286,2456770,1978446,2563383,1978433,2688871,2334868,3190773,4725679,2363532,2348267,2044670,1985558,2559854,5797996,2689896,2315985,2655016,2668305,2314175
+STAT,(NULL),MeminfoPost,80,1506,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,964,964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,10687,10687,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

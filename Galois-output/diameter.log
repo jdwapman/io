@@ -1,0 +1,2201 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980353.166130
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,8763878,8763878
+STAT,(NULL),MeminfoPost,1,1652,1652
+STAT,(NULL),MeminfoPre,1,1652,1652
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,55998,55998
+STAT,(NULL),TotalTime,1,72427,72427
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980425.802568
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,8763878,8763878
+STAT,(NULL),MeminfoPost,1,1652,1652
+STAT,(NULL),MeminfoPre,1,1652,1652
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,56053,56053
+STAT,(NULL),TotalTime,1,72501,72501
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980498.531252
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,8763878,8763878
+STAT,(NULL),MeminfoPost,1,1652,1652
+STAT,(NULL),MeminfoPre,1,1652,1652
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,55797,55797
+STAT,(NULL),TotalTime,1,72216,72216
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980570.968793
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,8763878,8763878
+STAT,(NULL),MeminfoPost,1,1652,1652
+STAT,(NULL),MeminfoPre,1,1652,1652
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,55921,55921
+STAT,(NULL),TotalTime,1,72353,72353
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980643.537177
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,8763878,8763878
+STAT,(NULL),MeminfoPost,1,1652,1652
+STAT,(NULL),MeminfoPre,1,1652,1652
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,55957,55957
+STAT,(NULL),TotalTime,1,72359,72359
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980716.123429
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,8763878,523607,516563,524852,520625,519127,520357,520391,520465,520237,521097,595432,592956,593873,594080,590711,589505
+STAT,(NULL),MeminfoPost,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,4769,4769,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,21318,21318,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980737.659313
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,8763878,518754,521337,522558,517876,519324,517015,524845,519302,519116,517326,595938,594984,595919,594998,589272,595314
+STAT,(NULL),MeminfoPost,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,4772,4772,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,21222,21222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980759.101992
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,8763878,520817,522280,517416,521773,519608,516461,512937,520434,518307,518397,592788,598526,595769,594784,594935,598646
+STAT,(NULL),MeminfoPost,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,4764,4764,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,21257,21257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980780.567603
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,8763878,519788,517889,519459,519053,520873,520798,522059,518710,520864,522105,592203,593883,593549,592117,594387,596141
+STAT,(NULL),MeminfoPost,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,4788,4788,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,21260,21260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980802.054881
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,8763878,515903,524790,521617,519154,518609,518864,518827,519553,520998,518433,594978,598198,591835,593602,594472,594045
+STAT,(NULL),MeminfoPost,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,1780,1780,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,4751,4751,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,21230,21230,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980823.501651
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,8763878,4372468,4391410
+STAT,(NULL),MeminfoPost,2,1660,1660,0
+STAT,(NULL),MeminfoPre,2,1660,1660,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,28351,28351,0
+STAT,(NULL),TotalTime,2,44781,44781,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980868.491322
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,8763878,4378367,4385511
+STAT,(NULL),MeminfoPost,2,1660,1660,0
+STAT,(NULL),MeminfoPre,2,1660,1660,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,28150,28150,0
+STAT,(NULL),TotalTime,2,44562,44562,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980913.271768
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,8763878,4379768,4384110
+STAT,(NULL),MeminfoPost,2,1660,1660,0
+STAT,(NULL),MeminfoPre,2,1660,1660,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,28353,28353,0
+STAT,(NULL),TotalTime,2,44814,44814,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980958.301325
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,8763878,4376107,4387771
+STAT,(NULL),MeminfoPost,2,1660,1660,0
+STAT,(NULL),MeminfoPre,2,1660,1660,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,28349,28349,0
+STAT,(NULL),TotalTime,2,44861,44861,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981003.379259
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,8763878,4376391,4387487
+STAT,(NULL),MeminfoPost,2,1660,1660,0
+STAT,(NULL),MeminfoPre,2,1660,1660,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,28405,28405,0
+STAT,(NULL),TotalTime,2,44915,44915,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981048.501864
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,8763878,256527,259412,261069,259340,257907,258144,257955,255476,259202,259608,281426,283315,281142,282403,281293,281262,279633,279542,282370,280549,276811,279074,277118,276826,278102,276911,276609,278161,279730,278324,294443,294194
+STAT,(NULL),MeminfoPost,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,4660,4660,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,21113,21113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981069.831593
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,8763878,258150,258893,258935,258569,257839,257972,260709,258926,258637,258906,277694,280353,280453,281257,280323,281322,283421,280522,282666,278623,279409,277941,276737,278859,278422,276217,278762,277495,276308,277199,295237,297122
+STAT,(NULL),MeminfoPost,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,4650,4650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,21082,21082,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981091.127245
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,8763878,259026,257911,259327,257967,261122,257555,257002,259794,256517,256150,283940,280866,282067,282909,280373,281197,279457,281003,280636,282121,276996,278119,278933,277219,278662,278287,278383,276920,279428,277592,293652,292747
+STAT,(NULL),MeminfoPost,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,4631,4631,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,21072,21072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981112.418599
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,8763878,256071,258815,257627,258482,256334,261177,260779,258909,257363,260543,282301,281723,282435,279403,282320,280432,285012,283103,281387,281265,278591,276446,275259,275971,275142,279058,279743,277034,277601,277841,293053,292658
+STAT,(NULL),MeminfoPost,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,4656,4656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,21114,21114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981133.753752
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,8763878,259295,254556,258926,258531,260090,261087,258911,260519,259373,259173,279883,280875,280366,281031,280255,281296,282159,280944,281280,283911,277782,275907,276244,278568,276837,276412,277472,277397,278430,275517,295232,295619
+STAT,(NULL),MeminfoPost,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1908,1908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,4657,4657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,21338,21338,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981155.312888
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,8763878,2189165,2192983,2193095,2188635
+STAT,(NULL),MeminfoPost,4,1676,1676,0,0,0
+STAT,(NULL),MeminfoPre,4,1676,1676,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,14860,14860,0,0,0
+STAT,(NULL),TotalTime,4,31298,31298,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981186.831154
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,8763878,2190158,2195094,2184066,2194560
+STAT,(NULL),MeminfoPost,4,1676,1676,0,0,0
+STAT,(NULL),MeminfoPre,4,1676,1676,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,15078,15078,0,0,0
+STAT,(NULL),TotalTime,4,31547,31547,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981218.605793
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,8763878,2193878,2193088,2193633,2183279
+STAT,(NULL),MeminfoPost,4,1676,1676,0,0,0
+STAT,(NULL),MeminfoPre,4,1676,1676,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,14975,14975,0,0,0
+STAT,(NULL),TotalTime,4,31460,31460,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981250.289969
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,8763878,2182276,2195821,2195921,2189860
+STAT,(NULL),MeminfoPost,4,1676,1676,0,0,0
+STAT,(NULL),MeminfoPre,4,1676,1676,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,14961,14961,0,0,0
+STAT,(NULL),TotalTime,4,31403,31403,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981281.911097
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,8763878,2196178,2155459,2206745,2205496
+STAT,(NULL),MeminfoPost,4,1676,1676,0,0,0
+STAT,(NULL),MeminfoPre,4,1676,1676,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,15003,15003,0,0,0
+STAT,(NULL),TotalTime,4,31454,31454,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981313.580255
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,8763878,209702,209913,209591,212421,209370,207531,209586,208509,208315,209945,223483,224496,222514,223448,220705,223297,223469,224607,221237,222151,224710,221809,223367,224771,222462,221423,222493,220999,222190,222018,225340,222017,224023,221396,220312,220220,221638,219554,219733,219113
+STAT,(NULL),MeminfoPost,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,5446,5446,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,21935,21935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981335.740354
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,8763878,208903,211466,211305,212016,212084,209600,207950,209257,209516,210668,223704,224788,222509,220364,222700,224293,222161,221813,222922,223723,221810,224394,221722,222713,223811,221525,223113,221697,220040,221592,206995,224689,221411,222493,221554,221552,221939,222923,222731,223432
+STAT,(NULL),MeminfoPost,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,5616,5616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,22142,22142,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981358.108792
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,8763878,209827,208894,210027,210799,208763,210593,208414,208522,210491,210143,223528,222082,225009,224334,223766,222900,221270,222241,221382,222846,223696,222711,220270,224661,222699,222585,222598,222037,221812,221542,221704,220939,220049,223457,222360,220593,219615,222133,220987,221599
+STAT,(NULL),MeminfoPost,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,5453,5453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,22065,22065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981380.386984
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,8763878,209666,213158,209484,208868,208604,212354,212030,209059,207591,210071,222800,222439,221301,224041,223797,224065,221409,222752,221473,220171,220233,222410,221827,223186,222516,223234,221971,219409,219869,222133,222042,223167,222818,222350,224565,221615,219443,221122,221864,222971
+STAT,(NULL),MeminfoPost,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,5449,5449,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,22036,22036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981402.645011
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,8763878,209903,208859,210009,210697,208684,210524,209717,209797,209838,210986,221835,222620,220967,220762,222291,223137,221327,222227,222809,222665,222957,222244,221251,220988,225155,223592,222166,220101,221548,223141,223230,224092,221784,221992,218789,222844,222670,222214,221608,221858
+STAT,(NULL),MeminfoPost,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1964,1964,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,5451,5451,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,22001,22001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981424.855672
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,8763878,1094728,1096775,1093202,1094702,1095803,1097534,1096254,1094880
+STAT,(NULL),MeminfoPost,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,9828,9828,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,26297,26297,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981451.371755
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,8763878,1106286,1093950,1092314,1095476,1091006,1094950,1094762,1095134
+STAT,(NULL),MeminfoPost,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,9823,9823,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,26281,26281,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981477.880539
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,8763878,1094791,1092945,1096887,1096744,1095351,1095398,1096320,1095442
+STAT,(NULL),MeminfoPost,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,9894,9894,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,26402,26402,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981504.496803
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,8763878,1094162,1097231,1096392,1095381,1092946,1092792,1096233,1098741
+STAT,(NULL),MeminfoPost,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,9829,9829,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,26374,26374,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981531.088151
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,8763878,1077358,1097459,1096889,1097861,1098678,1097842,1099389,1098402
+STAT,(NULL),MeminfoPost,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,1708,1708,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,9827,9827,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,26336,26336,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981557.647051
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,8763878,109161,107032,107552,107833,107151,105972,105346,106096,105308,105774,109990,111765,112471,111775,111269,109425,111900,111090,110641,109574,110982,110685,110842,112422,110686,111470,111338,110385,109934,111318,111626,109119,109782,111011,109155,110860,111385,110321,110009,109600,106755,106836,105985,105448,107188,105958,106426,105878,105684,105533,110304,109394,111084,110687,110767,109940,110167,110655,110076,110897,109695,110834,109637,111700,109406,111549,110030,110073,111493,110394,109859,109953,110014,112190,110767,110930,110680,109699,110816,108442
+STAT,(NULL),MeminfoPost,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,6018,6018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,22823,22823,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981580.687975
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,8763878,107788,104780,105217,106216,103194,106592,105503,105889,104798,105373,111843,109894,110181,111201,110534,109605,110007,109464,108942,111990,110202,110397,111071,109563,110295,109300,111597,108200,110209,112038,109131,109028,109037,109975,109194,111100,110051,109990,109817,110766,109478,106333,104833,107011,104691,105651,104118,105387,105854,105908,111657,111119,111678,111920,111020,112240,111032,110467,110716,111898,110018,111697,111649,111326,111985,111645,112814,112418,111673,110881,112562,110948,111729,109319,111539,111977,112501,112003,110237,111974
+STAT,(NULL),MeminfoPost,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,6046,6046,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,23023,23023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981603.924761
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,8763878,108415,106552,105778,104855,104088,105611,107335,107035,104972,105546,109733,110930,111089,110501,110012,112597,110516,110985,110993,109933,109663,110656,111566,110572,109413,108907,111642,111755,112812,111277,109976,109325,110477,110088,110302,111044,110271,109124,110894,110257,109254,105405,104890,106435,105962,106642,107564,107199,104996,106003,112463,112131,111625,110326,110632,110533,110840,111653,110020,110841,112057,110135,110902,112125,111456,110974,110472,109846,109904,109952,109517,109753,110094,109559,111648,111118,110305,111316,109494,110340
+STAT,(NULL),MeminfoPost,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,6063,6063,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,22896,22896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981627.059057
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,8763878,108181,106513,107934,105780,106453,106962,104437,103860,107381,108396,111820,110524,110469,111266,109703,108846,111300,111511,112165,109860,110186,112980,110820,108269,108473,110902,110154,112724,111009,112241,108214,109581,109695,112151,110150,111278,111289,111161,108154,109169,110225,105999,106575,105836,107029,106625,106611,103773,106753,106803,111448,111442,110341,111168,108787,107955,112552,111410,110446,111743,111290,111957,110908,108006,109324,113616,110008,109256,111901,111141,108688,109282,110715,111357,109392,111693,110539,111253,109653,108417
+STAT,(NULL),MeminfoPost,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,6074,6074,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,22888,22888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362981650.170763
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+ecc(v) = 13 ecc(u) = 14
+ecc(v) = 14 ecc(u) = 12
+Estimated diameter: 12
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,8763878,107518,105294,105405,105067,105670,103718,103797,104919,105857,105064,111299,112201,112407,111049,111038,109367,110504,111330,110606,111636,111022,112131,111567,111340,111045,110612,111889,111147,110745,111301,111799,109922,110917,110632,109684,111375,110306,110271,110941,110104,107019,105578,105684,104169,104942,104858,105216,104758,104861,104386,112196,109910,111192,110706,110349,110640,110722,110047,110938,111264,110201,109875,110709,111458,112240,110315,111248,112332,111211,111213,112698,109444,110917,111698,110669,110644,111580,110988,110906,111601
+STAT,(NULL),MeminfoPost,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,2324,2324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,6065,6065,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,22932,22932,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994329.393121
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,95789433,95789433
+STAT,(NULL),MeminfoPost,1,820,820
+STAT,(NULL),MeminfoPre,1,820,820
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,21802,21802
+STAT,(NULL),TotalTime,1,23576,23576
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994353.231920
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,95789433,95789433
+STAT,(NULL),MeminfoPost,1,820,820
+STAT,(NULL),MeminfoPre,1,820,820
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,21686,21686
+STAT,(NULL),TotalTime,1,23471,23471
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994376.918027
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,95789433,95789433
+STAT,(NULL),MeminfoPost,1,820,820
+STAT,(NULL),MeminfoPre,1,820,820
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,21868,21868
+STAT,(NULL),TotalTime,1,23652,23652
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994400.785202
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,95789433,95789433
+STAT,(NULL),MeminfoPost,1,820,820
+STAT,(NULL),MeminfoPre,1,820,820
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,21755,21755
+STAT,(NULL),TotalTime,1,23542,23542
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994424.543005
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 1 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,95789433,95789433
+STAT,(NULL),MeminfoPost,1,820,820
+STAT,(NULL),MeminfoPre,1,820,820
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,21698,21698
+STAT,(NULL),TotalTime,1,23474,23474
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994448.225385
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,95789433,6375644,6061277,6174959,6156460,6025480,6024977,6109365,6132641,6032943,6039296,5850804,5694856,5711202,5755744,5740050,5903735
+STAT,(NULL),MeminfoPost,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2707,2707,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,4661,4661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994453.106992
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,95789433,6491879,6114311,6072358,6112429,6012007,6083217,6129391,6049833,6096846,6222420,5767023,5724038,5857160,5650067,5610512,5795942
+STAT,(NULL),MeminfoPost,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2712,2712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,4675,4675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994458.012765
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,95789433,6412388,6053574,5982772,6119579,5959114,6159791,6074492,6220896,6121384,6033920,5745619,5884307,5714195,5760412,5722689,5824301
+STAT,(NULL),MeminfoPost,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2735,2735,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,4698,4698,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994462.932796
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,95789433,6370548,6184859,6107614,6026591,6315368,6015972,6061121,6071875,6112186,6084809,5721558,5754942,5794233,5678993,5750477,5738287
+STAT,(NULL),MeminfoPost,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2760,2760,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,4721,4721,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994467.880009
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 16 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,95789433,6411133,6108318,6155215,5952622,5967855,6179761,6120214,6198579,6092068,6179961,5752585,5650875,5761567,5750411,5754757,5753512
+STAT,(NULL),MeminfoPost,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,948,948,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2732,2732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,16,4690,4690,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994472.791657
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,95789433,47938615,47850818
+STAT,(NULL),MeminfoPost,2,828,828,0
+STAT,(NULL),MeminfoPre,2,828,828,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,11452,11452,0
+STAT,(NULL),TotalTime,2,13247,13247,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994486.247087
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,95789433,47981218,47808215
+STAT,(NULL),MeminfoPost,2,828,828,0
+STAT,(NULL),MeminfoPre,2,828,828,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,11447,11447,0
+STAT,(NULL),TotalTime,2,13231,13231,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994499.697938
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,95789433,48206369,47583064
+STAT,(NULL),MeminfoPost,2,828,828,0
+STAT,(NULL),MeminfoPre,2,828,828,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,11450,11450,0
+STAT,(NULL),TotalTime,2,13246,13246,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994513.153089
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,95789433,47814002,47975431
+STAT,(NULL),MeminfoPost,2,828,828,0
+STAT,(NULL),MeminfoPre,2,828,828,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,11389,11389,0
+STAT,(NULL),TotalTime,2,13181,13181,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994526.551021
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 2 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,95789433,47985749,47803684
+STAT,(NULL),MeminfoPost,2,828,828,0
+STAT,(NULL),MeminfoPre,2,828,828,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,11364,11364,0
+STAT,(NULL),TotalTime,2,13159,13159,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994539.924426
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,95789433,3492756,3236120,3346146,3344109,3206643,3231905,3246994,3187871,3267100,3262989,2898462,2928955,2821408,2755138,2889549,2753248,2901597,2799632,3004061,2789207,2925894,2934405,2885520,2767049,2764973,2751763,2748143,2885863,2922431,2900509,2932435,3006558
+STAT,(NULL),MeminfoPost,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2563,2563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,4644,4644,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994544.811772
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,95789433,3545063,3344759,3238713,3228384,3140063,3265579,3125341,3103453,3226029,3424453,2927150,2863444,2862747,2906107,2907129,2929278,2990109,2852024,2915995,2993695,2807184,2930088,2936194,2679676,2662784,2930064,2841446,2685830,2841164,2840778,2832235,3012475
+STAT,(NULL),MeminfoPost,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2546,2546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,4637,4637,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994549.692604
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,95789433,3503106,3252808,3318735,3229914,3366982,3340599,3303816,3238460,3214612,3350258,2983353,2914872,2883701,2868303,2805890,2909096,2865345,2766223,3028310,2870100,2889159,2876698,2681517,2770816,2747075,2815581,2717158,2814673,2843584,2833412,2959916,2825361
+STAT,(NULL),MeminfoPost,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2556,2556,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,4648,4648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994554.588793
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,95789433,3444064,3285799,3165797,3107206,3225496,3325092,3350125,3151798,3127656,3369496,2779427,2897390,2893965,3064650,2822164,3006232,2994284,3018743,3130380,2853308,2835253,2914568,2677823,2785369,2787248,2687908,2771912,2848234,2735540,2914847,2920298,2897361
+STAT,(NULL),MeminfoPost,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2563,2563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,4645,4645,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994559.482620
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 32 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,95789433,3556146,3178199,3309585,3194742,3281295,3351884,3173348,3152455,3214865,3291718,2967894,2938888,2787552,2940973,2916453,2976341,2844493,2825052,2857316,2922201,2885941,2986190,2875514,2772917,2773386,2916926,2719813,2737080,2763515,3005453,2879729,2791569
+STAT,(NULL),MeminfoPost,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,1076,1076,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2561,2561,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,32,4659,4659,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994564.388886
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,95789433,24043846,23987349,23984583,23773655
+STAT,(NULL),MeminfoPost,4,844,844,0,0,0
+STAT,(NULL),MeminfoPre,4,844,844,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,6138,6138,0,0,0
+STAT,(NULL),TotalTime,4,7936,7936,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994572.542367
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,95789433,24119712,24026961,23918940,23723820
+STAT,(NULL),MeminfoPost,4,844,844,0,0,0
+STAT,(NULL),MeminfoPre,4,844,844,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,6135,6135,0,0,0
+STAT,(NULL),TotalTime,4,7928,7928,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994580.701574
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,95789433,24013036,24062041,23928410,23785946
+STAT,(NULL),MeminfoPost,4,844,844,0,0,0
+STAT,(NULL),MeminfoPre,4,844,844,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,6139,6139,0,0,0
+STAT,(NULL),TotalTime,4,7939,7939,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994588.847342
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,95789433,24370242,23900585,23826362,23692244
+STAT,(NULL),MeminfoPost,4,844,844,0,0,0
+STAT,(NULL),MeminfoPre,4,844,844,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,6258,6258,0,0,0
+STAT,(NULL),TotalTime,4,8051,8051,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994597.105347
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 4 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,95789433,24046948,23966822,23947094,23828569
+STAT,(NULL),MeminfoPost,4,844,844,0,0,0
+STAT,(NULL),MeminfoPre,4,844,844,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,6142,6142,0,0,0
+STAT,(NULL),TotalTime,4,7941,7941,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994605.259347
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,95789433,2951987,2851588,2751622,2797761,2738488,2801456,2630825,2721199,2716158,2865817,2281459,2398469,2609028,2470621,2511529,2429755,2554996,2483822,2440363,2497471,2137612,2403152,2367057,2425950,2275399,2313549,2246801,2219746,2289901,2190369,1957103,2226079,1833498,2182246,2037414,1997905,2005237,1986349,2078144,2111508
+STAT,(NULL),MeminfoPost,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2577,2577,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,4752,4752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994610.272587
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,95789433,3051771,2777523,2672716,2737415,2792212,2823171,2746847,2665311,2778483,2763091,2190482,2415643,2397802,2397801,2365262,2326983,2376937,2311303,2420673,2549050,2234835,2415146,2250989,2417297,2438754,2323318,2340819,2332949,2248642,2338606,2093548,2121440,2037470,2191789,2214790,1978285,1965474,2030244,2138523,2116039
+STAT,(NULL),MeminfoPost,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2569,2569,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,4742,4742,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994615.280580
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,95789433,3022045,2831665,2763790,2759947,2593806,2754318,2758470,2703264,2741997,2966385,2671815,2558604,2571326,2403880,2421404,2304272,2392489,2250417,2381257,2519173,2393214,2241797,2195498,2355333,2255986,2297560,2275956,2213543,2327355,2249051,2082015,2036113,2206956,1934056,1934323,1929466,2178213,2001707,2195395,2115572
+STAT,(NULL),MeminfoPost,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2571,2571,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,4737,4737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994620.268618
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,95789433,3187592,2783249,2755752,2700696,2692265,2830380,2733919,2772063,2738224,2719730,2462838,2422173,2355164,2319732,2414535,2304091,2405242,2318601,2275008,2473073,2333789,2457698,2309900,2203619,2404992,2296897,2320584,2299134,2450521,2253150,1969381,2118229,2073005,1974437,2056601,2060240,2114045,2186489,2096872,2145523
+STAT,(NULL),MeminfoPost,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2549,2549,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,4729,4729,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994625.251046
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 40 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,95789433,2899953,2808853,2802148,2747297,2799389,2729776,2746274,2824036,2761672,2905655,2372939,2380961,2548228,2233396,2445005,2411560,2454032,2272107,2379947,2345152,2447909,2406766,2347666,2251326,2248533,2181173,2231839,2226283,2401951,2428781,2123557,2206563,2141279,1935500,2103257,2079700,1943462,2173591,2010192,2031725
+STAT,(NULL),MeminfoPost,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,1164,1164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2557,2557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,4724,4724,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994630.230897
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,95789433,12181379,12003637,11952204,11864407,11978436,11902113,12009403,11897854
+STAT,(NULL),MeminfoPost,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,3665,3665,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,5535,5535,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994635.988933
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,95789433,12099383,12052377,11969080,11918458,11912924,11888154,11986294,11962763
+STAT,(NULL),MeminfoPost,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,3669,3669,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,5537,5537,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994641.738284
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,95789433,12120566,11974687,11913405,11906993,11952047,11984667,12025153,11911915
+STAT,(NULL),MeminfoPost,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,3680,3680,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,5561,5561,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994647.511024
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,95789433,12140318,12071848,11955933,11984361,11934015,11923778,11842759,11936421
+STAT,(NULL),MeminfoPost,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,3678,3678,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,5540,5540,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994653.261789
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 8 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,95789433,12146319,11902388,12078897,11949756,11917250,11807996,11971148,12015679
+STAT,(NULL),MeminfoPost,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,876,876,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,3672,3672,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,5544,5544,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994659.017489
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,95789433,1850081,1715673,1640628,1696582,1471119,1582557,1760273,1381424,1553648,1750565,1428437,1428482,1433788,1358166,1188478,1323624,1284217,1290614,1367420,1342729,1074778,1000028,1129007,1124502,1049884,1160497,1098326,977065,1309011,1292053,577345,585689,630813,712517,662109,552630,457199,658494,651973,1019957,1777009,1486565,1520087,1653437,1740736,1621618,1509062,1663161,1537844,1654332,1328250,1368099,1305197,1408413,1214868,1329863,1061493,1353051,1379205,1647996,1195270,1147965,1045726,1130652,1062056,1030399,1142482,1174988,1185397,1269814,791607,673858,596350,646291,679672,674741,687568,716220,864707,941002
+STAT,(NULL),MeminfoPost,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,3177,3177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,5822,5822,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994665.137062
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,95789433,1921822,1529956,1708075,1629057,1449277,1683021,1532419,1616010,1554291,1635600,1200742,1200148,1382594,1383399,1205827,1309058,1244729,1441980,1509779,1540780,1293470,1151423,1082293,973324,1014384,868849,1046093,832818,1121156,1060709,692853,709567,542720,596917,700299,716443,593143,713388,800454,678452,1843421,1463011,1565593,1790521,1668929,1743844,1671148,1666459,1557840,1587926,1602268,1264857,1320955,1517228,1189915,1341315,1309917,1384228,1596958,1361974,1328149,1311006,1219641,1296662,987036,1123968,933036,936586,1152259,1175863,848324,770955,736871,591398,618736,678456,695587,581360,699037,788877
+STAT,(NULL),MeminfoPost,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,3174,3174,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,5809,5809,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994671.248806
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,95789433,1973069,1511553,1641366,1565883,1504049,1579577,1715451,1590933,1516136,1565100,1250816,1337156,1409552,1324305,1356267,1271351,1390806,1270937,1369938,1301345,1133970,1269202,1239312,1118997,1110087,1037478,967481,1058403,1100012,1167891,729146,613378,610787,749305,644057,570561,673405,644577,733280,715414,1629230,1563569,1665813,1486233,1643668,1702072,1620786,1660235,1633471,1496217,1562283,1354816,1423865,1180538,1323918,1412665,1380964,1355436,1310285,1351252,1242281,1132691,1292370,1056638,1100959,1226917,1228497,980396,1162840,1172658,734120,867911,692900,499946,609886,686222,543144,724003,887603,857802
+STAT,(NULL),MeminfoPost,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,3122,3122,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,5785,5785,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994677.351942
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,95789433,1982279,1602183,1743829,1612958,1473264,1514725,1471518,1556708,1811781,1567291,1278543,1444936,1276245,1522673,1236772,1288359,1218393,1377106,1254697,1555543,1208863,1219485,1098953,943655,1044368,940556,1197564,1101641,1079876,1034271,922071,778297,802556,813917,767540,686528,633158,624991,702406,720565,1747419,1638310,1541334,1645766,1660566,1421193,1690265,1661831,1565575,1575136,1367423,1498483,1348812,1522130,1365556,1490809,1297762,1222696,1256663,1225183,981081,1191556,943747,1092413,1052235,1119905,919156,1082874,1152217,1212555,741473,795591,928727,598693,616055,781796,702601,724965,660867,636950
+STAT,(NULL),MeminfoPost,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,3136,3136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,5774,5774,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994683.425377
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Diameter Estimation
+Estimate the diamter of a graph
+
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/diameter -t 80 -startNode 1 -algo simple /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+ecc(v) = 6262 ecc(u) = 8263
+ecc(v) = 8263 ecc(u) = 8440
+ecc(v) = 8440 ecc(u) = 8440
+Estimated diameter: 8440
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,95789433,1853921,1576461,1492760,1467107,1674418,1591646,1539099,1754299,1752925,1514521,1568413,1500981,1247533,1581814,1200536,1192536,1251543,1466239,1383723,1464393,1220123,1197761,1292823,1033610,1017848,1127027,1357211,1002611,958937,1052181,914338,710212,753484,629381,676118,517271,654638,697261,730630,767499,1773277,1440426,1597247,1513152,1744564,1703562,1574296,1573604,1534868,1615533,1348605,1332900,1329564,1358701,1368060,1384115,1323886,1413226,1426235,1359621,1027310,1377060,1041169,898685,989299,1244100,1184063,928503,1119451,1153070,617213,765984,689728,680416,544047,705631,634775,626232,617340,844083
+STAT,(NULL),MeminfoPost,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,1524,1524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,3116,3116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,80,5771,5771,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

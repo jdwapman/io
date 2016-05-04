@@ -1,0 +1,15 @@
+4 May 2016
+
+Galois logs from Figure 9 and 10, "Parallel Graph Analytics",  Andrew Lenharth, Donald Nguyen, and Keshav Pingali, CACM May 2016, http://dx.doi.org/10.1145/2901919
+
+Andrew Lenharth: "I believe all numbers were from 40 threads (which is the core count on that machine)."
+
+"I should also mention that this is the classic pagerank implementation, not a good (asynchronous, worklist-drive, residual-based) one which should do 3-10x better."
+
+JDO question: "Presuming runtime is given by
+
+STAT,(NULL),Time,16,2294,2294,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+where the "16" is the number of threads."
+
+AL reply: "Yes, the time line.  It is a 4-cpu, 10-core machine."

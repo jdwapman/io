@@ -1,0 +1,1840 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362781456.896763
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,1912051201,1912051201
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,194,194
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,109014,109014
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362781672.096492
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,1912051201,1912051201
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,194,194
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,87153,87153
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362781768.053010
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,1912051201,1912051201
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,194,194
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,87174,87174
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362781863.957569
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,1912051201,1912051201
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,194,194
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,86994,86994
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362781959.614403
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,1912051201,1912051201
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,194,194
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,87215,87215
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782055.496246
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,1912051201,119110430,120246519,120251008,119283163,119679633,119599354,119646887,120035059,120104713,120672571,118891463,119507975,119299328,118340629,118829522,118552947
+STAT,(NULL),Iterations,16,51161011,3207228,3237724,3220604,3197148,3206332,3188412,3170716,3223516,3221404,3203228,3200412,3207420,3173468,3176508,3173052,3153839
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,19822,19822,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782083.953824
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,1912051201,120599821,120681167,120772657,121167718,121214850,121855907,122329624,119906937,121289524,121219338,94713319,121050462,120930947,121085137,121295998,121937795
+STAT,(NULL),Iterations,16,51161011,3216540,3198716,3241660,3221116,3231580,3280860,3289884,3209020,3266268,3268764,2521916,3232540,3242076,3247772,3227228,3265071
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,21610,21610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782114.226409
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,1912051201,123440892,123804683,123698716,123810408,124161795,124223852,124733876,123136436,123980739,124046506,91088809,116547258,116447102,116060907,116344338,116524884
+STAT,(NULL),Iterations,16,51161011,3320092,3284764,3303900,3328668,3340764,3288060,3348924,3293340,3326556,3329852,2414428,3107324,3108796,3102588,3140668,3122287
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,13698,13698,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782136.599591
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,1912051201,121498894,122198369,122692906,120959755,121891167,121684310,121552435,121855792,122276149,122021876,99616534,119023402,119285463,118196548,118756858,118540743
+STAT,(NULL),Iterations,16,51161011,3271548,3242940,3329084,3220092,3255068,3249276,3244924,3271836,3295740,3218460,2666364,3198588,3193628,3148796,3163580,3191087
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,18668,18668,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782163.934530
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,1912051201,120173393,121315421,121656077,120561142,121036051,121237659,121265946,121257313,121546619,121897960,101824343,120072048,119772352,119359112,119701803,119373962
+STAT,(NULL),Iterations,16,51161011,3221788,3213756,3260156,3228188,3235228,3267260,3258652,3250780,3257276,3239452,2736092,3227964,3182748,3212284,3214972,3154415
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,20379,20379,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782192.997910
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,1912051201,954803643,957247558
+STAT,(NULL),Iterations,2,51161011,25488218,25672793
+STAT,(NULL),MeminfoPost,2,194,194,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,43549,43549,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782245.205373
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,1912051201,958964448,953086753
+STAT,(NULL),Iterations,2,51161011,25631834,25529177
+STAT,(NULL),MeminfoPost,2,194,194,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,43624,43624,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782297.631411
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,1912051201,957146535,954904666
+STAT,(NULL),Iterations,2,51161011,25613402,25547609
+STAT,(NULL),MeminfoPost,2,194,194,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,43562,43562,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782349.843894
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,1912051201,956601620,955449581
+STAT,(NULL),Iterations,2,51161011,25569658,25591353
+STAT,(NULL),MeminfoPost,2,194,194,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,43361,43361,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782401.904380
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,1912051201,955808288,956242913
+STAT,(NULL),Iterations,2,51161011,25573690,25587321
+STAT,(NULL),MeminfoPost,2,194,194,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,43435,43435,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782454.043657
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,1912051201,58374576,58236620,58464892,57885659,58238038,58175450,58358311,57909277,57913611,58040236,57888947,57955274,58183895,57687960,58310037,57805997,58001914,57730349,57614212,57676454,59328962,60016112,60391388,60043354,60614058,60383065,60131494,59789407,59831135,59769963,75582611,75717943
+STAT,(NULL),Iterations,32,51161011,1552446,1564574,1576638,1552862,1541438,1551870,1566238,1537726,1559006,1560318,1573598,1565054,1562942,1545950,1548222,1524222,1548478,1534942,1551102,1548990,1584222,1604318,1621566,1613342,1603486,1606430,1617438,1586302,1603678,1583166,2030558,2039889
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,26909,26909,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782489.577401
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,1912051201,52265677,52323449,52493668,52560341,52434586,52976407,52389641,52652104,52747185,52362908,57873274,57860745,57812246,57971836,57932176,58251733,57773391,58264783,58048754,57907722,61881816,62532549,62616542,62824657,62806750,63152435,62415061,63071610,63066304,62383030,90382712,90015109
+STAT,(NULL),Iterations,32,51161011,1408830,1408126,1400638,1407070,1407262,1404894,1380958,1397054,1418526,1422718,1551998,1539966,1541342,1549406,1557918,1572926,1538814,1569310,1548734,1559614,1659742,1674750,1645918,1674878,1678750,1688606,1652638,1684574,1669982,1684862,2414654,2445553
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,59870,59870,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782558.093545
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,1912051201,52503587,52535656,52597438,52561461,52806541,53106843,53058550,53180577,52492571,52836193,57805469,57757234,57773352,57601554,57841536,57916787,58001406,58090961,57476159,58273218,61896891,62787762,62801712,62588354,62815070,63159161,63109195,63266122,62709291,63364565,88608226,88727759
+STAT,(NULL),Iterations,32,51161011,1395550,1405470,1401566,1414718,1430142,1428446,1404766,1426814,1389982,1421598,1530654,1553630,1551326,1542814,1554398,1554942,1554206,1571454,1536606,1558590,1637438,1681918,1675166,1658110,1663358,1691102,1688446,1689438,1682078,1696862,2389310,2380113
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,58135,58135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782624.878330
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,1912051201,52532629,52537472,52608221,52656632,52792005,52822633,53080088,52598753,52716673,53028906,57911235,58023078,57961336,57890278,58034713,58220584,58330409,58007208,58002022,58256161,61931905,62393951,62529261,62346055,62610291,62964896,63028323,62527288,62628024,62905227,89139148,89035796
+STAT,(NULL),Iterations,32,51161011,1407902,1407710,1406302,1406014,1405662,1417342,1418686,1417726,1409950,1411262,1552510,1545982,1542270,1554622,1565758,1561054,1550590,1565886,1570110,1547902,1661790,1655838,1663646,1664894,1663102,1675998,1679326,1688638,1680862,1679166,2397662,2384849
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,59858,59858,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782693.468838
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,1912051201,52745475,52621177,52973245,52428844,52694567,53111586,53204799,52426116,52921211,53016646,57164363,57380965,57670894,57246366,57297389,57670742,58038996,57467644,57697300,57436346,61758443,62493232,62506856,62687084,62651099,62859416,63026257,62226601,62646337,62691895,91587300,91702010
+STAT,(NULL),Iterations,32,51161011,1406142,1429566,1407358,1416062,1416350,1421406,1418046,1408606,1419294,1402334,1533438,1529790,1539614,1546206,1563966,1516958,1535742,1529374,1543070,1561342,1638270,1674974,1660446,1659646,1670206,1692958,1692894,1643006,1674142,1684286,2454590,2470929
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,60970,60970,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782763.099266
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,1912051201,478895752,477889475,477411792,477854182
+STAT,(NULL),Iterations,4,51161011,12854637,12778381,12723021,12804972
+STAT,(NULL),MeminfoPost,4,196,196,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,22309,22309,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782794.130766
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,1912051201,479535023,474012201,479678470,478825507
+STAT,(NULL),Iterations,4,51161011,12839597,12631213,12855341,12834860
+STAT,(NULL),MeminfoPost,4,196,196,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,22306,22306,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782825.106573
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,1912051201,478595998,479096051,478131550,476227602
+STAT,(NULL),Iterations,4,51161011,12816173,12790925,12777037,12776876
+STAT,(NULL),MeminfoPost,4,196,196,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,22247,22247,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782856.036320
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,1912051201,477805724,478978347,477738765,477528365
+STAT,(NULL),Iterations,4,51161011,12772749,12800461,12775181,12812620
+STAT,(NULL),MeminfoPost,4,196,196,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,22211,22211,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782886.900814
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,1912051201,477572610,478440771,478767494,477270326
+STAT,(NULL),Iterations,4,51161011,12744909,12836013,12839853,12740236
+STAT,(NULL),MeminfoPost,4,196,196,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,22214,22214,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782917.775151
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,1912051201,51747182,52041194,51984252,51739136,51664212,51604010,51903037,51891038,51827188,52192629,47738780,47748307,47616074,47571055,47664500,47709635,47319143,47697006,47731536,48041614,42863347,43637185,43315622,43516563,43415187,43249694,43256197,43744490,43420589,43853488,48168069,48572716,48416962,48369260,47993501,47845843,48139353,47981402,48450269,48409936
+STAT,(NULL),Iterations,40,51161011,1386802,1392882,1362226,1395922,1383314,1378194,1393682,1389842,1404978,1391698,1273426,1261778,1271090,1276594,1280114,1272722,1269202,1273842,1269810,1291378,1130866,1163058,1182258,1175218,1154738,1161042,1176434,1170290,1170610,1175410,1289490,1294930,1275090,1291602,1300946,1290322,1266194,1284338,1287218,1301461
+STAT,(NULL),MeminfoPost,40,204,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,37996,37996,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362782964.438728
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,1912051201,51926478,51581768,52233218,51860461,52038083,52194948,52318222,51904852,52279459,52195468,47781944,48278868,47987303,47600558,48026897,48221422,48097684,47997355,48120748,47851960,42633591,43373761,43388168,42994766,43235108,43198205,43244545,42297899,42980738,43202489,48360840,48221944,48009296,47616981,48080115,48181906,48334702,47785153,48353790,48059508
+STAT,(NULL),Iterations,40,51161011,1382514,1392978,1366354,1407538,1387602,1394802,1394482,1397458,1408242,1408338,1281618,1291538,1298802,1283858,1289714,1292914,1284562,1272946,1268754,1254322,1138706,1153938,1168242,1158546,1157938,1161458,1175026,1135314,1142450,1161362,1294834,1272946,1265682,1284370,1279826,1280498,1289554,1293426,1297618,1289941
+STAT,(NULL),MeminfoPost,40,204,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,42090,42090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783015.212440
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,1912051201,51727286,52017702,51618524,51968568,51875951,52218433,51883109,52010540,51814293,52091348,47822711,47742050,47544574,47662976,47882308,48280949,47626687,47874658,47983186,48214134,42701853,43300702,42974481,43312812,43426852,43695294,43244546,43367878,43269033,43392979,48050028,47866861,47832693,47944435,48338744,48816900,47881978,48199334,48174435,48399376
+STAT,(NULL),Iterations,40,51161011,1386546,1396338,1376146,1394546,1375666,1393554,1373106,1416402,1378706,1390834,1282002,1262994,1273714,1303890,1278322,1296178,1262098,1271570,1287538,1282674,1150706,1144882,1168050,1168306,1179506,1163410,1149042,1172562,1153394,1161970,1291282,1301426,1293682,1262770,1290834,1281682,1284146,1281618,1295474,1283445
+STAT,(NULL),MeminfoPost,40,204,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,39634,39634,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783063.506268
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,1912051201,51659404,52394938,52060141,52119781,52026146,52392417,52174012,52310746,52159361,52545280,48243396,48349820,48191142,47794571,48055312,47811716,48168176,48340490,48036404,48749887,42217164,43053634,43003843,42719902,42778845,42878966,42981094,43139536,43002047,43308366,47603245,47988114,47828912,47961813,48003998,47736929,47918070,48237014,47828543,48278026
+STAT,(NULL),Iterations,40,51161011,1385522,1405618,1422002,1389938,1361778,1385202,1395858,1406674,1410930,1389298,1278866,1297234,1287730,1229906,1291666,1303186,1284306,1291730,1299570,1293778,1129810,1172434,1159570,1141394,1159602,1152946,1123826,1159954,1174386,1166802,1285554,1266482,1282962,1275474,1272850,1274034,1275250,1292626,1293298,1290965
+STAT,(NULL),MeminfoPost,40,204,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,45011,45011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783117.236050
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,1912051201,52289597,52839314,52665014,52216145,52526883,52660380,52633338,52787587,52512052,53395507,47642295,47986517,48006573,47948065,47272050,47614279,47899094,47908905,47754693,48106500,42233764,42987406,42635928,42637341,42921181,42875169,42782433,43377418,42768501,43125447,47767265,47938719,47988295,47695575,47531272,47682271,48145251,47987016,47917600,48388561
+STAT,(NULL),Iterations,40,51161011,1389522,1423218,1395250,1424050,1406930,1378226,1409970,1425074,1410290,1421650,1289426,1271730,1281810,1269938,1251122,1244082,1283794,1287154,1287698,1293522,1150386,1149042,1151346,1156498,1154162,1142802,1157522,1148178,1141490,1167858,1277842,1299346,1282866,1295314,1269202,1272306,1280466,1282322,1255538,1282069
+STAT,(NULL),MeminfoPost,40,204,204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,33473,33473,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783159.427674
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,1912051201,239976159,237719874,238212707,239246362,238844030,238988773,239416801,239646495
+STAT,(NULL),Iterations,8,51161011,6406295,6363319,6387863,6414935,6370679,6381079,6454327,6382514
+STAT,(NULL),MeminfoPost,8,196,196,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13797,13797,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783181.923263
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,1912051201,240008468,238487013,238791415,239082693,239011748,238546459,238878471,239244934
+STAT,(NULL),Iterations,8,51161011,6463927,6351799,6362903,6441911,6403127,6366711,6374423,6396210
+STAT,(NULL),MeminfoPost,8,196,196,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13611,13611,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783204.187167
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,1912051201,239897211,238451840,239254766,238867058,238398910,238883275,238806465,239491676
+STAT,(NULL),Iterations,8,51161011,6441399,6369271,6384983,6383255,6378487,6395511,6381623,6426482
+STAT,(NULL),MeminfoPost,8,196,196,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13688,13688,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783226.540107
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,1912051201,239667756,238441766,239320179,238653493,239325785,238852903,238900846,238888473
+STAT,(NULL),Iterations,8,51161011,6422039,6351447,6396535,6409495,6388119,6393687,6405271,6394418
+STAT,(NULL),MeminfoPost,8,196,196,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13505,13505,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783248.750713
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,1912051201,239481866,233257251,239404536,239936228,239679946,239483988,239910789,240896597
+STAT,(NULL),Iterations,8,51161011,6435895,6247575,6447415,6390263,6382775,6407735,6409079,6440274
+STAT,(NULL),MeminfoPost,8,196,196,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13632,13632,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783271.032083
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,1912051201,25580354,25517934,25446458,25543238,25398360,25371484,25308105,25625086,25666361,25378647,23687285,23681044,23730638,23694573,23575275,23712722,23574119,23579597,23632452,23714198,22393218,22046243,22318801,22607082,22656054,22410460,22122326,22250126,22388189,22159972,24268153,23978261,23912897,24233466,24103313,24065381,24103826,24165775,24009137,24139841,25600355,25454124,25569040,25683077,25582252,25597689,25355058,25350653,25324806,25493118,23611203,23731491,23706571,23551287,23602430,23615843,23725569,23602590,23603941,23719301,22410806,22340375,22356686,22479869,22548702,22522635,22378514,22498471,22410747,22167476,24114950,24094268,23972266,24224347,24235203,24066785,24146664,23686455,23939944,24225189
+STAT,(NULL),Iterations,80,51161011,687929,681433,690361,691225,681593,690521,685337,685049,685913,664345,638393,636761,635129,640985,627769,625273,638041,628953,637369,641017,600313,592185,586777,604121,600121,590809,593689,597721,608505,584057,645081,648153,653113,647737,658425,656281,635705,640889,650457,642393,683545,689529,669305,689625,679737,679353,683001,664345,691289,675097,631481,629497,635449,632985,639321,639609,623705,630937,640313,631065,601817,599417,593529,609497,608409,607993,597913,592889,593753,578393,645273,641945,650169,638201,660057,630649,649433,607801,637593,647164
+STAT,(NULL),MeminfoPost,80,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,27460,27460,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783307.171399
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,1912051201,25740364,25756216,25748732,25726228,25944122,25970606,25932628,25734976,25794781,25711458,23874594,23891890,23917186,23821718,23929633,24052805,24053817,23994126,24110203,24101209,21718121,22021078,21855513,21943301,21902727,21948700,21859840,21805430,21863573,21820343,23869623,23816726,23880026,23816548,23974124,23999803,24119062,23861702,24022697,23777497,25654204,25807073,26015368,25639221,25843333,25797402,25938750,25764432,25910834,26002436,23951830,23728356,24093562,23888920,24067935,24011989,23907607,24015652,24110404,23956651,21918887,21928536,21914549,21951283,21868707,22023707,22048705,21892615,21975129,21853371,23801968,23943554,23743837,23763476,23947780,23893273,24113817,23775352,23950216,23952754
+STAT,(NULL),Iterations,80,51161011,703513,692921,695353,695801,688761,687321,696313,702713,709689,679481,631833,650105,642073,636409,653177,645113,644953,637273,641465,639641,572025,580025,581081,576377,589753,597945,589209,574617,590681,577369,641913,638617,634937,637721,637977,649401,647033,644825,648313,633785,660697,690009,687353,691801,695097,692345,696441,692633,695417,685017,646873,643769,645433,639865,647545,624633,644121,639225,646009,641465,589305,589145,581049,582841,584505,584953,595641,590233,582489,578745,646649,638521,608697,640569,649881,632025,641177,643801,634681,642844
+STAT,(NULL),MeminfoPost,80,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,35256,35256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783351.161848
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,1912051201,26339236,26328174,26313301,26321736,26654302,26418000,26524112,26224210,26166065,26276315,23948263,24088070,24102760,23942440,24184998,23998717,24096295,24001969,24157397,24006785,21222868,21687385,21661825,21392850,21377768,21610127,21615104,21500841,21652997,21537832,23583200,23725508,23729686,23632260,23793398,23668378,23585086,23232562,23788118,23849782,26395760,26323483,26432034,26091539,26330819,26345660,26437125,26225092,26525863,26436790,24029539,24087982,24133762,23779220,24072637,24127299,24032814,24000286,23910106,24064222,21548367,21446899,21615485,21472482,21397116,21642994,21471828,21466117,21659232,21723655,23674588,23598116,23723828,23546845,23750684,23788143,23773015,23576064,23682644,23770347
+STAT,(NULL),Iterations,80,51161011,690809,713433,689625,696793,693625,711609,705177,711833,716217,714617,643449,643065,648569,644441,640601,638265,654201,649113,647961,646297,564281,571545,579481,577849,580441,580249,569785,577081,570681,566937,634873,624217,632441,640121,625081,630841,629369,611929,632025,637657,711865,706361,710553,704601,708921,706329,710105,703289,708697,698617,655321,637113,641241,646009,623993,646585,656409,642489,648953,645177,562873,566137,586617,573433,582777,576473,571865,560281,587481,575833,629113,628633,634105,638201,642073,638265,642649,635929,644793,634268
+STAT,(NULL),MeminfoPost,80,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,27003,27003,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783386.882917
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,1912051201,26008577,26012270,25783672,26147039,26228556,26025424,25713198,25873881,25811484,25911050,23866021,23719155,23823898,23925719,23830610,24031686,23619789,23855065,23805820,23704944,21941476,21964264,22265547,22021895,22211981,21967814,21589725,22021671,21687513,21999139,23803503,24001603,23960785,24054812,23980747,23876025,23613110,23891114,23854284,23925877,25907107,26093505,26041144,26264230,26234775,26049186,25995523,25711321,25888095,25725322,23834334,23770204,23829974,24032490,23790374,23652542,23600652,23640433,23648142,23779375,21645113,21505857,22026302,22084154,22011780,22008159,21810680,21892764,21862666,22087933,23924638,24002703,23914653,23928114,23897451,23818548,23906128,23868482,23958094,24077511
+STAT,(NULL),Iterations,80,51161011,692345,697625,698841,697049,693817,693593,687033,697465,701529,689657,634937,637209,644953,644857,633273,638361,646649,634841,623801,616601,584537,587449,576121,581433,591001,590937,575577,583449,567769,582617,636921,645337,644665,634393,650457,638777,599641,629081,640313,633977,700089,698297,695513,694009,694873,689593,691961,704889,697337,693593,639065,636601,642105,639481,634329,640729,646009,629785,651897,645913,592985,566713,589401,591577,584377,591545,582073,596057,600473,582937,641497,643353,632793,638105,643065,648441,648665,648249,646329,647420
+STAT,(NULL),MeminfoPost,80,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,27314,27314,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362783422.896804
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 51161011 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,1912051201,25876805,25813458,25843749,26025230,26046337,25971218,25844735,25705013,25730527,25866458,23721775,23712286,23753296,23887715,23645017,23789543,23478537,23683956,23656866,23713528,21963017,21877779,22117559,22377945,22185320,22116801,22115823,21872764,22117496,22029459,23833354,23737851,23926117,23896471,24062043,23891331,23860103,23956241,23791963,23849192,25892849,26072469,25868022,26117942,25892751,25891346,25896153,25833593,25878438,25945946,23708792,23702317,23774542,23794717,23842048,23799778,23688405,23776360,23765761,23533687,22213062,21938427,22069690,22215208,22055418,22292538,22072234,22194192,21859594,22144835,23874115,24005641,23888090,24025383,23938839,23662691,23765878,23832198,24033987,23948587
+STAT,(NULL),Iterations,80,51161011,698841,696089,694393,698457,702905,687481,683641,685593,691737,683033,630489,647033,631417,636345,637561,634009,627481,640857,637849,642041,591065,582777,585497,593241,612217,603001,589561,564985,586553,582489,642425,638137,641497,642617,638201,644665,639001,646393,650297,648313,687673,689849,694265,688441,695417,702425,692473,696601,696185,694937,633817,647993,627897,636057,637945,632537,634585,638713,638745,626937,575385,578489,599449,599641,586489,592921,590745,596313,586937,601209,640281,626809,646969,643961,627577,621401,627961,644441,633625,636732
+STAT,(NULL),MeminfoPost,80,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,21110,21110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787262.281632
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,33761278,33761278
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,136,136
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3490,3490
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787272.848172
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,33761278,33761278
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,136,136
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3484,3484
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787277.821585
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,33761278,33761278
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,136,136
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3482,3482
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787282.805884
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,33761278,33761278
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,136,136
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3484,3484
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787287.798040
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 1 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),EmptyMerges,1,33761278,33761278
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,136,136
+STAT,(NULL),MeminfoPre,1,84,84
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3480,3480
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787292.769501
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,33761278,2100900,2028596,2087703,2075860,2083179,2075216,2078508,2072300,2082932,2089817,2157183,2165842,2166922,2159430,2167704,2169186
+STAT,(NULL),Iterations,16,23947347,1504486,1436230,1477670,1473670,1474054,1472230,1473190,1473126,1477158,1481990,1535014,1533478,1536262,1532838,1532550,1533401
+STAT,(NULL),MeminfoPost,16,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,664,664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787295.084820
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,33761278,2119189,2097814,2099008,2095151,2094117,2099536,2090152,2095047,2106383,2109578,2122096,2125389,2128042,2126619,2127191,2125966
+STAT,(NULL),Iterations,16,23947347,1506214,1483558,1479174,1480614,1479942,1484390,1478310,1478694,1486886,1487014,1523398,1517766,1518374,1515686,1514822,1512505
+STAT,(NULL),MeminfoPost,16,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,678,678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787297.404394
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,33761278,2127379,2113953,2106045,2105683,2105956,2098768,2098083,2102062,2111627,2106132,2109260,2123533,2121369,2105543,2113491,2112394
+STAT,(NULL),Iterations,16,23947347,1503046,1484422,1484134,1474310,1477638,1479398,1474726,1480422,1483878,1485766,1513958,1525158,1525350,1516038,1520134,1518969
+STAT,(NULL),MeminfoPost,16,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,639,639,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787299.682165
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,33761278,2099254,2086795,2080186,2073633,2076981,2082941,2081402,2078093,2091811,2088098,2153598,2163231,2158972,2149526,2151591,2145166
+STAT,(NULL),Iterations,16,23947347,1497094,1480806,1470726,1474022,1469126,1471782,1472902,1472614,1477734,1479814,1543462,1535174,1529222,1523782,1524742,1524345
+STAT,(NULL),MeminfoPost,16,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,654,654,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787301.975066
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 16 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,16,33761278,2107289,2079907,2084378,2087859,2088125,2086859,2080778,2082156,2092517,2090561,2150854,2145980,2144476,2143829,2144415,2151295
+STAT,(NULL),Iterations,16,23947347,1499782,1474054,1474438,1476454,1476614,1472646,1472646,1474822,1477510,1478662,1539718,1528806,1527494,1525606,1524230,1523865
+STAT,(NULL),MeminfoPost,16,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,640,640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787304.280561
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,33761278,16876458,16884820
+STAT,(NULL),Iterations,2,23947347,11966666,11980681
+STAT,(NULL),MeminfoPost,2,136,136,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2087,2087,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787307.842755
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,33761278,17002699,16758579
+STAT,(NULL),Iterations,2,23947347,12036970,11910377
+STAT,(NULL),MeminfoPost,2,136,136,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2103,2103,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787311.432446
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,33761278,16870973,16890305
+STAT,(NULL),Iterations,2,23947347,11970890,11976457
+STAT,(NULL),MeminfoPost,2,136,136,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2089,2089,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787315.009798
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,33761278,16912027,16849251
+STAT,(NULL),Iterations,2,23947347,11977162,11970185
+STAT,(NULL),MeminfoPost,2,136,136,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2086,2086,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787318.603587
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 2 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),EmptyMerges,2,33761278,16876906,16884372
+STAT,(NULL),Iterations,2,23947347,11961034,11986313
+STAT,(NULL),MeminfoPost,2,136,136,0
+STAT,(NULL),MeminfoPre,2,84,84,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2088,2088,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787322.176218
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,33761278,962948,951856,954359,950653,958369,954293,957982,952372,955012,959035,1048351,1043128,1046608,1047986,1038973,1049081,1055376,1038028,1043493,1050751,1009044,1029545,1021684,1030945,1031221,1033523,1027067,1015441,1027804,1036358,1715604,1764388
+STAT,(NULL),Iterations,32,23947347,698051,686403,686243,683299,688355,686275,686787,682979,688067,688131,756995,746307,749379,750531,746499,747651,752803,745315,747779,752675,724643,734691,731747,733123,731811,732771,730147,728451,732483,738883,1111619,1146454
+STAT,(NULL),MeminfoPost,32,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,737,737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787324.559616
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,33761278,1040058,1030371,1030233,1025135,1018488,1032300,1022785,1024487,1023176,1025033,1023531,1031592,1023365,1031372,1026353,1037047,1029515,1025727,1034998,1029047,1008795,1014149,1004861,1009501,1005787,1006460,1008204,1001935,1005353,1005410,1562296,1563914
+STAT,(NULL),Iterations,32,23947347,733315,723011,721571,717379,715491,720547,719075,717987,720995,720195,734627,737763,733731,738627,739043,742595,733859,735939,738179,735939,732451,735011,725635,728291,726819,727043,731267,725091,729475,729603,1039267,1037526
+STAT,(NULL),MeminfoPost,32,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,697,697,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787326.922443
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,33761278,991629,982791,980363,966137,976648,973675,976908,965547,973205,972471,1062012,1056585,1053012,1050210,1053109,1056470,1055522,1045086,1056117,1057476,1002119,1003450,1005503,999672,1007500,1006642,1013207,992699,1009737,1009604,1702257,1703915
+STAT,(NULL),Iterations,32,23947347,709987,697155,696483,692227,697091,694915,698307,690787,698339,696195,762467,754147,751811,745795,748483,750883,751619,747715,750339,753347,721283,722243,723171,721315,723267,721987,724419,720835,724643,724611,1113219,1118262
+STAT,(NULL),MeminfoPost,32,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,783,783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787329.360866
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,33761278,1030174,1018321,1013032,1018912,1018285,1019644,1018114,1011286,1017078,1019820,970943,984578,978395,982167,988783,988837,986888,977353,983533,990940,1036707,1033137,1037349,1044157,1047345,1037289,1046066,1043155,1047478,1046624,1666720,1658168
+STAT,(NULL),Iterations,32,23947347,730275,716291,715139,717987,716323,720355,715971,713091,716227,715459,712547,718563,716611,715139,721347,719683,718979,712995,717731,722659,741699,740323,737795,743939,744867,742179,743907,742851,744163,745923,1085283,1081046
+STAT,(NULL),MeminfoPost,32,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,681,681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787331.692364
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 32 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,32,33761278,1076544,1077044,1062240,1066901,1064016,1064884,1077072,1065388,1069563,1070276,982339,982996,975162,978702,982488,979833,976018,981429,983259,989807,979451,987475,984625,984008,977472,990399,980582,994788,980222,987786,1682308,1726201
+STAT,(NULL),Iterations,32,23947347,750883,742755,737603,735267,736387,736387,743235,736323,738659,739747,724899,719747,716259,718659,719875,717667,715843,716995,720995,722851,717603,721827,721187,718755,718883,721187,716579,726211,719395,726339,1050467,1097878
+STAT,(NULL),MeminfoPost,32,148,148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,732,732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787334.079873
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,33761278,8544732,8326682,8450757,8439107
+STAT,(NULL),Iterations,4,23947347,6064821,5918389,5983029,5981108
+STAT,(NULL),MeminfoPost,4,136,136,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1301,1301,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787336.874754
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,33761278,8429440,8456844,8437168,8437826
+STAT,(NULL),Iterations,4,23947347,5986997,5992117,5985909,5982324
+STAT,(NULL),MeminfoPost,4,136,136,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1292,1292,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787339.637580
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,33761278,8430478,8465639,8431432,8433729
+STAT,(NULL),Iterations,4,23947347,5974741,6002805,5987733,5982068
+STAT,(NULL),MeminfoPost,4,136,136,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1292,1292,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787342.419736
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,33761278,8426813,8448518,8459180,8426767
+STAT,(NULL),Iterations,4,23947347,5986645,5996149,5987893,5976660
+STAT,(NULL),MeminfoPost,4,136,136,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1287,1287,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787345.186100
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 4 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),EmptyMerges,4,33761278,8450176,8457927,8422961,8430214
+STAT,(NULL),Iterations,4,23947347,5990229,5998517,5974197,5984404
+STAT,(NULL),MeminfoPost,4,136,136,0,0,0
+STAT,(NULL),MeminfoPre,4,84,84,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1282,1282,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787347.989899
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,33761278,860407,844894,858426,843458,851253,851892,849970,850342,851817,854115,833295,834401,840616,827952,835171,830245,836410,833032,833534,822166,822357,828149,824845,811990,823669,826287,820146,820746,821851,826864,871813,869797,875199,863556,870858,870029,876279,868697,859972,864778
+STAT,(NULL),Iterations,40,23947347,591228,580380,587516,579772,582652,582620,584060,584700,584604,587964,603388,603612,607356,600156,604316,601948,606716,605148,602940,597276,581820,584540,584124,576412,582876,585884,581532,581340,580156,583708,627100,625340,629660,623036,625212,623772,625340,622556,620636,623951
+STAT,(NULL),MeminfoPost,40,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,632,632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787350.269366
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,33761278,915316,909512,911276,913496,902435,910609,901487,906027,897228,913655,843746,832231,832682,835127,837307,830628,826641,832083,835200,839526,789539,789272,796208,789560,785999,794811,785278,786467,792367,796903,843218,844321,843649,847028,837240,840824,831700,842155,844813,853714
+STAT,(NULL),Iterations,40,23947347,617340,608668,610524,609564,605020,606780,602652,606492,603068,610140,607484,598460,599740,600604,601116,599676,595004,599420,601884,602716,572476,573884,577884,574108,571612,575964,572252,570620,572892,576444,613692,614236,612476,613852,610972,610684,604540,612380,611484,618543
+STAT,(NULL),MeminfoPost,40,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,686,686,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787352.603564
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,33761278,964973,954714,964705,951648,953674,968072,962807,960346,966205,964843,778475,775985,781108,770278,775838,781185,774197,771709,779464,774188,815468,811815,812682,817151,810384,810387,811365,810809,810990,813197,806718,820243,836288,820844,835041,834438,822463,825321,834493,826767
+STAT,(NULL),Iterations,40,23947347,638716,626812,632924,629724,627836,636476,631900,632796,634044,636540,583772,581436,583132,576476,581276,583228,578716,580572,584828,581372,574556,574428,574396,578140,574588,573436,575612,571420,576540,577916,599228,603068,608764,601820,609948,605340,604732,604924,610460,605455
+STAT,(NULL),MeminfoPost,40,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,640,640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787354.895594
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,33761278,870394,886421,877161,880002,875212,873904,879235,877392,884889,876215,849921,848928,844305,846351,846564,845055,846811,846854,850010,845074,807968,800872,808627,797019,805837,796676,809006,804245,806691,803918,851381,847700,846440,844250,849215,841532,844905,843345,849044,851909
+STAT,(NULL),Iterations,40,23947347,597756,599516,597468,596060,596540,594620,598044,596508,597308,595388,613116,612124,612156,611356,612636,610524,611836,613692,613052,612572,570076,569628,570364,566684,568124,566108,571356,569948,571420,569308,618556,615324,616604,615900,616796,616060,615996,612700,616380,617743
+STAT,(NULL),MeminfoPost,40,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,618,618,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787357.170098
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 40 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,40,33761278,887368,870716,879045,887023,886712,882792,884416,871679,878663,877773,828710,836320,828869,825140,835901,839613,829699,830023,833459,833770,830731,830000,827333,830839,830828,836190,824305,830287,834960,833467,834860,833831,835317,829079,837783,832953,818869,837449,827344,837162
+STAT,(NULL),Iterations,40,23947347,600956,590844,596540,598972,598876,598780,595484,593148,596316,593404,606844,611644,604796,603164,609212,609500,605724,606524,609052,609852,585020,585468,580572,583388,581404,582364,580348,584316,582972,585052,608540,609756,607996,604924,612188,608348,601020,610972,606716,606351
+STAT,(NULL),MeminfoPost,40,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,602,602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787359.434538
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,33761278,4250526,4280779,4213325,4210964,4204762,4209206,4192185,4199531
+STAT,(NULL),Iterations,8,23947347,3035435,3046379,2982539,2978827,2979147,2976683,2970667,2977670
+STAT,(NULL),MeminfoPost,8,140,140,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,953,953,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787362.025367
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,33761278,4268805,4275637,4205745,4203546,4194324,4200382,4206820,4206019
+STAT,(NULL),Iterations,8,23947347,3039563,3042155,2981515,2977451,2975755,2978251,2977067,2975590
+STAT,(NULL),MeminfoPost,8,140,140,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,950,950,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787364.585096
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,33761278,4261079,4278059,4211574,4191696,4210684,4209797,4196394,4201995
+STAT,(NULL),Iterations,8,23947347,3035179,3044459,2984235,2969771,2978699,2979883,2976907,2978214
+STAT,(NULL),MeminfoPost,8,140,140,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,955,955,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787367.135136
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,33761278,4272863,4277407,4204375,4196987,4207711,4201432,4196801,4203702
+STAT,(NULL),Iterations,8,23947347,3041611,3042667,2974251,2976523,2978347,2974923,2977515,2981510
+STAT,(NULL),MeminfoPost,8,140,140,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,950,950,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787369.686323
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 8 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,8,33761278,4265316,4250345,4209724,4206423,4211151,4208843,4207695,4201781
+STAT,(NULL),Iterations,8,23947347,3041771,3025451,2983819,2974955,2980267,2979211,2982283,2979590
+STAT,(NULL),MeminfoPost,8,140,140,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,84,84,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,948,948,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787372.246882
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,33761278,437965,432665,427160,428838,437426,433765,430910,436024,435838,433184,389737,399509,391603,391688,397047,394229,397485,397990,398407,396505,383380,389860,387902,386220,386249,388677,385270,383110,384858,390009,469891,473226,471105,475623,475023,470114,476446,469141,470819,475512,432473,429789,431847,435132,441783,442471,435756,435770,438610,431817,394424,394338,394991,393429,393894,391558,391067,393225,391248,394088,383078,388575,384360,387223,389258,390818,387982,384100,386948,384643,471786,467355,473434,471806,476526,470874,477326,469481,473401,474184
+STAT,(NULL),Iterations,80,23947347,308078,304622,305070,302446,309166,307630,306350,310318,308206,307022,282190,285390,282862,282542,283310,282158,283246,284622,286158,285806,291886,297550,292718,292590,292942,295342,293902,292622,294158,295662,311342,313582,312366,312974,313454,311278,315854,310062,311374,312462,308526,304366,305806,307854,311278,312430,306062,307086,307150,305678,284238,283470,284942,282670,283278,282830,281678,281902,281934,283886,293422,293582,293358,294574,294382,295470,295118,292110,294318,292078,313006,311758,312878,312590,315086,311278,315374,311438,313870,313281
+STAT,(NULL),MeminfoPost,80,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,536,536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787374.444787
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,33761278,435703,441047,436026,438439,443840,439623,438945,437586,433784,444742,375656,372603,375790,374660,374672,377255,377382,381666,372857,375910,407670,406688,406665,403109,411572,409590,409058,410648,399014,406379,459795,468427,469337,467822,464223,463671,462248,466205,468959,465250,441255,440339,439101,433602,435737,441875,442784,436750,436906,436639,377412,373999,375029,372305,376604,377842,381649,382009,374603,376501,403923,409703,407435,400009,406752,407919,407259,405908,406070,410219,468704,464033,468423,465940,470890,463437,466828,467580,462281,470508
+STAT,(NULL),Iterations,80,23947347,306574,311630,306958,306926,310894,308206,309838,308590,307758,312558,285006,284718,285230,286478,285454,286190,286286,288462,286606,287022,293038,295630,294446,292334,295374,294222,294798,295598,290094,294734,306958,309454,308878,309998,306382,305710,305134,310478,312686,307758,309134,311086,309710,306062,306670,312974,309038,307918,309198,306510,285582,284526,283726,282446,287438,287086,288590,289358,286126,287022,291246,296238,291918,289518,292878,293966,292206,292494,292558,295054,310990,309038,311726,308238,311630,306606,308686,309326,307310,310433
+STAT,(NULL),MeminfoPost,80,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,542,542,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787376.659836
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,33761278,439097,439842,440457,437286,437941,437379,440324,438805,435812,442087,389537,392343,390385,382347,390602,388014,392154,398760,393033,391600,412920,400288,407411,410263,409387,413930,413048,405696,405880,412828,454827,451045,443668,448484,447327,454912,446586,447829,447814,450812,443823,440790,434418,437040,435295,433694,441394,444447,440839,437796,391924,388018,391742,381229,395707,397129,388578,394101,382314,390924,409353,412424,410405,404135,406932,415268,410774,407425,405818,409299,452605,448047,448682,447719,446626,447935,460226,448992,445625,449026
+STAT,(NULL),Iterations,80,23947347,306798,307054,309230,306286,305454,305006,305678,306158,305294,307726,280526,280718,279342,276782,280590,281230,283310,285486,282990,282510,299566,294766,296302,298094,299630,300462,300302,296590,296142,300622,313774,313006,309134,310958,310382,312942,312366,312590,311662,311566,310446,309614,302670,304590,305646,304686,307118,310350,305934,307182,280782,279886,279758,276174,282222,284142,278446,282638,277742,281902,296270,300654,299630,294734,297806,299438,299118,298670,295502,298254,312942,311086,310062,311374,311118,311342,316494,311246,310126,310529
+STAT,(NULL),MeminfoPost,80,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,566,566,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787378.880423
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,33761278,481057,478392,484176,490256,479967,487388,484398,478124,488041,487989,367929,360401,362435,368023,363550,366814,359102,360349,363331,368466,395904,392640,395670,393244,394402,395621,392914,396562,392799,398660,452119,442235,445823,444112,443200,443728,442487,437055,443650,443170,492012,479588,484349,482541,484326,478101,480806,479838,486294,484310,366434,365251,369424,366377,364345,365701,360742,361884,368689,358000,403931,396345,394897,398049,396222,397200,392362,398351,395591,394338,448119,441322,446550,440313,441386,446541,443133,441542,449005,450886
+STAT,(NULL),Iterations,80,23947347,323246,323566,323278,327054,321198,324654,323374,320686,323950,325550,274958,272110,271758,275438,272494,273134,269038,272942,271182,275726,291278,292014,293422,292558,291790,292686,291694,291150,289326,294702,310446,308270,308238,309550,306222,306926,307982,305550,308494,308334,325422,322222,323438,322990,325166,321358,321742,322286,325070,322894,275054,272942,275182,275374,272302,271694,269166,272622,274350,268334,299726,293390,291502,294798,292654,294126,293422,293774,293902,291566,310126,306926,308462,306350,306798,308462,307598,305902,312014,310273
+STAT,(NULL),MeminfoPost,80,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,559,559,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362787381.129731
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Connected Components
+Compute connected components of a graph
+INFO: CommandLine /workspace/ddn/build/run/apps/connectedcomponents/connectedcomponents -t 80 -algo async /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Read 23947347 nodes
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),EmptyMerges,80,33761278,414584,421492,417712,421197,423477,417787,418236,424222,417162,414047,406080,405013,410743,411305,411018,408710,407738,413259,407047,413490,403720,398152,404362,397957,402043,402437,403472,401330,398859,400384,458255,457652,450264,452467,456660,459642,458752,458140,456750,460074,424685,422045,421006,420963,423184,420209,417201,419874,413718,418387,413688,410128,411745,403622,410230,410947,412606,405599,411855,412045,404489,404099,404015,401250,398556,403248,403540,399254,393795,395321,461137,459058,456597,454871,457730,462336,458205,456386,453192,464771
+STAT,(NULL),Iterations,80,23947347,298318,303822,300942,303630,303118,302126,301806,303502,300238,297454,299214,295022,297742,300270,301006,297806,297614,300046,298510,300206,284238,279598,283470,280270,282254,283278,283598,282574,281294,281838,313998,313486,311246,311310,313902,317358,314542,313870,314638,316686,306542,304334,305070,303214,303470,300942,299822,302254,298926,300206,300558,296750,297742,293742,297486,300846,297678,294894,298830,300206,283694,282990,284206,284014,280302,283694,285070,280686,278926,278350,320206,316366,313902,313518,314382,317902,313198,314638,312686,319265
+STAT,(NULL),MeminfoPost,80,164,164,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,84,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,599,599,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

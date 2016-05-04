@@ -1,0 +1,180 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325022.506393
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,34471400,845763,884805,861526,853720,874996,856178,841378,857773,868830,837230,832057,867453,876412,873055,871720,862904,856317,845972,856209,855111,835346,877861,880416,883026,882049,882053,889429,871407,879172,880254,839431,878507,850097,846435,851824,824172,858604,877712,836038,868158
+STAT,(NULL),MeminfoPost,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,648,648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,8389,8389,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325031.118869
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,34208331,834063,857654,833586,875767,852397,880880,860947,830239,874918,845130,799328,872301,829114,854026,886492,821613,854166,843225,863750,854439,843888,859699,867516,849904,892981,846354,859632,861427,843780,891495,851000,857507,857574,831632,884344,857561,853319,860289,853834,860560
+STAT,(NULL),MeminfoPost,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,616,616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,2832,2832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325034.174230
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 40 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,34391745,850703,884774,866625,890392,876111,871499,881912,892639,859422,852306,786419,862184,883231,865804,855558,869015,855136,852591,852490,854678,864545,861015,893614,848415,871425,855827,856833,834719,890103,866661,840418,860237,853699,842628,852805,850106,852102,860682,834419,838003
+STAT,(NULL),MeminfoPost,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,524,524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,620,620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,40,2829,2829,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325037.212937
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,29615891,3713179,3706647,3699668,3707455,3694002,3698373,3693020,3703547
+STAT,(NULL),MeminfoPost,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1115,1115,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,3274,3274,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325040.682441
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,29622238,3713481,3700243,3700783,3695399,3697464,3702061,3707598,3705209
+STAT,(NULL),MeminfoPost,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1135,1135,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,3321,3321,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1363325044.219557
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r0)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Single Source Shortest Path
+Computes the shortest path from a source node to all nodes in a directed graph using a modified chaotic iteration algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/single_source_shortest_path
+INFO: CommandLine /workspace/ddn/build/run/apps/sssp/sssp -t 8 -startNode 1 -delta 12 -algo asyncWithCas /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Asynchronous with CAS version
+INFO: Using delta-step of 4096
+WARNING: Performance varies considerably due to delta parameter.
+WARNING: Do not expect the default to be good for your graph
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,29628574,3501062,3752478,3733639,3737304,3718186,3727568,3727097,3731240
+STAT,(NULL),MeminfoPost,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,460,460,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1146,1146,0,0,0,0,0,0,0
+STAT,(NULL),TotalTime,8,3330,3330,0,0,0,0,0,0,0

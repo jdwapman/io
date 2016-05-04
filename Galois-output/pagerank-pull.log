@@ -1,0 +1,2080 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770114.253746
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,292,292
+STAT,(NULL),MeminfoPre,1,280,280
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,59974,59974
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770327.623115
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,292,292
+STAT,(NULL),MeminfoPre,1,280,280
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,60361,60361
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770404.570055
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,292,292
+STAT,(NULL),MeminfoPre,1,280,280
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,59731,59731
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770480.876728
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,292,292
+STAT,(NULL),MeminfoPre,1,280,280
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,59690,59690
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770557.154037
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,51161011,51161011
+STAT,(NULL),MeminfoPost,1,292,292
+STAT,(NULL),MeminfoPre,1,280,280
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,59651,59651
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770633.335132
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,51161011,2543900,3009980,2897564,2750588,2769596,3046204,2767452,2923068,2828796,3007676,3525788,3966716,3801020,3814300,3659740,3848623
+STAT,(NULL),MeminfoPost,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7500,7500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770657.392351
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,51161011,2789340,2773340,2706140,2655452,2970620,2914364,2911388,2988860,2958684,2726108,3890012,3877724,3812060,3598300,3807196,3781423
+STAT,(NULL),MeminfoPost,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7514,7514,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770681.459822
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,51161011,2767932,2768156,2907964,2982172,2782844,2880508,2842108,2982428,2892316,2735260,3926300,3568796,3799324,3722204,3800604,3802095
+STAT,(NULL),MeminfoPost,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7521,7521,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770705.529360
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,51161011,2758716,2676316,2855036,2866876,2925308,2786876,2913724,2851388,2850844,2904764,3687004,3699644,3940476,3920028,3713436,3810575
+STAT,(NULL),MeminfoPost,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7500,7500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770729.651305
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,51161011,2808188,2925916,2820348,2829468,2807452,2959484,2799292,2895004,2751324,2707356,3851900,3607452,3795228,3708636,3868636,4025327
+STAT,(NULL),MeminfoPost,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,308,308,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,7517,7517,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770753.868547
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,51161011,25448922,25712089
+STAT,(NULL),MeminfoPost,2,292,292,0
+STAT,(NULL),MeminfoPre,2,282,282,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,30506,30506,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770800.936100
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,51161011,25084186,26076825
+STAT,(NULL),MeminfoPost,2,292,292,0
+STAT,(NULL),MeminfoPre,2,282,282,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,30481,30481,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770847.948777
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,51161011,25594938,25566073
+STAT,(NULL),MeminfoPost,2,292,292,0
+STAT,(NULL),MeminfoPre,2,282,282,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,30459,30459,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770894.984321
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,51161011,25239962,25921049
+STAT,(NULL),MeminfoPost,2,292,292,0
+STAT,(NULL),MeminfoPre,2,282,282,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,30482,30482,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770942.039642
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,51161011,25596634,25564377
+STAT,(NULL),MeminfoPost,2,292,292,0
+STAT,(NULL),MeminfoPre,2,282,282,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,30480,30480,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362770989.089073
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,51161011,1485630,1386174,1649662,1525374,1386686,1495870,1274014,1547262,1529534,1555774,1567102,1511774,1488702,1546494,1562814,1452350,1529726,1532350,1578206,1490654,1567390,1427262,1559902,1523966,1635230,1723838,1619230,1729694,1730046,1701790,2511550,2334961
+STAT,(NULL),MeminfoPost,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,9015,9015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771014.702078
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,51161011,1595710,1654814,1425278,1556382,1463678,1499358,1512510,1455198,1329598,1447646,1492414,1513630,1465470,1517822,1488350,1615774,1509790,1452958,1510782,1570814,1683454,1536990,1542910,1669694,1658430,1724734,1526974,1561406,1695870,1663998,2466782,2351793
+STAT,(NULL),MeminfoPost,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,8997,8997,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771040.336528
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,51161011,1415422,1487134,1467838,1575326,1452766,1475006,1481854,1597150,1478974,1409054,1430174,1460158,1554782,1556542,1609534,1543422,1445534,1603134,1392798,1505566,1725758,1659294,1673246,1598974,1621726,1738782,1447998,1653630,1492094,1679838,2444542,2482961
+STAT,(NULL),MeminfoPost,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,9020,9020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771065.923787
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,51161011,1463838,1507262,1585182,1466814,1528062,1360798,1542782,1494462,1489182,1414558,1582846,1561694,1622142,1473630,1532894,1504254,1447838,1506430,1361662,1478366,1698302,1548062,1494590,1630302,1612286,1649854,1732542,1669918,1766078,1503902,2561118,2369361
+STAT,(NULL),MeminfoPost,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,9006,9006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771091.537639
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,51161011,1435262,1588606,1501566,1478494,1454654,1526302,1475806,1398750,1499358,1482046,1583774,1398942,1564638,1613118,1527902,1440958,1550046,1474590,1551806,1533950,1687262,1633214,1768350,1584190,1565022,1509534,1576126,1684030,1601054,1566718,2355358,2549585
+STAT,(NULL),MeminfoPost,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,340,340,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,8995,8995,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771117.101895
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,51161011,12835021,12824013,12936365,12565612
+STAT,(NULL),MeminfoPost,4,292,292,0,0,0
+STAT,(NULL),MeminfoPre,4,284,284,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,17257,17257,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771150.882367
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,51161011,12777037,13002125,12676269,12705580
+STAT,(NULL),MeminfoPost,4,292,292,0,0,0
+STAT,(NULL),MeminfoPre,4,284,284,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,17265,17265,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771184.682175
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,51161011,12508845,12707565,12840077,13104524
+STAT,(NULL),MeminfoPost,4,292,292,0,0,0
+STAT,(NULL),MeminfoPre,4,284,284,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,17347,17347,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771218.503611
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,51161011,12640717,12413581,12939117,13167596
+STAT,(NULL),MeminfoPost,4,292,292,0,0,0
+STAT,(NULL),MeminfoPre,4,284,284,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,17280,17280,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771252.315039
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,51161011,12717101,12949133,12747053,12747724
+STAT,(NULL),MeminfoPost,4,292,292,0,0,0
+STAT,(NULL),MeminfoPre,4,284,284,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,17283,17283,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771286.120496
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,51161011,1269906,1175154,1216114,1115890,1371890,1256082,1287634,1230098,1266546,1359634,1175666,1272754,1261778,1227698,1073298,1242130,1140498,1111378,1340882,1134226,1299154,1210162,1434194,1267090,1405266,1316530,1337586,1393458,1375954,1342866,1266258,1427122,1265842,1245170,1315122,1317650,1425458,1359250,1309906,1317717
+STAT,(NULL),MeminfoPost,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,10766,10766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771313.493609
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,51161011,1101330,1226930,1207570,1396818,1131474,1266002,1302098,1309906,1216722,1269682,1255378,1200274,1156914,1263858,1052498,1099314,1210834,1255314,1316754,1274546,1319154,1264850,1269458,1300146,1361618,1292722,1445042,1305074,1429586,1453938,1416114,1287634,1274258,1390386,1215634,1351410,1324754,1309298,1247442,1388277
+STAT,(NULL),MeminfoPost,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,10735,10735,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771340.833417
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,51161011,1188818,1193874,1313362,1206066,1332978,1254610,1275410,1227026,1184498,1291410,1150226,1068306,1224594,1410354,1051634,1173362,1265650,1288722,1280498,1186450,1263666,1336626,1336658,1414194,1238034,1399378,1378994,1368114,1330610,1295634,1456338,1231090,1281394,1431730,1241266,1214674,1226322,1351250,1408498,1388693
+STAT,(NULL),MeminfoPost,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,10730,10730,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771368.139680
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,51161011,1201170,1263762,1255698,1342930,1160370,1298930,1265266,1205074,1291954,1194866,1192530,1243122,1191602,1114258,1271090,1180018,1301554,1100434,1193970,1217650,1210034,1324338,1230834,1380562,1397426,1358738,1302226,1290098,1492562,1388242,1411026,1365810,1391698,1325458,1221106,1306930,1217938,1270962,1425106,1363669
+STAT,(NULL),MeminfoPost,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,10766,10766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771395.484171
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,51161011,1233010,1242194,1278834,1161810,1241522,1328466,1248274,1280946,1363794,1118898,1194194,1140178,1250930,1166130,1233266,1328114,1144210,1202418,1214226,1148242,1273490,1331922,1338354,1426482,1304690,1353554,1348466,1388594,1387058,1251986,1406898,1470674,1391570,1152466,1273234,1489138,1166482,1363410,1203506,1319381
+STAT,(NULL),MeminfoPost,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,10731,10731,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771422.797917
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,51161011,6307671,6670103,6331191,6252311,6505847,6358295,6332375,6403218
+STAT,(NULL),MeminfoPost,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13127,13127,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771452.497153
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,51161011,6390551,6373879,6561239,6254775,6251351,6435287,6632247,6261682
+STAT,(NULL),MeminfoPost,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13125,13125,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771482.190811
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,51161011,6194839,6752599,6347735,6578103,6470103,6326935,6195863,6294834
+STAT,(NULL),MeminfoPost,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13118,13118,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771511.836396
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,51161011,6387031,6362551,6402263,6368631,6598487,6362007,6402839,6277202
+STAT,(NULL),MeminfoPost,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13126,13126,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771541.503694
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,51161011,6454295,6279927,6460471,6311639,6284887,6467607,6374871,6527314
+STAT,(NULL),MeminfoPost,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,292,292,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,13126,13126,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771571.173798
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,51161011,699737,603193,665625,609017,716249,623929,668633,686937,643833,589337,716121,634873,549081,634297,602809,575225,609689,640857,633113,664953,740249,713177,676153,676441,671065,657081,530073,636601,560473,699097,655641,604697,703257,557881,586009,686425,647993,685145,658553,745497,646265,602265,608921,654393,658009,635801,599801,761625,618905,485465,624345,694809,645529,661049,682777,685273,638201,571833,628537,532057,595321,626425,618617,580953,714393,635641,663097,703097,622489,666233,663801,541049,634681,531961,576793,612889,705273,734329,594841,644252
+STAT,(NULL),MeminfoPost,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11505,11505,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771599.337788
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,51161011,571449,648569,670329,651385,689593,638905,685273,617785,653753,578617,651577,605433,502489,626777,605145,625945,710105,641849,639321,650137,593465,702617,639193,649369,731769,546969,653977,501241,552761,653849,600793,620121,648089,504249,527033,684153,665145,709753,787033,571033,575257,667449,688697,650841,574425,590073,583865,649337,696601,635065,626713,639065,534841,707737,515001,665977,699577,687801,645049,651801,742009,638265,679545,611129,621849,732057,671193,709049,712889,627065,583321,678201,644409,512825,664217,681913,745081,657849,697785,658140
+STAT,(NULL),MeminfoPost,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11514,11514,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771627.461586
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,51161011,524089,638937,599321,625145,657177,641977,632377,666585,702553,579641,705369,664665,724697,586105,627289,650457,605465,687705,584601,467737,713369,693337,502937,580313,587193,615033,695929,723961,722841,672217,694809,616089,519225,621465,516057,616377,649561,619065,629881,720889,605561,614393,692697,658553,625177,665049,638265,666553,684889,620889,621209,569113,672825,658681,575577,675129,617529,682969,620153,706393,569753,654233,655417,714201,655193,589241,709689,665465,685465,554201,697113,678425,616377,696889,597433,706425,713561,594201,678937,574748
+STAT,(NULL),MeminfoPost,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11513,11513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771655.595552
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,51161011,586649,711321,622585,595289,671545,622745,594041,684729,666745,621881,590969,540121,669849,641305,595865,583161,628377,583417,626745,667033,625753,626777,563289,680281,675321,670777,574041,642041,631001,684889,585273,588121,554809,562969,686969,641113,553209,695193,738681,639257,560409,670777,631385,677145,615609,623417,667769,662489,657593,603321,678425,641753,661785,596505,707225,686361,612345,614105,692281,665241,681785,653945,678425,607897,661913,662745,554009,695609,664313,687769,746681,599609,592729,677113,604217,695449,587769,729657,665017,664284
+STAT,(NULL),MeminfoPost,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11498,11498,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771683.839815
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/twitter-ICWSM10-component.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 211274 small delta: 1766292 (0.0345242)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,51161011,575577,600313,671193,681945,694169,694617,672633,589593,710265,615001,628761,556409,729113,622873,679193,526041,701881,617433,631673,685401,574905,642521,642681,661337,630041,637561,606777,568345,662105,683673,698873,645945,669049,590297,734489,564153,668249,688857,577689,776889,625273,567833,652345,615897,647001,649049,662649,611993,617241,602009,632217,671897,641721,692057,611225,600793,668857,702617,521145,585177,675289,730009,659065,603033,645817,682937,709753,629241,545753,658617,535609,634265,612377,647321,709561,593561,582553,634873,622169,661692
+STAT,(NULL),MeminfoPost,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,11509,11509,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771712.737067
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,182,182
+STAT,(NULL),MeminfoPre,1,176,176
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3480,3480
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771725.866607
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,182,182
+STAT,(NULL),MeminfoPre,1,176,176
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3505,3505
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771731.483062
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,182,182
+STAT,(NULL),MeminfoPre,1,176,176
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3552,3552
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771737.153598
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,182,182
+STAT,(NULL),MeminfoPre,1,176,176
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3504,3504
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771742.780370
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 1 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947347,23947347
+STAT,(NULL),MeminfoPost,1,182,182
+STAT,(NULL),MeminfoPre,1,176,176
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,3504,3504
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771748.401499
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947347,1369510,1448966,1454982,1427686,1454566,1448038,1444454,1447782,1444486,1445222,1520102,1607174,1603718,1613542,1607942,1609177
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,721,721,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771751.254410
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947347,1396614,1477254,1473830,1469958,1469478,1476838,1476134,1480646,1477158,1484838,1471238,1565062,1558438,1556102,1556326,1557433
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,651,651,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771754.036846
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947347,1372262,1461254,1452678,1450374,1447846,1449062,1448390,1446694,1454982,1457798,1486310,1606150,1605670,1603654,1604230,1599993
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,712,712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771756.883068
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947347,1373350,1453446,1451590,1446598,1454886,1450886,1447526,1446534,1444134,1447366,1515974,1603046,1599814,1607462,1601414,1603321
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,717,717,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771759.738799
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 16 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947347,1398534,1478790,1471686,1471014,1470374,1473094,1475846,1477382,1480358,1476358,1475494,1562822,1560166,1556934,1557510,1560985
+STAT,(NULL),MeminfoPost,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,196,196,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,654,654,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771762.533453
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947347,11670154,12277193
+STAT,(NULL),MeminfoPost,2,182,182,0
+STAT,(NULL),MeminfoPre,2,178,178,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2041,2041,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771766.699786
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947347,11678474,12268873
+STAT,(NULL),MeminfoPost,2,182,182,0
+STAT,(NULL),MeminfoPre,2,178,178,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2025,2025,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771770.844578
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947347,11683722,12263625
+STAT,(NULL),MeminfoPost,2,182,182,0
+STAT,(NULL),MeminfoPre,2,178,178,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2033,2033,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771774.983068
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947347,11674250,12273097
+STAT,(NULL),MeminfoPost,2,182,182,0
+STAT,(NULL),MeminfoPre,2,178,178,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2034,2034,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771779.148580
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 2 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947347,11678218,12269129
+STAT,(NULL),MeminfoPost,2,182,182,0
+STAT,(NULL),MeminfoPre,2,178,178,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2039,2039,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771783.304088
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947347,501315,521027,509155,504899,501731,504163,507299,511875,509507,521763,788035,825827,823363,820035,816355,821571,820771,825923,826499,826723,838947,889635,879011,876611,874243,877731,880419,878883,882339,889507,936995,955190
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,1011,1011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771786.456190
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947347,568259,591331,593187,595043,596835,596131,597155,601187,602179,598627,753187,791171,788451,791139,794435,791907,792899,798467,795139,796963,767363,818595,811811,816899,813379,818979,818691,820387,822595,822563,974691,1007702
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,777,777,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771789.376637
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947347,506947,520771,514819,513219,511715,520547,518147,523843,527139,529155,786499,825507,815299,817347,815523,825379,819235,820483,823907,826883,826531,867107,859427,860067,861379,865155,867747,869187,875363,877699,965443,989878
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,983,983,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771792.498402
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947347,491235,503171,503715,513187,508771,515395,516739,521987,521443,513379,779939,822883,821283,823491,826179,821283,823235,825539,830979,824451,822211,871299,875427,872067,879075,876611,882083,884483,885987,881731,943011,965078
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,1009,1009,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771795.650404
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 32 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947347,572003,594051,589507,590659,591587,594307,592419,594819,601155,599203,755875,796515,795107,790819,792707,791715,793859,790755,794947,797539,767043,815747,813347,812963,811043,812803,813603,817443,818819,820771,998947,1025270
+STAT,(NULL),MeminfoPost,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,212,212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,776,776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771798.559809
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947347,5753109,5938677,6126165,6129396
+STAT,(NULL),MeminfoPost,4,184,184,0,0,0
+STAT,(NULL),MeminfoPre,4,180,180,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1295,1295,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771801.982349
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947347,5712949,6086869,6075317,6072212
+STAT,(NULL),MeminfoPost,4,184,184,0,0,0
+STAT,(NULL),MeminfoPre,4,180,180,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1295,1295,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771805.410069
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947347,5704629,6092181,6076213,6074324
+STAT,(NULL),MeminfoPost,4,184,184,0,0,0
+STAT,(NULL),MeminfoPre,4,180,180,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1311,1311,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771808.839383
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947347,5716981,6083061,6075925,6071380
+STAT,(NULL),MeminfoPost,4,184,184,0,0,0
+STAT,(NULL),MeminfoPre,4,180,180,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1296,1296,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771812.259071
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 4 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947347,5708629,6084981,6080245,6073492
+STAT,(NULL),MeminfoPost,4,184,184,0,0,0
+STAT,(NULL),MeminfoPre,4,180,180,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1292,1292,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771815.662466
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947347,577244,617116,614684,614140,616188,615036,616348,616220,617820,615612,551804,584860,583004,584572,583100,584444,583068,584988,584892,585212,575100,614204,614844,613404,614300,615292,613404,612764,610396,616988,565628,595036,593820,597148,592956,594460,594364,595452,592060,595375
+STAT,(NULL),MeminfoPost,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771818.347366
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947347,568764,602684,605756,605660,607260,604956,603100,604252,604764,605820,571164,605916,606236,605980,606940,606268,603516,604892,605308,603036,571356,610812,612060,609372,608412,610428,609212,609788,609500,611548,557852,592220,587804,586748,589308,588220,587452,588412,585948,588623
+STAT,(NULL),MeminfoPost,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,534,534,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771821.043342
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947347,559420,598588,603516,602492,600700,600764,601436,600252,600700,601724,569852,604668,603292,603132,604604,602908,603420,603932,603420,602940,566076,607708,606492,607164,607932,607964,605980,606524,608124,608444,565308,597980,597564,597404,599516,596892,596860,597212,597820,596623
+STAT,(NULL),MeminfoPost,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,520,520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771823.718372
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947347,590492,625628,626940,628156,628764,623676,625596,624700,621660,627420,525660,558236,559452,559004,559484,556348,556732,557020,558428,557532,579676,624572,622396,622460,621788,622908,620604,619740,624828,622492,574364,604220,601564,603196,600572,598940,599612,602748,605404,604335
+STAT,(NULL),MeminfoPost,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,560,560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771826.431318
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 40 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947347,569884,601084,602300,601980,603996,602588,605788,603484,602012,604252,571164,605692,606716,603900,605500,606332,587100,606204,606332,607196,570716,609212,607036,607964,609532,608476,609084,608988,608764,609276,563676,596060,589852,592284,591868,588700,593180,591196,593980,593999
+STAT,(NULL),MeminfoPost,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771829.125738
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947347,2832395,3023019,3013291,3015531,3011019,3014603,3017131,3020358
+STAT,(NULL),MeminfoPost,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1001,1001,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771832.256937
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947347,2837995,3018667,3014507,3018731,3012139,3014923,3013803,3016582
+STAT,(NULL),MeminfoPost,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1034,1034,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771835.423443
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947347,2835787,3025931,3013387,3013739,3015339,3012779,3014763,3015622
+STAT,(NULL),MeminfoPost,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1032,1032,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771838.583335
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947347,2835371,3020939,3016043,3014795,3017963,3015083,3014347,3012806
+STAT,(NULL),MeminfoPost,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1032,1032,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771841.743605
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 8 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947347,2347787,3090379,3085611,3082763,3083051,3085643,3085739,3086374
+STAT,(NULL),MeminfoPost,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,188,188,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,1040,1040,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771844.902539
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947347,258830,258830,257198,259086,256590,259342,258798,257934,261006,263470,308718,312622,311790,315534,310766,309966,309006,306574,312270,303310,308110,311950,311950,312430,312590,312238,311406,312814,315950,312398,317582,318926,317710,317390,319918,315374,316942,316462,321550,320526,255470,257486,258158,258542,258222,255918,257070,259310,261134,261966,308590,310638,310926,312590,313198,311086,272366,307118,313710,313486,309294,311182,311150,311118,312398,308622,310190,309678,312494,313934,315822,319726,318958,320302,318734,313806,317742,318126,319982,321249
+STAT,(NULL),MeminfoPost,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,677,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771847.819413
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947347,258350,259534,258350,260974,263758,256494,257070,257486,257454,256718,309038,308046,315022,276590,313742,301678,311662,310830,311694,301390,310446,312174,315406,312526,315182,313166,311950,311502,313294,309998,314862,318894,318062,320814,316846,317134,318350,316782,317582,316014,255054,259502,257710,259630,263278,258094,258926,258702,259278,255598,309454,310830,313486,311246,315918,310670,311918,310926,311758,309710,309422,310766,315886,311438,313678,313902,311470,312782,312142,311246,311726,318766,320814,320942,321102,317742,318926,313934,317326,314785
+STAT,(NULL),MeminfoPost,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,680,680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771850.732549
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947347,262798,259694,257998,256814,256558,257166,256974,257518,256398,260046,309902,311054,310798,308014,310926,307278,305838,309134,307662,310574,313486,314382,310574,312782,313774,312238,311182,311182,309838,317166,318702,318446,318798,319438,321742,316110,316078,317326,316782,322638,256558,260686,258766,256878,254798,254926,254318,257614,258798,256782,310158,309486,309614,308750,309486,308366,306542,308526,309614,311438,313102,313358,310126,311566,313646,311470,312206,311950,310382,317326,315886,319886,316814,318286,319374,312846,315406,315918,315470,324417
+STAT,(NULL),MeminfoPost,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,674,674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771853.633565
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947347,266894,270638,266734,270126,270030,269550,267726,267982,266958,266574,304494,302958,308238,308398,308238,305550,307118,305198,307278,306414,306158,308750,312078,311310,311022,309230,308110,309102,308270,308014,313038,312430,315278,314990,312910,310638,315502,313358,316174,311246,268334,268590,267502,268942,269102,266958,268398,267278,267566,266478,306830,305838,308046,307406,308430,305518,306062,305166,305358,305070,308078,312430,309262,309038,310734,311342,308622,310062,307022,308494,310926,312910,317998,313262,315278,313230,313006,311310,312814,313953
+STAT,(NULL),MeminfoPost,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,633,633,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+RUN: Variable Hostname = peltier.ices.utexas.edu
+RUN: Variable Timestamp = 1362771856.507023
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Page Rank
+Computes page ranks a la Page and Brin
+
+INFO: CommandLine /workspace/ddn/build/run//exp/apps/pagerank/pagerank -t 80 -maxIterations 1 -algo pull dummy -graphTranspose /net/faraday/workspace/ddn/inputs/USA-road-d.USA.gr.pagerank -noverify
+INFO: Hostname peltier.ices.utexas.edu
+Running Pull version
+Target max delta: 0.1
+iteration: 1 max delta: 4.98445e+13 small delta: 0 (0)
+Failed to converge
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947347,255566,256142,258158,257518,260590,258574,256750,258798,256430,256078,307022,310222,308494,312814,312622,312750,310702,252782,313486,310254,309678,309998,311630,315438,314766,313006,313390,313710,312078,311534,313230,319854,316846,322222,321934,320974,317902,317550,317166,317614,253422,258254,257646,258318,262542,257518,255150,259374,257422,256590,308846,310318,309902,314702,314798,315406,312462,310606,315438,313614,307726,308814,312014,315918,314414,312142,312334,310286,312686,312334,313678,318126,319374,322350,321038,321070,322286,316302,317870,317985
+STAT,(NULL),MeminfoPost,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,678,678,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

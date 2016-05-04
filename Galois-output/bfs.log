@@ -1,0 +1,2080 @@
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979405.702294
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,7365880,7365880
+STAT,(NULL),MeminfoPost,1,377,377
+STAT,(NULL),MeminfoPre,1,377,377
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,27972,27972
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979449.329547
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,7365880,7365880
+STAT,(NULL),MeminfoPost,1,377,377
+STAT,(NULL),MeminfoPre,1,377,377
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,27837,27837
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979492.807455
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,7365880,7365880
+STAT,(NULL),MeminfoPost,1,377,377
+STAT,(NULL),MeminfoPre,1,377,377
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,27903,27903
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979536.364828
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,7365880,7365880
+STAT,(NULL),MeminfoPost,1,377,377
+STAT,(NULL),MeminfoPre,1,377,377
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,27834,27834
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979579.856219
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,7365880,7365880
+STAT,(NULL),MeminfoPost,1,377,377
+STAT,(NULL),MeminfoPre,1,377,377
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,27855,27855
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979623.343694
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,7365880,437367,434385,435742,435234,435038,435667,436097,437378,437794,437332,497662,502576,500269,500387,502668,500284
+STAT,(NULL),MeminfoPost,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2294,2294,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979641.421733
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,7365880,438079,436487,435909,437697,434315,435456,436501,438341,435941,436729,500737,501820,499355,500864,497387,500262
+STAT,(NULL),MeminfoPost,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2270,2270,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979659.463509
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,7365880,437944,438073,436613,434952,437666,437056,435885,434684,436465,437374,497193,500933,502884,501101,498303,498754
+STAT,(NULL),MeminfoPost,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2272,2272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979677.455081
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,7365880,435811,438297,434679,437966,439461,434876,436147,432782,437069,441907,501721,499316,500934,500748,496000,498166
+STAT,(NULL),MeminfoPost,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2272,2272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979695.369909
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,7365880,436081,436720,436577,434071,437725,436651,436050,437057,438029,438471,500680,498516,499237,502649,499386,497980
+STAT,(NULL),MeminfoPost,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,404,404,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,2271,2271,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979713.295834
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,7365880,3728996,3636884
+STAT,(NULL),MeminfoPost,2,378,378,0
+STAT,(NULL),MeminfoPre,2,378,378,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,14163,14163,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979743.066555
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,7365880,3682830,3683050
+STAT,(NULL),MeminfoPost,2,378,378,0
+STAT,(NULL),MeminfoPre,2,378,378,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,14086,14086,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979772.989351
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,7365880,3750254,3615626
+STAT,(NULL),MeminfoPost,2,378,378,0
+STAT,(NULL),MeminfoPre,2,378,378,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,14173,14173,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979802.855950
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,7365880,3681644,3684236
+STAT,(NULL),MeminfoPost,2,378,378,0
+STAT,(NULL),MeminfoPre,2,378,378,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,14065,14065,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979832.532989
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,7365880,3678121,3687759
+STAT,(NULL),MeminfoPost,2,378,378,0
+STAT,(NULL),MeminfoPre,2,378,378,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,14135,14135,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979862.339598
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,7365880,218691,216625,218644,219487,217437,220101,216141,218923,218378,217958,236400,234688,235878,236348,235445,236045,236314,233918,234681,233629,231401,232218,231680,232622,235413,233467,232830,232417,233781,232921,252151,249248
+STAT,(NULL),MeminfoPost,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2151,2151,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979880.127219
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,7365880,217775,216361,217970,216229,217282,216982,214387,216198,216034,214443,236511,235613,234828,235323,235276,235901,237344,239253,235897,235805,232637,233390,233007,235117,233606,234457,232063,232710,235045,238393,249986,250057
+STAT,(NULL),MeminfoPost,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2152,2152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979897.968068
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,7365880,217779,215656,215493,217558,215278,213472,215528,216988,216559,216805,235499,236929,237526,236327,236220,236645,234294,237358,236922,234703,235660,233909,234811,234785,233997,235340,233727,236200,233890,232394,249632,247996
+STAT,(NULL),MeminfoPost,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2147,2147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979915.777982
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,7365880,215222,216958,214446,217061,215890,214753,215532,215214,216261,214640,237960,235407,235389,234254,239778,236818,236062,235136,237546,236717,233221,234805,235246,235273,234739,233811,235637,234344,234471,232628,249979,250682
+STAT,(NULL),MeminfoPost,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2149,2149,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979933.614034
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,7365880,213876,216692,215686,215005,216288,217218,214270,217458,217416,216904,234742,235238,236970,237055,236617,235559,235741,236434,237105,237068,231167,234607,232473,234066,235006,233856,234494,233058,236685,235839,249473,251814
+STAT,(NULL),MeminfoPost,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,436,436,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,2156,2156,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979951.432047
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,7365880,1843030,1839301,1838584,1844965
+STAT,(NULL),MeminfoPost,4,380,380,0,0,0
+STAT,(NULL),MeminfoPre,4,380,380,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,7444,7444,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979974.506447
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,7365880,1841668,1843610,1843435,1837167
+STAT,(NULL),MeminfoPost,4,380,380,0,0,0
+STAT,(NULL),MeminfoPre,4,380,380,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,7467,7467,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362979997.623225
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,7365880,1836831,1845243,1843150,1840656
+STAT,(NULL),MeminfoPost,4,380,380,0,0,0
+STAT,(NULL),MeminfoPre,4,380,380,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,7507,7507,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980020.882108
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,7365880,1839826,1843945,1840162,1841947
+STAT,(NULL),MeminfoPost,4,380,380,0,0,0
+STAT,(NULL),MeminfoPre,4,380,380,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,7432,7432,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980044.137002
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,7365880,1842462,1838393,1841966,1843059
+STAT,(NULL),MeminfoPost,4,380,380,0,0,0
+STAT,(NULL),MeminfoPre,4,380,380,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,7415,7415,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980067.292058
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,7365880,173667,175077,176022,176196,173302,174809,176266,175028,174498,176039,188128,187656,187806,188139,187270,186852,187856,186531,189011,185959,187533,185799,187744,185181,187990,188973,187531,185612,186912,188972,187103,186371,185006,187344,188786,187625,186576,187221,186045,185444
+STAT,(NULL),MeminfoPost,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2534,2534,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980085.462035
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,7365880,176196,175060,175351,177385,176421,176503,175142,175354,177196,175255,185214,185590,186824,187757,186015,187790,186913,187323,184967,187320,190198,186871,186577,187924,187686,185292,186455,185667,186931,187438,185683,185634,186571,187934,185678,188152,188008,187561,187026,187018
+STAT,(NULL),MeminfoPost,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2529,2529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980103.660976
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,7365880,175934,177291,176580,177040,175554,176237,174636,176153,177848,175828,188594,187485,186661,185657,185712,186860,185325,189445,187717,185416,188622,185674,188169,189100,187849,185746,186405,186667,188718,187716,186475,186624,184983,185950,186066,183688,185112,186206,186555,187582
+STAT,(NULL),MeminfoPost,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2528,2528,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980121.844990
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,7365880,177099,177488,173818,173621,176280,176156,173868,175694,175726,174215,188773,188227,187574,187620,186612,186149,191006,187607,186079,186573,186260,188385,185547,186806,186088,187371,188615,183375,186858,186823,187643,188752,186763,186027,188814,186423,187263,186225,185897,185760
+STAT,(NULL),MeminfoPost,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2570,2570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980140.067454
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,7365880,180227,176309,178120,177975,178596,177744,178341,180005,176873,177554,187392,186562,187068,186341,186065,186370,187593,184987,186460,186923,188188,186061,186731,185086,188038,187158,187790,186037,186576,186629,183012,186516,184608,185882,185114,184198,184303,184179,186198,186071
+STAT,(NULL),MeminfoPost,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,444,444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,2529,2529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980158.251908
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,7365880,918092,923566,920817,919486,922590,919782,920913,920634
+STAT,(NULL),MeminfoPost,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,4767,4767,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980178.724241
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,7365880,920145,919175,917441,920817,919638,923397,921259,924008
+STAT,(NULL),MeminfoPost,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,4773,4773,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980199.185915
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,7365880,918666,923853,922233,920392,922252,919766,916812,921906
+STAT,(NULL),MeminfoPost,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,4761,4761,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980219.557512
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,7365880,921654,925593,922150,919356,918033,920720,918378,919996
+STAT,(NULL),MeminfoPost,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,4759,4759,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980239.973781
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,7365880,923122,922123,921928,919085,917379,920635,922913,918695
+STAT,(NULL),MeminfoPost,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,388,388,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,4776,4776,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980260.386308
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,7365880,83951,79938,77401,60689,72148,64951,68166,74790,70313,63046,46891,47363,56525,48145,46743,60412,51195,53922,46989,58607,101245,93336,97909,98427,97143,102559,99240,96376,97865,95724,93687,88858,88981,93435,90648,86138,87826,90785,89162,94084,84132,100806,100953,103360,102291,104332,102691,102827,101813,101994,113728,113684,115041,112954,115012,113816,116039,112942,115719,114776,105074,104434,103951,103926,103346,103040,104899,103651,105737,104695,104420,105175,106167,105144,106150,107408,106385,105943,106583,105229
+STAT,(NULL),MeminfoPost,80,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,484,484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,2749,2749,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980279.054766
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,7365880,55504,48795,52350,45394,57896,65278,60864,63300,57087,68106,102109,95431,84755,99091,104705,91066,92934,96767,86869,89173,76907,83999,81584,80072,83218,77150,83308,79692,76913,81008,73308,71323,74304,74551,74973,75286,77008,73371,75751,72809,48778,106850,106970,106497,105273,106622,106098,105628,106614,104867,107793,108054,108390,107179,106308,106418,106177,106422,107523,106446,111572,109353,109065,109672,109935,111246,109976,111760,111524,110322,111424,112202,112734,112433,112382,112257,111888,112518,111728,112973
+STAT,(NULL),MeminfoPost,80,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,484,484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,2748,2748,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980297.505600
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,7365880,82197,101147,86890,91352,79287,97273,96101,93862,87605,92583,67850,75930,66227,62931,74739,79533,72799,81506,70512,61162,58046,58470,60416,58076,57243,59523,59797,55183,57656,55242,56100,55300,53203,55130,51085,52844,52815,53796,50424,50529,84951,103703,104080,103623,103720,102149,104263,101341,102475,103372,118405,116833,117804,119254,117302,117904,118918,116668,118939,118377,121202,120339,121871,120757,122578,121210,120611,122555,120973,121350,121711,121643,122789,122582,121630,123749,122739,123283,122057,123806
+STAT,(NULL),MeminfoPost,80,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,484,484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,2737,2737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980316.146497
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,7365880,67589,69646,71628,79347,60770,81306,83553,62682,74659,76319,62944,55781,47013,50205,58204,51028,47011,53902,46983,46929,99210,102351,100291,95320,97316,97758,98620,95614,98844,99858,90828,92536,87912,87090,89000,94014,88678,90750,93689,93365,68857,100676,100378,100631,104116,100702,100578,102039,101602,101510,112855,115349,115644,113938,113352,114049,114931,113267,115104,115289,103702,103015,103337,106550,103503,103858,103587,105395,105985,103913,104633,104647,105144,106849,105989,106035,104303,105819,107915,106291
+STAT,(NULL),MeminfoPost,80,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,484,484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,2749,2749,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362980334.631837
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component.gr -graphTranspose /net/faraday/workspace/inputs/unweighted/twitter-ICWSM10-component-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 51161011 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,7365880,102481,92650,96553,87061,94187,90045,79586,87755,82799,82323,67722,80018,59215,65104,75447,78076,61795,71109,73084,79837,58321,56370,60198,55958,58338,55051,55031,58577,57418,58061,52735,52923,51152,52266,54471,55226,50913,51959,51738,53752,101111,105112,103224,104733,102810,106107,105131,104446,103339,105141,120060,116973,113972,119352,118109,118782,119110,118734,118057,116561,121630,120067,121846,120183,119623,121506,122031,120649,121852,120552,124178,123068,121343,124108,123404,122535,121494,123672,120563,123407
+STAT,(NULL),MeminfoPost,80,525,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,484,484,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,2745,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994206.921231
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947381,23947381
+STAT,(NULL),MeminfoPost,1,222,222
+STAT,(NULL),MeminfoPre,1,222,222
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,4663,4663
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994213.145827
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947381,23947381
+STAT,(NULL),MeminfoPost,1,222,222
+STAT,(NULL),MeminfoPre,1,222,222
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,4675,4675
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994219.397347
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947381,23947381
+STAT,(NULL),MeminfoPost,1,222,222
+STAT,(NULL),MeminfoPre,1,222,222
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,4670,4670
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994225.625038
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947381,23947381
+STAT,(NULL),MeminfoPost,1,222,222
+STAT,(NULL),MeminfoPre,1,222,222
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,4682,4682
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994231.866232
+RUN: Variable Threads = 1
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 1 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0
+STAT,(NULL),Conflicts,1,0,0
+STAT,(NULL),Iterations,1,23947381,23947381
+STAT,(NULL),MeminfoPost,1,222,222
+STAT,(NULL),MeminfoPre,1,222,222
+STAT,(NULL),Threads,1,1,1
+STAT,(NULL),Time,1,4672,4672
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994238.093658
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947381,1519131,1567132,1513050,1528166,1556011,1501413,1534242,1512177,1515488,1552125,1412314,1443429,1456018,1465678,1417068,1453939
+STAT,(NULL),MeminfoPost,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,567,567,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994240.279332
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947381,1569538,1576746,1489959,1516539,1503495,1472849,1515225,1552863,1502932,1498721,1450368,1421281,1500096,1500358,1445558,1430853
+STAT,(NULL),MeminfoPost,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,573,573,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994242.469246
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947381,1606325,1499360,1524334,1525166,1507030,1495957,1527472,1540636,1558480,1516367,1444321,1481486,1432917,1422543,1448700,1416287
+STAT,(NULL),MeminfoPost,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,563,563,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994244.647269
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947381,1621564,1593057,1585081,1543518,1500989,1473782,1478685,1515085,1502958,1517148,1418794,1443707,1483359,1420296,1421185,1428173
+STAT,(NULL),MeminfoPost,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,566,566,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994246.850986
+RUN: Variable Threads = 16
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 16 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15
+STAT,(NULL),Conflicts,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,16,23947381,1568334,1577061,1551456,1496796,1481959,1575801,1570308,1537313,1512143,1551843,1411482,1440038,1419414,1409397,1400788,1443248
+STAT,(NULL),MeminfoPost,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,16,244,244,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,16,16,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,16,571,571,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994249.032077
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947381,12015092,11932289
+STAT,(NULL),MeminfoPost,2,224,224,0
+STAT,(NULL),MeminfoPre,2,224,224,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2480,2480,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994253.065345
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947381,11960926,11986455
+STAT,(NULL),MeminfoPost,2,224,224,0
+STAT,(NULL),MeminfoPre,2,224,224,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2449,2449,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994257.076502
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947381,11952757,11994624
+STAT,(NULL),MeminfoPost,2,224,224,0
+STAT,(NULL),MeminfoPre,2,224,224,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2447,2447,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994261.084261
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947381,12052738,11894643
+STAT,(NULL),MeminfoPost,2,224,224,0
+STAT,(NULL),MeminfoPre,2,224,224,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2469,2469,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994265.111787
+RUN: Variable Threads = 2
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 2 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1
+STAT,(NULL),Conflicts,2,0,0,0
+STAT,(NULL),Iterations,2,23947381,12142342,11805039
+STAT,(NULL),MeminfoPost,2,224,224,0
+STAT,(NULL),MeminfoPre,2,224,224,0
+STAT,(NULL),Threads,2,2,2,0
+STAT,(NULL),Time,2,2533,2533,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994269.200872
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947381,849882,861767,833920,796261,761855,771557,806392,802443,780559,781377,627781,755541,709515,772537,797747,751955,729848,763292,733669,770499,669395,680120,646590,702318,697731,727855,743136,745241,654066,761005,725558,735969
+STAT,(NULL),MeminfoPost,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,535,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994271.390614
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947381,858964,828369,843411,794504,880628,816024,780823,783887,787145,776589,682445,793632,734351,681647,717621,761318,755127,723742,753896,701734,683258,687310,686040,690146,702329,673647,679532,699427,781778,803030,671510,733517
+STAT,(NULL),MeminfoPost,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,541,541,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994273.569499
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947381,871238,791737,817245,843609,832126,804002,823179,842814,797991,749939,752433,709833,655857,726185,720214,713288,764732,750067,779828,761598,709681,722156,684599,683271,706310,645783,648830,729846,753058,715074,737188,703670
+STAT,(NULL),MeminfoPost,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,543,543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994275.770837
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947381,837200,798686,792136,685732,787393,819352,749884,755176,842037,777691,668565,744575,737742,733941,760263,724550,836376,684564,808379,756606,652554,727632,685445,654305,694730,670022,735609,793761,771224,780998,761452,718801
+STAT,(NULL),MeminfoPost,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,544,544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994277.959531
+RUN: Variable Threads = 32
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 32 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31
+STAT,(NULL),Conflicts,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,32,23947381,862759,830950,809640,772641,848623,841570,804973,798420,824141,789477,699626,771180,752867,704003,736563,761639,771384,613629,731454,718716,695381,679318,678783,634481,730653,707766,714582,687155,725809,732547,744154,772497
+STAT,(NULL),MeminfoPost,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,32,276,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,32,32,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,32,541,541,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994280.150110
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947381,6028433,5987099,5983584,5948265
+STAT,(NULL),MeminfoPost,4,228,228,0,0,0
+STAT,(NULL),MeminfoPre,4,228,228,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1319,1319,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994283.034935
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947381,5990889,6001688,5986461,5968343
+STAT,(NULL),MeminfoPost,4,228,228,0,0,0
+STAT,(NULL),MeminfoPre,4,228,228,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1311,1311,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994285.905748
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947381,6008275,5991373,5987228,5960505
+STAT,(NULL),MeminfoPost,4,228,228,0,0,0
+STAT,(NULL),MeminfoPre,4,228,228,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1311,1311,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994288.772959
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947381,6388224,5857967,5862333,5838857
+STAT,(NULL),MeminfoPost,4,228,228,0,0,0
+STAT,(NULL),MeminfoPre,4,228,228,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1417,1417,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994291.756204
+RUN: Variable Threads = 4
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 4 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3
+STAT,(NULL),Conflicts,4,0,0,0,0,0
+STAT,(NULL),Iterations,4,23947381,6009827,6012335,5966624,5958595
+STAT,(NULL),MeminfoPost,4,228,228,0,0,0
+STAT,(NULL),MeminfoPre,4,228,228,0,0,0
+STAT,(NULL),Threads,4,4,4,0,0,0
+STAT,(NULL),Time,4,1315,1315,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994294.637338
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947381,687654,705061,649743,700404,620549,604537,705502,671985,675559,592256,585034,597692,586613,615499,598422,606857,537275,614573,643702,667679,567706,595516,578802,568473,627758,553556,582822,601718,536775,606136,539887,594628,537774,495953,562430,533038,522575,560788,550412,564038
+STAT,(NULL),MeminfoPost,40,286,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,284,284,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,542,542,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994296.838022
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947381,719298,683210,691547,660855,636420,666693,644392,639139,633435,676114,551375,584574,616047,619462,614432,563190,595931,637810,605790,538962,552114,546639,572875,594375,617094,582023,541859,544758,557395,641397,532066,569690,535212,565253,573438,631744,550614,614153,504059,541947
+STAT,(NULL),MeminfoPost,40,286,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,284,284,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,538,538,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994299.019533
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947381,699373,685121,688400,689654,739312,632881,655014,659041,666203,641845,589630,678314,529691,616129,641239,539218,595671,591754,624015,667023,572833,664750,527819,524889,540739,561919,553668,558897,636806,543116,580603,556058,501780,534507,603504,503327,462551,487659,608773,593655
+STAT,(NULL),MeminfoPost,40,286,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,284,284,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,559,559,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994301.227208
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947381,657328,663895,666077,683799,643869,763615,666756,639856,642503,648262,592577,583659,509396,544571,609796,523084,584152,664964,594169,599566,631403,594539,609189,646328,594724,595116,565788,591407,613332,572861,511248,552308,552739,528700,543947,556959,521910,558783,548552,575654
+STAT,(NULL),MeminfoPost,40,286,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,284,284,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,540,540,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994303.411950
+RUN: Variable Threads = 40
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 40 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39
+STAT,(NULL),Conflicts,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,40,23947381,787747,702854,660391,676716,671789,641889,663194,634863,720433,645522,614752,633373,570452,629386,529551,603139,533690,600427,614563,604368,598173,560911,622325,567233,538802,567663,540285,580092,646649,541506,548488,538104,550436,511778,569873,518566,501294,539112,586831,580161
+STAT,(NULL),MeminfoPost,40,286,286,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,40,284,284,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,40,40,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,40,546,546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994305.613908
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947381,3043320,3034364,3019158,2953480,2969128,2988965,2959306,2979660
+STAT,(NULL),MeminfoPost,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,781,781,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994307.989171
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947381,2991349,2994183,3030138,2954519,3005778,2993195,3016915,2961304
+STAT,(NULL),MeminfoPost,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,785,785,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994310.371734
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947381,2989159,3071225,3023329,2970781,2951787,2981069,2994243,2965788
+STAT,(NULL),MeminfoPost,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,771,771,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994312.876979
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947381,3039791,2986093,3005699,2995763,2962167,2985047,2979563,2993258
+STAT,(NULL),MeminfoPost,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,775,775,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994315.252602
+RUN: Variable Threads = 8
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 8 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7
+STAT,(NULL),Conflicts,8,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,8,23947381,3055623,3062115,2995469,2939392,2977694,2945548,2985032,2986508
+STAT,(NULL),MeminfoPost,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,8,236,236,0,0,0,0,0,0,0
+STAT,(NULL),Threads,8,8,8,0,0,0,0,0,0,0
+STAT,(NULL),Time,8,779,779,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994317.631880
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947381,432688,379494,252185,343598,452569,361209,378561,378158,366364,415909,381153,292354,302035,424160,328039,246924,303468,304337,440785,358002,261007,278025,341603,275857,263848,305317,213169,247749,279908,233544,209270,201959,247480,216496,238137,165735,183264,136472,171805,221548,455150,461090,307200,364377,327654,431252,389610,381750,389156,414935,400324,427282,281240,348561,332295,279963,326929,379659,359886,312169,299404,326012,240482,272013,212759,307297,239608,264555,298233,343511,142603,232506,187808,166818,267500,142434,162582,208272,225218,203099
+STAT,(NULL),MeminfoPost,80,330,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,650,650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994319.968611
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947381,420861,371031,385304,413993,375254,415710,383142,380460,370555,308463,413571,416289,341393,362304,411840,283008,315929,314227,327913,337388,294209,280342,342029,263068,312742,255458,258372,220478,211194,276369,163540,247792,246798,222127,158363,169736,238236,230870,142722,204163,406901,344893,359075,407746,354564,363322,358443,396075,334724,414852,334722,434446,340039,299146,319662,321186,315761,328119,348508,362998,311736,296032,258463,223820,200476,254928,228278,285023,247092,297923,325310,191201,240321,157077,177682,212461,214950,191516,183156,217511
+STAT,(NULL),MeminfoPost,80,330,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,695,695,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994322.345122
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947381,421979,442150,352832,323308,342830,383366,337022,328972,366191,393193,343598,351175,283187,386600,359575,394022,394348,389079,279397,295413,400510,308128,283428,337489,219821,260356,199332,229887,251909,348070,175795,231379,184049,176540,154653,238349,143257,153990,154031,246494,377381,443169,396568,469032,399622,454948,395941,285650,369780,378535,289625,284351,301485,353572,374545,339018,279091,336155,333564,357701,259712,272520,356806,389648,261815,295981,239797,291072,267486,280799,209120,207589,223125,188850,194589,142822,232382,162838,184884,200109
+STAT,(NULL),MeminfoPost,80,330,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,633,633,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994324.668201
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947381,420240,411934,442167,367420,392390,434832,356094,404691,403335,352686,335781,300583,299598,320384,321263,374008,317505,284009,352805,374158,233553,266067,269152,274918,311616,352373,276177,260708,245920,260819,239868,172684,157957,212096,200963,211083,189295,194713,204402,183404,406646,411664,400673,382595,366437,403153,419786,408839,359160,462207,432653,341367,321580,277679,380084,333177,260971,269991,314196,401644,270803,273377,345177,280905,320377,207949,195942,273067,235735,196941,175840,232312,186066,155041,214980,280263,161412,175728,161471,265842
+STAT,(NULL),MeminfoPost,80,330,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,642,642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+RUN: Start
+[1;31mRUN: Start[0m
+RUN: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+RUN: Variable Hostname = oersted.ices.utexas.edu
+RUN: Variable Timestamp = 1362994326.998793
+RUN: Variable Threads = 80
+Galois Benchmark Suite v2.2.0 (r13110)
+Copyright (C) 2013 The University of Texas at Austin
+http://iss.ices.utexas.edu/galois/
+
+application: Breadth-first Search
+Computes the shortest path from a source node to all nodes in a directed graph using a modified Bellman-Ford algorithm
+
+http://iss.ices.utexas.edu/?p=projects/galois/benchmarks/breadth_first_search
+INFO: CommandLine /workspace/ddn/build/run/apps/bfs/bfs -t 80 -startNode 1 -algo hybrid /net/faraday/workspace/inputs/road/USA-road-d.USA.gr -graphTranspose /net/faraday/workspace/inputs/road/USA-road-d.USA-transpose.gr -noverify
+INFO: Hostname oersted.ices.utexas.edu
+Read 23947347 nodes
+Running Hybrid version
+Node 1 has distance 0
+STATTYPE,LOOP,CATEGORY,n,sum,T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15,T16,T17,T18,T19,T20,T21,T22,T23,T24,T25,T26,T27,T28,T29,T30,T31,T32,T33,T34,T35,T36,T37,T38,T39,T40,T41,T42,T43,T44,T45,T46,T47,T48,T49,T50,T51,T52,T53,T54,T55,T56,T57,T58,T59,T60,T61,T62,T63,T64,T65,T66,T67,T68,T69,T70,T71,T72,T73,T74,T75,T76,T77,T78,T79
+STAT,(NULL),Conflicts,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Iterations,80,23947381,449604,382268,414067,350196,437017,369081,400291,296035,429769,362252,360592,348815,339656,344071,393245,334331,426653,352702,285091,292193,287943,264791,290791,241399,301788,330438,357630,252478,265373,214146,172802,190654,199986,189225,201632,200865,247514,155216,206000,204612,414685,365526,392127,372308,385794,280813,397622,422516,341819,381672,261989,371524,354461,386801,391569,271002,399546,375367,346517,346251,273906,223177,169943,209017,234323,257481,318692,283860,319419,281670,211120,195697,155408,193230,319175,181599,183637,142296,195425,195185
+STAT,(NULL),MeminfoPost,80,330,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),MeminfoPre,80,324,324,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Threads,80,80,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+STAT,(NULL),Time,80,635,635,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
