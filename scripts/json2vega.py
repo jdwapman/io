@@ -20,7 +20,6 @@ import pandas
 import numpy
 import json
 import os
-import argparse  # built-in
 from subprocess import Popen, PIPE, STDOUT  # built-in
 
 #Base class to produce vega-spec jsons

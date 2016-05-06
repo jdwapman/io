@@ -8,11 +8,10 @@ Contains sample code that calls the functions in json2vega.py as intended.
 Usage: simply run the script to create a sample bar graph.
 """
 
-import os
+import os   # built-in
 import sys  # built-in
 import json2vega
 from utils import bcolors, parseCmdLineArgs  # bcolors class used to color commandline output. parseCmdLineArgs used to parse commandline arguments
-
 
 def main(argv):
     """Creates a bar graph by calling methods in json2vega.py"""
