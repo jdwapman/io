@@ -80,7 +80,8 @@ class VegaGraphBase(object):
         """
         self.read_json()
         graph = self.parse_jsons()
-        self.write_json(graph,self.file_suffix,verbose)
+        json = self.pipe_vl2vg(graph)
+        self.write_json(json,self.file_suffix,verbose)
 
 #TODO method to check whether config files exist. If not use default.
 
@@ -97,6 +98,14 @@ class VegaGraphBase(object):
         pandas_df = pandas.DataFrame(self.__input_jsons)
         return pandas_df
 
+    def pipe_vl2vg(self, json_in):
+        """Pipes the vega-lite json through vl2vg to generate the vega json output
+
+        Returns: vega-spec json string"""
+        p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
+        vg = p.communicate(input=json.dumps(json_in))[0]
+        return vg
+
     def write_json(self,json_in,suffix="",verbose=False):
         """Output json to the output_path and with a specific name.
 
@@ -108,13 +117,11 @@ class VegaGraphBase(object):
             suffix: the suffix to name the output files with. default is ""
         """
 
-        # pipe it through vl2vg to turn it into vega
+        #takes in any json string as 'json_in' and writes it to file. The name format of the file explained above
         file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
-        p = Popen(["vl2vg"], stdout=file, stdin=PIPE,shell=True)
-        vg = p.communicate(input=json.dumps(json_in))[0]
+        file.write(json_in)
         if(verbose): print("Created " + file.name)
         file.close()
-
 
 class VegaGraphBar(VegaGraphBase):
     """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
