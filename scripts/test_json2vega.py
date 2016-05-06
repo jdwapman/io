@@ -11,6 +11,7 @@ Usage: simply run the script to create a sample bar graph.
 import os   # built-in
 import sys  # built-in
 import json2vega
+import vega2pic
 from utils import bcolors, parseCmdLineArgs  # bcolors class used to color commandline output. parseCmdLineArgs used to parse commandline arguments
 
 def main(argv):
@@ -34,6 +35,11 @@ def main(argv):
                                   axes_vars=axes_vars)
     bar1.run(verbose=True)
 
+    pngbuilder = vega2pic.PNGBuilder(input_json="output/_g_BFS_0.json",output_name="test")
+    pngbuilder.buildPlot(True)
+    #director = vega2pic.Director()
+    #director.setBuilder(pngbuilder)
+    #png = director.build()
 
 if __name__ == "__main__":
     main(sys.argv)

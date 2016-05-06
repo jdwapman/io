@@ -14,9 +14,20 @@ Dependencies:
 
 """
 import os   # built-in
+from subprocess import call, PIPE, STDOUT
 
+"""
+class Director:
 
-class Builder(object):
+    __builder = None
+    def setBuilder(self, builder):
+        self.__builder = builder
+
+    def build():
+        plot = Plot()
+        visual = self.__builder.buildPLot()
+"""
+class Builder:
     """Base class for converting vega-specific graph json files to an actual visual plot.
 
     This class is the base class, and the child classes inherit the methods and variables of this class.
@@ -26,15 +37,15 @@ class Builder(object):
 
     """
 
-    def __init__(self,input_json,output_type,output_name,output_dir=""):
+    def __init__(self,input_json,output_name,output_dir=""):
         """Initis base class with provided atrributes."""
         self.input_json = input_json
-        self.output_type = output_type
-        self.output_dir = output_path
+        self.output_dir = output_dir
         self.output_name = output_name
 
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. This method is 'virtual' in the Builder class. """
+        pass
 
 class PNGBuilder(Builder):
     """class for converting vega-specific graph json files to an actual visual plot as a PNG file.
@@ -47,9 +58,7 @@ class PNGBuilder(Builder):
     """
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. """
-        # pipe JSON through vg2png to turn it into png files
-        file = open('%s/%s.json' %(self.output_dir,self.output_name), 'w')
-        p = Popen(["vg2png"], stdout=file, stdin=PIPE,shell=True)
-        vg = p.communicate(input=input_json)[0]
-        if(verbose): print("Created " + file.name)
-        file.close()
+        # call vg2png to turn JSON it into png
+        output_png_file = self.output_dir+self.output_name+'.png'
+        p = call(['vg2png', self.input_json, output_png_file])
+        if(verbose): print("Created " + output_png_file)
