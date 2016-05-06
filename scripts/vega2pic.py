@@ -37,11 +37,10 @@ class Builder:
 
     """
 
-    def __init__(self,input_json,output_name,output_dir=""):
+    def __init__(self,input_json):
         """Initis base class with provided atrributes."""
         self.input_json = input_json
-        self.output_dir = output_dir
-        self.output_name = output_name
+        self.output = os.path.splitext(self.input_json)[0]
 
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. This method is 'virtual' in the Builder class. """
@@ -59,6 +58,22 @@ class PNGBuilder(Builder):
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. """
         # call vg2png to turn JSON it into png
-        output_png_file = self.output_dir+self.output_name+'.png'
+        output_png_file = self.output+'.png'
         p = call(['vg2png', self.input_json, output_png_file])
         if(verbose): print("Created " + output_png_file)
+
+class SVGBuilder(Builder):
+    """class for converting vega-specific graph json files to an actual visual plot as a PNG file.
+
+    This class is a child class of Builder and inherits all the methods and variables.
+
+    Attributes:
+
+
+    """
+    def buildPlot(self,verbose=False):
+        """builds the actual visual plot. """
+        # call vg2png to turn JSON it into png
+        output_svg_file = self.output+'.svg'
+        p = call(['vg2svg', self.input_json, output_svg_file])
+        if(verbose): print("Created " + output_svg_file)

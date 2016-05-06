@@ -35,11 +35,8 @@ def main(argv):
                                   axes_vars=axes_vars)
     bar1.run(verbose=True)
 
-    pngbuilder = vega2pic.PNGBuilder(input_json="output/_g_BFS_0.json",output_name="test")
-    pngbuilder.buildPlot(True)
-    #director = vega2pic.Director()
-    #director.setBuilder(pngbuilder)
-    #png = director.build()
+    svgbuilder = vega2pic.SVGBuilder(input_json="output/_g_BFS_0.json")
+    svgbuilder.buildPlot(True)
 
 if __name__ == "__main__":
     main(sys.argv)
