@@ -14,9 +14,9 @@ Plot types that can be created:
     - Bar graphs
 """
 
-import scripts/json2vega                    #convert json outputs to vega-spec JSONs
-from scripts/utils import parseCmdLineArgs  #function to parse cmd args
-import os   #built-in
+import scripts.json2vega                    #convert json outputs to vega-spec JSONs
+from scripts.utils import parseCmdLineArgs  #function to parse cmd args
+import os,sys   #built-in
 
 
 def main(argv):
@@ -25,6 +25,8 @@ def main(argv):
     args = parseCmdLineArgs(argv)  # process input arguments passed
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
+
+
 
     # Create required arguments and instantite bar class object for testing.
     conditions = {"algorithm": "BFS",
