@@ -15,6 +15,7 @@ Dependencies:
 """
 import os   # built-in
 from subprocess import call, PIPE, STDOUT
+from abc import ABCMeta, abstractmethod #built-in #to make base class abstract
 
 """
 class Director:
@@ -36,12 +37,14 @@ class Builder:
     Attributes:
 
     """
+    __metaclass__ = ABCMeta
 
     def __init__(self,input_json):
         """Initis base class with provided atrributes."""
         self.input_json = input_json
         self.output = os.path.splitext(self.input_json)[0]
 
+    @abstractmethod
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. This method is 'virtual' in the Builder class. """
         pass

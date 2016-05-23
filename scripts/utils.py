@@ -64,14 +64,15 @@ def parseCmdLineArgs(argv):
 
     # add the arguments available to user
     parser.add_argument('plot_type', metavar='<plot type>', type=str, help='select the plot type. Choices="bar","scatter"', choices=['bar'])
-    parser.add_argument('input', metavar='<input directory>', type=str,
+    parser.add_argument('outputtype', metavar='<output type>', type=str, help='select the desired output format. Choices="svg","html","png","vegajson"',choices=['svg','html','png','vegajson'])
+    parser.add_argument('inputpath', metavar='<input path>', type=str,
                         help='directory containing input JSON files. Default= gunrock-output/ ',
                         default='gunrock-output/')
-    parser.add_argument('-o', metavar='<directory>', type=str,
+    parser.add_argument('-o', metavar='<output path>', type=str,
                         help='directory for output files. Default= output/',
                         default='output/')
     parser.add_argument('engine_name', metavar='<engine_name>', type=str, help='the engine name the outputs are from')
-    parser.add_argument('algorithm_name', metavar='<algorithm_name>', type=str, help='the algorithm name of the datasets. e.g. BFS')
+    parser.add_argument('algorithm_name', metavar='<algorithm name>', type=str, help='the algorithm name of the datasets. e.g. BFS')
     parser.add_argument('xaxis',metavar='<x-axis variable>', type=str, help='the variable used on the x axis')
     parser.add_argument('yaxis', metavar='<y-axis variable>', type=str, help='the variable used on the y axis')
     parser.add_argument('--conds','-c', metavar='<conditions>', type=is_dictionary, help='additional conditions to narrow the results to be graphed. the type needs to be like a dictionary. e.g. {"undirected": True, "mark_predecessors": True}')

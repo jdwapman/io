@@ -15,6 +15,7 @@ Plot types that can be created:
 """
 
 import scripts.json2vega as json2vega               #convert json outputs to vega-spec JSONs
+import scripts.vega2pic as vega2pic                 #generate visual from vega-spec json
 from scripts.utils import parseCmdLineArgs  #function to parse cmd args
 import os,sys   #built-in
 
@@ -33,19 +34,30 @@ def main(argv):
     names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
 
-    def f(x):
+    def case_plottype(case):
         """switch statement for the plot_type object creation"""
         return {
             'bar': json2vega.VegaGraphBar(output_path=args.o,
-                                          input_path=args.input,
+                                          input_path=args.inputpath,
                                           config_dir="scripts/config_files",
                                           labels=names,
                                           conditions_dict=conditions,
                                           axes_vars=axes_vars),
-        }[x]
-    bar1 = f(args.plot_type)
-    bar1.run(verbose=args.v)
+        }[case]
+    plot_obj = case_plottype(case=args.plot_type)
+    JSONfile_path = plot_obj.run(verbose=args.v)
 
+    def case_outputtype(case,input):
+        """switch statement for the type of output to be created"""
+        return{
+            'vegajson': '',
+            'html': '',
+            'svg': vega2pic.SVGBuilder(input),
+            'png': vega2pic.PNGBuilder(input)
+        }[case]
+
+    builder = case_outputtype(case=args.outputtype, input=JSONfile_path)
+    builder.buildPlot(verbose=args.v)
 
 if __name__ == "__main__":
     main(sys.argv)

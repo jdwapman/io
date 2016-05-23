@@ -84,8 +84,8 @@ class VegaGraphBase(object):
         self.read_json()
         graph = self.parse_jsons()
         json = self.pipe_vl2vg(graph)
-        self.write_json(json,self.file_suffix,verbose)
-
+        return self.write_json(json,self.file_suffix,verbose)
+        
 #TODO method to check whether config files exist. If not use default.
 
     def read_config(self):
@@ -125,7 +125,9 @@ class VegaGraphBase(object):
         file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
         file.write(json_in)
         if(verbose): print("Created " + file.name)
+        file_path = file.name
         file.close()
+        return file_path
 
 class VegaGraphBar(VegaGraphBase):
     """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
