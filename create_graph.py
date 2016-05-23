@@ -26,21 +26,25 @@ def main(argv):
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
 
-    verbosity = args.v
-    print(verbosity)
-    # Create required arguments and instantite bar class object for testing.
-    conditions = {"algorithm": "BFS",
-                  "undirected": True, "mark_predecessors": True}
-    axes_vars = {'x': 'dataset', 'y': 'm_teps'}
-    names = {'engine_name': 'g', 'algorithm_name': 'BFS',
-             'x_axis': 'Datasets', 'y_axis': 'MTEPS', 'file_suffix': '0'}
-    bar1 = json2vega.VegaGraphBar(output_path=args.o,
-                                  input_path=args.input,
-                                  config_dir="scripts/config_files",
-                                  labels=names,
-                                  conditions_dict=conditions,
-                                  axes_vars=axes_vars)
-    bar1.run(verbose=verbosity)
+    # Create required arguments (from input arguments provided) and instantite class object for testing.
+    conditions = {"algorithm": args.algorithm_name}
+    conditions.update(args.conds)
+    axes_vars = {'x': args.xaxis, 'y': args.yaxis}
+    names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
+             'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
+
+    def f(x):
+        """switch statement for the plot_type object creation"""
+        return {
+            'bar': json2vega.VegaGraphBar(output_path=args.o,
+                                          input_path=args.input,
+                                          config_dir="scripts/config_files",
+                                          labels=names,
+                                          conditions_dict=conditions,
+                                          axes_vars=axes_vars),
+        }[x]
+    bar1 = f(args.plot_type)
+    bar1.run(verbose=args.v)
 
 
 if __name__ == "__main__":
