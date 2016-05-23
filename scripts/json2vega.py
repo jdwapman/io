@@ -18,8 +18,8 @@ Dependencies:
 
 import pandas
 import numpy
-import json
-import os
+import json # built-in
+import os   # built-in
 from subprocess import Popen, PIPE, STDOUT  # built-in
 
 #Base class to produce vega-spec jsons

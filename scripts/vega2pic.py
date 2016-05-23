@@ -46,13 +46,14 @@ class Builder:
         """builds the actual visual plot. This method is 'virtual' in the Builder class. """
         pass
 
+
 class PNGBuilder(Builder):
     """class for converting vega-specific graph json files to an actual visual plot as a PNG file.
 
     This class is a child class of Builder and inherits all the methods and variables.
 
     Attributes:
-
+        Same as Builder
 
     """
     def buildPlot(self,verbose=False):
@@ -68,7 +69,7 @@ class SVGBuilder(Builder):
     This class is a child class of Builder and inherits all the methods and variables.
 
     Attributes:
-
+        Same as Builder
 
     """
     def buildPlot(self,verbose=False):
