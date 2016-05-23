@@ -29,6 +29,17 @@ class bcolors:
 
 
 import argparse # built-in
+
+
+def is_dictionary(string):
+    import ast #built-in
+    try:
+        value = ast.literal_eval(string)
+    except:
+        msg = "%r does not have a dictionary format" % string
+        raise argparse.ArgumentTypeError(msg)
+    return value
+
 def parseCmdLineArgs(argv):
     """Function to process input args.
 
@@ -48,15 +59,25 @@ def parseCmdLineArgs(argv):
 
     # parse args
     parser = argparse.ArgumentParser(
-        description=bcolors.HEADER + 'IO Options' + bcolors.ENDC)
+        description=bcolors.HEADER + 'IO Options' + bcolors.ENDC,
+        epilog=bcolors.HEADER + 'Processing Completed' + bcolors.ENDC)
+
     # add the arguments available to user
-    parser.add_argument('-d', metavar='<directory>', type=str,
-                        help='directory containing input JSON files. Default= / ',
-                        default='../gunrock-output/')
+    parser.add_argument('plot_type', metavar='<plot type>', type=str, help='select the plot type. Choices="bar","scatter"', choices=['bar'])
+    parser.add_argument('input', metavar='<input directory>', type=str,
+                        help='directory containing input JSON files. Default= gunrock-output/ ',
+                        default='gunrock-output/')
     parser.add_argument('-o', metavar='<directory>', type=str,
                         help='directory for output files. Default= output/',
                         default='output/')
-    # TODO add additional arguments: engine_name,
-    # algorithm_name,axes_vars,conditions,config_path
+    parser.add_argument('engine_name', metavar='<engine_name>', type=str, help='the engine name the outputs are from')
+    parser.add_argument('algorithm_name', metavar='<algorithm_name>', type=str, help='the algorithm name of the datasets. e.g. BFS')
+    parser.add_argument('xaxis',metavar='<x-axis variable>', type=str, help='the variable used on the x axis')
+    parser.add_argument('yaxis', metavar='<y-axis variable>', type=str, help='the variable used on the y axis')
+    parser.add_argument('--conds','-c', metavar='<conditions>', type=is_dictionary, help='additional conditions to narrow the results to be graphed. the type needs to be like a dictionary. e.g. {"undirected": True, "mark_predecessors": True}')
+    parser.add_argument('--xlabel', metavar ='<x_axis label>', type=str, help='the label for the x axis', default='')
+    parser.add_argument('--ylabel', metavar='<y_axis label>', type=str, help='the label for the y axis', default='')
+    parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str, help='the suffix used to create the output file. Default=""',default='')
+    
     args = parser.parse_args()
     return args

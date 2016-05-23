@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+    #!/usr/bin/env python
 """Sample code to test json2vega.py.
 
 Author: Farmehr Farhour f.farhour@gmail.com.
