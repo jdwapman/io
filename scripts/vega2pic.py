@@ -65,7 +65,6 @@ class PNGBuilder(Builder):
         output_png_file = self.output+'.png'
         p = call(['vg2png', self.input_json, output_png_file])
         if(verbose): print("Created " + output_png_file)
-        print(p)
         return p
 class SVGBuilder(Builder):
     """class for converting vega-specific graph json files to an actual visual plot as a PNG file.

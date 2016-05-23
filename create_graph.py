@@ -68,23 +68,19 @@ def main(argv):
     def case_html():
         pass
     def case_svg():
-        try:
-            temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-            builder =  vega2pic.SVGBuilder(temp_file)
-            svg = builder.buildPlot(verbose=args.v)
-            write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-            os.remove(temp_file)
-        finally:
-            print('done')
+        temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+        builder =  vega2pic.SVGBuilder(temp_file)
+        svg = builder.buildPlot(verbose=args.v)
+        #write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+        os.remove(temp_file)
+        if(args.v): print("Deleted " + temp_file)
     def case_png():
-        try:
-            temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-            builder =  vega2pic.PNGBuilder(temp_file)
-            png = builder.buildPlot(verbose=args.v)
-            write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-            os.remove(temp_file)
-        finally:
-            print('done')
+        temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+        builder =  vega2pic.PNGBuilder(temp_file)
+        png = builder.buildPlot(verbose=args.v)
+        #write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+        os.remove(temp_file)
+        if(args.v): print("Deleted " + temp_file)
 
     case_outputtype= {  'vegajson': case_vegajson,
                         'html': case_html,
