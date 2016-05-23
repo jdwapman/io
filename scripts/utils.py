@@ -27,9 +27,27 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+def write_to_file(rawinput,filetype,output_path,engine_name,algorithm_name,suffix="",verbose=False):
+    """Output json to the output_path and with a specific name.
+
+    The filename is in the format: '_<engine_name>_<algorithm_name>_suffix.json'.
+    This method uses vega-lite to produce the final vega-spec output.
+
+    Arguments:
+        json_in: the input json file to be outputted to file.
+        suffix: the suffix to name the output files with. default is ""
+    Returns: file path to the file created
+    """
+
+    #takes in any json string as 'json_in' and writes it to file. The name format of the file explained above
+    file = open('%s_%s_%s_%s.%s' %(output_path,engine_name,algorithm_name,suffix,filetype), 'w')
+    file.write(rawinput)
+    if(verbose): print("Created " + file.name)
+    file_path = file.name
+    file.close()
+    return file_path
 
 import argparse # built-in
-
 
 def is_dictionary(string):
     import ast #built-in

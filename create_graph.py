@@ -17,6 +17,7 @@ Plot types that can be created:
 import scripts.json2vega as json2vega               #convert json outputs to vega-spec JSONs
 import scripts.vega2pic as vega2pic                 #generate visual from vega-spec json
 from scripts.utils import parseCmdLineArgs  #function to parse cmd args
+from scripts.utils import write_to_file     #function to write to file
 import os,sys   #built-in
 
 
@@ -44,9 +45,57 @@ def main(argv):
                                           conditions_dict=conditions,
                                           axes_vars=axes_vars),
         }[case]
+    #choose the plot type based on input args
     plot_obj = case_plottype(case=args.plot_type)
-    JSONfile_path = plot_obj.run(verbose=args.v)
+    #read json and parse it
+    plot_obj.read_json()
+    graph = plot_obj.parse_jsons()
+    #create vega-spec json
+    json = plot_obj.pipe_vl2vg(graph)
 
+    ''' #not working
+    def write2tempfile():
+        import tempfile
+        temp = tempfile.NamedTemporaryFile(delete=False)
+        temp.write(json)
+        temp.close()
+        print(temp.name)
+        return temp.name
+    '''
+    def case_vegajson():
+        """if vegajson, then write the vegajson to file and return filename"""
+        return write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+    def case_html():
+        pass
+    def case_svg():
+        try:
+            temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            builder =  vega2pic.SVGBuilder(temp_file)
+            svg = builder.buildPlot(verbose=args.v)
+            write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            os.remove(temp_file)
+        finally:
+            print('done')
+    def case_png():
+        try:
+            temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            builder =  vega2pic.PNGBuilder(temp_file)
+            png = builder.buildPlot(verbose=args.v)
+            write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            os.remove(temp_file)
+        finally:
+            print('done')
+
+    case_outputtype= {  'vegajson': case_vegajson,
+                        'html': case_html,
+                        'svg': case_svg,
+                        'png': case_png
+                        }
+    case_outputtype[args.outputtype]()
+
+
+    #JSONfile_path = plot_obj.run(verbose=args.v)
+'''
     def case_outputtype(case,input):
         """switch statement for the type of output to be created"""
         return{
@@ -58,6 +107,6 @@ def main(argv):
 
     builder = case_outputtype(case=args.outputtype, input=JSONfile_path)
     builder.buildPlot(verbose=args.v)
-
+'''
 if __name__ == "__main__":
     main(sys.argv)

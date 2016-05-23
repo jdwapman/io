@@ -21,7 +21,6 @@ import numpy
 import json # built-in
 import os   # built-in
 from subprocess import Popen, PIPE, STDOUT  # built-in
-
 from abc import ABCMeta, abstractmethod #built-in #to make base class abstract
 
 #Base class to produce vega-spec jsons
@@ -81,11 +80,12 @@ class VegaGraphBase(object):
         Arguments:
             verbose: If True, prints out what is happening. Default=False.
         """
+        from utils import write_to_file #function to write json to file
         self.read_json()
         graph = self.parse_jsons()
         json = self.pipe_vl2vg(graph)
-        return self.write_json(json,self.file_suffix,verbose)
-        
+        return self.write_to_file(rawinput=json,filetype='json',output_path=self.output_path,engine_name=self.engine_name,algorithm_name=self.algorithm_name,suffix=self.file_suffix,verbose=verbose)
+
 #TODO method to check whether config files exist. If not use default.
 
     def read_config(self):
@@ -110,24 +110,7 @@ class VegaGraphBase(object):
         vg = p.communicate(input=json.dumps(json_in))[0]
         return vg
 
-    def write_json(self,json_in,suffix="",verbose=False):
-        """Output json to the output_path and with a specific name.
 
-        The filename is in the format: '_<engine_name>_<algorithm_name>_suffix.json'.
-        This method uses vega-lite to produce the final vega-spec output.
-
-        Arguments:
-            json_in: the input json file to be outputted to file.
-            suffix: the suffix to name the output files with. default is ""
-        """
-
-        #takes in any json string as 'json_in' and writes it to file. The name format of the file explained above
-        file = open('%s_%s_%s_%s.json' %(self.output_path,self.engine_name,self.algorithm_name,suffix), 'w')
-        file.write(json_in)
-        if(verbose): print("Created " + file.name)
-        file_path = file.name
-        file.close()
-        return file_path
 
 class VegaGraphBar(VegaGraphBase):
     """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
