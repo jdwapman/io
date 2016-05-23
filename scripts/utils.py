@@ -78,6 +78,6 @@ def parseCmdLineArgs(argv):
     parser.add_argument('--xlabel', metavar ='<x_axis label>', type=str, help='the label for the x axis', default='')
     parser.add_argument('--ylabel', metavar='<y_axis label>', type=str, help='the label for the y axis', default='')
     parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str, help='the suffix used to create the output file. Default=""',default='')
-    
+    parser.add_argument('-v',action='store_true',help='verbosity, if included in the args the program will increase verbosity as it executes')
     args = parser.parse_args()
     return args

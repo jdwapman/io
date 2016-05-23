@@ -14,7 +14,7 @@ Plot types that can be created:
     - Bar graphs
 """
 
-import scripts.json2vega                    #convert json outputs to vega-spec JSONs
+import scripts.json2vega as json2vega               #convert json outputs to vega-spec JSONs
 from scripts.utils import parseCmdLineArgs  #function to parse cmd args
 import os,sys   #built-in
 
@@ -26,8 +26,8 @@ def main(argv):
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
 
-
-
+    verbosity = args.v
+    print(verbosity)
     # Create required arguments and instantite bar class object for testing.
     conditions = {"algorithm": "BFS",
                   "undirected": True, "mark_predecessors": True}
@@ -35,12 +35,12 @@ def main(argv):
     names = {'engine_name': 'g', 'algorithm_name': 'BFS',
              'x_axis': 'Datasets', 'y_axis': 'MTEPS', 'file_suffix': '0'}
     bar1 = json2vega.VegaGraphBar(output_path=args.o,
-                                  input_path=args.d,
-                                  config_dir="config_files",
+                                  input_path=args.input,
+                                  config_dir="scripts/config_files",
                                   labels=names,
                                   conditions_dict=conditions,
                                   axes_vars=axes_vars)
-    bar1.run(verbose=True)
+    bar1.run(verbose=verbosity)
 
 
 if __name__ == "__main__":

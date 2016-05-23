@@ -22,6 +22,8 @@ import json # built-in
 import os   # built-in
 from subprocess import Popen, PIPE, STDOUT  # built-in
 
+from abc import ABCMeta, abstractmethod #built-in #to make base class abstract
+
 #Base class to produce vega-spec jsons
 class VegaGraphBase(object):
     """Base class for converting json outputs of different algorithms to vega-specific graph json files.
@@ -47,6 +49,7 @@ class VegaGraphBase(object):
                 e.g. labels = {'engine_name':'g','algorithm_name':'BFS','x_axis':'Datasets','y_axis':'MTEPS','file_suffix':'0'}
 
     """
+    __metaclass__ = ABCMeta
 
     # list containing all jsons
     __input_jsons = []
@@ -89,6 +92,7 @@ class VegaGraphBase(object):
         """Returns the json config file as a python object"""
         return json.load(open(self.config_dir +"/" + "bar_config.json"))
 
+    @abstractmethod
     def parse_jsons(self):
         """Parses the input json files using Pandas.
 
