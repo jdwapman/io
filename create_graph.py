@@ -131,29 +131,11 @@ def main(argv):
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
 
 
-
+    ##################################
+    #######CREATE DESIRED PLOT########
+    ##################################
     #calls the approrpiate function to generate the plot desired
     plot_obj = case_plottype[args.plot_type]()
-    
-    # def case_plottype(case):
-    #     """switch statement for the plot_type object creation"""
-    #     return {
-    #         'bar': json2vega.VegaGraphBar(output_path=args.o,
-    #                                       input_path=args.inputpath,
-    #                                       config_dir=args.config,
-    #                                       labels=names,
-    #                                       conditions_dict=conditions,
-    #                                       axes_vars=axes_vars),
-    #         'scatter': json2vega.VegaGraphScatter(output_path=args.o,
-    #                                       input_path=args.inputpath,
-    #                                       config_dir=args.config,
-    #                                       labels=names,
-    #                                       conditions_dict=conditions,
-    #                                       axes_vars=axes_vars),
-    #     }[case]
-    #
-    # #choose the plot type based on input args
-    # plot_obj = case_plottype(case=args.plot_type)
 
 
     ##################################
@@ -167,7 +149,9 @@ def main(argv):
 
 
 
-    #OUTPUT CREATION.
+    ##################################
+    #########OUTPUT CREATION##########
+    ##################################
     #calls the approrpiate function to generate the output desired
     case_outputtype[args.outputtype]()
 
