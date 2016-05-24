@@ -98,5 +98,7 @@ def parseCmdLineArgs(argv):
     parser.add_argument('--ylabel', metavar='<y_axis label>', type=str, help='the label for the y axis', default='')
     parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str, help='the suffix used to create the output file. Default=""',default='')
     parser.add_argument('-v',action='store_true',help='verbosity, if included in the args the program will increase verbosity as it executes')
+    parser.add_argument('--config', metavar='<config files directory>', type=str, help='the location of the config files can be changed if desired. Default = scripts/config_files', default = 'scripts/config_files')
+
     args = parser.parse_args()
     return args

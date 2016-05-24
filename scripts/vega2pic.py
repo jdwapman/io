@@ -15,7 +15,7 @@ Dependencies:
 
 """
 import os   # built-in
-from subprocess import PIPE, STDOUT, check_output
+from subprocess import PIPE, STDOUT, check_output, CalledProcessError
 from abc import ABCMeta, abstractmethod #built-in #to make base class abstract
 
 """
@@ -64,9 +64,12 @@ class PNGBuilder(Builder):
         """builds the actual visual plot.
         Returns a string containing the png binaries"""
         # call vg2png to turn JSON it into png
-        p = check_output(['vg2png', self.input_json, ''])
-        #if(verbose): print("Created " + output_png_file)
-        return p
+        try:
+            p = check_output(['vg2png', self.input_json, ''])
+            #if(verbose): print("Created " + output_png_file)
+            return p
+        except CalledProcessError as e:
+            print e.output
 
 class SVGBuilder(Builder):
     """class for converting vega-specific graph json files to an actual visual plot as a PNG file.
@@ -80,6 +83,9 @@ class SVGBuilder(Builder):
     def buildPlot(self,verbose=False):
         """builds the actual visual plot. """
         # call vg2png to turn JSON it into png
-        p = call(['vg2svg', self.input_json, ''])
-        #if(verbose): print("Created " + output_svg_file)
-        return p
+        try:
+            p = call(['vg2svg', self.input_json, ''])
+            #if(verbose): print("Created " + output_svg_file)
+            return p
+        except CalledProcessError as e:
+            print e.output

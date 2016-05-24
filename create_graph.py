@@ -56,13 +56,17 @@ def main(argv):
         return {
             'bar': json2vega.VegaGraphBar(output_path=args.o,
                                           input_path=args.inputpath,
-                                          config_dir="scripts/config_files",
+                                          config_dir=args.config,
                                           labels=names,
                                           conditions_dict=conditions,
                                           axes_vars=axes_vars),
         }[case]
     #choose the plot type based on input args
     plot_obj = case_plottype(case=args.plot_type)
+
+    ##################################
+    #####INITIAL INPUT PROCESSING#####
+    ##################################
     #read json and parse it
     plot_obj.read_json()
     graph = plot_obj.parse_jsons()

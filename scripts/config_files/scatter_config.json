@@ -1,7 +1,7 @@
 {
-    "mark": "bar",
+    "mark": "point",
     "encoding": {
-        "y": {
+        "y": {"scale": {"type": "log"}
         },
         "x": {
         }

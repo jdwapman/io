@@ -61,6 +61,7 @@ class VegaGraphBase(object):
         self.engine_name = labels['engine_name']
         self.algorithm_name = labels['algorithm_name']
         self.file_suffix = labels['file_suffix']
+        self.graph_type = self.__class__.__name__     #the graph type set as the name of the class
 
     def read_json(self):
         """Reads json files wiht the right specs into __input_jsons list
@@ -89,8 +90,9 @@ class VegaGraphBase(object):
 #TODO method to check whether config files exist. If not use default.
 
     def read_config(self):
-        """Returns the json config file as a python object"""
-        return json.load(open(self.config_dir +"/" + "bar_config.json"))
+        """Returns the json config file as a python object
+        Uses self.graphtype , which is a string defining the type of graph, e.g. bar."""
+        return json.load(open(self.config_dir +"/" + self.graph_type[9:].lower() + "_config.json"))
 
     @abstractmethod
     def parse_jsons(self):
@@ -108,6 +110,9 @@ class VegaGraphBase(object):
         Returns: vega-spec json string"""
         p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
         vg = p.communicate(input=json.dumps(json_in))[0]
+        # f = open('log.json','w')
+        # f.write(json.dumps(json_in))
+        # f.close()
         return vg
 
 
@@ -185,3 +190,41 @@ class VegaGraphBar(VegaGraphBase):
         bar["encoding"]["x"]["axis"] = {"title":self.x_axis_label}
         #return json
         return bar
+
+class VegaGraphScatter(VegaGraphBar):
+    """Class for converting json outputs of different algorithms to vega-specific scatter graph json files.
+
+    This class is a child class of VegaGraphBar and inherits all the methods and variables, includign those of VegaGraphBase.
+
+    Attributes:
+        output_path: the output directory to write the vega-spec json files to.
+        input_path: the input path containing the input json files to be processed.
+        config_dir: the directory containing the json config files relevant to each plot type.
+            Each config file will need to have a specific name of the format: '<plot type>_config.json'
+        labels: a dictionary containing the relevant nouns required for naming the file and the axes of the
+            plots created. The names dictionary should contain 5 keys and their corresponding values.
+            They are:
+                engine_name: the name of the engine used to run the algorithm (e.g. Gunrock). This is
+                    used to name the output files.
+                algorithm_name: the name of the algorithm (e.g. BFS). This is used to name the
+                    output files.
+                x_axis: the label for the x_axis
+                y_axis: the label for the y_axis
+                file_suffix: the suffix to put at the end of the file being generated.
+                e.g. labels = {'engine_name':'g','algorithm_name':'BFS','x_axis':'Datasets','y_axis':'MTEPS','file_suffix':'0'}
+        conditions_dict: a dictionary containing the conditions to limit the input files to a
+            specific category. For instance choosing files that were outputs of a BFS algorith.
+            For instance the following dictionary limits the inputs to BFS algorithms that are undirected and
+            mark_predecessors is true:
+            {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
+        axes_vars: a dictionary of the variables to be evaluated for the x and y axes. There are 2 keys: 'x' and 'y'.
+            For instance:
+            {'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)
+
+    """
+    def parse_jsons(self):
+        """Parses the input json files using Pandas.
+
+        Returns: the json file to be written to file.
+        """
+        super(VegaGraphScatter,self).parse_jsons()
