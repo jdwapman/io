@@ -20,21 +20,37 @@ from scripts.utils import parseCmdLineArgs  #function to parse cmd args
 from scripts.utils import write_to_file     #function to write to file
 import os,sys   #built-in
 
+#create temp file
+def write2tempfile(input):
+    """a helper function that creates a temp file and stores the input passed to it in the file """
+    import tempfile
+    temp = tempfile.NamedTemporaryFile(delete=False)
+    temp.write(input)
+    temp.close()
+    print(temp.name)
+    return temp
 
 def main(argv):
-    """Creates a bar graph by calling methods in json2vega.py"""
+    """Creates the desired graph by calling methods in json2vega.py and vega2pic"""
 
+    ##################################
+    ######CREATE REQUIRED INPUTS######
+    ##################################
     args = parseCmdLineArgs(argv)  # process input arguments passed
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
 
-    # Create required arguments (from input arguments provided) and instantite class object for testing.
+    # Create required arguments and dictionaries (from input arguments provided)
     conditions = {"algorithm": args.algorithm_name}
     conditions.update(args.conds)
     axes_vars = {'x': args.xaxis, 'y': args.yaxis}
     names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
 
+
+    ##################################
+    #####PLOT TYPE CASE STATEMENT#####
+    ##################################
     def case_plottype(case):
         """switch statement for the plot_type object creation"""
         return {
@@ -53,56 +69,48 @@ def main(argv):
     #create vega-spec json
     json = plot_obj.pipe_vl2vg(graph)
 
-    ''' #not working
-    def write2tempfile():
-        import tempfile
-        temp = tempfile.NamedTemporaryFile(delete=False)
-        temp.write(json)
-        temp.close()
-        print(temp.name)
-        return temp.name
-    '''
-    def case_vegajson():
-        """if vegajson, then write the vegajson to file and return filename"""
-        return write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-    def case_html():
-        pass
-    def case_svg():
-        temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-        builder =  vega2pic.SVGBuilder(temp_file)
-        svg = builder.buildPlot(verbose=args.v)
-        #write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-        os.remove(temp_file)
-        if(args.v): print("Deleted " + temp_file)
-    def case_png():
-        temp_file = write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-        builder =  vega2pic.PNGBuilder(temp_file)
-        png = builder.buildPlot(verbose=args.v)
-        #write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
-        os.remove(temp_file)
-        if(args.v): print("Deleted " + temp_file)
 
-    case_outputtype= {  'vegajson': case_vegajson,
-                        'html': case_html,
-                        'svg': case_svg,
-                        'png': case_png
+    ##################################
+    ####OUTPUT TYPE CASE STATEMENT####
+    ##################################
+
+    #class for the output type case statements
+    class OutputTypeCase:
+        """class containing the functions for each case statement of the output type"""
+
+        @staticmethod
+        def vegajson():
+            """if vegajson, then write the vegajson to file and return filename"""
+            return write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+
+        @staticmethod
+        def html():
+            """if html"""
+            pass
+
+        @staticmethod
+        def svg():
+            """if svg, then create svg and return the filename"""
+            temp_file = write2tempfile(json)
+            builder =  vega2pic.SVGBuilder(temp_file.name)
+            svg = builder.buildPlot(verbose=args.v)
+            return write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+
+        @staticmethod
+        def png():
+            """if png, then create png and return the filename"""
+            temp_file = write2tempfile(json)
+            builder =  vega2pic.PNGBuilder(temp_file.name)
+            png = builder.buildPlot(verbose=args.v)
+            return write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+
+    #case statement for the output type. each function represents a case.
+    case_outputtype= {  'vegajson': OutputTypeCase.vegajson,
+                        'html': OutputTypeCase.html,
+                        'svg': OutputTypeCase.svg,
+                        'png': OutputTypeCase.png
                         }
     case_outputtype[args.outputtype]()
 
-
-    #JSONfile_path = plot_obj.run(verbose=args.v)
-'''
-    def case_outputtype(case,input):
-        """switch statement for the type of output to be created"""
-        return{
-            'vegajson': '',
-            'html': '',
-            'svg': vega2pic.SVGBuilder(input),
-            'png': vega2pic.PNGBuilder(input)
-        }[case]
-
-    builder = case_outputtype(case=args.outputtype, input=JSONfile_path)
-    builder.buildPlot(verbose=args.v)
-'''
 if __name__ == "__main__":
     main(sys.argv)
