@@ -5,5 +5,13 @@
         },
         "x": {
         }
+    },
+    "config":{
+        "background":"#fff",
+        "viewport": [900,900],
+        "cell":{
+            "width":900,
+            "height":400
+        }
     }
 }
