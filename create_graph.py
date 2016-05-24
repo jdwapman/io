@@ -30,54 +30,20 @@ def write2tempfile(input):
     print(temp.name)
     return temp
 
+def getClassMethods(class_name):
+    """return a list of all class names of the given class"""
+    import inspect
+    methods = []
+    for a in inspect.getmembers(class_name, predicate=inspect.isfunction):
+        methods.append(a[0])
+    return methods
+
 def main(argv):
     """Creates the desired graph by calling methods in json2vega.py and vega2pic"""
 
     ##################################
-    ######CREATE REQUIRED INPUTS######
-    ##################################
-    args = parseCmdLineArgs(argv)  # process input arguments passed
-    if not os.path.exists(args.o):  # create output directory
-        os.makedirs(args.o)
-
-    # Create required arguments and dictionaries (from input arguments provided)
-    conditions = {"algorithm": args.algorithm_name}
-    conditions.update(args.conds)
-    axes_vars = {'x': args.xaxis, 'y': args.yaxis}
-    names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
-             'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
-
-
-    ##################################
-    #####PLOT TYPE CASE STATEMENT#####
-    ##################################
-    def case_plottype(case):
-        """switch statement for the plot_type object creation"""
-        return {
-            'bar': json2vega.VegaGraphBar(output_path=args.o,
-                                          input_path=args.inputpath,
-                                          config_dir=args.config,
-                                          labels=names,
-                                          conditions_dict=conditions,
-                                          axes_vars=axes_vars),
-        }[case]
-    #choose the plot type based on input args
-    plot_obj = case_plottype(case=args.plot_type)
-
-    ##################################
-    #####INITIAL INPUT PROCESSING#####
-    ##################################
-    #read json and parse it
-    plot_obj.read_json()
-    graph = plot_obj.parse_jsons()
-    #create vega-spec json
-    json = plot_obj.pipe_vl2vg(graph)
-
-
-    ##################################
     ####OUTPUT TYPE CASE STATEMENT####
     ##################################
-
     #class for the output type case statements
     class OutputTypeCase:
         """class containing the functions for each case statement of the output type"""
@@ -108,12 +74,72 @@ def main(argv):
             png = builder.buildPlot(verbose=args.v)
             return write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
 
-    #case statement for the output type. each function represents a case.
-    case_outputtype= {  'vegajson': OutputTypeCase.vegajson,
-                        'html': OutputTypeCase.html,
-                        'svg': OutputTypeCase.svg,
-                        'png': OutputTypeCase.png
-                        }
+    #get all method names of the case statement - used later for automating the case statement creation process, as well as the input argument choices
+    output_types = getClassMethods(OutputTypeCase)
+
+    #case statement for the output type. automatically generate cases based on functions of the OutputTypeClass
+    case_outputtype = {}
+    for output in output_types:
+        case_outputtype[output] = getattr(OutputTypeCase,output)
+
+    # case_outputtype= {  'vegajson': OutputTypeCase.vegajson,
+    #                     'html': OutputTypeCase.html,
+    #                     'svg': OutputTypeCase.svg,
+    #                     'png': OutputTypeCase.png
+    #                     }
+
+    ##################################
+    ######CREATE REQUIRED INPUTS######
+    ##################################
+
+    # process input arguments passed
+    args = parseCmdLineArgs(argv,output_choices=output_types)
+    if not os.path.exists(args.o):  # create output directory
+        os.makedirs(args.o)
+
+    # Create required arguments and dictionaries (from input arguments provided)
+    conditions = {"algorithm": args.algorithm_name}
+    conditions.update(args.conds)
+    axes_vars = {'x': args.xaxis, 'y': args.yaxis}
+    names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
+             'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
+
+
+    ##################################
+    #####PLOT TYPE CASE STATEMENT#####
+    ##################################
+    def case_plottype(case):
+        """switch statement for the plot_type object creation"""
+        return {
+            'bar': json2vega.VegaGraphBar(output_path=args.o,
+                                          input_path=args.inputpath,
+                                          config_dir=args.config,
+                                          labels=names,
+                                          conditions_dict=conditions,
+                                          axes_vars=axes_vars),
+            'scatter': json2vega.VegaGraphScatter(output_path=args.o,
+                                          input_path=args.inputpath,
+                                          config_dir=args.config,
+                                          labels=names,
+                                          conditions_dict=conditions,
+                                          axes_vars=axes_vars),
+        }[case]
+    #choose the plot type based on input args
+    plot_obj = case_plottype(case=args.plot_type)
+
+
+    ##################################
+    #####INITIAL INPUT PROCESSING#####
+    ##################################
+    #read json and parse it
+    plot_obj.read_json()
+    graph = plot_obj.parse_jsons()
+    #create vega-spec json
+    json = plot_obj.pipe_vl2vg(graph)
+
+
+
+
     case_outputtype[args.outputtype]()
 
 if __name__ == "__main__":

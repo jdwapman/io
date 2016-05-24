@@ -227,4 +227,4 @@ class VegaGraphScatter(VegaGraphBar):
 
         Returns: the json file to be written to file.
         """
-        super(VegaGraphScatter,self).parse_jsons()
+        return super(VegaGraphScatter,self).parse_jsons()
