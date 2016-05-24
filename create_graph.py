@@ -82,18 +82,44 @@ def main(argv):
     for output in output_types:
         case_outputtype[output] = getattr(OutputTypeCase,output)
 
-    # case_outputtype= {  'vegajson': OutputTypeCase.vegajson,
-    #                     'html': OutputTypeCase.html,
-    #                     'svg': OutputTypeCase.svg,
-    #                     'png': OutputTypeCase.png
-    #                     }
+    ##################################
+    #####PLOT TYPE CASE STATEMENT#####
+    ##################################
+    class PlotTypeCase:
+        """class containing the functions for each case statement of the plot type"""
+        @staticmethod
+        def bar():
+            return json2vega.VegaGraphBar(output_path=args.o,
+                                          input_path=args.inputpath,
+                                          config_dir=args.config,
+                                          labels=names,
+                                          conditions_dict=conditions,
+                                          axes_vars=axes_vars)
+
+        @staticmethod
+        def scatter():
+            return json2vega.VegaGraphScatter(output_path=args.o,
+                                          input_path=args.inputpath,
+                                          config_dir=args.config,
+                                          labels=names,
+                                          conditions_dict=conditions,
+                                          axes_vars=axes_vars)
+
+    #get all method names of the case statement - used later for automating the case statement creation process, as well as the input argument choices
+    plot_types = getClassMethods(PlotTypeCase)
+
+    #case statement for the plot type. automatically generate cases based on functions of the PlotTypeClass
+    case_plottype = {}
+    for output in plot_types:
+        case_plottype[output] = getattr(PlotTypeCase,output)
+
 
     ##################################
     ######CREATE REQUIRED INPUTS######
     ##################################
 
     # process input arguments passed
-    args = parseCmdLineArgs(argv,output_choices=output_types)
+    args = parseCmdLineArgs(argv,output_choices=output_types, plot_choices=plot_types)
     if not os.path.exists(args.o):  # create output directory
         os.makedirs(args.o)
 
@@ -105,27 +131,29 @@ def main(argv):
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
 
 
-    ##################################
-    #####PLOT TYPE CASE STATEMENT#####
-    ##################################
-    def case_plottype(case):
-        """switch statement for the plot_type object creation"""
-        return {
-            'bar': json2vega.VegaGraphBar(output_path=args.o,
-                                          input_path=args.inputpath,
-                                          config_dir=args.config,
-                                          labels=names,
-                                          conditions_dict=conditions,
-                                          axes_vars=axes_vars),
-            'scatter': json2vega.VegaGraphScatter(output_path=args.o,
-                                          input_path=args.inputpath,
-                                          config_dir=args.config,
-                                          labels=names,
-                                          conditions_dict=conditions,
-                                          axes_vars=axes_vars),
-        }[case]
-    #choose the plot type based on input args
-    plot_obj = case_plottype(case=args.plot_type)
+
+    #calls the approrpiate function to generate the plot desired
+    plot_obj = case_plottype[args.plot_type]()
+    
+    # def case_plottype(case):
+    #     """switch statement for the plot_type object creation"""
+    #     return {
+    #         'bar': json2vega.VegaGraphBar(output_path=args.o,
+    #                                       input_path=args.inputpath,
+    #                                       config_dir=args.config,
+    #                                       labels=names,
+    #                                       conditions_dict=conditions,
+    #                                       axes_vars=axes_vars),
+    #         'scatter': json2vega.VegaGraphScatter(output_path=args.o,
+    #                                       input_path=args.inputpath,
+    #                                       config_dir=args.config,
+    #                                       labels=names,
+    #                                       conditions_dict=conditions,
+    #                                       axes_vars=axes_vars),
+    #     }[case]
+    #
+    # #choose the plot type based on input args
+    # plot_obj = case_plottype(case=args.plot_type)
 
 
     ##################################
@@ -139,7 +167,8 @@ def main(argv):
 
 
 
-
+    #OUTPUT CREATION.
+    #calls the approrpiate function to generate the output desired
     case_outputtype[args.outputtype]()
 
 if __name__ == "__main__":

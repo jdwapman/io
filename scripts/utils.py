@@ -58,7 +58,7 @@ def is_dictionary(string):
         raise argparse.ArgumentTypeError(msg)
     return value
 
-def parseCmdLineArgs(argv,output_choices):
+def parseCmdLineArgs(argv,output_choices,plot_choices):
     """Function to process input args.
 
     The various input arguments are defined here. parser.add_argument
@@ -72,7 +72,8 @@ def parseCmdLineArgs(argv,output_choices):
         output_choices: a list containing the output type choices available to the user.
             the user will only be able to enter a value equal to that of one of
             the values in the list.
-
+        plot_choices: a list containing the plot type choices available to the user.
+            the user will only be able to enter a value contained in the list
     Returns:
         args: a  populated namespace of all the inputted command-line arguments.
 
@@ -84,7 +85,7 @@ def parseCmdLineArgs(argv,output_choices):
         epilog=bcolors.HEADER + 'Processing Completed' + bcolors.ENDC)
 
     # add the arguments available to user
-    parser.add_argument('plot_type', metavar='<plot type>', type=str, help='select the plot type. Choices={%(choices)s}', choices=['bar','scatter'])
+    parser.add_argument('plot_type', metavar='<plot type>', type=str, help='select the plot type. Choices={%(choices)s}', choices=plot_choices)
     parser.add_argument('outputtype', metavar='<output type>', type=str, help='select the desired output format. Choices={%(choices)s}',choices=output_choices)
     parser.add_argument('inputpath', metavar='<input path>', type=str,
                         help='directory containing input JSON files. Default= gunrock-output/ ',
