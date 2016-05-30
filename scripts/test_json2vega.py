@@ -1,4 +1,4 @@
-    #!/usr/bin/env python
+#!/usr/bin/env python
 """Sample code to test json2vega.py.
 
 Author: Farmehr Farhour f.farhour@gmail.com.
@@ -11,7 +11,10 @@ Usage: simply run the script to create a sample bar graph.
 import os   # built-in
 import sys  # built-in
 import json2vega
-from utils import bcolors, parseCmdLineArgs  # bcolors class used to color commandline output. parseCmdLineArgs used to parse commandline arguments
+# bcolors class used to color commandline output. parseCmdLineArgs used to
+# parse commandline arguments
+from utils import bcolors, parseCmdLineArgs
+
 
 def main(argv):
     """Creates a bar graph by calling methods in json2vega.py"""
