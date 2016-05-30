@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 """Converts JSON outputs from json2vega.py (vega-spec jsons) to actual plots.
 
@@ -16,7 +15,8 @@ Dependencies:
 """
 import os   # built-in
 from subprocess import PIPE, STDOUT, check_output, CalledProcessError
-from abc import ABCMeta, abstractmethod #built-in #to make base class abstract
+# built-in #to make base class abstract
+from abc import ABCMeta, abstractmethod
 
 """
 class Director:
@@ -29,6 +29,8 @@ class Director:
         plot = Plot()
         visual = self.__builder.buildPLot()
 """
+
+
 class Builder:
     """Base class for converting vega-specific graph json files to an actual visual plot.
 
@@ -40,13 +42,13 @@ class Builder:
     """
     __metaclass__ = ABCMeta
 
-    def __init__(self,input_json):
+    def __init__(self, input_json):
         """Initis base class with provided atrributes."""
         self.input_json = input_json
         self.output = os.path.splitext(self.input_json)[0]
 
     @abstractmethod
-    def buildPlot(self,verbose=False):
+    def buildPlot(self, verbose=False):
         """builds the actual visual plot. This method is 'virtual' in the Builder class. """
         pass
 
@@ -60,7 +62,8 @@ class PNGBuilder(Builder):
         Same as Builder
 
     """
-    def buildPlot(self,verbose=False):
+
+    def buildPlot(self, verbose=False):
         """builds the actual visual plot.
         Returns a string containing the png binaries"""
         # call vg2png to turn JSON it into png
@@ -71,6 +74,7 @@ class PNGBuilder(Builder):
         except CalledProcessError as e:
             print e.output
 
+
 class SVGBuilder(Builder):
     """class for converting vega-specific graph json files to an actual visual plot as a PNG file.
 
@@ -80,7 +84,8 @@ class SVGBuilder(Builder):
         Same as Builder
 
     """
-    def buildPlot(self,verbose=False):
+
+    def buildPlot(self, verbose=False):
         """builds the actual visual plot. """
         # call vg2png to turn JSON it into png
         try:
