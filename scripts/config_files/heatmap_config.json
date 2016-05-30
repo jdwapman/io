@@ -1,0 +1,22 @@
+heatmap = {
+    "mark": "text",
+    "encoding": {
+        "row": {
+            "field": "alpha",
+            "type": "ordinal",
+        },
+        "column": {
+            "field": "beta",
+            "type": "ordinal"
+        },
+        "color": {
+            "field": "m_teps",
+            "type": "quantitative",
+        },
+        "text": {
+            "field": "m_teps_rounded",
+            "type": "quantitative",
+            "format": ""
+        }
+    }
+}

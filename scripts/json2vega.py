@@ -228,3 +228,25 @@ class VegaGraphScatter(VegaGraphBar):
         Returns: the json file to be written to file.
         """
         return super(VegaGraphScatter,self).parse_jsons()
+
+
+# class VegaGraphHeatmap(VegaGraphBase):
+#     """ """
+#     def __init__(self,output_path,input_path,config_dir,labels,conditions_dict,axes_vars):
+#         """Instantiate the input arguments. References the base class __init__ to instantiate recurring ones."""
+#         self.conditions_dict = conditions_dict
+#         self.axes_vars = axes_vars
+#         self.x_axis_label = labels['x_axis']
+#         self.y_axis_label = labels['y_axis']
+#         super(VegaGraphBar,self).__init__(output_path,input_path,config_dir,labels)
+#
+#     def parse_jsons(self):
+#         """Parses the input json files using Pandas.
+#
+#         Returns: the json file to be written to file.
+#         """
+#         pandas_df = super(VegaGraphBar, self).parse_jsons()
+#         # restricted bar graph, based on conditions_dict provided
+#         df_restricted = pandas_df
+#         for key, value in self.conditions_dict.iteritems():
+#             df_restricted = df_restricted.loc[df_restricted[key] == value]
