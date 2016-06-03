@@ -51,7 +51,7 @@ def main(argv):
         @staticmethod
         def vegajson():
             """if vegajson, then write the vegajson to file and return filename"""
-            return write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            return write_to_file(rawinput=json,filetype='json',output_path=args.o,engine_name=args.engine,algorithm_name=args.algorithm,suffix=plot_obj.file_suffix,verbose=args.v)
 
         @staticmethod
         def html():
@@ -64,7 +64,7 @@ def main(argv):
             temp_file = write2tempfile(json)
             builder =  vega2pic.SVGBuilder(temp_file.name)
             svg = builder.buildPlot(verbose=args.v)
-            return write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            return write_to_file(rawinput=svg,filetype='svg',output_path=args.o,engine_name=args.engine,algorithm_name=args.algorithm,suffix=plot_obj.file_suffix,verbose=args.v)
 
         @staticmethod
         def png():
@@ -72,7 +72,7 @@ def main(argv):
             temp_file = write2tempfile(json)
             builder =  vega2pic.PNGBuilder(temp_file.name)
             png = builder.buildPlot(verbose=args.v)
-            return write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine_name,algorithm_name=args.algorithm_name,suffix=plot_obj.file_suffix,verbose=args.v)
+            return write_to_file(rawinput=png,filetype='png',output_path=args.o,engine_name=args.engine,algorithm_name=args.algorithm,suffix=plot_obj.file_suffix,verbose=args.v)
 
     #get all method names of the case statement - used later for automating the case statement creation process, as well as the input argument choices
     output_types = getClassMethods(OutputTypeCase)
@@ -124,10 +124,10 @@ def main(argv):
         os.makedirs(args.o)
 
     # Create required arguments and dictionaries (from input arguments provided)
-    conditions = {"algorithm": args.algorithm_name}
+    conditions = {"algorithm": args.algorithm}
     conditions.update(args.conds)
     axes_vars = {'x': args.xaxis, 'y': args.yaxis}
-    names = {'engine_name': args.engine_name, 'algorithm_name': args.algorithm_name,
+    names = {'engine_name': args.engine, 'algorithm_name': args.algorithm,
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
 
 
@@ -135,7 +135,7 @@ def main(argv):
     #######CREATE DESIRED PLOT########
     ##################################
     #calls the approrpiate function to generate the plot desired
-    plot_obj = case_plottype[args.plot_type]()
+    plot_obj = case_plottype[args.plottype]()
 
 
     ##################################
