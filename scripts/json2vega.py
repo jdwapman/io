@@ -120,10 +120,11 @@ class VegaGraphBase(object):
         return vg
 
 
-class VegaGraphBar(VegaGraphBase):
-    """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
+class VegaGraphBarBase(VegaGraphBase):
+    """Class for converting json outputs of different algorithms to vega-specific bar or scatter graph json files.
 
     This class is a child class of VegaGraphBase and inherits all the methods and variables.
+    It serves as a base class to VegaGraphBar and VegaGraphScatter.
 
     Attributes:
         output_path: the output directory to write the vega-spec json files to.
@@ -158,7 +159,7 @@ class VegaGraphBar(VegaGraphBase):
         self.axes_vars = axes_vars
         self.x_axis_label = labels['x_axis']
         self.y_axis_label = labels['y_axis']
-        super(VegaGraphBar, self).__init__(
+        super(VegaGraphBarBase, self).__init__(
             output_path, input_path, config_dir, labels)
 
     def parse_jsons(self):
@@ -166,7 +167,7 @@ class VegaGraphBar(VegaGraphBase):
 
         Returns: the json file to be written to file.
         """
-        pandas_df = super(VegaGraphBar, self).parse_jsons()
+        pandas_df = super(VegaGraphBarBase, self).parse_jsons()
         # restricted bar graph, based on conditions_dict provided
         df_restricted = pandas_df
         for key, value in self.conditions_dict.iteritems():
@@ -196,8 +197,47 @@ class VegaGraphBar(VegaGraphBase):
         # return json
         return bar
 
+class VegaGraphBar(VegaGraphBarBase):
+    """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
 
-class VegaGraphScatter(VegaGraphBar):
+    This class is a child class of VegaGraphBarBase and inherits all the methods and variables, includign those of VegaGraphBase.
+
+    Attributes:
+        output_path: the output directory to write the vega-spec json files to.
+        input_path: the input path containing the input json files to be processed.
+        config_dir: the directory containing the json config files relevant to each plot type.
+            Each config file will need to have a specific name of the format: '<plot type>_config.json'
+        labels: a dictionary containing the relevant nouns required for naming the file and the axes of the
+            plots created. The names dictionary should contain 5 keys and their corresponding values.
+            They are:
+                engine_name: the name of the engine used to run the algorithm (e.g. Gunrock). This is
+                    used to name the output files.
+                algorithm_name: the name of the algorithm (e.g. BFS). This is used to name the
+                    output files.
+                x_axis: the label for the x_axis
+                y_axis: the label for the y_axis
+                file_suffix: the suffix to put at the end of the file being generated.
+                e.g. labels = {'engine_name':'g','algorithm_name':'BFS','x_axis':'Datasets','y_axis':'MTEPS','file_suffix':'0'}
+        conditions_dict: a dictionary containing the conditions to limit the input files to a
+            specific category. For instance choosing files that were outputs of a BFS algorith.
+            For instance the following dictionary limits the inputs to BFS algorithms that are undirected and
+            mark_predecessors is true:
+            {"algorithm" : "BFS","undirected" : True ,"mark_predecessors" : True}
+        axes_vars: a dictionary of the variables to be evaluated for the x and y axes. There are 2 keys: 'x' and 'y'.
+            For instance:
+            {'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)
+
+    """
+
+    def parse_jsons(self):
+        """Parses the input json files using Pandas.
+
+        Returns: the json file to be written to file.
+        """
+        return super(VegaGraphBar, self).parse_jsons()
+
+
+class VegaGraphScatter(VegaGraphBarBase):
     """Class for converting json outputs of different algorithms to vega-specific scatter graph json files.
 
     This class is a child class of VegaGraphBar and inherits all the methods and variables, includign those of VegaGraphBase.

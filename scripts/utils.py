@@ -110,26 +110,6 @@ def parseCmdLineArgs(argv, output_choices, plot_choices):
     parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str, help='the suffix used to create the output file. Default=""',default='')
     parser.add_argument('-v',action='store_true',help='verbosity, if included in the args the program will increase verbosity as it executes')
     parser.add_argument('--config', metavar='<config files directory>', type=str, help='the location of the config files can be changed if desired. Default = scripts/config_files', default = 'scripts/config_files')
-    parser.add_argument('engine_name', metavar='<engine_name>',
-                        type=str, help='the engine name the outputs are from')
-    parser.add_argument('algorithm_name', metavar='<algorithm name>',
-                        type=str, help='the algorithm name of the datasets. e.g. BFS')
-    parser.add_argument('xaxis', metavar='<x-axis variable>',
-                        type=str, help='the variable used on the x axis')
-    parser.add_argument('yaxis', metavar='<y-axis variable>',
-                        type=str, help='the variable used on the y axis')
-    parser.add_argument('--conds', '-c', metavar='<conditions>', type=is_dictionary,
-                        help='additional conditions to narrow the results to be graphed. the type needs to be like a dictionary. e.g. {"undirected": True, "mark_predecessors": True}')
-    parser.add_argument('--xlabel', metavar='<x_axis label>',
-                        type=str, help='the label for the x axis', default='')
-    parser.add_argument('--ylabel', metavar='<y_axis label>',
-                        type=str, help='the label for the y axis', default='')
-    parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str,
-                        help='the suffix used to create the output file. Default=""', default='')
-    parser.add_argument('-v', action='store_true',
-                        help='verbosity, if included in the args the program will increase verbosity as it executes')
-    parser.add_argument('--config', metavar='<config files directory>', type=str,
-                        help='the location of the config files can be changed if desired. Default = scripts/config_files', default='scripts/config_files')
 
     args = parser.parse_args()
     return args

@@ -27,7 +27,7 @@ def write2tempfile(input):
     temp = tempfile.NamedTemporaryFile(delete=False)
     temp.write(input)
     temp.close()
-    print(temp.name)
+    #print(temp.name)
     return temp
 
 def getClassMethods(class_name):
