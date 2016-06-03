@@ -8,6 +8,7 @@ bcolors class: that can be imported and used to color commandline outputs using 
 parseCmdLineArgs function: parses inut commandline arguments
 """
 
+
 class bcolors:
     """Used to implement ANSI colors without the need to remember the numbers.
 
@@ -27,7 +28,8 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-def write_to_file(rawinput,filetype,output_path,engine_name,algorithm_name,suffix="",verbose=False):
+
+def write_to_file(rawinput, filetype, output_path, engine_name, algorithm_name, suffix="", verbose=False):
     """Output json to the output_path and with a specific name.
 
     The filename is in the format: '_<engine_name>_<algorithm_name>_suffix.json'.
@@ -39,18 +41,22 @@ def write_to_file(rawinput,filetype,output_path,engine_name,algorithm_name,suffi
     Returns: file path to the file created
     """
 
-    #takes in any json string as 'json_in' and writes it to file. The name format of the file explained above
-    file = open('%s_%s_%s_%s.%s' %(output_path,engine_name,algorithm_name,suffix,filetype), 'w')
+    # takes in any json string as 'json_in' and writes it to file. The name
+    # format of the file explained above
+    file = open('%s_%s_%s_%s.%s' % (output_path, engine_name,
+                                    algorithm_name, suffix, filetype), 'w')
     file.write(rawinput)
-    if(verbose): print("Created " + file.name)
+    if(verbose):
+        print("Created " + file.name)
     file_path = file.name
     file.close()
     return file_path
 
-import argparse # built-in
+import argparse  # built-in
+
 
 def is_dictionary(string):
-    import ast #built-in
+    import ast  # built-in
     try:
         value = ast.literal_eval(string)
     except:
@@ -58,7 +64,8 @@ def is_dictionary(string):
         raise argparse.ArgumentTypeError(msg)
     return value
 
-def parseCmdLineArgs(argv,output_choices,plot_choices):
+
+def parseCmdLineArgs(argv, output_choices, plot_choices):
     """Function to process input args.
 
     The various input arguments are defined here. parser.add_argument
@@ -103,6 +110,26 @@ def parseCmdLineArgs(argv,output_choices,plot_choices):
     parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str, help='the suffix used to create the output file. Default=""',default='')
     parser.add_argument('-v',action='store_true',help='verbosity, if included in the args the program will increase verbosity as it executes')
     parser.add_argument('--config', metavar='<config files directory>', type=str, help='the location of the config files can be changed if desired. Default = scripts/config_files', default = 'scripts/config_files')
+    parser.add_argument('engine_name', metavar='<engine_name>',
+                        type=str, help='the engine name the outputs are from')
+    parser.add_argument('algorithm_name', metavar='<algorithm name>',
+                        type=str, help='the algorithm name of the datasets. e.g. BFS')
+    parser.add_argument('xaxis', metavar='<x-axis variable>',
+                        type=str, help='the variable used on the x axis')
+    parser.add_argument('yaxis', metavar='<y-axis variable>',
+                        type=str, help='the variable used on the y axis')
+    parser.add_argument('--conds', '-c', metavar='<conditions>', type=is_dictionary,
+                        help='additional conditions to narrow the results to be graphed. the type needs to be like a dictionary. e.g. {"undirected": True, "mark_predecessors": True}')
+    parser.add_argument('--xlabel', metavar='<x_axis label>',
+                        type=str, help='the label for the x axis', default='')
+    parser.add_argument('--ylabel', metavar='<y_axis label>',
+                        type=str, help='the label for the y axis', default='')
+    parser.add_argument('--filesuffix', metavar='<file_suffix>', type=str,
+                        help='the suffix used to create the output file. Default=""', default='')
+    parser.add_argument('-v', action='store_true',
+                        help='verbosity, if included in the args the program will increase verbosity as it executes')
+    parser.add_argument('--config', metavar='<config files directory>', type=str,
+                        help='the location of the config files can be changed if desired. Default = scripts/config_files', default='scripts/config_files')
 
     args = parser.parse_args()
     return args
