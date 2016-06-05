@@ -56,6 +56,7 @@ class VegaGraphBase(object):
     # list containing all jsons
     __input_jsons = []
 
+
     def __init__(self, output_path, input_path, config_dir, labels):
         """Initis base class with provided atrributes."""
         self.output_path = output_path
@@ -65,7 +66,7 @@ class VegaGraphBase(object):
         self.algorithm_name = labels['algorithm_name']
         self.file_suffix = labels['file_suffix']
         # the graph type set as the name of the class
-        self.graph_type = self.__class__.__name__
+        self.graph_type = "base"
 
     def read_json(self):
         """Reads json files wiht the right specs into __input_jsons list
@@ -96,7 +97,7 @@ class VegaGraphBase(object):
     def read_config(self):
         """Returns the json config file as a python object
         Uses self.graphtype , which is a string defining the type of graph, e.g. bar."""
-        return json.load(open(self.config_dir + "/" + self.graph_type[9:].lower() + "_config.json"))
+        return json.load(open(self.config_dir + "/" + self.graph_type.lower() + "_config.json"))
 
     @abstractmethod
     def parse_jsons(self):
@@ -161,6 +162,8 @@ class VegaGraphBarBase(VegaGraphBase):
         self.y_axis_label = labels['y_axis']
         super(VegaGraphBarBase, self).__init__(
             output_path, input_path, config_dir, labels)
+        # the graph type set as the name of the class
+        self.graph_type = "barbase"
 
     def parse_jsons(self):
         """Parses the input json files using Pandas.
@@ -200,7 +203,7 @@ class VegaGraphBarBase(VegaGraphBase):
 class VegaGraphBar(VegaGraphBarBase):
     """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
 
-    This class is a child class of VegaGraphBarBase and inherits all the methods and variables, includign those of VegaGraphBase.
+    This class is a child class of VegaGraphBarBase and inherits all the methods and variables, including those of VegaGraphBase.
 
     Attributes:
         output_path: the output directory to write the vega-spec json files to.
@@ -228,6 +231,13 @@ class VegaGraphBar(VegaGraphBarBase):
             {'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)
 
     """
+
+    def __init__(self, output_path, input_path, config_dir, labels, conditions_dict, axes_vars):
+        """Instantiate the input arguments. References the base class __init__ to instantiate recurring ones."""
+        super(VegaGraphBar, self).__init__(
+            output_path, input_path, config_dir, labels, conditions_dict, axes_vars)
+        # the graph type set as the name of the class
+        self.graph_type = "bar"
 
     def parse_jsons(self):
         """Parses the input json files using Pandas.
@@ -240,7 +250,7 @@ class VegaGraphBar(VegaGraphBarBase):
 class VegaGraphScatter(VegaGraphBarBase):
     """Class for converting json outputs of different algorithms to vega-specific scatter graph json files.
 
-    This class is a child class of VegaGraphBar and inherits all the methods and variables, includign those of VegaGraphBase.
+    This class is a child class of VegaGraphBar and inherits all the methods and variables, including those of VegaGraphBase.
 
     Attributes:
         output_path: the output directory to write the vega-spec json files to.
@@ -268,6 +278,13 @@ class VegaGraphScatter(VegaGraphBarBase):
             {'x':'dataset','y':'m_teps'} would specify to the program to plot m_teps (on y-axis) vs. dataset (on x-axis)
 
     """
+
+    def __init__(self, output_path, input_path, config_dir, labels, conditions_dict, axes_vars):
+        """Instantiate the input arguments. References the base class __init__ to instantiate recurring ones."""
+        super(VegaGraphScatter, self).__init__(
+            output_path, input_path, config_dir, labels, conditions_dict, axes_vars)
+        # the graph type set as the name of the class
+        self.graph_type = "scatter"
 
     def parse_jsons(self):
         """Parses the input json files using Pandas.

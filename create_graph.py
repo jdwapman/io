@@ -27,7 +27,7 @@ def write2tempfile(input):
     temp = tempfile.NamedTemporaryFile(delete=False)
     temp.write(input)
     temp.close()
-    #print(temp.name)
+    print(temp.name)
     return temp
 
 def getClassMethods(class_name):
@@ -152,7 +152,7 @@ def main(argv):
     ##################################
     #########OUTPUT CREATION##########
     ##################################
-    #calls the approrpiate function to generate the output desired
+    #calls the appropriate function to generate the output desired
     case_outputtype[args.outputtype]()
 
 if __name__ == "__main__":
