@@ -14,7 +14,7 @@ Dependencies:
 
 """
 import os   # built-in
-from subprocess import PIPE, STDOUT, check_output, CalledProcessError, call
+from subprocess import PIPE, STDOUT, check_output, CalledProcessError
 # built-in #to make base class abstract
 from abc import ABCMeta, abstractmethod
 
@@ -89,7 +89,7 @@ class SVGBuilder(Builder):
         """builds the actual visual plot. """
         # call vg2png to turn JSON it into png
         try:
-            p = call(['vg2svg', self.input_json, ''])
+            p = check_output(['vg2svg', self.input_json, ''])
             #if(verbose): print("Created " + output_svg_file)
             return p
         except CalledProcessError as e:
