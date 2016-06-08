@@ -191,7 +191,7 @@ class VegaGraphBarBase(VegaGraphBase):
         # check whether axis is quantitative or ordinal. add respective
         # attributes to json
         for key in self.axes_vars:
-            if(df_restricted[self.axes_vars[key]].dtype == 'float64'):
+            if(df_restricted[self.axes_vars[key]].dtype == 'float64' or 'int64' or 'float32' or 'int8'):
                 bar["encoding"][key]["type"] = "quantitative"
             else:
                 bar["encoding"][key]["type"] = "ordinal"
