@@ -124,7 +124,8 @@ def main(argv):
 
     # Create required arguments and dictionaries (from input arguments provided)
     conditions = {"algorithm": args.algorithm}
-    conditions.update(args.conds)
+    if args.conds is not None:
+        conditions.update(args.conds)
     axes_vars = {'x': args.xaxis, 'y': args.yaxis}
     names = {'engine_name': args.engine, 'algorithm_name': args.algorithm,
              'x_axis': args.xlabel, 'y_axis': args.ylabel, 'file_suffix': args.filesuffix}
