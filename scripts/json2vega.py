@@ -56,6 +56,7 @@ class VegaGraphBase(object):
     # list containing all jsons
     __input_jsons = []
 
+    __pandas_df = pandas.DataFrame()
 
     def __init__(self, output_path, input_path, config_dir, labels):
         """Initis base class with provided atrributes."""
@@ -69,7 +70,7 @@ class VegaGraphBase(object):
         self.graph_type = "base"
 
     def read_json(self):
-        """Reads json files wiht the right specs into __input_jsons list
+        """Reads json files with the right specs into __input_jsons list
 
         Does not take any arguments.
         Does not return any variables.
@@ -103,11 +104,17 @@ class VegaGraphBase(object):
     def parse_jsons(self):
         """Parses the input json files using Pandas.
 
-        Returns: a pandas dataframe containting the data processed from input jsons.
+        Returns: a pandas dataframe containing the data processed from input jsons.
         """
         # store all data in a pandas DataFrame
-        pandas_df = pandas.DataFrame(self.__input_jsons)
-        return pandas_df
+        self.pandas_df = pandas.DataFrame(self.__input_jsons)
+        return self.pandas_df
+
+    @abstractmethod
+    def get_dataframe(self):
+        """Returns the current dataframe (the result of parse_jsons())
+        """
+        return self.pandas_df
 
     def pipe_vl2vg(self, json_in):
         """Pipes the vega-lite json through vl2vg to generate the vega json output
@@ -200,6 +207,12 @@ class VegaGraphBarBase(VegaGraphBase):
         # return json
         return bar
 
+    def get_dataframe(self):
+        """Returns the current dataframe (the result of super(parse_jsons()))
+        """
+        return super(VegaGraphBarBase, self).get_dataframe()
+
+
 class VegaGraphBar(VegaGraphBarBase):
     """Class for converting json outputs of different algorithms to vega-specific bar graph json files.
 
@@ -245,6 +258,11 @@ class VegaGraphBar(VegaGraphBarBase):
         Returns: the json file to be written to file.
         """
         return super(VegaGraphBar, self).parse_jsons()
+
+    def get_dataframe(self):
+        """Returns the current dataframe (the result of super(parse_jsons()))
+        """
+        return super(VegaGraphBar, self).get_dataframe()
 
 
 class VegaGraphScatter(VegaGraphBarBase):
@@ -292,6 +310,11 @@ class VegaGraphScatter(VegaGraphBarBase):
         Returns: the json file to be written to file.
         """
         return super(VegaGraphScatter, self).parse_jsons()
+
+    def get_dataframe(self):
+        """Returns the current dataframe (the result of super(parse_jsons()))
+        """
+        return super(VegaGraphScatter, self).get_dataframe()
 
 
 # class VegaGraphHeatmap(VegaGraphBase):
