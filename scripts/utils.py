@@ -89,21 +89,26 @@ def parseCmdLineArgs(argv, output_choices, plot_choices):
     # parse args
     parser = argparse.ArgumentParser(
         description=bcolors.HEADER + 'IO Options' + bcolors.ENDC,
+        formatter_class=lambda prog: argparse.HelpFormatter(prog,max_help_position=50), #better position help arguments
         epilog=bcolors.HEADER + 'Processing Completed' + bcolors.ENDC)
 
+    #create a 'required named arguments' group of arguments, instead of everything being 'optional'
+    # http://stackoverflow.com/questions/24180527/argparse-required-arguments-listed-under-optional-arguments
+    requiredNamed = parser.add_argument_group('Required Named Arguments')
+
     # add the arguments available to user
-    parser.add_argument('--plottype', metavar='<plot type>', type=str, help='select the plot type. Choices={%(choices)s}', choices=plot_choices, required=True)
-    parser.add_argument('--outputtype', metavar='<output type>', type=str, help='select the desired output format. Choices={%(choices)s}',choices=output_choices, required=True)
-    parser.add_argument('--inputpath', metavar='<input path>', type=str,
+    requiredNamed.add_argument('--plottype', metavar='<plot type>', type=str, help='select the plot type. Choices={%(choices)s}', choices=plot_choices, required=True)
+    requiredNamed.add_argument('--outputtype', metavar='<output type>', type=str, help='select the desired output format. Choices={%(choices)s}',choices=output_choices, required=True)
+    requiredNamed.add_argument('--inputpath', metavar='<input path>', type=str,
                         help='directory containing input JSON files. Default= gunrock-output/ ',
                         default='gunrock-output/', required=True)
     parser.add_argument('-o', metavar='<output path>', type=str,
                         help='directory for output files. Default= output/',
                         default='output/')
-    parser.add_argument('--engine', metavar='<engine_name>', type=str, help='the engine name the outputs are from', required=True)
-    parser.add_argument('--algorithm', metavar='<algorithm name>', type=str, help='the algorithm name of the datasets. e.g. BFS', required=True)
-    parser.add_argument('--xaxis',metavar='<x-axis variable>', type=str, help='the variable used on the x axis', required=True)
-    parser.add_argument('--yaxis', metavar='<y-axis variable>', type=str, help='the variable used on the y axis', required=True)
+    requiredNamed.add_argument('--engine', metavar='<engine_name>', type=str, help='the engine name the outputs are from', required=True)
+    requiredNamed.add_argument('--algorithm', metavar='<algorithm name>', type=str, help='the algorithm name of the datasets. e.g. BFS', required=True)
+    requiredNamed.add_argument('--xaxis',metavar='<x-axis variable>', type=str, help='the variable used on the x axis', required=True)
+    requiredNamed.add_argument('--yaxis', metavar='<y-axis variable>', type=str, help='the variable used on the y axis', required=True)
     parser.add_argument('--conds','-c', metavar='<conditions>', type=is_dictionary, help='additional conditions to narrow the results to be graphed. the type needs to be like a dictionary. e.g. {"undirected": True, "mark_predecessors": True}')
     parser.add_argument('--xlabel', metavar ='<x_axis label>', type=str, help='the label for the x axis', default='')
     parser.add_argument('--ylabel', metavar='<y_axis label>', type=str, help='the label for the y axis', default='')
