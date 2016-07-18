@@ -39,7 +39,6 @@ def getClassMethods(class_name):
 
 def main(argv):
     """Creates the desired graph by calling methods in json2vega.py and vega2pic"""
-
     ##################################
     ####OUTPUT TYPE CASE STATEMENT####
     ##################################
