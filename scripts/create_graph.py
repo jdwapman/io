@@ -154,5 +154,17 @@ def main(argv):
     #calls the appropriate function to generate the output desired
     case_outputtype[args.outputtype]()
 
+
+def run(dictInput):
+    """the run function, to be called from outside this script. It will process an input dictionary containing the input args, and will call the main function in this script"""
+    #add name of the script as the first arg.
+    vectors = [__file__]
+    #process input dict and add keys and values to input arg vector
+    for key,value in dictInput.items():
+        if(key!=''): vectors.append(key)
+        if(value!=''): vectors.append(value)
+    #call main with argv created
+    main(vectors)
+
 if __name__ == "__main__":
     main(sys.argv)
