@@ -18,6 +18,7 @@ import scripts.json2vega as json2vega  # convert json outputs to vega-spec JSONs
 import scripts.vega2pic as vega2pic  # generate visual from vega-spec json
 from scripts.utils import parseCmdLineArgs  # function to parse cmd args
 from scripts.utils import write_to_file  # function to write to file
+import pandas
 import os
 import sys  # built-in
 
@@ -65,6 +66,7 @@ def main(argv):
         @staticmethod
         def table():
             """if table"""
+            pandas.set_option('display.max_colwidth', -1)
             print(dataframe.to_html())
             return
 
