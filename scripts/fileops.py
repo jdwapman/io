@@ -51,10 +51,10 @@ def savefile(chart, name, fileformat):
         )
     elif (fileformat == 'md'):
         file = open(name + '.' + fileformat, 'w')
-        str = '\\htmlonly\n<div id = "%s" > < / div >\n<script type = "text/javascript" >\nplot("%s",\n' % (
+        str = '\\htmlonly\n<div id ="%s"></div>\n<script type = "text/javascript" >\nplotvl("%s",\n' % (
             name, name)
         str += json.dumps(chart.to_dict(data=True))
-        str += '\n)\n< / script >\n\\endhtmlonly\n'
+        str += '\n);\n< / script >\n\\endhtmlonly\n'
         file.write(str)
         file.close()
     else:
