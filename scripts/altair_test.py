@@ -87,3 +87,4 @@ bfs_param_t_chart = Chart(bfs_df).mark_point().encode(
 print bfs_param_t_chart.to_dict(data=False)
 savefile(bfs_param_t_chart, name='bfs_param_t_chart', fileformat='html')
 savefile(bfs_param_t_chart, name='bfs_param_t_chart', fileformat='svg')
+savefile(bfs_param_t_chart, name='bfs_param_t_chart', fileformat='png')
