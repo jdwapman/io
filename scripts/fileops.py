@@ -43,7 +43,20 @@ def write2tempfile(input):
 def savefile(chart, name, fileformat):
     if (fileformat == 'html'):
         open(name + '.' + fileformat, 'w').write(
-            chart.to_html(local_file=False))
+            chart.to_html(local_file=False)
+        )
+    elif (fileformat == 'json'):
+        open(name + '.' + fileformat, 'w').write(
+            json.dumps(chart.to_dict(data=True))
+        )
+    elif (fileformat == 'md'):
+        file = open(name + '.' + fileformat, 'w')
+        str = '\\htmlonly\n<div id = "%s" > < / div >\n<script type = "text/javascript" >\nplot("%s",\n' % (
+            name, name)
+        str += json.dumps(chart.to_dict(data=True))
+        str += '\n)\n< / script >\n\\endhtmlonly\n'
+        file.write(str)
+        file.close()
     else:
         tmp = write2tempfile(pipe_vl2vg(chart.to_dict()))
         outfile = vega_to_output(tmp.name, fileformat)
