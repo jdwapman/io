@@ -1,5 +1,26 @@
 #!/usr/bin/env python
 
+# Current workflow:
+# - Use this file to produce "md" output, which embeds an HTML snippet in markdown.
+# - Copy the md file into the master branch of gunrock/doc/stats
+# - Still in master branch, run releasedoc.sh
+# - Switch to gh-pages branch, push
+# - Switch back to master branch
+
+# @TODOS
+# - savefile's md output needs to also take md strings so it doesn't just make a plot only
+# - Support for multiple graphs on one page
+# - Top-level file that records all the output md files and makes a master file that links to all of them
+# - README.md in gunrock master branch needs to have a link to that master file
+# - Auto-copy into master branch of gunrock/doc/stats
+# - Output raw data in a table (link from the graph page?)
+
+# @TODOS waiting for altair/vega/vega-lite features
+# - When 'cleanup_data' is available in altair, do that
+#   https://github.com/ellisonbg/altair/issues/183
+# - When vg2{svg,png} can take a pipe in, remove tempfiles
+#   https://github.com/vega/vega/issues/612
+
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
