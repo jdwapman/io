@@ -57,9 +57,16 @@ def savefile(chart, name, fileformat):
         str += '\n);\n</script>\n\\endhtmlonly\n'
         file.write(str)
         file.close()
-    else:
+    elif ((fileformat == 'svg') or (fileformat == 'png')):
         tmp = write2tempfile(pipe_vl2vg(chart.to_dict()))
         outfile = vega_to_output(tmp.name, fileformat)
         file = open(name + '.' + fileformat, 'w')
         file.write(outfile)
         file.close()
+
+
+def savefile_df(df, name, fileformat):
+    if (fileformat == 'html'):
+        open(name + '_data.' + fileformat, 'w').write(
+            df.to_html()
+        )
