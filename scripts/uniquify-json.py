@@ -5,6 +5,8 @@ import json
 import glob
 from datetime import datetime
 
+# run me from directory where the .tar.gz files are. Uncompresses into ./new .
+
 cmdlines = {}
 
 for file in glob.glob('./*.tar.gz'):
