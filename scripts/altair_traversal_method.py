@@ -6,14 +6,15 @@ import numpy
 import json    # built-in
 import os      # built-in
 import copy    # built-in
+import datetime
 from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError
 
 from fileops import savefile
 
 
-root = '../gunrock-output/new/'
+root = '../gunrock-output/'
 
-for prim in ['BC', 'PageRank', 'CC', 'SSSP']:
+for prim in ['BC', 'PageRank', 'CC', 'SSSP', 'BFS']:
 
     json_files = [os.path.join(subdir, f) for (subdir, dirs, files)
                   in os.walk(root) for f in files]
@@ -26,6 +27,13 @@ for prim in ['BC', 'PageRank', 'CC', 'SSSP']:
 
     json_files = filter(filterFiles, json_files)
 
+    # Filter only modified in Oct 2016 or later
+    def filterDate(f):
+        mtime = datetime.datetime.fromtimestamp(os.path.getmtime(f)).date()
+        return mtime > datetime.date(2016, 9, 30)
+
+    json_files = filter(filterDate, json_files)
+
     data_unfiltered = [json.load(open(jf)) for jf in json_files]
     df = pandas.DataFrame(data_unfiltered)
     # All prim-specific data is now stored in the pandas DataFrame "df".
@@ -33,7 +41,6 @@ for prim in ['BC', 'PageRank', 'CC', 'SSSP']:
     # Unfortunately, some of the runs in the repo have no dataset. Filter them
     # out.
     df = df[df['dataset'] != ""]
-
     # filter out 64bit-SizeT
     df = df[~df['command_line'].str.contains('64bit-SizeT')]
     # filter out undirected=false
@@ -58,10 +65,31 @@ for prim in ['BC', 'PageRank', 'CC', 'SSSP']:
             # scale=Scale(type='log'),
             ),
         color=Color('traversal_mode:N',
-                    legend=Legend(title='Traversal Mode'),
+                    legend=Legend(title='%s / Traversal Mode' % prim),
                     ),
     )
     print chart.to_dict(data=False)
-    savefile(chart, name='%s_trav_chart' % prim, fileformat='html')
-    savefile(chart, name='%s_trav_chart' % prim, fileformat='svg')
-    savefile(chart, name='%s_trav_chart' % prim, fileformat='png')
+    plotname = '%s_trav_chart'
+    for fileformat in ['html', 'svg', 'png']:
+        savefile(chart, name=plotname % prim, fileformat=fileformat)
+
+    df['avg_node_degree'] = df['edges_visited'] / df['nodes_visited']
+    chart = Chart(df).mark_point().encode(
+        x=X('avg_node_degree',
+            axis=Axis(
+                title='Average node degree',
+            ),
+            ),
+        y=Y('m_teps',
+            axis=Axis(
+                title='MTEPS',
+            ),
+            # scale=Scale(type='log'),
+            ),
+        color=Color('traversal_mode:N',
+                    legend=Legend(title='%s / Traversal Mode' % prim),
+                    ),
+    )
+    plotname = '%s_avg_node_degree'
+    for fileformat in ['html', 'svg', 'png']:
+        savefile(chart, name=plotname % prim, fileformat=fileformat)
