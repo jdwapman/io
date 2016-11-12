@@ -50,6 +50,12 @@ for prim in ['BFS', 'BC', 'PageRank', 'CC', 'SSSP']:
     df = pandas.DataFrame(data_unfiltered)
     # All prim-specific data is now stored in the pandas DataFrame "df".
 
+    # this is ctime format
+    # datetime.strptime(jsonobj['time'], "%a %b %d %H:%M:%S %Y\n")
+    # or
+    # pd.to_datetime('13000101', format='%Y%m%d', errors='ignore')
+    # pd.to_datetime(s,infer_datetime_format=True)
+
     is_PR = False
     if prim == 'PageRank':
         # normalize per iteration
@@ -80,6 +86,9 @@ df.loc[df.algorithm == 'DOBFS', 'algorithm'] = 'BFS'
 
 chart = Chart(df).mark_point().encode(
     x=X('dataset:N',
+        axis=Axis(
+            title='Dataset',
+        ),
         ),
     column=Column('algorithm:N',
                   axis=Axis(
