@@ -58,7 +58,7 @@ fnFilterInputFiles = [fileEndsWithJSON]
 fnPreprocessDF = [convertCtimeStringToDatetime,
                   DOBFStoBFS, equateRGG, normalizePRMTEPS]
 fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 10),
-                                         datetime.date(2016, 11, 11)])]
+                                         datetime.date(2016, 11, 12)])]
 # end user settings for this script
 
 # actual program logic
