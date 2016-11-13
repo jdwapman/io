@@ -2,6 +2,7 @@
 
 from altair import *
 import pandas  # http://pandas.pydata.org
+from pandas.io.json import json_normalize
 import numpy
 import re      # built-in
 import json    # built-in
@@ -49,17 +50,45 @@ def normalizePRMTEPS(df):
     return df
 
 
+def gunrockVersionGPU(df):
+    df['gunrock_version_gpu'] = df[
+        'gunrock_version'] + " / " + df['gpuinfo.name']
+    return df
+
+
+def addJSONGithubLink(df):
+    df['github'] = pandas.Series(json_input_files).values
+    df['github'] = df['github'].apply(lambda s: re.sub(
+        r'.*gunrock-output',
+        '<a href="https://github.com/gunrock/io/tree/master/gunrock-output',
+        s) + '">JSON output</a>')
+    return df
+
+
 def selectAnyOfTheseDates(dates):
     return lambda df: df[df['time'].isin(dates)]
 
 
+def deleteZeroMTEPS(df):
+    return df[df['m_teps'] != 0]
+
+
 # user settings for this script
 root = '../gunrock-output/'
-fnFilterInputFiles = [fileEndsWithJSON]
+fnFilterInputFiles = [fileEndsWithJSON,
+                      ]
 fnPreprocessDF = [convertCtimeStringToDatetime,
-                  DOBFStoBFS, equateRGG, normalizePRMTEPS]
+                  DOBFStoBFS,
+                  equateRGG,
+                  normalizePRMTEPS,
+                  addJSONGithubLink,
+                  gunrockVersionGPU,
+                  ]
 fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 10),
-                                         datetime.date(2016, 11, 12)])]
+                                         datetime.date(2016, 11, 12),
+                                         datetime.date(2016, 11, 13)]),
+                  deleteZeroMTEPS,
+                  ]
 # end user settings for this script
 
 # actual program logic
@@ -74,19 +103,19 @@ for fn in fnFilterInputFiles:
 
 # dump input files into dataframe
 data_unfiltered = [json.load(open(jf)) for jf in json_input_files]
-df = pandas.DataFrame(data_unfiltered)
+# next call used to be df = pandas.DataFrame(data_unfiltered)
+# instead, json_normalize flattens nested dicts
+df = json_normalize(data_unfiltered)
 # http://stackoverflow.com/questions/26666919/python-pandas-add-column-in-dataframe-from-list
-df['github'] = pandas.Series(json_input_files).values
-df['github'] = df['github'].apply(lambda s: re.sub(
-    r'.*gunrock-output',
-    '<a href="https://github.com/gunrock/io/tree/master/gunrock-output',
-    s) + '">JSON output</a>')
 
-# todo: add github pointer
 for fn in fnPreprocessDF:       # alter entries / compute new entries
     df = fn(df)
 for fn in fnFilterDFRows:       # remove rows
     df = fn(df)
+
+# end actual program logic
+
+# now make the graph
 
 chart = Chart(df).mark_point().encode(
     x=X('dataset:N',
@@ -111,9 +140,9 @@ chart = Chart(df).mark_point().encode(
                     title='Primitive',
                 ),
                 ),
-    shape=Shape('gunrock_version:N',
+    shape=Shape('gunrock_version_gpu:N',
                 legend=Legend(
-                    title='Gunrock Version',
+                    title='Gunrock Version / GPU',
                 ),
                 ),
 )
@@ -126,9 +155,15 @@ tablefile = plotname + "_table.html"
 outfile = open(tablefile, 'w')
 # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
 pandas.set_option('display.max_colwidth', -1)
-df.to_html(buf=outfile,
-           columns=['dataset', 'algorithm', 'm_teps',
-                    'gunrock_version', 'github', 'command_line'],
-           index=False,
-           escape=False)
+df.sort_values(['algorithm',
+                'dataset',
+                'gunrock_version']).to_html(buf=outfile,
+                                            columns=['algorithm',
+                                                     'dataset',
+                                                     'm_teps',
+                                                     'gunrock_version',
+                                                     'gpuinfo.name',
+                                                     'github'],
+                                            index=False,
+                                            escape=False)
 outfile.close()
