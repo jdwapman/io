@@ -56,11 +56,11 @@ def gunrockVersionGPU(df):
     return df
 
 
-def addJSONGithubLink(df):
-    df['github'] = pandas.Series(json_input_files).values
-    df['github'] = df['github'].apply(lambda s: re.sub(
+def addJSONDetailsLink(df):
+    df['details'] = pandas.Series(json_input_files).values
+    df['details'] = df['details'].apply(lambda s: re.sub(
         r'.*gunrock-output',
-        '<a href="https://github.com/gunrock/io/tree/master/gunrock-output',
+        '<a href="https://details.com/gunrock/io/tree/master/gunrock-output',
         s) + '">JSON output</a>')
     return df
 
@@ -81,7 +81,7 @@ fnPreprocessDF = [convertCtimeStringToDatetime,
                   DOBFStoBFS,
                   equateRGG,
                   normalizePRMTEPS,
-                  addJSONGithubLink,
+                  addJSONDetailsLink,
                   gunrockVersionGPU,
                   ]
 fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 10),
@@ -163,7 +163,7 @@ df.sort_values(['algorithm',
                                                      'm_teps',
                                                      'gunrock_version',
                                                      'gpuinfo.name',
-                                                     'github'],
+                                                     'details'],
                                             index=False,
                                             escape=False)
 outfile.close()
