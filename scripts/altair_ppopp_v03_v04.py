@@ -60,7 +60,7 @@ def addJSONDetailsLink(df):
     df['details'] = pandas.Series(json_input_files).values
     df['details'] = df['details'].apply(lambda s: re.sub(
         r'.*gunrock-output',
-        '<a href="https://details.com/gunrock/io/tree/master/gunrock-output',
+        '<a href="https://github.com/gunrock/io/tree/master/gunrock-output',
         s) + '">JSON output</a>')
     return df
 
