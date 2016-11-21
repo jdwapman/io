@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood-2009", 
+    "edges_visited": 112751424, 
+    "elapsed": 862.715, 
+    "engine": "CuSha", 
+    "m_teps": 130.69370997374568, 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/hollywood-2009.txt", 
+    "time": "Sun Nov 20 12:20:20 2016\n", 
+    "vertices_visited": 1139906
+}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 136950784, 
+    "elapsed": 1631.43, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/pr/soc-LiveJournal1.txt", 
+    "time": "Sun Nov 20 15:47:27 2016\n", 
+    "vertices_visited": 4847572
+}

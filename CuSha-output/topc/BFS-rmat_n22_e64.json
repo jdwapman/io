@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rmat", 
+    "edges_visited": 499765128, 
+    "elapsed": 1713.39, 
+    "engine": "CuSha", 
+    "m_teps": 291.6820618773309, 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/rmat_n22_e64.txt", 
+    "time": "Sun Nov 20 15:10:59 2016\n", 
+    "vertices_visited": 4194305
+}

@@ -1,0 +1,10 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265092208, 
+    "elapsed": 601648.0, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/sssp/rgg_n24_0.000548.txt", 
+    "time": "Sun Nov 20 15:07:56 2016\n", 
+    "vertices_visited": 16777217
+}

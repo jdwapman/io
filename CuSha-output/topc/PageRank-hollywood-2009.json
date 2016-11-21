@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "hollywood-2009", 
+    "edges_visited": 112751424, 
+    "elapsed": 70.44, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/pr/hollywood-2009.txt", 
+    "time": "Sun Nov 20 12:21:04 2016\n", 
+    "vertices_visited": 1139906
+}

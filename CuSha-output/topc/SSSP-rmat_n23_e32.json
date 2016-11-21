@@ -1,0 +1,10 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rmat", 
+    "edges_visited": 516273140, 
+    "elapsed": 1468.98, 
+    "engine": "CuSha", 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/sssp/rmat_n23_e32.txt", 
+    "time": "Sun Nov 20 15:21:55 2016\n", 
+    "vertices_visited": 8388609
+}

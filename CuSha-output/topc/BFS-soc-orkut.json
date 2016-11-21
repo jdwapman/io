@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698420, 
+    "elapsed": 289.719, 
+    "engine": "CuSha", 
+    "m_teps": 734.1541976881047, 
+    "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/soc-orkut.txt", 
+    "time": "Sun Nov 20 15:48:15 2016\n", 
+    "vertices_visited": 2997167
+}
