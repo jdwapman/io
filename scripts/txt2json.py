@@ -13,13 +13,15 @@ class GPUEngineOutputParserBase(object):
 	def __init__(self, input_path = "", regex_array = [], \
 			   dataset_names = ["roadNet-CA", "europe_osm", "rgg", "indochina-2004", \
 					    "roadnet", "kron", "soc-orkut", "soc", "hollywood-2009", \
-					    "osm", "bitcoin", "delaunay_n24", "ljournal-2008"]):
+					    "osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat", \
+					    "road_usa"]):
 		self.input_path = input_path
                 self.regex_array = regex_array
 		self.dataset_names = dataset_names
 		self.parsed_data = {}
 		self.possible_algs = ["BFS", "CC", "BC", "SSSP", "PR"]
-		self.algname_translator = {"PR" : "PageRank"}
+		self.algname_translator = {"PR" : "PageRank"} 
+		
 		# translate to "standard" names
 		self.datasetname_translator = {"kron" : "kron_g500-logn21", "rgg" : "rgg_n_2_24_s0", \
 					       "soc" : "soc-orkut", "osm" : "europe_osm", \
@@ -149,12 +151,12 @@ class GPUEngineOutputParserBase(object):
 class GPUEngineOutputParserCuSha(GPUEngineOutputParserBase):
 	def __init__(self, input_path):
 		super(GPUEngineOutputParserCuSha, self).__init__(input_path)
-		self.regex_array = [{   "regex": re.compile("Graph is populated with ([0-9]+) vertices and ([0-9]+) edges."),
+		self.regex_array = [{   "regex": re.compile("Input graph collected with ([0-9]+) vertices and ([0-9]+) edges."), 
 					"keys" : [{ "name" : "vertices_visited", "type" : "int"}, 
 						  { "name" : "edges_visited", "type" : "int"},
 					 	 ]
 				    },
-				    {	"regex": re.compile("Processing finished in : (\d+(?:\.\d+)?) \(ms\)"),
+				    {	"regex": re.compile("Processing finished in (\d+(?:\.\d+)?) \(ms\)."), 
 					"keys" : [{ "name" : "elapsed", "type" : "float"}]
 				    }
 		]
@@ -250,8 +252,9 @@ class GPUEngineOutputParserHardwiredBFS(GPUEngineOutputParserBase):
 		]
 		self.engine = "Hardwired-BFS"
 
+
 # Now let's get started parsing CuSha output files
-cusha_input_path = "/data/Compare/CuSha/results/{}/*.txt"
+cusha_input_path = "/data/Compare/CuSha/{}/*.txt"
 cusha_output_path = "./CuSha-output"
 cusha_available_algs = ["bfs", "pr", "sssp"]
 for alg in cusha_available_algs:
@@ -284,6 +287,3 @@ GPUEngineOutputParserHardwiredBFS(bfs_input_path).WriteJSON(bfs_output_path)
 cc_input_path = "/data/Compare/conn/test_results/*.txt"
 cc_output_path = "./HardwiredCC-output"
 GPUEngineOutputParserHardwiredCC(cc_input_path).WriteJSON(cc_output_path)
-
-
-
