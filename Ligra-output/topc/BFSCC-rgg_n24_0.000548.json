@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFSCC", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 1020.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/rgg_n24_0.000548.txt", 
+    "time": "Mon Nov 21 21:05:18 2016\n"
+}

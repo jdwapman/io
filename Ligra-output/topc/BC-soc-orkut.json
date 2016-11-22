@@ -1,0 +1,8 @@
+{
+    "algorithm": "BC", 
+    "dataset": "soc-orkut", 
+    "elapsed": 245.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BC/soc-orkut.txt", 
+    "time": "Mon Nov 21 21:08:21 2016\n"
+}

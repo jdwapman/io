@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rmat", 
+    "elapsed": 107.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/rmat_n24_e16.txt", 
+    "time": "Mon Nov 21 21:06:28 2016\n"
+}

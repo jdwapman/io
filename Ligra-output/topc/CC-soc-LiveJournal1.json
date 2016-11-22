@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "soc-orkut", 
+    "elapsed": 219.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/CC/soc-LiveJournal1.txt", 
+    "time": "Mon Nov 21 21:08:15 2016\n"
+}

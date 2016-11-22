@@ -1,0 +1,8 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "elapsed": 757.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/PR/soc-orkut.txt", 
+    "time": "Mon Nov 21 21:08:27 2016\n"
+}

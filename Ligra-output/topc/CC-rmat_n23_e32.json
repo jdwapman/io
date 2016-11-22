@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "rmat", 
+    "elapsed": 1440.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/CC/rmat_n23_e32.txt", 
+    "time": "Mon Nov 21 21:06:06 2016\n"
+}

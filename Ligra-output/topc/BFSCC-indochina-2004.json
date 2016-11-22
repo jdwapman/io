@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFSCC", 
+    "dataset": "indochina-2004", 
+    "elapsed": 248.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/indochina-2004.txt", 
+    "time": "Mon Nov 21 21:04:50 2016\n"
+}

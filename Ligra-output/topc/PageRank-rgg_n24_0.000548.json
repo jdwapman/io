@@ -1,0 +1,8 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 344.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/PR/rgg_n24_0.000548.txt", 
+    "time": "Mon Nov 21 21:05:14 2016\n"
+}

@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFSCC", 
+    "dataset": "hollywood-2009", 
+    "elapsed": 180.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/hollywood-2009.txt", 
+    "time": "Mon Nov 21 21:04:32 2016\n"
+}

@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "hollywood-2009", 
+    "elapsed": 141.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/CC/hollywood-2009.txt", 
+    "time": "Mon Nov 21 21:04:29 2016\n"
+}

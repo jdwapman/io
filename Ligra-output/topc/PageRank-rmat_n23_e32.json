@@ -1,0 +1,8 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rmat", 
+    "elapsed": 2130.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/PR/rmat_n23_e32.txt", 
+    "time": "Mon Nov 21 21:06:13 2016\n"
+}

@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc-orkut", 
+    "elapsed": 44.900000000000006, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/soc-LiveJournal1.txt", 
+    "time": "Mon Nov 21 21:08:13 2016\n"
+}

@@ -1,0 +1,8 @@
+{
+    "algorithm": "BC", 
+    "dataset": "rmat", 
+    "elapsed": 1260.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BC/rmat_n24_e16.txt", 
+    "time": "Mon Nov 21 21:06:35 2016\n"
+}

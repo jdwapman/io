@@ -1,0 +1,8 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 1030.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/rgg_n24_0.000548.txt", 
+    "time": "Mon Nov 21 21:04:54 2016\n"
+}
