@@ -1,0 +1,8 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 99100.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/rgg_n24_0.000548.txt", 
+    "time": "Tue Nov 22 14:00:23 2016\n"
+}

@@ -1,0 +1,8 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rmat", 
+    "elapsed": 1400.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/rmat_n23_e32.txt", 
+    "time": "Tue Nov 22 14:01:11 2016\n"
+}
