@@ -1,0 +1,13 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 516.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/bfs/rgg_n24_0.000548.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:04:24 2016\n", 
+    "vertices_visited": 16777216
+}

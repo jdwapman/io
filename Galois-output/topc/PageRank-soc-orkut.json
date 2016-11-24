@@ -1,0 +1,12 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "elapsed": 4145.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/pr/soc-orkut.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:18:53 2016\n"
+}

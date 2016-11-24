@@ -1,0 +1,12 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "elapsed": 16884.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/pr/soc-LiveJournal1.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:18:38 2016\n"
+}

@@ -1,0 +1,13 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "road_usa", 
+    "elapsed": 429534.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/sssp/road_usa.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:18:01 2016\n", 
+    "vertices_visited": 23947347
+}

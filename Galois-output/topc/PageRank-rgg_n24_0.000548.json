@@ -1,0 +1,12 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 3942.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/pr/rgg_n24_0.000548.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:05:38 2016\n"
+}
