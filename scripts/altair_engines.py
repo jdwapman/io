@@ -26,8 +26,11 @@ fnPreprocessDF = [convertCtimeStringToDatetime,
                   ]
 fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 17),
                                          datetime.date(2016, 11, 18),
-                                         datetime.date(2016, 11, 20)]),
+                                         datetime.date(2016, 11, 20),
+                                         datetime.date(2016, 11, 21)]),
                   # 2016/11/17 is gunrock-output/topc/
+                  # 2016/11/20 is {CuSha,Galois}-output/topc/
+                  # 2016/11/21 is Ligra-output/topc/
                   deleteZeroMTEPS,
                   ]
 
