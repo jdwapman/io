@@ -1,0 +1,13 @@
+{
+    "algorithm": "BC", 
+    "dataset": "rmat", 
+    "elapsed": 765.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/bc/rmat_n22_e64.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:05:58 2016\n", 
+    "vertices_visited": 4194304
+}

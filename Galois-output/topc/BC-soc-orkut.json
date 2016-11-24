@@ -1,0 +1,13 @@
+{
+    "algorithm": "BC", 
+    "dataset": "soc-orkut", 
+    "elapsed": 449.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/bc/soc-orkut.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:18:47 2016\n", 
+    "vertices_visited": 2997166
+}

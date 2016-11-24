@@ -1,0 +1,13 @@
+{
+    "algorithm": "BC", 
+    "dataset": "road_usa", 
+    "elapsed": 1291.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/bc/road_usa.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:18:03 2016\n", 
+    "vertices_visited": 23947347
+}

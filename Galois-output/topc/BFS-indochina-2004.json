@@ -1,0 +1,13 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "indochina-2004", 
+    "elapsed": 112.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/bfs/indochina-2004.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:04:01 2016\n", 
+    "vertices_visited": 7414866
+}

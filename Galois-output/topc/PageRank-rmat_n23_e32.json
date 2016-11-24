@@ -1,0 +1,12 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rmat", 
+    "elapsed": 71170.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/pr/rmat_n23_e32.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:08:31 2016\n"
+}

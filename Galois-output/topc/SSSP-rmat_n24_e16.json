@@ -1,0 +1,13 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "rmat", 
+    "elapsed": 1433.0, 
+    "engine": "Galois", 
+    "iterations": 16, 
+    "rawfile": "/data/Compare/TOPC-results/Galois/sssp/rmat_n24_e16.txt", 
+    "sysinfo": {
+        "nodename": "mario"
+    }, 
+    "time": "Sun Nov 20 09:08:54 2016\n", 
+    "vertices_visited": 16777216
+}
