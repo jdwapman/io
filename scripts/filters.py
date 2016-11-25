@@ -64,17 +64,14 @@ def computeOtherMTEPSFromGunrock(df):
     # formula: edges_visited / (elapsed * 1000.0f)
     df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
 
-    # build a dict from {algorithm+dataset} to edges_visited
+    # series mapping {algorithm+dataset} to edges_visited
     dfg = df.loc[df['engine'] == 'Gunrock'][['algorithm_dataset',
                                              'edges_visited']]
-    dfg = dfg.set_index('algorithm_dataset')
-    dfg_dict = dfg.to_dict()['edges_visited']
-    # I ought to be able to pass in dfg to fillna, but that doesn't seem to
-    # work, so I'm passing in a dict instead
+    dfg = dfg.set_index('algorithm_dataset')['edges_visited']
 
     # fill in missing values for edges_visited, per algorithm_dataset
     df = df.set_index('algorithm_dataset')
-    df['edges_visited'] = df['edges_visited'].fillna(value=dfg_dict)
+    df['edges_visited'] = df['edges_visited'].fillna(value=dfg)
     df = df.reset_index()
 
     # now calculate m_teps if it's empty but edges_visited and elapsed are
