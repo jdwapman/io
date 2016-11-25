@@ -28,6 +28,11 @@ def DOBFStoBFS(df):
     return df
 
 
+def BFSCCtoCC(df):
+    df.loc[df.algorithm == 'BFSCC', 'algorithm'] = 'CC'
+    return df
+
+
 def equateRGG(df):
     df.loc[df.dataset == 'rgg_n_2_24_s0', 'dataset'] = 'rgg_n24_0.000548'
     return df
