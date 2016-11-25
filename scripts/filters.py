@@ -63,23 +63,22 @@ def computeOtherMTEPSFromGunrock(df):
     #
     # formula: edges_visited / (elapsed * 1000.0f)
     df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
+
+    # build a dict from {algorithm+dataset} to edges_visited
     dfg = df.loc[df['engine'] == 'Gunrock'][['algorithm_dataset',
                                              'edges_visited']]
     dfg = dfg.set_index('algorithm_dataset')
-    d = dfg.to_dict()['edges_visited']
-    print d
-    dfg.to_csv("dfg.csv")
+    dfg_dict = dfg.to_dict()['edges_visited']
+    # I ought to be able to pass in dfg to fillna, but that doesn't seem to
+    # work, so I'm passing in a dict instead
 
-    df.to_csv("df1.csv")
+    # fill in missing values for edges_visited, per algorithm_dataset
     df = df.set_index('algorithm_dataset')
-    # df1 = df1.set_index('Name').fillna(df3.set_index('Name')).reset_index()
-    # df = df.set_index('algorithm_dataset')[
-    # 'edges_visited'].fillna(value=dfg).reset_index()
-
-    # http://stackoverflow.com/questions/39773425/python-pandas-fillna-with-another-non-null-row-having-similar-column/39773579#39773579
-    df['edges_visited'] = df['edges_visited'].fillna(value=d)
+    df['edges_visited'] = df['edges_visited'].fillna(value=dfg_dict)
     df = df.reset_index()
-    df.to_csv("df2.csv")
+
+    # now calculate m_teps if it's empty but edges_visited and elapsed are
+    # valid
     m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
     df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
     return df
