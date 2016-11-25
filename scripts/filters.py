@@ -47,14 +47,42 @@ def gunrockVersionGPU(df):
 
 def addJSONDetailsLink(df):
     df['details'] = df['details'].apply(lambda s: re.sub(
-        r'.*gunrock-output',
-        '<a href="https://github.com/gunrock/io/tree/master/gunrock-output',
+        r'.*/(\w*)-output',
+        r'<a href="https://github.com/gunrock/io/tree/master/\1-output',
         s) + '">JSON output</a>')
     return df
 
 
 def selectAnyOfTheseDates(dates):
     return lambda df: df[df['time'].isin(dates)]
+
+
+def computeOtherMTEPSFromGunrock(df):
+    # if df['m_teps'] is NaN, but df['elapsed'] is there, use
+    # Gunrock's edges_visited to compute m_teps
+    #
+    # formula: edges_visited / (elapsed * 1000.0f)
+    df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
+    dfg = df.loc[df['engine'] == 'Gunrock'][['algorithm_dataset',
+                                             'edges_visited']]
+    dfg = dfg.set_index('algorithm_dataset')
+    d = dfg.to_dict()['edges_visited']
+    print d
+    dfg.to_csv("dfg.csv")
+
+    df.to_csv("df1.csv")
+    df = df.set_index('algorithm_dataset')
+    # df1 = df1.set_index('Name').fillna(df3.set_index('Name')).reset_index()
+    # df = df.set_index('algorithm_dataset')[
+    # 'edges_visited'].fillna(value=dfg).reset_index()
+
+    # http://stackoverflow.com/questions/39773425/python-pandas-fillna-with-another-non-null-row-having-similar-column/39773579#39773579
+    df['edges_visited'] = df['edges_visited'].fillna(value=d)
+    df = df.reset_index()
+    df.to_csv("df2.csv")
+    m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
+    df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    return df
 
 
 def deleteZeroMTEPS(df):

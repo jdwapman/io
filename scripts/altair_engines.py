@@ -14,7 +14,8 @@ from fileops import savefile
 from filters import *
 
 # begin user settings for this script
-roots = ['../gunrock-output', '../CuSha-output']
+roots = ['../gunrock-output', '../CuSha-output',
+         '../Galois-output', '../Ligra-output', '../MapGraph-output']
 fnFilterInputFiles = [fileEndsWithJSON,
                       ]
 fnPreprocessDF = [convertCtimeStringToDatetime,
@@ -31,6 +32,7 @@ fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 17),
                   # 2016/11/17 is gunrock-output/topc/
                   # 2016/11/20 is {CuSha,Galois}-output/topc/
                   # 2016/11/21 is Ligra-output/topc/
+                  computeOtherMTEPSFromGunrock,
                   deleteZeroMTEPS,
                   ]
 
@@ -109,10 +111,14 @@ outfile = open(tablefile, 'w')
 pandas.set_option('display.max_colwidth', -1)
 df.sort_values(['algorithm',
                 'dataset',
+                'engine',
                 'gunrock_version']).to_html(buf=outfile,
                                             columns=['algorithm',
                                                      'dataset',
+                                                     'engine',
                                                      'm_teps',
+                                                     'edges_visited',
+                                                     'elapsed',
                                                      'gunrock_version',
                                                      'gpuinfo.name',
                                                      'details'],
