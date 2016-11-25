@@ -65,9 +65,8 @@ def computeOtherMTEPSFromGunrock(df):
     df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
 
     # series mapping {algorithm+dataset} to edges_visited
-    dfg = df.loc[df['engine'] == 'Gunrock'][['algorithm_dataset',
-                                             'edges_visited']]
-    dfg = dfg.set_index('algorithm_dataset')['edges_visited']
+    dfg = df.loc[df['engine'] ==
+                 'Gunrock'].set_index('algorithm_dataset')['edges_visited']
 
     # fill in missing values for edges_visited, per algorithm_dataset
     df = df.set_index('algorithm_dataset')
