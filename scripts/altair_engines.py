@@ -13,6 +13,8 @@ from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError
 from fileops import savefile
 from filters import *
 
+name = 'engines_topc'
+
 # begin user settings for this script
 roots = ['../gunrock-output', '../CuSha-output',
          '../Galois-output', '../Ligra-output', '../MapGraph-output']
@@ -71,41 +73,43 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 
 # now make the graph
 
-chart = Chart(df).mark_point().encode(
-    x=X('dataset:N',
-        axis=Axis(
-            title='Dataset',
-        ),
-        ),
-    column=Column('algorithm:N',
-                  axis=Axis(
-                      title='Primitive',
-                      orient='top',
-                  )
-                  ),
-    y=Y('m_teps',
-        axis=Axis(
-            title='MTEPS',
-        ),
-        scale=Scale(type='log'),
-        ),
-    color=Color('algorithm:N',
-                legend=Legend(
-                    title='Primitive',
-                ),
-                ),
-    shape=Shape('engine',
-                legend=Legend(
-                    title='Engine',
-                ),
-                ),
-)
-print chart.to_dict(data=False)
-plotname = 'engines_topc'
-for fileformat in ['html', 'svg', 'png']:
-    savefile(chart, name=plotname, fileformat=fileformat)
+for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
 
-tablefile = plotname + "_table.html"
+    chart = Chart(df).mark_point().encode(
+        x=X('dataset:N',
+            axis=Axis(
+                title='Dataset',
+            ),
+            ),
+        column=Column('algorithm:N',
+                      axis=Axis(
+                          title='Primitive',
+                          orient='top',
+                      )
+                      ),
+        y=Y(data,
+            axis=Axis(
+                title=caption,
+            ),
+            scale=Scale(type='log'),
+            ),
+        color=Color('algorithm:N',
+                    legend=Legend(
+                        title='Primitive',
+                    ),
+                    ),
+        shape=Shape('engine',
+                    legend=Legend(
+                        title='Engine',
+                    ),
+                    ),
+    )
+    print chart.to_dict(data=False)
+    plotname = '%s_%s' % (name, data)
+    for fileformat in ['html', 'svg', 'png']:
+        savefile(chart, name=plotname, fileformat=fileformat)
+
+tablefile = name + "_table.html"
 outfile = open(tablefile, 'w')
 # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
 pandas.set_option('display.max_colwidth', -1)
