@@ -1,6 +1,6 @@
 {
     "algorithm": "CC", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n24_e16", 
     "elapsed": 1940.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/rmat_n24_e16.txt", 

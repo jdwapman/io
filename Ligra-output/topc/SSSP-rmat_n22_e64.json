@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "elapsed": 1110.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/rmat_n22_e64.txt", 

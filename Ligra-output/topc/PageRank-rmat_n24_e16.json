@@ -1,6 +1,6 @@
 {
     "algorithm": "PageRank", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n24_e16", 
     "elapsed": 2720.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/rmat_n24_e16.txt", 

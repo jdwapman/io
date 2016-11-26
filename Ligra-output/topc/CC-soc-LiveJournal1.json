@@ -1,6 +1,6 @@
 {
     "algorithm": "CC", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 219.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/soc-LiveJournal1.txt", 

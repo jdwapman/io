@@ -1,6 +1,6 @@
 {
     "algorithm": "BC", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 204.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/soc-LiveJournal1.txt", 

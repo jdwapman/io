@@ -1,6 +1,6 @@
 {
     "algorithm": "BFSCC", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n24_e16", 
     "elapsed": 9220.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/rmat_n24_e16.txt", 

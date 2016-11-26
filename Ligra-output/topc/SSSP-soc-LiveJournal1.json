@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 432.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/soc-LiveJournal1.txt", 

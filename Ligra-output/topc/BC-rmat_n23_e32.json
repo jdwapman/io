@@ -1,6 +1,6 @@
 {
     "algorithm": "BC", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n23_e32", 
     "elapsed": 923.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/rmat_n23_e32.txt", 

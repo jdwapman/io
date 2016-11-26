@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "elapsed": 28.6, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/rmat_n22_e64.txt", 
