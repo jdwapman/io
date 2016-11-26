@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "edges_visited": 136950784, 
     "elapsed": 259.972, 
     "engine": "CuSha", 

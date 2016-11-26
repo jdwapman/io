@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "edges_visited": 136950784, 
     "elapsed": 356.642, 
     "engine": "CuSha", 

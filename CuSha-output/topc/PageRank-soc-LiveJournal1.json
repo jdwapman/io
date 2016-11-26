@@ -1,6 +1,6 @@
 {
     "algorithm": "PageRank", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "edges_visited": 136950784, 
     "elapsed": 1631.43, 
     "engine": "CuSha", 

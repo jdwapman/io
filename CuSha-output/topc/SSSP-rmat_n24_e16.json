@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n24_e16", 
     "edges_visited": 525980050, 
     "elapsed": 1014.24, 
     "engine": "CuSha", 

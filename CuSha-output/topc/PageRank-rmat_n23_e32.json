@@ -1,6 +1,6 @@
 {
     "algorithm": "PageRank", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n23_e32", 
     "edges_visited": 516273140, 
     "elapsed": 58260.9, 
     "engine": "CuSha", 

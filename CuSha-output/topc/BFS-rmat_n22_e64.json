@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "edges_visited": 499765128, 
     "elapsed": 1713.39, 
     "engine": "CuSha", 
