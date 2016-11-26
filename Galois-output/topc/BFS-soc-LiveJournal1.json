@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 144.0, 
     "engine": "Galois", 
     "iterations": 16, 

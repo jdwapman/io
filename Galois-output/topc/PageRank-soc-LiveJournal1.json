@@ -1,6 +1,6 @@
 {
     "algorithm": "PageRank", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 16884.0, 
     "engine": "Galois", 
     "iterations": 16, 

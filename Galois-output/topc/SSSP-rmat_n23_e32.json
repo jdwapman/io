@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n23_e32", 
     "elapsed": 1080.0, 
     "engine": "Galois", 
     "iterations": 16, 

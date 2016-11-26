@@ -1,6 +1,6 @@
 {
     "algorithm": "PageRank", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n23_e32", 
     "elapsed": 71170.0, 
     "engine": "Galois", 
     "iterations": 16, 

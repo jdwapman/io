@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "elapsed": 307.0, 
     "engine": "Galois", 
     "iterations": 16, 

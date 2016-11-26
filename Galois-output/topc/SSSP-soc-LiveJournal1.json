@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 3052.0, 
     "engine": "Galois", 
     "iterations": 16, 

@@ -1,6 +1,6 @@
 {
     "algorithm": "CC", 
-    "dataset": "soc-orkut", 
+    "dataset": "soc-LiveJournal1", 
     "elapsed": 367.0, 
     "engine": "Galois", 
     "iterations": 16, 

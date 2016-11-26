@@ -1,6 +1,6 @@
 {
     "algorithm": "BC", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "elapsed": 765.0, 
     "engine": "Galois", 
     "iterations": 16, 

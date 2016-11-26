@@ -1,6 +1,6 @@
 {
     "algorithm": "CC", 
-    "dataset": "rmat", 
+    "dataset": "rmat_n22_e64", 
     "elapsed": 1032.0, 
     "engine": "Galois", 
     "iterations": 16, 
