@@ -1,8 +1,8 @@
 {
     "algorithm": "CC", 
     "dataset": "soc-orkut", 
-    "elapsed": 353.0, 
+    "elapsed": 1740.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/soc-orkut.txt", 
-    "time": "Mon Nov 21 21:08:24 2016\n"
+    "time": "Sat Nov 26 13:55:52 2016\n"
 }

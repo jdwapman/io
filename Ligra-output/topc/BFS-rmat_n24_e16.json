@@ -1,8 +1,10 @@
 {
     "algorithm": "BFS", 
     "dataset": "rmat_n24_e16", 
-    "elapsed": 107.0, 
+    "edges_visited": 519654114, 
+    "elapsed": 434.0, 
     "engine": "Ligra", 
+    "m_teps": 1197.3597096774195, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/rmat_n24_e16.txt", 
-    "time": "Mon Nov 21 21:06:28 2016\n"
+    "time": "Sat Nov 26 12:25:49 2016\n"
 }

@@ -1,8 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "hollywood-2009", 
-    "elapsed": 203.0, 
+    "edges_visited": 219834037, 
+    "elapsed": 661.0, 
     "engine": "Ligra", 
+    "iterations": 16, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/hollywood-2009.txt", 
-    "time": "Tue Nov 22 13:58:14 2016\n"
+    "time": "Sat Nov 26 10:26:15 2016\n"
 }

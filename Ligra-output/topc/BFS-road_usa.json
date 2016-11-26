@@ -1,8 +1,10 @@
 {
     "algorithm": "BFS", 
     "dataset": "road_usa", 
-    "elapsed": 1030.0, 
+    "edges_visited": 57708624, 
+    "elapsed": 1080.0, 
     "engine": "Ligra", 
+    "m_teps": 53.433911111111115, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/road_usa.txt", 
-    "time": "Mon Nov 21 21:07:08 2016\n"
+    "time": "Sat Nov 26 12:52:58 2016\n"
 }

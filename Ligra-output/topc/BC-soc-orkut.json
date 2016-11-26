@@ -1,8 +1,10 @@
 {
     "algorithm": "BC", 
     "dataset": "soc-orkut", 
-    "elapsed": 245.0, 
+    "edges_visited": 425396824, 
+    "elapsed": 1280.0, 
     "engine": "Ligra", 
+    "m_teps": 664.6825375, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/soc-orkut.txt", 
-    "time": "Mon Nov 21 21:08:21 2016\n"
+    "time": "Sat Nov 26 13:55:33 2016\n"
 }

@@ -1,8 +1,8 @@
 {
     "algorithm": "CC", 
     "dataset": "soc-LiveJournal1", 
-    "elapsed": 219.0, 
+    "elapsed": 871.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/soc-LiveJournal1.txt", 
-    "time": "Mon Nov 21 21:08:15 2016\n"
+    "time": "Sat Nov 26 13:49:12 2016\n"
 }
