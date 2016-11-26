@@ -8,13 +8,12 @@ import os, re, math, time, json, glob, distutils.dir_util
 # to the format of that engine's outputs. Also, other methods may be overridden.
 # (See class GPUEngineOutputParserCuSha as an example)
 class GPUEngineOutputParserBase(object):
-
 	# Constructor
 	def __init__(self, input_path = "", regex_array = [], \
 			   dataset_names = ["roadNet-CA", "europe_osm", "rgg", "indochina-2004", \
-					    		"roadnet", "kron", "soc-orkut", "soc", "hollywood-2009", \
-					    		"osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat", \
-					    		"road_usa"]):
+					    		"roadnet", "kron", "soc-orkut", "soc-LiveJournal1", "hollywood-2009", \
+					    		"osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat_n22_e64", \
+					    		"rmat_n23_e32", "rmat_n24_e16", "road_usa"]):
 		self.input_path = input_path
                 self.regex_array = regex_array
 		self.dataset_names = dataset_names
@@ -24,7 +23,8 @@ class GPUEngineOutputParserBase(object):
 
 		# translate to "standard" names
 		self.datasetname_translator = {"kron" : "kron_g500-logn21", "rgg" : "rgg_n_2_24_s0", \
-					       "soc" : "soc-orkut", "osm" : "europe_osm", \
+					       #"soc" : "soc-orkut", 
+					       "osm" : "europe_osm", \
 					       "roadnet" : "roadNet-CA" }
 		self.engine = "Generic"
 		self.m_teps_switcher = {
