@@ -18,28 +18,32 @@ name = 'engines_topc'
 # begin user settings for this script
 roots = ['../gunrock-output', '../CuSha-output',
          '../Galois-output', '../Ligra-output', '../MapGraph-output']
-fnFilterInputFiles = [fileEndsWithJSON,
-                      ]
-fnPreprocessDF = [convertCtimeStringToDatetime,
-                  DOBFStoBFS,
-                  BFSCCtoCC,
-                  equateRGG,
-                  normalizePRMTEPS,
-                  addJSONDetailsLink,
-                  gunrockVersionGPU,
-                  ]
-fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 17),
-                                         datetime.date(2016, 11, 18),
-                                         datetime.date(2016, 11, 20),
-                                         datetime.date(2016, 11, 26)]),
-                  # 2016/11/17 is gunrock-output/topc/
-                  # 2016/11/20 is {CuSha,Galois}-output/topc/
-                  # 2016/11/26 is Ligra-output/topc/
-                  computeOtherMTEPSFromGunrock,
-                  deleteZeroMTEPS,
-                  ]
+fnFilterInputFiles = [
+    fileEndsWithJSON,
+]
+fnPreprocessDF = [
+    convertCtimeStringToDatetime,
+    DOBFStoBFS,
+    BFSCCtoCC,
+    equateRGG,
+    normalizePRMTEPS,
+    addJSONDetailsLink,
+    gunrockVersionGPU,
+]
+fnFilterDFRows = [
+    selectAnyOfTheseDates([datetime.date(2016, 11, 17),
+                           datetime.date(2016, 11, 18),
+                           datetime.date(2016, 11, 20),
+                           datetime.date(2016, 11, 26)]),
+    # 2016/11/17 is gunrock-output/topc/
+    # 2016/11/20 is {CuSha,Galois}-output/topc/
+    # 2016/11/26 is Ligra-output/topc/
+    computeOtherMTEPSFromGunrock,
+    deleteZeroMTEPS,
+]
 
-fnPostprocessDF = []
+fnPostprocessDF = [
+]
 # end user settings for this script
 
 # actual program logic
