@@ -1,0 +1,9 @@
+{
+    "dataset": "rmat_n24_e16", 
+    "edges_visited": 519660124, 
+    "elapsed": 11700.0, 
+    "engine": "Ligra", 
+    "iterations": 1, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Delta/rmat_n24_e16.txt", 
+    "time": "Sat Nov 26 22:56:23 2016\n"
+}

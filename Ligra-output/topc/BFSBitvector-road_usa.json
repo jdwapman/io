@@ -1,0 +1,9 @@
+{
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 1210.0, 
+    "engine": "Ligra", 
+    "iterations": 6262, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/road_usa.txt", 
+    "time": "Sat Nov 26 23:36:20 2016\n"
+}

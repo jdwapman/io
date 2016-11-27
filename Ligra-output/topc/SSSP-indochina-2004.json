@@ -2,9 +2,9 @@
     "algorithm": "SSSP", 
     "dataset": "indochina-2004", 
     "edges_visited": 668101243, 
-    "elapsed": 1840.0, 
+    "elapsed": 1790.0, 
     "engine": "Ligra", 
     "iterations": 42, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/indochina-2004.txt", 
-    "time": "Sat Nov 26 10:38:17 2016\n"
+    "time": "Sat Nov 26 21:31:01 2016\n"
 }

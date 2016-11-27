@@ -1,8 +1,10 @@
 {
     "algorithm": "BFSCC", 
     "dataset": "soc-orkut", 
-    "elapsed": 27.5, 
+    "edges_visited": 212698418, 
+    "elapsed": 116.0, 
     "engine": "Ligra", 
+    "iterations": 8, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/soc-orkut.txt", 
-    "time": "Mon Nov 21 21:08:29 2016\n"
+    "time": "Sat Nov 26 23:56:04 2016\n"
 }

@@ -1,0 +1,9 @@
+{
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265092206, 
+    "elapsed": 3120.0, 
+    "engine": "Ligra", 
+    "iterations": 2826, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/rgg_n24_0.000548.txt", 
+    "time": "Sat Nov 26 22:12:49 2016\n"
+}

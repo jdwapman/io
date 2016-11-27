@@ -1,0 +1,9 @@
+{
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "elapsed": 2320.0, 
+    "engine": "Ligra", 
+    "iterations": 1, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Delta/indochina-2004.txt", 
+    "time": "Sat Nov 26 21:30:15 2016\n"
+}

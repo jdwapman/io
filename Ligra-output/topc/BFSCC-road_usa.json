@@ -1,8 +1,10 @@
 {
     "algorithm": "BFSCC", 
     "dataset": "road_usa", 
-    "elapsed": 1040.0, 
+    "edges_visited": 57708624, 
+    "elapsed": 1060.0, 
     "engine": "Ligra", 
+    "iterations": 6262, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/road_usa.txt", 
-    "time": "Mon Nov 21 21:08:12 2016\n"
+    "time": "Sat Nov 26 23:36:10 2016\n"
 }

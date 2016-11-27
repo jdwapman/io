@@ -1,9 +1,9 @@
 {
     "algorithm": "SSSP", 
     "dataset": "road_usa", 
-    "elapsed": 218000.0, 
+    "elapsed": 219000.0, 
     "engine": "Ligra", 
     "iterations": 6761, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/road_usa.txt", 
-    "time": "Sat Nov 26 13:32:51 2016\n"
+    "time": "Sat Nov 26 23:36:02 2016\n"
 }

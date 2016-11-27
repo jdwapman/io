@@ -1,0 +1,9 @@
+{
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698418, 
+    "elapsed": 162.0, 
+    "engine": "Ligra", 
+    "iterations": 8, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/soc-orkut.txt", 
+    "time": "Sat Nov 26 23:56:16 2016\n"
+}

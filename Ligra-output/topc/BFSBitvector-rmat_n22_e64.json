@@ -1,0 +1,9 @@
+{
+    "dataset": "rmat_n22_e64", 
+    "edges_visited": 483047842, 
+    "elapsed": 161.0, 
+    "engine": "Ligra", 
+    "iterations": 5, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/rmat_n22_e64.txt", 
+    "time": "Sat Nov 26 22:41:45 2016\n"
+}

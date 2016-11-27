@@ -1,8 +1,10 @@
 {
     "algorithm": "BFSCC", 
     "dataset": "rmat_n22_e64", 
-    "elapsed": 1140.0, 
+    "edges_visited": 483048058, 
+    "elapsed": 182.0, 
     "engine": "Ligra", 
+    "iterations": 1005872, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/rmat_n22_e64.txt", 
-    "time": "Mon Nov 21 21:05:47 2016\n"
+    "time": "Sat Nov 26 22:41:21 2016\n"
 }

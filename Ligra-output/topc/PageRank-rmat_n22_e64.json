@@ -1,8 +1,10 @@
 {
     "algorithm": "PageRank", 
     "dataset": "rmat_n22_e64", 
-    "elapsed": 1730.0, 
+    "edges_visited": 483048058, 
+    "elapsed": 6640.0, 
     "engine": "Ligra", 
+    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/rmat_n22_e64.txt", 
-    "time": "Mon Nov 21 21:05:41 2016\n"
+    "time": "Sat Nov 26 22:38:51 2016\n"
 }

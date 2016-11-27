@@ -1,0 +1,8 @@
+{
+    "dataset": "hollywood-2009", 
+    "edges_visited": 352848986, 
+    "elapsed": 1530.0, 
+    "engine": "Ligra", 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/hollywood-2009.txt", 
+    "time": "Sat Nov 26 21:28:10 2016\n"
+}

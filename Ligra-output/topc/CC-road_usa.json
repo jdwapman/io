@@ -1,8 +1,8 @@
 {
     "algorithm": "CC", 
     "dataset": "road_usa", 
-    "elapsed": 291000.0, 
+    "elapsed": 289000.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/road_usa.txt", 
-    "time": "Sat Nov 26 13:12:40 2016\n"
+    "time": "Sat Nov 26 23:20:59 2016\n"
 }

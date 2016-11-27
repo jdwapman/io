@@ -1,0 +1,9 @@
+{
+    "dataset": "rmat_n24_e16", 
+    "edges_visited": 519654114, 
+    "elapsed": 646.0, 
+    "engine": "Ligra", 
+    "iterations": 6, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/rmat_n24_e16.txt", 
+    "time": "Sat Nov 26 22:59:09 2016\n"
+}

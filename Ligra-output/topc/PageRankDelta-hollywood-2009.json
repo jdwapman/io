@@ -1,0 +1,9 @@
+{
+    "dataset": "hollywood-2009", 
+    "edges_visited": 112751422, 
+    "elapsed": 881.0, 
+    "engine": "Ligra", 
+    "iterations": 1, 
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Delta/hollywood-2009.txt", 
+    "time": "Sat Nov 26 21:27:31 2016\n"
+}

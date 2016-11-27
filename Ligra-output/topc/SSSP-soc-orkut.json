@@ -2,9 +2,9 @@
     "algorithm": "SSSP", 
     "dataset": "soc-orkut", 
     "edges_visited": 527713008, 
-    "elapsed": 3060.0, 
+    "elapsed": 3070.0, 
     "engine": "Ligra", 
     "iterations": 15, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/soc-orkut.txt", 
-    "time": "Sat Nov 26 14:08:00 2016\n"
+    "time": "Sat Nov 26 23:55:53 2016\n"
 }
