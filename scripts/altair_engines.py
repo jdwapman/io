@@ -34,7 +34,7 @@ fnFilterDFRows = [
     selectAnyOfTheseDates([datetime.date(2016, 11, 17),
                            datetime.date(2016, 11, 18),
                            datetime.date(2016, 11, 20),
-                           datetime.date(2016, 11, 26)]),
+                           datetime.date(2016, 11, 29)]),
     # 2016/11/17 is gunrock-output/topc/
     # 2016/11/20 is {CuSha,Galois}-output/topc/
     # 2016/11/26 is Ligra-output/topc/
@@ -98,9 +98,9 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
             ),
             scale=Scale(type='log'),
             ),
-        color=Color('algorithm:N',
+        color=Color('sub_algorithm:N',
                     legend=Legend(
-                        title='Primitive',
+                        title='Algorithmic variant',
                     ),
                     ),
         shape=Shape('engine',
@@ -119,10 +119,12 @@ outfile = open(tablefile, 'w')
 # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
 pandas.set_option('display.max_colwidth', -1)
 df.sort_values(['algorithm',
+                'sub_algorithm',
                 'dataset',
                 'engine',
                 'gunrock_version']).to_html(buf=outfile,
                                             columns=['algorithm',
+                                                     'sub_algorithm',
                                                      'dataset',
                                                      'engine',
                                                      'm_teps',
