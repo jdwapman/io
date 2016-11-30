@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "hollywood-2009", 
     "edges_visited": 352848986, 
     "elapsed": 216.0, 

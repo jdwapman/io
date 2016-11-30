@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "rmat_n24_e16", 
     "edges_visited": 519654114, 
     "elapsed": 112.0, 

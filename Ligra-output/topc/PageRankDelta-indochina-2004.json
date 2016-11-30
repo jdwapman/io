@@ -1,4 +1,5 @@
 {
+    "algorithm": "PageRank", 
     "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
     "elapsed": 360.0, 

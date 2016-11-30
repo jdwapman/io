@@ -1,10 +1,9 @@
 {
-    "algorithm": "BFS", 
+    "algorithm": "CC", 
     "dataset": "rgg_n_2_24_s0", 
     "edges_visited": 265092206, 
     "elapsed": 921.0, 
     "engine": "Ligra", 
-    "m_teps": 287.83084256243217, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/rgg_n24_0.000548.txt", 
     "sub_algorithm": "bfscc", 
     "time": "Tue Nov 29 19:45:43 2016\n"

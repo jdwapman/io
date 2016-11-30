@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "indochina-2004", 
     "elapsed": 1370.0, 
     "engine": "Ligra", 

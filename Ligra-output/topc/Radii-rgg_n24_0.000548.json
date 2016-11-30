@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "rgg_n_2_24_s0", 
     "elapsed": 53400.0, 
     "engine": "Ligra", 

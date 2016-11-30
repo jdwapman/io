@@ -1,4 +1,5 @@
 {
+    "algorithm": "PageRank", 
     "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
     "elapsed": 214.0, 

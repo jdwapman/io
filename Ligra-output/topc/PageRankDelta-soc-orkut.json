@@ -1,4 +1,5 @@
 {
+    "algorithm": "PageRank", 
     "dataset": "soc-orkut", 
     "edges_visited": 212698418, 
     "elapsed": 479.0, 

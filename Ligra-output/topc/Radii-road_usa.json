@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "road_usa", 
     "elapsed": 42300.0, 
     "engine": "Ligra", 

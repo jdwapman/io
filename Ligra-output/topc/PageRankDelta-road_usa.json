@@ -1,4 +1,5 @@
 {
+    "algorithm": "PageRank", 
     "dataset": "road_usa", 
     "edges_visited": 57708624, 
     "elapsed": 225.0, 

@@ -1,4 +1,5 @@
 {
+    "algorithm": "PageRank", 
     "dataset": "rmat_n23_e32", 
     "edges_visited": 505642970, 
     "elapsed": 2060.0, 

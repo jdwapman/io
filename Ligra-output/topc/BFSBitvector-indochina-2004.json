@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "indochina-2004", 
     "edges_visited": 298109708, 
     "elapsed": 199.0, 

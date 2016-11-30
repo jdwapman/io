@@ -1,10 +1,9 @@
 {
-    "algorithm": "BFS", 
+    "algorithm": "CC", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 85702474, 
     "elapsed": 57.4, 
     "engine": "Ligra", 
-    "m_teps": 1493.0744599303134, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/soc-LiveJournal1.txt", 
     "sub_algorithm": "bfscc", 
     "time": "Tue Nov 29 20:05:12 2016\n"

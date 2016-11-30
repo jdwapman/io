@@ -1,4 +1,5 @@
 {
+    "algorithm": "BFS", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 391301215, 
     "elapsed": 601.0, 
