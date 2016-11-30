@@ -1,10 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "soc-orkut", 
-    "edges_visited": 527713008, 
-    "elapsed": 3070.0, 
+    "edges_visited": 559234039, 
+    "elapsed": 595.0, 
     "engine": "Ligra", 
-    "iterations": 15, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/soc-orkut.txt", 
-    "time": "Sat Nov 26 23:55:53 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 20:05:42 2016\n"
 }

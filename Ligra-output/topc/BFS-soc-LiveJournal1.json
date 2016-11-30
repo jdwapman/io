@@ -2,9 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 85691368, 
-    "elapsed": 208.0, 
+    "elapsed": 42.4, 
     "engine": "Ligra", 
-    "m_teps": 411.97773076923073, 
+    "m_teps": 2021.0228301886793, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:52:09 2016\n"
+    "sub_algorithm": "bfs", 
+    "time": "Tue Nov 29 20:05:00 2016\n"
 }

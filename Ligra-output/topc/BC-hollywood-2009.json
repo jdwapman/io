@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "hollywood-2009", 
     "edges_visited": 225226608, 
-    "elapsed": 444.0, 
+    "elapsed": 59.0, 
     "engine": "Ligra", 
-    "m_teps": 1014.5342702702703, 
+    "m_teps": 7634.80027118644, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/hollywood-2009.txt", 
-    "time": "Sat Nov 26 21:27:06 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 19:38:14 2016\n"
 }

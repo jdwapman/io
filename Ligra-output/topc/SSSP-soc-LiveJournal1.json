@@ -1,10 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "soc-LiveJournal1", 
-    "edges_visited": 197262529, 
-    "elapsed": 2029.9999999999998, 
+    "edges_visited": 218968476, 
+    "elapsed": 368.0, 
     "engine": "Ligra", 
-    "iterations": 19, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:53:07 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 20:05:11 2016\n"
 }

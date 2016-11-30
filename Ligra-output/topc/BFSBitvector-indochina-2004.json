@@ -1,9 +1,9 @@
 {
     "dataset": "indochina-2004", 
     "edges_visited": 298109708, 
-    "elapsed": 902.0, 
+    "elapsed": 199.0, 
     "engine": "Ligra", 
-    "iterations": 26, 
-    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:31:40 2016\n"
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Bitvector/indochina-2004.txt", 
+    "sub_algorithm": "bfs-bitvector", 
+    "time": "Tue Nov 29 19:39:07 2016\n"
 }

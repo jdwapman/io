@@ -1,10 +1,11 @@
 {
-    "algorithm": "BFSCC", 
+    "algorithm": "BFS", 
     "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
-    "elapsed": 74.89999999999999, 
+    "elapsed": 177.0, 
     "engine": "Ligra", 
-    "iterations": 56602, 
+    "m_teps": 637.0136836158192, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/hollywood-2009.txt", 
-    "time": "Sat Nov 26 21:27:53 2016\n"
+    "sub_algorithm": "bfscc", 
+    "time": "Tue Nov 29 19:38:24 2016\n"
 }

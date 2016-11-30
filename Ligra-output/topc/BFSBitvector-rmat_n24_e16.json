@@ -1,9 +1,9 @@
 {
     "dataset": "rmat_n24_e16", 
     "edges_visited": 519654114, 
-    "elapsed": 646.0, 
+    "elapsed": 112.0, 
     "engine": "Ligra", 
-    "iterations": 6, 
-    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/rmat_n24_e16.txt", 
-    "time": "Sat Nov 26 22:59:09 2016\n"
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Bitvector/rmat_n24_e16.txt", 
+    "sub_algorithm": "bfs-bitvector", 
+    "time": "Tue Nov 29 19:55:57 2016\n"
 }

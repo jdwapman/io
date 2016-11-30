@@ -1,10 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "rmat_n22_e64", 
-    "edges_visited": 847618442, 
-    "elapsed": 4460.0, 
+    "edges_visited": 847294838, 
+    "elapsed": 774.0, 
     "engine": "Ligra", 
-    "iterations": 6, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/rmat_n22_e64.txt", 
-    "time": "Sat Nov 26 22:40:57 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 19:50:45 2016\n"
 }

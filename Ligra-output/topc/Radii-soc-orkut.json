@@ -1,8 +1,9 @@
 {
     "dataset": "soc-orkut", 
     "edges_visited": 897031408, 
-    "elapsed": 6940.0, 
+    "elapsed": 1090.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/soc-orkut.txt", 
-    "time": "Sat Nov 26 23:56:55 2016\n"
+    "sub_algorithm": "radii", 
+    "time": "Tue Nov 29 20:05:52 2016\n"
 }

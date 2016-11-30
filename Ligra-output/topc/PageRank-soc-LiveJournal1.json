@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 85702474, 
-    "elapsed": 1070.0, 
+    "elapsed": 200.0, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:52:37 2016\n"
+    "sub_algorithm": "pagerank", 
+    "time": "Tue Nov 29 20:05:05 2016\n"
 }

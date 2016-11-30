@@ -1,9 +1,9 @@
 {
     "dataset": "road_usa", 
     "edges_visited": 57708624, 
-    "elapsed": 1160.0, 
+    "elapsed": 225.0, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Delta/road_usa.txt", 
-    "time": "Sat Nov 26 23:21:17 2016\n"
+    "sub_algorithm": "pagerankdelta", 
+    "time": "Tue Nov 29 19:59:59 2016\n"
 }

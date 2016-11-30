@@ -1,8 +1,9 @@
 {
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 391301215, 
-    "elapsed": 4040.0, 
+    "elapsed": 601.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:53:39 2016\n"
+    "sub_algorithm": "radii", 
+    "time": "Tue Nov 29 20:05:17 2016\n"
 }

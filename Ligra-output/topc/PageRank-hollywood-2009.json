@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
-    "elapsed": 521.0, 
+    "elapsed": 77.39999999999999, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/hollywood-2009.txt", 
-    "time": "Sat Nov 26 21:27:22 2016\n"
+    "sub_algorithm": "pagerank", 
+    "time": "Tue Nov 29 19:38:16 2016\n"
 }

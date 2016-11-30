@@ -1,10 +1,11 @@
 {
-    "algorithm": "BFSCC", 
+    "algorithm": "BFS", 
     "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
-    "elapsed": 852.0, 
+    "elapsed": 205.0, 
     "engine": "Ligra", 
-    "iterations": 832, 
+    "m_teps": 1473.0226243902441, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFSCC/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:31:20 2016\n"
+    "sub_algorithm": "bfscc", 
+    "time": "Tue Nov 29 19:39:03 2016\n"
 }

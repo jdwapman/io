@@ -1,10 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "indochina-2004", 
-    "edges_visited": 668101243, 
-    "elapsed": 1790.0, 
+    "edges_visited": 670999332, 
+    "elapsed": 379.0, 
     "engine": "Ligra", 
-    "iterations": 42, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:31:01 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 19:39:00 2016\n"
 }

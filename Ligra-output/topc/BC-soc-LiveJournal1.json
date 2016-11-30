@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 171382642, 
-    "elapsed": 1190.0, 
+    "elapsed": 180.0, 
     "engine": "Ligra", 
-    "m_teps": 288.0380537815126, 
+    "m_teps": 1904.2515777777778, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:52:19 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 20:05:02 2016\n"
 }

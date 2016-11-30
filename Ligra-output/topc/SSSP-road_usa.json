@@ -1,9 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "road_usa", 
-    "elapsed": 219000.0, 
+    "edges_visited": 184138629, 
+    "elapsed": 29200.0, 
     "engine": "Ligra", 
-    "iterations": 6761, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/road_usa.txt", 
-    "time": "Sat Nov 26 23:36:02 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 20:01:59 2016\n"
 }

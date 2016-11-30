@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "road_usa", 
     "edges_visited": 115417245, 
-    "elapsed": 2960.0, 
+    "elapsed": 2490.0, 
     "engine": "Ligra", 
-    "m_teps": 77.984625, 
+    "m_teps": 92.70461445783133, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/road_usa.txt", 
-    "time": "Sat Nov 26 23:01:37 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 19:56:34 2016\n"
 }

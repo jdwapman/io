@@ -1,8 +1,9 @@
 {
     "algorithm": "CC", 
     "dataset": "indochina-2004", 
-    "elapsed": 1570.0, 
+    "elapsed": 315.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/CC/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:29:27 2016\n"
+    "sub_algorithm": "cc", 
+    "time": "Tue Nov 29 19:38:39 2016\n"
 }

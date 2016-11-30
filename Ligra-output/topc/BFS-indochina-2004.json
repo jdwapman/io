@@ -2,9 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "indochina-2004", 
     "edges_visited": 298109708, 
-    "elapsed": 839.0, 
+    "elapsed": 157.0, 
     "engine": "Ligra", 
-    "m_teps": 355.3155041716329, 
+    "m_teps": 1898.787949044586, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BFS/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:28:38 2016\n"
+    "sub_algorithm": "bfs", 
+    "time": "Tue Nov 29 19:38:31 2016\n"
 }

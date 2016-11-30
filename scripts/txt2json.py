@@ -11,14 +11,15 @@ class GPUEngineOutputParserBase(object):
 	# Constructor
 	def __init__(self, input_path = "", regex_array = [], \
 			   dataset_names = ["roadNet-CA", "europe_osm", "rgg", "indochina-2004", \
-					    		"roadnet", "kron", "soc-orkut", "soc-LiveJournal1", "hollywood-2009", \
-					    		"osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat_n22_e64", \
-					    		"rmat_n23_e32", "rmat_n24_e16", "road_usa"]):
+					    "roadnet", "kron", "soc-orkut", "soc-LiveJournal1", "hollywood-2009", \
+					    "osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat_n22_e64", \
+					    "rmat_n23_e32", "rmat_n24_e16", "road_usa"]):
+
 		self.input_path = input_path
                 self.regex_array = regex_array
 		self.dataset_names = dataset_names
 		self.parsed_data = {}
-		self.possible_algs = ["BFS", "CC", "BC", "SSSP", "PR"]
+		self.possible_algs = ["BFS", "CC", "BC", "SSSP", "PR", "Delta"]
 		self.algname_translator = {"PR" : "PageRank"}
 
 		# translate to "standard" names
@@ -190,12 +191,17 @@ class GPUEngineOutputParserMapGraph(GPUEngineOutputParserBase):
 		]
 		self.engine = "MapGraph"
 
-
 # Parser class for parsing Ligra output
 class GPUEngineOutputParserLigra(GPUEngineOutputParserBase):
 	def __init__(self, input_path):
 		super(GPUEngineOutputParserLigra, self).__init__(input_path)
-		self.regex_array = [{	"regex": re.compile(".+ : (\d+(?:\.\d+)?)"),
+		self.regex_array = [{   "regex": re.compile("sub_algorithm: (.+)"),
+                                        "keys" : [{ "name" : "sub_algorithm", "type" : "{}"}]
+                                    },
+				    {   "regex": re.compile("Edges Visited: ([0-9]+)"),
+                                        "keys" : [{ "name" : "edges_visited", "type" : "int"}]
+                                    },
+				    {	"regex": re.compile("Running time : (\d+(?:\.\d+)?)"),
 					"keys" : [{ "name" : "elapsed", "type" : "1000*float"}]
 				    }
 		]
@@ -311,7 +317,7 @@ def main(argv):
       # parse Ligra output files
       ligra_input_path = inputdir # "/data/Compare/ligra_may22-2014/ppopp16/*-result"
       ligra_output_path = outputdir # "./Ligra-output"
-      ligra_available_algs = ["BC", "BFS", "BFSCC", "CC", "PR", "SSSP"]
+      ligra_available_algs = ["BC", "BFS", "CC", "PR", "SSSP", "Radii"]
       for alg in ligra_available_algs:
       	GPUEngineOutputParserLigra(ligra_input_path.format(alg)).WriteJSON(ligra_output_path)
    elif library == 'galois':

@@ -1,9 +1,9 @@
 {
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 85691368, 
-    "elapsed": 295.0, 
+    "elapsed": 46.9, 
     "engine": "Ligra", 
-    "iterations": 12, 
-    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/soc-LiveJournal1.txt", 
-    "time": "Sat Nov 26 23:53:18 2016\n"
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Bitvector/soc-LiveJournal1.txt", 
+    "sub_algorithm": "bfs-bitvector", 
+    "time": "Tue Nov 29 20:05:13 2016\n"
 }

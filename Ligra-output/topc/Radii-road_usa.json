@@ -1,7 +1,8 @@
 {
     "dataset": "road_usa", 
-    "elapsed": 236000.0, 
+    "elapsed": 42300.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/road_usa.txt", 
-    "time": "Sat Nov 26 23:52:01 2016\n"
+    "sub_algorithm": "radii", 
+    "time": "Tue Nov 29 20:04:59 2016\n"
 }

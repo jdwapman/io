@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "road_usa", 
     "edges_visited": 57708624, 
-    "elapsed": 826.0, 
+    "elapsed": 209.0, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/road_usa.txt", 
-    "time": "Sat Nov 26 23:21:07 2016\n"
+    "sub_algorithm": "pagerank", 
+    "time": "Tue Nov 29 19:59:57 2016\n"
 }

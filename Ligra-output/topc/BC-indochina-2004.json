@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "indochina-2004", 
     "edges_visited": 596219408, 
-    "elapsed": 2170.0, 
+    "elapsed": 362.0, 
     "engine": "Ligra", 
-    "m_teps": 549.5109751152074, 
+    "m_teps": 3294.0298784530387, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:29:04 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 19:38:35 2016\n"
 }

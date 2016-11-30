@@ -1,7 +1,8 @@
 {
     "dataset": "rgg_n_2_24_s0", 
-    "elapsed": 352000.0, 
+    "elapsed": 53400.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/rgg_n24_0.000548.txt", 
-    "time": "Sat Nov 26 22:36:06 2016\n"
+    "sub_algorithm": "radii", 
+    "time": "Tue Nov 29 19:49:34 2016\n"
 }

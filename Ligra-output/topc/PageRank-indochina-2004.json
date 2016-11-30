@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "indochina-2004", 
     "edges_visited": 301969638, 
-    "elapsed": 1220.0, 
+    "elapsed": 210.0, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/indochina-2004.txt", 
-    "time": "Sat Nov 26 21:29:48 2016\n"
+    "sub_algorithm": "pagerank", 
+    "time": "Tue Nov 29 19:38:43 2016\n"
 }

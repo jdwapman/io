@@ -1,10 +1,10 @@
 {
     "algorithm": "SSSP", 
     "dataset": "rgg_n_2_24_s0", 
-    "edges_visited": 587416462, 
-    "elapsed": 559000.0, 
+    "edges_visited": 455353373, 
+    "elapsed": 80800.0, 
     "engine": "Ligra", 
-    "iterations": 4343, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/SSSP/rgg_n24_0.000548.txt", 
-    "time": "Sat Nov 26 22:11:55 2016\n"
+    "sub_algorithm": "bellmanford", 
+    "time": "Tue Nov 29 19:45:37 2016\n"
 }

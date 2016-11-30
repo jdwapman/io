@@ -1,8 +1,9 @@
 {
     "dataset": "rmat_n22_e64", 
     "edges_visited": 1144997917, 
-    "elapsed": 11500.0, 
+    "elapsed": 1620.0, 
     "engine": "Ligra", 
     "rawfile": "/data/Compare/TOPC-results/Ligra/Radii/rmat_n22_e64.txt", 
-    "time": "Sat Nov 26 22:42:54 2016\n"
+    "sub_algorithm": "radii", 
+    "time": "Tue Nov 29 19:51:11 2016\n"
 }

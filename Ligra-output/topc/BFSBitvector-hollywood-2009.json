@@ -1,9 +1,9 @@
 {
     "dataset": "hollywood-2009", 
     "edges_visited": 112613306, 
-    "elapsed": 77.3, 
+    "elapsed": 13.899999999999999, 
     "engine": "Ligra", 
-    "iterations": 11, 
-    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/hollywood-2009.txt", 
-    "time": "Sat Nov 26 21:27:59 2016\n"
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Bitvector/hollywood-2009.txt", 
+    "sub_algorithm": "bfs-bitvector", 
+    "time": "Tue Nov 29 19:38:25 2016\n"
 }

@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "rgg_n_2_24_s0", 
     "edges_visited": 530184404, 
-    "elapsed": 8360.0, 
+    "elapsed": 2510.0, 
     "engine": "Ligra", 
-    "m_teps": 126.83837416267941, 
+    "m_teps": 422.4576924302789, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/rgg_n24_0.000548.txt", 
-    "time": "Sat Nov 26 21:33:50 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 19:39:35 2016\n"
 }

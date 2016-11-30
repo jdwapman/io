@@ -2,9 +2,10 @@
     "algorithm": "BC", 
     "dataset": "rmat_n22_e64", 
     "edges_visited": 965674077, 
-    "elapsed": 3030.0, 
+    "elapsed": 399.0, 
     "engine": "Ligra", 
-    "m_teps": 637.4086316831683, 
+    "m_teps": 4840.471563909775, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/BC/rmat_n22_e64.txt", 
-    "time": "Sat Nov 26 22:37:19 2016\n"
+    "sub_algorithm": "bc", 
+    "time": "Tue Nov 29 19:49:45 2016\n"
 }

@@ -1,9 +1,9 @@
 {
     "dataset": "road_usa", 
     "edges_visited": 57708624, 
-    "elapsed": 1210.0, 
+    "elapsed": 1010.0, 
     "engine": "Ligra", 
-    "iterations": 6262, 
-    "rawfile": "/data/Compare/TOPC-results/Ligra/BFSBitvector/road_usa.txt", 
-    "time": "Sat Nov 26 23:36:20 2016\n"
+    "rawfile": "/data/Compare/TOPC-results/Ligra/Bitvector/road_usa.txt", 
+    "sub_algorithm": "bfs-bitvector", 
+    "time": "Tue Nov 29 20:02:09 2016\n"
 }

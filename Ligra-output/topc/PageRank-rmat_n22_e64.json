@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "rmat_n22_e64", 
     "edges_visited": 483048058, 
-    "elapsed": 6640.0, 
+    "elapsed": 1250.0, 
     "engine": "Ligra", 
-    "iterations": 1, 
     "rawfile": "/data/Compare/TOPC-results/Ligra/PR/rmat_n22_e64.txt", 
-    "time": "Sat Nov 26 22:38:51 2016\n"
+    "sub_algorithm": "pagerank", 
+    "time": "Tue Nov 29 19:50:00 2016\n"
 }
