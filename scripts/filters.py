@@ -38,6 +38,11 @@ def equateRGG(df):
     return df
 
 
+def equateM40(df):
+    df.loc[df['gpuinfo.name'] == 'Tesla M40 24GB', 'gpuinfo.name'] = 'Tesla M40'
+    return df
+
+
 def normalizePRMTEPS(df):
     df.loc[df.algorithm == 'PageRank', 'm_teps'] = df[
         'm_teps'] * df['search_depth']
@@ -62,6 +67,10 @@ def selectAnyOfTheseDates(dates):
     return lambda df: df[df['time'].isin(dates)]
 
 
+def selectTag(tag):
+    return lambda df: df[df['tag'] == tag]
+
+
 def computeOtherMTEPSFromGunrock(df):
     # if df['m_teps'] is NaN, but df['elapsed'] is there, use
     # Gunrock's edges_visited to compute m_teps
@@ -70,8 +79,9 @@ def computeOtherMTEPSFromGunrock(df):
     df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
 
     # series mapping {algorithm+dataset} to edges_visited
+    # not quite clear why there's duplicates, so average edges_visited
     dfg = df.loc[df['engine'] ==
-                 'Gunrock'].set_index('algorithm_dataset')['edges_visited']
+                 'Gunrock'].groupby(['algorithm_dataset']).mean()['edges_visited']
 
     # fill in missing values for edges_visited, per algorithm_dataset
     df = df.set_index('algorithm_dataset')
@@ -87,3 +97,12 @@ def computeOtherMTEPSFromGunrock(df):
 
 def deleteZeroMTEPS(df):
     return df[df['m_teps'] != 0]
+
+
+def setLigraAlgorithmFromSubalgorithm(df):
+    ligranoalg = df['engine'] == 'Ligra' & df.algorithm.isnull()
+
+    m = ligranoalg & df['subalgorithm'] == "bfs-bitvector"
+    df.loc[m, 'algorithm'] = 'BFS'
+
+    return df
