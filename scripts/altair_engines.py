@@ -111,7 +111,7 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
     )
     print chart.to_dict(data=False)
     plotname = '%s_%s' % (name, data)
-    for fileformat in ['html', 'svg', 'png']:
+    for fileformat in ['html', 'png', 'svg', 'pdf']:
         savefile(chart, name=plotname, fileformat=fileformat)
 
 tablefile = name + "_table.html"

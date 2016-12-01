@@ -1,5 +1,6 @@
 import json    # built-in
-from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError
+import os.path
+from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
 
 
 def vega_to_output(input_json, fileformat, verbose=False):
@@ -63,6 +64,16 @@ def savefile(chart, name, fileformat):
         file = open(name + '.' + fileformat, 'w')
         file.write(outfile)
         file.close()
+    elif (fileformat == 'pdf'):
+        # check if svg has been generated
+        if not os.path.isfile(name + '.svg'):
+            savefile(chart, name, 'svg')
+        with open(os.devnull, 'w') as devnull:
+            # hide stderr
+            check_output(['inkscape', '--file=%s.svg' % name,
+                          '--export-area-drawing', '--without-gui',
+                          '--export-pdf=%s.pdf' % name],
+                         stderr=devnull)
 
 
 def savefile_df(df, name, fileformat):
