@@ -1,12 +1,12 @@
 {
     "algorithm": "PageRank", 
     "dataset": "hollywood-2009", 
-    "elapsed": 4829.0, 
+    "elapsed": 50.0, 
     "engine": "Galois", 
     "iterations": 16, 
     "rawfile": "/data/Compare/TOPC-results/Galois/pr/hollywood-2009.txt", 
     "sysinfo": {
-        "nodename": "mario"
+        "nodename": "luigi"
     }, 
-    "time": "Sun Nov 20 09:03:54 2016\n"
+    "time": "Thu Dec  1 12:48:02 2016\n"
 }

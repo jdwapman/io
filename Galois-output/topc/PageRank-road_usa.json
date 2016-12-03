@@ -1,12 +1,12 @@
 {
     "algorithm": "PageRank", 
     "dataset": "road_usa", 
-    "elapsed": 5416.0, 
+    "elapsed": 240.0, 
     "engine": "Galois", 
     "iterations": 16, 
     "rawfile": "/data/Compare/TOPC-results/Galois/pr/road_usa.txt", 
     "sysinfo": {
-        "nodename": "mario"
+        "nodename": "luigi"
     }, 
-    "time": "Sun Nov 20 09:18:10 2016\n"
+    "time": "Thu Dec  1 12:48:02 2016\n"
 }

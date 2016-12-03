@@ -1,12 +1,12 @@
 {
     "algorithm": "PageRank", 
     "dataset": "indochina-2004", 
-    "elapsed": 4135.0, 
+    "elapsed": 123.0, 
     "engine": "Galois", 
     "iterations": 16, 
     "rawfile": "/data/Compare/TOPC-results/Galois/pr/indochina-2004.txt", 
     "sysinfo": {
-        "nodename": "mario"
+        "nodename": "luigi"
     }, 
-    "time": "Sun Nov 20 09:04:19 2016\n"
+    "time": "Thu Dec  1 12:48:02 2016\n"
 }
