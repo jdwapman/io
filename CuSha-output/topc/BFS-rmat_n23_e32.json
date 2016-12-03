@@ -2,10 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "rmat_n23_e32", 
     "edges_visited": 516273140, 
-    "elapsed": 1402.91, 
+    "elapsed": 1423.36, 
     "engine": "CuSha", 
-    "m_teps": 368.0016109372661, 
+    "m_teps": 362.71438005845323, 
     "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/rmat_n23_e32.txt", 
-    "time": "Sun Nov 20 15:19:40 2016\n", 
+    "time": "Mon Nov 28 02:35:50 2016\n", 
     "vertices_visited": 8388609
 }

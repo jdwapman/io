@@ -2,9 +2,9 @@
     "algorithm": "SSSP", 
     "dataset": "hollywood-2009", 
     "edges_visited": 112751424, 
-    "elapsed": 2241.05, 
+    "elapsed": 2252.34, 
     "engine": "CuSha", 
     "rawfile": "/data/Compare/TOPC-results/CuSha/sssp/hollywood-2009.txt", 
-    "time": "Sun Nov 20 12:20:42 2016\n", 
+    "time": "Mon Nov 28 02:06:03 2016\n", 
     "vertices_visited": 1139906
 }

@@ -2,10 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 136950784, 
-    "elapsed": 259.972, 
+    "elapsed": 263.613, 
     "engine": "CuSha", 
-    "m_teps": 526.7905159017126, 
+    "m_teps": 519.5145307704855, 
     "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/soc-LiveJournal1.txt", 
-    "time": "Sun Nov 20 15:46:14 2016\n", 
+    "time": "Mon Nov 28 02:51:15 2016\n", 
     "vertices_visited": 4847572
 }

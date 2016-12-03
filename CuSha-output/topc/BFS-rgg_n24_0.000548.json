@@ -2,10 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "rgg_n_2_24_s0", 
     "edges_visited": 265092208, 
-    "elapsed": 73856.7, 
+    "elapsed": 68201.5, 
     "engine": "CuSha", 
-    "m_teps": 3.5892777229418593, 
+    "m_teps": 3.8868970330564574, 
     "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/rgg_n24_0.000548.txt", 
-    "time": "Sun Nov 20 14:57:03 2016\n", 
+    "time": "Mon Nov 28 02:14:55 2016\n", 
     "vertices_visited": 16777217
 }

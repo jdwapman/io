@@ -2,9 +2,9 @@
     "algorithm": "SSSP", 
     "dataset": "indochina-2004", 
     "edges_visited": 383213656, 
-    "elapsed": 172061.0, 
+    "elapsed": 173945.0, 
     "engine": "CuSha", 
     "rawfile": "/data/Compare/TOPC-results/CuSha/sssp/indochina-2004.txt", 
-    "time": "Sun Nov 20 12:26:11 2016\n", 
+    "time": "Mon Nov 28 02:11:44 2016\n", 
     "vertices_visited": 7414867
 }

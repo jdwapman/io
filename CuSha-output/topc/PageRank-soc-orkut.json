@@ -2,9 +2,9 @@
     "algorithm": "PageRank", 
     "dataset": "soc-orkut", 
     "edges_visited": 212698420, 
-    "elapsed": 113.853, 
+    "elapsed": 52.542, 
     "engine": "CuSha", 
     "rawfile": "/data/Compare/TOPC-results/CuSha/pr/soc-orkut.txt", 
-    "time": "Sun Nov 20 15:49:57 2016\n", 
+    "time": "Mon Nov 28 02:55:08 2016\n", 
     "vertices_visited": 2997167
 }

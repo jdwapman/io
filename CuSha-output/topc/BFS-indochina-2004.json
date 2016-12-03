@@ -2,10 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "indochina-2004", 
     "edges_visited": 383213656, 
-    "elapsed": 16770.8, 
+    "elapsed": 17069.4, 
     "engine": "CuSha", 
-    "m_teps": 22.850052233644195, 
+    "m_teps": 22.450329595650697, 
     "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/indochina-2004.txt", 
-    "time": "Sun Nov 20 12:22:17 2016\n", 
+    "time": "Mon Nov 28 02:07:44 2016\n", 
     "vertices_visited": 7414867
 }
