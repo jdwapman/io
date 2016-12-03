@@ -2,8 +2,10 @@
     "algorithm": "BFS", 
     "dataset": "road_usa", 
     "edges_visited": 115417250, 
+    "elapsed": 36194.2, 
     "engine": "CuSha", 
+    "m_teps": 3.188832741157423, 
     "rawfile": "/data/Compare/TOPC-results/CuSha/bfs/road_usa.txt", 
-    "time": "Sun Nov 20 15:44:50 2016\n", 
+    "time": "Mon Nov 28 02:49:52 2016\n", 
     "vertices_visited": 23947348
 }
