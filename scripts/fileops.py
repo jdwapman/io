@@ -1,5 +1,7 @@
+from altair import Chart
 import json    # built-in
 import os.path
+import pandas
 from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
 
 
@@ -81,3 +83,26 @@ def savefile_df(df, name, fileformat):
         open(name + '_data.' + fileformat, 'w').write(
             df.to_html()
         )
+
+
+def save(chart=Chart(),
+         df=pandas.DataFrame(),
+         plotname="none",
+         formats=[],
+         sortby=[],
+         columns=[]):
+
+    for fileformat in ['html', 'svg', 'png', 'pdf']:
+        if fileformat in formats:
+            savefile(chart, name=plotname, fileformat=fileformat)
+
+    if 'tablehtml' in formats:
+        tablefile = plotname + '_table.html'
+        outfile = open(tablefile, 'w')
+        # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
+        pandas.set_option('display.max_colwidth', -1)
+        df.sort_values(sortby).to_html(buf=outfile,
+                                       columns=columns,
+                                       index=False,
+                                       escape=False)
+        outfile.close()
