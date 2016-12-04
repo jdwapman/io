@@ -71,6 +71,10 @@ def selectTag(tag):
     return lambda df: df[df['tag'] == tag]
 
 
+def deselectTag(tag):
+    return lambda df: df[df['tag'] != tag]
+
+
 def computeOtherMTEPSFromGunrock(df):
     # if df['m_teps'] is NaN, but df['elapsed'] is there, use
     # Gunrock's edges_visited to compute m_teps
