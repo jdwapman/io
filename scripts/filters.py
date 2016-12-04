@@ -122,3 +122,14 @@ def setLigraAlgorithmFromSubalgorithm(df):
     df.loc[m, 'algorithm'] = 'BFS'
 
     return df
+
+
+def formatColumn(out_column, in_column, string_format):
+    # oddly, I was not able to figure out how to do this with a lambda
+    def fn(df):
+        # df['var3'] = pd.Series(["{0:.2f}%".format(val * 100) for val in df['var3']], index = df.index)
+        df[out_column] = df[in_column].map(string_format.format)
+        # df[out_column] = pandas.Series(
+        #     [string_format.format(f) for f in df[in_column]])
+        return df
+    return fn

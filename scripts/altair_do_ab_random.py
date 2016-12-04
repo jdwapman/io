@@ -26,6 +26,7 @@ fnFilterDFRows = [
 
 fnPostprocessDF = [
     computeNewMTEPSFromProcessTimes,
+    # formatColumn('do_a', 'do_a', '{:,.0g}'),
 ]
 # end user settings for this script
 
