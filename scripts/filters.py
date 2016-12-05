@@ -1,6 +1,7 @@
 import pandas  # http://pandas.pydata.org
 import os      # built-in
 import re      # built-in
+import math    # built-in
 
 # possible filtering functions
 
@@ -75,6 +76,18 @@ def deselectTag(tag):
     return lambda df: df[df['tag'] != tag]
 
 
+def selectOneDataset(dataset):
+    return lambda df: df[df['dataset'] == dataset]
+
+
+def undirectedOnly(df):
+    return df[df['undirected'] == True]
+
+
+def idempotentOnly(df):
+    return df[df['idempotent'] == True]
+
+
 def computeOtherMTEPSFromGunrock(df):
     # if df['m_teps'] is NaN, but df['elapsed'] is there, use
     # Gunrock's edges_visited to compute m_teps
@@ -127,9 +140,48 @@ def setLigraAlgorithmFromSubalgorithm(df):
 def formatColumn(out_column, in_column, string_format):
     # oddly, I was not able to figure out how to do this with a lambda
     def fn(df):
-        # df['var3'] = pd.Series(["{0:.2f}%".format(val * 100) for val in df['var3']], index = df.index)
+        # df['var3'] = pd.Series(["{0:.2f}%".format(val * 100) for val in
+        # df['var3']], index = df.index)
         df[out_column] = df[in_column].map(string_format.format)
         # df[out_column] = pandas.Series(
         #     [string_format.format(f) for f in df[in_column]])
         return df
     return fn
+
+
+def loclist_expand(df, loclist, sample, sampleMinimum):
+    # http://stackoverflow.com/questions/38577737/pandas-unflatten-data-frame-with-columns-containing-array
+    rows = []
+    for idx, row in df.iterrows():
+        sampleRow = sample
+        vss = []
+        for loc in loclist:
+            vss.append(row.at[loc])    # pick out the array, put into vss
+        # print "At index ", idx, " I see ", len(vss[0]), " elements in the
+        # array"
+        n = len(vss[0])
+        if n < sampleMinimum:
+            sampleRow = False
+        nsqrt = math.floor(math.sqrt(n))
+        for i, v in enumerate(vss[0]):  # how many elements in the list?
+            if sampleRow and (i % nsqrt != 0):  # we're sampling
+                continue
+            new = row.copy()
+            newIsValid = True
+            for j, loc in enumerate(loclist):
+                if (vss[j][i] == -1):
+                    newIsValid = False
+                else:
+                    new.at[loc] = vss[j][i]
+            if newIsValid:
+                rows.append(new)
+
+    return pandas.DataFrame(rows)
+
+
+def flattenArrays(loclist, sample=False, sampleMinimum=100):
+    return lambda df: loclist_expand(df,
+                                     loclist=loclist,
+                                     sample=sample,
+                                     sampleMinimum=sampleMinimum
+                                     )
