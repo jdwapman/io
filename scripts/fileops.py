@@ -92,17 +92,16 @@ def save(chart=Chart(),
          sortby=[],
          columns=[]):
 
-    for fileformat in ['html', 'svg', 'png', 'pdf']:
-        if fileformat in formats:
+    for fileformat in formats:
+        if fileformat == 'tablehtml':
+            tablefile = plotname + '_table.html'
+            outfile = open(tablefile, 'w')
+            # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
+            pandas.set_option('display.max_colwidth', -1)
+            df.sort_values(sortby).to_html(buf=outfile,
+                                           columns=columns,
+                                           index=False,
+                                           escape=False)
+            outfile.close()
+        elif fileformat in ['html', 'svg', 'png', 'pdf']:
             savefile(chart, name=plotname, fileformat=fileformat)
-
-    if 'tablehtml' in formats:
-        tablefile = plotname + '_table.html'
-        outfile = open(tablefile, 'w')
-        # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
-        pandas.set_option('display.max_colwidth', -1)
-        df.sort_values(sortby).to_html(buf=outfile,
-                                       columns=columns,
-                                       index=False,
-                                       escape=False)
-        outfile.close()
