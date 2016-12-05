@@ -44,6 +44,14 @@ def equateM40(df):
     return df
 
 
+def replaceFromDict(d, out_column, in_column):
+    def fn(df):
+        for key, value in d.iteritems():
+            df.loc[df[in_column] == key, out_column] = value
+        return df
+    return fn
+
+
 def normalizePRMTEPS(df):
     df.loc[df.algorithm == 'PageRank', 'm_teps'] = df[
         'm_teps'] * df['search_depth']
@@ -66,6 +74,10 @@ def addJSONDetailsLink(df):
 
 def selectAnyOfTheseDates(dates):
     return lambda df: df[df['time'].isin(dates)]
+
+
+def selectAnyOfThese(column, these):
+    return lambda df: df[df[column].isin(these)]
 
 
 def selectTag(tag):
