@@ -73,6 +73,8 @@ for frontier in ['input', 'output']:
             scale=Scale(type='log'),
             ),
 
+        shape=Shape('dataset',
+                    ),
         color=Color('dataset',
                     ),
     )
@@ -93,6 +95,7 @@ for frontier in ['input', 'output']:
                   '%s_mteps' % base,
                   '%s_runtime' % base,
                   'edges_visited',
+                  'traversal_mode',
                   'gunrock_version',
                   'gpuinfo.name',
                   'details']
