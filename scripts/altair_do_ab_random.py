@@ -9,21 +9,24 @@ from fileops import save
 from filters import *
 from logic import *
 
-name = 'do_ab'
+name = 'do_ab_random'
 
 # begin user settings for this script
-roots = ['../gunrock-output/topc-param-sweeps', ]
+roots = ['../gunrock-output/', ]
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
 fnPreprocessDF = [
     addJSONDetailsLink,
+    selectTag('do_sweep2'),
 ]
 fnFilterDFRows = [
     deleteZeroMTEPS,
 ]
 
 fnPostprocessDF = [
+    computeNewMTEPSFromProcessTimes,
+    # formatColumn('do_a', 'do_a', '{:,.0g}'),
 ]
 # end user settings for this script
 
@@ -81,14 +84,12 @@ for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
          formats=['html', 'svg', 'png', 'pdf', 'tablehtml'],
          sortby=['algorithm',
                  'dataset',
-                 'do_a',
-                 'do_b'],
+                 'engine',
+                 'gunrock_version'],
          columns=['algorithm',
                   'dataset',
-                  'do_a',
-                  'do_b',
-                  'm_teps',
                   'engine',
+                  'm_teps',
                   'edges_visited',
                   'elapsed',
                   'gunrock_version',

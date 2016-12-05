@@ -71,6 +71,10 @@ def selectTag(tag):
     return lambda df: df[df['tag'] == tag]
 
 
+def deselectTag(tag):
+    return lambda df: df[df['tag'] != tag]
+
+
 def computeOtherMTEPSFromGunrock(df):
     # if df['m_teps'] is NaN, but df['elapsed'] is there, use
     # Gunrock's edges_visited to compute m_teps
@@ -95,6 +99,18 @@ def computeOtherMTEPSFromGunrock(df):
     return df
 
 
+def computeNewMTEPSFromProcessTimes(df):
+    def averagePT(row):
+        pt = row['process_times']
+        avg = sum(pt) / len(pt)
+        pt0 = filter(lambda f: f > (0.2 * avg), pt)
+        return sum(pt0) / len(pt0)
+    df['process_times_avg'] = df.apply(averagePT, axis=1)
+    # now recompute m_teps
+    df['m_teps'] = df['edges_visited'] / (df['process_times_avg'] * 1000.0)
+    return df
+
+
 def deleteZeroMTEPS(df):
     return df[df['m_teps'] != 0]
 
@@ -106,3 +122,14 @@ def setLigraAlgorithmFromSubalgorithm(df):
     df.loc[m, 'algorithm'] = 'BFS'
 
     return df
+
+
+def formatColumn(out_column, in_column, string_format):
+    # oddly, I was not able to figure out how to do this with a lambda
+    def fn(df):
+        # df['var3'] = pd.Series(["{0:.2f}%".format(val * 100) for val in df['var3']], index = df.index)
+        df[out_column] = df[in_column].map(string_format.format)
+        # df[out_column] = pandas.Series(
+        #     [string_format.format(f) for f in df[in_column]])
+        return df
+    return fn
