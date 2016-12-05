@@ -76,6 +76,16 @@ def savefile(chart, name, fileformat):
                           '--export-area-drawing', '--without-gui',
                           '--export-pdf=%s.pdf' % name],
                          stderr=devnull)
+    elif (fileformat == 'eps'):
+        # check if svg has been generated
+        if not os.path.isfile(name + '.svg'):
+            savefile(chart, name, 'svg')
+        with open(os.devnull, 'w') as devnull:
+            # hide stderr
+            check_output(['inkscape', '--file=%s.svg' % name,
+                          '--export-area-drawing', '--without-gui',
+                          '--export-eps=%s.eps' % name],
+                         stderr=devnull)
 
 
 def savefile_df(df, name, fileformat):
@@ -103,5 +113,5 @@ def save(chart=Chart(),
                                            index=False,
                                            escape=False)
             outfile.close()
-        elif fileformat in ['html', 'svg', 'png', 'pdf']:
+        elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps']:
             savefile(chart, name=plotname, fileformat=fileformat)
