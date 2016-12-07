@@ -49,11 +49,20 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 # now make the graph
 
 colormap = Scale(range=['#e8e8e8', '#171717'])
+dfab = pandas.DataFrame()
 
 for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
                 'rmat_n23_e32', 'rmat_n24_e16', 'road_usa',
                 'soc-LiveJournal1', 'soc-orkut', ]:
     dfd = df[df['dataset'] == dataset]
+    # Some edges_visited are small because the last run hit a small
+    # component of the graph. However, the runtimes are correct,
+    # because we threw out all small runtimes. So set edges_visited
+    # for every run to max(edges_visited) and recompute MTEPS.
+    dfd = recomputeMTEPSFromMax(dfd)
+
+    if (dataset != 'road_usa'):
+        dfab = dfab.append(dfd.loc[dfd.m_teps == max(dfd['m_teps'])])
 
     # format argument:
     # https://github.com/altair-viz/altair/commit/1f6d1aaaba74b807430b8452592a3635336644cf
@@ -71,6 +80,7 @@ for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
                       ),
         color=Color('m_teps',
                     scale=colormap,
+                    legend=Legend(title='%s / MTEPS' % dataset),
                     ),
         text=Text(value=' '),
     ).configure_scale(
@@ -78,6 +88,10 @@ for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
         bandSize=20
     )
     print chart.to_dict(data=False)
+    # foo = open('%s_%s.json' % (name, dataset), 'w')
+    # foo.write(df.to_json())
+    # foo.close()
+
     save(chart=chart,
          df=dfd,
          plotname='%s_%s' % (name, dataset),
@@ -88,11 +102,38 @@ for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
                  'gunrock_version'],
          columns=['algorithm',
                   'dataset',
-                  'engine',
+                  'do_a',
+                  'do_b',
                   'm_teps',
                   'edges_visited',
                   'elapsed',
+                  'engine',
                   'gunrock_version',
                   'gpuinfo.name',
                   'details']
+         )
+dfab = dfab[['dataset', 'do_a', 'do_b', 'num_edges', 'num_vertices', 'm_teps']]
+dfab['average_degree'] = dfab['num_edges'] / dfab['num_vertices']
+print dfab
+
+for y_axis in ['do_a', 'do_b']:
+    chart = Chart(dfab).mark_point().encode(
+        y=Y(y_axis,
+            axis=Axis(format='.1',
+                      title=y_axis,
+                      ),
+            scale=Scale(type='log'),
+            ),
+        x=X('average_degree',
+            ),
+        color='dataset',
+    )
+    save(chart=chart,
+         df=dfab,
+         plotname='%s_%s' % (name, y_axis),
+         formats=['html', 'svg', 'png', 'pdf', 'tablehtml'],
+         sortby=['dataset', 'do_a', 'do_b', 'num_edges',
+                 'num_vertices', 'average_degree'],
+         columns=['dataset', 'do_a', 'do_b', 'm_teps', 'num_edges',
+                  'num_vertices', 'average_degree'],
          )

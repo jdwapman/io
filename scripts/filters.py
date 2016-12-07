@@ -197,3 +197,11 @@ def flattenArrays(loclist, sample=False, sampleMinimum=100):
                                      sample=sample,
                                      sampleMinimum=sampleMinimum
                                      )
+
+
+def recomputeMTEPSFromMax(df):
+    # bet there's a cleaner way to do this
+    m = max(df['edges_visited'])
+    df['edges_visited'] = df['edges_visited'].apply(lambda x: m)
+    df['m_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    return df
