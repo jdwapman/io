@@ -70,12 +70,19 @@ def savefile(chart, name, fileformat):
         # check if svg has been generated
         if not os.path.isfile(name + '.svg'):
             savefile(chart, name, 'svg')
-        with open(os.devnull, 'w') as devnull:
-            # hide stderr
-            check_output(['inkscape', '--file=%s.svg' % name,
-                          '--export-area-drawing', '--without-gui',
-                          '--export-pdf=%s.pdf' % name],
-                         stderr=devnull)
+        osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
+        if os.path.isfile(osx_svg2pdf):
+            with open(os.devnull, 'w') as devnull:
+                # hide stderr
+                check_output([osx_svg2pdf, name + '.svg'],
+                             stderr=devnull)
+        else:
+            with open(os.devnull, 'w') as devnull:
+                # hide stderr
+                check_output(['inkscape', '--file=%s.svg' % name,
+                              '--export-area-drawing', '--without-gui',
+                              '--export-pdf=%s.pdf' % name],
+                             stderr=devnull)
     elif (fileformat == 'eps'):
         # check if svg has been generated
         if not os.path.isfile(name + '.svg'):
