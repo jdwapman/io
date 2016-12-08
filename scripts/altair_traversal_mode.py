@@ -56,6 +56,7 @@ chart = Chart(df).mark_bar().encode(
                       orient='bottom',
                   )
                   ),
+    row='algorithm',
     y=Y('m_teps',
         axis=Axis(
             title='MTEPS',
