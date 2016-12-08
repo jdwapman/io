@@ -9,6 +9,9 @@ from fileops import save
 from filters import *
 from logic import *
 
+# excellent brewer color palettes https://jiffyclub.github.io/palettable/
+from palettable import colorbrewer as cb
+
 name = 'traversal'
 
 # begin user settings for this script
@@ -64,6 +67,8 @@ chart = Chart(df).mark_bar().encode(
         scale=Scale(type='log'),
         ),
     color=Color('traversal_mode:N',
+                # scale=Scale(range=cb.diverging.Spectral_3.hex_colors),
+                scale=Scale(range=cb.qualitative.Dark2_8.hex_colors),
                 legend=Legend(title='Traversal Mode'),
                 ),
 )
