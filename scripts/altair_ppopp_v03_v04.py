@@ -2,17 +2,14 @@
 
 from altair import *
 import pandas  # http://pandas.pydata.org
-from pandas.io.json import json_normalize
 import numpy
-import re      # built-in
-import json    # built-in
-import os      # built-in
-import copy    # built-in
 import datetime
-from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError
 
-from fileops import savefile
+from fileops import save
 from filters import *
+from logic import *
+
+name = 'all_0304_perf'
 
 # begin user settings for this script
 roots = ['../gunrock-output']
@@ -43,22 +40,8 @@ fnPostprocessDF = [
 # do not modify
 
 # choose input files
-json_input_files = []
-for root in roots:
-    json_input_files = json_input_files + ([os.path.join(subdir, f)
-                                            for (subdir, dirs, files)
-                                            in os.walk(root) for f in files])
-# filter input files
-for fn in fnFilterInputFiles:
-    json_input_files = filter(fn, json_input_files)
-
-# dump input files into dataframe
-data_unfiltered = [json.load(open(jf)) for jf in json_input_files]
-# next call used to be df = pandas.DataFrame(data_unfiltered)
-# instead, json_normalize flattens nested dicts
-df = json_normalize(data_unfiltered)
-# http://stackoverflow.com/questions/26666919/python-pandas-add-column-in-dataframe-from-list
-df['details'] = pandas.Series(json_input_files).values
+df = filesToDF(roots=roots,
+               fnFilterInputFiles=fnFilterInputFiles)
 
 for fn in fnPreprocessDF:       # alter entries / compute new entries
     df = fn(df)
@@ -90,31 +73,29 @@ chart = Chart(df).mark_point().encode(
         scale=Scale(type='log'),
         ),
     color=Color('gunrock_version_gpu:N',
+                legend=Legend(
+                    title='Gunrock Version / GPU',
+                ),
                 ),
     shape=Shape('gunrock_version_gpu:N',
-                # legend=Legend(
-                #     title='Gunrock Version / GPU',
-                # ),
+                legend=Legend(
+                    title='Gunrock Version / GPU',
+                ),
                 ),
 )
 print chart.to_dict(data=False)
-plotname = 'all_0304_perf'
-for fileformat in ['html', 'svg', 'png']:
-    savefile(chart, name=plotname, fileformat=fileformat)
-
-tablefile = plotname + "_table.html"
-outfile = open(tablefile, 'w')
-# http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
-pandas.set_option('display.max_colwidth', -1)
-df.sort_values(['algorithm',
-                'dataset',
-                'gunrock_version']).to_html(buf=outfile,
-                                            columns=['algorithm',
-                                                     'dataset',
-                                                     'm_teps',
-                                                     'gunrock_version',
-                                                     'gpuinfo.name',
-                                                     'details'],
-                                            index=False,
-                                            escape=False)
-outfile.close()
+save(chart=chart,
+     df=df,
+     plotname=name,
+     formats=['html', 'svg', 'png', 'pdf', 'tablehtml'],
+     sortby=['algorithm',
+             'dataset',
+             'engine',
+             'gunrock_version'],
+     columns=['algorithm',
+              'dataset',
+              'm_teps',
+              'gunrock_version',
+              'gpuinfo.name',
+              'details'],
+     )
