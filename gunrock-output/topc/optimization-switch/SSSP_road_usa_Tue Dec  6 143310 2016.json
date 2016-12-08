@@ -6,7 +6,7 @@
     "alpha" : 6,
     "average_duty" : 0,
     "beta" : 6,
-    "command_line" : "../../../../gunrock_build/bin/sssp market /data/Compare/topc-datasets/road_usa.mtx --src=0 --undirected --iteration-num=10 --device=0 --traversal-mode=LB_CULL --tag=optimization_test_LB_CULL --do_a=1.0 --do_b=10 --jsondir=./eval/optimization_switch",
+    "command_line" : "../../../../gunrock_build/bin/sssp market /data/Compare/topc-datasets/road_usa.mtx --src=0 --undirected --iteration-num=10 --device=0 --traversal-mode=LB_CULL --tag=optimization_test_LBCULL --do_a=1.0 --do_b=10 --jsondir=./eval/optimization_switch",
     "communicate_latency" : 0,
     "communicate_multipy" : -1,
     "compensate" : false,
@@ -114,7 +114,7 @@
         "sysname" : "Linux",
         "version" : "#143-Ubuntu SMP Mon Aug 29 20:15:20 UTC 2016"
     },
-    "tag" : "optimization_test_LB_CULL",
+    "tag" : "optimization_test_LBCULL",
     "time" : "Tue Dec  6 14:33:10 2016\n",
     "top_nodes" : 0,
     "total_time" : 235816.77913665771,
