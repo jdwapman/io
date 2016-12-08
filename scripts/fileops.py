@@ -1,5 +1,6 @@
 from altair import Chart
 import json    # built-in
+import os
 import os.path
 import pandas
 from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
@@ -76,6 +77,9 @@ def savefile(chart, name, fileformat):
                 # hide stderr
                 check_output([osx_svg2pdf, name + '.svg'],
                              stderr=devnull)
+                # haven't got Automator to rename the file yet
+                os.rename(name + ' copy.pdf', name + '.pdf')
+
         else:
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
