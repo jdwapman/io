@@ -1,0 +1,18 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rmat_n22_e64", 
+    "edges_visited": 499765126, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 8000, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7500, 
+        "total_global_mem": "11995054080"
+    }, 
+    "rawfile": "/data/Compare/TOPC-results/MapGraph/pagerank/rmat_n22_e64.txt", 
+    "sysinfo": {
+        "nodename": "localhost"
+    }, 
+    "time": "Fri Nov 25 20:06:01 2016\n", 
+    "vertices_visited": 4194304
+}

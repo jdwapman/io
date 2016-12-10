@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "rgg_n_2_24_s0", 
+    "elapsed": 103.942001, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/rgg_n24_0.000548.txt", 
+    "time": "Sat Nov 26 10:19:32 2016\n"
+}

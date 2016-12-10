@@ -1,0 +1,18 @@
+{
+    "algorithm": "CC", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265092206, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 8000, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7500, 
+        "total_global_mem": "11995054080"
+    }, 
+    "rawfile": "/data/Compare/TOPC-results/MapGraph/cc/rgg_n24_0.000548.txt", 
+    "sysinfo": {
+        "nodename": "localhost"
+    }, 
+    "time": "Fri Nov 25 20:06:01 2016\n", 
+    "vertices_visited": 16777216
+}

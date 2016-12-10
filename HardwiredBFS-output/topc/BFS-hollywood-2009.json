@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "hollywood-2009", 
+    "edges_visited": 77854659, 
+    "elapsed": 25.31, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 3076.018, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/hollywood-2009.txt", 
+    "time": "Fri Nov 25 20:19:06 2016\n", 
+    "vertices_visited": 442992
+}

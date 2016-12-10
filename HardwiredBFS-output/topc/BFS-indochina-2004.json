@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 102084249, 
+    "elapsed": 78.286, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 1303.993, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/indochina-2004.txt", 
+    "time": "Fri Nov 25 20:27:40 2016\n", 
+    "vertices_visited": 1667845
+}

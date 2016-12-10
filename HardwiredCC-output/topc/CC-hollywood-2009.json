@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "hollywood-2009", 
+    "elapsed": 24.625, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/hollywood-2009.txt", 
+    "time": "Sat Nov 26 10:11:38 2016\n"
+}

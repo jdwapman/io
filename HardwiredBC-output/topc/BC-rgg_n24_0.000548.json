@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 265092206, 
+    "elapsed": 26937.7, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 19.681873805113277, 
+    "rawfile": "/data/Compare/TOPC-results/gpu_bc/rgg_n24_0.000548.txt", 
+    "time": "Sat Nov 26 00:58:25 2016\n", 
+    "vertices_visited": 16777216
+}

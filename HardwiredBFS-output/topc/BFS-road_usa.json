@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 98.725, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 584.537, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/road_usa.txt", 
+    "time": "Fri Nov 25 20:37:05 2016\n", 
+    "vertices_visited": 23947347
+}

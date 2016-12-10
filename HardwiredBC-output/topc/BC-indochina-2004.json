@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "elapsed": 1270.3500000000001, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 475.41171803046404, 
+    "rawfile": "/data/Compare/TOPC-results/gpu_bc/indochina-2004.txt", 
+    "time": "Sat Nov 26 00:58:25 2016\n", 
+    "vertices_visited": 7414866
+}

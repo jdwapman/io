@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "rmat_n22_e64", 
+    "elapsed": 149.434021, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/rmat_n22_e64.txt", 
+    "time": "Sat Nov 26 10:25:38 2016\n"
+}

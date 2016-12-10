@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rgg_n_2_24_s0", 
+    "edges_visited": 223548697, 
+    "elapsed": 330.592, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 676.208, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/rgg_n24_0.000548.txt", 
+    "time": "Fri Nov 25 20:29:02 2016\n", 
+    "vertices_visited": 14016591
+}

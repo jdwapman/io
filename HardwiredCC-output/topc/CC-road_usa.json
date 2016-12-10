@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "road_usa", 
+    "elapsed": 124.929001, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/road_usa.txt", 
+    "time": "Sat Nov 26 10:39:38 2016\n"
+}

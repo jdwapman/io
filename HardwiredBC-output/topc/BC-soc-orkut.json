@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698418, 
+    "elapsed": 1029.04, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 413.3919342299619, 
+    "rawfile": "/data/Compare/TOPC-results/gpu_bc/soc-orkut.txt", 
+    "time": "Sat Nov 26 00:58:25 2016\n", 
+    "vertices_visited": 2997166
+}

@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 50806103, 
+    "elapsed": 29.711, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 1710.015, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/soc-LiveJournal1.txt", 
+    "time": "Fri Nov 25 20:37:44 2016\n", 
+    "vertices_visited": 1489583
+}
