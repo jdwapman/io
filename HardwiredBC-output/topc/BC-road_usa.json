@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 15802.5, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 7.303733459895586, 
+    "rawfile": "/data/Compare/TOPC-results/gpu_bc/road_usa.txt", 
+    "time": "Sat Nov 26 00:58:25 2016\n", 
+    "vertices_visited": 23947347
+}

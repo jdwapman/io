@@ -1,0 +1,11 @@
+{
+    "algorithm": "BC", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 85702474, 
+    "elapsed": 492.807, 
+    "engine": "Hardwired-BC", 
+    "m_teps": 347.81354160959563, 
+    "rawfile": "/data/Compare/TOPC-results/gpu_bc/soc-LiveJournal1.txt", 
+    "time": "Sat Nov 26 00:58:25 2016\n", 
+    "vertices_visited": 4847571
+}
