@@ -21,16 +21,15 @@ fnPreprocessDF = [
     DOBFStoBFS,
     equateRGG,
     #     equateM40,
+    selectAnyOfThese('gpuinfo.name', ['Tesla M40 24GB', 'Tesla M40']),
     normalizePRMTEPS,
     addJSONDetailsLink,
     gunrockVersionGPU,
 ]
-fnFilterDFRows = [  # selectAnyOfTheseDates([datetime.date(2016, 11, 10),
-    #                        datetime.date(2016, 11, 12),
-    #                        datetime.date(2016, 11, 13),
-    #                        datetime.date(2016, 11, 29)]),
-    selectTag('topc_arch'),  # this is datetime.date(2016, 11, 29)
+fnFilterDFRows = [
+    selectTag('topc_arch'),
     deleteZeroMTEPS,
+    keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo.name']),
 ]
 fnPostprocessDF = [
 ]
@@ -87,7 +86,7 @@ print chart.to_dict(data=False)
 save(chart=chart,
      df=df,
      plotname=name,
-     formats=['html', 'svg', 'png', 'pdf', 'tablehtml'],
+     formats=['tablehtml', 'html', 'svg', 'png', 'pdf'],
      sortby=['algorithm',
              'dataset',
              'engine',
@@ -97,5 +96,6 @@ save(chart=chart,
               'm_teps',
               'gunrock_version',
               'gpuinfo.name',
+              'time',
               'details'],
      )
