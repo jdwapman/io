@@ -1,0 +1,18 @@
+{
+    "algorithm": "CC", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 136950782, 
+    "engine": "MapGraph", 
+    "gpuinfo": {
+        "driver_version": 8000, 
+        "name": "Tesla K40c", 
+        "runtime_version": 7500, 
+        "total_global_mem": "11995054080"
+    }, 
+    "rawfile": "/data/Compare/TOPC-results/MapGraph/cc/soc-LiveJournal1.txt", 
+    "sysinfo": {
+        "nodename": "localhost"
+    }, 
+    "time": "Fri Nov 25 20:06:01 2016\n", 
+    "vertices_visited": 4847571
+}
