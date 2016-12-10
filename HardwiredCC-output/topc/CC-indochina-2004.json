@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "indochina-2004", 
+    "elapsed": 130.283997, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/indochina-2004.txt", 
+    "time": "Sat Nov 26 10:16:15 2016\n"
+}

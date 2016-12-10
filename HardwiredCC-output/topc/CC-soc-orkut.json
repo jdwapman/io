@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "soc-orkut", 
+    "elapsed": 46.966, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/soc-orkut.txt", 
+    "time": "Sat Nov 26 10:10:19 2016\n"
+}

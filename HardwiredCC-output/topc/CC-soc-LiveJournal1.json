@@ -1,0 +1,8 @@
+{
+    "algorithm": "CC", 
+    "dataset": "soc-LiveJournal1", 
+    "elapsed": 43.512001, 
+    "engine": "Hardwired-CC", 
+    "rawfile": "/data/Compare/TOPC-results/conn/soc-LiveJournal1.txt", 
+    "time": "Sat Nov 26 10:41:19 2016\n"
+}

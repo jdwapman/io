@@ -1,0 +1,14 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "rmat_n23_e32", 
+    "edges_visited": 352517622, 
+    "elapsed": 99.209, 
+    "engine": "Hardwired-BFS", 
+    "gpuinfo": {
+        "name": "Tesla K40c"
+    }, 
+    "m_teps": 3553.278, 
+    "rawfile": "/data/Compare/TOPC-results/b40c/rmat_n23_e32.txt", 
+    "time": "Fri Nov 25 20:33:52 2016\n", 
+    "vertices_visited": 1382395
+}
