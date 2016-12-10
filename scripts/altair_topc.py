@@ -15,7 +15,7 @@ name = 'topc'
 roots = ['../gunrock-output']
 fnFilterInputFiles = [fileEndsWithJSON,
                       ]
-fnPreprocessDF = [convertCtimeStringToDatetime,
+fnPreprocessDF = [convertCtimeStringToDate,
                   DOBFStoBFS,
                   equateRGG,
                   normalizePRMTEPS,

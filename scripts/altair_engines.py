@@ -18,7 +18,7 @@ fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
 fnPreprocessDF = [
-    convertCtimeStringToDatetime,
+    convertCtimeStringToDate,
     DOBFStoBFS,
     BFSCCtoCC,
     equateRGG,

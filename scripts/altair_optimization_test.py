@@ -24,6 +24,7 @@ fnFilterDFRows = [
                              'optimization_test_LBCULL_idem',
                              'optimization_test_LBCULL'
                              ]),
+    selectAnyOfThese('algorithm', ['BFS']),
     replaceFromDict({'optimization_test_LBCULL_idem_dir': 'idempotent and direction-optimized',
                      'optimization_test_LBCULL_dir': 'direction-optimized',
                      'optimization_test_LBCULL_idem': 'idempotent',
