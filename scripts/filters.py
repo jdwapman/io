@@ -12,7 +12,7 @@ def fileEndsWithJSON(f):
             not os.path.basename(f).startswith("_"))
 
 
-def convertCtimeStringToDatetime(df):
+def convertCtimeStringToDate(df):
     # 'time' column is in (text) ctime format
     # datetime.strptime(jsonobj['time'], "%a %b %d %H:%M:%S %Y\n")
     # or
@@ -21,6 +21,13 @@ def convertCtimeStringToDatetime(df):
     df['time'] = df['time'].apply(
         lambda x: pandas.to_datetime(x,
                                      infer_datetime_format=True).normalize())
+    return df
+
+
+def convertCtimeStringToDatetime(df):
+    df['time'] = df['time'].apply(
+        lambda x: pandas.to_datetime(x,
+                                     infer_datetime_format=True))
     return df
 
 
@@ -142,11 +149,17 @@ def deleteZeroMTEPS(df):
 
 def setLigraAlgorithmFromSubalgorithm(df):
     ligranoalg = df['engine'] == 'Ligra' & df.algorithm.isnull()
-
     m = ligranoalg & df['subalgorithm'] == "bfs-bitvector"
     df.loc[m, 'algorithm'] = 'BFS'
-
     return df
+
+
+def keepLatest(columns, sortBy='time'):
+    def fn(df):
+        newest = df.groupby(columns)[sortBy].transform(max)
+        df = df[df[sortBy] == newest]
+        return df
+    return fn
 
 
 def formatColumn(out_column, in_column, string_format):
