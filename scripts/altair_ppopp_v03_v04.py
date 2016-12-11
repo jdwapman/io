@@ -21,7 +21,6 @@ fnPreprocessDF = [
     DOBFStoBFS,
     equateRGG,
     #     equateM40,
-    selectAnyOfThese('gpuinfo.name', ['Tesla M40 24GB', 'Tesla M40']),
     normalizePRMTEPS,
     addJSONDetailsLink,
     gunrockVersionGPU,
