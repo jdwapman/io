@@ -60,14 +60,16 @@ def replaceFromDict(d, out_column, in_column):
 
 
 def normalizePRMTEPS(df):
-    df.loc[df.algorithm == 'PageRank', 'm_teps'] = df[
-        'm_teps'] * df['search_depth']
+    if 'search_depth' in df.columns:
+        df.loc[df.algorithm == 'PageRank', 'm_teps'] = df[
+            'm_teps'] * df['search_depth']
     return df
 
 
 def gunrockVersionGPU(df):
-    df['gunrock_version_gpu'] = df[
-        'gunrock_version'] + " / " + df['gpuinfo.name']
+    if {'gunrock_version', 'gpuinfo.name'}.issubset(df.columns):
+        df['gunrock_version_gpu'] = df[
+            'gunrock_version'] + " / " + df['gpuinfo.name']
     return df
 
 
@@ -88,11 +90,21 @@ def selectAnyOfThese(column, these):
 
 
 def selectTag(tag):
-    return lambda df: df[df['tag'] == tag]
+    def fn(df):
+        if 'tag' in df.columns:
+            return df[df['tag'] == tag]
+        else:
+            return df
+    return fn
 
 
 def deselectTag(tag):
-    return lambda df: df[df['tag'] != tag]
+    def fn(df):
+        if 'tag' in df.columns:
+            return df[df['tag'] != tag]
+        else:
+            return df
+    return fn
 
 
 def selectOneDataset(dataset):
@@ -218,3 +230,15 @@ def recomputeMTEPSFromMax(df):
     df['edges_visited'] = df['edges_visited'].apply(lambda x: m)
     df['m_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
     return df
+
+
+def roundSig(column, significant_figures=1):
+    # http://stackoverflow.com/questions/3410976/how-to-round-a-number-to-significant-figures-in-python
+    def roundSigFn(x, sig):
+        return round(x, sig - int(math.floor(math.log10(x))) - 1)
+
+    def fn(df):
+        df[column] = df[column].apply(
+            lambda x: roundSigFn(x, significant_figures))
+        return df
+    return fn
