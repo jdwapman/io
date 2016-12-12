@@ -242,3 +242,7 @@ def roundSig(column, significant_figures=1):
             lambda x: roundSigFn(x, significant_figures))
         return df
     return fn
+
+
+def keepTheseColumnsOnly(columns):
+    return lambda df: df[columns]
