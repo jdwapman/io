@@ -5,6 +5,8 @@ import os.path
 import pandas
 from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
 
+from patch import *
+
 
 def vega_to_output(input_json, fileformat, verbose=False):
     """builds the actual visual plot. """
@@ -23,14 +25,21 @@ def vega_to_output(input_json, fileformat, verbose=False):
         print e.output
 
 
-def pipe_vl2vg(json_in):
+def pipe_vl2vg(json_in, patchFunctions):
     """Pipes the vega-lite json through vl2vg to generate the vega json output
 
         Returns: vega-spec json string"""
     p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
     vg = p.communicate(input=json.dumps(json_in))[0]
-    # f = open('log.json','w')
-    # f.write(json.dumps(json_in))
+    if patchFunctions != []:
+        # patchFunctions run on dicts, but only convert if we have patch work
+        # to do
+        vg_dict = json.loads(vg)
+        for fn in patchFunctions:
+            vg_dict = fn(vg_dict)
+        vg = json.dumps(vg_dict)
+    # f = open('vg.json', 'w')
+    # f.write(vg)
     # f.close()
     return vg
 
@@ -44,7 +53,7 @@ def write2tempfile(input):
     return temp
 
 
-def savefile(chart, name, fileformat):
+def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
     if (fileformat == 'html'):
         open(name + '.' + fileformat, 'w').write(
             chart.to_html(local_file=False)
@@ -62,7 +71,7 @@ def savefile(chart, name, fileformat):
         file.write(str)
         file.close()
     elif ((fileformat == 'svg') or (fileformat == 'png')):
-        tmp = write2tempfile(pipe_vl2vg(chart.to_dict()))
+        tmp = write2tempfile(pipe_vl2vg(chart.to_dict(), patchFunctions))
         outfile = vega_to_output(tmp.name, fileformat)
         file = open(name + '.' + fileformat, 'w')
         file.write(outfile)
@@ -129,5 +138,5 @@ def save(chart=Chart(),
                                            index=False,
                                            escape=False)
             outfile.close()
-        elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps']:
+        elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps', 'json', 'md']:
             savefile(chart, name=plotname, fileformat=fileformat)
