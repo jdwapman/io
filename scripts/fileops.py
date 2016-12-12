@@ -25,12 +25,20 @@ def vega_to_output(input_json, fileformat, verbose=False):
         print e.output
 
 
-def pipe_vl2vg(json_in, patchFunctions):
+def pipe_vl2vg(json_in, patchFunctions, debugFiles=False):
     """Pipes the vega-lite json through vl2vg to generate the vega json output
 
         Returns: vega-spec json string"""
+    if debugFiles:
+        f = open('vl.json', 'w')
+        f.write(json.dumps(json_in))
+        f.close()
     p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
     vg = p.communicate(input=json.dumps(json_in))[0]
+    if debugFiles:
+        f = open('vg_prepatch.json', 'w')
+        f.write(vg)
+        f.close()
     if patchFunctions != []:
         # patchFunctions run on dicts, but only convert if we have patch work
         # to do
@@ -38,9 +46,10 @@ def pipe_vl2vg(json_in, patchFunctions):
         for fn in patchFunctions:
             vg_dict = fn(vg_dict)
         vg = json.dumps(vg_dict)
-    # f = open('vg.json', 'w')
-    # f.write(vg)
-    # f.close()
+    if debugFiles:
+        f = open('vg_postpatch.json', 'w')
+        f.write(vg)
+        f.close()
     return vg
 
 
