@@ -46,6 +46,13 @@ def equateRGG(df):
     return df
 
 
+def replaceWith(src, dest, column):
+    def fn(df):
+        df.loc[df[column] == src, column] = dest
+        return df
+    return fn
+
+
 def equateM40(df):
     df.loc[df['gpuinfo.name'] == 'Tesla M40 24GB', 'gpuinfo.name'] = 'Tesla M40'
     return df
@@ -80,6 +87,8 @@ def addJSONDetailsLink(df):
         s) + '">JSON output</a>')
     return df
 
+# @TODO: The below bunch of functions are all really the same function
+
 
 def selectAnyOfTheseDates(dates):
     return lambda df: df[df['time'].isin(dates)]
@@ -105,6 +114,10 @@ def deselectTag(tag):
         else:
             return df
     return fn
+
+
+def filterOut(value, column):
+    return lambda df: df[df[column] != value]
 
 
 def selectOneDataset(dataset):
@@ -155,8 +168,13 @@ def computeNewMTEPSFromProcessTimes(df):
     return df
 
 
+# @TODO: next two functions are actually the same function
 def deleteZeroMTEPS(df):
     return df[df['m_teps'] != 0]
+
+
+def deleteZeroElapsed(df):
+    return df[df['elapsed'] != 0]
 
 
 def setLigraAlgorithmFromSubalgorithm(df):
@@ -165,11 +183,21 @@ def setLigraAlgorithmFromSubalgorithm(df):
     df.loc[m, 'algorithm'] = 'BFS'
     return df
 
+# @TODO: next two functions are actually the same function
+
 
 def keepLatest(columns, sortBy='time'):
     def fn(df):
         newest = df.groupby(columns)[sortBy].transform(max)
         df = df[df[sortBy] == newest]
+        return df
+    return fn
+
+
+def keepFastest(columns, sortBy='m_teps'):
+    def fn(df):
+        fastest = df.groupby(columns)[sortBy].transform(max)
+        df = df[df[sortBy] == fastest]
         return df
     return fn
 
