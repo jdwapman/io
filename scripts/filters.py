@@ -73,6 +73,10 @@ def normalizePRMTEPS(df):
     return df
 
 
+def renameGpuinfoname(df):
+    return df.rename(columns={'gpuinfo.name': 'gpuinfo_name'})
+
+
 def gunrockVersionGPU(df):
     if {'gunrock_version', 'gpuinfo.name'}.issubset(df.columns):
         df['gunrock_version_gpu'] = df[

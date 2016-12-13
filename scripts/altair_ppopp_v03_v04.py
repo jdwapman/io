@@ -24,11 +24,12 @@ fnPreprocessDF = [
     normalizePRMTEPS,
     addJSONDetailsLink,
     gunrockVersionGPU,
+    renameGpuinfoname,  # now it's gpuinfo_name
 ]
 fnFilterDFRows = [
     selectTag('topc_arch'),
     deleteZeroMTEPS,
-    keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo.name']),
+    keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo_name']),
 ]
 fnPostprocessDF = [
 ]
@@ -70,14 +71,14 @@ chart = Chart(df).mark_point().encode(
         ),
         scale=Scale(type='log'),
         ),
-    color=Color('gunrock_version_gpu:N',
+    color=Color('gpuinfo_name:N',
                 legend=Legend(
-                    title='Gunrock Version / GPU',
+                    title='GPU',
                 ),
                 ),
-    shape=Shape('gunrock_version_gpu:N',
+    shape=Shape('gpuinfo_name:N',
                 legend=Legend(
-                    title='Gunrock Version / GPU',
+                    title='GPU',
                 ),
                 ),
 )
@@ -94,7 +95,7 @@ save(chart=chart,
               'dataset',
               'm_teps',
               'gunrock_version',
-              'gpuinfo.name',
+              'gpuinfo_name',
               'time',
               'details'],
      )
