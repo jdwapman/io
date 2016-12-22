@@ -12,7 +12,7 @@ from logic import *
 name = 'do_ab'
 
 # begin user settings for this script
-roots = ['../gunrock-output/topc-param-sweeps', ]
+roots = ['../gunrock-output/topc/topc-param-sweeps', ]
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
@@ -24,6 +24,8 @@ fnFilterDFRows = [
 ]
 
 fnPostprocessDF = [
+    roundSig('do_a'),
+    roundSig('do_b'),
 ]
 # end user settings for this script
 
@@ -64,6 +66,10 @@ for dataset in ['hollywood-2009', 'indochina-2004', 'rmat_n22_e64',
         column=Column('do_b:O',
                       axis=Axis(format='.1',
                                 title='do_b',
+                                labelAngle=-90.0,
+                                labelAlign='left',
+                                labelBaseline='middle',
+                                offset=0.0,
                                 ),
                       ),
         color=Color('m_teps',
