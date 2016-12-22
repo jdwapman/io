@@ -12,12 +12,17 @@ from logic import *
 name = 'engines_topc'
 
 # begin user settings for this script
-roots = ['../CuSha-output', '../Galois-output', '../Ligra-output',
-         '../MapGraph-output',
-         '../HardwiredBC-output', '../HardwiredBFS-output',
-         '../HardwiredCC-output',
-         '../gunrock-output',
-         ]
+# first list does not have gpuinfo.name, second list does
+# see comment below on "this weird double call"
+rootslists = [['../CuSha-output', '../Galois-output', '../Ligra-output',
+               '../HardwiredBC-output',
+               '../HardwiredCC-output',
+               ],
+              ['../gunrock-output',
+               '../MapGraph-output',
+               '../HardwiredBFS-output',
+               ]
+              ]
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
@@ -60,6 +65,7 @@ fnFilterDFRows = [
     # Yeah, bitvector and radii can be removed.
     filterOut(value='bfs-bitvector', column='sub_algorithm'),
     filterOut(value='radii', column='sub_algorithm'),
+    filterOut(value='Tesla P100-PCIE-16GB', column='gpuinfo.name'),
     keepFastest(['algorithm', 'dataset', 'engine']),
 ]
 
@@ -71,8 +77,16 @@ fnPostprocessDF = [
 # do not modify
 
 # choose input files
-df = filesToDF(roots=roots,
-               fnFilterInputFiles=fnFilterInputFiles)
+# this weird double call to filesToDF is because json_normalize doesn't
+# appear to be doing the right thing when some but not all rows have
+# nested schema
+df = pandas.DataFrame()
+for roots in rootslists:
+    dfx = filesToDF(roots=roots,
+                    fnFilterInputFiles=fnFilterInputFiles)
+    df = df.append(dfx)
+
+df = df.reset_index()
 
 for fn in fnPreprocessDF:       # alter entries / compute new entries
     df = fn(df)
@@ -99,10 +113,13 @@ for fn in [convertCtimeStringToDate,
            ]:
     dfpatch = fn(dfpatch)
 
+df.to_csv('df0.csv')
 df = df.append(dfpatch)
 # next line should filter the duplicate PRs
 df = (keepFastest(['algorithm', 'dataset', 'engine']))(df)
 
+df.to_csv('df1.csv')
+dfpatch.to_csv('dfpatch.csv')
 
 # now make the graph
 
@@ -169,3 +186,21 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
          plotname='%s_%s' % (name, data),
          formats=['json', 'html', 'svg', 'png', 'pdf'],
          )
+
+save(df=df,
+     plotname=name,
+     formats=['tablehtml'],
+     sortby=['algorithm',
+             'dataset',
+             'do_a',
+             'do_b'],
+     columns=['algorithm',
+              'sub_algorithm',
+              'dataset',
+              'engine',
+              'm_teps',
+              'elapsed',
+              'gunrock_version',
+              'gpuinfo.name',
+              'details']
+     )
