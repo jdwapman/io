@@ -5,7 +5,7 @@ import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save
+from fileops import save, wrapChartInMd
 from filters import *
 from logic import *
 
@@ -113,13 +113,9 @@ for fn in [convertCtimeStringToDate,
            ]:
     dfpatch = fn(dfpatch)
 
-df.to_csv('df0.csv')
 df = df.append(dfpatch)
 # next line should filter the duplicate PRs
 df = (keepFastest(['algorithm', 'dataset', 'engine']))(df)
-
-df.to_csv('df1.csv')
-dfpatch.to_csv('dfpatch.csv')
 
 # now make the graph
 
@@ -144,9 +140,10 @@ save(df=df,
               'details'],
      )
 
+chart = {}
 for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
 
-    chart = Chart(df).mark_point().encode(
+    chart[data] = Chart(df).mark_point().encode(
         x=X('dataset:N',
             axis=Axis(
                 title='Dataset',
@@ -180,8 +177,8 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
                     ),
                     ),
     )
-    print chart.to_dict(data=False)
-    save(chart=chart,
+    print chart[data].to_dict(data=False)
+    save(chart=chart[data],
          df=df,
          plotname='%s_%s' % (name, data),
          formats=['json', 'html', 'svg', 'png', 'pdf'],
@@ -189,11 +186,10 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
 
 save(df=df,
      plotname=name,
-     formats=['tablehtml'],
+     formats=['tablemd'],
      sortby=['algorithm',
              'dataset',
-             'do_a',
-             'do_b'],
+             'engine', ],
      columns=['algorithm',
               'sub_algorithm',
               'dataset',
@@ -202,5 +198,31 @@ save(df=df,
               'elapsed',
               'gunrock_version',
               'gpuinfo.name',
-              'details']
+              'details'],
+     )
+
+save(plotname=name,
+     formats=['md'],
+     mdtext=("""
+# Comparison with Other Engines
+
+We compared Gunrock against several other engines for graph analytics:
+
+- [CuSha (GPU)](http://farkhor.github.io/CuSha/)
+- [Galois (CPU)](http://iss.ices.utexas.edu/?p=projects/galois)
+- Hardwired (primitive-specific) (GPU)
+- [Ligra (CPU)](http://jshun.github.io/ligra/)
+- [MapGraph (GPU)](https://www.blazegraph.com/mapgraph-technology/)
+
+Below are comparative results on 5 primitives times 9 datasets in terms
+of graph throughput (millions of edges per second, MTEPS) ...
+""" +
+             wrapChartInMd(chart['m_teps'], anchor='MTEPS') +
+             """
+... and elapsed time (ms).
+""" +
+             wrapChartInMd(chart['elapsed'], anchor='Elapsed') +
+             """
+[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
+""" % name),
      )
