@@ -89,23 +89,6 @@ def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
         open(name + '.' + fileformat, 'w').write(
             json.dumps(chart.to_dict(data=True))
         )
-    elif (fileformat == 'oldmd'):
-        file = open(name + '.' + fileformat, 'w')
-        str = '\\htmlonly\n<div id="%s"></div>\n<script type="text/javascript">\nplotvl("%s",\n       ' % (
-            name, name)
-        str += json.dumps(chart.to_dict(data=True))
-        str += '\n);\n</script>\n\\endhtmlonly\n'
-        file.write(str)
-        file.close()
-    # elif (fileformat == 'mdinhtml'):
-    #     file = open(name + '.' + fileformat, 'w')
-    #     str = '# %s\n\n%s\n' % (title, pretext)
-    #     str += '\n\\htmlonly\n'
-    #     str += chart.to_html(template=vlwrapper, title=name)
-    #     str += '\n\\endhtmlonly\n\n'
-    #     str += posttext
-    #     file.write(str)
-    #     file.close()
     elif ((fileformat == 'svg') or (fileformat == 'png')):
         tmp = write2tempfile(pipe_vl2vg(chart.to_dict(), patchFunctions))
         outfile = vega_to_output(tmp.name, fileformat)
