@@ -61,6 +61,24 @@ def write2tempfile(input):
     temp.close()
     return temp
 
+vlwrapper = """
+  <!-- Container for the visualization {title} -->
+  <div id="vis_{title}"></div>
+  <script>
+  var vlSpec = {spec}
+  var embedSpec = {{
+    mode: "vega-lite",  // Instruct Vega-Embed to use the Vega-Lite compiler
+    spec: vlSpec
+  }};
+  // Embed the visualization in the container with id `vis_{title}`
+  vg.embed("#vis_{title}", embedSpec, function(error, result) {{
+    // Callback receiving the View instance and parsed Vega spec
+    // result.view is the View, which resides under the
+    // '#vis_{title}' element
+  }});
+  </script>
+"""
+
 
 def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
     if (fileformat == 'html'):
@@ -71,7 +89,7 @@ def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
         open(name + '.' + fileformat, 'w').write(
             json.dumps(chart.to_dict(data=True))
         )
-    elif (fileformat == 'md'):
+    elif (fileformat == 'oldmd'):
         file = open(name + '.' + fileformat, 'w')
         str = '\\htmlonly\n<div id="%s"></div>\n<script type="text/javascript">\nplotvl("%s",\n       ' % (
             name, name)
@@ -79,6 +97,15 @@ def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
         str += '\n);\n</script>\n\\endhtmlonly\n'
         file.write(str)
         file.close()
+    # elif (fileformat == 'mdinhtml'):
+    #     file = open(name + '.' + fileformat, 'w')
+    #     str = '# %s\n\n%s\n' % (title, pretext)
+    #     str += '\n\\htmlonly\n'
+    #     str += chart.to_html(template=vlwrapper, title=name)
+    #     str += '\n\\endhtmlonly\n\n'
+    #     str += posttext
+    #     file.write(str)
+    #     file.close()
     elif ((fileformat == 'svg') or (fileformat == 'png')):
         tmp = write2tempfile(pipe_vl2vg(chart.to_dict(), patchFunctions))
         outfile = vega_to_output(tmp.name, fileformat)
@@ -129,12 +156,21 @@ def savefile_df(df, name, fileformat):
         )
 
 
+def wrapChartInMd(chart, anchor=''):
+    str = ''
+    str += '\n\\htmlonly\n'
+    str += chart.to_html(template=vlwrapper, title=anchor)
+    str += '\n\\endhtmlonly\n\n'
+    return str
+
+
 def save(chart=Chart(),
          df=pandas.DataFrame(),
          plotname="none",
          formats=[],
          sortby=[],
-         columns=[]):
+         columns=[],
+         mdtext=""):
 
     for fileformat in formats:
         if fileformat == 'tablehtml':
@@ -147,5 +183,19 @@ def save(chart=Chart(),
                                            index=False,
                                            escape=False)
             outfile.close()
-        elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps', 'json', 'md']:
+        if fileformat == 'tablemd':
+            tablefile = plotname + '_table_html.md'
+            # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
+            pandas.set_option('display.max_colwidth', -1)
+            with open(tablefile, 'w') as outfile:
+                outfile.write('\\htmlonly\n')
+                df.sort_values(sortby).to_html(buf=outfile,
+                                               columns=columns,
+                                               index=False,
+                                               escape=False)
+                outfile.write('\\endhtmlonly\n')
+        elif fileformat == 'md':
+            with open(plotname + '.' + fileformat, 'w') as f:
+                f.write(mdtext)
+        elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps', 'json']:
             savefile(chart, name=plotname, fileformat=fileformat)
