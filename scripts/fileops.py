@@ -80,59 +80,49 @@ vlwrapper = """
 """
 
 
-def savefile(chart, name, fileformat, patchFunctions=[patchTwoLegends]):
-    if (fileformat == 'html'):
-        open(name + '.' + fileformat, 'w').write(
-            chart.to_html(local_file=False)
-        )
-    elif (fileformat == 'json'):
-        open(name + '.' + fileformat, 'w').write(
-            json.dumps(chart.to_dict(data=True))
-        )
-    elif ((fileformat == 'svg') or (fileformat == 'png')):
+def savefile(chart, name, fileformat, outputdir,
+             patchFunctions=[patchTwoLegends]):
+    if fileformat == 'html':
+        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
+            f.write(chart.to_html(local_file=False))
+    elif fileformat == 'json':
+        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
+            f.write(json.dumps(chart.to_dict(data=True)))
+    elif (fileformat == 'svg') or (fileformat == 'png'):
         tmp = write2tempfile(pipe_vl2vg(chart.to_dict(), patchFunctions))
         outfile = vega_to_output(tmp.name, fileformat)
-        file = open(name + '.' + fileformat, 'w')
-        file.write(outfile)
-        file.close()
-    elif (fileformat == 'pdf'):
+        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
+            f.write(outfile)
+    elif fileformat in ['pdf', 'eps']:
         # check if svg has been generated
-        if not os.path.isfile(name + '.svg'):
-            savefile(chart, name, 'svg')
+        base = os.path.join(outputdir, name)
+        if not os.path.isfile(base + '.svg'):
+            savefile(chart, name, 'svg', outputdir, patchFunctions)
 
         # @TODO:
         # @jakevdp suggests rsvg on node:
         # https://github.com/altair-viz/altair/issues/279#issuecomment-265640244
 
         osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
-        if os.path.isfile(osx_svg2pdf):
+        if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
-                check_output([osx_svg2pdf, name + '.svg'],
+                check_output([osx_svg2pdf, base + '.svg'],
                              stderr=devnull)
                 # haven't got Automator to rename the file yet
-                os.rename(name + ' copy.pdf', name + '.pdf')
+                os.rename(base + ' copy.pdf', base + '.pdf')
 
         else:
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
-                check_output(['inkscape', '--file=%s.svg' % name,
+                check_output(['inkscape', '--file=%s.%s' % (base, fileformat),
                               '--export-area-drawing', '--without-gui',
-                              '--export-pdf=%s.pdf' % name],
+                              '--export-%s=%s.%s' % (fileformat, base, fileformat)],
                              stderr=devnull)
-    elif (fileformat == 'eps'):
-        # check if svg has been generated
-        if not os.path.isfile(name + '.svg'):
-            savefile(chart, name, 'svg')
-        with open(os.devnull, 'w') as devnull:
-            # hide stderr
-            check_output(['inkscape', '--file=%s.svg' % name,
-                          '--export-area-drawing', '--without-gui',
-                          '--export-eps=%s.eps' % name],
-                         stderr=devnull)
 
 
 def savefile_df(df, name, fileformat):
+    # obsolete
     if (fileformat == 'html'):
         open(name + '_data.' + fileformat, 'w').write(
             df.to_html()
@@ -140,6 +130,10 @@ def savefile_df(df, name, fileformat):
 
 
 def wrapChartInMd(chart, anchor=''):
+    # In the output markdown, the chart (evidently) has to be wrapped in
+    # \htmlonly / \endhtmlonly. Seems to me I ought to be able to use raw HTML:
+    # https://daringfireball.net/projects/markdown/syntax#html
+    # but empirically, that doesn't appear to be the case.
     str = ''
     str += '\n\\htmlonly\n'
     str += chart.to_html(template=vlwrapper, title=anchor)
@@ -150,6 +144,7 @@ def wrapChartInMd(chart, anchor=''):
 def save(chart=Chart(),
          df=pandas.DataFrame(),
          plotname="none",
+         outputdir="output",
          formats=[],
          sortby=[],
          columns=[],
@@ -163,17 +158,18 @@ def save(chart=Chart(),
             tablefile = plotname + suffix[fileformat]
             # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
             pandas.set_option('display.max_colwidth', -1)
-            with open(tablefile, 'w') as outfile:
+            with open(os.path.join(outputdir, tablefile), 'w') as f:
                 if (fileformat == 'tablemd'):
-                    outfile.write('\\htmlonly\n')
-                df.sort_values(sortby).to_html(buf=outfile,
+                    f.write('\\htmlonly\n')
+                df.sort_values(sortby).to_html(buf=f,
                                                columns=columns,
                                                index=False,
                                                escape=False)
                 if (fileformat == 'tablemd'):
-                    outfile.write('\\endhtmlonly\n')
+                    f.write('\\endhtmlonly\n')
         elif fileformat == 'md':
-            with open(plotname + '.' + fileformat, 'w') as f:
+            with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
                 f.write(mdtext)
         elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps', 'json']:
-            savefile(chart, name=plotname, fileformat=fileformat)
+            savefile(chart, name=plotname, fileformat=fileformat,
+                     outputdir=outputdir)
