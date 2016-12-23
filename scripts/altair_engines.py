@@ -116,29 +116,21 @@ for fn in [convertCtimeStringToDate,
 df = df.append(dfpatch)
 # next line should filter the duplicate PRs
 df = (keepFastest(['algorithm', 'dataset', 'engine']))(df)
+columnsOfInterest = ['algorithm',
+                     'sub_algorithm',
+                     'dataset',
+                     'engine',
+                     'm_teps',
+                     'elapsed',
+                     'gunrock_version',
+                     'gpuinfo.name',
+                     'time',
+                     'details']
+# would prefer a cleanup call https://github.com/altair-viz/altair/issues/183
+# without this, output is gigantic
+df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 
 # now make the graph
-
-save(df=df,
-     plotname=name,
-     formats=['tablehtml'],
-     sortby=['algorithm',
-             'dataset',
-             'sub_algorithm',
-             'engine',
-             'gunrock_version'],
-     columns=['algorithm',
-              'dataset',
-              'sub_algorithm',
-              'engine',
-              'm_teps',
-              'elapsed',
-              'edges_visited',
-              'gunrock_version',
-              # 'gpuinfo.name',
-              'time',
-              'details'],
-     )
 
 chart = {}
 for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
@@ -186,19 +178,11 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
 
 save(df=df,
      plotname=name,
-     formats=['tablemd'],
+     formats=['tablemd', 'tablehtml'],
      sortby=['algorithm',
              'dataset',
              'engine', ],
-     columns=['algorithm',
-              'sub_algorithm',
-              'dataset',
-              'engine',
-              'm_teps',
-              'elapsed',
-              'gunrock_version',
-              'gpuinfo.name',
-              'details'],
+     columns=columnsOfInterest,
      )
 
 save(plotname=name,
