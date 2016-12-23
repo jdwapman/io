@@ -156,27 +156,22 @@ def save(chart=Chart(),
          mdtext=""):
 
     for fileformat in formats:
-        if fileformat == 'tablehtml':
-            tablefile = plotname + '_table.html'
-            outfile = open(tablefile, 'w')
-            # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
-            pandas.set_option('display.max_colwidth', -1)
-            df.sort_values(sortby).to_html(buf=outfile,
-                                           columns=columns,
-                                           index=False,
-                                           escape=False)
-            outfile.close()
-        if fileformat == 'tablemd':
-            tablefile = plotname + '_table_html.md'
+        if fileformat in ['tablehtml', 'tablemd']:
+            suffix = {'tablehtml': '_table.html',
+                      'tablemd': '_table_html.md',
+                      }
+            tablefile = plotname + suffix[fileformat]
             # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
             pandas.set_option('display.max_colwidth', -1)
             with open(tablefile, 'w') as outfile:
-                outfile.write('\\htmlonly\n')
+                if (fileformat == 'tablemd'):
+                    outfile.write('\\htmlonly\n')
                 df.sort_values(sortby).to_html(buf=outfile,
                                                columns=columns,
                                                index=False,
                                                escape=False)
-                outfile.write('\\endhtmlonly\n')
+                if (fileformat == 'tablemd'):
+                    outfile.write('\\endhtmlonly\n')
         elif fileformat == 'md':
             with open(plotname + '.' + fileformat, 'w') as f:
                 f.write(mdtext)
