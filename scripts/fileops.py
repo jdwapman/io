@@ -160,13 +160,14 @@ def save(chart=Chart(),
             pandas.set_option('display.max_colwidth', -1)
             with open(os.path.join(outputdir, tablefile), 'w') as f:
                 if (fileformat == 'tablemd'):
-                    f.write('\\htmlonly\n')
+                    # Give it a title so it looks nice in "Related Pages"
+                    f.write('# Source data for %s\n\n\\htmlonly\n' % plotname)
                 df.sort_values(sortby).to_html(buf=f,
                                                columns=columns,
                                                index=False,
                                                escape=False)
                 if (fileformat == 'tablemd'):
-                    f.write('\\endhtmlonly\n')
+                    f.write('\n\\endhtmlonly\n')
         elif fileformat == 'md':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
                 f.write(mdtext)
