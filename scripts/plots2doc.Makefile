@@ -13,7 +13,10 @@ AB_RANDOM_OUTPUTS = output/do_ab_random.md \
 	output/do_ab_random_soc-LiveJournal1_table_html.md \
 	output/do_ab_random_soc-orkut_table_html.md
 
-ALL = $(ENGINES_OUTPUTS) $(AB_RANDOM_OUTPUTS)
+GUNROCK_GPUS_OUTPUTS = output/gunrock_gpus.md \
+	output/gunrock_gpus_table_html.md
+
+ALL = $(ENGINES_OUTPUTS) $(AB_RANDOM_OUTPUTS) $(GUNROCK_GPUS_OUTPUTS)
 
 PLOTTING_FILES = fileops.py filters.py logic.py
 
@@ -26,6 +29,9 @@ $(ENGINES_OUTPUTS): altair_engines.py $(PLOTTING_FILES)
 
 $(AB_RANDOM_OUTPUTS): altair_do_ab_random.py $(PLOTTING_FILES)
 		./altair_do_ab_random.py
+
+$(GUNROCK_GPUS_OUTPUTS): altair_gunrock_gpus.py $(PLOTTING_FILES)
+		./altair_gunrock_gpus.py
 
 install: $(ALL)
 		cp $(ALL) $(DEST)
