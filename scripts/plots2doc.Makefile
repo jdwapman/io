@@ -15,14 +15,16 @@ AB_RANDOM_OUTPUTS = output/do_ab_random.md \
 
 ALL = $(ENGINES_OUTPUTS) $(AB_RANDOM_OUTPUTS)
 
+PLOTTING_FILES = fileops.py filters.py logic.py
+
 DEST = "../../gunrock/doc/stats"
 
 all: $(ALL)
 
-$(ENGINES_OUTPUTS): altair_engines.py
+$(ENGINES_OUTPUTS): altair_engines.py $(PLOTTING_FILES)
 		./altair_engines.py
 
-$(AB_RANDOM_OUTPUTS): altair_do_ab_random.py
+$(AB_RANDOM_OUTPUTS): altair_do_ab_random.py $(PLOTTING_FILES)
 		./altair_do_ab_random.py
 
 install: $(ALL)
