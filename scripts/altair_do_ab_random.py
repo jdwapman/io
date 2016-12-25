@@ -74,7 +74,16 @@ columnsOfInterest = ['algorithm',
 df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 
 for dataset in datasets:
-    dfd = df[df['dataset'] == dataset]
+    # This copy avoids a view-vs-copy warning:
+    # http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+    # because the recomputeMTEPSFromMax changes the dataframe, and
+    # because dfd is a view, those changes won't propagate back to the
+    # original df. If we wanted the changes to propagate back to the
+    # original df, we should probably change recomputeMTEPSFromMax to
+    # operate on the entire dataframe (rather than this subset) and
+    # use groupBy on the dataset to compute max per dataset.
+    dfd = df[df['dataset'] == dataset].copy()
+
     # Some edges_visited are small because the last run hit a small
     # component of the graph. However, the runtimes are correct,
     # because we threw out all small runtimes. So set edges_visited
