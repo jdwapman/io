@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 85702474, 
+    "elapsed": 34.44112, 
+    "engine": "NVGraph", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/soc-LiveJournal1-result.txt", 
+    "sub_algorithm": "PageRank", 
+    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "vertices_visited": 4847571
+}

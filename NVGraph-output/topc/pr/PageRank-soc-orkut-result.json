@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-orkut", 
+    "edges_visited": 212698418, 
+    "elapsed": 98.004578, 
+    "engine": "NVGraph", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/soc-orkut-result.txt", 
+    "sub_algorithm": "PageRank", 
+    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "vertices_visited": 2997166
+}

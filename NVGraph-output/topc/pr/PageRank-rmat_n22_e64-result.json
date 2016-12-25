@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "rmat_n22_e64", 
+    "edges_visited": 483048058, 
+    "elapsed": 184.576477, 
+    "engine": "NVGraph", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/rmat_n22_e64-result.txt", 
+    "sub_algorithm": "PageRank", 
+    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "vertices_visited": 4194304
+}

@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 29.739328, 
+    "engine": "NVGraph", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/road_usa-result.txt", 
+    "sub_algorithm": "PageRank", 
+    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "vertices_visited": 23947347
+}

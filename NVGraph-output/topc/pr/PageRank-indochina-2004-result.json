@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "indochina-2004", 
+    "edges_visited": 301969638, 
+    "elapsed": 55.120895, 
+    "engine": "NVGraph", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/indochina-2004-result.txt", 
+    "sub_algorithm": "PageRank", 
+    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "vertices_visited": 7414866
+}
