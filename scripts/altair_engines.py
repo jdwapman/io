@@ -17,6 +17,7 @@ name = 'engines_topc'
 rootslists = [['../CuSha-output', '../Galois-output', '../Ligra-output',
                '../HardwiredBC-output',
                '../HardwiredCC-output',
+               '../NVGraph-output',
                ],
               ['../gunrock-output',
                '../MapGraph-output',
@@ -47,6 +48,7 @@ fnFilterDFRows = [
                            datetime.date(2016, 11, 28),
                            datetime.date(2016, 11, 29),
                            datetime.date(2016, 11, 30),
+                           datetime.date(2016, 12, 23),
                            ]),
     # 2016/11/17 is gunrock-output/topc/
     # 2016/11/20 is Galois-output/topc/
@@ -54,6 +56,7 @@ fnFilterDFRows = [
     # 2016/11/{25,26} is hardwired/topc/
     # 2016/11/26 is Ligra-output/topc/
     # 2016/11/28 is CuSha-output/topc/
+    # 2016/12/23 is NVGraph-output/topc/
     deselectTag('topc_arch'),
     deselectTag('do_sweep'),
     deselectTag('do_sweep2'),
