@@ -277,6 +277,22 @@ class GPUEngineOutputParserGalois(GPUEngineOutputParserBase):
 		self.engine = "Galois"
 
 
+class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
+        def __init__(self, input_path):
+            super(GPUEngineOutputParserNVGraph, self).__init__(input_path)
+            self.regex_array = [{   "regex": re.compile("num of v: ([0-9]+) num of edges: ([0-9]+)"),
+                            		"keys" : [{ "name" : "vertices_visited", "type" : "int"},
+					  					  	  { "name" : "edges_visited", "type" : "int"}
+											 ]
+                                },
+                                {
+                                     "regex": re.compile("Runtime of nvgraph (.+): (\d+(?:\.\d+)?) msec"),
+                                     "keys" : [{ "name" : "sub_algorithm", "type" : "{}"}, #Placeholder
+					       { "name" : "elapsed", "type" : "float"}]
+                                }
+            ]
+            self.engine = "NVGraph"
+
 def main(argv):
    inputdir = ''
    outputdir = ''
@@ -342,6 +358,13 @@ def main(argv):
       cc_input_path = inputdir # "/data/Compare/conn/test_results/*.txt"
       cc_output_path = outputdir # "./HardwiredCC-output"
       GPUEngineOutputParserHardwiredCC(cc_input_path).WriteJSON(cc_output_path)
+   elif library == 'nvgraph':
+      # parse NVGraph output files
+      nvgraph_input_path = inputdir
+      nvgraph_output_path = outputdir
+      nvgraph_available_algs = ["pr"] # missing sssp results
+      for alg in nvgraph_available_algs:
+        GPUEngineOutputParserNVGraph(nvgraph_input_path.format(alg)).WriteJSON(nvgraph_output_path)
    else:
       print 'error: requested library not found.'
       sys.exit(2)
