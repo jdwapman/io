@@ -171,6 +171,9 @@ def save(chart=Chart(),
         elif fileformat == 'md':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
                 f.write(mdtext)
+        elif fileformat == 'csv':
+            with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
+                f.write(df.to_csv())
         elif fileformat in ['html', 'svg', 'png', 'pdf', 'eps', 'json']:
             savefile(chart, name=plotname, fileformat=fileformat,
                      outputdir=outputdir)
