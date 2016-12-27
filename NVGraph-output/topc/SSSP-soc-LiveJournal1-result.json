@@ -1,18 +1,18 @@
 {
-    "algorithm": "PageRank", 
+    "algorithm": "SSSP", 
     "dataset": "soc-LiveJournal1", 
     "edges_visited": 85702474, 
-    "elapsed": 34.44112, 
+    "elapsed": 662.341736, 
     "engine": "NVGraph", 
     "gpuinfo": {
         "name": "0"
     }, 
-    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/soc-LiveJournal1-result.txt", 
-    "sub_algorithm": "PageRank", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/sssp/soc-LiveJournal1-result.txt", 
+    "sub_algorithm": "SSSP", 
     "sysinfo": {
         "cc": "3.5", 
         "nodename": "Tesla K40c"
     }, 
-    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "time": "Fri Dec 23 18:18:08 2016\n", 
     "vertices_visited": 4847571
 }

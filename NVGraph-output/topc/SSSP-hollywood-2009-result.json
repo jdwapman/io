@@ -1,18 +1,18 @@
 {
-    "algorithm": "PageRank", 
+    "algorithm": "SSSP", 
     "dataset": "hollywood-2009", 
     "edges_visited": 112751422, 
-    "elapsed": 25.644928, 
+    "elapsed": 460417.6875, 
     "engine": "NVGraph", 
     "gpuinfo": {
         "name": "0"
     }, 
-    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/hollywood-2009-result.txt", 
-    "sub_algorithm": "PageRank", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/sssp/hollywood-2009-result.txt", 
+    "sub_algorithm": "SSSP", 
     "sysinfo": {
         "cc": "3.5", 
         "nodename": "Tesla K40c"
     }, 
-    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "time": "Fri Dec 23 18:18:08 2016\n", 
     "vertices_visited": 1139905
 }

@@ -1,18 +1,18 @@
 {
-    "algorithm": "PageRank", 
+    "algorithm": "SSSP", 
     "dataset": "road_usa", 
     "edges_visited": 57708624, 
-    "elapsed": 29.739328, 
+    "elapsed": 3637.000732, 
     "engine": "NVGraph", 
     "gpuinfo": {
         "name": "0"
     }, 
-    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/road_usa-result.txt", 
-    "sub_algorithm": "PageRank", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/sssp/road_usa-result.txt", 
+    "sub_algorithm": "SSSP", 
     "sysinfo": {
         "cc": "3.5", 
         "nodename": "Tesla K40c"
     }, 
-    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "time": "Fri Dec 23 18:18:08 2016\n", 
     "vertices_visited": 23947347
 }

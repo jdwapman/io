@@ -1,18 +1,18 @@
 {
-    "algorithm": "PageRank", 
+    "algorithm": "SSSP", 
     "dataset": "rmat_n24_e16", 
     "edges_visited": 519660124, 
-    "elapsed": 296.695007, 
+    "elapsed": 2302.601318, 
     "engine": "NVGraph", 
     "gpuinfo": {
         "name": "0"
     }, 
-    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/rmat_n24_e16-result.txt", 
-    "sub_algorithm": "PageRank", 
+    "rawfile": "/data-2/TOPC-results/nvgraph-scripts/sssp/rmat_n24_e16-result.txt", 
+    "sub_algorithm": "SSSP", 
     "sysinfo": {
         "cc": "3.5", 
         "nodename": "Tesla K40c"
     }, 
-    "time": "Fri Dec 23 14:22:24 2016\n", 
+    "time": "Fri Dec 23 18:18:08 2016\n", 
     "vertices_visited": 16777216
 }
