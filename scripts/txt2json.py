@@ -289,14 +289,14 @@ class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
                                 },
                                 {
                                      "regex": re.compile("Runtime of nvgraph (.+): (\d+(?:\.\d+)?) msec"),
-                                     "keys" : [{ "name" : "sub_algorithm", "type" : "{}"}, #Placeholder
+                                     "keys" : [{ "name" : "algorithm", "type" : "{}"}, #Placeholder
 					       { "name" : "elapsed", "type" : "float"}]
                                 },
 				{
                                      "regex": re.compile("GPU Device (.+): \"(.+)\" with compute capability (.+)"),
-                                     "keys" : [{ "name" : "gpuinfo", "type" : "dict(name={})" },
-                                               { "name" : "sysinfo", "type" : "dict(nodename={})"},
-					       { "name" : "sysinfo", "type" : "dict(cc={})"}]
+                                     "keys" : [{ "name" : "gpuinfo", "type" : "dict(device={})" },
+                                               { "name" : "gpuinfo", "type" : "dict(name={})"},
+					       { "name" : "gpuinfo", "type" : "dict(compute_version={})"}]
                                 }
             ]
             self.engine = "NVGraph"
