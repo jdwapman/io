@@ -276,19 +276,27 @@ class GPUEngineOutputParserGalois(GPUEngineOutputParserBase):
 		]
 		self.engine = "Galois"
 
-
+# num of v: 1139905 num of edges: 112751422
+# GPU Device 0: "Tesla K40c" with compute capability 3.5
+#> Detected Compute SM 3.5 hardware with 15 multi-processors
+# Runtime of nvgraph SSSP: 460417.687500 msec
 class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
         def __init__(self, input_path):
             super(GPUEngineOutputParserNVGraph, self).__init__(input_path)
             self.regex_array = [{   "regex": re.compile("num of v: ([0-9]+) num of edges: ([0-9]+)"),
                             		"keys" : [{ "name" : "vertices_visited", "type" : "int"},
-					  					  	  { "name" : "edges_visited", "type" : "int"}
-											 ]
+					  	  { "name" : "edges_visited", "type" : "int"}]
                                 },
                                 {
                                      "regex": re.compile("Runtime of nvgraph (.+): (\d+(?:\.\d+)?) msec"),
                                      "keys" : [{ "name" : "sub_algorithm", "type" : "{}"}, #Placeholder
 					       { "name" : "elapsed", "type" : "float"}]
+                                },
+				{
+                                     "regex": re.compile("GPU Device (.+): \"(.+)\" with compute capability (.+)"),
+                                     "keys" : [{ "name" : "gpuinfo", "type" : "dict(name={})" },
+                                               { "name" : "sysinfo", "type" : "dict(nodename={})"},
+					       { "name" : "sysinfo", "type" : "dict(cc={})"}]
                                 }
             ]
             self.engine = "NVGraph"
@@ -362,7 +370,7 @@ def main(argv):
       # parse NVGraph output files
       nvgraph_input_path = inputdir
       nvgraph_output_path = outputdir
-      nvgraph_available_algs = ["pr"] # missing sssp results
+      nvgraph_available_algs = ["pr", "sssp"] # missing sssp results
       for alg in nvgraph_available_algs:
         GPUEngineOutputParserNVGraph(nvgraph_input_path.format(alg)).WriteJSON(nvgraph_output_path)
    else:
