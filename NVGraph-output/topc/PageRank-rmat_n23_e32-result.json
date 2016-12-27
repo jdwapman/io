@@ -5,14 +5,11 @@
     "elapsed": 238.672455, 
     "engine": "NVGraph", 
     "gpuinfo": {
-        "name": "0"
+        "compute_version": "3.5", 
+        "device": "0", 
+        "name": "Tesla K40c"
     }, 
     "rawfile": "/data-2/TOPC-results/nvgraph-scripts/pr/rmat_n23_e32-result.txt", 
-    "sub_algorithm": "PageRank", 
-    "sysinfo": {
-        "cc": "3.5", 
-        "nodename": "Tesla K40c"
-    }, 
     "time": "Fri Dec 23 14:22:24 2016\n", 
     "vertices_visited": 8388608
 }
