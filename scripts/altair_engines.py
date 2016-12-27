@@ -17,11 +17,11 @@ name = 'engines_topc'
 rootslists = [['../CuSha-output', '../Galois-output', '../Ligra-output',
                '../HardwiredBC-output',
                '../HardwiredCC-output',
-               '../NVGraph-output',
                ],
               ['../gunrock-output',
                '../MapGraph-output',
                '../HardwiredBFS-output',
+               '../NVGraph-output',
                ]
               ]
 fnFilterInputFiles = [
