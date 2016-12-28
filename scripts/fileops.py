@@ -115,7 +115,7 @@ def savefile(chart, name, fileformat, outputdir,
         else:
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
-                check_output(['inkscape', '--file=%s.%s' % (base, fileformat),
+                check_output(['inkscape', '--file=%s.svg' % (base),
                               '--export-area-drawing', '--without-gui',
                               '--export-%s=%s.%s' % (fileformat, base, fileformat)],
                              stderr=devnull)
