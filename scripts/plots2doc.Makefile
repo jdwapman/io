@@ -16,7 +16,13 @@ AB_RANDOM_OUTPUTS = output/do_ab_random.md \
 GUNROCK_GPUS_OUTPUTS = output/gunrock_gpus.md \
 	output/gunrock_gpus_table_html.md
 
-ALL = $(ENGINES_OUTPUTS) $(AB_RANDOM_OUTPUTS) $(GUNROCK_GPUS_OUTPUTS)
+FRONTIER_SIZE_OUTPUTS = output/frontier.md \
+	output/frontier_table_html.md
+
+ALL = $(ENGINES_OUTPUTS) \
+	$(AB_RANDOM_OUTPUTS) \
+	$(GUNROCK_GPUS_OUTPUTS) \
+	$(FRONTIER_SIZE_OUTPUTS)
 
 PLOTTING_FILES = fileops.py filters.py logic.py
 
@@ -32,6 +38,9 @@ $(AB_RANDOM_OUTPUTS): altair_do_ab_random.py $(PLOTTING_FILES)
 
 $(GUNROCK_GPUS_OUTPUTS): altair_gunrock_gpus.py $(PLOTTING_FILES)
 		./altair_gunrock_gpus.py
+
+$(FRONTIER_SIZE_OUTPUTS): altair_frontier_size.py $(PLOTTING_FILES)
+		./altair_frontier_size.py
 
 install: $(ALL)
 		cp $(ALL) $(DEST)
