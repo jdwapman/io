@@ -119,12 +119,17 @@ for fn in [convertCtimeStringToDate,
 df = df.append(dfpatch)
 # next line should filter the duplicate PRs
 df = (keepFastest(['algorithm', 'dataset', 'engine']))(df)
+# then let's compute 'speedup'
+df = normalizeByGunrock('speedup', 'elapsed',
+                        ['algorithm', 'dataset'])(df)
+
 columnsOfInterest = ['algorithm',
                      'sub_algorithm',
                      'dataset',
                      'engine',
                      'm_teps',
                      'elapsed',
+                     'speedup',
                      'gunrock_version',
                      'gpuinfo.name',
                      'time',
@@ -179,6 +184,49 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
          formats=['json', 'html', 'svg', 'png', 'pdf'],
          )
 
+# https://github.com/altair-viz/altair/issues/289#issuecomment-270949488
+# Maybe like this?
+# Mark: symbol
+# Y: Dataset
+# Row: Library
+# X: Speedup (log scale axis)
+# Column: Algorithm
+# Color: Speedup < 1
+data = 'speedup'
+chart[data] = Chart(df[df['engine'] != 'Gunrock']).mark_point().encode(
+    y=Y('dataset:N',
+        axis=Axis(
+            title='Dataset',
+        ),
+        ),
+    column=Column('algorithm:N',
+                  axis=Axis(
+                      title='Primitive',
+                      orient='top',
+                  )
+                  ),
+    row=Row('engine',
+            ),
+    x=X('speedup',
+        axis=Axis(
+            title='Gunrock speedup',
+        ),
+        scale=Scale(type='log'),
+        ),
+    color=Color('engine',
+                legend=Legend(
+                    title='Engine',
+                ),
+                ),
+)
+print chart[data].to_dict(data=False)
+save(chart=chart[data],
+     df=df,
+     plotname='%s_%s' % (name, data),
+     formats=['json', 'html', 'svg', 'png', 'pdf'],
+     )
+
+
 save(df=df,
      plotname=name,
      formats=['tablemd', 'tablehtml'],
@@ -200,6 +248,7 @@ We compared Gunrock against several other engines for graph analytics:
 - Hardwired (primitive-specific) (GPU)
 - [Ligra (CPU)](http://jshun.github.io/ligra/)
 - [MapGraph (GPU)](https://www.blazegraph.com/mapgraph-technology/)
+- [nvGRAPH (GPU)](https://developer.nvidia.com/nvgraph)
 
 Below are comparative results on 5 primitives times 9 datasets in terms
 of graph throughput (millions of edges per second, MTEPS) ...

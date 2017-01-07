@@ -206,6 +206,22 @@ def keepFastest(columns, sortBy='m_teps'):
     return fn
 
 
+def normalizeByGunrock(dest, quantityToNormalize, columnsToGroup):
+    # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
+    def fn(df):
+        dfgunrock = df.loc[df['engine'] == 'Gunrock',
+                           columnsToGroup + [quantityToNormalize]]
+        suffix = '_gunrock'
+        dfmerge = pandas.merge(df,
+                               dfgunrock,
+                               on=columnsToGroup,
+                               suffixes=['', suffix])
+        dfmerge[dest] = (dfmerge[quantityToNormalize] /
+                         dfmerge[quantityToNormalize + suffix])
+        return dfmerge
+    return fn
+
+
 def formatColumn(out_column, in_column, string_format):
     # oddly, I was not able to figure out how to do this with a lambda
     def fn(df):
