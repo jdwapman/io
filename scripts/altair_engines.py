@@ -209,15 +209,23 @@ chart[data] = Chart(df[df['engine'] != 'Gunrock']).mark_point().encode(
             ),
     x=X('speedup',
         axis=Axis(
-            title='Gunrock speedup',
+            title="Gunrock's speedup",
         ),
         scale=Scale(type='log'),
         ),
-    color=Color('engine',
+    color=Color('faster_or_slower:N',
+                scale=Scale(
+                    range=['#a0a0a0', '#101010'],
+                ),
                 legend=Legend(
-                    title='Engine',
+                    title="Gunrock's speedup",
                 ),
                 ),
+).transform_data(
+    calculate=[Formula(
+        expr='datum.speedup < 1 ? "< 1" : ">= 1"',
+        field='faster_or_slower',
+    )],
 )
 print chart[data].to_dict(data=False)
 save(chart=chart[data],
