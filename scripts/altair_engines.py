@@ -265,7 +265,11 @@ of graph throughput (millions of edges per second, MTEPS) ...
              """
 ... and elapsed time (ms).
 """ +
-             wrapChartInMd(chart['elapsed'], anchor='Elapsed') +
+             wrapChartInMd(chart['elapsed'], anchor='elapsed') +
+             """
+Here's a "Small Multiple Dot Plot" ([design by Joe Mako](https://policyviz.com/hmv_post/run-time-column-chart/)) that shows Gunrock speedup over different engines on different primitives and datasets:
+""" +
+             wrapChartInMd(chart['speedup'], anchor='speedup') +
              """
 [Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
 """ % name),
