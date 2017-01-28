@@ -18,6 +18,11 @@ def patchTwoLegends(j):
         return j
     if not('shape' in j['marks'][0]['legends'][1].keys() and j['marks'][0]['legends'][1]['shape'] == 'shape'):
         return j
+    if not('title' in j['marks'][0]['legends'][0].keys() and
+           'title' in j['marks'][0]['legends'][1].keys() and
+           j['marks'][0]['legends'][0]['title'] ==
+           j['marks'][0]['legends'][1]['title']):
+        return j
     for n in [0, 1]:
         if not('properties' in j['marks'][0]['legends'][n].keys() and 'symbols' in j['marks'][0]['legends'][n]['properties'].keys()):
             return j
