@@ -73,7 +73,7 @@ chart = Chart(df).mark_point().encode(
         ),
     y=Y('speedup',
         axis=Axis(
-            title='Speedup',
+            title='Speedup from 1 to 4 GPUs',
         ),
         # scale=Scale(type='log'),
         ),
@@ -113,10 +113,13 @@ save(plotname=name,
      mdtext=("""
 # Speedup for different partition methods
 
-Below are comparative results on 5 primitives times 9 datasets in terms
-of graph throughput (millions of edges per second, MTEPS) ...
+We test three primitives (BFS, DOBFS, PageRank) on three different datasets with three different partitioners. Random partitioning captures no locality but has excellent load balance. Biased-random is like random but biases its choice toward a GPU that contains more of its neighbors. [Metis](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) is the classic offline partitioner
+
+Unfortunately, scale-free graphs are very difficult to partition under any circumstances. As well, Metis and many other offline partitioners optimize for cutting the fewest edges across partitions. The ideal Gunrock partitioner, on the other hand, should instead optimize for minimizing the number of vertices on the border of a partition. We believe this is an interesting research problem for the partitioning community.
+
+Because none of these partitioning methods is clearly superior, all our multi-GPU results use the cheap random partitioner.
 """ +
-             wrapChartInMd(chart, anchor='partition_methods') +
+             wrapChartInMd(chart, anchor='mgpu_partition') +
              """
 [Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
 """ % name),
