@@ -36,6 +36,12 @@ def DOBFStoBFS(df):
     return df
 
 
+def BFStoDOBFS(df):
+    m = (df.algorithm == 'BFS') & (df.direction_optimized == True)
+    df.loc[m, 'algorithm'] = 'DOBFS'
+    return df
+
+
 def BFSCCtoCC(df):
     df.loc[df.algorithm == 'BFSCC', 'algorithm'] = 'CC'
     return df
@@ -81,6 +87,13 @@ def gunrockVersionGPU(df):
     if {'gunrock_version', 'gpuinfo.name'}.issubset(df.columns):
         df['gunrock_version_gpu'] = df[
             'gunrock_version'] + " / " + df['gpuinfo.name']
+    return df
+
+
+def algorithmDataset(df):
+    if {'algorithm', 'dataset'}.issubset(df.columns):
+        df['algorithm_dataset'] = df[
+            'algorithm'] + " / " + df['dataset']
     return df
 
 
@@ -218,6 +231,22 @@ def normalizeByGunrock(dest, quantityToNormalize, columnsToGroup):
                                suffixes=['', suffix])
         dfmerge[dest] = (dfmerge[quantityToNormalize] /
                          dfmerge[quantityToNormalize + suffix])
+        return dfmerge
+    return fn
+
+
+def normalizeBy1GPU(dest, quantityToNormalize, columnsToGroup):
+    # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
+    def fn(df):
+        df1 = df.loc[df['num_gpus'] == 1,
+                     columnsToGroup + [quantityToNormalize]]
+        suffix = '_1'
+        dfmerge = pandas.merge(df,
+                               df1,
+                               on=columnsToGroup,
+                               suffixes=['', suffix])
+        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
+                         dfmerge[quantityToNormalize])
         return dfmerge
     return fn
 
