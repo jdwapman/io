@@ -137,18 +137,16 @@ for algorithm in ['BFS', 'DOBFS', 'PageRank']:
 save(plotname=name,
      formats=['md'],
      mdtext=("""
-# Speedup on multiple GPUs
+# Scalability on multiple GPUs
 
-We demonstrate multiple-GPU ("mGPU") speedup over 1GPU performance for six algorithms: BC, BFS, CC, DOBFS, PR and SSSP. We show both speedups on individual datasets and geometric means of runtime speedup over all datasets. These experiments are on NVIDIA Tesla K40m GPUs.
+Scalability of DOBFS, BFS, and PR. {Strong, weak edge, weak vertex} scaling use rmat graphs with {2<sup>24</sup>, 2<sup>19</sup>, 2<sup>19</sup>&nbsp;&times;&nbsp;|GPUs|} vertices and edge factor {32, 256&nbsp;&times;&nbsp;|GPUs|, 256} respectively.
 
-Most of the algorithms scale fairly well from 1 to 6 GPUs. The exception is DOBFS, which (unlike the other experiments) is primarily limited by communication overhead.
+While providing both weak-vertex and -edge scaling, DOBFS doesn't have good strong scaling, because its computation and communication are both roughly on the order of O(|V<sub>i</sub>|). This effect is more obvious on P100, as computation is faster but inter-GPU bandwidth stays mostly the same. BFS and PR achieve almost linear weak and strong scaling from 1 to 8 GPUs.
 
 """ +
+             wrapChartInMd(chart['DOBFS'], anchor='%s_DOBFS' % name) +
              wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) +
-             wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) +
-             wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) + """
-[Source data](md_stats_%s_%s_table_html.html), with links to the output JSON for each run<br/>
-""" % (name, 'all') + """
-[Geomean source data](md_stats_%s_%s_table_html.html)
-""" % (name, 'geomean')
+             wrapChartInMd(chart['PageRank'], anchor='%s_PageRank' % name) + """
+[[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)], with links to the output JSON for each run<br/>
+""" % ('DOBFS', name, 'DOBFS', 'BFS', name, 'BFS', 'PageRank', name, 'PageRank')
      ))
