@@ -19,10 +19,25 @@ GUNROCK_GPUS_OUTPUTS = output/gunrock_gpus.md \
 FRONTIER_SIZE_OUTPUTS = output/frontier.md \
 	output/frontier_table_html.md
 
+MGPU_SPEEDUP_OUTPUTS = output/mgpu_speedup.md \
+	output/mgpu_speedup_geomean_table_html.md \
+	output/mgpu_speedup_all_table_html.md
+
+MGPU_PARTITION_OUTPUTS = output/mgpu_partition.md \
+	output/mgpu_partition_table_html.md
+
+MGPU_SCALABILITY_OUTPUTS = output/mgpu_scalability.md \
+	output/mgpu_scalability_BFS_table_html.md \
+	output/mgpu_scalability_DOBFS_table_html.md \
+	output/mgpu_scalability_PageRank_table_html.md
+
 ALL = $(ENGINES_OUTPUTS) \
 	$(AB_RANDOM_OUTPUTS) \
 	$(GUNROCK_GPUS_OUTPUTS) \
-	$(FRONTIER_SIZE_OUTPUTS)
+	$(FRONTIER_SIZE_OUTPUTS) \
+	$(MGPU_SPEEDUP_OUTPUTS) \
+	$(MGPU_PARTITION_OUTPUTS) \
+	$(MGPU_SCALABILITY_OUTPUTS)
 
 PLOTTING_FILES = fileops.py filters.py logic.py
 
@@ -41,6 +56,15 @@ $(GUNROCK_GPUS_OUTPUTS): altair_gunrock_gpus.py $(PLOTTING_FILES)
 
 $(FRONTIER_SIZE_OUTPUTS): altair_frontier_size.py $(PLOTTING_FILES)
 		./altair_frontier_size.py
+
+$(MGPU_SPEEDUP_OUTPUTS): altair_mgpu_speedup.py $(PLOTTING_FILES)
+		./altair_mgpu_speedup.py
+
+$(MGPU_PARTITION_OUTPUTS): altair_mgpu_partition.py $(PLOTTING_FILES)
+		./altair_mgpu_partition.py
+
+$(MGPU_SCALABILITY_OUTPUTS): altair_mgpu_scalability.py $(PLOTTING_FILES)
+		./altair_mgpu_scalability.py
 
 install: $(ALL)
 		cp $(ALL) $(DEST)
