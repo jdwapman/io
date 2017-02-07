@@ -24,12 +24,12 @@ fnPreprocessDF = [
     normalizePRMTEPS,
     addJSONDetailsLink,
     gunrockVersionGPU,
-    renameGpuinfoname,  # now it's gpuinfo_name
+    # renameGpuinfoname,  # now it's gpuinfo_name
 ]
 fnFilterDFRows = [
     selectTag('topc_arch'),
     deleteZeroMTEPS,
-    keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo_name']),
+    keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo.name']),
 ]
 fnPostprocessDF = [
 ]
@@ -56,7 +56,7 @@ columnsOfInterest = ['algorithm',
                      'm_teps',
                      'engine',
                      'gunrock_version',
-                     'gpuinfo_name',
+                     'gpuinfo.name',
                      'time',
                      'details']
 # would prefer a cleanup call https://github.com/altair-viz/altair/issues/183
@@ -83,12 +83,12 @@ chart = Chart(df).mark_point().encode(
         ),
         scale=Scale(type='log'),
         ),
-    color=Color('gpuinfo_name:N',
+    color=Color('[gpuinfo.name]:N',  # brackets allow . in the field name
                 legend=Legend(
                     title='GPU',
                 ),
                 ),
-    shape=Shape('gpuinfo_name:N',
+    shape=Shape('[gpuinfo.name]:N',
                 legend=Legend(
                     title='GPU',
                 ),
