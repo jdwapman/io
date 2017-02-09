@@ -80,6 +80,7 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 columnsOfInterest = ['algorithm',
                      'dataset',
                      'direction_optimized',
+                     'idempotent',
                      'num_gpus',
                      'scalability',
                      'engine',
@@ -97,6 +98,8 @@ df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 chart = {}
 for algorithm in ['BFS', 'DOBFS', 'PageRank']:
     dfplot = df[df['algorithm'] == algorithm]
+    if (algorithm == 'DOBFS'):
+        dfplot = dfplot[dfplot['idempotent'] == False]
     chart[algorithm] = Chart(dfplot).mark_point().encode(
         x=X('num_gpus:N',
             axis=Axis(
@@ -120,11 +123,15 @@ for algorithm in ['BFS', 'DOBFS', 'PageRank']:
                     ),
                     ),
     ).transform_data()
+    # filter=((expr.df.algorithm != 'DOBFS') or
+    # (expr.df.idempotent == False))
+    # @TODO https://github.com/altair-viz/altair/issues/298
     print chart[algorithm].to_dict(data=False)
     save(df=dfplot,
          plotname=name + '_' + algorithm,
          formats=['tablemd', 'tablehtml'],
-         sortby=['algorithm', 'scalability', 'dataset', 'gpuinfo.name'],
+         sortby=['algorithm', 'scalability', 'dataset',
+                 'gpuinfo.name', 'num_gpus', 'idempotent'],
          columns=columnsOfInterest,
          )
 
@@ -139,7 +146,7 @@ save(plotname=name,
      mdtext=("""
 # Scalability on multiple GPUs
 
-Scalability of DOBFS, BFS, and PR. {Strong, weak edge, weak vertex} scaling use rmat graphs with {2<sup>24</sup>, 2<sup>19</sup>, 2<sup>19</sup>&nbsp;&times;&nbsp;|GPUs|} vertices and edge factor {32, 256&nbsp;&times;&nbsp;|GPUs|, 256} respectively.
+Scalability of DOBFS, BFS, and PR. {Strong, weak edge, weak vertex} scaling use rmat graphs with {2<sup>24</sup>, 2<sup>19</sup>, 2<sup>19</sup>&nbsp;&times;&nbsp;|GPUs|} vertices and edge factor {32, 256&nbsp;&times;&nbsp;|GPUs|, 256} respectively. DOBFS runs have idempotence disabled, though results with idempotence enabled have similar runtimes.
 
 While providing both weak-vertex and -edge scaling, DOBFS doesn't have good strong scaling, because its computation and communication are both roughly on the order of O(|V<sub>i</sub>|). This effect is more obvious on P100, as computation is faster but inter-GPU bandwidth stays mostly the same. BFS and PR achieve almost linear weak and strong scaling from 1 to 8 GPUs.
 
