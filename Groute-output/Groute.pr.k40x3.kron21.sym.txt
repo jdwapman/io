@@ -1,0 +1,17 @@
+read 182081864 edges
+read data for 182081864 edges
+Running Page Rank with 3 GPUs, starting with 3 GPUs
+Testing with 3 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr has 2097152 nodes and 182081864 edges
+
+----- Running PR -----
+
+
+
+Critical Warning: circular worklist has overflowed, please allocate more memory (instance id: 8, start: 116690089, end: 273992018, capacity: 134217728), exiting 
+
+ERROR in /home/sgpyc/Projects/Groute/ppopp17-artifact/code/groute/include/groute/event_pool.h:374: driver shutting down (29)

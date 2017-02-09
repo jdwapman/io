@@ -1,0 +1,17 @@
+read 1963212211 edges
+read data for 1963212211 edges
+Running BFS with 3 GPUs, starting with 3 GPUs
+Testing with 3 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr has 51161011 nodes and 1963212211 edges
+
+----- Running BFS -----
+
+
+BFS: 1114.434000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed

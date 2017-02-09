@@ -1,0 +1,19 @@
+read 1963212211 edges
+read data for 1963212211 edges
+Running CC with 4 GPUs, starting with 4 GPUs
+Testing with 4 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr has 51161011 nodes and 1963212211 edges
+
+----- Running CC Async -----
+
+
+CC (Async): 396.120000 ms. <filter>
+
+
+Components: 3524500
+
+Overall: Test passed

@@ -1,0 +1,16 @@
+read 1963212211 edges
+read data for 1963212211 edges
+
+Testing single GPU SSSP
+--------------------
+
+Testing with 1 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr has 51161011 nodes and 1963212211 edges
+
+----- Running SSSP -----
+
+ERROR in /home/sgpyc/Projects/Groute/ppopp17-artifact/code/groute/include/groute/graphs/csr_graph.h:828: out of memory (2)

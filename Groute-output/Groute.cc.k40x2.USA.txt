@@ -1,0 +1,19 @@
+read 57708624 edges
+read data for 57708624 edges
+Running CC with 2 GPUs, starting with 2 GPUs
+Testing with 2 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr has 23947347 nodes and 57708624 edges
+
+----- Running CC Async -----
+
+
+CC (Async): 21.024000 ms. <filter>
+
+
+Components: 1
+
+Overall: Test passed

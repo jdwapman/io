@@ -1,0 +1,22 @@
+read 57708624 edges
+read data for 57708624 edges
+Running SSSP with 3 GPUs, starting with 3 GPUs
+Testing with 3 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr has 23947347 nodes and 57708624 edges
+
+----- Running SSSP -----
+
+
+Starting METIS partitioning
+Converted graph to 32-bit, calling METIS
+Building partitioned graph and lookup tables
+METIS partitioning done
+
+SSSP: 1131.364000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed

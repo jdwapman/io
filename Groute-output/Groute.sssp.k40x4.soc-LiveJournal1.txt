@@ -1,0 +1,22 @@
+read 68993773 edges
+read data for 68993773 edges
+Running SSSP with 4 GPUs, starting with 4 GPUs
+Testing with 4 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/soc-LiveJournal1/soc-LiveJournal1-weighted-1.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/soc-LiveJournal1/soc-LiveJournal1-weighted-1.gr has 4847571 nodes and 68993773 edges
+
+----- Running SSSP -----
+
+
+Starting METIS partitioning
+Converted graph to 32-bit, calling METIS
+Building partitioned graph and lookup tables
+METIS partitioning done
+
+SSSP: 36.620000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed

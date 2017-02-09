@@ -1,0 +1,22 @@
+read 347997111 edges
+read data for 347997111 edges
+Running Page Rank with 4 GPUs, starting with 4 GPUs
+Testing with 4 GPUs
+--------------------
+
+
+Loading graph /home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/OSM-eur-k/osm-eur-karlsruhe.gr (1)
+/home/sgpyc/Projects/Groute/ppopp17-artifact/dataset/OSM-eur-k/osm-eur-karlsruhe.gr has 173789185 nodes and 347997111 edges
+
+----- Running PR -----
+
+
+Starting METIS partitioning
+Converted graph to 32-bit, calling METIS
+Building partitioned graph and lookup tables
+METIS partitioning done
+
+PR: 3043.734000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed
