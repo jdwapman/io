@@ -1,6 +1,6 @@
 {
     "algorithm": "BFS", 
-    "dataset": "twitter", 
+    "dataset": "twitter-mpi", 
     "edges_visited": 1963212211, 
     "elapsed": 3587.158, 
     "engine": "Groute", 

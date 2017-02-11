@@ -1,6 +1,6 @@
 {
     "algorithm": "SSSP", 
-    "dataset": "twitter", 
+    "dataset": "twitter-mpi", 
     "edges_visited": 1963212211, 
     "engine": "Groute", 
     "gpuinfo.name": "k40", 

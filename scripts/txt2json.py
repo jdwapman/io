@@ -30,6 +30,7 @@ class GPUEngineOutputParserBase(object):
 					       	   "osm" : "europe_osm", \
 					       	   "roadnet" : "roadNet-CA", \
 					       	   "USA" : "road_usa", \
+						   "twitter" : "twitter-mpi" \
 					       }
 		self.engine = "Generic"
 		self.m_teps_switcher = {
@@ -305,7 +306,6 @@ class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
 # Parser class for parsing Groute output
 class GPUEngineOutputParserGroute(GPUEngineOutputParserBase):
         def __init__(self, input_path):
-	    print(input_path)
             super(GPUEngineOutputParserGroute, self).__init__(input_path)
             self.regex_array = [{   "regex": re.compile("read ([0-9]+) edges"),
                                     "keys" : [{ "name" : "edges_visited", "type" : "int"}]
@@ -322,16 +322,10 @@ class GPUEngineOutputParserGroute(GPUEngineOutputParserBase):
             ]
             self.engine = "Groute"
 	def PostProcess(self, param_dict, filename):
-		# hrs, mins, secs = tim.split(':')
-                # Groute.bfs.k40x3.OSM-eur-k.txt
 		reducedfilename = os.path.splitext(os.path.basename(filename))[0]
 		gpuname = reducedfilename.split('.')[2]
-		
 		param_dict['gpuinfo.name'] = gpuname[:-2]
 		filename = param_dict['algorithm'] + '-' + reducedfilename.split('.')[2] + '-' + reducedfilename.split('.')[3]
-		# param_dict['engine'], param_dict['algorithm'], param_dict['gpuinfo.name'], param_dict['dataset'] = reducedfilename.split('.')
-		# print(os.path.splitext(os.path.basename(filename))[0])
-                # print(filename)
 		return filename
 
 def main(argv):
