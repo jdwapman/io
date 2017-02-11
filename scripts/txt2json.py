@@ -13,20 +13,24 @@ class GPUEngineOutputParserBase(object):
 			   dataset_names = ["roadNet-CA", "europe_osm", "rgg", "indochina-2004", \
 					    "roadnet", "kron", "soc-orkut", "soc-LiveJournal1", "hollywood-2009", \
 					    "osm", "bitcoin", "delaunay_n24", "ljournal-2008", "rmat_n22_e64", \
-					    "rmat_n23_e32", "rmat_n24_e16", "road_usa"]):
+					    "rmat_n23_e32", "rmat_n24_e16", "road_usa", "twitter", "USA"]):
 
 		self.input_path = input_path
                 self.regex_array = regex_array
 		self.dataset_names = dataset_names
 		self.parsed_data = {}
 		self.possible_algs = ["BFS", "CC", "BC", "SSSP", "PR", "Delta"]
-		self.algname_translator = {"PR" : "PageRank"}
+		self.algname_translator = {"PR" : "PageRank", "CC (Async)" : "CC"}
 
 		# translate to "standard" names
-		self.datasetname_translator = {"kron" : "kron_g500-logn21", "rgg" : "rgg_n_2_24_s0", \
-					       #"soc" : "soc-orkut", 
-					       "osm" : "europe_osm", \
-					       "roadnet" : "roadNet-CA" }
+		self.datasetname_translator = {
+					      	   "kron" : "kron_g500-logn21", \
+					       	   "rgg" : "rgg_n_2_24_s0", \
+					       	   #"soc" : "soc-orkut", 
+					       	   "osm" : "europe_osm", \
+					       	   "roadnet" : "roadNet-CA", \
+					       	   "USA" : "road_usa", \
+					       }
 		self.engine = "Generic"
 		self.m_teps_switcher = {
 			"BFS"	: lambda edges, elapsed: float(edges) / elapsed / 1000.0,
@@ -258,7 +262,7 @@ class GPUEngineOutputParserHardwiredBFS(GPUEngineOutputParserBase):
 		]
 		self.engine = "Hardwired-BFS"
 
-
+# Parser class for parsing Galois output
 class GPUEngineOutputParserGalois(GPUEngineOutputParserBase):
 	def __init__(self, input_path):
 		super(GPUEngineOutputParserGalois, self).__init__(input_path)
@@ -276,10 +280,7 @@ class GPUEngineOutputParserGalois(GPUEngineOutputParserBase):
 		]
 		self.engine = "Galois"
 
-# num of v: 1139905 num of edges: 112751422
-# GPU Device 0: "Tesla K40c" with compute capability 3.5
-#> Detected Compute SM 3.5 hardware with 15 multi-processors
-# Runtime of nvgraph SSSP: 460417.687500 msec
+# Parser class for parsing NVGraph output
 class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
         def __init__(self, input_path):
             super(GPUEngineOutputParserNVGraph, self).__init__(input_path)
@@ -301,6 +302,38 @@ class GPUEngineOutputParserNVGraph(GPUEngineOutputParserBase):
             ]
             self.engine = "NVGraph"
 
+# Parser class for parsing Groute output
+class GPUEngineOutputParserGroute(GPUEngineOutputParserBase):
+        def __init__(self, input_path):
+	    print(input_path)
+            super(GPUEngineOutputParserGroute, self).__init__(input_path)
+            self.regex_array = [{   "regex": re.compile("read ([0-9]+) edges"),
+                                    "keys" : [{ "name" : "edges_visited", "type" : "int"}]
+                                },
+                                {
+                                    "regex": re.compile("(.+): (\d+(?:\.\d+)?) ms. <filter>"),
+                                    "keys" : [{ "name" : "algorithm", "type" : "{}"},
+                                               { "name" : "elapsed", "type" : "float"}]
+                                },
+                                {
+                                    "regex": re.compile("Testing with (.+) GPUs"),
+                                    "keys" : [{ "name" : "num_gpus", "type" : "{}" }]
+                                }
+            ]
+            self.engine = "Groute"
+	def PostProcess(self, param_dict, filename):
+		# hrs, mins, secs = tim.split(':')
+                # Groute.bfs.k40x3.OSM-eur-k.txt
+		reducedfilename = os.path.splitext(os.path.basename(filename))[0]
+		gpuname = reducedfilename.split('.')[2]
+		
+		param_dict['gpuinfo.name'] = gpuname[:-2]
+		filename = param_dict['algorithm'] + '-' + reducedfilename.split('.')[2] + '-' + reducedfilename.split('.')[3]
+		# param_dict['engine'], param_dict['algorithm'], param_dict['gpuinfo.name'], param_dict['dataset'] = reducedfilename.split('.')
+		# print(os.path.splitext(os.path.basename(filename))[0])
+                # print(filename)
+		return filename
+
 def main(argv):
    inputdir = ''
    outputdir = ''
@@ -314,7 +347,7 @@ def main(argv):
       if opt == '-h':
          print 'usage: python txtjson.py -l <library> -i <inputdir> -o <outputdir>'
 	 print '-l or --lib:    Set library for text to json conversion.'
-         print '                Available options: cusha, mapgraph, ligra, galois, hw-bc, hw-bfs, hw-cc'
+         print '                Available options: cusha, mapgraph, ligra, galois, nvgraph, groute, hw-bc, hw-bfs, hw-cc'
 	 sys.exit()
       elif opt in ("-l", "--lib"):
 	   library = arg
@@ -373,6 +406,13 @@ def main(argv):
       nvgraph_available_algs = ["pr", "sssp"] # missing sssp results
       for alg in nvgraph_available_algs:
         GPUEngineOutputParserNVGraph(nvgraph_input_path.format(alg)).WriteJSON(nvgraph_output_path)
+   elif library == 'groute':
+      # parse Groute output files
+      groute_input_path = inputdir
+      groute_output_path = outputdir
+      groute_available_algs = ["bfs", "cc", "pr", "sssp"]
+      for alg in groute_available_algs:
+        GPUEngineOutputParserGroute(groute_input_path.format(alg)).WriteJSON(groute_output_path)
    else:
       print 'error: requested library not found.'
       sys.exit(2)
