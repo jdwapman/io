@@ -1,0 +1,19 @@
+read 182081864 edges
+read data for 182081864 edges
+Running CC with 6 GPUs, starting with 6 GPUs
+Testing with 6 GPUs
+--------------------
+
+
+Loading graph /home/ypan/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr (1)
+/home/ypan/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr has 2097152 nodes and 182081864 edges
+
+----- Running CC Async -----
+
+
+CC (Async): 18.744000 ms. <filter>
+
+
+Components: 553159
+
+Overall: Test passed

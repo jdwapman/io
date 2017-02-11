@@ -1,0 +1,17 @@
+read 1963212211 edges
+read data for 1963212211 edges
+Running SSSP with 7 GPUs, starting with 7 GPUs
+Testing with 7 GPUs
+--------------------
+
+
+Loading graph /home/ypan/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr (1)
+/home/ypan/Projects/Groute/ppopp17-artifact/dataset/twitter/twitter-ICWSM10-component.gr has 51161011 nodes and 1963212211 edges
+
+----- Running SSSP -----
+
+
+SSSP: 871.138000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed

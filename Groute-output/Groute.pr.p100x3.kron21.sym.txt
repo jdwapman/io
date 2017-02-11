@@ -1,0 +1,4 @@
+read 182081864 edges
+read data for 182081864 edges
+*** Error in `/home/ypan/Projects/Groute/ppopp17-artifact/code/groute/build/pr': free(): corrupted unsorted chunks: 0x0000000000842390 ***
+*** Error in `/home/ypan/Projects/Groute/ppopp17-artifact/code/groute/build/pr': free(): corrupted unsorted chunks: 0x00000000008425a0 ***

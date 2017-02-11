@@ -1,0 +1,17 @@
+read 182081864 edges
+read data for 182081864 edges
+Running SSSP with 5 GPUs, starting with 5 GPUs
+Testing with 5 GPUs
+--------------------
+
+
+Loading graph /home/ypan/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr (1)
+/home/ypan/Projects/Groute/ppopp17-artifact/dataset/kron21.sym/kron_g500-simple-logn21-weighted-random.sym.gr has 2097152 nodes and 182081864 edges
+
+----- Running SSSP -----
+
+
+SSSP: 291.658000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed

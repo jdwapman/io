@@ -1,0 +1,18 @@
+read 347997111 edges
+read data for 347997111 edges
+Running BFS with 6 GPUs, starting with 6 GPUs
+Testing with 6 GPUs
+--------------------
+
+
+Loading graph /home/ypan/Projects/Groute/ppopp17-artifact/dataset/OSM-eur-k/osm-eur-karlsruhe.gr (1)
+/home/ypan/Projects/Groute/ppopp17-artifact/dataset/OSM-eur-k/osm-eur-karlsruhe.gr has 173789185 nodes and 347997111 edges
+
+----- Running BFS -----
+
+
+Starting METIS partitioning
+Converted graph to 64-bit, calling METIS
+Building partitioned graph and lookup tables
+METIS partitioning done
+ERROR in /home/ypan/Projects/Groute/ppopp17-artifact/code/groute/include/groute/communication.h:178: out of memory (2)

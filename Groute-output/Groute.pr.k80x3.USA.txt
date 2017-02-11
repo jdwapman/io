@@ -1,0 +1,22 @@
+read 57708624 edges
+read data for 57708624 edges
+Running Page Rank with 3 GPUs, starting with 3 GPUs
+Testing with 3 GPUs
+--------------------
+
+
+Loading graph /home/ypan/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr (1)
+/home/ypan/Projects/Groute/ppopp17-artifact/dataset/USA/USA-road-d.USA.gr has 23947347 nodes and 57708624 edges
+
+----- Running PR -----
+
+
+Starting METIS partitioning
+Converted graph to 64-bit, calling METIS
+Building partitioned graph and lookup tables
+METIS partitioning done
+
+PR: 650.023000 ms. <filter>
+
+Warning: Result not checked
+Overall: Test passed
