@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "europe_osm", 
+    "edges_visited": 347997111, 
+    "elapsed": 1209.123, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40", 
+    "num_gpus": "3", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.k40x3.OSM-eur-k.txt", 
+    "time": "Thu Feb  9 00:04:01 2017\n"
+}

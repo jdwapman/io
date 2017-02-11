@@ -1,0 +1,11 @@
+{
+    "algorithm": "CC", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 20.519, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40", 
+    "num_gpus": "4", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/cc/Groute.cc.k40x4.kron21.sym.txt", 
+    "time": "Thu Feb  9 00:04:01 2017\n"
+}
