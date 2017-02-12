@@ -1,0 +1,11 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 68993773, 
+    "elapsed": 33.6, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40m", 
+    "num_gpus": "6", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/sssp/Groute.sssp.k40mx6.soc-LiveJournal1.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

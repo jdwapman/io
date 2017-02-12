@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 54.215, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "7", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.m60x7.kron21.sym.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

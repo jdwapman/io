@@ -1,0 +1,10 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "3", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/pr/Groute.pr.m60x3.kron21.sym.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

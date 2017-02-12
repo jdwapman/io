@@ -1,0 +1,11 @@
+{
+    "algorithm": "CC", 
+    "dataset": "twitter-mpi", 
+    "edges_visited": 1963212211, 
+    "elapsed": 451.762, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40m", 
+    "num_gpus": "3", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/cc/Groute.cc.k40mx3.twitter.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

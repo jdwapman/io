@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 278.232, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "6", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.m60x6.USA.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

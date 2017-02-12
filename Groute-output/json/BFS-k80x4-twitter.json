@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "twitter-mpi", 
+    "edges_visited": 1963212211, 
+    "elapsed": 913.876, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k80", 
+    "num_gpus": "4", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.k80x4.twitter.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

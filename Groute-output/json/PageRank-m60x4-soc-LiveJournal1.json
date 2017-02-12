@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 68993773, 
+    "elapsed": 486.061, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "4", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/pr/Groute.pr.m60x4.soc-LiveJournal1.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

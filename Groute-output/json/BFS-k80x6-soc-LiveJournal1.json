@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "soc-LiveJournal1", 
+    "edges_visited": 68993773, 
+    "elapsed": 44.717, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k80", 
+    "num_gpus": "6", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.k80x6.soc-LiveJournal1.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

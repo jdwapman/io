@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 2553.011, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "1", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/pr/Groute.pr.m60x1.USA.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

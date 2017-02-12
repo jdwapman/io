@@ -1,0 +1,11 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 250.145, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k80", 
+    "num_gpus": "7", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/sssp/Groute.sssp.k80x7.kron21.sym.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

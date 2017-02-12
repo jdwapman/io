@@ -1,0 +1,11 @@
+{
+    "algorithm": "CC", 
+    "dataset": "europe_osm", 
+    "edges_visited": 347997111, 
+    "elapsed": 184.518, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "2", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/cc/Groute.cc.m60x2.OSM-eur-k.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

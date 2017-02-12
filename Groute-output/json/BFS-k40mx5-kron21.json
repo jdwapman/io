@@ -1,0 +1,11 @@
+{
+    "algorithm": "BFS", 
+    "dataset": "kron_g500-logn21", 
+    "edges_visited": 182081864, 
+    "elapsed": 53.428, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40m", 
+    "num_gpus": "5", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/bfs/Groute.bfs.k40mx5.kron21.sym.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

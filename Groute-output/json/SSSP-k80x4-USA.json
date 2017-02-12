@@ -1,0 +1,11 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 1331.993, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k80", 
+    "num_gpus": "4", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/sssp/Groute.sssp.k80x4.USA.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

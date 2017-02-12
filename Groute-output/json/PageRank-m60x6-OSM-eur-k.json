@@ -1,0 +1,11 @@
+{
+    "algorithm": "PageRank", 
+    "dataset": "europe_osm", 
+    "edges_visited": 347997111, 
+    "elapsed": 2807.586, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "6", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/pr/Groute.pr.m60x6.OSM-eur-k.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

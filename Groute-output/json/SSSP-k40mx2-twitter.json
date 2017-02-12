@@ -1,0 +1,11 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "twitter-mpi", 
+    "edges_visited": 1963212211, 
+    "elapsed": 3703.456, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40m", 
+    "num_gpus": "2", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/sssp/Groute.sssp.k40mx2.twitter.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

@@ -1,0 +1,11 @@
+{
+    "algorithm": "CC", 
+    "dataset": "road_usa", 
+    "edges_visited": 57708624, 
+    "elapsed": 17.571, 
+    "engine": "Groute", 
+    "gpuinfo.name": "m60", 
+    "num_gpus": "7", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/cc/Groute.cc.m60x7.USA.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}

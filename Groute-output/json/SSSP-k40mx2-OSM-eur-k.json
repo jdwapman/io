@@ -1,0 +1,11 @@
+{
+    "algorithm": "SSSP", 
+    "dataset": "europe_osm", 
+    "edges_visited": 347997111, 
+    "elapsed": 6696.68, 
+    "engine": "Groute", 
+    "gpuinfo.name": "k40m", 
+    "num_gpus": "2", 
+    "rawfile": "/home/mosama/io/Groute-output/txt/sssp/Groute.sssp.k40mx2.OSM-eur-k.txt", 
+    "time": "Sun Feb 12 09:32:01 2017\n"
+}
