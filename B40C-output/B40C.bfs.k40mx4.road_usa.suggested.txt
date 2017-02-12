@@ -1,0 +1,652 @@
+Using device 0: Tesla K40m
+Reading from /home/ypan/Projects/gunrock_dev/gunrock/dataset/large/road_usa/road_usa.mtx:
+  Parsing MARKET COO format  (23947347 nodes, 28854312 directed edges)... Done parsing (10s).
+  Converting 23947347 vertices, 57708624 directed edges (unordered tuples) to CSR format... Done converting (5s).
+Enabling peer access to GPU 1 from GPU 0
+Enabling peer access to GPU 2 from GPU 0
+Enabling peer access to GPU 3 from GPU 0
+Enabling peer access to GPU 2 from GPU 1
+Enabling peer access to GPU 3 from GPU 1
+Enabling peer access to GPU 0 from GPU 1
+Enabling peer access to GPU 3 from GPU 2
+Enabling peer access to GPU 0 from GPU 2
+Enabling peer access to GPU 1 from GPU 2
+Enabling peer access to GPU 0 from GPU 3
+Enabling peer access to GPU 1 from GPU 3
+Enabling peer access to GPU 2 from GPU 3
+
+Degree Histogram (23947347 vertices, 57708624 directed edges):
+	Degree 2^-1: 0 (0.00%)
+	Degree 2^0: 4762005 (19.89%)
+	Degree 2^1: 16580507 (69.24%)
+	Degree 2^2: 2604813 (10.88%)
+	Degree 2^3: 22 (0.00%)
+
+GPU 0 gets 5986837 vertices and 14427042 edges
+GPU 1 gets 5986837 vertices and 14425905 edges
+GPU 2 gets 5986837 vertices and 14429230 edges
+GPU 3 gets 5986836 vertices and 14426447 edges
+Done allocating gpu data structures on host
+Done constructing gpu data structures on host
+GPU 0 row_offsets: 5986838 elements (23947352 bytes)
+GPU 0 column_indices: 14427042 elements (230832672 bytes)
+GPU 1 row_offsets: 5986838 elements (23947352 bytes)
+GPU 1 column_indices: 14425905 elements (230814480 bytes)
+GPU 2 row_offsets: 5986838 elements (23947352 bytes)
+GPU 2 column_indices: 14429230 elements (230867680 bytes)
+GPU 3 row_offsets: 5986837 elements (23947348 bytes)
+GPU 3 column_indices: 14426447 elements (230823152 bytes)
+Done initializing gpu data structures on gpus
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 801.844 ms, rate: 71.970 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 1 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: -nan, cv: -nan
+    [Time (ms)]:         u: 801.844
+    [Rate MiEdges/s]:    u: 71.970, s: -nan, cv: -nan
+
+GPU 0 labels: 5986837 elements (23947348 bytes)
+GPU 0 visited mask: 2993419 elements (2993419 bytes)
+GPU 0 frontier queue[0] (queue-sizing factor 1.30x): 15565776 elements (62263104 bytes)
+GPU 0 frontier queue[1] (queue-sizing factor 1.30x): 18755154 elements (75020616 bytes)
+GPU 0 frontier queue[2] (queue-sizing factor 1.30x): 18755154 elements (75020616 bytes)
+GPU 0_filter_mask flags: 18755154 elements (18755154 bytes)
+GPU 1 labels: 5986837 elements (23947348 bytes)
+GPU 1 visited mask: 2993419 elements (2993419 bytes)
+GPU 1 frontier queue[0] (queue-sizing factor 1.30x): 15565776 elements (62263104 bytes)
+GPU 1 frontier queue[1] (queue-sizing factor 1.30x): 18753676 elements (75014704 bytes)
+GPU 1 frontier queue[2] (queue-sizing factor 1.30x): 18753676 elements (75014704 bytes)
+GPU 1_filter_mask flags: 18753676 elements (18753676 bytes)
+GPU 2 labels: 5986837 elements (23947348 bytes)
+GPU 2 visited mask: 2993419 elements (2993419 bytes)
+GPU 2 frontier queue[0] (queue-sizing factor 1.30x): 15565776 elements (62263104 bytes)
+GPU 2 frontier queue[1] (queue-sizing factor 1.30x): 18757999 elements (75031996 bytes)
+GPU 2 frontier queue[2] (queue-sizing factor 1.30x): 18757999 elements (75031996 bytes)
+GPU 2_filter_mask flags: 18757999 elements (18757999 bytes)
+GPU 3 labels: 5986836 elements (23947344 bytes)
+GPU 3 visited mask: 2993419 elements (2993419 bytes)
+GPU 3 frontier queue[0] (queue-sizing factor 1.30x): 15565773 elements (62263092 bytes)
+GPU 3 frontier queue[1] (queue-sizing factor 1.30x): 18754381 elements (75017524 bytes)
+GPU 3 frontier queue[2] (queue-sizing factor 1.30x): 18754381 elements (75017524 bytes)
+GPU 3_filter_mask flags: 18754381 elements (18754381 bytes)
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+Warmup iteration: 1818.663 ms
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 801.643 ms, rate: 71.988 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 2 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 801.743
+    [Rate MiEdges/s]:    u: 71.979, s: 0.013, cv: 0.0002
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1802.526 ms, rate: 32.015 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 1 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.526
+    [Rate MiEdges/s]:    u: 32.015, s: -nan, cv: -nan
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.170 ms, rate: 71.941 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 3 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 801.886
+    [Rate MiEdges/s]:    u: 71.966, s: 0.024, cv: 0.0003
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1801.568 ms, rate: 32.032 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 2 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.047
+    [Rate MiEdges/s]:    u: 32.024, s: 0.012, cv: 0.0004
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.199 ms, rate: 71.848 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 4 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.214
+    [Rate MiEdges/s]:    u: 71.937, s: 0.062, cv: 0.0009
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1802.458 ms, rate: 32.017 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 3 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.184
+    [Rate MiEdges/s]:    u: 32.021, s: 0.010, cv: 0.0003
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 801.831 ms, rate: 71.971 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 5 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.137
+    [Rate MiEdges/s]:    u: 71.944, s: 0.056, cv: 0.0008
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1802.045 ms, rate: 32.024 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 4 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.149
+    [Rate MiEdges/s]:    u: 32.022, s: 0.008, cv: 0.0002
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.429 ms, rate: 71.828 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 6 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.352
+    [Rate MiEdges/s]:    u: 71.924, s: 0.069, cv: 0.0010
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1807.131 ms, rate: 31.934 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 5 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.143
+    [Rate MiEdges/s]:    u: 32.004, s: 0.040, cv: 0.0013
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 804.622 ms, rate: 71.721 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 7 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.676
+    [Rate MiEdges/s]:    u: 71.895, s: 0.099, cv: 0.0014
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1800.643 ms, rate: 32.049 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 6 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.726
+    [Rate MiEdges/s]:    u: 32.012, s: 0.040, cv: 0.0013
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.034 ms, rate: 71.863 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 8 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.720
+    [Rate MiEdges/s]:    u: 71.891, s: 0.092, cv: 0.0013
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1804.289 ms, rate: 31.984 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 7 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.949
+    [Rate MiEdges/s]:    u: 32.008, s: 0.038, cv: 0.0012
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.321 ms, rate: 71.927 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 9 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.676
+    [Rate MiEdges/s]:    u: 71.895, s: 0.087, cv: 0.0012
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1802.731 ms, rate: 32.012 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 8 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.922
+    [Rate MiEdges/s]:    u: 32.008, s: 0.035, cv: 0.0011
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.256 ms, rate: 71.843 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 10 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.734
+    [Rate MiEdges/s]:    u: 71.890, s: 0.084, cv: 0.0012
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1803.838 ms, rate: 31.992 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 9 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.024
+    [Rate MiEdges/s]:    u: 32.007, s: 0.033, cv: 0.0010
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.367 ms, rate: 71.833 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 11 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.791
+    [Rate MiEdges/s]:    u: 71.885, s: 0.081, cv: 0.0011
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1790.409 ms, rate: 32.232 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 10 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.754
+    [Rate MiEdges/s]:    u: 32.029, s: 0.078, cv: 0.0024
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.498 ms, rate: 71.911 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 12 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.767
+    [Rate MiEdges/s]:    u: 71.887, s: 0.078, cv: 0.0011
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1804.140 ms, rate: 31.987 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 11 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.971
+    [Rate MiEdges/s]:    u: 32.025, s: 0.075, cv: 0.0023
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.400 ms, rate: 71.830 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 13 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.816
+    [Rate MiEdges/s]:    u: 71.883, s: 0.076, cv: 0.0011
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1803.988 ms, rate: 31.989 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 12 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.139
+    [Rate MiEdges/s]:    u: 32.022, s: 0.072, cv: 0.0023
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 801.759 ms, rate: 71.978 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 14 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.740
+    [Rate MiEdges/s]:    u: 71.890, s: 0.078, cv: 0.0011
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1795.310 ms, rate: 32.144 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 13 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.612
+    [Rate MiEdges/s]:    u: 32.032, s: 0.077, cv: 0.0024
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.134 ms, rate: 71.944 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 15 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.700
+    [Rate MiEdges/s]:    u: 71.893, s: 0.076, cv: 0.0011
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1798.003 ms, rate: 32.096 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 14 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.353
+    [Rate MiEdges/s]:    u: 32.036, s: 0.076, cv: 0.0024
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.125 ms, rate: 71.855 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 16 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 802.726
+    [Rate MiEdges/s]:    u: 71.891, s: 0.074, cv: 0.0010
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1803.077 ms, rate: 32.006 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 15 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.468
+    [Rate MiEdges/s]:    u: 32.034, s: 0.074, cv: 0.0023
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 813.533 ms, rate: 70.936 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 17 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 803.354
+    [Rate MiEdges/s]:    u: 71.835, s: 0.242, cv: 0.0034
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1809.264 ms, rate: 31.896 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 16 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.953
+    [Rate MiEdges/s]:    u: 32.026, s: 0.079, cv: 0.0025
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 804.505 ms, rate: 71.732 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 18 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 803.418
+    [Rate MiEdges/s]:    u: 71.829, s: 0.236, cv: 0.0033
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1821.210 ms, rate: 31.687 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 17 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.075
+    [Rate MiEdges/s]:    u: 32.006, s: 0.112, cv: 0.0035
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 813.472 ms, rate: 70.941 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 19 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 803.941
+    [Rate MiEdges/s]:    u: 71.782, s: 0.307, cv: 0.0043
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1812.758 ms, rate: 31.835 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 18 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.610
+    [Rate MiEdges/s]:    u: 31.996, s: 0.116, cv: 0.0036
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.309 ms, rate: 71.928 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 20 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 803.859
+    [Rate MiEdges/s]:    u: 71.789, s: 0.301, cv: 0.0042
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1812.576 ms, rate: 31.838 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 19 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1804.080
+    [Rate MiEdges/s]:    u: 31.988, s: 0.119, cv: 0.0037
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 806.972 ms, rate: 71.513 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 21 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.007
+    [Rate MiEdges/s]:    u: 71.776, s: 0.299, cv: 0.0042
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1810.132 ms, rate: 31.881 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 20 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1804.382
+    [Rate MiEdges/s]:    u: 31.982, s: 0.118, cv: 0.0037
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 812.107 ms, rate: 71.060 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 22 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.371
+    [Rate MiEdges/s]:    u: 71.744, s: 0.329, cv: 0.0046
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1794.263 ms, rate: 32.163 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 21 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.897
+    [Rate MiEdges/s]:    u: 31.991, s: 0.121, cv: 0.0038
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 805.912 ms, rate: 71.607 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 23 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.438
+    [Rate MiEdges/s]:    u: 71.738, s: 0.323, cv: 0.0045
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1796.422 ms, rate: 32.124 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 22 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.556
+    [Rate MiEdges/s]:    u: 31.997, s: 0.122, cv: 0.0038
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 801.971 ms, rate: 71.958 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 24 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.335
+    [Rate MiEdges/s]:    u: 71.747, s: 0.319, cv: 0.0045
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1795.556 ms, rate: 32.140 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 23 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.207
+    [Rate MiEdges/s]:    u: 32.003, s: 0.123, cv: 0.0038
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 810.825 ms, rate: 71.173 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 25 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.593
+    [Rate MiEdges/s]:    u: 71.724, s: 0.333, cv: 0.0046
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1807.065 ms, rate: 31.935 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 24 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1803.367
+    [Rate MiEdges/s]:    u: 32.000, s: 0.121, cv: 0.0038
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.970 ms, rate: 71.780 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 26 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.569
+    [Rate MiEdges/s]:    u: 71.726, s: 0.326, cv: 0.0046
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1777.630 ms, rate: 32.464 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 25 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.323
+    [Rate MiEdges/s]:    u: 32.019, s: 0.150, cv: 0.0047
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 810.100 ms, rate: 71.236 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 27 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.772
+    [Rate MiEdges/s]:    u: 71.708, s: 0.334, cv: 0.0047
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1782.300 ms, rate: 32.379 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 26 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.545
+    [Rate MiEdges/s]:    u: 32.033, s: 0.163, cv: 0.0051
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.141 ms, rate: 71.943 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 28 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.678
+    [Rate MiEdges/s]:    u: 71.716, s: 0.330, cv: 0.0046
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1806.997 ms, rate: 31.936 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 27 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.746
+    [Rate MiEdges/s]:    u: 32.029, s: 0.161, cv: 0.0050
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.680 ms, rate: 71.895 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 29 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.609
+    [Rate MiEdges/s]:    u: 71.723, s: 0.326, cv: 0.0045
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1821.589 ms, rate: 31.680 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 28 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1802.447
+    [Rate MiEdges/s]:    u: 32.017, s: 0.171, cv: 0.0054
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 802.327 ms, rate: 71.927 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 30 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.533
+    [Rate MiEdges/s]:    u: 71.729, s: 0.323, cv: 0.0045
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1782.828 ms, rate: 32.369 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 29 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.764
+    [Rate MiEdges/s]:    u: 32.029, s: 0.181, cv: 0.0056
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.324 ms, rate: 71.837 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 31 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.494
+    [Rate MiEdges/s]:    u: 71.733, s: 0.318, cv: 0.0044
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1787.937 ms, rate: 32.277 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 30 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.299
+    [Rate MiEdges/s]:    u: 32.037, s: 0.183, cv: 0.0057
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 805.543 ms, rate: 71.639 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 32 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.526
+    [Rate MiEdges/s]:    u: 71.730, s: 0.313, cv: 0.0044
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1799.874 ms, rate: 32.063 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 31 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.253
+    [Rate MiEdges/s]:    u: 32.038, s: 0.180, cv: 0.0056
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 803.413 ms, rate: 71.829 MiEdges/s, search_depth: 6262
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 33 test iterations (bias-corrected):
+    [Search depth]:      u: 6262.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 804.493
+    [Rate MiEdges/s]:    u: 71.733, s: 0.309, cv: 0.0043
+
+Partition bins per GPU: 1
+GPU 0 owns source 0x0
+[Multi-GPU BFS] finished. Validity: CORRECT
+  elapsed: 1806.737 ms, rate: 31.941 MiEdges/s
+  src: 0, nodes visited: 23947347, edges visited: 57708624
+  Summary after 32 test iterations (bias-corrected):
+    [Time (ms)]:         u: 1801.424
+    [Rate MiEdges/s]:    u: 32.035, s: 0.178, cv: 0.0056
+

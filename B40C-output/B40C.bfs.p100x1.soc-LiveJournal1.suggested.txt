@@ -1,0 +1,583 @@
+Using device 0: Tesla P100-PCIE-16GB
+Reading from /home/ypan/Projects/gunrock_dev/gunrock/dataset/large/soc-LiveJournal1/soc-LiveJournal1.mtx:
+  Parsing MARKET COO format  (4847571 nodes, 68993773 directed edges)... Done parsing (18s).
+  Converting 4847571 vertices, 68993773 directed edges (ordered tuples) to CSR format... Done converting (0s).
+
+Degree Histogram (4847571 vertices, 68993773 directed edges):
+	Degree 2^-1: 358331 (7.39%)
+	Degree 2^0: 1014392 (20.93%)
+	Degree 2^1: 912756 (18.83%)
+	Degree 2^2: 789662 (16.29%)
+	Degree 2^3: 688716 (14.21%)
+	Degree 2^4: 546171 (11.27%)
+	Degree 2^5: 333268 (6.87%)
+	Degree 2^6: 143586 (2.96%)
+	Degree 2^7: 45410 (0.94%)
+	Degree 2^8: 11897 (0.25%)
+	Degree 2^9: 2641 (0.05%)
+	Degree 2^10: 562 (0.01%)
+	Degree 2^11: 148 (0.00%)
+	Degree 2^12: 25 (0.00%)
+	Degree 2^13: 6 (0.00%)
+
+GPU 0 column_indices: 68993773 elements (1103900368 bytes)
+GPU 0 row_offsets: 4847572 elements (19390288 bytes)
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 549.844 ms, rate: 120.945 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 1 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: -nan, cv: -nan
+    [Time (ms)]:         u: 549.844
+    [Rate MiEdges/s]:    u: 120.945, s: -nan, cv: -nan
+
+GPU 0 labels: 4847571 elements (19390284 bytes)
+GPU 0 visited mask: 605947 elements (605947 bytes)
+GPU 0 frontier queue[0] (queue-sizing factor 1.30x): 89691904 elements (358767616 bytes)
+GPU 0 frontier queue[1] (queue-sizing factor 1.30x): 89691904 elements (358767616 bytes)
+Warmup iteration: 10.114 ms
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 430.232 ms, rate: 154.570 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 2 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 482.739
+    [Rate MiEdges/s]:    u: 137.758, s: 23.776, cv: 0.1726
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.661 ms, rate: 8679.968 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 1 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: -nan, cv: -nan
+    [Time (ms)]:         u: 7.661
+    [Rate MiEdges/s]:    u: 8679.968, s: -nan, cv: -nan
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 427.165 ms, rate: 155.680 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 3 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 462.674
+    [Rate MiEdges/s]:    u: 143.732, s: 19.742, cv: 0.1373
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.737 ms, rate: 8594.888 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 2 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.699
+    [Rate MiEdges/s]:    u: 8637.428, s: 60.161, cv: 0.0070
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 428.781 ms, rate: 155.093 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 4 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 453.708
+    [Rate MiEdges/s]:    u: 146.572, s: 17.091, cv: 0.1166
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.644 ms, rate: 8700.027 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 3 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.681
+    [Rate MiEdges/s]:    u: 8658.294, s: 55.820, cv: 0.0064
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.511 ms, rate: 155.919 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 5 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 447.995
+    [Rate MiEdges/s]:    u: 148.442, s: 15.380, cv: 0.1036
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.720 ms, rate: 8614.090 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 4 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.690
+    [Rate MiEdges/s]:    u: 8647.243, s: 50.653, cv: 0.0059
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.076 ms, rate: 156.078 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 6 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 444.187
+    [Rate MiEdges/s]:    u: 149.714, s: 14.105, cv: 0.0942
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.694 ms, rate: 8643.110 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 5 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.691
+    [Rate MiEdges/s]:    u: 8646.417, s: 43.906, cv: 0.0051
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.072 ms, rate: 156.079 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 7 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 441.505
+    [Rate MiEdges/s]:    u: 150.624, s: 13.099, cv: 0.0870
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.656 ms, rate: 8686.354 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 6 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.685
+    [Rate MiEdges/s]:    u: 8653.073, s: 42.521, cv: 0.0049
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.232 ms, rate: 156.021 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 8 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 439.536
+    [Rate MiEdges/s]:    u: 151.298, s: 12.276, cv: 0.0811
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.665 ms, rate: 8675.837 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 7 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.682
+    [Rate MiEdges/s]:    u: 8656.325, s: 39.758, cv: 0.0046
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.106 ms, rate: 156.067 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 9 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 438.002
+    [Rate MiEdges/s]:    u: 151.828, s: 11.593, cv: 0.0764
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.660 ms, rate: 8681.201 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 8 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.680
+    [Rate MiEdges/s]:    u: 8659.434, s: 37.845, cv: 0.0044
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.362 ms, rate: 155.973 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 10 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 436.810
+    [Rate MiEdges/s]:    u: 152.243, s: 11.008, cv: 0.0723
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.742 ms, rate: 8589.701 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 9 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.686
+    [Rate MiEdges/s]:    u: 8651.686, s: 42.350, cv: 0.0049
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 545.929 ms, rate: 121.813 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 11 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 444.894
+    [Rate MiEdges/s]:    u: 149.476, s: 13.901, cv: 0.0930
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.621 ms, rate: 8726.440 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 10 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.680
+    [Rate MiEdges/s]:    u: 8659.162, s: 46.401, cv: 0.0054
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 546.108 ms, rate: 121.773 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 12 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 451.873
+    [Rate MiEdges/s]:    u: 147.168, s: 15.480, cv: 0.1052
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.640 ms, rate: 8704.217 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 11 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.676
+    [Rate MiEdges/s]:    u: 8663.258, s: 46.068, cv: 0.0053
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.500 ms, rate: 155.923 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 13 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 449.814
+    [Rate MiEdges/s]:    u: 147.841, s: 15.019, cv: 0.1016
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.714 ms, rate: 8620.380 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 12 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.679
+    [Rate MiEdges/s]:    u: 8659.684, s: 45.635, cv: 0.0053
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.167 ms, rate: 156.045 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 14 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 448.039
+    [Rate MiEdges/s]:    u: 148.427, s: 14.595, cv: 0.0983
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.754 ms, rate: 8576.904 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 13 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.685
+    [Rate MiEdges/s]:    u: 8653.317, s: 49.357, cv: 0.0057
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 429.848 ms, rate: 154.708 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 15 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 446.778
+    [Rate MiEdges/s]:    u: 148.846, s: 14.157, cv: 0.0951
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.742 ms, rate: 8589.843 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 14 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.689
+    [Rate MiEdges/s]:    u: 8648.783, s: 50.364, cv: 0.0058
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 430.163 ms, rate: 154.595 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 16 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 445.702
+    [Rate MiEdges/s]:    u: 149.205, s: 13.753, cv: 0.0922
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.623 ms, rate: 8723.655 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 15 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.685
+    [Rate MiEdges/s]:    u: 8653.774, s: 52.240, cv: 0.0060
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.306 ms, rate: 155.994 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 17 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 444.513
+    [Rate MiEdges/s]:    u: 149.604, s: 13.417, cv: 0.0897
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.764 ms, rate: 8565.167 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 16 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.690
+    [Rate MiEdges/s]:    u: 8648.236, s: 55.116, cv: 0.0064
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 427.190 ms, rate: 155.671 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 18 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 443.513
+    [Rate MiEdges/s]:    u: 149.941, s: 13.095, cv: 0.0873
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.571 ms, rate: 8784.129 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 17 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.682
+    [Rate MiEdges/s]:    u: 8656.230, s: 62.724, cv: 0.0072
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 434.188 ms, rate: 153.162 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 19 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 443.013
+    [Rate MiEdges/s]:    u: 150.111, s: 12.748, cv: 0.0849
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.711 ms, rate: 8623.635 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 18 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.684
+    [Rate MiEdges/s]:    u: 8654.419, s: 61.334, cv: 0.0071
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 432.988 ms, rate: 153.586 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 20 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 442.500
+    [Rate MiEdges/s]:    u: 150.285, s: 12.432, cv: 0.0827
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.674 ms, rate: 8665.527 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 19 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.684
+    [Rate MiEdges/s]:    u: 8655.004, s: 59.660, cv: 0.0069
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 429.621 ms, rate: 154.790 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 21 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 441.870
+    [Rate MiEdges/s]:    u: 150.499, s: 12.157, cv: 0.0808
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.664 ms, rate: 8677.503 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 20 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.683
+    [Rate MiEdges/s]:    u: 8656.129, s: 58.287, cv: 0.0067
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 425.954 ms, rate: 156.123 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 22 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 441.120
+    [Rate MiEdges/s]:    u: 150.755, s: 11.924, cv: 0.0791
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.658 ms, rate: 8683.813 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 21 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.681
+    [Rate MiEdges/s]:    u: 8657.447, s: 57.131, cv: 0.0066
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 432.805 ms, rate: 153.651 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 23 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 440.752
+    [Rate MiEdges/s]:    u: 150.881, s: 11.666, cv: 0.0773
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.824 ms, rate: 8499.763 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 22 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.688
+    [Rate MiEdges/s]:    u: 8650.280, s: 65.105, cv: 0.0075
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.865 ms, rate: 155.789 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 24 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 440.156
+    [Rate MiEdges/s]:    u: 151.085, s: 11.453, cv: 0.0758
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.708 ms, rate: 8627.931 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 23 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.689
+    [Rate MiEdges/s]:    u: 8649.308, s: 63.779, cv: 0.0074
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 427.889 ms, rate: 155.417 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 25 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 439.651
+    [Rate MiEdges/s]:    u: 151.259, s: 11.246, cv: 0.0743
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.677 ms, rate: 8662.673 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 24 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.688
+    [Rate MiEdges/s]:    u: 8649.865, s: 62.437, cv: 0.0072
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.222 ms, rate: 156.024 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 26 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 439.119
+    [Rate MiEdges/s]:    u: 151.442, s: 11.058, cv: 0.0730
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.631 ms, rate: 8714.218 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 25 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.686
+    [Rate MiEdges/s]:    u: 8652.439, s: 62.463, cv: 0.0072
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 428.913 ms, rate: 155.046 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 27 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 438.733
+    [Rate MiEdges/s]:    u: 151.575, s: 10.865, cv: 0.0717
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.737 ms, rate: 8595.493 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 26 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.688
+    [Rate MiEdges/s]:    u: 8650.249, s: 62.211, cv: 0.0072
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 429.997 ms, rate: 154.655 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 28 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 438.415
+    [Rate MiEdges/s]:    u: 151.685, s: 10.678, cv: 0.0704
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.619 ms, rate: 8728.126 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 27 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.685
+    [Rate MiEdges/s]:    u: 8653.133, s: 62.817, cv: 0.0073
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 427.823 ms, rate: 155.441 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 29 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 438.041
+    [Rate MiEdges/s]:    u: 151.815, s: 10.509, cv: 0.0692
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.761 ms, rate: 8568.169 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 28 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.688
+    [Rate MiEdges/s]:    u: 8650.099, s: 63.700, cv: 0.0074
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.542 ms, rate: 155.907 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 30 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 437.647
+    [Rate MiEdges/s]:    u: 151.951, s: 10.353, cv: 0.0681
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.738 ms, rate: 8593.822 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 29 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.690
+    [Rate MiEdges/s]:    u: 8648.158, s: 63.419, cv: 0.0073
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.252 ms, rate: 156.013 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 31 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 437.270
+    [Rate MiEdges/s]:    u: 152.082, s: 10.205, cv: 0.0671
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.714 ms, rate: 8620.380 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 30 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.690
+    [Rate MiEdges/s]:    u: 8647.232, s: 62.522, cv: 0.0072
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 429.814 ms, rate: 154.721 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 32 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 437.033
+    [Rate MiEdges/s]:    u: 152.165, s: 10.050, cv: 0.0660
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.668 ms, rate: 8672.434 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 31 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.690
+    [Rate MiEdges/s]:    u: 8648.045, s: 61.638, cv: 0.0071
+
+---------------------------------------------------------------
+[Simple CPU BFS] finished. 
+  elapsed: 426.074 ms, rate: 156.079 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 33 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 436.693
+    [Rate MiEdges/s]:    u: 152.283, s: 9.915, cv: 0.0651
+
+[Hybrid contract-expand + two-phase GPU BFS] finished. Validity: CORRECT
+  elapsed: 7.590 ms, rate: 8762.129 MiEdges/s, search_depth: 13
+  src: 0, nodes visited: 4215590, edges visited: 66501055
+  Summary after 32 test iterations (bias-corrected):
+    [Search depth]:      u: 13.0, s: 0.0, cv: 0.0000
+    [Time (ms)]:         u: 7.687
+    [Rate MiEdges/s]:    u: 8651.610, s: 63.901, cv: 0.0074
+

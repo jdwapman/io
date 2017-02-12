@@ -1,0 +1,9 @@
+Using device 0: Tesla K40m
+Reading from /home/ypan/Projects/gunrock_dev/gunrock/dataset/large/soc-LiveJournal1/soc-LiveJournal1.mtx:
+  Parsing MARKET COO format  (4847571 nodes, 68993773 directed edges)... Done parsing (22s).
+  Converting 4847571 vertices, 68993773 directed edges (ordered tuples) to CSR format... Done converting (0s).
+[test_bfs.cu, 852] MultiGpuBfsEnactor cudaDeviceEnablePeerAccess failed (CUDA error 64: peer access is not supported between these two devices)
+Enabling peer access to GPU 1 from GPU 0
+Enabling peer access to GPU 2 from GPU 0
+Enabling peer access to GPU 3 from GPU 0
+Enabling peer access to GPU 4 from GPU 0
