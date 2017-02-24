@@ -98,8 +98,6 @@ df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 chart = {}
 for algorithm in ['BFS', 'DOBFS', 'PageRank']:
     dfplot = df[df['algorithm'] == algorithm]
-    if (algorithm == 'DOBFS'):
-        dfplot = dfplot[dfplot['idempotent'] == False]
     chart[algorithm] = Chart(dfplot).mark_point().encode(
         x=X('num_gpus:N',
             axis=Axis(
@@ -122,10 +120,12 @@ for algorithm in ['BFS', 'DOBFS', 'PageRank']:
                         title='Scalability Type',
                     ),
                     ),
-    ).transform_data()
-    # filter=((expr.df.algorithm != 'DOBFS') or
-    # (expr.df.idempotent == False))
-    # @TODO https://github.com/altair-viz/altair/issues/298
+    ).transform_data(
+        # how to do 'or' in a filter
+        # https://github.com/altair-viz/altair/issues/298
+        filter=((expr.df.algorithm != 'DOBFS') |
+                (expr.df.idempotent == False))
+    )
     print chart[algorithm].to_dict(data=False)
     save(df=dfplot,
          plotname=name + '_' + algorithm,
@@ -151,9 +151,9 @@ Scalability of DOBFS, BFS, and PR. {Strong, weak edge, weak vertex} scaling use 
 While providing both weak-vertex and -edge scaling, DOBFS doesn't have good strong scaling, because its computation and communication are both roughly on the order of O(|V<sub>i</sub>|). This effect is more obvious on P100, as computation is faster but inter-GPU bandwidth stays mostly the same. BFS and PR achieve almost linear weak and strong scaling from 1 to 8 GPUs.
 
 """ +
-             wrapChartInMd(chart['DOBFS'], anchor='%s_DOBFS' % name) +
-             wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) +
-             wrapChartInMd(chart['PageRank'], anchor='%s_PageRank' % name) + """
+             "DOBFS" + wrapChartInMd(chart['DOBFS'], anchor='%s_DOBFS' % name) +
+             "BFS" + wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) +
+             "PageRank" + wrapChartInMd(chart['PageRank'], anchor='%s_PageRank' % name) + """
 [[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)], with links to the output JSON for each run<br/>
-""" % ('DOBFS', name, 'DOBFS', 'BFS', name, 'BFS', 'PageRank', name, 'PageRank')
+""" % ('DOBFS', name, '_d_o_b_f_s', 'BFS', name, '_b_f_s', 'PageRank', name, '_page_rank')
      ))
