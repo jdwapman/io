@@ -2,6 +2,7 @@ import pandas  # http://pandas.pydata.org
 import os      # built-in
 import re      # built-in
 import math    # built-in
+import numpy   # built-in
 
 # possible filtering functions
 
@@ -61,6 +62,16 @@ def replaceWith(src, dest, column):
 
 def equateM40(df):
     df.loc[df['gpuinfo.name'] == 'Tesla M40 24GB', 'gpuinfo.name'] = 'Tesla M40'
+    return df
+
+
+def equateNVIDIAGPUs(df):
+    df.loc[df['gpuinfo.name'] == 'k40', 'gpuinfo.name'] = 'Tesla K40c'
+    df.loc[df['gpuinfo.name'] == 'k40m', 'gpuinfo.name'] = 'Tesla K40m'
+    df.loc[df['gpuinfo.name'] == 'k80', 'gpuinfo.name'] = 'Tesla K80'
+    df.loc[df['gpuinfo.name'] == 'm60', 'gpuinfo.name'] = 'Tesla M60'
+    df.loc[df['gpuinfo.name'] == 'p100',
+           'gpuinfo.name'] = 'Tesla P100-PCIE-16GB'
     return df
 
 
@@ -168,6 +179,14 @@ def computeOtherMTEPSFromGunrock(df):
 
     # now calculate m_teps if it's empty but edges_visited and elapsed are
     # valid
+    m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
+    df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    return df
+
+
+def computeMTEPSFromEdgesAndElapsed(df):
+    if not {'m_teps'}.issubset(df.columns):
+        df['m_teps'] = numpy.nan
     m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
     df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
     return df
