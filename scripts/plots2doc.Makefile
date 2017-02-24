@@ -31,13 +31,22 @@ MGPU_SCALABILITY_OUTPUTS = output/mgpu_scalability.md \
 	output/mgpu_scalability_DOBFS_table_html.md \
 	output/mgpu_scalability_PageRank_table_html.md
 
+GROUTE_OUTPUTS = output/groute.md \
+	output/groute_table_html.md \
+	output/groute_Tesla\ P100-PCIE-16GB.md \
+	output/groute_Tesla\ K40c.md \
+	output/groute_Tesla\ K40m.md \
+	output/groute_Tesla\ K80.md \
+	output/groute_Tesla\ M60.md
+
 ALL = $(ENGINES_OUTPUTS) \
 	$(AB_RANDOM_OUTPUTS) \
 	$(GUNROCK_GPUS_OUTPUTS) \
 	$(FRONTIER_SIZE_OUTPUTS) \
 	$(MGPU_SPEEDUP_OUTPUTS) \
 	$(MGPU_PARTITION_OUTPUTS) \
-	$(MGPU_SCALABILITY_OUTPUTS)
+	$(MGPU_SCALABILITY_OUTPUTS) \
+	$(GROUTE_OUTPUTS)
 
 PLOTTING_FILES = fileops.py filters.py logic.py
 
@@ -65,6 +74,9 @@ $(MGPU_PARTITION_OUTPUTS): altair_mgpu_partition.py $(PLOTTING_FILES)
 
 $(MGPU_SCALABILITY_OUTPUTS): altair_mgpu_scalability.py $(PLOTTING_FILES)
 		./altair_mgpu_scalability.py
+
+$(GROUTE_OUTPUTS): altair_groute.py $(PLOTTING_FILES)
+		./altair_groute.py
 
 install: $(ALL)
 		cp $(ALL) $(DEST)
