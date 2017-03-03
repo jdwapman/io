@@ -1,0 +1,181 @@
+Loading Matrix-market coordinate-formatted graph ...
+  Reading directly from stored binary CSR arrays ...
+Done reading (1s).
+
+Degree Histogram (2097152 vertices, 182081864 edges):
+    Degree   0: 553065 (26.37%)
+    Degree 2^0: 238482 (11.37%)
+    Degree 2^1: 241389 (11.51%)
+    Degree 2^2: 253643 (12.09%)
+    Degree 2^3: 156277 (7.45%)
+    Degree 2^4: 249285 (11.89%)
+    Degree 2^5: 104845 (5.00%)
+    Degree 2^6: 101726 (4.85%)
+    Degree 2^7: 116250 (5.54%)
+    Degree 2^8: 39 (0.00%)
+    Degree 2^9: 54255 (2.59%)
+    Degree 2^10: 20273 (0.97%)
+    Degree 2^11: 76 (0.00%)
+    Degree 2^12: 5985 (0.29%)
+    Degree 2^13: 1330 (0.06%)
+    Degree 2^14: 0 (0.00%)
+    Degree 2^15: 210 (0.01%)
+    Degree 2^16: 21 (0.00%)
+    Degree 2^17: 1 (0.00%)
+
+  Converting 2097152 vertices, 182081864 directed edges (unordered tuples) to CSR format...
+Done converting (5s).
+Source vertex: 0
+Using 3 GPU(s): [ 0 1 2 ].
+Partition begin. seed=1488562930
+partition end. (2508.500099 ms)
+Using traversal-mode LB
+__________________________
+2	 0	 0	 queue3 	 oversize :	 699053 ->	 2097154
+2	 1	 0	 queue3 	 oversize :	 699053 ->	 2097154
+0	 1	 0	 queue3 	 oversize :	 699052 ->	 2097154
+1	 1	 0	 queue3 	 oversize :	 699053 ->	 2097154
+1	 2	 0	 queue3 	 oversize :	 2097154 ->	 20349482
+0	 2	 0	 queue3 	 oversize :	 2097154 ->	 20566954
+2	 2	 0	 queue3 	 oversize :	 2097154 ->	 21506800
+1	 2	 0	 queue3 	 oversize :	 699053 ->	 2097154
+0	 2	 0	 queue3 	 oversize :	 699052 ->	 2097154
+2	 3	 0	 queue3 	 oversize :	 2097154 ->	 41461179
+0	 3	 0	 queue3 	 oversize :	 2097154 ->	 40900219
+1	 3	 0	 queue3 	 oversize :	 2097154 ->	 41146574
+--------------------------
+iteration 0 elapsed: 56.837082 ms, src = 0, #iteration = 8
+__________________________
+2	 3	 0	 queue3 	 oversize :	 41461179 ->	 41466860
+--------------------------
+iteration 1 elapsed: 33.190966 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 2 elapsed: 20.989180 ms, src = 0, #iteration = 8
+__________________________
+2	 3	 0	 queue3 	 oversize :	 41466860 ->	 41658767
+--------------------------
+iteration 3 elapsed: 33.592939 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 4 elapsed: 20.872116 ms, src = 0, #iteration = 8
+__________________________
+0	 3	 0	 queue3 	 oversize :	 40900219 ->	 40922914
+--------------------------
+iteration 5 elapsed: 33.808947 ms, src = 0, #iteration = 8
+__________________________
+1	 3	 0	 queue3 	 oversize :	 41146574 ->	 41198767
+--------------------------
+iteration 6 elapsed: 33.609867 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 7 elapsed: 20.671129 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 8 elapsed: 20.811081 ms, src = 0, #iteration = 8
+__________________________
+0	 3	 0	 queue3 	 oversize :	 40922914 ->	 40927765
+--------------------------
+iteration 9 elapsed: 31.609058 ms, src = 0, #iteration = 8
+__________________________
+0	 3	 0	 queue3 	 oversize :	 40927765 ->	 40992152
+1	 3	 0	 queue3 	 oversize :	 41198767 ->	 41280272
+--------------------------
+iteration 10 elapsed: 32.792807 ms, src = 0, #iteration = 8
+__________________________
+0	 3	 0	 queue3 	 oversize :	 40992152 ->	 41049496
+--------------------------
+iteration 11 elapsed: 31.497002 ms, src = 0, #iteration = 7
+__________________________
+--------------------------
+iteration 12 elapsed: 20.420074 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 13 elapsed: 19.208908 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 14 elapsed: 19.294977 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 15 elapsed: 18.225908 ms, src = 0, #iteration = 7
+__________________________
+--------------------------
+iteration 16 elapsed: 18.201828 ms, src = 0, #iteration = 7
+__________________________
+--------------------------
+iteration 17 elapsed: 18.070936 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 18 elapsed: 18.086910 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 19 elapsed: 18.256903 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 20 elapsed: 18.141031 ms, src = 0, #iteration = 7
+__________________________
+--------------------------
+iteration 21 elapsed: 18.064022 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 22 elapsed: 18.029928 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 23 elapsed: 17.056942 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 24 elapsed: 17.300129 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 25 elapsed: 16.775131 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 26 elapsed: 16.837120 ms, src = 0, #iteration = 7
+__________________________
+--------------------------
+iteration 27 elapsed: 16.798973 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 28 elapsed: 16.895056 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 29 elapsed: 16.786098 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 30 elapsed: 16.928196 ms, src = 0, #iteration = 8
+__________________________
+--------------------------
+iteration 31 elapsed: 16.680002 ms, src = 0, #iteration = 8
+Computing reference value ...
+CPU BFS finished in 1237.526123 msec. cpu_search_depth: 6
+
+Label Validity: 
+CORRECT
+
+First 40 labels of the GPU result:
+[0:0 1:3 2:4 3:3 4:3 5:3 6:2147483647 7:3 8:4 9:3 10:3 11:3 12:3 13:2147483647 14:3 15:3 16:3 17:3 18:3 19:3 20:2147483647 21:2147483647 22:3 23:2147483647 24:4 25:3 26:3 27:3 28:4 29:2147483647 30:3 31:2147483647 32:3 33:3 34:3 35:2147483647 36:2147483647 37:3 38:4 39:2 ]
+
+	Memory Usage(B)	 #keys0,0	 #keys0,1 #keys1,0	 #keys1,1	 #ins1,0	 #ins1,1 #keys2,0	 #keys2,1	 #ins2,0	 #ins2,1 #keys3
+GPU_0	 604897280	 20566954	 41049496	 418350	 418350	 418348	 418348	 420958	 420958	 420956	 420956	 1538356
+GPU_1	 604897280	 20349482	 41280272	 417752	 417752	 417750	 417750	 420571	 420571	 420569	 420569	 1537372
+GPU_2	 616300544	 41658767	 21506800	 418283	 418283	 418281	 418281	 417779	 417779	 417777	 417777	 1535111
+	 queue_sizing =	 59.593316 	 59.051875	 in_sizing =	 1.000000
+
+ [BFS] finished.
+ avg. elapsed: 22.6982 ms
+ iterations: 8
+ min. elapsed: 16.6800 ms
+ max. elapsed: 56.8371 ms
+ rate: 8021.8682 MiEdges/s
+ src: 0
+ nodes_visited: 1543901
+ edges_visited: 182081678
+ nodes queued: 1546896
+ edges queued: 186161825
+ nodes redundance: 0.19%
+ edges redundance: 2.24%
+ load time: 8458.4839 ms
+ preprocess time: 3168.8871 ms
+ postprocess time: 143.0259 ms
+ total time: 13859.3960 ms
+

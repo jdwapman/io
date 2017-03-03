@@ -1,0 +1,156 @@
+Loading Matrix-market coordinate-formatted graph ...
+  Reading directly from stored binary CSR arrays ...
+Done reading (0s).
+
+Degree Histogram (2097152 vertices, 182081864 edges):
+    Degree   0: 553065 (26.37%)
+    Degree 2^0: 238482 (11.37%)
+    Degree 2^1: 241389 (11.51%)
+    Degree 2^2: 253643 (12.09%)
+    Degree 2^3: 156277 (7.45%)
+    Degree 2^4: 249285 (11.89%)
+    Degree 2^5: 104845 (5.00%)
+    Degree 2^6: 101726 (4.85%)
+    Degree 2^7: 116250 (5.54%)
+    Degree 2^8: 39 (0.00%)
+    Degree 2^9: 54255 (2.59%)
+    Degree 2^10: 20273 (0.97%)
+    Degree 2^11: 76 (0.00%)
+    Degree 2^12: 5985 (0.29%)
+    Degree 2^13: 1330 (0.06%)
+    Degree 2^14: 0 (0.00%)
+    Degree 2^15: 210 (0.01%)
+    Degree 2^16: 21 (0.00%)
+    Degree 2^17: 1 (0.00%)
+
+  Converting 2097152 vertices, 182081864 directed edges (unordered tuples) to CSR format...
+Done converting (6s).
+Source vertex: 0
+Using 1 GPU(s): [ 0 ].
+Using traversal-mode LB
+__________________________
+--------------------------
+iteration 0 elapsed: 3.921032 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 1 elapsed: 3.720999 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 2 elapsed: 3.786802 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 3 elapsed: 3.737211 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 4 elapsed: 3.711939 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 5 elapsed: 3.696918 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 6 elapsed: 3.722906 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 7 elapsed: 3.751040 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 8 elapsed: 3.752947 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 9 elapsed: 3.721952 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 10 elapsed: 3.712177 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 11 elapsed: 2.974987 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 12 elapsed: 3.688812 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 13 elapsed: 2.908945 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 14 elapsed: 3.753901 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 15 elapsed: 3.768206 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 16 elapsed: 3.733873 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 17 elapsed: 3.677130 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 18 elapsed: 2.827883 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 19 elapsed: 3.696918 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 20 elapsed: 2.935171 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 21 elapsed: 3.726006 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 22 elapsed: 3.659964 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 23 elapsed: 3.742933 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 24 elapsed: 3.690958 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 25 elapsed: 3.765106 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 26 elapsed: 3.711939 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 27 elapsed: 3.693819 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 28 elapsed: 3.705978 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 29 elapsed: 3.747940 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 30 elapsed: 3.783941 ms, src = 0, #iteration = 6
+__________________________
+--------------------------
+iteration 31 elapsed: 3.784895 ms, src = 0, #iteration = 6
+Computing reference value ...
+CPU BFS finished in 1135.550049 msec. cpu_search_depth: 6
+
+Label Validity: 
+CORRECT
+
+First 40 labels of the GPU result:
+[0:0 1:3 2:4 3:3 4:3 5:3 6:2147483647 7:3 8:4 9:3 10:3 11:3 12:3 13:2147483647 14:3 15:3 16:3 17:3 18:3 19:3 20:2147483647 21:2147483647 22:3 23:2147483647 24:4 25:3 26:3 27:3 28:4 29:2147483647 30:3 31:2147483647 32:3 33:3 34:3 35:2147483647 36:2147483647 37:3 38:4 39:2 ]
+
+	Memory Usage(B)	 #keys0,0	 #keys0,1
+GPU_0	 1545469952	 2097154	 2097154
+	 queue_sizing =	 1.000001 	 1.000001
+
+ [BFS] finished.
+ avg. elapsed: 3.6317 ms
+ iterations: 6
+ min. elapsed: 2.8279 ms
+ max. elapsed: 3.9210 ms
+ rate: 50136.4062 MiEdges/s
+ src: 0
+ nodes_visited: 1543901
+ edges_visited: 182081678
+ nodes queued: 3397235
+ edges queued: 23736
+ nodes redundance: 120.04%
+ load time: 7539.7310 ms
+ preprocess time: 450.8231 ms
+ postprocess time: 30.1170 ms
+ total time: 9337.4748 ms
+
