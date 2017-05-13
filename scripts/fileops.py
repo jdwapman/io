@@ -3,6 +3,7 @@ import json    # built-in
 import os
 import os.path
 import pandas
+import time
 from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
 
 from patch import *
@@ -107,9 +108,12 @@ def savefile(chart, name, fileformat, outputdir,
         if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
-                check_output([osx_svg2pdf, base + '.svg'],
+                # old: check_output([osx_svg2pdf, base + '.svg'],
+                #                   stderr=devnull)
+                check_output(['open', '-a', 'svg2pdf', base + '.svg'],
                              stderr=devnull)
                 # haven't got Automator to rename the file yet
+                time.sleep(2)   # wait for svg2pdf to finish
                 os.rename(base + ' copy.pdf', base + '.pdf')
 
         else:
