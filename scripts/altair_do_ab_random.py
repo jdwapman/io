@@ -117,8 +117,8 @@ for dataset in datasets:
                     ),
         text=Text(value=' '),
     ).configure_scale(
-        textBandWidth=20,
-        bandSize=20
+        textBandWidth=12,
+        bandSize=12
     )
     print chart[dataset].to_dict(data=False)
     # foo = open('%s_%s.json' % (name, dataset), 'w')
@@ -136,9 +136,10 @@ for dataset in datasets:
          columns=[item for item in columnsOfInterest if item not in [
              'num_vertices', 'num_edges']]
          )
-dfab = dfab[['dataset', 'do_a', 'do_b', 'num_edges', 'num_vertices', 'm_teps']]
-dfab['average_degree'] = dfab['num_edges'] / dfab['num_vertices']
-print dfab
+    dfab = dfab[['dataset', 'do_a', 'do_b',
+                 'num_edges', 'num_vertices', 'm_teps']]
+    dfab['average_degree'] = dfab['num_edges'] / dfab['num_vertices']
+    print dfab
 
 for y_axis in ['do_a', 'do_b']:
     chart[y_axis] = Chart(dfab).mark_point().encode(
