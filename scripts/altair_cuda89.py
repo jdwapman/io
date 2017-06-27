@@ -12,7 +12,7 @@ from logic import *
 name = 'cuda89'
 
 # begin user settings for this script
-roots = ['../gunrock-output/topc', '../gunrock-output/cuda9']
+roots = ['../gunrock-output/cuda8', '../gunrock-output/cuda9']
 fnFilterInputFiles = [fileEndsWithJSON,
                       ]
 fnPreprocessDF = [selectAnyOfThese('engine', ['Gunrock']),
@@ -25,7 +25,8 @@ fnPreprocessDF = [selectAnyOfThese('engine', ['Gunrock']),
                   ]
 fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 17),
                                          datetime.date(2016, 11, 18),
-                                         datetime.date(2017, 6, 24)]),
+                                         datetime.date(2017, 6, 27),
+					 datetime.date(2017, 6, 24)]),
                   deleteZeroMTEPS,
                   ]
 fnPostprocessDF = []
