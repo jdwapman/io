@@ -3,7 +3,7 @@
 import os
 
 # for binary in ["direction_optimizing_bfs", "breadth_first_search"]:
-for binary in ["direction_optimizing_bfs"]:
+for binary in ["dobfs"]:
     for mark_pred in ["", "--mark-pred"]:
         for directed in ["", "--undirected"]:
             for dataset in ['soc-LiveJournal1',
@@ -17,4 +17,5 @@ for binary in ["direction_optimizing_bfs"]:
                             'ak2010',
                             'delaunay_n13',
                             'coAuthorsDBLP']:
-                os.system("../../gunrock-build/bin/%s market ../dataset/large/%s/%s.mtx --src=0 %s %s --idempotence --iteration-num=10 --quiet --jsondir=." % (binary, dataset, dataset, mark_pred, directed))
+                os.system("../../gunrock-build/bin/%s market ../../gunrock/dataset/large/%s/%s.mtx --src=0 %s %s --idempotence --iteration-num=10 --quiet --jsondir=." %
+                          (binary, dataset, dataset, mark_pred, directed))
