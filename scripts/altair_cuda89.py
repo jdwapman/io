@@ -23,11 +23,7 @@ fnPreprocessDF = [selectAnyOfThese('engine', ['Gunrock']),
                   addJSONDetailsLink,
                   gunrockVersionGPU,
                   ]
-fnFilterDFRows = [selectAnyOfTheseDates([datetime.date(2016, 11, 17),
-                                         datetime.date(2016, 11, 18),
-                                         datetime.date(2017, 6, 27),
-					 datetime.date(2017, 6, 24)]),
-                  deleteZeroMTEPS,
+fnFilterDFRows = [deleteZeroMTEPS,
                   ]
 fnPostprocessDF = []
 # end user settings for this script
@@ -50,7 +46,7 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 
 # now make the graph
 
-chart = Chart(df).mark_point().encode(
+chart = Chart(df).mark_point(opacity=0.5).encode(
     x=X('dataset:N',
         axis=Axis(
             title='Dataset',
@@ -68,14 +64,14 @@ chart = Chart(df).mark_point().encode(
         ),
         scale=Scale(type='log'),
         ),
-    color=Color('algorithm:N',
+    color=Color('[gpuinfo.runtime_version]:N',
                 legend=Legend(
-                    title='Primitive',
+                    title='GPU runtime',
                 ),
                 ),
-    shape=Shape('[gpuinfo.driver_version]:N',
+    shape=Shape('[gpuinfo.runtime_version]:N',
                 legend=Legend(
-                    title='GPU Driver',
+                    title='GPU runtime',
                 ),
                 ),
 )
