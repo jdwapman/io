@@ -26,10 +26,8 @@ import pandas  # http://pandas.pydata.org
 import numpy
 import json    # built-in
 import os      # built-in
-import copy    # built-in
-from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError
 
-from fileops import savefile
+from fileops import savefile, savefile_df
 
 jsondir = '../gunrock-output/'
 
@@ -72,3 +70,4 @@ print bfs_chart.to_dict(data=False)
 savefile(bfs_chart, name='bfs_chart', fileformat='html')
 savefile(bfs_chart, name='bfs_chart', fileformat='json')
 savefile(bfs_chart, name='bfs_chart', fileformat='md')
+savefile_df(bfs_df, name='bfs_chart', fileformat='html')
