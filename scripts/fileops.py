@@ -113,7 +113,7 @@ def savefile(chart, name, fileformat, outputdir,
                 check_output(['open', '-a', 'svg2pdf', base + '.svg'],
                              stderr=devnull)
                 # haven't got Automator to rename the file yet
-                time.sleep(2)   # wait for svg2pdf to finish
+                time.sleep(3)   # wait for svg2pdf to finish
                 os.rename(base + ' copy.pdf', base + '.pdf')
 
         else:
