@@ -5,6 +5,9 @@ import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
+# excellent brewer color palettes https://jiffyclub.github.io/palettable/
+from palettable import colorbrewer as cb
+
 from fileops import save, wrapChartInMd
 from filters import *
 from logic import *
@@ -95,6 +98,7 @@ for frontier in ['input', 'output']:
         shape=Shape('dataset',
                     ),
         color=Color('dataset',
+                    scale=Scale(range=cb.diverging.Spectral_8.hex_colors),
                     ),
     )
     print chart[frontier].to_dict(data=False)
