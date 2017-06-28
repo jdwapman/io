@@ -192,48 +192,52 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
 # X: Speedup (log scale axis)
 # Column: Algorithm
 # Color: Speedup < 1
-data = 'speedup'
-chart[data] = Chart(df[df['engine'] != 'Gunrock']).mark_point().encode(
-    y=Y('dataset:N',
-        axis=Axis(
-            title='Dataset',
-        ),
-        ),
-    column=Column('algorithm:N',
-                  axis=Axis(
-                      title='Primitive',
-                      orient='top',
-                  )
-                  ),
-    row=Row('engine',
+colorings = ['bw', 'color']
+coloring_ranges = {'bw': ['#a0a0a0', '#101010'],
+                   'color': ['#ef8a62', '#67a9cf'],
+                   }
+for coloring in colorings:
+    data = 'speedup' + '_' + coloring
+    chart[data] = Chart(df[df['engine'] != 'Gunrock']).mark_point().encode(
+        y=Y('dataset:N',
+            axis=Axis(
+                title='Dataset',
             ),
-    x=X('speedup',
-        axis=Axis(
-            title="Gunrock's speedup",
-        ),
-        scale=Scale(type='log'),
-        ),
-    color=Color('faster_or_slower:N',
-                scale=Scale(
-                    range=['#a0a0a0', '#101010'],
+            ),
+        column=Column('algorithm:N',
+                      axis=Axis(
+                          title='Primitive',
+                          orient='top',
+                      )
+                      ),
+        row=Row('engine',
                 ),
-                legend=Legend(
-                    title="Gunrock's speedup",
-                ),
-                ),
-).transform_data(
-    calculate=[Formula(
-        expr='datum.speedup < 1 ? "< 1" : ">= 1"',
-        field='faster_or_slower',
-    )],
-)
-print chart[data].to_dict(data=False)
-save(chart=chart[data],
-     df=df,
-     plotname='%s_%s' % (name, data),
-     formats=['json', 'html', 'svg', 'png', 'pdf'],
-     )
-
+        x=X('speedup',
+            axis=Axis(
+                title="Gunrock's speedup",
+            ),
+            scale=Scale(type='log'),
+            ),
+        color=Color('faster_or_slower:N',
+                    scale=Scale(
+                        range=coloring_ranges[coloring],
+                    ),
+                    legend=Legend(
+                        title="Gunrock's speedup",
+                    ),
+                    ),
+    ).transform_data(
+        calculate=[Formula(
+            expr='datum.speedup < 1 ? "< 1" : ">= 1"',
+            field='faster_or_slower',
+        )],
+    )
+    print chart[data].to_dict(data=False)
+    save(chart=chart[data],
+         df=df,
+         plotname='%s_%s' % (name, data),
+         formats=['json', 'html', 'svg', 'png', 'pdf'],
+         )
 
 save(df=df,
      plotname=name,
@@ -269,7 +273,7 @@ of graph throughput (millions of edges per second, MTEPS) ...
              """
 Here's a "Small Multiple Dot Plot" ([design by Joe Mako](https://policyviz.com/hmv_post/run-time-column-chart/)) that shows Gunrock speedup over different engines on different primitives and datasets:
 """ +
-             wrapChartInMd(chart['speedup'], anchor='speedup') +
+             wrapChartInMd(chart['speedup_bw'], anchor='speedup') +
              """
 [Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
 """ % name),
