@@ -135,6 +135,15 @@ def selectTag(tag):
     return fn
 
 
+def selectTags(tagList):
+    def fn(df):
+        if 'tag' in df.columns:
+            return df[df['tag'].isin(tagList)]
+        else:
+            return df
+    return fn
+
+
 def deselectTag(tag):
     def fn(df):
         if 'tag' in df.columns:
