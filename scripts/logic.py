@@ -13,6 +13,8 @@ def filesToDF(roots, fnFilterInputFiles):
     # filter input files
     for fn in fnFilterInputFiles:
         json_input_files = filter(fn, json_input_files)
+    # listify this for Series call at end of fn
+    json_input_files = list(json_input_files)
 
     # dump input files into dataframe
     data_unfiltered = [json.load(open(jf)) for jf in json_input_files]
