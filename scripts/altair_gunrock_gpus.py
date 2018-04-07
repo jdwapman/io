@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
@@ -27,7 +27,7 @@ fnPreprocessDF = [
     # renameGpuinfoname,  # now it's gpuinfo_name
 ]
 fnFilterDFRows = [
-    selectTag('topc_arch'),
+    selectTags(['topc_arch', 'TitanV']),
     deleteZeroMTEPS,
     keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo.name']),
 ]
@@ -72,10 +72,13 @@ chart = Chart(df).mark_point().encode(
         ),
         ),
     column=Column('algorithm:N',
-                  axis=Axis(
-                      title='Primitive',
-                      orient='top',
-                  )
+                  header=Header(
+                      title='Primitive'
+                  ),
+                  # axis=Axis(
+                  #     title='Primitive',
+                  #     orient='top',
+                  # )
                   ),
     y=Y('m_teps',
         axis=Axis(
@@ -94,7 +97,9 @@ chart = Chart(df).mark_point().encode(
                 ),
                 ),
 )
-print chart.to_dict(data=False)
+print([(key, value)
+       for key, value in chart.to_dict().items() if key not in ['data']])
+# was: print(chart.to_dict(data=False))
 save(chart=chart,
      df=df,
      plotname=name,
