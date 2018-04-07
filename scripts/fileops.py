@@ -4,7 +4,8 @@ import os
 import os.path
 import pandas
 import time
-from subprocess import Popen, PIPE, STDOUT, check_output, CalledProcessError, call
+from io import StringIO
+from subprocess import Popen, PIPE, STDOUT, check_output, check_call, CalledProcessError, call
 
 from patch import *
 
@@ -17,13 +18,13 @@ def vega_to_output(input_json, fileformat, verbose=False):
     try:
         exe = executables[fileformat]
     except KeyError as e:
-        print e.output
+        print(e.output)
     try:
         # call vg2xxx to turn JSON it into xxx
         p = check_output([exe, input_json, ''])
         return p
     except CalledProcessError as e:
-        print e.output
+        print(e.output)
 
 
 def pipe_vl2vg(json_in, patchFunctions, debugFiles=False):
@@ -83,17 +84,8 @@ vlwrapper = """
 
 def savefile(chart, name, fileformat, outputdir,
              patchFunctions=[patchTwoLegends]):
-    if fileformat == 'html':
-        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
-            f.write(chart.to_html(local_file=False))
-    elif fileformat == 'json':
-        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
-            f.write(json.dumps(chart.to_dict(data=True)))
-    elif (fileformat == 'svg') or (fileformat == 'png'):
-        tmp = write2tempfile(pipe_vl2vg(chart.to_dict(), patchFunctions))
-        outfile = vega_to_output(tmp.name, fileformat)
-        with open(os.path.join(outputdir, name + '.' + fileformat), 'w') as f:
-            f.write(outfile)
+    if fileformat in ['html', 'svg', 'png', 'json']:
+        chart.savechart(os.path.join(outputdir, name) + '.' + fileformat)
     elif fileformat in ['pdf', 'eps']:
         # check if svg has been generated
         base = os.path.join(outputdir, name)
@@ -107,15 +99,13 @@ def savefile(chart, name, fileformat, outputdir,
         osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
         if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
             with open(os.devnull, 'w') as devnull:
-                # hide stderr
-                # old: check_output([osx_svg2pdf, base + '.svg'],
-                #                   stderr=devnull)
-                check_output(['open', '-a', 'svg2pdf', base + '.svg'],
-                             stderr=devnull)
-                # haven't got Automator to rename the file yet
-                time.sleep(3)   # wait for svg2pdf to finish
-                os.rename(base + ' copy.pdf', base + '.pdf')
-
+                try:
+                    # check_call worked where check_output didn't
+                    check_call(['open', '-a', 'svg2pdf', base + '.svg'],
+                               stderr=devnull)
+                except CalledProcessError as e:
+                    raise RuntimeError("command '{}' returned with error (code {}): {}".format(
+                        e.cmd, e.returncode, e.output))
         else:
             with open(os.devnull, 'w') as devnull:
                 # hide stderr
@@ -138,9 +128,16 @@ def wrapChartInMd(chart, anchor=''):
     # \htmlonly / \endhtmlonly. Seems to me I ought to be able to use raw HTML:
     # https://daringfireball.net/projects/markdown/syntax#html
     # but empirically, that doesn't appear to be the case.
+    chart_html = StringIO()
+    chart.save(chart_html, format='html')
     str = ''
     str += '\n\\htmlonly\n'
-    str += chart.to_html(template=vlwrapper, title=anchor)
+    # https://github.com/altair-viz/altair/issues/721#issuecomment-379483336
+    # "Or you can do the normal trick of writing to a file-like object using io.StringIO to avoid touching the file system."
+    # str += chart.to_html(template=vlwrapper, title=anchor)
+    # FIX: template, title not currently included
+    str += chart_html.getvalue()
+    chart_html.close()
     str += '\n\\endhtmlonly\n\n'
     return str
 
