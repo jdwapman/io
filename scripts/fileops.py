@@ -1,5 +1,6 @@
 from altair import Chart
 import json    # built-in
+import re
 import os
 import os.path
 import pandas
@@ -148,8 +149,7 @@ def save(chart=Chart(),
          outputdir="output",
          formats=[],
          sortby=[],
-         columns=[],
-         mdtext=""):
+         columns=[]):
 
     for fileformat in formats:
         if fileformat in ['tablehtml', 'tablemd']:
@@ -171,6 +171,12 @@ def save(chart=Chart(),
                     f.write('\n\\endhtmlonly\n')
         elif fileformat == 'md':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
+                chart_html = StringIO()
+                chart.save(chart_html, format='html')
+                # now save only everything inside <body> ... </body>
+                mdtext = re.search(r'<body>\s*(.+)\s*</body>',
+                                   chart_html.getvalue(),
+                                   re.DOTALL).group(1)
                 f.write(mdtext)
         elif fileformat == 'csv':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:

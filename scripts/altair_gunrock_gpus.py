@@ -75,6 +75,8 @@ chart = Chart(df).mark_point().encode(
                   header=Header(
                       title='Primitive'
                   ),
+                  # for 'top' below: "I think we haven't implemented it yet as we switched from scales to Vega layouts for faceting. We will add it back eventually."
+                  # https://github.com/altair-viz/altair/issues/720#issuecomment-379589240
                   # axis=Axis(
                   #     title='Primitive',
                   #     orient='top',
@@ -108,14 +110,4 @@ save(chart=chart,
              'dataset',
              'engine',
              'gunrock_version'],
-     columns=columnsOfInterest,
-     mdtext=("""
-# Comparison on Different GPUs
-
-We ran Gunrock on several GPUs on 5 primitives times 9 datasets. As the compute and memory bandwidth capabilities of the GPUs increase, so does Gunrock's performance.
-""" +
-             wrapChartInMd(chart, anchor=name) +
-             """
-[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
-""" % name),
-     )
+     columns=columnsOfInterest)
