@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -63,8 +63,8 @@ columnsOfInterest = ['algorithm',
 df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 # now make the graph
 
-datasets = [x.encode('ascii', 'ignore') for x in df.dataset.unique()]
-gpus = [x.encode('ascii', 'ignore') for x in df['gpuinfo.name'].unique()]
+datasets = [x for x in df.dataset.unique()]
+gpus = [x for x in df['gpuinfo.name'].unique()]
 chart = {}
 
 chart['all'] = Chart(df).mark_point().encode(
@@ -74,15 +74,14 @@ chart['all'] = Chart(df).mark_point().encode(
         ),
         ),
     column=Column('dataset:N',
-                  axis=Axis(
-                      title='Dataset',
-                      orient='top',
-                  )
+                  header=Header(
+                      title='Dataset'
+                  ),
                   ),
     row=Row('algorithm:N',
-            axis=Axis(
-                title='Primitive',
-            )
+            header=Header(
+                title='Primitive'
+            ),
             ),
     y=Y('m_teps',
         axis=Axis(
@@ -101,7 +100,8 @@ chart['all'] = Chart(df).mark_point().encode(
                 ),
                 ),
 )
-print chart['all'].to_dict(data=False)
+print([(key, value)
+       for key, value in chart['all'].to_dict().items() if key not in ['data']])
 save(df=df,
      plotname=name,
      formats=['tablemd', 'tablehtml'],
@@ -123,15 +123,14 @@ for dataset in datasets:
             ),
             ),
         column=Column('[gpuinfo.name]:N',
-                      axis=Axis(
-                          title='GPU',
-                          orient='top',
-                      )
+                      header=Header(
+                          title='GPU'
+                      ),
                       ),
         row=Row('algorithm:N',
-                axis=Axis(
-                    title='Primitive',
-                )
+                header=Header(
+                    title='Primitive'
+                ),
                 ),
         y=Y('m_teps',
             axis=Axis(
@@ -149,10 +148,11 @@ for dataset in datasets:
                         title='Engine',
                     ),
                     ),
-    ).transform_data(
-        filter=(expr.df.dataset == dataset)
+    ).transform_filter(
+        datum.dataset == dataset
     )
-    print chart[dataset].to_dict(data=False)
+    print([(key, value)
+           for key, value in chart[dataset].to_dict().items() if key not in ['data']])
     save(chart=chart[dataset],
          df=df,
          plotname=name + '_' + dataset,
@@ -167,15 +167,14 @@ for gpu in gpus:
             ),
             ),
         column=Column('dataset:N',
-                      axis=Axis(
-                          title='Dataset',
-                          orient='top',
-                      )
+                      header=Header(
+                          title='Dataset'
+                      ),
                       ),
         row=Row('algorithm:N',
-                axis=Axis(
-                    title='Primitive',
-                )
+                header=Header(
+                    title='Primitive'
+                ),
                 ),
         y=Y('m_teps',
             axis=Axis(
@@ -193,16 +192,16 @@ for gpu in gpus:
                         title='Engine',
                     ),
                     ),
-    ).transform_data(
-        # filter=(expr.df['gpuinfo.name'] == gpu)
-        filter="datum['gpuinfo.name'] == \"%s\"" % gpu,
+    ).transform_filter(
+        datum['gpuinfo.name'] == gpu,
     )
-    print chart[gpu].to_dict(data=False)
+    print([(key, value)
+           for key, value in chart[gpu].to_dict().items() if key not in ['data']])
     save(chart=chart[gpu],
          df=df,
          plotname=name + '_' + gpu,
          formats=['json', 'html', 'svg', 'png', 'pdf', 'md'],
-         mdtext="# %s" % gpu + wrapChartInMd(chart[gpu])
+         mdtext="# %s" % gpu + getChartHTML(chart[gpu])
          )
 
 save(plotname=name,
@@ -275,15 +274,15 @@ We note that Groute's circular work list overflowed on Tesla K40c for some PageR
 ## Full performance comparison
 
 The following plot compares [Gunrock 0.4](https://github.com/gunrock/gunrock/releases/tag/v0.4) with [Groute's PPoPP artifact](https://github.com/groute/ppopp17-artifact). It has multiple GPUs on one plot. We have broken them out by GPU on individual pages here:
-[ [Tesla P100](md_stats_groute__tesla__p100-_p_c_i_e-16_g_b.html)
-| [Tesla K40c](md_stats_groute__tesla__k40c.html)
-| [Tesla K40m](md_stats_groute__tesla__k40m.html)
-| [Tesla K80](md_stats_groute__tesla__k80.html)
-| [Tesla M60](md_stats_groute__tesla__m60.html)
+[ [Tesla P100](groute__tesla__p100-_p_c_i_e-16_g_b.html)
+| [Tesla K40c](groute__tesla__k40c.html)
+| [Tesla K40m](groute__tesla__k40m.html)
+| [Tesla K80](groute__tesla__k80.html)
+| [Tesla M60](groute__tesla__m60.html)
 ]
 
 """ +
-             wrapChartInMd(chart['all'], anchor='%s' % name) + """
-[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run<br/>
+             getChartHTML(chart['all'], anchor='%s' % name) + """
+[Source data](tables/%s_table_html.html), with links to the output JSON for each run<br/>
 """ % name
              ))

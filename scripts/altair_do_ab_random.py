@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -96,34 +96,43 @@ for dataset in datasets:
     # format argument:
     # https://github.com/altair-viz/altair/commit/1f6d1aaaba74b807430b8452592a3635336644cf
     # https://github.com/d3/d3-format/blob/master/README.md#format
-    chart[dataset] = Chart(dfd).mark_text(applyColorToBackground=True).encode(
+    # Altair 1 mark_text
+    # chart[dataset] =
+    # Chart(dfd).mark_text(applyColorToBackground=True).encode(
+    chart[dataset] = Chart(dfd).mark_text().encode(
         row=Row('do_a:O',
-                axis=Axis(format='.1',
-                          title='do_a',
-                          ),
+                header=Header(
+                    title='do_a',
+                ),
+                # axis=Axis(format='.1',
+                #           title='do_a',
+                #           ),
                 ),
         column=Column('do_b:O',
-                      axis=Axis(format='.1',
-                                title='do_b',
-                                labelAngle=-90.0,
-                                labelAlign='left',
-                                labelBaseline='middle',
-                                offset=0.0,
-                                ),
+                      header=Header(
+                          title='do_b',
+                      ),
+                      # axis=Axis(format='.1',
+                      #           title='do_b',
+                      #           labelAngle=-90.0,
+                      #           labelAlign='left',
+                      #           labelBaseline='middle',
+                      #           offset=0.0,
+                      #           ),
                       ),
         color=Color('m_teps',
                     scale=colormap,
                     legend=Legend(title='%s / MTEPS' % dataset),
                     ),
-        text=Text(value=' '),
-    ).configure_scale(
-        textBandWidth=12,
-        bandSize=12
+        # Altair 1 text value
+        # text=Text(value=' '),
+        # Altair 1 configure_scale
+        # ).configure_scale(
+        #     textBandWidth=12,
+        #     bandSize=12
     )
-    print chart[dataset].to_dict(data=False)
-    # foo = open('%s_%s.json' % (name, dataset), 'w')
-    # foo.write(df.to_json())
-    # foo.close()
+    print([(key, value)
+           for key, value in chart[dataset].to_dict().items() if key not in ['data']])
 
     save(chart=chart[dataset],
          df=dfd,
@@ -139,7 +148,6 @@ for dataset in datasets:
     dfab = dfab[['dataset', 'do_a', 'do_b',
                  'num_edges', 'num_vertices', 'm_teps']]
     dfab['average_degree'] = dfab['num_edges'] / dfab['num_vertices']
-    print dfab
 
 for y_axis in ['do_a', 'do_b']:
     chart[y_axis] = Chart(dfab).mark_point().encode(
@@ -176,8 +184,8 @@ Note that while the "islands" of high performance (the dark regions) for each da
 """
 
 for dataset in datasets:
-    mdtext += wrapChartInMd(chart[dataset], anchor=dataset)
-    mdtext += "\n[%s source data](md_stats_%s_%s_table_html.html)\n" % (
+    mdtext += getChartHTML(chart[dataset], anchor=dataset)
+    mdtext += "\n[%s source data](%s_%s_table.html)\n" % (
         dataset, name, dataset)
 
 save(plotname=name,
