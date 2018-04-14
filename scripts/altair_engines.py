@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -150,10 +150,9 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
             ),
             ),
         column=Column('algorithm:N',
-                      axis=Axis(
-                          title='Primitive',
-                          orient='top',
-                      )
+                      header=Header(
+                          title='Primitive'
+                      ),
                       ),
         y=Y(data,
             axis=Axis(
@@ -177,7 +176,8 @@ for (data, caption) in [('m_teps', 'MTEPS'), ('elapsed', 'Elapsed time (ms)')]:
                     ),
                     ),
     )
-    print chart[data].to_dict(data=False)
+    print([(key, value)
+           for key, value in chart[data].to_dict().items() if key not in ['data']])
     save(chart=chart[data],
          df=df,
          plotname='%s_%s' % (name, data),
@@ -205,10 +205,9 @@ for coloring in colorings:
             ),
             ),
         column=Column('algorithm:N',
-                      axis=Axis(
-                          title='Primitive',
-                          orient='top',
-                      )
+                      header=Header(
+                          title='Primitive'
+                      ),
                       ),
         row=Row('engine',
                 ),
@@ -226,13 +225,17 @@ for coloring in colorings:
                         title="Gunrock's speedup",
                     ),
                     ),
-    ).transform_data(
-        calculate=[Formula(
-            expr='datum.speedup < 1 ? "< 1" : ">= 1"',
-            field='faster_or_slower',
-        )],
+    ).transform_calculate(
+        faster_or_slower='datum.speedup < 1 ? "< 1" : ">= 1"',
     )
-    print chart[data].to_dict(data=False)
+    # ).transform_data(
+    #     calculate=[Formula(
+    #         expr='datum.speedup < 1 ? "< 1" : ">= 1"',
+    #         field='faster_or_slower',
+    #     )],
+
+    print([(key, value)
+           for key, value in chart[data].to_dict().items() if key not in ['data']])
     save(chart=chart[data],
          df=df,
          plotname='%s_%s' % (name, data),
@@ -265,16 +268,16 @@ We compared Gunrock against several other engines for graph analytics:
 Below are comparative results on 5 primitives times 9 datasets in terms
 of graph throughput (millions of edges per second, MTEPS) ...
 """ +
-             wrapChartInMd(chart['m_teps'], anchor='MTEPS') +
+             getChartHTML(chart['m_teps'], anchor='MTEPS') +
              """
 ... and elapsed time (ms).
 """ +
-             wrapChartInMd(chart['elapsed'], anchor='elapsed') +
+             getChartHTML(chart['elapsed'], anchor='elapsed') +
              """
 Here's a "Small Multiple Dot Plot" ([design by Joe Mako](https://policyviz.com/hmv_post/run-time-column-chart/)) that shows Gunrock speedup over different engines on different primitives and datasets:
 """ +
-             wrapChartInMd(chart['speedup_bw'], anchor='speedup') +
+             getChartHTML(chart['speedup_bw'], anchor='speedup') +
              """
-[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
+[Source data](tables/%s_table.html), with links to the output JSON for each run
 """ % name),
      )

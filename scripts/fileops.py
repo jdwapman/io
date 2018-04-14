@@ -124,23 +124,23 @@ def savefile_df(df, name, fileformat):
         )
 
 
-def wrapChartInMd(chart, anchor=''):
-    # In the output markdown, the chart (evidently) has to be wrapped in
-    # \htmlonly / \endhtmlonly. Seems to me I ought to be able to use raw HTML:
-    # https://daringfireball.net/projects/markdown/syntax#html
-    # but empirically, that doesn't appear to be the case.
+def getChartHTML(chart, anchor=''):
     chart_html = StringIO()
     chart.save(chart_html, format='html')
-    str = ''
-    str += '\n\\htmlonly\n'
+    # now save only everything inside <body> ... </body>
+    chart_html_only = re.search(r'<body>\s*(.+)\s*</body>',
+                                chart_html.getvalue(),
+                                re.DOTALL).group(1)
+    # fix the div id now
+    chart_html_only = re.sub(r'<div id="vis"></div>',
+                             r'<div id="%s"></div>' % anchor,
+                             chart_html_only)
+    chart_html_only = re.sub(r'vegaEmbed\("#vis", spec, opt\);',
+                             r'vegaEmbed("#%s", spec, opt);' % anchor,
+                             chart_html_only)
     # https://github.com/altair-viz/altair/issues/721#issuecomment-379483336
     # "Or you can do the normal trick of writing to a file-like object using io.StringIO to avoid touching the file system."
-    # str += chart.to_html(template=vlwrapper, title=anchor)
-    # FIX: template, title not currently included
-    str += chart_html.getvalue()
-    chart_html.close()
-    str += '\n\\endhtmlonly\n\n'
-    return str
+    return chart_html_only
 
 
 def save(chart=Chart(),
@@ -149,12 +149,13 @@ def save(chart=Chart(),
          outputdir="output",
          formats=[],
          sortby=[],
-         columns=[]):
+         columns=[],
+         mdtext=""):
 
     for fileformat in formats:
         if fileformat in ['tablehtml', 'tablemd']:
             suffix = {'tablehtml': '_table.html',
-                      'tablemd': '_table_html.md',
+                      'tablemd': '_table.html.md',
                       }
             tablefile = plotname + suffix[fileformat]
             # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
@@ -162,21 +163,15 @@ def save(chart=Chart(),
             with open(os.path.join(outputdir, tablefile), 'w') as f:
                 if (fileformat == 'tablemd'):
                     # Give it a title so it looks nice in "Related Pages"
-                    f.write('# Source data for %s\n\n\\htmlonly\n' % plotname)
+                    f.write('# Source data for %s\n\n' % plotname)
                 df.sort_values(sortby).to_html(buf=f,
                                                columns=columns,
                                                index=False,
                                                escape=False)
                 if (fileformat == 'tablemd'):
-                    f.write('\n\\endhtmlonly\n')
+                    f.write('\n')
         elif fileformat == 'md':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:
-                chart_html = StringIO()
-                chart.save(chart_html, format='html')
-                # now save only everything inside <body> ... </body>
-                mdtext = re.search(r'<body>\s*(.+)\s*</body>',
-                                   chart_html.getvalue(),
-                                   re.DOTALL).group(1)
                 f.write(mdtext)
         elif fileformat == 'csv':
             with open(os.path.join(outputdir, plotname + '.' + fileformat), 'w') as f:

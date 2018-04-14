@@ -5,7 +5,7 @@ import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -110,4 +110,14 @@ save(chart=chart,
              'dataset',
              'engine',
              'gunrock_version'],
-     columns=columnsOfInterest)
+     columns=columnsOfInterest,
+     mdtext=("""
+# Comparison on Different GPUs
+
+We ran Gunrock on several GPUs on 5 primitives times 9 datasets. As the compute and memory bandwidth capabilities of the GPUs increase, so does Gunrock's performance.
+""" +
+             getChartHTML(chart, anchor=name) +
+             """
+[Source data](tables/%s_table.html), with links to the output JSON for each run
+""" % name),
+     )
