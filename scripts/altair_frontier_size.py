@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
@@ -8,11 +8,11 @@ import datetime
 # excellent brewer color palettes https://jiffyclub.github.io/palettable/
 from palettable import colorbrewer as cb
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
-name = 'frontier'
+name = 'frontier_size'
 
 # begin user settings for this script
 roots = ['../gunrock-output/', ]
@@ -101,7 +101,8 @@ for frontier in ['input', 'output']:
                     scale=Scale(range=cb.diverging.Spectral_8.hex_colors),
                     ),
     )
-    print chart[frontier].to_dict(data=False)
+    print([(key, value)
+           for key, value in chart[frontier].to_dict().items() if key not in ['data']])
 
     save(chart=chart[frontier],
          df=df,
@@ -153,9 +154,9 @@ It appears from the results that the output frontier size is a better
 predictor of performance than the input frontier size.
 
 """ +
-             wrapChartInMd(chart['input'], anchor='input_frontier') +
-             wrapChartInMd(chart['output'], anchor='output_frontier') +
+             getChartHTML(chart['input'], anchor='input_frontier') +
+             getChartHTML(chart['output'], anchor='output_frontier') +
              """
-[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
+[Source data](%s_table_html.html), with links to the output JSON for each run
 """ % name),
      )

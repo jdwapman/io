@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -120,13 +120,11 @@ for algorithm in ['BFS', 'DOBFS', 'PageRank']:
                         title='Scalability Type',
                     ),
                     ),
-    ).transform_data(
-        # how to do 'or' in a filter
-        # https://github.com/altair-viz/altair/issues/298
-        filter=((expr.df.algorithm != 'DOBFS') |
-                (expr.df.idempotent == False))
-    )
-    print chart[algorithm].to_dict(data=False)
+    ).transform_filter((datum.algorithm != 'DOBFS') |
+                       (datum.idempotent == False)
+                       )
+    print([(key, value)
+           for key, value in chart[algorithm].to_dict().items() if key not in ['data']])
     save(df=dfplot,
          plotname=name + '_' + algorithm,
          formats=['tablemd', 'tablehtml'],
@@ -151,9 +149,9 @@ Scalability of DOBFS, BFS, and PR. {Strong, weak edge, weak vertex} scaling use 
 While providing both weak-vertex and -edge scaling, DOBFS doesn't have good strong scaling, because its computation and communication are both roughly on the order of O(|V<sub>i</sub>|). This effect is more obvious on P100, as computation is faster but inter-GPU bandwidth stays mostly the same. BFS and PR achieve almost linear weak and strong scaling from 1 to 8 GPUs.
 
 """ +
-             "DOBFS" + wrapChartInMd(chart['DOBFS'], anchor='%s_DOBFS' % name) +
-             "BFS" + wrapChartInMd(chart['BFS'], anchor='%s_BFS' % name) +
-             "PageRank" + wrapChartInMd(chart['PageRank'], anchor='%s_PageRank' % name) + """
-[[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)] [[%s source data](md_stats_%s_%s_table_html.html)], with links to the output JSON for each run<br/>
-""" % ('DOBFS', name, '_d_o_b_f_s', 'BFS', name, '_b_f_s', 'PageRank', name, '_page_rank')
+             "DOBFS" + getChartHTML(chart['DOBFS'], anchor='%s_DOBFS' % name) +
+             "BFS" + getChartHTML(chart['BFS'], anchor='%s_BFS' % name) +
+             "PageRank" + getChartHTML(chart['PageRank'], anchor='%s_PageRank' % name) + """
+[[%s source data](tables/%s_%s_table.html)] [[%s source data](tables/%s_%s_table.html)] [[%s source data](tables/%s_%s_table.html)], with links to the output JSON for each run<br/>
+""" % ('DOBFS', name, 'DOBFS', 'BFS', name, 'BFS', 'PageRank', name, 'PageRank')
      ))

@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -87,10 +87,11 @@ chart = Chart(df).mark_point().encode(
                     title='Partition Method',
                 ),
                 ),
-).transform_data(
-    filter=(expr.df.num_gpus == 4)
+).transform_filter(
+    datum.num_gpus == 4
 )
-print chart.to_dict(data=False)
+print([(key, value)
+       for key, value in chart.to_dict().items() if key not in ['data']])
 save(chart=chart,
      df=df,
      plotname=name,
@@ -119,8 +120,8 @@ Unfortunately, scale-free graphs are very difficult to partition under any circu
 
 Because none of these partitioning methods is clearly superior, all our multi-GPU results use the cheap random partitioner.
 """ +
-             wrapChartInMd(chart, anchor='mgpu_partition') +
+             getChartHTML(chart, anchor='mgpu_partition') +
              """
-[Source data](md_stats_%s_table_html.html), with links to the output JSON for each run
+[Source data](tables/%s_table.html), with links to the output JSON for each run
 """ % name),
      )

@@ -205,7 +205,7 @@ def computeNewMTEPSFromProcessTimes(df):
     def averagePT(row):
         pt = row['process_times']
         avg = sum(pt) / len(pt)
-        pt0 = filter(lambda f: f > (0.2 * avg), pt)
+        pt0 = list(filter(lambda f: f > (0.2 * avg), pt))
         return sum(pt0) / len(pt0)
     df['process_times_avg'] = df.apply(averagePT, axis=1)
     # now recompute m_teps

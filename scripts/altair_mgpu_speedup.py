@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from altair import *
 import pandas  # http://pandas.pydata.org
 import numpy
 import datetime
 
-from fileops import save, wrapChartInMd
+from fileops import save, getChartHTML
 from filters import *
 from logic import *
 
@@ -100,10 +100,9 @@ for data in ['all', 'geomean']:
                 ),
                 ),
             column=Column('algorithm:N',
-                          axis=Axis(
-                              title='Primitive',
-                              orient='top',
-                          )
+                          header=Header(
+                              title='Primitive'
+                          ),
                           ),
             y=Y('speedup',
                 axis=Axis(
@@ -122,8 +121,8 @@ for data in ['all', 'geomean']:
                             title='Dataset',
                         ),
                         ),
-        ).transform_data(
-            filter=(expr.df.num_gpus != 1)
+        ).transform_filter(
+            datum.num_gpus != 1
         )
     if (data == 'geomean'):
         dfplot = dfgmean
@@ -134,10 +133,9 @@ for data in ['all', 'geomean']:
                 ),
                 ),
             column=Column('algorithm:N',
-                          axis=Axis(
-                              title='Primitive',
-                              orient='top',
-                          )
+                          header=Header(
+                              title='Primitive'
+                          ),
                           ),
             y=Y('speedup',
                 axis=Axis(
@@ -146,10 +144,11 @@ for data in ['all', 'geomean']:
                 ),
                 # scale=Scale(type='log'),
                 ),
-        ).transform_data(
-            filter=(expr.df.num_gpus != 1)
+        ).transform_filter(
+            datum.num_gpus != 1
         )
-    print chart[data].to_dict(data=False)
+    print([(key, value)
+           for key, value in chart[data].to_dict().items() if key not in ['data']])
     save(df=dfplot,
          plotname=name + '_' + data,
          formats=['tablemd', 'tablehtml'],
@@ -173,10 +172,10 @@ We demonstrate multiple-GPU ("mGPU") speedup over 1GPU performance for six primi
 Most of the primitives scale fairly well from 1 to 6 GPUs. The exception is DOBFS, which (unlike the other experiments) is primarily limited by communication overhead.
 
 """ +
-             wrapChartInMd(chart['all'], anchor='%s_all' % name) +
-             wrapChartInMd(chart['geomean'], anchor='%s_geomean' % name) + """
-[Source data](md_stats_%s_%s_table_html.html), with links to the output JSON for each run<br/>
+             getChartHTML(chart['all'], anchor='%s_all' % name) +
+             getChartHTML(chart['geomean'], anchor='%s_geomean' % name) + """
+[Source data](tables/%s_%s_table.html), with links to the output JSON for each run<br/>
 """ % (name, 'all') + """
-[Geomean source data](md_stats_%s_%s_table_html.html)
+[Geomean source data](tables/%s_%s_table.html)
 """ % (name, 'geomean')
      ))
