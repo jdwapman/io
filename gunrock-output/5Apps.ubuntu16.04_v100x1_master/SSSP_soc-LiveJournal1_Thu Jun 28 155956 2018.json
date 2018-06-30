@@ -56,6 +56,7 @@
     "label" : "",
     "load_time" : 1148.3938694000244,
     "m_teps" : 999.79534912109375,
+    "tag" : "V100_Master",
     "makeout_latency" : 0,
     "mark_predecessors" : false,
     "max_grid_size" : 0,
