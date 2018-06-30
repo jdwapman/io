@@ -56,6 +56,7 @@
     "label" : "",
     "load_time" : 1260.2519989013672,
     "m_teps" : 44080.21484375,
+    "tag" : "V100",
     "makeout_latency" : 0,
     "mark_predecessors" : false,
     "max_grid_size" : 0,
