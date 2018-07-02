@@ -100,7 +100,9 @@ for frontier in ['input', 'output']:
         color=Color('dataset',
                     scale=Scale(range=cb.diverging.Spectral_8.hex_colors),
                     ),
-    )
+        tooltip=['dataset', '%s_%s_frontier' % (base, frontier),
+                 '%s_mteps' % base],
+    ).interactive()
     print([(key, value)
            for key, value in chart[frontier].to_dict().items() if key not in ['data']])
 
@@ -157,6 +159,6 @@ predictor of performance than the input frontier size.
              getChartHTML(chart['input'], anchor='input_frontier') +
              getChartHTML(chart['output'], anchor='output_frontier') +
              """
-[Source data](%s_table_html.html), with links to the output JSON for each run
+[Source data](tables/%s_table.html), with links to the output JSON for each run
 """ % name),
      )
