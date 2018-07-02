@@ -64,6 +64,7 @@ def write2tempfile(input):
     temp.close()
     return temp
 
+
 vlwrapper = """
   <!-- Container for the visualization {title} -->
   <div id="vis_{title}"></div>
@@ -85,6 +86,7 @@ vlwrapper = """
 
 def savefile(chart, name, fileformat, outputdir,
              patchFunctions=[patchTwoLegends]):
+    # assumes outputdir exists
     if fileformat in ['html', 'svg', 'png', 'json']:
         chart.savechart(os.path.join(outputdir, name) + '.' + fileformat)
     elif fileformat in ['pdf', 'eps']:
@@ -152,6 +154,8 @@ def save(chart=Chart(),
          columns=[],
          mdtext=""):
 
+    if not os.path.isdir(outputdir):
+        os.makedirs(outputdir)
     for fileformat in formats:
         if fileformat in ['tablehtml', 'tablemd']:
             suffix = {'tablehtml': '_table.html',
