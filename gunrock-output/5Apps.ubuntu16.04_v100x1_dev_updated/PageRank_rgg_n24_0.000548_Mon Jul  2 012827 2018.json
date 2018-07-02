@@ -56,6 +56,7 @@
     "label" : "",
     "load_time" : 1384060.2209568024,
     "m_teps" : 5683.36279296875,
+    "tag" : "volta_cuda_properties",
     "makeout_latency" : 0,
     "mark_predecessors" : false,
     "max_grid_size" : 0,
