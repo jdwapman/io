@@ -54,6 +54,7 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 columnsOfInterest = ['algorithm',
                      'dataset',
                      'm_teps',
+                     'elapsed',
                      'engine',
                      'gunrock_version',
                      'gpuinfo.name',
@@ -98,7 +99,9 @@ chart = Chart(df).mark_point().encode(
                     title='GPU',
                 ),
                 ),
-)
+    tooltip=['[gpuinfo.name]:N', 'm_teps', 'elapsed'],
+).interactive()
+
 print([(key, value)
        for key, value in chart.to_dict().items() if key not in ['data']])
 # was: print(chart.to_dict(data=False))
