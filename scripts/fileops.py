@@ -135,11 +135,26 @@ def getChartHTML(chart, anchor=''):
                                 re.DOTALL).group(1)
     # fix the div id now
     chart_html_only = re.sub(r'<div id="vis"></div>',
-                             r'<div id="%s"></div>' % anchor,
+                             r'<div id="vis_%s"></div>' % anchor,
                              chart_html_only)
     chart_html_only = re.sub(r'vegaEmbed\("#vis", spec, opt\);',
-                             r'vegaEmbed("#%s", spec, opt);' % anchor,
+                             r'vegaEmbed("#vis_%s", spec, opt);' % anchor,
                              chart_html_only)
+    # these three patches make the vegaEmbed call use the right div id
+    chart_html_only = re.sub(r"const el = document.getElementById\('vis'\);",
+                             r"const el_%s = document.getElementById('vis_%s');" % (
+                                 anchor, anchor),
+                             chart_html_only)
+    chart_html_only = re.sub(r'vegaEmbed\("#vis", spec, embed_opt\)',
+                             r'vegaEmbed("#vis_%s", spec, embed_opt)' % anchor,
+                             chart_html_only)
+    chart_html_only = re.sub(r'.catch\(error => showError\(el, error\)\)',
+                             r'.catch(error => showError(el_%s, error))' % anchor,
+                             chart_html_only)
+
+    # don't allow multiple newlines in a row, or else markdown sees it
+    # as a paragraph break
+    chart_html_only = re.sub(r'\n+', '\n', chart_html_only)
     # https://github.com/altair-viz/altair/issues/721#issuecomment-379483336
     # "Or you can do the normal trick of writing to a file-like object using io.StringIO to avoid touching the file system."
     return chart_html_only
