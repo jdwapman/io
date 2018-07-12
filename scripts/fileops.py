@@ -183,7 +183,7 @@ def save(chart=Chart(),
                 if (fileformat == 'tablemd'):
                     # Give it a title so it looks nice in "Related Pages"
                     f.write(
-                        '----\n-full_length: true\n----\n-\n# Source data for %s\n\n' % plotname)
+                        '---\ntitle: Source data for %s\nfull_length: true\n---\n\n# Source data for %s\n\n' % (plotname, plotname))
                 df.sort_values(sortby).to_html(buf=f,
                                                columns=columns,
                                                index=False,
