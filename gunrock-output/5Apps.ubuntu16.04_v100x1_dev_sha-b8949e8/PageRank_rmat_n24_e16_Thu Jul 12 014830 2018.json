@@ -56,6 +56,7 @@
     "label" : "",
     "load_time" : 3092680.340051651,
     "m_teps" : 4963.22802734375,
+    "tag" : "V100-Updated-CUDA-Properties",
     "makeout_latency" : 0,
     "mark_predecessors" : false,
     "max_grid_size" : 0,
