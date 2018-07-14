@@ -21,6 +21,7 @@ fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
 fnPreprocessDF = [
+    deleteZeroMTEPS,            # log scale goes bananas if this isn't here
 ]
 fnFilterDFRows = [
 ]
@@ -67,6 +68,7 @@ datasets = [x for x in df.dataset.unique()]
 gpus = [x for x in df['gpuinfo.name'].unique()]
 chart = {}
 
+# need != 0 because we're taking a log
 chart['all'] = Chart(df).mark_point().encode(
     x=X('num_gpus:N',
         axis=Axis(
@@ -99,7 +101,8 @@ chart['all'] = Chart(df).mark_point().encode(
                     title='GPU',
                 ),
                 ),
-)
+    tooltip=['num_gpus', 'm_teps', 'engine', '[gpuinfo.name]:N'],
+).interactive()
 print([(key, value)
        for key, value in chart['all'].to_dict().items() if key not in ['data']])
 save(df=df,
@@ -148,9 +151,10 @@ for dataset in datasets:
                         title='Engine',
                     ),
                     ),
+        tooltip=['num_gpus', 'm_teps', 'engine', '[gpuinfo.name]:N'],
     ).transform_filter(
         datum.dataset == dataset
-    )
+    ).interactive()
     print([(key, value)
            for key, value in chart[dataset].to_dict().items() if key not in ['data']])
     save(chart=chart[dataset],
@@ -192,16 +196,17 @@ for gpu in gpus:
                         title='Engine',
                     ),
                     ),
+        tooltip=['num_gpus', 'm_teps', 'engine', '[gpuinfo.name]:N'],
     ).transform_filter(
         datum['gpuinfo.name'] == gpu,
-    )
+    ).interactive()
     print([(key, value)
            for key, value in chart[gpu].to_dict().items() if key not in ['data']])
     save(chart=chart[gpu],
          df=df,
          plotname=name + '_' + gpu,
          formats=['json', 'html', 'svg', 'png', 'pdf', 'md'],
-         mdtext="# %s" % gpu + getChartHTML(chart[gpu])
+         mdtext="# %s\n" % gpu + getChartHTML(chart[gpu])
          )
 
 save(plotname=name,
@@ -274,15 +279,18 @@ We note that Groute's circular work list overflowed on Tesla K40c for some PageR
 ## Full performance comparison
 
 The following plot compares [Gunrock 0.4](https://github.com/gunrock/gunrock/releases/tag/v0.4) with [Groute's PPoPP artifact](https://github.com/groute/ppopp17-artifact). It has multiple GPUs on one plot. We have broken them out by GPU on individual pages here:
-[ [Tesla P100](groute__tesla__p100-_p_c_i_e-16_g_b.html)
-| [Tesla K40c](groute__tesla__k40c.html)
-| [Tesla K40m](groute__tesla__k40m.html)
-| [Tesla K80](groute__tesla__k80.html)
-| [Tesla M60](groute__tesla__m60.html)
+[ [Tesla P100](includes/groute_Tesla P100-PCIE-16GB.html)
+| [Tesla K40c](includes/groute_Tesla_K40c.html)
+| [Tesla K40m](includes/groute_Tesla_K40m.html)
+| [Tesla K80](includes/groute_Tesla_K80.html)
+| [Tesla M60](includes/groute_Tesla_M60.html)
 ]
 
 """ +
              getChartHTML(chart['all'], anchor='%s' % name) + """
-[Source data](tables/%s_table_html.html), with links to the output JSON for each run<br/>
+[Source data](tables/%s_table.html), with links to the output JSON for each run<br/>
 """ % name
              ))
+
+# raw html goes into includes
+# "Oh. Ok, and if you want the slate stuff around it, try including it in a main file."
