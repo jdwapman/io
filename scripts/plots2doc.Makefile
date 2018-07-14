@@ -38,13 +38,13 @@ MGPU_SCALABILITY_TABLES = output/mgpu_scalability_BFS_table.html.md \
 	output/mgpu_scalability_PageRank_table.html.md
 MGPU_SCALABILITY = $(MGPU_SCALABILITY_OUTPUTS) $(MGPU_SCALABILITY_TABLES)
 
-GROUTE_OUTPUTS = output/groute.md
-GROUTE_TABLES = output/groute_table.html.md \
-	output/groute_Tesla\ P100-PCIE-16GB.md \
-	output/groute_Tesla\ K40c.md \
-	output/groute_Tesla\ K40m.md \
-	output/groute_Tesla\ K80.md \
-	output/groute_Tesla\ M60.md
+GROUTE_OUTPUTS = output/groute.md \
+	output/groute_Tesla\ P100-PCIE-16GB.html \
+	output/groute_Tesla\ K40c.html \
+	output/groute_Tesla\ K40m.html \
+	output/groute_Tesla\ K80.html \
+	output/groute_Tesla\ M60.html
+GROUTE_TABLES = output/groute_table.html.md
 GROUTE = $(GROUTE_OUTPUTS) $(GROUTE_TABLES)
 
 ALLX = $(ENGINES_OUTPUTS) \
