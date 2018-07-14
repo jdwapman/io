@@ -14,7 +14,8 @@ name = 'gunrock_v100'
 # begin user settings for this script
 roots = ['../gunrock-output/5Apps.ubuntu16.04_v100x1_dev',
          '../gunrock-output/5Apps.ubuntu16.04_v100x1_dev_sha-b8949e8',
-         '../gunrock-output/5Apps.ubuntu16.04_v100x1_master']
+         '../gunrock-output/5Apps.ubuntu16.04_TitanVx1_dev_sha-b8949e8'
+         ]
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
