@@ -1,0 +1,216 @@
+Undirected due to mtx: 0
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/ASIC_320ks/.ASIC_320ks.mtx.ud.nosl.bin
+CPU GC finished in 57.759 msec.
+CORRECT
+Graph coloring found with 8 colors.
+
+CORRECT
+Graph coloring found with 21 colors.
+cpu, 64.7628, 
+warmup, 21.523, 0
+tight, 8.03571
+vxm, 19.1586
+
+CORRECT
+Graph coloring found with 21 colors.
+Undirected due to mtx: 0
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/FEM_3D_thermal2/.FEM_3D_thermal2.mtx.ud.nosl.bin
+CPU GC finished in 38.9051 msec.
+CORRECT
+Graph coloring found with 17 colors.
+
+CORRECT
+Graph coloring found with 51 colors.
+cpu, 42.1481, 
+warmup, 28.8732, 0
+tight, 19.7185
+vxm, 26.8547
+
+CORRECT
+Graph coloring found with 51 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/G3_circuit/.G3_circuit.mtx.ud.nosl.bin
+CPU GC finished in 573.199 msec.
+CORRECT
+Graph coloring found with 6 colors.
+
+CORRECT
+Graph coloring found with 16 colors.
+cpu, 608.07, 
+warmup, 66.9479, 0
+tight, 18.9238
+vxm, 61.6732
+
+CORRECT
+Graph coloring found with 16 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/af_shell3/.af_shell3.mtx.ud.nosl.bin
+CPU GC finished in 191.788 msec.
+CORRECT
+Graph coloring found with 27 colors.
+
+CORRECT
+Graph coloring found with 67 colors.
+cpu, 202.775, 
+warmup, 107.041, 0
+tight, 88.7904
+vxm, 104.915
+
+CORRECT
+Graph coloring found with 67 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/apache2/.apache2.mtx.ud.nosl.bin
+CPU GC finished in 202.495 msec.
+CORRECT
+Graph coloring found with 6 colors.
+
+CORRECT
+Graph coloring found with 20 colors.
+cpu, 218.075, 
+warmup, 38.27, 0
+tight, 13.6647
+vxm, 34.2582
+
+CORRECT
+Graph coloring found with 20 colors.
+Undirected due to mtx: 0
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/atmosmodd/.atmosmodd.mtx.ud.nosl.bin
+CPU GC finished in 458.978 msec.
+CORRECT
+Graph coloring found with 7 colors.
+
+CORRECT
+Graph coloring found with 21 colors.
+cpu, 486.653, 
+warmup, 62.6528, 0
+tight, 23.1229
+vxm, 55.9325
+
+CORRECT
+Graph coloring found with 21 colors.
+Undirected due to mtx: 0
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/cage13/.cage13.mtx.ud.nosl.bin
+CPU GC finished in 145.252 msec.
+CORRECT
+Graph coloring found with 16 colors.
+
+CORRECT
+Graph coloring found with 65 colors.
+cpu, 154.911, 
+warmup, 66.2661, 0
+tight, 48.9562
+vxm, 63.0052
+
+CORRECT
+Graph coloring found with 65 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/ecology2/.ecology2.mtx.ud.nosl.bin
+CPU GC finished in 295.2 msec.
+CORRECT
+Graph coloring found with 5 colors.
+
+CORRECT
+Graph coloring found with 14 colors.
+cpu, 317.074, 
+warmup, 43.3922, 0
+tight, 11.1923
+vxm, 39.5785
+
+CORRECT
+Graph coloring found with 14 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/offshore/.offshore.mtx.ud.nosl.bin
+CPU GC finished in 69.2849 msec.
+CORRECT
+Graph coloring found with 13 colors.
+
+CORRECT
+Graph coloring found with 35 colors.
+cpu, 74.976, 
+warmup, 30.5719, 0
+tight, 18.2785
+vxm, 27.9649
+
+CORRECT
+Graph coloring found with 35 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/parabolic_fem/.parabolic_fem.mtx.ud.nosl.bin
+CPU GC finished in 132.004 msec.
+CORRECT
+Graph coloring found with 7 colors.
+
+CORRECT
+Graph coloring found with 18 colors.
+cpu, 143.455, 
+warmup, 30.0419, 0
+tight, 10.5277
+vxm, 26.5412
+
+CORRECT
+Graph coloring found with 18 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/thermal2/.thermal2.mtx.ud.nosl.bin
+CPU GC finished in 434.609 msec.
+CORRECT
+Graph coloring found with 7 colors.
+
+CORRECT
+Graph coloring found with 18 colors.
+cpu, 461.494, 
+warmup, 58.5091, 0
+tight, 20.4021
+vxm, 52.8551
+
+CORRECT
+Graph coloring found with 18 colors.
+Undirected due to mtx: 0
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/gc-data/thermomech_dK/.thermomech_dK.mtx.ud.nosl.bin
+CPU GC finished in 46.859 msec.
+CORRECT
+Graph coloring found with 12 colors.
+
+CORRECT
+Graph coloring found with 31 colors.
+cpu, 51.3139, 
+warmup, 22.8188, 0
+tight, 12.2042
+vxm, 20.6886
+
+CORRECT
+Graph coloring found with 31 colors.
