@@ -1,0 +1,123 @@
+[
+ {
+   "dataset": "offshore",
+   "num-vertices": 259789,
+   "num-edges": 4242673,
+   "average-degree": 16.3312265,
+   "undirected": 1,
+   "num-colors": 33,
+   "elapsed": 42.7603,
+   "user-iter": 35
+ },
+ {
+   "dataset": "af_shell3",
+   "num-vertices": 504855,
+   "num-edges": 17562051,
+   "average-degree": 34.78632677,
+   "undirected": 1,
+   "num-colors": 62,
+   "elapsed": 199.305,
+   "user-iter": 67
+ },
+ {
+   "dataset": "parabolic_fem",
+   "num-vertices": 525825,
+   "num-edges": 3674625,
+   "average-degree": 6.988304094,
+   "undirected": 1,
+   "num-colors": 16,
+   "elapsed": 20.7432,
+   "user-iter": 18
+ },
+ {
+   "dataset": "apache2",
+   "num-vertices": 715176,
+   "num-edges": 4817870,
+   "average-degree": 6.736621475,
+   "undirected": 1,
+   "num-colors": 16,
+   "elapsed": 24.3944,
+   "user-iter": 20
+ },
+ {
+   "dataset": "ecology2",
+   "num-vertices": 999999,
+   "num-edges": 4995991,
+   "average-degree": 4.995995996,
+   "undirected": 1,
+   "num-colors": 10,
+   "elapsed": 20.3415,
+   "user-iter": 14
+ },
+ {
+   "dataset": "thermal2",
+   "num-vertices": 1228045,
+   "num-edges": 8580313,
+   "average-degree": 6.986969533,
+   "undirected": 1,
+   "num-colors": 16,
+   "elapsed": 36.5507,
+   "user-iter": 18
+ },
+ {
+   "dataset": "G3_circuit",
+   "num-vertices": 1585478,
+   "num-edges": 7660826,
+   "average-degree": 4.831871524,
+   "undirected": 1,
+   "num-colors": 12,
+   "elapsed": 30.3436,
+   "user-iter": 16
+ },
+ {
+   "dataset": "FEM_3D_thermal2",
+   "num-vertices": 147900,
+   "num-edges": 3489300,
+   "average-degree": 23.59229209,
+   "undirected": 0,
+   "num-colors": 48,
+   "elapsed": 48.8087,
+   "user-iter": 51
+ },
+ {
+   "dataset": "thermomech_dK",
+   "num-vertices": 204316,
+   "num-edges": 2846228,
+   "average-degree": 13.93051939,
+   "undirected": 0,
+   "num-colors": 27,
+   "elapsed": 29.1421,
+   "user-iter": 31
+ },
+ {
+   "dataset": "ASIC_320ks",
+   "num-vertices": 321671,
+   "num-edges": 1316085,
+   "average-degree": 4.091400841,
+   "undirected": 0,
+   "num-colors": 19,
+   "elapsed": 19.2803,
+   "user-iter": 21
+ },
+ {
+   "dataset": "cage13",
+   "num-vertices": 445315,
+   "num-edges": 7479343,
+   "average-degree": 16.79562332,
+   "undirected": 0,
+   "num-colors": 63,
+   "elapsed": 104.491,
+   "user-iter": 65
+ },
+ {
+   "dataset": "atmosmodd",
+   "num-vertices": 1270432,
+   "num-edges": 8814880,
+   "average-degree": 6.938490214,
+   "undirected": 0,
+   "num-colors": 16,
+   "elapsed": 40.0241,
+   "user-iter": 21
+ }
+]
+
