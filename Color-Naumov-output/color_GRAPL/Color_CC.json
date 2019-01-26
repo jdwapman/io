@@ -1,0 +1,110 @@
+[
+ {
+   "dataset": "offshore",
+   "num-vertices": 259789,
+   "num-edges": 4242673,
+   "average-degree": 16.3312265,
+   "undirected": 1,
+   "num-colors": 48,
+   "elapsed": 3.72
+ },
+ {
+   "dataset": "af_shell3",
+   "num-vertices": 504855,
+   "num-edges": 17562051,
+   "average-degree": 34.78632677,
+   "undirected": 1,
+   "num-colors": 80,
+   "elapsed": 14.7
+ },
+ {
+   "dataset": "parabolic_fem",
+   "num-vertices": 525825,
+   "num-edges": 3674625,
+   "average-degree": 6.988304094,
+   "undirected": 1,
+   "num-colors": 32,
+   "elapsed": 1.92
+ },
+ {
+   "dataset": "apache2",
+   "num-vertices": 715176,
+   "num-edges": 4817870,
+   "average-degree": 6.736621475,
+   "undirected": 1,
+   "num-colors": 43,
+   "elapsed": 2.53
+ },
+ {
+   "dataset": "ecology2",
+   "num-vertices": 999999,
+   "num-edges": 4995991,
+   "average-degree": 4.995995996,
+   "undirected": 1,
+   "num-colors": 32,
+   "elapsed": 2.06
+ },
+ {
+   "dataset": "thermal2",
+   "num-vertices": 1228045,
+   "num-edges": 8580313,
+   "average-degree": 6.986969533,
+   "undirected": 1,
+   "num-colors": 43,
+   "elapsed": 4.42
+ },
+ {
+   "dataset": "G3_circuit",
+   "num-vertices": 1585478,
+   "num-edges": 7660826,
+   "average-degree": 4.831871524,
+   "undirected": 1,
+   "num-colors": 32,
+   "elapsed": 2.97
+ },
+ {
+   "dataset": "FEM_3D_thermal2",
+   "num-vertices": 147900,
+   "num-edges": 3489300,
+   "average-degree": 23.59229209,
+   "undirected": 0,
+   "num-colors": 64,
+   "elapsed": 3.7
+ },
+ {
+   "dataset": "thermomech_dK",
+   "num-vertices": 204316,
+   "num-edges": 2846228,
+   "average-degree": 13.93051939,
+   "undirected": 0,
+   "num-colors": 48,
+   "elapsed": 2.46
+ },
+ {
+   "dataset": "ASIC_320ks",
+   "num-vertices": 321671,
+   "num-edges": 1316085,
+   "average-degree": 4.091400841,
+   "undirected": 0,
+   "num-colors": 48,
+   "elapsed": 2.73
+ },
+ {
+   "dataset": "cage13",
+   "num-vertices": 445315,
+   "num-edges": 7479343,
+   "average-degree": 16.79562332,
+   "undirected": 0,
+   "num-colors": 64,
+   "elapsed": 5.45
+ },
+ {
+   "dataset": "atmosmodd",
+   "num-vertices": 1270432,
+   "num-edges": 8814880,
+   "average-degree": 6.938490214,
+   "undirected": 0,
+   "num-colors": 46,
+   "elapsed": 3.8
+ }
+]
