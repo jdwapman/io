@@ -7,7 +7,7 @@
    "undirected": 1,
    "num-colors": 23,
    "elapsed": 14.2,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "af_shell3",
@@ -17,7 +17,7 @@
    "undirected": 1,
    "num-colors": 42,
    "elapsed": 44.1,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "parabolic_fem",
@@ -27,7 +27,7 @@
    "undirected": 1,
    "num-colors": 12,
    "elapsed": 6.99,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "apache2",
@@ -37,7 +37,7 @@
    "undirected": 1,
    "num-colors": 13,
    "elapsed": 7.49,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "ecology2",
@@ -47,7 +47,7 @@
    "undirected": 1,
    "num-colors": 10,
    "elapsed": 5.75,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "thermal2",
@@ -57,7 +57,7 @@
    "undirected": 1,
    "num-colors": 12,
    "elapsed": 11.6,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "G3_circuit",
@@ -67,7 +67,7 @@
    "undirected": 1,
    "num-colors": 11,
    "elapsed": 8.02,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -77,7 +77,7 @@
    "undirected": 0,
    "num-colors": 32,
    "elapsed": 16.3,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "thermomech_dK",
@@ -87,7 +87,7 @@
    "undirected": 0,
    "num-colors": 21,
    "elapsed": 10.4,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "ASIC_320ks",
@@ -97,7 +97,7 @@
    "undirected": 0,
    "num-colors": 15,
    "elapsed": 8.63,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "cage13",
@@ -107,7 +107,7 @@
    "undirected": 0,
    "num-colors": 35,
    "elapsed": 22,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  },
  {
    "dataset": "atmosmodd",
@@ -117,6 +117,6 @@
    "undirected": 0,
    "num-colors": 12,
    "elapsed": 9.24,
-   "tag": "Naumov/Color_JPL",
+   "tag": "Naumov/Color_JPL"
  }
 ]

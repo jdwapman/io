@@ -7,7 +7,7 @@
    "undirected": 1,
    "num-colors": 48,
    "elapsed": 3.72,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "af_shell3",
@@ -17,7 +17,7 @@
    "undirected": 1,
    "num-colors": 80,
    "elapsed": 14.7,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "parabolic_fem",
@@ -27,7 +27,7 @@
    "undirected": 1,
    "num-colors": 32,
    "elapsed": 1.92,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "apache2",
@@ -37,7 +37,7 @@
    "undirected": 1,
    "num-colors": 43,
    "elapsed": 2.53,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "ecology2",
@@ -47,7 +47,7 @@
    "undirected": 1,
    "num-colors": 32,
    "elapsed": 2.06,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "thermal2",
@@ -57,7 +57,7 @@
    "undirected": 1,
    "num-colors": 43,
    "elapsed": 4.42,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "G3_circuit",
@@ -67,7 +67,7 @@
    "undirected": 1,
    "num-colors": 32,
    "elapsed": 2.97,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -77,7 +77,7 @@
    "undirected": 0,
    "num-colors": 64,
    "elapsed": 3.7,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "thermomech_dK",
@@ -87,7 +87,7 @@
    "undirected": 0,
    "num-colors": 48,
    "elapsed": 2.46,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "ASIC_320ks",
@@ -97,7 +97,7 @@
    "undirected": 0,
    "num-colors": 48,
    "elapsed": 2.73,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "cage13",
@@ -107,7 +107,7 @@
    "undirected": 0,
    "num-colors": 64,
    "elapsed": 5.45,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  },
  {
    "dataset": "atmosmodd",
@@ -117,6 +117,6 @@
    "undirected": 0,
    "num-colors": 46,
    "elapsed": 3.8,
-   "tag": "Naumov/Color_CC",
+   "tag": "Naumov/Color_CC"
  }
 ]
