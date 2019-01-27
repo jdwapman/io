@@ -6,7 +6,8 @@
    "average-degree": 16.3312265,
    "undirected": 1,
    "num-colors": 23,
-   "elapsed": 14.2
+   "elapsed": 14.2,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "af_shell3",
@@ -15,7 +16,8 @@
    "average-degree": 34.78632677,
    "undirected": 1,
    "num-colors": 42,
-   "elapsed": 44.1
+   "elapsed": 44.1,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "parabolic_fem",
@@ -24,7 +26,8 @@
    "average-degree": 6.988304094,
    "undirected": 1,
    "num-colors": 12,
-   "elapsed": 6.99
+   "elapsed": 6.99,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "apache2",
@@ -33,7 +36,8 @@
    "average-degree": 6.736621475,
    "undirected": 1,
    "num-colors": 13,
-   "elapsed": 7.49
+   "elapsed": 7.49,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "ecology2",
@@ -42,7 +46,8 @@
    "average-degree": 4.995995996,
    "undirected": 1,
    "num-colors": 10,
-   "elapsed": 5.75
+   "elapsed": 5.75,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "thermal2",
@@ -51,7 +56,8 @@
    "average-degree": 6.986969533,
    "undirected": 1,
    "num-colors": 12,
-   "elapsed": 11.6
+   "elapsed": 11.6,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "G3_circuit",
@@ -60,7 +66,8 @@
    "average-degree": 4.831871524,
    "undirected": 1,
    "num-colors": 11,
-   "elapsed": 8.02
+   "elapsed": 8.02,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -69,7 +76,8 @@
    "average-degree": 23.59229209,
    "undirected": 0,
    "num-colors": 32,
-   "elapsed": 16.3
+   "elapsed": 16.3,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "thermomech_dK",
@@ -78,7 +86,8 @@
    "average-degree": 13.93051939,
    "undirected": 0,
    "num-colors": 21,
-   "elapsed": 10.4
+   "elapsed": 10.4,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "ASIC_320ks",
@@ -87,7 +96,8 @@
    "average-degree": 4.091400841,
    "undirected": 0,
    "num-colors": 15,
-   "elapsed": 8.63
+   "elapsed": 8.63,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "cage13",
@@ -96,7 +106,8 @@
    "average-degree": 16.79562332,
    "undirected": 0,
    "num-colors": 35,
-   "elapsed": 22
+   "elapsed": 22,
+   "tag": "Naumov/Color_JPL",
  },
  {
    "dataset": "atmosmodd",
@@ -105,6 +116,7 @@
    "average-degree": 6.938490214,
    "undirected": 0,
    "num-colors": 12,
-   "elapsed": 9.24
+   "elapsed": 9.24,
+   "tag": "Naumov/Color_JPL",
  }
 ]

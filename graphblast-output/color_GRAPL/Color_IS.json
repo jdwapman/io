@@ -7,7 +7,8 @@
    "undirected": 1,
    "num-colors": 35,
    "elapsed": 18.2785,
-   "user-iter": 35
+   "user-iter": 35,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "af_shell3",
@@ -17,7 +18,8 @@
    "undirected": 1,
    "num-colors": 67,
    "elapsed": 88.7904,
-   "user-iter": 67
+   "user-iter": 67,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "parabolic_fem",
@@ -27,7 +29,8 @@
    "undirected": 1,
    "num-colors": 18,
    "elapsed": 10.5277,
-   "user-iter": 18
+   "user-iter": 18,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "apache2",
@@ -37,7 +40,8 @@
    "undirected": 1,
    "num-colors": 20,
    "elapsed": 13.6647,
-   "user-iter": 20
+   "user-iter": 20,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "ecology2",
@@ -47,7 +51,8 @@
    "undirected": 1,
    "num-colors": 14,
    "elapsed": 11.1923,
-   "user-iter": 14
+   "user-iter": 14,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "thermal2",
@@ -57,7 +62,8 @@
    "undirected": 1,
    "num-colors": 18,
    "elapsed": 20.4021,
-   "user-iter": 18
+   "user-iter": 18,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "G3_circuit",
@@ -67,7 +73,8 @@
    "undirected": 1,
    "num-colors": 16,
    "elapsed": 18.9238,
-   "user-iter": 16
+   "user-iter": 16,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -77,7 +84,8 @@
    "undirected": 0,
    "num-colors": 51,
    "elapsed": 19.7185,
-   "user-iter": 51
+   "user-iter": 51,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "thermomech_dK",
@@ -87,7 +95,8 @@
    "undirected": 0,
    "num-colors": 31,
    "elapsed": 12.2042,
-   "user-iter": 31
+   "user-iter": 31,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "ASIC_320ks",
@@ -97,7 +106,8 @@
    "undirected": 0,
    "num-colors": 21,
    "elapsed": 8.03571,
-   "user-iter": 21
+   "user-iter": 21,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "cage13",
@@ -107,7 +117,8 @@
    "undirected": 0,
    "num-colors": 65,
    "elapsed": 48.9562,
-   "user-iter": 65
+   "user-iter": 65,
+   "tag": "graphblast/Color_IS",
  },
  {
    "dataset": "atmosmodd",
@@ -117,6 +128,7 @@
    "undirected": 0,
    "num-colors": 21,
    "elapsed": 23.1229,
-   "user-iter": 21
+   "user-iter": 21,
+   "tag": "graphblast/Color_IS",
  }
 ]

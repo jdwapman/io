@@ -6,7 +6,8 @@
    "average-degree": 16.3312265,
    "undirected": 1,
    "num-colors": 48,
-   "elapsed": 3.72
+   "elapsed": 3.72,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "af_shell3",
@@ -15,7 +16,8 @@
    "average-degree": 34.78632677,
    "undirected": 1,
    "num-colors": 80,
-   "elapsed": 14.7
+   "elapsed": 14.7,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "parabolic_fem",
@@ -24,7 +26,8 @@
    "average-degree": 6.988304094,
    "undirected": 1,
    "num-colors": 32,
-   "elapsed": 1.92
+   "elapsed": 1.92,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "apache2",
@@ -33,7 +36,8 @@
    "average-degree": 6.736621475,
    "undirected": 1,
    "num-colors": 43,
-   "elapsed": 2.53
+   "elapsed": 2.53,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "ecology2",
@@ -42,7 +46,8 @@
    "average-degree": 4.995995996,
    "undirected": 1,
    "num-colors": 32,
-   "elapsed": 2.06
+   "elapsed": 2.06,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "thermal2",
@@ -51,7 +56,8 @@
    "average-degree": 6.986969533,
    "undirected": 1,
    "num-colors": 43,
-   "elapsed": 4.42
+   "elapsed": 4.42,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "G3_circuit",
@@ -60,7 +66,8 @@
    "average-degree": 4.831871524,
    "undirected": 1,
    "num-colors": 32,
-   "elapsed": 2.97
+   "elapsed": 2.97,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -69,7 +76,8 @@
    "average-degree": 23.59229209,
    "undirected": 0,
    "num-colors": 64,
-   "elapsed": 3.7
+   "elapsed": 3.7,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "thermomech_dK",
@@ -78,7 +86,8 @@
    "average-degree": 13.93051939,
    "undirected": 0,
    "num-colors": 48,
-   "elapsed": 2.46
+   "elapsed": 2.46,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "ASIC_320ks",
@@ -87,7 +96,8 @@
    "average-degree": 4.091400841,
    "undirected": 0,
    "num-colors": 48,
-   "elapsed": 2.73
+   "elapsed": 2.73,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "cage13",
@@ -96,7 +106,8 @@
    "average-degree": 16.79562332,
    "undirected": 0,
    "num-colors": 64,
-   "elapsed": 5.45
+   "elapsed": 5.45,
+   "tag": "Naumov/Color_CC",
  },
  {
    "dataset": "atmosmodd",
@@ -105,6 +116,7 @@
    "average-degree": 6.938490214,
    "undirected": 0,
    "num-colors": 46,
-   "elapsed": 3.8
+   "elapsed": 3.8,
+   "tag": "Naumov/Color_CC",
  }
 ]
