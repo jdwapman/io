@@ -7,7 +7,7 @@
    "undirected": 1,
    "num-colors": 13,
    "elapsed": 64.7,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "af_shell3",
@@ -17,7 +17,7 @@
    "undirected": 1,
    "num-colors": 27,
    "elapsed": 174,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "parabolic_fem",
@@ -27,7 +27,7 @@
    "undirected": 1,
    "num-colors": 7,
    "elapsed": 130,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "apache2",
@@ -37,7 +37,7 @@
    "undirected": 1,
    "num-colors": 6,
    "elapsed": 186,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "ecology2",
@@ -47,7 +47,7 @@
    "undirected": 1,
    "num-colors": 5,
    "elapsed": 259,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "thermal2",
@@ -57,7 +57,7 @@
    "undirected": 1,
    "num-colors": 7,
    "elapsed": 432,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "G3_circuit",
@@ -67,7 +67,7 @@
    "undirected": 1,
    "num-colors": 6,
    "elapsed": 500,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -77,7 +77,7 @@
    "undirected": 0,
    "num-colors": 17,
    "elapsed": 39.1,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "thermomech_dK",
@@ -87,7 +87,7 @@
    "undirected": 0,
    "num-colors": 12,
    "elapsed": 46.6,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "ASIC_320ks",
@@ -97,7 +97,7 @@
    "undirected": 0,
    "num-colors": 8,
    "elapsed": 59.7,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "cage13",
@@ -107,7 +107,7 @@
    "undirected": 0,
    "num-colors": 16,
    "elapsed": 137,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  },
  {
    "dataset": "atmosmodd",
@@ -117,6 +117,6 @@
    "undirected": 0,
    "num-colors": 7,
    "elapsed": 414,
-   "tag": "Naumov/Color_CPU"
+   "tag": "CPU/Color_Greedy"
  }
 ]

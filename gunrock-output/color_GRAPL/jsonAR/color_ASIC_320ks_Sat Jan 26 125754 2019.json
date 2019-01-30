@@ -1,6 +1,6 @@
 {
     "engine": "Gunrock",
-    "command-line": "./bin/test_color_10.0_x86_64 --graph-type=market --graph-file=/data-2/topc-datasets/gc-data/ASIC_320ks/ASIC_320ks.mtx --JPL=true --LBCOLOR=true --seed=12312 --undirected --no-conflict=0 --user-iter=22 --prohibit-size=0 --jsondir=./jsonAR --tag=K40-AR-GRAPL --quick=false --test-run=false",
+    "command-line": "./bin/test_color_10.0_x86_64 --graph-type=market --graph-file=/data-2/topc-datasets/gc-data/ASIC_320ks/ASIC_320ks.mtx --JPL=true --LBCOLOR=true --seed=12312 --undirected --no-conflict=0 --user-iter=22 --prohibit-size=0 --jsondir=./jsonAR --tag=Gunrock/Color_AR --quick=false --test-run=false",
     "compiler": "Gnu GCC C/C++",
     "compiler-version": 50400000,
     "time": "Sat Jan 26 12:57:54 2019\n",
@@ -76,7 +76,7 @@
     "subqueue-latency": 0,
     "sw-k": 6,
     "sw-p": 0.0,
-    "tag": "K40-AR-GRAPL",
+    "tag": "Gunrock/Color_AR",
     "test-run": false,
     "trans-factor": 1.0,
     "undirected": "1",

@@ -19,7 +19,7 @@
     "binary-prefix": "",
     "communicate-latency": 0,
     "communicate-multipy": 1.0,
-    "dataset": "",
+    "dataset": "rgg_n_2_24_s0",
     "device": [
         0
     ],
