@@ -110,7 +110,7 @@ def algorithmDataset(df):
 
 def addJSONDetailsLink(df):
     df['details'] = df['details'].apply(lambda s: re.sub(
-        r'.*/(\w*)-output',
+        r'.*/([-\w]*)-output',
         r'<a href="https://github.com/gunrock/io/tree/master/\1-output',
         s) + '">JSON output</a>')
     return df
@@ -259,6 +259,22 @@ def normalizeByGunrock(dest, quantityToNormalize, columnsToGroup):
                                suffixes=['', suffix])
         dfmerge[dest] = (dfmerge[quantityToNormalize] /
                          dfmerge[quantityToNormalize + suffix])
+        return dfmerge
+    return fn
+
+
+def normalizeByTag(dest, tag, quantityToNormalize, columnsToGroup):
+    # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
+    def fn(df):
+        df1 = df.loc[df['tag'] == tag,
+                     columnsToGroup + [quantityToNormalize]]
+        suffix = '_ref'
+        dfmerge = pandas.merge(df,
+                               df1,
+                               on=columnsToGroup,
+                               suffixes=['', suffix])
+        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
+                         dfmerge[quantityToNormalize])
         return dfmerge
     return fn
 
