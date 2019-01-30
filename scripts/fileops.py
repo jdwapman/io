@@ -101,12 +101,16 @@ def savefile(chart, name, fileformat, outputdir,
 
         osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
         if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
+            print('found osx_svg2pdf')
             with open(os.devnull, 'w') as devnull:
                 try:
                     # check_call worked where check_output didn't
-                    check_call(['open', '-a', 'svg2pdf', base + '.svg'],
-                               stderr=devnull)
+                    cmd = ['open', '-n', '-a', 'svg2pdf', base + '.svg']
+                    print('check_call', cmd)
+                    check_call(cmd, stderr=devnull)
+                    print('check_call ended')
                 except CalledProcessError as e:
+                    print('error')
                     raise RuntimeError("command '{}' returned with error (code {}): {}".format(
                         e.cmd, e.returncode, e.output))
         else:
