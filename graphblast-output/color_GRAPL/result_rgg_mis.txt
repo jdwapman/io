@@ -1,0 +1,180 @@
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_15_s0/.rgg_n_2_15_s0.mtx.ud.nosl.bin
+CPU GC finished in 4.90689 msec.
+CORRECT
+Graph coloring found with 15 colors.
+
+CORRECT
+Graph coloring found with 14 colors.
+cpu, 5.63908, 
+warmup, 23.9198, 0
+tight, 20.9591
+vxm, 22.7515
+
+CORRECT
+Graph coloring found with 14 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_16_s0/.rgg_n_2_16_s0.mtx.ud.nosl.bin
+CPU GC finished in 10.5238 msec.
+CORRECT
+Graph coloring found with 15 colors.
+
+CORRECT
+Graph coloring found with 16 colors.
+cpu, 11.961, 
+warmup, 35.9929, 0
+tight, 30.6764
+vxm, 33.9949
+
+CORRECT
+Graph coloring found with 16 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_17_s0/.rgg_n_2_17_s0.mtx.ud.nosl.bin
+CPU GC finished in 23.6421 msec.
+CORRECT
+Graph coloring found with 16 colors.
+
+CORRECT
+Graph coloring found with 16 colors.
+cpu, 26.516, 
+warmup, 53.1449, 0
+tight, 42.2469
+vxm, 49.5688
+
+CORRECT
+Graph coloring found with 16 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_18_s0/.rgg_n_2_18_s0.mtx.ud.nosl.bin
+CPU GC finished in 64.3659 msec.
+CORRECT
+Graph coloring found with 18 colors.
+
+CORRECT
+Graph coloring found with 17 colors.
+cpu, 70.118, 
+warmup, 79.6452, 0
+tight, 62.618
+vxm, 74.8356
+
+CORRECT
+Graph coloring found with 17 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_19_s0/.rgg_n_2_19_s0.mtx.ud.nosl.bin
+CPU GC finished in 165.24 msec.
+CORRECT
+Graph coloring found with 19 colors.
+
+CORRECT
+Graph coloring found with 19 colors.
+cpu, 176.662, 
+warmup, 143.938, 0
+tight, 116.534
+vxm, 135.232
+
+CORRECT
+Graph coloring found with 19 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_20_s0/.rgg_n_2_20_s0.mtx.ud.nosl.bin
+CPU GC finished in 416.883 msec.
+CORRECT
+Graph coloring found with 20 colors.
+
+CORRECT
+Graph coloring found with 20 colors.
+cpu, 439.676, 
+warmup, 261.245, 0
+tight, 216.967
+vxm, 250.128
+
+CORRECT
+Graph coloring found with 20 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_21_s0/.rgg_n_2_21_s0.mtx.ud.nosl.bin
+CPU GC finished in 1076.88 msec.
+CORRECT
+Graph coloring found with 20 colors.
+
+CORRECT
+Graph coloring found with 20 colors.
+cpu, 1123.36, 
+warmup, 509.998, 0
+tight, 442.214
+vxm, 503.499
+
+CORRECT
+Graph coloring found with 20 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_22_s0/.rgg_n_2_22_s0.mtx.ud.nosl.bin
+CPU GC finished in 3711.27 msec.
+CORRECT
+Graph coloring found with 21 colors.
+
+CORRECT
+Graph coloring found with 21 colors.
+cpu, 3814.88, 
+warmup, 1117.52, 0
+tight, 989.593
+vxm, 1108.07
+
+CORRECT
+Graph coloring found with 21 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_23_s0/.rgg_n_2_23_s0.mtx.ud.nosl.bin
+CPU GC finished in 10764.7 msec.
+CORRECT
+Graph coloring found with 22 colors.
+
+CORRECT
+Graph coloring found with 23 colors.
+cpu, 11051.7, 
+warmup, 2573.78, 0
+tight, 2314.05
+vxm, 2544.35
+
+CORRECT
+Graph coloring found with 23 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+Reading /data-2/topc-datasets/rgg-data/rgg_n_2_24_s0/.rgg_n_2_24_s0.mtx.ud.nosl.bin
+CPU GC finished in 26327 msec.
+CORRECT
+Graph coloring found with 25 colors.
+
+CORRECT
+Graph coloring found with 24 colors.
+cpu, 27105.1, 
+warmup, 5626.19, 0
+tight, 5109.27
+vxm, 5569.55
+
+CORRECT
+Graph coloring found with 24 colors.
