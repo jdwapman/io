@@ -1,0 +1,200 @@
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+32768 32768 320480
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_15_s0/.rgg_n_2_15_s0.mtx.ud.nosl.bin
+CPU GC finished in 5.054 msec.
+CORRECT
+Graph coloring found with 15 colors.
+
+CORRECT
+Graph coloring found with 27 colors.
+cpu, 5.76186,
+warmup, 7.67207, 0
+tight, 5.44617
+vxm, 6.84571
+
+CORRECT
+Graph coloring found with 27 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+65536 65536 684254
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_16_s0/.rgg_n_2_16_s0.mtx.ud.nosl.bin
+CPU GC finished in 10.8101 msec.
+CORRECT
+Graph coloring found with 15 colors.
+
+CORRECT
+Graph coloring found with 28 colors.
+cpu, 12.2459,
+warmup, 9.2299, 0
+tight, 6.02894
+vxm, 8.8727
+
+CORRECT
+Graph coloring found with 28 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+131072 131072 1457506
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_17_s0/.rgg_n_2_17_s0.mtx.ud.nosl.bin
+CPU GC finished in 29.9911 msec.
+CORRECT
+Graph coloring found with 16 colors.
+
+CORRECT
+Graph coloring found with 27 colors.
+cpu, 32.891,
+warmup, 15.5561, 0
+tight, 7.8907
+vxm, 13.5878
+
+CORRECT
+Graph coloring found with 27 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+262144 262144 3094566
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_18_s0/.rgg_n_2_18_s0.mtx.ud.nosl.bin
+CPU GC finished in 71.295 msec.
+CORRECT
+Graph coloring found with 18 colors.
+
+CORRECT
+Graph coloring found with 29 colors.
+cpu, 76.982,
+warmup, 24.724, 0
+tight, 12.6364
+vxm, 22.3152
+
+CORRECT
+Graph coloring found with 29 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+524288 524288 6539532
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_19_s0/.rgg_n_2_19_s0.mtx.ud.nosl.bin
+CPU GC finished in 165.139 msec.
+CORRECT
+Graph coloring found with 19 colors.
+
+CORRECT
+Graph coloring found with 32 colors.
+cpu, 176.581,
+warmup, 43.802, 0
+tight, 24.5173
+vxm, 40.8192
+
+CORRECT
+Graph coloring found with 32 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+1048576 1048576 13783240
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_20_s0/.rgg_n_2_20_s0.mtx.ud.nosl.bin
+CPU GC finished in 394.707 msec.
+CORRECT
+Graph coloring found with 20 colors.
+
+CORRECT
+Graph coloring found with 34 colors.
+cpu, 417.795,
+warmup, 81.0781, 0
+tight, 49.4986
+vxm, 77.1522
+
+CORRECT
+Graph coloring found with 34 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+2097152 2097152 28975990
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_21_s0/.rgg_n_2_21_s0.mtx.ud.nosl.bin
+CPU GC finished in 1044.24 msec.
+CORRECT
+Graph coloring found with 20 colors.
+
+CORRECT
+Graph coloring found with 35 colors.
+cpu, 1086.65,
+warmup, 160.696, 0
+tight, 103.519
+vxm, 156.591
+
+CORRECT
+Graph coloring found with 35 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+4194304 4194304 60718396
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_22_s0/.rgg_n_2_22_s0.mtx.ud.nosl.bin
+CPU GC finished in 3960 msec.
+CORRECT
+Graph coloring found with 21 colors.
+
+CORRECT
+Graph coloring found with 38 colors.
+cpu, 4064.8,
+warmup, 361.552, 0
+tight, 248.569
+vxm, 354.691
+
+CORRECT
+Graph coloring found with 38 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+8388608 8388608 127002786
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_23_s0/.rgg_n_2_23_s0.mtx.ud.nosl.bin
+CPU GC finished in 10751.1 msec.
+CORRECT
+Graph coloring found with 22 colors.
+
+CORRECT
+Graph coloring found with 42 colors.
+cpu, 11029.8,
+warmup, 825.171, 0
+tight, 605.642
+vxm, 814.972
+
+CORRECT
+Graph coloring found with 42 colors.
+Undirected due to mtx: 1
+Undirected due to cmd: 1
+Undirected: 1
+Remove self-loop: 1
+%%MatrixMarket matrix coordinate pattern symmetric
+16777216 16777216 265114400
+Writing /data-2/topc-datasets/rgg-data/rgg_n_2_24_s0/.rgg_n_2_24_s0.mtx.ud.nosl.bin
+CPU GC finished in 27228.9 msec.
+CORRECT
+Graph coloring found with 25 colors.
+
+CORRECT
+Graph coloring found with 40 colors.
+cpu, 27975.9,
+warmup, 1822.76, 0
+tight, 1383.94
+vxm, 1805.85
+
+CORRECT
+Graph coloring found with 40 colors.
