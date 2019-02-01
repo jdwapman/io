@@ -1,0 +1,102 @@
+[
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 32768,
+   "num-edges": 320480,
+   "undirected": 1,
+   "num-colors": 27,
+   "elapsed": 5.44617,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_16_s0",
+   "num-vertices": 65536,
+   "num-edges": 684254,
+   "undirected": 1,
+   "num-colors": 28,
+   "elapsed": 6.02894,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_17_s0",
+   "num-vertices": 131072,
+   "num-edges": 1457506,
+   "undirected": 1,
+   "num-colors": 27,
+   "elapsed": 7.8907,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 262144,
+   "num-edges": 3094566,
+   "undirected": 1,
+   "num-colors": 29,
+   "elapsed": 12.6364,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 524288,
+   "num-edges": 6539532,
+   "undirected": 1,
+   "num-colors": 32,
+   "elapsed": 24.5173,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 1048576,
+   "num-edges": 13783240,
+   "undirected": 1,
+   "num-colors": 34,
+   "elapsed": 49.4986,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 2097152,
+   "num-edges": 28975990,
+   "undirected": 1,
+   "num-colors": 35,
+   "elapsed": 103.519,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 4194304,
+   "num-edges": 60718396,
+   "undirected": 1,
+   "num-colors": 38,
+   "elapsed": 248.569,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 8388608,
+   "num-edges": 127002786,
+   "undirected": 1,
+   "num-colors": 42,
+   "elapsed": 605.642,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ },
+ {
+   "dataset": "rgg_n_2_15_s0",
+   "num-vertices": 16777216,
+   "num-edges": 265114400,
+   "undirected": 1,
+   "num-colors": 40,
+   "elapsed": 1383.94,
+   "user-iter": "",
+   "tag": "GraphBLAST/Color_RGG"
+ }
+]

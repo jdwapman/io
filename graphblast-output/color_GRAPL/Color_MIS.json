@@ -8,7 +8,7 @@
    "num-colors": 12,
    "elapsed": 59.923,
    "user-iter": 12,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "af_shell3",
@@ -19,7 +19,7 @@
    "num-colors": 27,
    "elapsed": 310.863,
    "user-iter": 27,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "parabolic_fem",
@@ -30,7 +30,7 @@
    "num-colors": 7,
    "elapsed": 33.5196,
    "user-iter": 7,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "apache2",
@@ -41,7 +41,7 @@
    "num-colors": 6,
    "elapsed": 34.157,
    "user-iter": 6,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "ecology2",
@@ -52,7 +52,7 @@
    "num-colors": 5,
    "elapsed": 33.5839,
    "user-iter": 5,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "thermal2",
@@ -63,7 +63,7 @@
    "num-colors": 7,
    "elapsed": 64.4453,
    "user-iter": 7,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "G3_circuit",
@@ -74,7 +74,7 @@
    "num-colors": 6,
    "elapsed": 52.3972,
    "user-iter": 6,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "FEM_3D_thermal2",
@@ -85,7 +85,7 @@
    "num-colors": 17,
    "elapsed": 70.6832,
    "user-iter": 17,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "thermomech_dK",
@@ -96,7 +96,7 @@
    "num-colors": 12,
    "elapsed": 44.2079,
    "user-iter": 12,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "ASIC_320ks",
@@ -107,7 +107,7 @@
    "num-colors": 8,
    "elapsed": 27.7681,
    "user-iter": 8,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "cage13",
@@ -118,7 +118,7 @@
    "num-colors": 16,
    "elapsed": 116.104,
    "user-iter": 16,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  },
  {
    "dataset": "atmosmodd",
@@ -129,6 +129,6 @@
    "num-colors": 6,
    "elapsed": 54.9706,
    "user-iter": 6,
-   "tag": "graphblast/Color_MIS"
+   "tag": "GraphBLAST/Color_MIS"
  }
 ]
