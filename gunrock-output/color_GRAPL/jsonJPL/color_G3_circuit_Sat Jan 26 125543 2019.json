@@ -1,6 +1,6 @@
 {
     "engine": "Gunrock",
-    "command-line": "./bin/test_color_10.0_x86_64 --graph-type=market --graph-file=/data-2/topc-datasets/gc-data/G3_circuit/G3_circuit.mtx --JPL=true --LBCOLOR=false --seed=12312 --undirected --no-conflict=0 --user-iter=6 --prohibit-size=0 --jsondir=./jsonJPL --tag=Gunrock/Color_JPL --test-run=false --quick=false",
+    "command-line": "./bin/test_color_10.0_x86_64 --graph-type=market --graph-file=/data-2/topc-datasets/gc-data/G3_circuit/G3_circuit.mtx --JPL=true --LBCOLOR=false --seed=12312 --undirected --no-conflict=0 --user-iter=6 --prohibit-size=0 --jsondir=./jsonJPL --tag=Gunrock/Color_IS --test-run=false --quick=false",
     "compiler": "Gnu GCC C/C++",
     "compiler-version": 50400000,
     "time": "Sat Jan 26 12:55:43 2019\n",
@@ -76,7 +76,7 @@
     "subqueue-latency": 0,
     "sw-k": 6,
     "sw-p": 0.0,
-    "tag": "Gunrock/Color_JPL",
+    "tag": "Gunrock/Color_IS",
     "test-run": false,
     "trans-factor": 1.0,
     "undirected": "1",
