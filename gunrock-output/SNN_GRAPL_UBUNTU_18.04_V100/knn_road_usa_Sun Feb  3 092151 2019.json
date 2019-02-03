@@ -1,0 +1,116 @@
+{
+    "engine": "Gunrock",
+    "command-line": "./bin/test_knn_10.0_x86_64 market /data/gunrock_dataset/large/road_usa/road_usa.mtx --k=2 --eps=1 --min-pts=1 --undirected --snn=true --quick --tag=Gunrock/SNN_GRAPL19 --device=2 --jsondir=./eval/V100_Ubuntu_18-04",
+    "compiler": "Gnu GCC C/C++",
+    "compiler-version": 70300000,
+    "time": "Sun Feb  3 09:21:51 2019\n",
+    "gunrock-version": "0.4.0",
+    "git-commit-sha": "6943448e1f207bef65831f97ffa53b82f5b16901",
+    "load-time": 1961.6700439453126,
+    "algorithm": "knn",
+    "64bit-SizeT": "0",
+    "64bit-ValueT": "0",
+    "64bit-VertexT": "0",
+    "advance-mode": [
+        "LB"
+    ],
+    "binary-prefix": "",
+    "communicate-latency": 0,
+    "communicate-multipy": 1.0,
+    "dataset": "road_usa",
+    "device": [
+        2
+    ],
+    "edge-value-min": 0.0,
+    "edge-value-range": 64.0,
+    "edge-value-seed": 0,
+    "eps": [
+        1
+    ],
+    "expand-latency": 0,
+    "filter-mode": "CULL",
+    "fullqueue-latency": 0,
+    "graph-edgefactor": 48.0,
+    "graph-edges": 49152,
+    "graph-file": "/data/gunrock_dataset/large/road_usa/road_usa.mtx",
+    "graph-nodes": 1024,
+    "graph-scale": 10,
+    "graph-seed": 0,
+    "graph-type": "market",
+    "help": false,
+    "json": false,
+    "jsondir": "./eval/V100_Ubuntu_18-04",
+    "jsonfile": "",
+    "k": [
+        2
+    ],
+    "load-time": 1961.6700439453126,
+    "makeout-latency": 0,
+    "max-grid-size": 0,
+    "min-pts": [
+        1
+    ],
+    "num-runs": 1,
+    "partition-factor": 0.5,
+    "partition-method": "random",
+    "partition-seed": 0,
+    "preprocess-time": 0.0,
+    "queue-factor": [
+        6.0
+    ],
+    "quick": true,
+    "quiet": false,
+    "random-edge-values": false,
+    "read-from-binary": true,
+    "remove-duplicate-edges": true,
+    "remove-self-loops": true,
+    "rgg-thfactor": 0.55,
+    "rgg-threshold": 0.0,
+    "rmat-a": 0.57,
+    "rmat-b": 0.19,
+    "rmat-c": 0.19,
+    "rmat-d": 0.05,
+    "size-check": true,
+    "snn": "true",
+    "srcs": [
+        0
+    ],
+    "store-to-binary": true,
+    "subqueue-latency": 0,
+    "sw-k": 6,
+    "sw-p": 0.0,
+    "tag": "Gunrock/SNN_GRAPL19",
+    "trans-factor": 1.0,
+    "undirected": "1",
+    "v": false,
+    "validation": "last",
+    "vertex-start-from-zero": true,
+    "x": [
+        0
+    ],
+    "y": [
+        0
+    ],
+    "setdev-degree": 0.8779882192611694,
+    "num-vertices": 23947347,
+    "num-edges": 57708624,
+    "elapsed": 8986.49787902832,
+    "average-duty": 0.0,
+    "search-depth": 1,
+    "edges-queued": 0,
+    "nodes-queued": 0,
+    "nodes-visited": 0,
+    "edges-visited": 0,
+    "nodes-redundance": 0.0,
+    "edges-redundance": 0.0,
+    "m-teps": 0.0,
+    "num-corepoints": "9",
+    "num-clusters": "9",
+    "process-times": [
+        8986.49787902832
+    ],
+    "min-process-time": 8986.49787902832,
+    "max-process-time": 8986.49787902832,
+    "postprocess-time": 280.3971767425537,
+    "total-time": 10077.450037002563
+}
