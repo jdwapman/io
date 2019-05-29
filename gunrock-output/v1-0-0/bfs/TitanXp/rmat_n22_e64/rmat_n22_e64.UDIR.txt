@@ -1,0 +1,3452 @@
+Generating RMAT graph, seed = 1558281372, (a, b, c, d) = (0.570000, 0.190000, 0.190000, 0.050000)
+RMAT generated in 75014.906250 ms.
+  Removed 18543760 duplicate edges and self circles.
+Converting 4194304 vertices, 249891696 directed edges ( ordered tuples) to CSR format...Done (0s).
+Converting 4194304 vertices, 249891696 directed edges (unordered tuples) to CSC format...Done (6s).
+Degree Histogram (4194304 vertices, 249891696 edges):
+    Degree 0: 1349699 (32.179332 %)
+    Degree 2^0: 527534 (12.577391 %)
+    Degree 2^1: 500291 (11.927867 %)
+    Degree 2^2: 481720 (11.485100 %)
+    Degree 2^3: 297855 (7.101417 %)
+    Degree 2^4: 430028 (10.252666 %)
+    Degree 2^5: 159549 (3.803945 %)
+    Degree 2^6: 167028 (3.982258 %)
+    Degree 2^7: 170520 (4.065514 %)
+    Degree 2^8: 24 (0.000572 %)
+    Degree 2^9: 74613 (1.778913 %)
+    Degree 2^10: 26290 (0.626802 %)
+    Degree 2^11: 44 (0.001049 %)
+    Degree 2^12: 7315 (0.174403 %)
+    Degree 2^13: 1 (0.000024 %)
+    Degree 2^14: 1539 (0.036693 %)
+    Degree 2^15: 231 (0.005507 %)
+    Degree 2^16: 22 (0.000525 %)
+    Degree 2^17: 0 (0.000000 %)
+    Degree 2^18: 1 (0.000024 %)
+
+src_seed = 1558281462
+Computing reference value ...
+__________________________
+--------------------------
+Run 0 elapsed: 2124.922119 ms, src = 1725, #iterations = 6
+__________________________
+--------------------------
+Run 1 elapsed: 2043.714966 ms, src = 1161837, #iterations = 7
+__________________________
+--------------------------
+Run 2 elapsed: 1932.648926 ms, src = 2913221, #iterations = 7
+__________________________
+--------------------------
+Run 3 elapsed: 1747.468018 ms, src = 1057105, #iterations = 6
+__________________________
+--------------------------
+Run 4 elapsed: 1631.065186 ms, src = 2128145, #iterations = 6
+__________________________
+--------------------------
+Run 5 elapsed: 1670.138062 ms, src = 57555, #iterations = 6
+__________________________
+--------------------------
+Run 6 elapsed: 1585.357910 ms, src = 3311809, #iterations = 6
+__________________________
+--------------------------
+Run 7 elapsed: 1669.734985 ms, src = 497612, #iterations = 7
+__________________________
+--------------------------
+Run 8 elapsed: 1544.949951 ms, src = 63856, #iterations = 7
+__________________________
+--------------------------
+Run 9 elapsed: 1631.467773 ms, src = 1668100, #iterations = 6
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.588821 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 1.797199 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.100945 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.135992 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.529932 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.549959 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.572132 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.257824 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.960993 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.510859 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 1.800466 ms
+ iterations: 6
+ min. elapsed: 1.510859 ms
+ max. elapsed: 2.257824 ms
+ rate: 138500.988435 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 1152.480000 ms
+ postprocess time: 27.426004 ms
+ total time: 1300.442934 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.564026 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 1.767159 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.089977 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.150059 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.524925 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.530170 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.574039 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.258062 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.958132 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.559019 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 1.797557 ms
+ iterations: 6
+ min. elapsed: 1.524925 ms
+ max. elapsed: 2.258062 ms
+ rate: 138725.103039 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 696.153000 ms
+ postprocess time: 24.590015 ms
+ total time: 811.420202 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 64353365
+--------------------------
+Run 0 elapsed: 69.413900 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 64353365 ->	 219917493
+--------------------------
+Run 1 elapsed: 68.496943 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 60.972929 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 184391168 ->	 226961553
+--------------------------
+Run 3 elapsed: 69.132805 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 60.405970 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 60.890913 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 60.599089 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 219917493 ->	 228988222
+--------------------------
+Run 7 elapsed: 71.616888 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 61.134100 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 60.928106 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 64.359164 ms
+ iterations: 6
+ min. elapsed: 60.405970 ms
+ max. elapsed: 71.616888 ms
+ rate: 3874.603811 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 659.136000 ms
+ postprocess time: 31.039000 ms
+ total time: 1408.565044 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 64353365
+--------------------------
+Run 0 elapsed: 66.507101 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 64353365 ->	 219917493
+--------------------------
+Run 1 elapsed: 67.329168 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 60.802937 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 184391168 ->	 226961553
+--------------------------
+Run 3 elapsed: 69.354057 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 60.657978 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 60.791969 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 60.645103 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 219917493 ->	 228988222
+--------------------------
+Run 7 elapsed: 69.889784 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 61.104059 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 60.823917 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 63.790607 ms
+ iterations: 6
+ min. elapsed: 60.645103 ms
+ max. elapsed: 69.889784 ms
+ rate: 3909.137614 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 660.701000 ms
+ postprocess time: 30.611992 ms
+ total time: 1425.719023 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.525164 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 1.752853 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 1.940012 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.278090 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.464128 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.489878 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.513004 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.452135 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.677990 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.465797 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 1.755905 ms
+ iterations: 6
+ min. elapsed: 1.464128 ms
+ max. elapsed: 2.452135 ms
+ rate: 142015.793282 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 655.239000 ms
+ postprocess time: 22.318840 ms
+ total time: 767.240047 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.498222 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 1.768112 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 1.939058 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.247095 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.478910 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.495838 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.533031 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.429008 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.689911 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.461983 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 1.754117 ms
+ iterations: 6
+ min. elapsed: 1.461983 ms
+ max. elapsed: 2.429008 ms
+ rate: 142160.563572 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 659.524000 ms
+ postprocess time: 22.334099 ms
+ total time: 771.549940 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 80.786943 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 85.952044 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 77.233076 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 86.905003 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 77.627897 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 77.723026 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 77.826977 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 86.905956 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 77.802896 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 78.016996 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 80.678082 ms
+ iterations: 6
+ min. elapsed: 77.233076 ms
+ max. elapsed: 86.905956 ms
+ rate: 3090.879931 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 659.188000 ms
+ postprocess time: 27.639866 ms
+ total time: 1573.742867 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 80.687046 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 85.962057 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 77.317953 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 86.966991 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 77.713013 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 77.766180 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 77.795982 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 87.001085 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 77.838898 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 77.895880 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 80.694509 ms
+ iterations: 6
+ min. elapsed: 77.317953 ms
+ max. elapsed: 87.001085 ms
+ rate: 3090.250718 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 767.891000 ms
+ postprocess time: 27.550936 ms
+ total time: 1677.053928 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 3.600121 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 8.925200 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.007961 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 7.514000 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 4.642963 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 4.296064 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 5.935907 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 8.893967 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.088070 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 3.385067 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 5.128932 ms
+ iterations: 6
+ min. elapsed: 2.007961 ms
+ max. elapsed: 8.925200 ms
+ rate: 48619.529960 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 752.239000 ms
+ postprocess time: 22.425175 ms
+ total time: 900.819063 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 3.585100 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 8.963823 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.009869 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 7.524967 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 4.713058 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 4.306078 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 5.933046 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 12.205839 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.114058 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 3.397942 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 5.475378 ms
+ iterations: 6
+ min. elapsed: 2.009869 ms
+ max. elapsed: 12.205839 ms
+ rate: 45543.204750 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 654.800000 ms
+ postprocess time: 25.124073 ms
+ total time: 810.071945 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 104.895115 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 102.455854 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 90.658903 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 106.546879 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 96.333981 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 97.263098 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 101.768017 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 102.296114 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 92.000008 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 100.636959 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 99.485493 ms
+ iterations: 6
+ min. elapsed: 90.658903 ms
+ max. elapsed: 106.546879 ms
+ rate: 2506.559059 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 846.511000 ms
+ postprocess time: 30.817032 ms
+ total time: 1947.585106 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 105.071068 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 103.040934 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 90.667009 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 102.920055 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 95.024824 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 97.963810 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 98.759174 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 102.811098 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 91.558933 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 92.172146 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 97.998905 ms
+ iterations: 6
+ min. elapsed: 90.667009 ms
+ max. elapsed: 105.071068 ms
+ rate: 2544.582131 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 694.607000 ms
+ postprocess time: 32.948971 ms
+ total time: 1782.337189 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.622200 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 2.112150 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.284050 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.743006 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.744986 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.755953 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.873016 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.923012 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.156019 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.744032 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.095842 ms
+ iterations: 6
+ min. elapsed: 1.622200 ms
+ max. elapsed: 2.923012 ms
+ rate: 118981.402221 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 693.074000 ms
+ postprocess time: 33.882141 ms
+ total time: 430273.729086 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.753092 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 2.132893 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.249002 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.778053 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.733065 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.806021 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.886129 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.890110 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.131939 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.801014 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.116132 ms
+ iterations: 6
+ min. elapsed: 1.733065 ms
+ max. elapsed: 2.890110 ms
+ rate: 117840.611373 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 832.104000 ms
+ postprocess time: 29.397964 ms
+ total time: 433258.056879 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 64353365
+--------------------------
+Run 0 elapsed: 72.674990 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 64353365 ->	 219917493
+--------------------------
+Run 1 elapsed: 70.872068 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 64.116955 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 184391168 ->	 226961553
+--------------------------
+Run 3 elapsed: 72.782993 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 63.977957 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 64.188957 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 64.048052 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 219917493 ->	 228988222
+--------------------------
+Run 7 elapsed: 73.340893 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 64.570189 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 64.508915 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 67.508197 ms
+ iterations: 6
+ min. elapsed: 63.977957 ms
+ max. elapsed: 73.340893 ms
+ rate: 3693.866444 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 846.802000 ms
+ postprocess time: 38.958073 ms
+ total time: 332923.266888 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 64353365
+--------------------------
+Run 0 elapsed: 69.730997 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 64353365 ->	 219917493
+--------------------------
+Run 1 elapsed: 70.759058 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 64.120054 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 184391168 ->	 226961553
+--------------------------
+Run 3 elapsed: 72.715998 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 64.074993 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 64.155817 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 64.035892 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 219917493 ->	 228988222
+--------------------------
+Run 7 elapsed: 73.545933 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 64.609051 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 64.429998 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 67.217779 ms
+ iterations: 6
+ min. elapsed: 64.035892 ms
+ max. elapsed: 73.545933 ms
+ rate: 3709.825973 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 825.115000 ms
+ postprocess time: 42.315006 ms
+ total time: 337223.018885 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.982212 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 2.187967 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.273083 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 3.000975 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.729965 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.823902 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.925945 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 3.170013 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.959085 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.776934 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.183008 ms
+ iterations: 6
+ min. elapsed: 1.729965 ms
+ max. elapsed: 3.170013 ms
+ rate: 114230.566651 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 870.747000 ms
+ postprocess time: 33.837080 ms
+ total time: 430548.076153 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.790047 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 2.216816 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.233982 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.974033 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.770973 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.824856 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.914978 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 3.157139 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.013922 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.782894 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.167964 ms
+ iterations: 6
+ min. elapsed: 1.770973 ms
+ max. elapsed: 3.157139 ms
+ rate: 115023.249977 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 840.222000 ms
+ postprocess time: 33.795118 ms
+ total time: 428335.216999 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 85.148811 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 89.519024 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 81.126928 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 89.251041 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 81.295967 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 81.271172 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 80.135822 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 90.790033 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 81.611872 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 81.551075 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 84.170175 ms
+ iterations: 6
+ min. elapsed: 80.135822 ms
+ max. elapsed: 90.790033 ms
+ rate: 2962.644003 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 835.790000 ms
+ postprocess time: 35.601854 ms
+ total time: 274218.983173 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 83.395958 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 89.509010 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 81.013918 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 89.279890 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 81.209898 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 81.242085 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 79.890013 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 90.565920 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 80.229998 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 81.621885 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 83.795857 ms
+ iterations: 6
+ min. elapsed: 79.890013 ms
+ max. elapsed: 90.565920 ms
+ rate: 2975.878172 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 870.201000 ms
+ postprocess time: 34.402132 ms
+ total time: 265395.641088 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 4.206896 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 11.482954 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.369881 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 9.808064 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 5.851984 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 5.447149 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 7.617950 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 11.489153 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.464056 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 4.236937 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 6.497502 ms
+ iterations: 6
+ min. elapsed: 2.369881 ms
+ max. elapsed: 11.489153 ms
+ rate: 38378.787794 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 832.050000 ms
+ postprocess time: 33.649921 ms
+ total time: 422296.482086 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 4.474878 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 11.517048 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.334118 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 9.804964 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 5.893946 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 5.436897 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 7.590055 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 11.471987 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.517939 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 4.241943 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 6.528378 ms
+ iterations: 6
+ min. elapsed: 2.334118 ms
+ max. elapsed: 11.517048 ms
+ rate: 38197.279759 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 6752111
+ nodes redundance: 137.420340
+ load time: 90137.8 ms
+ preprocess time: 832.138000 ms
+ postprocess time: 33.167124 ms
+ total time: 422173.993111 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 117.675066 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 116.884947 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 100.925207 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 113.572121 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 94.461203 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 110.799074 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 110.866070 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 110.624790 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 100.618839 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 106.853962 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 108.328128 ms
+ iterations: 6
+ min. elapsed: 94.461203 ms
+ max. elapsed: 117.675066 ms
+ rate: 2301.953038 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 831.642000 ms
+ postprocess time: 34.672022 ms
+ total time: 197826.977015 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 184391168
+--------------------------
+Run 0 elapsed: 103.554964 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 184391168 ->	 219917493
+--------------------------
+Run 1 elapsed: 109.603882 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 102.251053 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 219917493 ->	 226961553
+--------------------------
+Run 3 elapsed: 115.267038 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 97.912073 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 107.431173 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 113.116026 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 226961553 ->	 228988222
+--------------------------
+Run 7 elapsed: 113.531113 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 104.223967 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 113.965988 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 108.085728 ms
+ iterations: 6
+ min. elapsed: 97.912073 ms
+ max. elapsed: 115.267038 ms
+ rate: 2307.115549 MiEdges/s
+ src: 1725
+ nodes_visited: 2843948
+ edges_visited: 249366263
+ nodes queued: 2843948
+ load time: 90137.8 ms
+ preprocess time: 825.592000 ms
+ postprocess time: 33.579826 ms
+ total time: 194958.796978 ms
+Generating RMAT graph, seed = 1558285664, (a, b, c, d) = (0.570000, 0.190000, 0.190000, 0.050000)
+RMAT generated in 75627.093750 ms.
+  Removed 18559913 duplicate edges and self circles.
+Converting 4194304 vertices, 249875543 directed edges ( ordered tuples) to CSR format...Done (1s).
+Converting 4194304 vertices, 249875543 directed edges (unordered tuples) to CSC format...Done (5s).
+Degree Histogram (4194304 vertices, 249875543 edges):
+    Degree 0: 1349812 (32.182026 %)
+    Degree 2^0: 527310 (12.572050 %)
+    Degree 2^1: 501058 (11.946154 %)
+    Degree 2^2: 480488 (11.455727 %)
+    Degree 2^3: 298183 (7.109237 %)
+    Degree 2^4: 430091 (10.254169 %)
+    Degree 2^5: 159790 (3.809690 %)
+    Degree 2^6: 166972 (3.980923 %)
+    Degree 2^7: 170528 (4.065704 %)
+    Degree 2^8: 17 (0.000405 %)
+    Degree 2^9: 74612 (1.778889 %)
+    Degree 2^10: 26294 (0.626898 %)
+    Degree 2^11: 40 (0.000954 %)
+    Degree 2^12: 7315 (0.174403 %)
+    Degree 2^13: 1 (0.000024 %)
+    Degree 2^14: 1539 (0.036693 %)
+    Degree 2^15: 231 (0.005507 %)
+    Degree 2^16: 22 (0.000525 %)
+    Degree 2^17: 0 (0.000000 %)
+    Degree 2^18: 1 (0.000024 %)
+
+src_seed = 1558281462
+Computing reference value ...
+__________________________
+--------------------------
+Run 0 elapsed: 1798.330078 ms, src = 1725, #iterations = 6
+__________________________
+--------------------------
+Run 1 elapsed: 1770.354980 ms, src = 1161837, #iterations = 7
+__________________________
+--------------------------
+Run 2 elapsed: 1948.781982 ms, src = 2913221, #iterations = 7
+__________________________
+--------------------------
+Run 3 elapsed: 2287.328125 ms, src = 1057105, #iterations = 6
+__________________________
+--------------------------
+Run 4 elapsed: 2171.880127 ms, src = 2128145, #iterations = 6
+__________________________
+--------------------------
+Run 5 elapsed: 2122.219971 ms, src = 57555, #iterations = 6
+__________________________
+--------------------------
+Run 6 elapsed: 2087.520996 ms, src = 3311809, #iterations = 6
+__________________________
+--------------------------
+Run 7 elapsed: 1852.080078 ms, src = 63856, #iterations = 6
+__________________________
+--------------------------
+Run 8 elapsed: 1877.620972 ms, src = 1668100, #iterations = 6
+__________________________
+--------------------------
+Run 9 elapsed: 1839.370972 ms, src = 2778158, #iterations = 7
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.881123 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.789186 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 1.960993 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.426863 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.760006 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.768112 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.779079 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.769066 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.769066 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.106190 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.100968 ms
+ iterations: 7
+ min. elapsed: 1.760006 ms
+ max. elapsed: 3.789186 ms
+ rate: 118681.895282 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1634.510000 ms
+ postprocess time: 54.197073 ms
+ total time: 1878.991127 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.845121 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.770828 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 1.949787 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.408028 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.723051 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.760006 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.756907 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.748085 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.762152 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.119064 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.084303 ms
+ iterations: 7
+ min. elapsed: 1.723051 ms
+ max. elapsed: 3.770828 ms
+ rate: 119630.839997 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1878.740000 ms
+ postprocess time: 26.095152 ms
+ total time: 2010.112047 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 37409233
+--------------------------
+Run 0 elapsed: 69.643974 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 37409233 ->	 229809900
+--------------------------
+Run 1 elapsed: 67.925930 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 62.082052 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 210695175 ->	 229995194
+--------------------------
+Run 3 elapsed: 71.320057 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 61.501980 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 62.144041 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 61.934948 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 62.020063 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 62.114000 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 62.081099 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 64.276814 ms
+ iterations: 7
+ min. elapsed: 61.501980 ms
+ max. elapsed: 71.320057 ms
+ rate: 3879.266717 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1592.010000 ms
+ postprocess time: 32.778025 ms
+ total time: 2352.930069 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 37409233
+--------------------------
+Run 0 elapsed: 67.440033 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 37409233 ->	 229809900
+--------------------------
+Run 1 elapsed: 65.893173 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 61.985970 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 210695175 ->	 229995194
+--------------------------
+Run 3 elapsed: 70.363998 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 61.702967 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 62.815905 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 62.187910 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 61.975956 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 62.143803 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 62.258005 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 63.876772 ms
+ iterations: 7
+ min. elapsed: 61.702967 ms
+ max. elapsed: 70.363998 ms
+ rate: 3903.561490 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1682.630000 ms
+ postprocess time: 38.160801 ms
+ total time: 2455.977917 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.920938 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.438950 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 1.893044 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.512932 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.658916 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.702070 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.662970 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.654148 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.689196 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 1.930952 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.006412 ms
+ iterations: 7
+ min. elapsed: 1.654148 ms
+ max. elapsed: 3.438950 ms
+ rate: 124275.055483 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1445.240000 ms
+ postprocess time: 24.682999 ms
+ total time: 1592.450142 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.878023 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.824949 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.081156 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.614021 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.765966 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.782894 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.782894 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.773834 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.794100 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.007961 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.130580 ms
+ iterations: 7
+ min. elapsed: 1.765966 ms
+ max. elapsed: 3.824949 ms
+ rate: 117032.410440 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1421.700000 ms
+ postprocess time: 26.080132 ms
+ total time: 1553.375959 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 82.064867 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 84.964991 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 77.059031 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 85.891008 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 76.647997 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 77.285051 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 77.296019 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 77.035189 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 77.342033 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 77.002048 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 79.258823 ms
+ iterations: 7
+ min. elapsed: 76.647997 ms
+ max. elapsed: 85.891008 ms
+ rate: 3145.982950 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1382.570000 ms
+ postprocess time: 29.155970 ms
+ total time: 2289.762974 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 79.904079 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 85.009098 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 77.138901 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 86.099148 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 76.808929 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 77.262878 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 77.395916 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 77.162027 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 77.409029 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 77.119827 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 79.130983 ms
+ iterations: 7
+ min. elapsed: 76.808929 ms
+ max. elapsed: 86.099148 ms
+ rate: 3151.065442 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1509.700000 ms
+ postprocess time: 29.175043 ms
+ total time: 2415.734053 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 7.010937 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.509998 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 6.808996 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 8.436918 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 5.208969 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 3.980160 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 3.643036 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.974987 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 3.813982 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.177954 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 4.756594 ms
+ iterations: 7
+ min. elapsed: 2.177954 ms
+ max. elapsed: 8.436918 ms
+ rate: 52421.317124 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1496.760000 ms
+ postprocess time: 24.701834 ms
+ total time: 1653.172016 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 6.973028 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.568888 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 16.768932 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 8.475065 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 5.226135 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 3.992081 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 3.674030 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.964973 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 3.870010 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.170801 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 5.768394 ms
+ iterations: 7
+ min. elapsed: 2.170801 ms
+ max. elapsed: 16.768932 ms
+ rate: 43226.396580 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1532.840000 ms
+ postprocess time: 24.649143 ms
+ total time: 1699.981928 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 109.652042 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 103.725195 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 95.442057 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 103.931904 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 98.069906 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 85.983992 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 107.738018 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 104.382038 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 110.095978 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 94.122887 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 101.314402 ms
+ iterations: 7
+ min. elapsed: 85.983992 ms
+ max. elapsed: 110.095978 ms
+ rate: 2461.120068 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1452.450000 ms
+ postprocess time: 29.113054 ms
+ total time: 2579.094172 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=false advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 98.063946 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 111.109018 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 92.539072 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 105.688810 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 89.987993 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 99.286079 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 109.685898 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 108.394146 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 96.282005 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 92.296839 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 100.333381 ms
+ iterations: 7
+ min. elapsed: 89.987993 ms
+ max. elapsed: 111.109018 ms
+ rate: 2485.183946 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1439.150000 ms
+ postprocess time: 29.032946 ms
+ total time: 2556.002855 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 1.971006 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.969193 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.368927 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 3.021955 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.885176 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.963854 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.910925 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.907110 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.968145 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.258062 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.322435 ms
+ iterations: 7
+ min. elapsed: 1.885176 ms
+ max. elapsed: 3.969193 ms
+ rate: 107364.411192 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1402.810000 ms
+ postprocess time: 37.621975 ms
+ total time: 443658.260822 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 2.084017 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 4.003048 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.331972 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.944946 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.874208 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.945972 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.987934 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.857042 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.940012 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.268791 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.323794 ms
+ iterations: 7
+ min. elapsed: 1.857042 ms
+ max. elapsed: 4.003048 ms
+ rate: 107301.623054 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1645.350000 ms
+ postprocess time: 38.147926 ms
+ total time: 439553.503990 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 37409233
+--------------------------
+Run 0 elapsed: 72.160006 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 37409233 ->	 229809900
+--------------------------
+Run 1 elapsed: 70.183039 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 65.432072 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 210695175 ->	 229995194
+--------------------------
+Run 3 elapsed: 73.765993 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 64.870119 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 65.567970 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 65.573931 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 65.407991 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 65.501928 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 65.681934 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 67.414498 ms
+ iterations: 7
+ min. elapsed: 64.870119 ms
+ max. elapsed: 73.765993 ms
+ rate: 3698.713380 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1637.490000 ms
+ postprocess time: 42.943001 ms
+ total time: 316321.341991 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 37409233
+--------------------------
+Run 0 elapsed: 70.324183 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 37409233 ->	 229809900
+--------------------------
+Run 1 elapsed: 70.024967 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 65.410137 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 210695175 ->	 229995194
+--------------------------
+Run 3 elapsed: 73.858023 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 64.996958 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 65.643787 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 65.632820 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 65.469027 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 65.572023 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 65.448046 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 67.237997 ms
+ iterations: 7
+ min. elapsed: 64.996958 ms
+ max. elapsed: 73.858023 ms
+ rate: 3708.422587 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1582.440000 ms
+ postprocess time: 42.068005 ms
+ total time: 315346.309185 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 2.192020 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 4.001141 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.336979 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 3.302097 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.980066 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.935005 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 2.031088 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.883984 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.993179 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.214909 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.387047 ms
+ iterations: 7
+ min. elapsed: 1.883984 ms
+ max. elapsed: 4.001141 ms
+ rate: 104458.322954 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1633.370000 ms
+ postprocess time: 38.069963 ms
+ total time: 425568.087101 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 2.127886 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.984928 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 2.371788 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 3.263950 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 1.971006 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 1.949787 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 1.984835 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 1.966953 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 1.976013 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.219915 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.381706 ms
+ iterations: 7
+ min. elapsed: 1.949787 ms
+ max. elapsed: 3.984928 ms
+ rate: 104692.553197 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1645.320000 ms
+ postprocess time: 38.468122 ms
+ total time: 427975.365162 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 84.536791 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 89.081049 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 81.108093 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 88.568926 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 80.519199 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 81.302166 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 79.839945 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 81.042051 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 79.823017 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 80.613136 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 82.643437 ms
+ iterations: 7
+ min. elapsed: 79.823017 ms
+ max. elapsed: 89.081049 ms
+ rate: 3017.141045 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1641.040000 ms
+ postprocess time: 43.172121 ms
+ total time: 266137.166977 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=LB direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 82.720995 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 88.850975 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 81.207037 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 90.045929 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 80.642939 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 81.452847 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 81.169128 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 80.950975 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 81.423998 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 81.055880 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 82.952070 ms
+ iterations: 7
+ min. elapsed: 80.642939 ms
+ max. elapsed: 90.045929 ms
+ rate: 3005.915419 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 784.427000 ms
+ postprocess time: 38.960934 ms
+ total time: 267373.034000 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 8.941174 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 4.110098 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 8.593798 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 10.736942 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 6.515980 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 4.851103 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 4.397869 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 3.571987 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 4.731894 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.414942 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 5.886579 ms
+ iterations: 7
+ min. elapsed: 2.414942 ms
+ max. elapsed: 10.736942 ms
+ rate: 42358.545709 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1644.290000 ms
+ postprocess time: 34.247160 ms
+ total time: 421578.001022 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 8.831024 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.931999 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 8.573055 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 10.757923 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 6.470919 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 4.997015 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 4.488945 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 3.623009 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 4.801035 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.507210 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 5.898213 ms
+ iterations: 7
+ min. elapsed: 2.507210 ms
+ max. elapsed: 10.757923 ms
+ rate: 42274.989164 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 7184296
+ nodes redundance: 152.650843
+ load time: 90991.9 ms
+ preprocess time: 1226.780000 ms
+ postprocess time: 34.127951 ms
+ total time: 424499.940872 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 113.707781 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 118.176937 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 101.557970 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 121.078968 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 103.296995 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 99.965811 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 92.144012 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 119.884014 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 107.471943 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 97.960949 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 107.524538 ms
+ iterations: 7
+ min. elapsed: 92.144012 ms
+ max. elapsed: 121.078968 ms
+ rate: 2318.976780 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1642.190000 ms
+ postprocess time: 37.050009 ms
+ total time: 192447.187185 ms
+==============================================
+64bit-VertexT=false 64bit-SizeT=true 64bit-ValueT=false undirected=true mark-pred=true advance-mode=TWC direction-optimized=false do-a=0.000005 do-b=1 idempotence=true
+Using advance mode TWC
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 210695175
+--------------------------
+Run 0 elapsed: 115.595102 ms, src = 1725, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 210695175 ->	 229809900
+--------------------------
+Run 1 elapsed: 113.564014 ms, src = 1161837, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 105.569124 ms, src = 2913221, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 229809900 ->	 229995194
+--------------------------
+Run 3 elapsed: 113.500834 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 106.878042 ms, src = 2128145, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 109.711885 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 117.810965 ms, src = 3311809, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 118.137836 ms, src = 63856, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 109.991074 ms, src = 1668100, #iterations = 6
+Label Validity: PASS
+Predecessors Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 97.419024 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+Predecessors Validity: PASS
+[BFS] finished.
+ avg. elapsed: 110.817790 ms
+ iterations: 7
+ min. elapsed: 97.419024 ms
+ max. elapsed: 118.137836 ms
+ rate: 2250.062079 MiEdges/s
+ src: 1725
+ nodes_visited: 2843567
+ edges_visited: 249346907
+ nodes queued: 2843567
+ load time: 90991.9 ms
+ preprocess time: 1641.040000 ms
+ postprocess time: 35.153151 ms
+ total time: 188790.488005 ms
+Generating RMAT graph, seed = 1558289930, (a, b, c, d) = (0.570000, 0.190000, 0.190000, 0.050000)
+RMAT generated in 81364.898438 ms.
+  Removed 18547937 duplicate edges and self circles.
+Converting 4194304 vertices, 249887519 directed edges ( ordered tuples) to CSR format...Done (0s).
+Converting 4194304 vertices, 249887519 directed edges (unordered tuples) to CSC format...Done (11s).
+Degree Histogram (4194304 vertices, 249887519 edges):
+    Degree 0: 1349324 (32.170391 %)
+    Degree 2^0: 527523 (12.577128 %)
+    Degree 2^1: 501727 (11.962104 %)
+    Degree 2^2: 480283 (11.450839 %)
+    Degree 2^3: 297800 (7.100105 %)
+    Degree 2^4: 430439 (10.262465 %)
+    Degree 2^5: 159988 (3.814411 %)
+    Degree 2^6: 166620 (3.972530 %)
+    Degree 2^7: 170527 (4.065681 %)
+    Degree 2^8: 17 (0.000405 %)
+    Degree 2^9: 74613 (1.778913 %)
+    Degree 2^10: 26283 (0.626636 %)
+    Degree 2^11: 51 (0.001216 %)
+    Degree 2^12: 7315 (0.174403 %)
+    Degree 2^13: 1 (0.000024 %)
+    Degree 2^14: 1539 (0.036693 %)
+    Degree 2^15: 231 (0.005507 %)
+    Degree 2^16: 22 (0.000525 %)
+    Degree 2^17: 0 (0.000000 %)
+    Degree 2^18: 1 (0.000024 %)
+
+src_seed = 1558281462
+Computing reference value ...
+__________________________
+--------------------------
+Run 0 elapsed: 2450.584961 ms, src = 1725, #iterations = 7
+__________________________
+--------------------------
+Run 1 elapsed: 2018.158936 ms, src = 1057105, #iterations = 6
+__________________________
+--------------------------
+Run 2 elapsed: 2089.040039 ms, src = 1634812, #iterations = 7
+__________________________
+--------------------------
+Run 3 elapsed: 2268.298096 ms, src = 2128145, #iterations = 7
+__________________________
+--------------------------
+Run 4 elapsed: 2186.669922 ms, src = 57555, #iterations = 6
+__________________________
+--------------------------
+Run 5 elapsed: 2432.781006 ms, src = 3311809, #iterations = 7
+__________________________
+--------------------------
+Run 6 elapsed: 2632.675781 ms, src = 497612, #iterations = 7
+__________________________
+--------------------------
+Run 7 elapsed: 2127.985840 ms, src = 63856, #iterations = 7
+__________________________
+--------------------------
+Run 8 elapsed: 2128.067871 ms, src = 1668100, #iterations = 7
+__________________________
+--------------------------
+Run 9 elapsed: 2130.467041 ms, src = 2778158, #iterations = 7
+==============================================
+64bit-VertexT=true 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 2.322197 ms, src = 1725, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 3.042936 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 3.617048 ms, src = 1634812, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.172947 ms, src = 2128145, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 2.120018 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 2.232075 ms, src = 3311809, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 5.831003 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 4.004002 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.225876 ms, src = 1668100, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.563953 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 3.013206 ms
+ iterations: 7
+ min. elapsed: 2.120018 ms
+ max. elapsed: 5.831003 ms
+ rate: 82755.588911 MiEdges/s
+ src: 1725
+ nodes_visited: 2843931
+ edges_visited: 249359598
+ nodes queued: 7179913
+ nodes redundance: 152.464388
+ load time: 107987 ms
+ preprocess time: 2989.950000 ms
+ postprocess time: 37.147045 ms
+ total time: 3242.295980 ms
+==============================================
+64bit-VertexT=true 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=true do-a=0.000005 do-b=1 idempotence=true
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+--------------------------
+Run 0 elapsed: 2.230167 ms, src = 1725, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 1 elapsed: 2.977133 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 2 elapsed: 3.631830 ms, src = 1634812, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 3 elapsed: 2.185106 ms, src = 2128145, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 4 elapsed: 2.116203 ms, src = 57555, #iterations = 6
+Label Validity: PASS
+__________________________
+--------------------------
+Run 5 elapsed: 2.243996 ms, src = 3311809, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 6 elapsed: 5.828857 ms, src = 497612, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 7 elapsed: 2.577066 ms, src = 63856, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 8 elapsed: 2.215147 ms, src = 1668100, #iterations = 7
+Label Validity: PASS
+__________________________
+--------------------------
+Run 9 elapsed: 2.559900 ms, src = 2778158, #iterations = 7
+Label Validity: PASS
+[BFS] finished.
+ avg. elapsed: 2.856541 ms
+ iterations: 7
+ min. elapsed: 2.116203 ms
+ max. elapsed: 5.828857 ms
+ rate: 87294.257614 MiEdges/s
+ src: 1725
+ nodes_visited: 2843931
+ edges_visited: 249359598
+ nodes queued: 7179913
+ nodes redundance: 152.464388
+ load time: 107987 ms
+ preprocess time: 2051.580000 ms
+ postprocess time: 34.281015 ms
+ total time: 2261.628866 ms
+==============================================
+64bit-VertexT=true 64bit-SizeT=false 64bit-ValueT=false undirected=true mark-pred=false advance-mode=LB_CULL direction-optimized=false do-a=0.000005 do-b=1 idempotence=false
+Using advance mode LB_CULL
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 25165824 ->	 186049082
+0	 3	 0	 queue3 	 oversize :	 25165824 ->	 62677124
+--------------------------
+Run 0 elapsed: 107.948065 ms, src = 1725, #iterations = 7
+Label Validity: PASS
+__________________________
+0	 2	 0	 queue3 	 oversize :	 186049082 ->	 228461388
+--------------------------
+Run 1 elapsed: 152.697086 ms, src = 1057105, #iterations = 6
+Label Validity: PASS
+__________________________
+0	 3	 0	 queue3 	 oversize :	 62677124 ->	 216139125
