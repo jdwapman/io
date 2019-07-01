@@ -14,7 +14,8 @@ from patch import *
 def vega_to_output(input_json, fileformat, verbose=False):
     """builds the actual visual plot. """
     executables = {'svg': 'vg2svg',
-                   'png': 'vg2png'
+                   'png': 'vg2png',
+                   'pdf': 'vg2pdf'
                    }
     try:
         exe = executables[fileformat]
@@ -101,14 +102,14 @@ def savefile(chart, name, fileformat, outputdir,
 
         osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
         if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
-            print('found osx_svg2pdf')
+            # print('found osx_svg2pdf')
             with open(os.devnull, 'w') as devnull:
                 try:
                     # check_call worked where check_output didn't
                     cmd = ['open', '-n', '-a', 'svg2pdf', base + '.svg']
-                    print('check_call', cmd)
+                    # print('check_call', cmd)
                     check_call(cmd, stderr=devnull)
-                    print('check_call ended')
+                    # print('check_call ended')
                 except CalledProcessError as e:
                     print('error')
                     raise RuntimeError("command '{}' returned with error (code {}): {}".format(
