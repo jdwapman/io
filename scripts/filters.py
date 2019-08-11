@@ -94,6 +94,22 @@ def renameGpuinfoname(df):
     return df.rename(columns={'gpuinfo.name': 'gpuinfo_name'})
 
 
+def renameMTEPSWithAHyphen(df):
+    return df.rename(columns={'m-teps': 'm_teps'})
+
+
+def renameGunrockVersionWithAHyphen(df):
+    return df.rename(columns={'gunrock-version': 'gunrock_version'})
+
+
+def renameAdvanceModeWithAHyphen(df):
+    return df.rename(columns={'advance-mode': 'advance_mode'})
+
+
+def renameMarkPredecessors(df):
+    return df.rename(columns={'mark-pred': 'mark_predecessors'})
+
+
 def gunrockVersionGPU(df):
     if {'gunrock_version', 'gpuinfo.name'}.issubset(df.columns):
         df['gunrock_version_gpu'] = df[
@@ -167,6 +183,25 @@ def undirectedOnly(df):
 
 def idempotentOnly(df):
     return df[df['idempotent'] == True]
+
+
+def thirtyTwoBitOnly(df):
+    return df[(df['64bit-SizeT'] == False) & (df['64bit-VertexT'] == True)]
+
+
+def directionOptimizedOnly(df):
+    return df[df['direction-optimized'] == "true"]
+
+
+def undirectedAndIdempotenceAndMarkPred(df):
+    df['undirected_idempotence_markpred'] = df['undirected'] + \
+        " / " + df['idempotence'] + " / " + df['mark_predecessors']
+    return df
+
+
+def collapseAdvanceMode(df):
+    df['advance_mode'].apply(', '.join)
+    return df
 
 
 def computeOtherMTEPSFromGunrock(df):
