@@ -6,65 +6,9 @@ import os.path
 import pandas
 import time
 from io import StringIO
-from subprocess import Popen, PIPE, STDOUT, check_output, check_call, CalledProcessError, call
+import subprocess
 
 from patch import *
-
-
-def vega_to_output(input_vg_json_filename, fileformat, verbose=False):
-    """builds the actual visual plot. """
-    executables = {'svg': 'vg2svg',
-                   'png': 'vg2png',
-                   'pdf': 'vg2pdf'
-                   }
-    try:
-        exe = executables[fileformat]
-    except KeyError as e:
-        print(e.output)
-    try:
-        # call vg2xxx to turn JSON it into xxx
-        p = check_output([exe, input_vg_json_filename, ''])
-        return p
-    except CalledProcessError as e:
-        print(e.output)
-
-
-def write2tempfile(input):
-    """a helper function that creates a temp file and stores the input passed to it in the file """
-    import tempfile
-    temp = tempfile.NamedTemporaryFile(delete=False)
-    temp.write(input)
-    temp.close()
-    return temp.name
-
-
-def vl2vg_file(vl_json_in, patchFunctions=[], debugFiles=False):
-    """Pipes the vega-lite json through vl2vg to generate the vega json output
-
-        Returns: (temporary) filename containing vg string"""
-    if debugFiles:
-        f = open('vl.json', 'w')
-        f.write(json.dumps(json_in))
-        f.close()
-    p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
-    vg = p.communicate(input=vl_json_in)[0]
-    if debugFiles:
-        f = open('vg_prepatch.json', 'w')
-        f.write(vg)
-        f.close()
-    if patchFunctions != []:
-        # patchFunctions run on dicts, but only convert if we have patch work
-        # to do
-        vg_dict = json.loads(vg)
-        for fn in patchFunctions:
-            vg_dict = fn(vg_dict)
-        vg = json.dumps(vg_dict)
-    if debugFiles:
-        f = open('vg_postpatch.json', 'w')
-        f.write(vg)
-        f.close()
-    return write2tempfile(vg)
-
 
 vlwrapper = """
   <!-- Container for the visualization {title} -->
@@ -85,52 +29,65 @@ vlwrapper = """
 """
 
 
-def savefile(chart, name, fileformat, outputdir,
-             patchFunctions=[patchTwoLegends]):
+def vl2img_pipes(vl_json_in, fileformat):
+    """Pipes the vega-lite json through vl2vg then vg2xxx to generate an image
+
+        Returns: output of vg2xxx"""
+    executables = {'svg': 'vg2svg',
+                   'png': 'vg2png',
+                   'pdf': 'vg2pdf'
+                   }
+    vl2vg_proc = subprocess.Popen(
+        ["vl2vg"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    vl2vg_proc.communicate(input=vl_json_in)
+    try:
+        exe = executables[fileformat]
+    except KeyError as e:
+        print(e.output)
+    try:
+        # vg2xxx turns JSON into image type xxx
+        img_proc = subprocess.run([exe], stdin=vl2vg_proc.stdout,
+                                  capture_output=True)
+        vl2vg_proc.stdout.close()
+        img = img_proc.stdout
+        img.stdout.close()
+        return img
+    except subprocess.CalledProcessError as e:
+        print(e.output)
+
+
+def vl2img(vl_json_in, fileformat):
+    """Pipes the vega-lite json through vl2vg then vg2xxx to generate an image
+
+        Returns: output of vg2xxx"""
+    executables = {'svg': 'vg2svg',
+                   'png': 'vg2png',
+                   'pdf': 'vg2pdf'
+                   }
+    try:
+        exe = executables[fileformat]
+    except KeyError as e:
+        print(e.output)
+    try:
+        return subprocess.check_output("vl2vg | %s" % exe, shell=True,
+                                       input=vl_json_in)
+    except subprocess.CalledProcessError as e:
+        print(e.output)
+
+
+def savefile(chart, name, fileformat, outputdir):
     # assumes outputdir exists
     if fileformat in ['html', 'json']:
         chart.savechart(os.path.join(outputdir, name) + '.' + fileformat)
     elif fileformat in ['png', 'pdf', 'svg']:
         base = os.path.join(outputdir, name)
-        vl2vg_json_file = vl2vg_file(chart.to_json().encode())
         # encode is necessary because we want bytes, not a Unicode str
-        contents = vega_to_output(vl2vg_json_file, fileformat)
-        os.remove(vl2vg_json_file)
+        contents = vl2img(chart.to_json().encode(), fileformat)
         f = open(base + '.' + fileformat, 'wb')
         f.write(contents)
         f.close()
-    elif fileformat in ['pdf', 'eps']:
-        # this elif is not currently tested, probably doesn't work
-        # check if svg has been generated
-        base = os.path.join(outputdir, name)
-        if not os.path.isfile(base + '.svg'):
-            savefile(chart, name, 'svg', outputdir, patchFunctions)
-
-        # @TODO:
-        # @jakevdp suggests rsvg on node:
-        # https://github.com/altair-viz/altair/issues/279#issuecomment-265640244
-
-        osx_svg2pdf = '/Users/jowens/Applications/svg2pdf.app/Contents/MacOS/Application Stub'
-        if (fileformat == 'pdf') and os.path.isfile(osx_svg2pdf):
-            # print('found osx_svg2pdf')
-            with open(os.devnull, 'w') as devnull:
-                try:
-                    # check_call worked where check_output didn't
-                    cmd = ['open', '-n', '-a', 'svg2pdf', base + '.svg']
-                    # print('check_call', cmd)
-                    check_call(cmd, stderr=devnull)
-                    # print('check_call ended')
-                except CalledProcessError as e:
-                    print('error')
-                    raise RuntimeError("command '{}' returned with error (code {}): {}".format(
-                        e.cmd, e.returncode, e.output))
-        else:
-            with open(os.devnull, 'w') as devnull:
-                # hide stderr
-                check_output(['inkscape', '--file=%s.svg' % (base),
-                              '--export-area-drawing', '--without-gui',
-                              '--export-%s=%s.%s' % (fileformat, base, fileformat)],
-                             stderr=devnull)
+    else:
+        print('Unsupported output file format %s\n', fileformat)
 
 
 def savefile_df(df, name, fileformat):
