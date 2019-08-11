@@ -11,7 +11,7 @@ from subprocess import Popen, PIPE, STDOUT, check_output, check_call, CalledProc
 from patch import *
 
 
-def vega_to_output(input_json, fileformat, verbose=False):
+def vega_to_output(input_vg_json_filename, fileformat, verbose=False):
     """builds the actual visual plot. """
     executables = {'svg': 'vg2svg',
                    'png': 'vg2png',
@@ -23,22 +23,31 @@ def vega_to_output(input_json, fileformat, verbose=False):
         print(e.output)
     try:
         # call vg2xxx to turn JSON it into xxx
-        p = check_output([exe, input_json, ''])
+        p = check_output([exe, input_vg_json_filename, ''])
         return p
     except CalledProcessError as e:
         print(e.output)
 
 
-def pipe_vl2vg(json_in, patchFunctions, debugFiles=False):
+def write2tempfile(input):
+    """a helper function that creates a temp file and stores the input passed to it in the file """
+    import tempfile
+    temp = tempfile.NamedTemporaryFile(delete=False)
+    temp.write(input)
+    temp.close()
+    return temp.name
+
+
+def vl2vg_file(vl_json_in, patchFunctions=[], debugFiles=False):
     """Pipes the vega-lite json through vl2vg to generate the vega json output
 
-        Returns: vega-spec json string"""
+        Returns: (temporary) filename containing vg string"""
     if debugFiles:
         f = open('vl.json', 'w')
         f.write(json.dumps(json_in))
         f.close()
     p = Popen(["vl2vg"], stdout=PIPE, stdin=PIPE, shell=True)
-    vg = p.communicate(input=json.dumps(json_in))[0]
+    vg = p.communicate(input=vl_json_in)[0]
     if debugFiles:
         f = open('vg_prepatch.json', 'w')
         f.write(vg)
@@ -54,16 +63,7 @@ def pipe_vl2vg(json_in, patchFunctions, debugFiles=False):
         f = open('vg_postpatch.json', 'w')
         f.write(vg)
         f.close()
-    return vg
-
-
-def write2tempfile(input):
-    """a helper function that creates a temp file and stores the input passed to it in the file """
-    import tempfile
-    temp = tempfile.NamedTemporaryFile(delete=False)
-    temp.write(input)
-    temp.close()
-    return temp
+    return write2tempfile(vg)
 
 
 vlwrapper = """
@@ -88,9 +88,19 @@ vlwrapper = """
 def savefile(chart, name, fileformat, outputdir,
              patchFunctions=[patchTwoLegends]):
     # assumes outputdir exists
-    if fileformat in ['html', 'svg', 'png', 'json']:
+    if fileformat in ['html', 'json']:
         chart.savechart(os.path.join(outputdir, name) + '.' + fileformat)
+    elif fileformat in ['png', 'pdf', 'svg']:
+        base = os.path.join(outputdir, name)
+        vl2vg_json_file = vl2vg_file(chart.to_json().encode())
+        # encode is necessary because we want bytes, not a Unicode str
+        contents = vega_to_output(vl2vg_json_file, fileformat)
+        os.remove(vl2vg_json_file)
+        f = open(base + '.' + fileformat, 'wb')
+        f.write(contents)
+        f.close()
     elif fileformat in ['pdf', 'eps']:
+        # this elif is not currently tested, probably doesn't work
         # check if svg has been generated
         base = os.path.join(outputdir, name)
         if not os.path.isfile(base + '.svg'):
