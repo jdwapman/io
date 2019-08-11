@@ -29,37 +29,13 @@ vlwrapper = """
 """
 
 
-def vl2img_pipes(vl_json_in, fileformat):
-    """Pipes the vega-lite json through vl2vg then vg2xxx to generate an image
-
-        Returns: output of vg2xxx"""
-    executables = {'svg': 'vg2svg',
-                   'png': 'vg2png',
-                   'pdf': 'vg2pdf'
-                   }
-    vl2vg_proc = subprocess.Popen(
-        ["vl2vg"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-    vl2vg_proc.communicate(input=vl_json_in)
-    try:
-        exe = executables[fileformat]
-    except KeyError as e:
-        print(e.output)
-    try:
-        # vg2xxx turns JSON into image type xxx
-        img_proc = subprocess.run([exe], stdin=vl2vg_proc.stdout,
-                                  capture_output=True)
-        vl2vg_proc.stdout.close()
-        img = img_proc.stdout
-        img.stdout.close()
-        return img
-    except subprocess.CalledProcessError as e:
-        print(e.output)
-
-
 def vl2img(vl_json_in, fileformat):
     """Pipes the vega-lite json through vl2vg then vg2xxx to generate an image
 
         Returns: output of vg2xxx"""
+
+    # TODO would prefer to do this properly with pipes
+    # using | and shell=True is safe though given no arguments
     executables = {'svg': 'vg2svg',
                    'png': 'vg2png',
                    'pdf': 'vg2pdf'
