@@ -94,8 +94,23 @@ def renameGpuinfoname(df):
     return df.rename(columns={'gpuinfo.name': 'gpuinfo_name'})
 
 
-def renameMTEPSWithAHyphen(df):
-    return df.rename(columns={'m-teps': 'm_teps'})
+def merge(df, dst, src, delete=True):
+    df[dst] = df[dst].fillna(df[src])
+    if delete:
+        df.drop(src, axis=1, inplace=True)
+    return df
+
+
+def mergeAlgorithmIntoPrimitive(df):
+    return merge(df, dst='primitive', src='algorithm', delete=True)
+
+
+def mergeMHyphenTEPSIntoAvgMTEPS(df):
+    return merge(df, dst='avg-mteps', src='m-teps', delete=True)
+
+
+def renameMTEPSToAvgMTEPS(df):
+    return df.rename(columns={'m_teps': 'avg-mteps'})
 
 
 def renameGunrockVersionWithAHyphen(df):
@@ -106,8 +121,8 @@ def renameAdvanceModeWithAHyphen(df):
     return df.rename(columns={'advance-mode': 'advance_mode'})
 
 
-def renameMarkPredecessors(df):
-    return df.rename(columns={'mark-pred': 'mark_predecessors'})
+def mergeMarkPredecessors(df):
+    return merge(df, dst='mark-pred', src='mark_predecessors', delete=True)
 
 
 def gunrockVersionGPU(df):
@@ -186,16 +201,19 @@ def idempotentOnly(df):
 
 
 def thirtyTwoBitOnly(df):
-    return df[(df['64bit-SizeT'] == False) & (df['64bit-VertexT'] == True)]
+    return df[(df['64bit-SizeT'] == False) &
+              (df['64bit-VertexT'] == False) &
+              (df['64bit-ValueT'] == False)
+              ]
 
 
 def directionOptimizedOnly(df):
-    return df[df['direction-optimized'] == "true"]
+    return df[df['direction-optimized'] == True]
 
 
 def undirectedAndIdempotenceAndMarkPred(df):
-    df['undirected_idempotence_markpred'] = df['undirected'] + \
-        " / " + df['idempotence'] + " / " + df['mark_predecessors']
+    df['undirected_idempotence_markpred'] = df[['undirected', 'idempotence',
+                                                'mark-pred']].apply(lambda x: ' / '.join(x.astype(str)), axis=1)
     return df
 
 
@@ -250,7 +268,7 @@ def computeNewMTEPSFromProcessTimes(df):
 
 # @TODO: next two functions are actually the same function
 def deleteZeroMTEPS(df):
-    return df[df['m_teps'] != 0]
+    return df[df['avg-mteps'] != 0]
 
 
 def deleteZeroElapsed(df):

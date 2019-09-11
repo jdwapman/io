@@ -12,13 +12,16 @@ from logic import *
 name = 'gunrock_sssp_bc_1_0'
 
 # begin user settings for this script
-roots = ['../gunrock-output/v1-0-0/sssp', '../gunrock-output/v1-0-0/bc']
+roots = ['../gunrock-output/v1-0-0/sssp',
+         '../gunrock-output/v1-0-0/bc',
+         '../gunrock-output/v1-0-0/tc']
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
 fnPreprocessDF = [
     # convertCtimeStringToDatetime,
     # normalizePRMTEPS,
+    mergeAlgorithmIntoPrimitive,
     addJSONDetailsLink,
     gunrockVersionGPU,
 ]
@@ -45,12 +48,14 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 
 # end actual program logic
 
-columnsOfInterest = ['algorithm',
+columnsOfInterest = ['primitive',
                      'dataset',
                      'avg-mteps',
                      'avg-process-time',
                      'engine',
                      # 'tag',
+                     'num-vertices',
+                     'num-edges',
                      'gunrock-version',
                      'gpuinfo.name',
                      'advance-mode',
@@ -68,21 +73,44 @@ df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 
 chart = {}
 
-for primitive in ['SSSP', 'bc']:
-    dfx = df[df['algorithm'] == primitive]
+for primitive in ['SSSP', 'bc', 'tc']:
+    dfx = df[df['primitive'] == primitive]
+
+    xval = {'SSSP': 'dataset:N',
+            'bc': 'dataset:N',
+            'tc': 'num-edges:Q',
+            }
+    xtext = {'SSSP': 'Dataset',
+             'bc': 'Dataset',
+             'tc': 'Number of Edges',
+             }
+    xscale = {'SSSP': 'linear',
+              'bc': 'linear',
+              'tc': 'log',
+              }
+    yval = {'SSSP': 'avg-mteps:Q',
+            'bc': 'avg-mteps:Q',
+            'tc': 'avg-process-time:Q',
+            }
+    ytext = {'SSSP': 'MTEPS',
+             'bc': 'MTEPS',
+             'tc': 'Runtime (ms)',
+             }
 
     chart[primitive] = alt.Chart(dfx).mark_point().encode(
-        x=alt.X('dataset:N',
+        x=alt.X(xval[primitive],
                 axis=alt.Axis(
-                    title='Dataset',
-                ),
-                ),
-        y=alt.Y('avg-mteps:Q',
+                    title=xtext[primitive],
+        ),
+            scale=alt.Scale(type=xscale[primitive]),
+
+        ),
+        y=alt.Y(yval[primitive],
                 axis=alt.Axis(
-                    title='MTEPS',
-                ),
-                scale=alt.Scale(type='log'),
-                ),
+                    title=ytext[primitive],
+        ),
+            scale=alt.Scale(type='log'),
+        ),
         column=alt.Column('mark-pred:O',
                           header=alt.Header(title='Mark Predecessors'),
                           ),
@@ -94,12 +122,13 @@ for primitive in ['SSSP', 'bc']:
                             title='Advance Mode',
                         ),
                         ),
-        shape=alt.Shape('advance-mode:N',
+        shape=alt.Shape('[gpuinfo.name]:N',
                         legend=alt.Legend(
-                            title='Advance Mode',
+                            title='GPU',
                         ),
                         ),
-        tooltip=['algorithm', 'dataset:N', '[gpuinfo.name]:N', 'advance-mode:N',
+        tooltip=['primitive', 'dataset:N', '[gpuinfo.name]:N', 'num-vertices',
+                 'num-edges', 'advance-mode:N',
                  'mark-pred', 'undirected', '64bit-SizeT', '64bit-VertexT',
                  'avg-mteps:Q', 'avg-process-time:Q'],
     ).interactive()
@@ -109,7 +138,7 @@ for primitive in ['SSSP', 'bc']:
          df=dfx,
          plotname=plotname,
          formats=['tablehtml', 'tablemd', 'md', 'html', 'png', 'svg', 'pdf'],
-         sortby=['algorithm',
+         sortby=['primitive',
                  'dataset',
                  'engine',
                  'gunrock-version',
