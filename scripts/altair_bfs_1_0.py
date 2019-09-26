@@ -12,7 +12,7 @@ from logic import *
 name = 'gunrock_bfs_1_0'
 
 # begin user settings for this script
-roots = ['../gunrock-output/v1-0-0/bfs/V100']
+roots = ['../gunrock-output/v1-0-0/bfs/P100']
 fnFilterInputFiles = [
     fileEndsWithJSON,
 ]
@@ -24,9 +24,8 @@ fnPreprocessDF = [
     thirtyTwoBitOnly,
     directionOptimizedOnly,
     renameAdvanceModeWithAHyphen,
-    renameMarkPredecessors,
     collapseAdvanceMode,
-    renameMTEPSWithAHyphen,
+    # mergeMHyphenTEPSIntoAvgMTEPS,
     renameGunrockVersionWithAHyphen,
     undirectedAndIdempotenceAndMarkPred,
     # renameGpuinfoname,  # now it's gpuinfo_name
@@ -58,21 +57,22 @@ for fn in fnPostprocessDF:      # alter entries / compute new entries
 
 # end actual program logic
 
-columnsOfInterest = ['algorithm',
+columnsOfInterest = ['primitive',
                      'dataset',
-                     'm_teps',
-                     'elapsed',
+                     'avg-mteps',
+                     'avg-process-time',
                      'engine',
-                     # 'tag',
+                     'tag',
                      'gunrock_version',
-                     # 'gpuinfo.name',
+                     'gpuinfo.name',
                      'advance_mode',
                      'undirected',
                      'idempotence',
-                     'mark_predecessors',
+                     'mark-pred',
                      'undirected_idempotence_markpred',
                      '64bit-SizeT',
                      '64bit-VertexT',
+                     '64bit-ValueT',
                      'direction-optimized',
                      'time',
                      'details']
@@ -90,7 +90,7 @@ chart['full'] = alt.Chart(df).mark_point().encode(
                 title='Dataset',
             ),
             ),
-    y=alt.Y('m_teps',
+    y=alt.Y('avg-mteps',
             axis=alt.Axis(
                 title='MTEPS',
             ),
@@ -106,8 +106,10 @@ chart['full'] = alt.Chart(df).mark_point().encode(
                         title='Undirected / Idempotence / Mark Predecessors',
                     ),
                     ),
-    # tooltip=['[gpuinfo.name]:N', 'm_teps', 'elapsed', 'tag'],
-    tooltip=['m_teps', 'elapsed'],
+    tooltip=['avg-mteps', 'avg-process-time',
+             'advance_mode, [gpuinfo.name]:N',
+             'undirected', 'idempotence', 'mark-pred', 'tag',
+             ],
 ).interactive()
 
 print([(key, value)
@@ -120,7 +122,7 @@ chart['lb'] = alt.Chart(df).mark_point().encode(
                 title='Dataset',
             ),
             ),
-    y=alt.Y('m_teps',
+    y=alt.Y('avg-mteps',
             axis=alt.Axis(
                 title='MTEPS',
             ),
@@ -131,16 +133,19 @@ chart['lb'] = alt.Chart(df).mark_point().encode(
                         title='Advance Mode',
                     ),
                     ),
-    shape=alt.Shape('advance_mode:N',
+    shape=alt.Shape('[gpuinfo.name]:N',
                     legend=alt.Legend(
-                        title='Advance Mode',
+                        title='GPU',
                     ),
                     ),
-    # tooltip=['[gpuinfo.name]:N', 'm_teps', 'elapsed', 'tag'],
-    tooltip=['m_teps', 'elapsed', 'advance_mode'],
+    tooltip=['avg-mteps', 'avg-process-time',
+             'advance_mode, [gpuinfo.name]:N',
+             'undirected', 'idempotence', 'mark-pred', 'tag',
+             ],
 ).transform_filter(
-    (alt.datum.undirected == '1') & (alt.datum.idempotence == "true") & (
-        alt.datum.mark_predecessors == "false")
+    # ['mark-pred'] because datum.mark-pred doesn't parse
+    alt.datum.undirected == True & alt.datum.idempotence == True & alt.datum[
+        'mark-pred'] == True
 ).interactive()
 
 
@@ -152,18 +157,18 @@ for key in list(chart):
          df=df,
          plotname=name + '_' + key,
          formats=['tablehtml', 'tablemd', 'md', 'html', 'svg', 'png', 'pdf'],
-         sortby=['algorithm',
+         sortby=['primitive',
                  'dataset',
                  'engine',
                  'gunrock_version',
                  # 'advance_mode',
                  'undirected',
                  'idempotence',
-                 'mark_predecessors',
+                 'mark-pred',
                  ],
          columns=columnsOfInterest,
          mdtext=("""
-         # V100
+         # BFS
 
          """ +
                  getChartHTML(chart['full'], anchor=name) +
