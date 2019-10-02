@@ -53,6 +53,11 @@ def equateRGG(df):
     return df
 
 
+def SSSPtosssp(df):
+    df.loc[df.primitive == 'SSSP', 'primitive'] = 'sssp'
+    return df
+
+
 def replaceWith(src, dest, column):
     def fn(df):
         df.loc[df[column] == src, column] = dest
