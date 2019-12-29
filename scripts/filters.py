@@ -353,6 +353,22 @@ def normalizeBy1GPU(dest, quantityToNormalize, columnsToGroup):
     return fn
 
 
+def normalizeToGPU(dest, quantityToNormalize, columnsToGroup, gpu):
+    # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
+    def fn(df):
+        dfgunrock = df.loc[df['gpuinfo.name'] == gpu,
+                           columnsToGroup + [quantityToNormalize]]
+        suffix = '_refgpu'
+        dfmerge = pandas.merge(df,
+                               dfgunrock,
+                               on=columnsToGroup,
+                               suffixes=['', suffix])
+        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
+                         dfmerge[quantityToNormalize])
+        return dfmerge
+    return fn
+
+
 def formatColumn(out_column, in_column, string_format):
     # oddly, I was not able to figure out how to do this with a lambda
     def fn(df):
