@@ -54,7 +54,8 @@ def vl2img(vl_json_in, fileformat):
 def savefile(chart, name, fileformat, outputdir):
     # assumes outputdir exists
     if fileformat in ['html', 'json']:
-        chart.savechart(os.path.join(outputdir, name) + '.' + fileformat)
+        # was chart.savechart before altair 4.0
+        chart.save(os.path.join(outputdir, name) + '.' + fileformat)
     elif fileformat in ['png', 'pdf', 'svg']:
         base = os.path.join(outputdir, name)
         # encode is necessary because we want bytes, not a Unicode str
