@@ -83,6 +83,7 @@ for primtuple in [('sssp', ''),
                   ('tc', 'edges'),
                   ('pr', ''),
                   ('pr', 'V100-undirected'),
+                  ('pr', 'sel'),
                   ]:
     primitive = primtuple[0]
     dfx = df[df['primitive'] == primitive]
@@ -134,9 +135,17 @@ for primtuple in [('sssp', ''),
             'color': ('advance_mode:N', 'Advance Mode'),
             'shape': ('pull:O', 'Pull'),
         },
+        ('pr', 'sel'): {
+            'x': ('dataset:N', 'Dataset', 'linear'),
+            'y': ('avg-process-time:Q', 'Runtime (ms)', 'log'),
+            'col': ('pull:O', 'Pull'),
+            'row': ('undirected:O', 'Undirected'),
+            'color': ('advance_mode', 'Advance Mode'),
+            'shape': ('[gpuinfo.name]:N', 'GPU'),
+        },
     }
-    selection = alt.selection_multi(fields=[my[primtuple]['shape'][0]],
-                                    bind='legend')
+
+    selection = {}
 
     if (primtuple == ('pr', 'V100-undirected')):
         dfx = dfx[(dfx['gpuinfo.name'] == 'Quadro GV100') &
@@ -173,32 +182,46 @@ for primtuple in [('sssp', ''),
             row=alt.Row(my[primtuple]['row'][0],
                         header=alt.Header(title=my[primtuple]['row'][1]),
                         ))
-    selection_fields = []
-    for field in ['color', 'shape']:
-        if (field in my[primtuple]):
-            selection_fields.append(my[primtuple][field][0])
-    if selection_fields != []:
-        selection = alt.selection_multi(fields=selection_fields,
-                                        bind='legend')
     if ('color' in my[primtuple]):
         chart[primtuple] = chart[primtuple].encode(
             color=alt.Color(my[primtuple]['color'][0],
                             legend=alt.Legend(title=my[primtuple]['color'][1]),
                             scale=alt.Scale(scheme='dark2')
                             ))
+        selection['color'] = alt.selection_multi(
+            fields=[my[primtuple]['color'][0]],
+            bind='legend')
+        chart[primtuple] = chart[primtuple].add_selection(selection['color'])
+
     if ('shape' in my[primtuple]):
         chart[primtuple] = chart[primtuple].encode(
             shape=alt.Shape(my[primtuple]['shape'][0],
                             legend=alt.Legend(title=my[primtuple]['shape'][1]),
                             ))
-    if selection_fields != []:
-        chart[primtuple] = chart[primtuple].encode(
-            opacity=alt.condition(
-                selection, alt.value(1), alt.value(0.25)
-            ))
-        chart[primtuple] = chart[primtuple].add_selection(selection)
+        selection['shape'] = alt.selection_multi(
+            fields=[my[primtuple]['shape'][0]],
+            bind='legend')
+        chart[primtuple] = chart[primtuple].add_selection(selection['shape'])
 
-    plotname = '_'.join([name, primtuple[0], primtuple[1]])
+    if primtuple[1] == 'sel':
+        # input_checkbox = alt.binding_checkbox()
+        # checkbox_selection = alt.selection_single(bind=input_checkbox, name="Big Budget Films")
+        # size_checkbox_condition = alt.condition(checkbox_selection,
+        #                                         alt.SizeValue(25),
+        #                                         alt.Size('Hundred_Million_Production:Q')
+        # )
+        checkbox = {}
+        checkbox_selection = {}
+        for box in ['undirected']:
+            for l in [box + '_on', box + 'off']:
+                checkbox_selection[l] = alt.selection_single(
+                    bind=alt.binding_checkbox(),
+                    name=l)
+                chart[primtuple] = chart[primtuple].add_selection(
+                    checkbox_selection[l])
+
+    plotname = '_'.join(filter(lambda x: bool(x),
+                               [name, primtuple[0], primtuple[1]]))
     save(chart=chart[primtuple],
          df=dfx,
          plotname=plotname,
