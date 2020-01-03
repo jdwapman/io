@@ -13,6 +13,11 @@ def fileEndsWithJSON(f):
             not os.path.basename(f).startswith("_"))
 
 
+def fileNotInArchiveDir(f):
+    return (os.path.isfile(f) and
+            ("/archive/" not in f))
+
+
 def convertCtimeStringToDate(df):
     # 'time' column is in (text) ctime format
     # datetime.strptime(jsonobj['time'], "%a %b %d %H:%M:%S %Y\n")
@@ -58,6 +63,19 @@ def SSSPtosssp(df):
     return df
 
 
+def mergeAllUpperCasePrimitives(df):
+    df.loc[df.primitive == 'SSSP', 'primitive'] = 'sssp'
+    df.loc[df.primitive == 'BC', 'primitive'] = 'bc'
+    df.loc[df.primitive == 'CC', 'primitive'] = 'cc'
+    df.loc[df.primitive == 'BFS', 'primitive'] = 'bfs'
+    df.loc[df.primitive == 'DOBFS', 'primitive'] = 'bfs'
+    df.loc[df.primitive == 'PR', 'primitive'] = 'pr'
+    df.loc[df.primitive == 'PageRank', 'primitive'] = 'pr'
+    df.loc[df.primitive == 'TC', 'primitive'] = 'tc'
+    df.loc[df.primitive == 'RW', 'primitive'] = 'rw'
+    return df
+
+
 def replaceWith(src, dest, column):
     def fn(df):
         df.loc[df[column] == src, column] = dest
@@ -71,12 +89,20 @@ def equateM40(df):
 
 
 def equateNVIDIAGPUs(df):
-    df.loc[df['gpuinfo.name'] == 'k40', 'gpuinfo.name'] = 'Tesla K40c'
-    df.loc[df['gpuinfo.name'] == 'k40m', 'gpuinfo.name'] = 'Tesla K40m'
-    df.loc[df['gpuinfo.name'] == 'k80', 'gpuinfo.name'] = 'Tesla K80'
+    df = equateM40(df)
+    df.loc[df['gpuinfo.name'] == 'Tesla K40c', 'gpuinfo.name'] = 'Tesla K40/80'
+    df.loc[df['gpuinfo.name'] == 'Tesla K40m', 'gpuinfo.name'] = 'Tesla K40/80'
+    df.loc[df['gpuinfo.name'] == 'Tesla K80', 'gpuinfo.name'] = 'Tesla K40/80'
     df.loc[df['gpuinfo.name'] == 'm60', 'gpuinfo.name'] = 'Tesla M60'
     df.loc[df['gpuinfo.name'] == 'p100',
            'gpuinfo.name'] = 'Tesla P100-PCIE-16GB'
+    df.loc[df['gpuinfo.name'] == 'Quadro GV100', 'gpuinfo.name'] = 'Tesla V100'
+    df.loc[df['gpuinfo.name'] == 'Tesla V100-PCIE-16GB',
+           'gpuinfo.name'] = 'Tesla V100'
+    df.loc[df['gpuinfo.name'] == 'Tesla V100-PCIE-32GB',
+           'gpuinfo.name'] = 'Tesla V100'
+    df.loc[df['gpuinfo.name'] == 'Tesla V100-DGXS-16GB',
+           'gpuinfo.name'] = 'Tesla V100'
     return df
 
 
@@ -112,6 +138,18 @@ def mergeAlgorithmIntoPrimitive(df):
 
 def mergeMHyphenTEPSIntoAvgMTEPS(df):
     return merge(df, dst='avg-mteps', src='m-teps', delete=True)
+
+
+def mergeElapsedIntoAvgProcessTime(df):
+    return merge(df, dst='avg-process-time', src='elapsed', delete=True)
+
+
+def mergeGunrockVersionWithUnderscoreIntoHyphen(df):
+    return merge(df, dst='gunrock-version', src='gunrock_version', delete=True)
+
+
+def mergeAdvanceModeWithUnderscoreIntoHyphen(df):
+    return merge(df, dst='advance-mode', src='advance_mode', delete=True)
 
 
 def renameMTEPSToAvgMTEPS(df):
@@ -280,6 +318,13 @@ def deleteZeroElapsed(df):
     return df[df['elapsed'] != 0]
 
 
+def deleteZero(column):
+    def fn(df):
+        df = df[df[column] != 0]
+        return df
+    return fn
+
+
 def setLigraAlgorithmFromSubalgorithm(df):
     ligranoalg = df['engine'] == 'Ligra' & df.algorithm.isnull()
     m = ligranoalg & df['subalgorithm'] == "bfs-bitvector"
@@ -300,6 +345,14 @@ def keepLatest(columns, sortBy='time'):
 def keepFastest(columns, sortBy='m_teps'):
     def fn(df):
         fastest = df.groupby(columns)[sortBy].transform(max)
+        df = df[df[sortBy] == fastest]
+        return df
+    return fn
+
+
+def keepFastestAvgProcessTime(columns, sortBy='avg-process-time'):
+    def fn(df):
+        fastest = df.groupby(columns)[sortBy].transform(min)
         df = df[df[sortBy] == fastest]
         return df
     return fn
