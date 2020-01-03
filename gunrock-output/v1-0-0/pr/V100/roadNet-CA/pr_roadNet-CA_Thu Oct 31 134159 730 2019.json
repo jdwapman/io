@@ -29,8 +29,6 @@
     "nodes-queued": 59138460,
     "nodes-visited": 0,
     "edges-visited": 0,
-    "nodes-redundance": ,
-    "edges-redundance": ,
     "process-times": [
         13.421058654785157,
         12.96687126159668,
