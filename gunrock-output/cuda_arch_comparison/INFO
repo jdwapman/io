@@ -1,0 +1,12 @@
+Gunrock was always doing launch bound calculations assuming that
+CUDA_ARCH=300. This data compares commits before and after changing
+this. JSON files are in folders for each dataset and can be
+differentiated by their tags:
+
+Gunrock-9c8102fa-before-use-cuda-arch
+Gunrock-6ddbd33-after-use-cuda-arch
+
+The data is limited to BFS and SSSP and not all datasets are
+used.
+
+Runs were performed on daisy, Tesla V100.
