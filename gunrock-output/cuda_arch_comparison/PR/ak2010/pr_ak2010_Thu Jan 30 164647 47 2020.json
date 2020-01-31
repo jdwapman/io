@@ -1,6 +1,6 @@
 {
     "engine": "Gunrock",
-    "command-line": "../../../build/bin/pr market ../../../dataset/large/ak2010/ak2010.mtx --num-runs=10 --quick --device=1 --src=random --64bit-SizeT=false,true --64bit-VertexT=false,true --pull=false,true --advance-mode=LB --tag=9c8102fa-before-use-cuda-arch --undirected=true --jsondir=./PR/ak2010",
+    "command-line": "../../../build/bin/pr market ../../../dataset/large/ak2010/ak2010.mtx --num-runs=10 --quick --device=1 --src=random --64bit-SizeT=false,true --64bit-VertexT=false,true --pull=false,true --advance-mode=LB --tag=Gunrock-9c8102fa-before-use-cuda-arch --undirected=true --jsondir=./PR/ak2010",
     "json-schema": "2019-09-20",
     "compiler": "Gnu GCC C/C++",
     "compiler-version": 70400000,
@@ -161,7 +161,7 @@
     "store-to-binary": true,
     "subqueue-latency": 0,
     "tag": [
-        "9c8102fa-before-use-cuda-arch"
+        "Gunrock-9c8102fa-before-use-cuda-arch"
     ],
     "threshold": 0.01,
     "trans-factor": 1.0,
