@@ -23,6 +23,9 @@
     "min-pts": 25,
     "num-clusters": 4021,
     "num-noisepoints": 312307,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
     "algorithm": "hR-SNN",
     "snn-elapsed": 207894.45
   },
