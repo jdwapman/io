@@ -37,6 +37,15 @@ def convertCtimeStringToDatetime(df):
     return df
 
 
+def tupleify(tag):
+    def fn(df):
+        if tag in df.columns:
+            pandas.set_option('display.max_rows', None)
+            df[tag] = df[tag].apply(tuple)
+        return df
+    return fn
+
+
 def DOBFStoBFS(df):
     df.loc[df.algorithm == 'DOBFS', 'algorithm'] = 'BFS'
     return df
@@ -84,25 +93,25 @@ def replaceWith(src, dest, column):
 
 
 def equateM40(df):
-    df.loc[df['gpuinfo.name'] == 'Tesla M40 24GB', 'gpuinfo.name'] = 'Tesla M40'
+    df.loc[df['gpuinfo_name'] == 'Tesla M40 24GB', 'gpuinfo_name'] = 'Tesla M40'
     return df
 
 
 def equateNVIDIAGPUs(df):
     df = equateM40(df)
-    df.loc[df['gpuinfo.name'] == 'Tesla K40c', 'gpuinfo.name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo.name'] == 'Tesla K40m', 'gpuinfo.name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo.name'] == 'Tesla K80', 'gpuinfo.name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo.name'] == 'm60', 'gpuinfo.name'] = 'Tesla M60'
-    df.loc[df['gpuinfo.name'] == 'p100',
-           'gpuinfo.name'] = 'Tesla P100-PCIE-16GB'
-    df.loc[df['gpuinfo.name'] == 'Quadro GV100', 'gpuinfo.name'] = 'Tesla V100'
-    df.loc[df['gpuinfo.name'] == 'Tesla V100-PCIE-16GB',
-           'gpuinfo.name'] = 'Tesla V100'
-    df.loc[df['gpuinfo.name'] == 'Tesla V100-PCIE-32GB',
-           'gpuinfo.name'] = 'Tesla V100'
-    df.loc[df['gpuinfo.name'] == 'Tesla V100-DGXS-16GB',
-           'gpuinfo.name'] = 'Tesla V100'
+    df.loc[df['gpuinfo_name'] == 'Tesla K40c', 'gpuinfo_name'] = 'Tesla K40/80'
+    df.loc[df['gpuinfo_name'] == 'Tesla K40m', 'gpuinfo_name'] = 'Tesla K40/80'
+    df.loc[df['gpuinfo_name'] == 'Tesla K80', 'gpuinfo_name'] = 'Tesla K40/80'
+    df.loc[df['gpuinfo_name'] == 'm60', 'gpuinfo_name'] = 'Tesla M60'
+    df.loc[df['gpuinfo_name'] == 'p100',
+           'gpuinfo_name'] = 'Tesla P100-PCIE-16GB'
+    df.loc[df['gpuinfo_name'] == 'Quadro GV100', 'gpuinfo_name'] = 'Tesla V100'
+    df.loc[df['gpuinfo_name'] == 'Tesla V100-PCIE-16GB',
+           'gpuinfo_name'] = 'Tesla V100'
+    df.loc[df['gpuinfo_name'] == 'Tesla V100-PCIE-32GB',
+           'gpuinfo_name'] = 'Tesla V100'
+    df.loc[df['gpuinfo_name'] == 'Tesla V100-DGXS-16GB',
+           'gpuinfo_name'] = 'Tesla V100'
     return df
 
 
@@ -121,8 +130,15 @@ def normalizePRMTEPS(df):
     return df
 
 
+def normalizePRByIterations(df):
+    # run mergeMaxInterationIntoMaxIter first
+    df.loc[df.primitive == 'pr', 'avg-process-time'] = df[
+        'avg-process-time'] / df['max-iter']
+    return df
+
+
 def renameGpuinfoname(df):
-    return df.rename(columns={'gpuinfo.name': 'gpuinfo_name'})
+    return df.rename(columns={'gpuinfo_name': 'gpuinfo_name'})
 
 
 def merge(df, dst, src, delete=True):
@@ -134,6 +150,14 @@ def merge(df, dst, src, delete=True):
 
 def mergeAlgorithmIntoPrimitive(df):
     return merge(df, dst='primitive', src='algorithm', delete=True)
+
+
+def mergeAlgorithmIntoEngine(df):
+    return merge(df, dst='engine', src='algorithm', delete=True)
+
+
+def mergeSNNElapsedIntoElapsed(df):
+    return merge(df, dst='elapsed', src='snn-elapsed', delete=True)
 
 
 def mergeMHyphenTEPSIntoAvgMTEPS(df):
@@ -150,6 +174,10 @@ def mergeGunrockVersionWithUnderscoreIntoHyphen(df):
 
 def mergeAdvanceModeWithUnderscoreIntoHyphen(df):
     return merge(df, dst='advance-mode', src='advance_mode', delete=True)
+
+
+def mergeMaxInterationIntoMaxIter(df):
+    return merge(df, dst='max-iter', src='max_iteration', delete=True)
 
 
 def renameMTEPSToAvgMTEPS(df):
@@ -169,9 +197,27 @@ def mergeMarkPredecessors(df):
 
 
 def gunrockVersionGPU(df):
-    if {'gunrock_version', 'gpuinfo.name'}.issubset(df.columns):
+    if {'gunrock_version', 'gpuinfo_name'}.issubset(df.columns):
         df['gunrock_version_gpu'] = df[
-            'gunrock_version'] + " / " + df['gpuinfo.name']
+            'gunrock_version'] + " / " + df['gpuinfo_name']
+    return df
+
+
+def tagPlus64(df):
+    if {'tag', '64bit-SizeT', '64bit-VertexT', '64bit-ValueT'}.issubset(df.columns):
+        df['tag_64'] = ''
+        for c in ['64bit-SizeT', '64bit-VertexT', '64bit-ValueT']:
+            df['tag_64'] = df['tag_64'] + df[c].map(lambda s: str(s)[0])
+        df['tag_64'] = df['tag_64'] + ' / ' + df['tag'].map(str)
+    return df
+
+
+def summarize64(df):
+    if {'64bit-SizeT', '64bit-VertexT', '64bit-ValueT'}.issubset(df.columns):
+        df['summarize64'] = ''
+        for c in ['64bit-SizeT', '64bit-VertexT', '64bit-ValueT']:
+            df['summarize64'] = df['summarize64'] + \
+                df[c].map(lambda s: str(s)[0])
     return df
 
 
@@ -180,6 +226,13 @@ def algorithmDataset(df):
         df['algorithm_dataset'] = df[
             'algorithm'] + " / " + df['dataset']
     return df
+
+
+def insertMissing(col, val):
+    def fn(df):
+        df[col] = df[col].fillna(val)
+        return df
+    return fn
 
 
 def addJSONDetailsLink(df):
@@ -258,6 +311,19 @@ def undirectedAndIdempotenceAndMarkPred(df):
     df['undirected_idempotence_markpred'] = df[['undirected', 'idempotence',
                                                 'mark-pred']].apply(lambda x: ' / '.join(x.astype(str)), axis=1)
     return df
+
+
+def concatFields(name, fieldlist, abbrev=False):
+    def fn(df):
+        if abbrev == True:
+            df[name] = df[fieldlist].apply(
+                lambda x: ' / '.join(x.astype(str).str[0]), axis=1)
+        else:
+            df[name] = df[fieldlist].apply(
+                lambda x: ' / '.join(x.astype(str)), axis=1)
+        return df
+
+    return fn
 
 
 def collapseAdvanceMode(df):
@@ -352,9 +418,8 @@ def keepFastest(columns, sortBy='m_teps'):
 
 def keepFastestAvgProcessTime(columns, sortBy='avg-process-time'):
     def fn(df):
-        fastest = df.groupby(columns)[sortBy].transform(min)
-        df = df[df[sortBy] == fastest]
-        return df
+        idx = df.groupby(columns)[sortBy].transform(min) == df[sortBy]
+        return df[idx]
     return fn
 
 
@@ -409,7 +474,7 @@ def normalizeBy1GPU(dest, quantityToNormalize, columnsToGroup):
 def normalizeToGPU(dest, quantityToNormalize, columnsToGroup, gpu):
     # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
     def fn(df):
-        dfgunrock = df.loc[df['gpuinfo.name'] == gpu,
+        dfgunrock = df.loc[df['gpuinfo_name'] == gpu,
                            columnsToGroup + [quantityToNormalize]]
         suffix = '_refgpu'
         dfmerge = pandas.merge(df,
@@ -480,6 +545,13 @@ def recomputeMTEPSFromMax(df):
     return df
 
 
+def addInto(dest, src1, src2):
+    def fn(df):
+        df[dest] = df[src1] + df[src2]
+        return df
+    return fn
+
+
 def roundSig(column, significant_figures=1):
     # http://stackoverflow.com/questions/3410976/how-to-round-a-number-to-significant-figures-in-python
     def roundSigFn(x, sig):
@@ -494,3 +566,21 @@ def roundSig(column, significant_figures=1):
 
 def keepTheseColumnsOnly(columns):
     return lambda df: df[columns]
+
+
+def extractCTAThreadsFromTag(df):
+    # "cta_6_threads_1024"
+    df['tag0'] = df['tag'].apply(pandas.Series)
+    df['tag_cta'] = df['tag0'].str.extract(
+        pat='cta_([0-9]+)_threads_[0-9]+').astype(int)
+    df['tag_threads'] = df['tag0'].str.extract(
+        pat='cta_[0-9]+_threads_([0-9]+)').astype(int)
+    return df
+
+
+def stripShorthand(str):
+    if str[-2] == ':' and str[-1].isupper():
+        str = str[:-2]
+    if str[0] == '[' and str[-1] == ']':
+        str = str[1:-1]
+    return str
