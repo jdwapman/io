@@ -1,0 +1,197 @@
+[
+  {
+    "dataset": "3DRN",
+    "n": "434K",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 636,
+    "num-noisepoints": 12547,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 485300
+  },
+  {
+    "dataset": "DGB8M3d",
+    "n": "8.7M",
+    "dim": 3,
+    "k": 50,
+    "eps": 20,
+    "min-pts": 25,
+    "num-clusters": 4021,
+    "num-noisepoints": 312307,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 41578890
+  },
+  {
+    "dataset": "MPAGB23K3d",
+    "n": "23K",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 19,
+    "num-noisepoints": 349,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 7760
+  },
+  {
+    "dataset": "MPAGB8M3d",
+    "n": "8M",
+    "dim": 3,
+    "k": 50,
+    "eps": 20,
+    "min-pts": 25,
+    "num-clusters": 3987,
+    "num-noisepoints": 194597,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 13629360
+  },
+  {
+    "dataset": "MPAH1M9d",
+    "n": "919K",
+    "dim": 9,
+    "k": 40,
+    "eps": 15,
+    "min-pts": 20,
+    "num-clusters": 930,
+    "num-noisepoints": 145771,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 121396800
+  },
+  {
+    "dataset": "MPAH1.5M9d",
+    "n": "1.5M",
+    "dim": 9,
+    "k": 40,
+    "eps": 15,
+    "min-pts": 20,
+    "num-clusters": 2950,
+    "num-noisepoints": 310034,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 364386920
+  },
+  {
+    "dataset": "DGF5L11d",
+    "n": "572K",
+    "dim": 11,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 722,
+    "num-noisepoints": 45388,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 4060870
+  },
+  {
+    "dataset": "DGF2M11d",
+    "n": "2.1M",
+    "dim": 11,
+    "k": 50,
+    "eps": 20,
+    "min-pts": 25,
+    "num-clusters": 953,
+    "num-noisepoints": 139135,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 209644100
+  },
+  {
+    "dataset": "KDDCUPB74d",
+    "n": "145K",
+    "dim": 74,
+    "k": 30,
+    "eps": 5,
+    "min-pts": 5,
+    "num-clusters": 17,
+    "num-noisepoints": 4092,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 42937650
+  },
+  {
+    "dataset": "FOF11M3d",
+    "n": "11.4M",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 148657,
+    "num-noisepoints": 867353,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 104199200
+  },
+  {
+    "dataset": "FOF57M3d",
+    "n": "57M",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 1468792,
+    "num-noisepoints": 5269052,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": 754580250
+  },
+  {
+    "dataset": "FOF113M3d",
+    "n": "113M",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 2937584,
+    "num-noisepoints": 10538099,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": -1
+  },
+  {
+    "dataset": "FOF227M3d",
+    "n": "227M",
+    "dim": 3,
+    "k": 30,
+    "eps": 12,
+    "min-pts": 15,
+    "num-clusters": 5875171,
+    "num-noisepoints": 21076234,
+    "tag": [
+        "KUMARI_R_SNN_KNN"
+    ],
+    "algorithm": "R-SNN",
+    "snn-elapsed": -1
+  }
+]
