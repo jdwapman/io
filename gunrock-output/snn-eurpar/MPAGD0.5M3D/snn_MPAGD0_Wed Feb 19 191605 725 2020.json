@@ -65,7 +65,7 @@
     "communicate-latency": 0,
     "communicate-multipy": 1.0,
     "cpu-elapsed": 0.0,
-    "dataset": "MPAGD0",
+    "dataset": "MPAGD0.5M3D",
     "device": 2,
     "dim": 3,
     "edge-value-min": 0.0,

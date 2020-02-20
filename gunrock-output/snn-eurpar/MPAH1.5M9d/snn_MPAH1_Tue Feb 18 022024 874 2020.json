@@ -65,7 +65,7 @@
     "communicate-latency": 0,
     "communicate-multipy": 1.0,
     "cpu-elapsed": 0.0,
-    "dataset": "MPAH1",
+    "dataset": "MPAH1.5M9d",
     "device": 1,
     "dim": 9,
     "edge-value-min": 0.0,

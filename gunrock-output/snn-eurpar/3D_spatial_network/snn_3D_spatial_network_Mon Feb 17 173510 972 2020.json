@@ -65,7 +65,7 @@
     "communicate-latency": 0,
     "communicate-multipy": 1.0,
     "cpu-elapsed": 0.0,
-    "dataset": "3D_spatial_network",
+    "dataset": "3DRN",
     "device": 1,
     "dim": 3,
     "edge-value-min": 0.0,
