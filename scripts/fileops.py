@@ -127,7 +127,7 @@ def save(chart=Chart(),
                       }
             tablefile = plotname + suffix[fileformat]
             # http://stackoverflow.com/questions/26277757/pandas-to-html-truncates-string-contents
-            pandas.set_option('display.max_colwidth', -1)
+            pandas.set_option('display.max_colwidth', None)
             with open(os.path.join(outputdir, tablefile), 'w') as f:
                 if (fileformat == 'tablemd'):
                     # Give it a title so it looks nice in "Related Pages"
