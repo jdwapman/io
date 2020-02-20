@@ -3,7 +3,6 @@ import sys     # built-in
 import json    # built-in
 from json.decoder import JSONDecodeError
 import pandas  # http://pandas.pydata.org
-from pandas.io.json import json_normalize
 
 
 def filesToDF(roots, fnFilterInputFiles):
@@ -37,7 +36,7 @@ def filesToDF(roots, fnFilterInputFiles):
     # data_unfiltered = [json.load(open(jf)) for jf in json_input_files]
     # next call used to be df = pandas.DataFrame(data_unfiltered)
     # instead, json_normalize flattens nested dicts
-    df = json_normalize(data_unfiltered)
+    df = pandas.json_normalize(data_unfiltered, sep='_')
     # http://stackoverflow.com/questions/26666919/python-pandas-add-column-in-dataframe-from-list
     # df['details'] = pandas.Series(json_input_files).values
     return df
