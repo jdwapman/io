@@ -121,7 +121,7 @@
     "store-to-binary": true,
     "subqueue-latency": 0,
     "tag": [
-        ""
+        "GUNROCK_SNN_KNN"
     ],
     "trans-factor": 1.0,
     "undirected": false,
