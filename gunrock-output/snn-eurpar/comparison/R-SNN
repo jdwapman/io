@@ -1,0 +1,29 @@
+[
+  {
+    "dataset": "MPAGD0.5M3D",
+    "snn-elapsed": 371340,
+    "n": 500000,
+    "tag": [
+        "GUNROCK_SNN_SCALABILITY"
+    ],
+    "algorithm": "R-SNN"
+  },
+  {
+    "dataset": "MPAGD1M3D",
+    "snn-elapsed": 608760,
+    "n": 1000000,
+    "tag": [
+        "GUNROCK_SNN_SCALABILITY"
+    ],
+    "algorithm": "R-SNN"
+  },
+  {
+    "dataset": "MPAGD2M3D",
+    "snn-elapsed": 1664940,
+    "n": 2000000,
+    "tag": [
+        "GUNROCK_SNN_SCALABILITY"
+    ],
+    "algorithm": "R-SNN"
+  }
+]
