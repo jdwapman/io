@@ -163,35 +163,5 @@
     ],
     "algorithm": "R-SNN",
     "snn-elapsed": 754580250
-  },
-  {
-    "dataset": "FOF113M3d",
-    "n": "113M",
-    "dim": 3,
-    "k": 30,
-    "eps": 12,
-    "min-pts": 15,
-    "num-clusters": 2937584,
-    "num-noisepoints": 10538099,
-    "tag": [
-        "KUMARI_R_SNN_KNN"
-    ],
-    "algorithm": "R-SNN",
-    "snn-elapsed": -1
-  },
-  {
-    "dataset": "FOF227M3d",
-    "n": "227M",
-    "dim": 3,
-    "k": 30,
-    "eps": 12,
-    "min-pts": 15,
-    "num-clusters": 5875171,
-    "num-noisepoints": 21076234,
-    "tag": [
-        "KUMARI_R_SNN_KNN"
-    ],
-    "algorithm": "R-SNN",
-    "snn-elapsed": -1
   }
 ]

@@ -8,7 +8,7 @@
     "gunrock-version": "1.1.0",
     "git-commit-sha": "691d2885b16dc2d709fb12d50766e44da49949a0",
     "load-time": 2896.550048828125,
-    "primitive": "snn",
+    "primitive": "g-SNN",
     "stddev-degree": 0.0,
     "num-vertices": 0,
     "num-edges": 0,

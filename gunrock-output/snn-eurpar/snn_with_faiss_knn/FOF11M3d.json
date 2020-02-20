@@ -8,7 +8,7 @@
     "gunrock-version": "1.1.0",
     "git-commit-sha": "51eeace288b26dd820ed771b54e07b64cea2068e",
     "load-time": 9512.490234375,
-    "primitive": "snn",
+    "primitive": "gF-SNN",
     "stddev-degree": 0.0,
     "num-vertices": 0,
     "num-edges": 0,
@@ -121,7 +121,7 @@
     "store-to-binary": true,
     "subqueue-latency": 0,
     "tag": [
-        ""
+        "GUNROCK_SNN_KNN"
     ],
     "trans-factor": 1.0,
     "undirected": false,
