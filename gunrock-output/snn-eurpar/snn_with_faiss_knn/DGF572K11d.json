@@ -63,7 +63,7 @@
     "communicate-latency": 0,
     "communicate-multipy": 1.0,
     "cpu-elapsed": 0.0,
-    "dataset": "DGF572K11d",
+    "dataset": "DGF5L11d",
     "device": 2,
     "dim": 11,
     "edge-value-min": 0.0,
