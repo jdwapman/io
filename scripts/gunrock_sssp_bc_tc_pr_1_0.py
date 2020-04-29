@@ -92,14 +92,14 @@ datatypes = {
 chart = {}
 
 for primtuple in [
-    #     ("sssp", ""),
+    ("sssp", ""),
     ("sssp", "advance_mode"),
-    # ("bc", ""),
-    # ("tc", ""),
-    # ("tc", "edges"),
-    # ("pr", ""),
-    # ("pr", "V100-undirected"),
-    # ("pr", "sel"),
+    ("bc", ""),
+    ("tc", ""),
+    ("tc", "edges"),
+    ("pr", ""),
+    ("pr", "V100-undirected"),
+    ("pr", "sel"),
 ]:
     primitive = primtuple[0]
     dfx = df[df["primitive"] == primitive]
