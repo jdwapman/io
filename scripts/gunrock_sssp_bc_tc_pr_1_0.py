@@ -273,7 +273,7 @@ for primtuple in [
         chart=chart[primtuple],
         df=dfx,
         plotname=plotname,
-        formats=["tablehtml", "tablemd", "md", "html", "png", "svg", "pdf"],
+        formats=["tablehtml", "tablemd", "md", "html", "png", "pdf"],
         sortby=[
             "primitive",
             "dataset",
