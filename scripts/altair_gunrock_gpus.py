@@ -27,7 +27,8 @@ fnPreprocessDF = [
     # renameGpuinfoname,  # now it's gpuinfo_name
 ]
 fnFilterDFRows = [
-    selectTags(['topc_arch', 'TitanV']),
+    selectTags(['topc_arch', 'TitanV-Updated-CUDA-Properties',
+                'V100-Updated-CUDA-Properties']),
     deleteZeroMTEPS,
     keepLatest(['algorithm', 'dataset', 'gunrock_version', 'gpuinfo.name']),
 ]
@@ -56,6 +57,7 @@ columnsOfInterest = ['algorithm',
                      'm_teps',
                      'elapsed',
                      'engine',
+                     'tag',
                      'gunrock_version',
                      'gpuinfo.name',
                      'time',
@@ -99,7 +101,7 @@ chart = Chart(df).mark_point().encode(
                     title='GPU',
                 ),
                 ),
-    tooltip=['[gpuinfo.name]:N', 'm_teps', 'elapsed'],
+    tooltip=['[gpuinfo.name]:N', 'm_teps', 'elapsed', 'tag'],
 ).interactive()
 
 print([(key, value)
