@@ -228,7 +228,7 @@ for key in list(chart):
         chart=chart[key],
         df=df,
         plotname=name + "_" + key,
-        formats=["tablehtml", "tablemd", "md", "html", "svg", "png", "pdf"],
+        formats=["tablehtml", "tablemd", "md", "html", "png", "pdf"],
         sortby=[
             "primitive",
             "dataset",
