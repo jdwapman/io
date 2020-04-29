@@ -141,6 +141,14 @@ def renameGpuinfoname(df):
     return df.rename(columns={'gpuinfo_name': 'gpuinfo_name'})
 
 
+def mergeIdempotentToIdempotence(df):
+    return merge(df, dst='idempotence', src='idempotent', delete=True)
+
+
+def mergePostprocessTimeUnderscoreIntoHyphen(df):
+    return merge(df, dst='postprocess-time', src='postprocess_time', delete=True)
+
+
 def merge(df, dst, src, delete=True):
     df[dst] = df[dst].fillna(df[src])
     if delete:
@@ -174,6 +182,10 @@ def mergeGunrockVersionWithUnderscoreIntoHyphen(df):
 
 def mergeAdvanceModeWithUnderscoreIntoHyphen(df):
     return merge(df, dst='advance-mode', src='advance_mode', delete=True)
+
+
+def mergeTraversalModeWithUnderscoreIntoAdvanceModeWithHyphen(df):
+    return merge(df, dst='advance-mode', src='traversal_mode', delete=True)
 
 
 def mergeMaxInterationIntoMaxIter(df):
