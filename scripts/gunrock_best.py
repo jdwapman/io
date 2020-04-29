@@ -29,11 +29,13 @@ fnPreprocessDF = [
     mergeMHyphenTEPSIntoAvgMTEPS,
     mergeElapsedIntoAvgProcessTime,
     renameAdvanceModeWithAHyphen,
+    mergeMaxInterationIntoMaxIter,
     mergeGunrockVersionWithUnderscoreIntoHyphen,
     deleteZero('avg-process-time'),
+    normalizePRByIterations,
     equateNVIDIAGPUs,
     keepFastestAvgProcessTime(
-        ['primitive', 'dataset', 'gunrock-version', 'gpuinfo.name']),
+        ['primitive', 'dataset', 'gunrock-version', 'gpuinfo_name']),
     addJSONDetailsLink,
     gunrockVersionGPU,
 ]
@@ -66,7 +68,7 @@ columnsOfInterest = ['primitive',
                      'avg-process-time',
                      'engine',
                      'gunrock-version',
-                     'gpuinfo.name',
+                     'gpuinfo_name',
                      # 'tag',
                      'num-vertices',
                      'num-edges',
@@ -92,7 +94,7 @@ my = {
         'y': ('avg-process-time:Q', 'Runtime (ms)', 'log'),
         'row': ('primitive:O', 'Primitive'),
         'color': ('gunrock-version:N', 'Gunrock version'),
-        'shape': ('[gpuinfo.name]:N', 'GPU'),
+        'shape': ('gpuinfo_name:N', 'GPU'),
     },
 }
 for prim in prims:
@@ -100,7 +102,7 @@ for prim in prims:
     my[pt] = {}
     my[pt]['x'] = ('dataset:N', 'Dataset', 'linear')
     my[pt]['y'] = ('avg-process-time:Q', 'Runtime (ms)', 'log')
-    my[pt]['row'] = ('[gpuinfo.name]:N', 'GPU')
+    my[pt]['row'] = ('gpuinfo_name:N', 'GPU')
     my[pt]['color'] = ('gunrock-version:N', 'Gunrock version')
 
 
@@ -129,7 +131,7 @@ for primtuple in my:
         ),
             scale=alt.Scale(type=my[primtuple]['y'][2]),
         ),
-        tooltip=['primitive', 'dataset:N', '[gpuinfo.name]:N',
+        tooltip=['primitive', 'dataset:N', 'gpuinfo_name:N',
                  'gunrock-version', 'num-vertices',
                  'num-edges', 'advance_mode:N',
                  'mark-pred', 'undirected', '64bit-SizeT', '64bit-VertexT',
@@ -191,7 +193,7 @@ for primtuple in my:
          formats=['tablehtml', 'tablemd', 'md', 'html', 'png', 'svg', 'pdf'],
          sortby=['primitive',
                  'dataset',
-                 'gpuinfo.name',
+                 'gpuinfo_name',
                  'gunrock-version',
                  'advance_mode',
                  ],
