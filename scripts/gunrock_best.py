@@ -106,6 +106,7 @@ for prim in prims:
     my[pt]["y"] = ("avg-process-time:Q", "Runtime (ms)", "log")
     my[pt]["row"] = ("gpuinfo_name:N", "GPU")
     my[pt]["color"] = ("gunrock-version:N", "Gunrock version")
+    my[pt]["shape"] = ("gunrock-version:N", "Gunrock version")
 
 
 for primtuple in my:
@@ -213,7 +214,7 @@ for primtuple in my:
         chart=chart[primtuple],
         df=dfx,
         plotname=plotname,
-        formats=["tablehtml", "tablemd", "md", "html", "png", "svg", "pdf"],
+        formats=["tablehtml", "tablemd", "md", "html", "png", "pdf"],
         sortby=[
             "primitive",
             "dataset",
