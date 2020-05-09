@@ -1,21 +1,22 @@
 import pandas  # http://pandas.pydata.org
-import os      # built-in
-import re      # built-in
-import math    # built-in
-import numpy   # built-in
+import os  # built-in
+import re  # built-in
+import math  # built-in
+import numpy  # built-in
 
 # possible filtering functions
 
 
 def fileEndsWithJSON(f):
-    return (os.path.isfile(f) and
-            (os.path.splitext(f)[1] == ".json") and
-            not os.path.basename(f).startswith("_"))
+    return (
+        os.path.isfile(f)
+        and (os.path.splitext(f)[1] == ".json")
+        and not os.path.basename(f).startswith("_")
+    )
 
 
 def fileNotInArchiveDir(f):
-    return (os.path.isfile(f) and
-            ("/archive/" not in f))
+    return os.path.isfile(f) and ("/archive/" not in f)
 
 
 def convertCtimeStringToDate(df):
@@ -24,64 +25,65 @@ def convertCtimeStringToDate(df):
     # or
     # http://stackoverflow.com/questions/26763344/convert-pandas-column-to-datetime
     # normalize() resets the time to midnight (so it can be == vs. dates)
-    df['time'] = df['time'].apply(
-        lambda x: pandas.to_datetime(x,
-                                     infer_datetime_format=True).normalize())
+    df["time"] = df["time"].apply(
+        lambda x: pandas.to_datetime(x, infer_datetime_format=True).normalize()
+    )
     return df
 
 
 def convertCtimeStringToDatetime(df):
-    df['time'] = df['time'].apply(
-        lambda x: pandas.to_datetime(x,
-                                     infer_datetime_format=True))
+    df["time"] = df["time"].apply(
+        lambda x: pandas.to_datetime(x, infer_datetime_format=True)
+    )
     return df
 
 
 def tupleify(tag):
     def fn(df):
         if tag in df.columns:
-            pandas.set_option('display.max_rows', None)
+            pandas.set_option("display.max_rows", None)
             df[tag] = df[tag].apply(tuple)
         return df
+
     return fn
 
 
 def DOBFStoBFS(df):
-    df.loc[df.algorithm == 'DOBFS', 'algorithm'] = 'BFS'
+    df.loc[df.algorithm == "DOBFS", "algorithm"] = "BFS"
     return df
 
 
 def BFStoDOBFS(df):
-    m = (df.algorithm == 'BFS') & (df.direction_optimized == True)
-    df.loc[m, 'algorithm'] = 'DOBFS'
+    m = (df.algorithm == "BFS") & (df.direction_optimized == True)
+    df.loc[m, "algorithm"] = "DOBFS"
     return df
 
 
 def BFSCCtoCC(df):
-    df.loc[df.algorithm == 'BFSCC', 'algorithm'] = 'CC'
+    df.loc[df.algorithm == "BFSCC", "algorithm"] = "CC"
     return df
 
 
 def equateRGG(df):
-    df.loc[df.dataset == 'rgg_n_2_24_s0', 'dataset'] = 'rgg_n24_0.000548'
+    df.loc[df.dataset == "rgg_n_2_24_s0", "dataset"] = "rgg_n24_0.000548"
     return df
 
 
 def SSSPtosssp(df):
-    df.loc[df.primitive == 'SSSP', 'primitive'] = 'sssp'
+    df.loc[df.primitive == "SSSP", "primitive"] = "sssp"
     return df
 
 
 def mergeAllUpperCasePrimitives(df):
-    df.loc[df.primitive == 'SSSP', 'primitive'] = 'sssp'
-    df.loc[df.primitive == 'BC', 'primitive'] = 'bc'
-    df.loc[df.primitive == 'CC', 'primitive'] = 'cc'
-    df.loc[df.primitive == 'BFS', 'primitive'] = 'bfs'
-    df.loc[df.primitive == 'DOBFS', 'primitive'] = 'bfs'
-    df.loc[df.primitive == 'PR', 'primitive'] = 'pr'
-    df.loc[df.primitive == 'PageRank', 'primitive'] = 'pr'
-    df.loc[df.primitive == 'TC', 'primitive'] = 'tc'
-    df.loc[df.primitive == 'RW', 'primitive'] = 'rw'
+    df.loc[df.primitive == "SSSP", "primitive"] = "sssp"
+    df.loc[df.primitive == "BC", "primitive"] = "bc"
+    df.loc[df.primitive == "CC", "primitive"] = "cc"
+    df.loc[df.primitive == "BFS", "primitive"] = "bfs"
+    df.loc[df.primitive == "DOBFS", "primitive"] = "bfs"
+    df.loc[df.primitive == "PR", "primitive"] = "pr"
+    df.loc[df.primitive == "PageRank", "primitive"] = "pr"
+    df.loc[df.primitive == "TC", "primitive"] = "tc"
+    df.loc[df.primitive == "RW", "primitive"] = "rw"
     return df
 
 
@@ -89,29 +91,26 @@ def replaceWith(src, dest, column):
     def fn(df):
         df.loc[df[column] == src, column] = dest
         return df
+
     return fn
 
 
 def equateM40(df):
-    df.loc[df['gpuinfo_name'] == 'Tesla M40 24GB', 'gpuinfo_name'] = 'Tesla M40'
+    df.loc[df["gpuinfo_name"] == "Tesla M40 24GB", "gpuinfo_name"] = "Tesla M40"
     return df
 
 
 def equateNVIDIAGPUs(df):
     df = equateM40(df)
-    df.loc[df['gpuinfo_name'] == 'Tesla K40c', 'gpuinfo_name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo_name'] == 'Tesla K40m', 'gpuinfo_name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo_name'] == 'Tesla K80', 'gpuinfo_name'] = 'Tesla K40/80'
-    df.loc[df['gpuinfo_name'] == 'm60', 'gpuinfo_name'] = 'Tesla M60'
-    df.loc[df['gpuinfo_name'] == 'p100',
-           'gpuinfo_name'] = 'Tesla P100-PCIE-16GB'
-    df.loc[df['gpuinfo_name'] == 'Quadro GV100', 'gpuinfo_name'] = 'Tesla V100'
-    df.loc[df['gpuinfo_name'] == 'Tesla V100-PCIE-16GB',
-           'gpuinfo_name'] = 'Tesla V100'
-    df.loc[df['gpuinfo_name'] == 'Tesla V100-PCIE-32GB',
-           'gpuinfo_name'] = 'Tesla V100'
-    df.loc[df['gpuinfo_name'] == 'Tesla V100-DGXS-16GB',
-           'gpuinfo_name'] = 'Tesla V100'
+    df.loc[df["gpuinfo_name"] == "Tesla K40c", "gpuinfo_name"] = "Tesla K40/80"
+    df.loc[df["gpuinfo_name"] == "Tesla K40m", "gpuinfo_name"] = "Tesla K40/80"
+    df.loc[df["gpuinfo_name"] == "Tesla K80", "gpuinfo_name"] = "Tesla K40/80"
+    df.loc[df["gpuinfo_name"] == "m60", "gpuinfo_name"] = "Tesla M60"
+    df.loc[df["gpuinfo_name"] == "p100", "gpuinfo_name"] = "Tesla P100-PCIE-16GB"
+    df.loc[df["gpuinfo_name"] == "Quadro GV100", "gpuinfo_name"] = "Tesla V100"
+    df.loc[df["gpuinfo_name"] == "Tesla V100-PCIE-16GB", "gpuinfo_name"] = "Tesla V100"
+    df.loc[df["gpuinfo_name"] == "Tesla V100-PCIE-32GB", "gpuinfo_name"] = "Tesla V100"
+    df.loc[df["gpuinfo_name"] == "Tesla V100-DGXS-16GB", "gpuinfo_name"] = "Tesla V100"
     return df
 
 
@@ -120,33 +119,34 @@ def replaceFromDict(d, out_column, in_column):
         for key, value in d.iteritems():
             df.loc[df[in_column] == key, out_column] = value
         return df
+
     return fn
 
 
 def normalizePRMTEPS(df):
-    if 'search_depth' in df.columns:
-        df.loc[df.algorithm == 'PageRank', 'm_teps'] = df[
-            'm_teps'] * df['search_depth']
+    if "search_depth" in df.columns:
+        df.loc[df.algorithm == "PageRank", "m_teps"] = df["m_teps"] * df["search_depth"]
     return df
 
 
 def normalizePRByIterations(df):
-    # run mergeMaxInterationIntoMaxIter first
-    df.loc[df.primitive == 'pr', 'avg-process-time'] = df[
-        'avg-process-time'] / df['max-iter']
+    # run mergeMaxIterationIntoMaxIter first
+    df.loc[df.primitive == "pr", "avg-process-time"] = (
+        df["avg-process-time"] / df["max-iter"]
+    )
     return df
 
 
 def renameGpuinfoname(df):
-    return df.rename(columns={'gpuinfo_name': 'gpuinfo_name'})
+    return df.rename(columns={"gpuinfo_name": "gpuinfo_name"})
 
 
 def mergeIdempotentToIdempotence(df):
-    return merge(df, dst='idempotence', src='idempotent', delete=True)
+    return merge(df, dst="idempotence", src="idempotent", delete=True)
 
 
 def mergePostprocessTimeUnderscoreIntoHyphen(df):
-    return merge(df, dst='postprocess-time', src='postprocess_time', delete=True)
+    return merge(df, dst="postprocess-time", src="postprocess_time", delete=True)
 
 
 def merge(df, dst, src, delete=True):
@@ -157,86 +157,83 @@ def merge(df, dst, src, delete=True):
 
 
 def mergeAlgorithmIntoPrimitive(df):
-    return merge(df, dst='primitive', src='algorithm', delete=True)
+    return merge(df, dst="primitive", src="algorithm", delete=True)
 
 
 def mergeAlgorithmIntoEngine(df):
-    return merge(df, dst='engine', src='algorithm', delete=True)
+    return merge(df, dst="engine", src="algorithm", delete=True)
 
 
 def mergeSNNElapsedIntoElapsed(df):
-    return merge(df, dst='elapsed', src='snn-elapsed', delete=True)
+    return merge(df, dst="elapsed", src="snn-elapsed", delete=True)
 
 
 def mergeMHyphenTEPSIntoAvgMTEPS(df):
-    return merge(df, dst='avg-mteps', src='m-teps', delete=True)
+    return merge(df, dst="avg-mteps", src="m-teps", delete=True)
 
 
 def mergeElapsedIntoAvgProcessTime(df):
-    return merge(df, dst='avg-process-time', src='elapsed', delete=True)
+    return merge(df, dst="avg-process-time", src="elapsed", delete=True)
 
 
 def mergeGunrockVersionWithUnderscoreIntoHyphen(df):
-    return merge(df, dst='gunrock-version', src='gunrock_version', delete=True)
+    return merge(df, dst="gunrock-version", src="gunrock_version", delete=True)
 
 
 def mergeAdvanceModeWithUnderscoreIntoHyphen(df):
-    return merge(df, dst='advance-mode', src='advance_mode', delete=True)
+    return merge(df, dst="advance-mode", src="advance_mode", delete=True)
 
 
 def mergeTraversalModeWithUnderscoreIntoAdvanceModeWithHyphen(df):
-    return merge(df, dst='advance-mode', src='traversal_mode', delete=True)
+    return merge(df, dst="advance-mode", src="traversal_mode", delete=True)
 
 
-def mergeMaxInterationIntoMaxIter(df):
-    return merge(df, dst='max-iter', src='max_iteration', delete=True)
+def mergeMaxIterationIntoMaxIter(df):
+    return merge(df, dst="max-iter", src="max_iteration", delete=True)
 
 
 def renameMTEPSToAvgMTEPS(df):
-    return df.rename(columns={'m_teps': 'avg-mteps'})
+    return df.rename(columns={"m_teps": "avg-mteps"})
 
 
 def renameGunrockVersionWithAHyphen(df):
-    return df.rename(columns={'gunrock-version': 'gunrock_version'})
+    return df.rename(columns={"gunrock-version": "gunrock_version"})
 
 
 def renameAdvanceModeWithAHyphen(df):
-    return df.rename(columns={'advance-mode': 'advance_mode'})
+    return df.rename(columns={"advance-mode": "advance_mode"})
 
 
 def mergeMarkPredecessors(df):
-    return merge(df, dst='mark-pred', src='mark_predecessors', delete=True)
+    return merge(df, dst="mark-pred", src="mark_predecessors", delete=True)
 
 
 def gunrockVersionGPU(df):
-    if {'gunrock_version', 'gpuinfo_name'}.issubset(df.columns):
-        df['gunrock_version_gpu'] = df[
-            'gunrock_version'] + " / " + df['gpuinfo_name']
+    if {"gunrock_version", "gpuinfo_name"}.issubset(df.columns):
+        df["gunrock_version_gpu"] = df["gunrock_version"] + " / " + df["gpuinfo_name"]
     return df
 
 
 def tagPlus64(df):
-    if {'tag', '64bit-SizeT', '64bit-VertexT', '64bit-ValueT'}.issubset(df.columns):
-        df['tag_64'] = ''
-        for c in ['64bit-SizeT', '64bit-VertexT', '64bit-ValueT']:
-            df['tag_64'] = df['tag_64'] + df[c].map(lambda s: str(s)[0])
-        df['tag_64'] = df['tag_64'] + ' / ' + df['tag'].map(str)
+    if {"tag", "64bit-SizeT", "64bit-VertexT", "64bit-ValueT"}.issubset(df.columns):
+        df["tag_64"] = ""
+        for c in ["64bit-SizeT", "64bit-VertexT", "64bit-ValueT"]:
+            df["tag_64"] = df["tag_64"] + df[c].map(lambda s: str(s)[0])
+        df["tag_64"] = df["tag_64"] + " / " + df["tag"].map(str)
     return df
 
 
 def summarize64(df):
-    if {'64bit-SizeT', '64bit-VertexT', '64bit-ValueT'}.issubset(df.columns):
-        df['summarize64'] = ''
-        for c in ['64bit-SizeT', '64bit-VertexT', '64bit-ValueT']:
-            df['summarize64'] = df['summarize64'] + \
-                df[c].map(lambda s: str(s)[0])
+    if {"64bit-SizeT", "64bit-VertexT", "64bit-ValueT"}.issubset(df.columns):
+        df["summarize64"] = ""
+        for c in ["64bit-SizeT", "64bit-VertexT", "64bit-ValueT"]:
+            df["summarize64"] = df["summarize64"] + df[c].map(lambda s: str(s)[0])
     return df
 
 
 def algorithmDataset(df):
-    if {'algorithm', 'dataset'}.issubset(df.columns):
-        df['algorithm_dataset'] = df[
-            'algorithm'] + " / " + df['dataset']
+    if {"algorithm", "dataset"}.issubset(df.columns):
+        df["algorithm_dataset"] = df["algorithm"] + " / " + df["dataset"]
     return df
 
 
@@ -244,21 +241,27 @@ def insertMissing(col, val):
     def fn(df):
         df[col] = df[col].fillna(val)
         return df
+
     return fn
 
 
 def addJSONDetailsLink(df):
-    df['details'] = df['details'].apply(lambda s: re.sub(
-        r'.*/([-\w]*)-output',
-        r'<a href="https://github.com/gunrock/io/tree/master/\1-output',
-        s) + '">JSON output</a>')
+    df["details"] = df["details"].apply(
+        lambda s: re.sub(
+            r".*/([-\w]*)-output",
+            r'<a href="https://github.com/gunrock/io/tree/master/\1-output',
+            s,
+        )
+        + '">JSON output</a>'
+    )
     return df
+
 
 # @TODO: The below bunch of functions are all really the same function
 
 
 def selectAnyOfTheseDates(dates):
-    return lambda df: df[df['time'].isin(dates)]
+    return lambda df: df[df["time"].isin(dates)]
 
 
 def selectAnyOfThese(column, these):
@@ -267,28 +270,31 @@ def selectAnyOfThese(column, these):
 
 def selectTag(tag):
     def fn(df):
-        if 'tag' in df.columns:
-            return df[df['tag'] == tag]
+        if "tag" in df.columns:
+            return df[df["tag"] == tag]
         else:
             return df
+
     return fn
 
 
 def selectTags(tagList):
     def fn(df):
-        if 'tag' in df.columns:
-            return df[df['tag'].isin(tagList)]
+        if "tag" in df.columns:
+            return df[df["tag"].isin(tagList)]
         else:
             return df
+
     return fn
 
 
 def deselectTag(tag):
     def fn(df):
-        if 'tag' in df.columns:
-            return df[df['tag'] != tag]
+        if "tag" in df.columns:
+            return df[df["tag"] != tag]
         else:
             return df
+
     return fn
 
 
@@ -297,31 +303,33 @@ def filterOut(value, column):
 
 
 def selectOneDataset(dataset):
-    return lambda df: df[df['dataset'] == dataset]
+    return lambda df: df[df["dataset"] == dataset]
 
 
 def undirectedOnly(df):
-    return df[df['undirected'] == True]
+    return df[df["undirected"] == True]
 
 
 def idempotentOnly(df):
-    return df[df['idempotent'] == True]
+    return df[df["idempotent"] == True]
 
 
 def thirtyTwoBitOnly(df):
-    return df[(df['64bit-SizeT'] == False) &
-              (df['64bit-VertexT'] == False) &
-              (df['64bit-ValueT'] == False)
-              ]
+    return df[
+        (df["64bit-SizeT"] == False)
+        & (df["64bit-VertexT"] == False)
+        & (df["64bit-ValueT"] == False)
+    ]
 
 
 def directionOptimizedOnly(df):
-    return df[df['direction-optimized'] == True]
+    return df[df["direction-optimized"] == True]
 
 
 def undirectedAndIdempotenceAndMarkPred(df):
-    df['undirected_idempotence_markpred'] = df[['undirected', 'idempotence',
-                                                'mark-pred']].apply(lambda x: ' / '.join(x.astype(str)), axis=1)
+    df["undirected_idempotence_markpred"] = df[
+        ["undirected", "idempotence", "mark-pred"]
+    ].apply(lambda x: " / ".join(x.astype(str)), axis=1)
     return df
 
 
@@ -329,17 +337,17 @@ def concatFields(name, fieldlist, abbrev=False):
     def fn(df):
         if abbrev == True:
             df[name] = df[fieldlist].apply(
-                lambda x: ' / '.join(x.astype(str).str[0]), axis=1)
+                lambda x: " / ".join(x.astype(str).str[0]), axis=1
+            )
         else:
-            df[name] = df[fieldlist].apply(
-                lambda x: ' / '.join(x.astype(str)), axis=1)
+            df[name] = df[fieldlist].apply(lambda x: " / ".join(x.astype(str)), axis=1)
         return df
 
     return fn
 
 
 def collapseAdvanceMode(df):
-    df['advance_mode'].apply(', '.join)
+    df["advance_mode"].apply(", ".join)
     return df
 
 
@@ -348,154 +356,159 @@ def computeOtherMTEPSFromGunrock(df):
     # Gunrock's edges_visited to compute m_teps
     #
     # formula: edges_visited / (elapsed * 1000.0f)
-    df['algorithm_dataset'] = df['algorithm'] + "_" + df['dataset']
+    df["algorithm_dataset"] = df["algorithm"] + "_" + df["dataset"]
 
     # series mapping {algorithm+dataset} to edges_visited
     # not quite clear why there's duplicates, so average edges_visited
-    dfg = df.loc[df['engine'] ==
-                 'Gunrock'].groupby(['algorithm_dataset']).mean()['edges_visited']
+    dfg = (
+        df.loc[df["engine"] == "Gunrock"]
+        .groupby(["algorithm_dataset"])
+        .mean()["edges_visited"]
+    )
 
     # fill in missing values for edges_visited, per algorithm_dataset
-    df = df.set_index('algorithm_dataset')
-    df['edges_visited'] = df['edges_visited'].fillna(value=dfg)
+    df = df.set_index("algorithm_dataset")
+    df["edges_visited"] = df["edges_visited"].fillna(value=dfg)
     df = df.reset_index()
 
     # now calculate m_teps if it's empty but edges_visited and elapsed are
     # valid
     m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
-    df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    df.loc[m, "m_teps"] = df["edges_visited"] / (df["elapsed"] * 1000.0)
     return df
 
 
 def computeMTEPSFromEdgesAndElapsed(df):
-    if not {'m_teps'}.issubset(df.columns):
-        df['m_teps'] = numpy.nan
+    if not {"m_teps"}.issubset(df.columns):
+        df["m_teps"] = numpy.nan
     m = df.edges_visited.notnull() & df.elapsed.notnull() & df.m_teps.isnull()
-    df.loc[m, 'm_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    df.loc[m, "m_teps"] = df["edges_visited"] / (df["elapsed"] * 1000.0)
     return df
 
 
 def computeNewMTEPSFromProcessTimes(df):
     def averagePT(row):
-        pt = row['process_times']
+        pt = row["process_times"]
         avg = sum(pt) / len(pt)
         pt0 = list(filter(lambda f: f > (0.2 * avg), pt))
         return sum(pt0) / len(pt0)
-    df['process_times_avg'] = df.apply(averagePT, axis=1)
+
+    df["process_times_avg"] = df.apply(averagePT, axis=1)
     # now recompute m_teps
-    df['m_teps'] = df['edges_visited'] / (df['process_times_avg'] * 1000.0)
+    df["m_teps"] = df["edges_visited"] / (df["process_times_avg"] * 1000.0)
     return df
 
 
 # @TODO: next two functions are actually the same function
 def deleteZeroMTEPS(df):
-    return df[df['avg-mteps'] != 0]
+    return df[df["avg-mteps"] != 0]
 
 
 def deleteZeroElapsed(df):
-    return df[df['elapsed'] != 0]
+    return df[df["elapsed"] != 0]
 
 
 def deleteZero(column):
     def fn(df):
         df = df[df[column] != 0]
         return df
+
     return fn
 
 
 def setLigraAlgorithmFromSubalgorithm(df):
-    ligranoalg = df['engine'] == 'Ligra' & df.algorithm.isnull()
-    m = ligranoalg & df['subalgorithm'] == "bfs-bitvector"
-    df.loc[m, 'algorithm'] = 'BFS'
+    ligranoalg = df["engine"] == "Ligra" & df.algorithm.isnull()
+    m = ligranoalg & df["subalgorithm"] == "bfs-bitvector"
+    df.loc[m, "algorithm"] = "BFS"
     return df
+
 
 # @TODO: next two functions are actually the same function
 
 
-def keepLatest(columns, sortBy='time'):
+def keepLatest(columns, sortBy="time"):
     def fn(df):
         newest = df.groupby(columns)[sortBy].transform(max)
         df = df[df[sortBy] == newest]
         return df
+
     return fn
 
 
-def keepFastest(columns, sortBy='m_teps'):
+def keepFastest(columns, sortBy="m_teps"):
     def fn(df):
         fastest = df.groupby(columns)[sortBy].transform(max)
         df = df[df[sortBy] == fastest]
         return df
+
     return fn
 
 
-def keepFastestAvgProcessTime(columns, sortBy='avg-process-time'):
+def keepFastestAvgProcessTime(columns, sortBy="avg-process-time"):
     def fn(df):
         idx = df.groupby(columns)[sortBy].transform(min) == df[sortBy]
         return df[idx]
+
     return fn
 
 
 def normalizeByGunrock(dest, quantityToNormalize, columnsToGroup):
     # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
     def fn(df):
-        dfgunrock = df.loc[df['engine'] == 'Gunrock',
-                           columnsToGroup + [quantityToNormalize]]
-        suffix = '_gunrock'
-        dfmerge = pandas.merge(df,
-                               dfgunrock,
-                               on=columnsToGroup,
-                               suffixes=['', suffix])
-        dfmerge[dest] = (dfmerge[quantityToNormalize] /
-                         dfmerge[quantityToNormalize + suffix])
+        dfgunrock = df.loc[
+            df["engine"] == "Gunrock", columnsToGroup + [quantityToNormalize]
+        ]
+        suffix = "_gunrock"
+        dfmerge = pandas.merge(df, dfgunrock, on=columnsToGroup, suffixes=["", suffix])
+        dfmerge[dest] = (
+            dfmerge[quantityToNormalize] / dfmerge[quantityToNormalize + suffix]
+        )
         return dfmerge
+
     return fn
 
 
 def normalizeByTag(dest, tag, quantityToNormalize, columnsToGroup):
     # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
     def fn(df):
-        df1 = df.loc[df['tag'] == tag,
-                     columnsToGroup + [quantityToNormalize]]
-        suffix = '_ref'
-        dfmerge = pandas.merge(df,
-                               df1,
-                               on=columnsToGroup,
-                               suffixes=['', suffix])
-        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
-                         dfmerge[quantityToNormalize])
+        df1 = df.loc[df["tag"] == tag, columnsToGroup + [quantityToNormalize]]
+        suffix = "_ref"
+        dfmerge = pandas.merge(df, df1, on=columnsToGroup, suffixes=["", suffix])
+        dfmerge[dest] = (
+            dfmerge[quantityToNormalize + suffix] / dfmerge[quantityToNormalize]
+        )
         return dfmerge
+
     return fn
 
 
 def normalizeBy1GPU(dest, quantityToNormalize, columnsToGroup):
     # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
     def fn(df):
-        df1 = df.loc[df['num_gpus'] == 1,
-                     columnsToGroup + [quantityToNormalize]]
-        suffix = '_1'
-        dfmerge = pandas.merge(df,
-                               df1,
-                               on=columnsToGroup,
-                               suffixes=['', suffix])
-        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
-                         dfmerge[quantityToNormalize])
+        df1 = df.loc[df["num_gpus"] == 1, columnsToGroup + [quantityToNormalize]]
+        suffix = "_1"
+        dfmerge = pandas.merge(df, df1, on=columnsToGroup, suffixes=["", suffix])
+        dfmerge[dest] = (
+            dfmerge[quantityToNormalize + suffix] / dfmerge[quantityToNormalize]
+        )
         return dfmerge
+
     return fn
 
 
 def normalizeToGPU(dest, quantityToNormalize, columnsToGroup, gpu):
     # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
     def fn(df):
-        dfgunrock = df.loc[df['gpuinfo_name'] == gpu,
-                           columnsToGroup + [quantityToNormalize]]
-        suffix = '_refgpu'
-        dfmerge = pandas.merge(df,
-                               dfgunrock,
-                               on=columnsToGroup,
-                               suffixes=['', suffix])
-        dfmerge[dest] = (dfmerge[quantityToNormalize + suffix] /
-                         dfmerge[quantityToNormalize])
+        dfgunrock = df.loc[
+            df["gpuinfo_name"] == gpu, columnsToGroup + [quantityToNormalize]
+        ]
+        suffix = "_refgpu"
+        dfmerge = pandas.merge(df, dfgunrock, on=columnsToGroup, suffixes=["", suffix])
+        dfmerge[dest] = (
+            dfmerge[quantityToNormalize + suffix] / dfmerge[quantityToNormalize]
+        )
         return dfmerge
+
     return fn
 
 
@@ -508,6 +521,7 @@ def formatColumn(out_column, in_column, string_format):
         # df[out_column] = pandas.Series(
         #     [string_format.format(f) for f in df[in_column]])
         return df
+
     return fn
 
 
@@ -518,7 +532,7 @@ def loclist_expand(df, loclist, sample, sampleMinimum):
         sampleRow = sample
         vss = []
         for loc in loclist:
-            vss.append(row.at[loc])    # pick out the array, put into vss
+            vss.append(row.at[loc])  # pick out the array, put into vss
         # print "At index ", idx, " I see ", len(vss[0]), " elements in the
         # array"
         n = len(vss[0])
@@ -531,7 +545,7 @@ def loclist_expand(df, loclist, sample, sampleMinimum):
             new = row.copy()
             newIsValid = True
             for j, loc in enumerate(loclist):
-                if (vss[j][i] == -1):
+                if vss[j][i] == -1:
                     newIsValid = False
                 else:
                     new.at[loc] = vss[j][i]
@@ -542,18 +556,16 @@ def loclist_expand(df, loclist, sample, sampleMinimum):
 
 
 def flattenArrays(loclist, sample=False, sampleMinimum=100):
-    return lambda df: loclist_expand(df,
-                                     loclist=loclist,
-                                     sample=sample,
-                                     sampleMinimum=sampleMinimum
-                                     )
+    return lambda df: loclist_expand(
+        df, loclist=loclist, sample=sample, sampleMinimum=sampleMinimum
+    )
 
 
 def recomputeMTEPSFromMax(df):
     # bet there's a cleaner way to do this
-    m = max(df['edges_visited'])
-    df['edges_visited'] = df['edges_visited'].apply(lambda x: m)
-    df['m_teps'] = df['edges_visited'] / (df['elapsed'] * 1000.0)
+    m = max(df["edges_visited"])
+    df["edges_visited"] = df["edges_visited"].apply(lambda x: m)
+    df["m_teps"] = df["edges_visited"] / (df["elapsed"] * 1000.0)
     return df
 
 
@@ -561,6 +573,7 @@ def addInto(dest, src1, src2):
     def fn(df):
         df[dest] = df[src1] + df[src2]
         return df
+
     return fn
 
 
@@ -570,9 +583,9 @@ def roundSig(column, significant_figures=1):
         return round(x, sig - int(math.floor(math.log10(x))) - 1)
 
     def fn(df):
-        df[column] = df[column].apply(
-            lambda x: roundSigFn(x, significant_figures))
+        df[column] = df[column].apply(lambda x: roundSigFn(x, significant_figures))
         return df
+
     return fn
 
 
@@ -582,17 +595,19 @@ def keepTheseColumnsOnly(columns):
 
 def extractCTAThreadsFromTag(df):
     # "cta_6_threads_1024"
-    df['tag0'] = df['tag'].apply(pandas.Series)
-    df['tag_cta'] = df['tag0'].str.extract(
-        pat='cta_([0-9]+)_threads_[0-9]+').astype(int)
-    df['tag_threads'] = df['tag0'].str.extract(
-        pat='cta_[0-9]+_threads_([0-9]+)').astype(int)
+    df["tag0"] = df["tag"].apply(pandas.Series)
+    df["tag_cta"] = (
+        df["tag0"].str.extract(pat="cta_([0-9]+)_threads_[0-9]+").astype(int)
+    )
+    df["tag_threads"] = (
+        df["tag0"].str.extract(pat="cta_[0-9]+_threads_([0-9]+)").astype(int)
+    )
     return df
 
 
 def stripShorthand(str):
-    if str[-2] == ':' and str[-1].isupper():
+    if str[-2] == ":" and str[-1].isupper():
         str = str[:-2]
-    if str[0] == '[' and str[-1] == ']':
+    if str[0] == "[" and str[-1] == "]":
         str = str[1:-1]
     return str
