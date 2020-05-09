@@ -101,6 +101,7 @@ def equateM40(df):
 
 
 def equateNVIDIAGPUs(df):
+    df["gpuinfo_name_full"] = df["gpuinfo_name"]
     df = equateM40(df)
     df.loc[df["gpuinfo_name"] == "Tesla K40c", "gpuinfo_name"] = "Tesla K40/80"
     df.loc[df["gpuinfo_name"] == "Tesla K40m", "gpuinfo_name"] = "Tesla K40/80"
@@ -111,6 +112,7 @@ def equateNVIDIAGPUs(df):
     df.loc[df["gpuinfo_name"] == "Tesla V100-PCIE-16GB", "gpuinfo_name"] = "Tesla V100"
     df.loc[df["gpuinfo_name"] == "Tesla V100-PCIE-32GB", "gpuinfo_name"] = "Tesla V100"
     df.loc[df["gpuinfo_name"] == "Tesla V100-DGXS-16GB", "gpuinfo_name"] = "Tesla V100"
+    df.loc[df["gpuinfo_name"] == "Tesla V100-DGXS-32GB", "gpuinfo_name"] = "Tesla V100"
     return df
 
 
@@ -189,7 +191,10 @@ def mergeTraversalModeWithUnderscoreIntoAdvanceModeWithHyphen(df):
 
 
 def mergeMaxIterationIntoMaxIter(df):
-    return merge(df, dst="max-iter", src="max_iteration", delete=True)
+    if "max_iteration" in df.columns:
+        return merge(df, dst="max-iter", src="max_iteration", delete=True)
+    else:
+        return df
 
 
 def renameMTEPSToAvgMTEPS(df):
@@ -386,6 +391,16 @@ def computeMTEPSFromEdgesAndElapsed(df):
     return df
 
 
+def computeMTEPSFromEdgesAndElapsed10(df):
+    m = (
+        df["edges-visited"].notnull()
+        & df["avg-process-time"].notnull()
+        & (df["avg-mteps"] == 0)
+    )
+    df.loc[m, "avg-mteps"] = df["edges-visited"] / (df["avg-process-time"] * 1000.0)
+    return df
+
+
 def computeNewMTEPSFromProcessTimes(df):
     def averagePT(row):
         pt = row["process_times"]
@@ -420,6 +435,16 @@ def setLigraAlgorithmFromSubalgorithm(df):
     ligranoalg = df["engine"] == "Ligra" & df.algorithm.isnull()
     m = ligranoalg & df["subalgorithm"] == "bfs-bitvector"
     df.loc[m, "algorithm"] = "BFS"
+    return df
+
+
+def copyQueuedToVisitedForPR(df):
+    df.loc[
+        (df["primitive"] == "pr") & (df["edges-visited"] == 0), "edges-visited"
+    ] = df["edges-queued"]
+    df.loc[
+        (df["primitive"] == "pr") & (df["nodes-visited"] == 0), "nodes-visited"
+    ] = df["nodes-queued"]
     return df
 
 
