@@ -103,7 +103,6 @@ datatypes = {
     "nodes-visited": "quantitative",
     "edges-visited": "quantitative",
     "search-depth": "quantitative",
-    "aggregate": "quantitative",
     "mark-pred": "ordinal",
     "undirected": "ordinal",
     "advance_mode": "nominal",
@@ -122,10 +121,6 @@ for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
         "y": ("max(avg-mteps)", "MTEPS", "log"),
-        "transform_aggregate": {
-            "aggregate": "max(avg-mteps)",
-            "groupby": ["dataset", "gpuinfo_name", "undirected"],
-        },
         "row": ("undirected", "Undirected"),
         "color": ("gpuinfo_name", "GPU"),
         "shape": ("gpuinfo_name", "GPU"),
@@ -142,17 +137,15 @@ for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "avg-process-time")]["y"] = (
         # pr has a normalized runtime per iteration (already computed),
         # but fix the caption
-        "avg-process-time",
+        "min(avg-process-time)",
         "Per-iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
         "log",
     )
-    my[(prim, "avg-process-time")]["y_aggregate"] = "min"
 
     my[(prim, "advance_mode")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        "y": ("avg-mteps", "MTEPS", "log"),
-        "y_aggregate": "max",
+        "y": ("max(avg-mteps)", "MTEPS", "log"),
         "row": ("undirected", "Undirected"),
         "color": ("advance_mode", "Advance Mode"),
         "shape": ("advance_mode", "Advance Mode"),
@@ -162,7 +155,6 @@ for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
         my[(prim, "advance_mode")]["col"] = ("mark-pred", "Mark Predecessors")
     my[(prim, "edges")] = my[(prim, "avg-process-time")].copy()
     my[(prim, "edges")]["x"] = ("num-edges", "Number of Edges", "log")
-    my[(prim, "edges")]["y_aggregate"] = "min"
 
 my[("all-V100", "edges-visited-vs-num-edges")] = {
     "mark": "point",
@@ -247,12 +239,6 @@ for plot in my.keys():
         )
         .interactive()
     )
-    # if "transform_aggregate" in my[plot]:
-    #     chart[plot] = chart[plot].transform_aggregate(
-    #         aggregate=my[plot]["transform_aggregate"]["aggregate"],
-    #         groupby=my[plot]["transform_aggregate"]["groupby"],
-    #     )
-
     if "col" in my[plot]:
         chart[plot] = chart[plot].encode(
             column=alt.Column(
