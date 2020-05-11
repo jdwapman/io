@@ -59,6 +59,12 @@ def BFStoDOBFS(df):
     return df
 
 
+def BFStoDOBFS10(df):
+    m = (df["primitive"] == "bfs") & (df["direction-optimized"] == True)
+    df.loc[m, "primitive"] = "dobfs"
+    return df
+
+
 def BFSCCtoCC(df):
     df.loc[df.algorithm == "BFSCC", "algorithm"] = "CC"
     return df

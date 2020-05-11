@@ -41,6 +41,7 @@ fnFilterDFRows = [
 ]
 fnPostprocessDF = [
     equateNVIDIAGPUs,
+    BFStoDOBFS10,
     copyQueuedToVisitedForPR,
     computeMTEPSFromEdgesAndElapsed10,
     mergeMaxIterationIntoMaxIter,
@@ -116,7 +117,7 @@ chart = {}
 
 my = {}
 
-for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
+for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "mteps")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
@@ -128,8 +129,8 @@ for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
         # otherwise it binds when it's called, that's bad
         "filter": lambda df, prim=prim: df[df["primitive"] == prim],
     }
-    if prim == "sssp" or prim == "bfs":
-        # for SSSP/BFS, mark-pred is significant, but not for the others
+    if prim == "sssp" or prim == "bfs" or prim == "dobfs":
+        # for SSSP/BFS/DOBFS, mark-pred is significant, but not for the others
         my[(prim, "mteps")]["col"] = ("mark-pred", "Mark Predecessors")
 
     # avg-process-time is identical except pick the min
@@ -151,7 +152,7 @@ for prim in ["bfs", "sssp", "tc", "bc", "pr"]:
         "shape": ("advance_mode", "Advance Mode"),
         "filter": lambda df, prim=prim: df[df["primitive"] == prim],
     }
-    if prim == "sssp" or prim == "bfs":
+    if prim == "sssp" or prim == "bfs" or prim == "dobfs":
         my[(prim, "advance_mode")]["col"] = ("mark-pred", "Mark Predecessors")
     my[(prim, "edges")] = my[(prim, "avg-process-time")].copy()
     my[(prim, "edges")]["x"] = ("num-edges", "Number of Edges", "log")
@@ -206,6 +207,18 @@ for plot in my.keys():
 
     selection = {}
 
+    tooltip = set(
+        [
+            "primitive",
+            "dataset",
+            "num-vertices",
+            "64bit-SizeT",
+            "64bit-VertexT",
+            my[plot]["x"][0],
+            my[plot]["y"][0],
+        ]
+    )
+
     chart[plot] = (
         alt.Chart(dfx, mark=my[plot]["mark"])
         .encode(
@@ -222,20 +235,6 @@ for plot in my.keys():
                 axis=alt.Axis(title=my[plot]["y"][1],),
                 scale=alt.Scale(type=my[plot]["y"][2]),
             ),
-            tooltip=[my[plot]["y"][0]]
-            + [
-                "primitive",
-                "dataset",
-                "gpuinfo_name",
-                "gpuinfo_name_full",
-                "num-vertices",
-                "num-edges",
-                "nodes-visited",
-                "edges-visited",
-                "search-depth",
-                "64bit-SizeT",
-                "64bit-VertexT",
-            ],
         )
         .interactive()
     )
@@ -247,6 +246,7 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["col"][1]),
             )
         )
+        tooltip |= {my[plot]["col"][0]}
     if "row" in my[plot]:
         chart[plot] = chart[plot].encode(
             row=alt.Row(
@@ -255,6 +255,7 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["row"][1]),
             )
         )
+        tooltip |= {my[plot]["row"][0]}
     if "color" in my[plot]:
         color = stripShorthand(my[plot]["color"][0])
         chart[plot] = chart[plot].encode(
@@ -265,6 +266,7 @@ for plot in my.keys():
                 # scale=alt.Scale(scheme="dark2"),
             )
         )
+        tooltip |= {my[plot]["color"][0]}
         selection["color"] = alt.selection_multi(fields=[color], bind="legend")
         chart[plot] = chart[plot].add_selection(selection["color"])
 
@@ -277,6 +279,7 @@ for plot in my.keys():
                 legend=alt.Legend(title=my[plot]["shape"][1]),
             )
         )
+        tooltip |= {my[plot]["shape"][0]}
         selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
         chart[plot] = chart[plot].add_selection(selection["shape"])
 
@@ -295,6 +298,7 @@ for plot in my.keys():
                     bind=alt.binding_checkbox(), name=l
                 )
                 chart[plot] = chart[plot].add_selection(checkbox_selection[l])
+    chart[plot] = chart[plot].encode(tooltip=list(tooltip))
 
     plotname = "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1]]))
     save(
