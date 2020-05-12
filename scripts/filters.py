@@ -624,6 +624,13 @@ def keepTheseColumnsOnly(columns):
     return lambda df: df[columns]
 
 
+def renameColumnsWithMinus(df):
+    # df = df.rename(str.replace(pat="-", repl="_"), axis="columns")
+    # this didn't work
+    df = df.rename(lambda s: s.replace("-", "_"), axis="columns")
+    return df
+
+
 def extractCTAThreadsFromTag(df):
     # "cta_6_threads_1024"
     df["tag0"] = df["tag"].apply(pandas.Series)
