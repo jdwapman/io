@@ -46,6 +46,7 @@ fnPostprocessDF = [
     computeMTEPSFromEdgesAndElapsed10,
     mergeMaxIterationIntoMaxIter,
     normalizePRByIterations,
+    renameColumnsWithMinus,
 ]
 # end user settings for this script
 
@@ -66,45 +67,54 @@ for fn in fnPostprocessDF:  # alter entries / compute new entries
 columnsOfInterest = [
     "primitive",
     "dataset",
-    "avg-mteps",
-    "avg-process-time",
+    "avg_mteps",
+    "avg_process_time",
     "engine",
     # 'tag',
-    "num-vertices",
-    "num-edges",
-    "nodes-visited",
-    "edges-visited",
-    "search-depth",
-    "gunrock-version",
+    "num_vertices",
+    "num_edges",
+    "nodes_visited",
+    "edges_visited",
+    "search_depth",
+    "gunrock_version",
     "gpuinfo_name",
     "gpuinfo_name_full",
     "advance_mode",
     "undirected",
     "pull",
-    "mark-pred",
-    "64bit-SizeT",
-    "64bit-VertexT",
+    "mark_pred",
+    "64bit_SizeT",
+    "64bit_VertexT",
     "time",
     "details",
 ]
-# would prefer a cleanup call https://github.com/altair-viz/altair/issues/183
+# would prefer a cleanup call https://github.com/altair_viz/altair/issues/183
 # without this, output is gigantic
 df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 
 # now make the graph
 
+prim_fullname = {
+    "bfs": "BFS",
+    "dobfs": "DOBFS",
+    "sssp": "SSSP",
+    "tc": "Triangle Counting",
+    "bc": "Betweenness Centrality",
+    "pr": "PageRank",
+}
+
 datatypes = {
     "dataset": "nominal",
-    "avg-mteps": "quantitative",
-    "max(avg-mteps)": "quantitative",
-    "avg-process-time": "quantitative",
-    "min(avg-process-time)": "quantitative",
-    "num-vertices": "quantitative",
-    "num-edges": "quantitative",
-    "nodes-visited": "quantitative",
-    "edges-visited": "quantitative",
-    "search-depth": "quantitative",
-    "mark-pred": "ordinal",
+    "avg_mteps": "quantitative",
+    "max(avg_mteps)": "quantitative",
+    "avg_process_time": "quantitative",
+    "min(avg_process_time)": "quantitative",
+    "num_vertices": "quantitative",
+    "num_edges": "quantitative",
+    "nodes_visited": "quantitative",
+    "edges_visited": "quantitative",
+    "search_depth": "quantitative",
+    "mark_pred": "ordinal",
     "undirected": "ordinal",
     "advance_mode": "nominal",
     "gpuinfo_name": "nominal",
@@ -121,81 +131,97 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "mteps")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        "y": ("max(avg-mteps)", "MTEPS", "log"),
+        "y": ("max(avg_mteps)", "MTEPS", "log"),
         "row": ("undirected", "Undirected"),
         "color": ("gpuinfo_name", "GPU"),
         "shape": ("gpuinfo_name", "GPU"),
         # "prim=prim" forces "prim" to bind to the primitive in the above loop
         # otherwise it binds when it's called, that's bad
         "filter": lambda df, prim=prim: df[df["primitive"] == prim],
+        "title": f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in MTEPS)",
     }
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
-        # for SSSP/BFS/DOBFS, mark-pred is significant, but not for the others
-        my[(prim, "mteps")]["col"] = ("mark-pred", "Mark Predecessors")
+        # for SSSP/BFS/DOBFS, mark_pred is significant, but not for the others
+        my[(prim, "mteps")]["col"] = ("mark_pred", "Mark Predecessors")
 
-    # avg-process-time is identical except pick the min
-    my[(prim, "avg-process-time")] = my[(prim, "mteps")].copy()
-    my[(prim, "avg-process-time")]["y"] = (
+    # avg_process_time is identical except pick the min
+    my[(prim, "avg_process_time")] = my[(prim, "mteps")].copy()
+    my[(prim, "avg_process_time")]["y"] = (
         # pr has a normalized runtime per iteration (already computed),
         # but fix the caption
-        "min(avg-process-time)",
-        "Per-iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
+        "min(avg_process_time)",
+        "Per_iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
         "log",
     )
+    my[(prim, "avg_process_time")][
+        "title"
+    ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in ms)"
+
+    if prim == "tc":  # we don't have MTEPS for tc
+        del my[(prim, "mteps")]
 
     my[(prim, "advance_mode")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        "y": ("max(avg-mteps)", "MTEPS", "log"),
+        "y": ("max(avg_mteps)", "MTEPS", "log"),
         "row": ("undirected", "Undirected"),
         "color": ("advance_mode", "Advance Mode"),
         "shape": ("advance_mode", "Advance Mode"),
-        "filter": lambda df, prim=prim: df[df["primitive"] == prim],
+        "filter": lambda df, prim=prim: df[
+            (df["primitive"] == prim) & (df["gpuinfo_name"] == "Tesla V100")
+        ],
+        "title": f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, per advance mode, measured on V100",
     }
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
-        my[(prim, "advance_mode")]["col"] = ("mark-pred", "Mark Predecessors")
-    my[(prim, "edges")] = my[(prim, "avg-process-time")].copy()
-    my[(prim, "edges")]["x"] = ("num-edges", "Number of Edges", "log")
+        my[(prim, "advance_mode")]["col"] = ("mark_pred", "Mark Predecessors")
+    if prim == "tc":  # we don't have MTEPS for tc
+        del my[(prim, "advance_mode")]
+    my[(prim, "edges")] = my[(prim, "avg_process_time")].copy()
+    my[(prim, "edges")]["x"] = ("num_edges", "Number of Edges", "log")
+    my[(prim, "edges")]["title"] = f"{prim_fullname[prim]}: Runtime vs. Number of Edges"
 
-my[("all-V100", "edges-visited-vs-num-edges")] = {
+my[("all_V100", "edges_visited_vs_num_edges")] = {
     "mark": "point",
-    "x": ("num-edges", "Number of Edges", "log"),
-    "y": ("edges-visited", "Number of Edges Visited/Queued", "log"),
+    "x": ("num_edges", "Number of Edges", "log"),
+    "y": ("edges_visited", "Number of Edges Visited/Queued", "log"),
     "row": ("undirected", "Undirected"),
     "color": ("primitive", "Primitive"),
     "shape": ("primitive", "Primitive"),
     "filter": lambda df: df[
-        (df["edges-visited"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
+        (df["edges_visited"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
     ],
+    "title": "Edges Visited vs. Number of Edges, measured on V100",
 }
 
-my[("all-V100", "vertices-visited-vs-num-vertices")] = {
+my[("all_V100", "vertices_visited_vs_num_vertices")] = {
     "mark": "point",
-    "x": ("num-vertices", "Number of Vertices", "log"),
-    "y": ("nodes-visited", "Number of Vertices Visited/Queued", "log"),
+    "x": ("num_vertices", "Number of Vertices", "log"),
+    "y": ("nodes_visited", "Number of Vertices Visited/Queued", "log"),
     "row": ("undirected", "Undirected"),
     "color": ("primitive", "Primitive"),
     "shape": ("primitive", "Primitive"),
     "filter": lambda df: df[
-        (df["nodes-visited"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
+        (df["nodes_visited"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
     ],
+    "title": "Vertices Visited vs. Number of Vertices, measured on V100",
 }
 
-my[("all-V100", "search-depth")] = {
+my[("all_V100", "search_depth")] = {
     "mark": "point",
-    "x": ("search-depth", "Search Depth", "log"),
-    "y": ("avg-process-time", "Runtime (ms)", "log"),
+    "x": ("search_depth", "Search Depth", "log"),
+    "y": ("avg_process_time", "Runtime (ms)", "log"),
     "row": ("undirected", "Undirected"),
     "color": ("primitive", "Primitive"),
     "shape": ("primitive", "Primitive"),
     "filter": lambda df: df[
-        (df["search-depth"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
+        (df["search_depth"] > 0) & (df["gpuinfo_name"] == "Tesla V100")
     ],
+    "title": "Runtime vs. Search Depth, measured on V100",
 }
 
 
 for plot in my.keys():
-    # if plot[0] != "all-V100":
+    # if plot[0] != "all_V100":
     # continue
     print(f"*** Processing {plot} ***")
 
@@ -207,17 +233,57 @@ for plot in my.keys():
 
     selection = {}
 
-    tooltip = set(
-        [
-            "primitive",
-            "dataset",
-            "num-vertices",
-            "64bit-SizeT",
-            "64bit-VertexT",
-            my[plot]["x"][0],
-            my[plot]["y"][0],
-        ]
-    )
+    # we assume that the only aggregate is max or min in the y channel
+    def generateTooltip2(field, y):
+        mmin = re.match(r"min\((.*)\)$", y)
+        mmax = re.match(r"max\((.*)\)$", y)
+        if mmin:
+            return alt.Tooltip(
+                field, alt.Aggregate(alt.ArgminDef(argmin=mmin.group(1)))
+            )
+        elif mmax:
+            return alt.Tooltip(
+                field, alt.Aggregate(alt.ArgmaxDef(argmax=mmax.group(1)))
+            )
+        else:
+            return field
+
+    # this is currying. will it bind correctly?
+    def generateTooltip(field):
+        return generateTooltip2(field=field, y=my[plot]["y"][0])
+
+    tooltip = [
+        "primitive",
+        "dataset",
+        generateTooltip("avg_mteps"),
+        generateTooltip("avg_process_time"),
+        generateTooltip("advance_mode"),
+        generateTooltip("gpuinfo_name"),
+        generateTooltip("gpuinfo_name_full"),
+        generateTooltip("gunrock_version"),
+        generateTooltip("num_vertices"),
+        generateTooltip("nodes_visited"),
+        generateTooltip("num_edges"),
+        generateTooltip("edges_visited"),
+        generateTooltip("search_depth"),
+        generateTooltip("undirected"),
+        generateTooltip("mark_pred"),
+        "64bit_SizeT",
+        "64bit_VertexT",
+    ]
+
+    # Altair
+    # tooltip=[alt.Tooltip(c, type='quantitative') for c in columns]
+    # Vega_Lite
+    # {
+    #   "type": "nominal",
+    #   "field": "Fighting Style",
+    #   "aggregate": {"argmin": "Place"}
+    # }
+    #
+    # so:
+    #
+    # alt.Tooltip(field, alt.aggregate(alt.ArgmaxDef(argmax=argmaxfield?)))
 
     chart[plot] = (
         alt.Chart(dfx, mark=my[plot]["mark"])
@@ -246,7 +312,7 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["col"][1]),
             )
         )
-        tooltip |= {my[plot]["col"][0]}
+        # tooltip |= {my[plot]["col"][0]}
     if "row" in my[plot]:
         chart[plot] = chart[plot].encode(
             row=alt.Row(
@@ -255,7 +321,7 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["row"][1]),
             )
         )
-        tooltip |= {my[plot]["row"][0]}
+        # tooltip |= {my[plot]["row"][0]}
     if "color" in my[plot]:
         color = stripShorthand(my[plot]["color"][0])
         chart[plot] = chart[plot].encode(
@@ -266,7 +332,7 @@ for plot in my.keys():
                 # scale=alt.Scale(scheme="dark2"),
             )
         )
-        tooltip |= {my[plot]["color"][0]}
+        # tooltip |= {my[plot]["color"][0]}
         selection["color"] = alt.selection_multi(fields=[color], bind="legend")
         chart[plot] = chart[plot].add_selection(selection["color"])
 
@@ -279,9 +345,12 @@ for plot in my.keys():
                 legend=alt.Legend(title=my[plot]["shape"][1]),
             )
         )
-        tooltip |= {my[plot]["shape"][0]}
+        # tooltip |= {my[plot]["shape"][0]}
         selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
         chart[plot] = chart[plot].add_selection(selection["shape"])
+
+    if "title" in my[plot]:
+        chart[plot] = chart[plot].properties(title=my[plot]["title"])
 
     if plot[1] == "sel":
         # input_checkbox = alt.binding_checkbox()
@@ -310,9 +379,9 @@ for plot in my.keys():
             "primitive",
             "dataset",
             "engine",
-            "gunrock-version",
+            "gunrock_version",
             "undirected",
-            "mark-pred",
+            "mark_pred",
             "advance_mode",
         ],
         columns=columnsOfInterest,
