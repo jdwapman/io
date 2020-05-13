@@ -140,7 +140,7 @@ def save(
                         % (plotname, plotname)
                     )
                 df.sort_values(sortby).to_html(
-                    buf=f, columns=columns, index=False, escape=False
+                    buf=f, columns=columns, index=False, escape=False, border=0
                 )
                 if fileformat == "tablemd":
                     f.write("\n")
