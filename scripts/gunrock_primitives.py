@@ -374,6 +374,7 @@ for plot in my.keys():
         chart=chart[plot],
         df=dfx,
         plotname=plotname,
+        outputdir="../plots",
         formats=["json", "tablehtml", "tablemd", "md", "html", "png", "pdf"],
         sortby=[
             "primitive",
