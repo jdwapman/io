@@ -150,5 +150,7 @@ def save(
         elif fileformat == "csv":
             with open(os.path.join(outputdir, plotname + "." + fileformat), "w") as f:
                 f.write(df.to_csv())
+        elif fileformat == "json":
+            chart.save(os.path.join(outputdir, plotname + "." + fileformat))
         elif fileformat in ["html", "svg", "png", "pdf", "eps", "json"]:
             savefile(chart, name=plotname, fileformat=fileformat, outputdir=outputdir)
