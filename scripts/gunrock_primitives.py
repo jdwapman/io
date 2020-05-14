@@ -47,6 +47,8 @@ fnPostprocessDF = [
     mergeMaxIterationIntoMaxIter,
     normalizePRByIterations,
     renameColumnsWithMinus,
+    # get rid of all tc + directed
+    lambda df: df[(df["primitive"] != "tc") | (df["undirected"] == True)],
 ]
 # end user settings for this script
 
@@ -81,8 +83,9 @@ columnsOfInterest = [
     "gpuinfo_name_full",
     "advance_mode",
     "undirected",
-    "pull",
     "mark_pred",
+    "idempotence",
+    "pull",
     "64bit_SizeT",
     "64bit_VertexT",
     "time",
@@ -157,8 +160,9 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
         "title"
     ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in ms)"
 
-    if prim == "tc":  # we don't have MTEPS for tc
-        del my[(prim, "mteps")]
+    if prim == "tc":
+        del my[(prim, "mteps")]  # we don't have MTEPS for tc
+        del my[(prim, "avg_process_time")]["row"]  # only undirected
 
     my[(prim, "advance_mode")] = {
         "mark": "point",
@@ -174,8 +178,8 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     }
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
         my[(prim, "advance_mode")]["col"] = ("mark_pred", "Mark Predecessors")
-    if prim == "tc":  # we don't have MTEPS for tc
-        del my[(prim, "advance_mode")]
+    if prim == "tc":
+        del my[(prim, "advance_mode")]  # we don't have MTEPS for tc
     my[(prim, "edges")] = my[(prim, "avg_process_time")].copy()
     my[(prim, "edges")]["x"] = ("num_edges", "Number of Edges", "log")
     my[(prim, "edges")]["title"] = f"{prim_fullname[prim]}: Runtime vs. Number of Edges"
@@ -268,6 +272,7 @@ for plot in my.keys():
         generateTooltip("search_depth"),
         generateTooltip("undirected"),
         generateTooltip("mark_pred"),
+        generateTooltip("idempotence"),
         "64bit_SizeT",
         "64bit_VertexT",
     ]
@@ -381,9 +386,10 @@ for plot in my.keys():
             "dataset",
             "engine",
             "gunrock_version",
+            "advance_mode",
             "undirected",
             "mark_pred",
-            "advance_mode",
+            "idempotence",
         ],
         columns=columnsOfInterest,
         mdtext=(
