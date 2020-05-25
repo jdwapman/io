@@ -98,8 +98,8 @@ df = (keepTheseColumnsOnly(columnsOfInterest))(df)
 # now make the graph
 
 prim_fullname = {
-    "bfs": "BFS",
-    "dobfs": "DOBFS",
+    "bfs": "Forward-Only BFS",
+    "dobfs": "Direction-Optimized BFS",
     "sssp": "SSSP",
     "tc": "Triangle Counting",
     "bc": "Betweenness Centrality",
@@ -134,7 +134,9 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "mteps")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        "y": ("max(avg_mteps)", "MTEPS", "log"),
+        # "y": ("max(avg_mteps)", "MTEPS", "log"),
+        "y": ("avg_mteps", "MTEPS", "log"),
+        "y_aggregate": max,
         "row": ("undirected", "Undirected"),
         "color": ("gpuinfo_name", "GPU"),
         "shape": ("gpuinfo_name", "GPU"),
@@ -152,10 +154,11 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "avg_process_time")]["y"] = (
         # pr has a normalized runtime per iteration (already computed),
         # but fix the caption
-        "min(avg_process_time)",
+        "avg_process_time",
         "Per_iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
         "log",
     )
+    my[(prim, "avg_process_time")]["y_aggregate"] = min
     my[(prim, "avg_process_time")][
         "title"
     ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in ms)"
@@ -167,7 +170,8 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "advance_mode")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        "y": ("max(avg_mteps)", "MTEPS", "log"),
+        "y": ("avg_mteps", "MTEPS", "log"),
+        "y_aggregate": max,
         "row": ("undirected", "Undirected"),
         "color": ("advance_mode", "Advance Mode"),
         "shape": ("advance_mode", "Advance Mode"),
@@ -234,6 +238,23 @@ for plot in my.keys():
         dfx = my[plot]["filter"](df)
     else:
         dfx = df
+
+    # filter the dataframe to only contain the aggregate (do the aggregation in
+    # Pandas not Altair, otherwise the resulting dataframe table is huge)
+    # y_aggregate is simply the aggregation function (e.g., min, max)
+    if "y_aggregate" in my[plot]:
+        # what are our groupbys? They're our encodings in the plot.
+        columns = [
+            my[plot][field][0]
+            for field in ["x", "row", "col", "color", "shape"]
+            if field in my[plot]
+        ]
+        # keep only those rows that match the aggregate
+        idx = (
+            dfx.groupby(columns)[my[plot]["y"][0]].transform(my[plot]["y_aggregate"])
+            == dfx[my[plot]["y"][0]]
+        )
+        dfx = dfx[idx]
 
     selection = {}
 
