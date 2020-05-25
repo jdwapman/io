@@ -131,40 +131,50 @@ chart = {}
 my = {}
 
 for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
-    my[(prim, "mteps")] = {
+    my[(prim, "mteps_best")] = {
         "mark": "point",
         "x": ("dataset", "Dataset", "linear"),
-        # "y": ("max(avg_mteps)", "MTEPS", "log"),
         "y": ("avg_mteps", "MTEPS", "log"),
         "y_aggregate": max,
-        "row": ("undirected", "Undirected"),
         "color": ("gpuinfo_name", "GPU"),
         "shape": ("gpuinfo_name", "GPU"),
         # "prim=prim" forces "prim" to bind to the primitive in the above loop
         # otherwise it binds when it's called, that's bad
         "filter": lambda df, prim=prim: df[df["primitive"] == prim],
-        "title": f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in MTEPS)",
+        "title": f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, combining all options (measured in MTEPS)",
     }
+    my[(prim, "mteps")] = my[(prim, "mteps_best")].copy()
+    my[(prim, "mteps")]["row"] = ("undirected", "Undirected")
+    my[(prim, "mteps")][
+        "title"
+    ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, separating out options (measured in MTEPS)"
+
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
         # for SSSP/BFS/DOBFS, mark_pred is significant, but not for the others
         my[(prim, "mteps")]["col"] = ("mark_pred", "Mark Predecessors")
 
     # avg_process_time is identical except pick the min
     my[(prim, "avg_process_time")] = my[(prim, "mteps")].copy()
-    my[(prim, "avg_process_time")]["y"] = (
-        # pr has a normalized runtime per iteration (already computed),
-        # but fix the caption
-        "avg_process_time",
-        "Per_iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
-        "log",
-    )
-    my[(prim, "avg_process_time")]["y_aggregate"] = min
+    my[(prim, "avg_process_time_best")] = my[(prim, "mteps_best")].copy()
+    for plot in ["avg_process_time", "avg_process_time_best"]:
+        my[(prim, plot)]["y"] = (
+            # pr has a normalized runtime per iteration (already computed),
+            # but fix the caption
+            "avg_process_time",
+            "Per_iteration runtime (ms)" if prim == "pr" else "Runtime (ms)",
+            "log",
+        )
+        my[(prim, plot)]["y_aggregate"] = min
     my[(prim, "avg_process_time")][
         "title"
-    ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs (measured in ms)"
+    ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, separating out options (measured in ms)"
+    my[(prim, "avg_process_time_best")][
+        "title"
+    ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, combining all options (measured in ms)"
 
     if prim == "tc":
         del my[(prim, "mteps")]  # we don't have MTEPS for tc
+        del my[(prim, "mteps_best")]  # we don't have MTEPS for tc
         del my[(prim, "avg_process_time")]["row"]  # only undirected
 
     my[(prim, "advance_mode")] = {
@@ -184,7 +194,8 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
         my[(prim, "advance_mode")]["col"] = ("mark_pred", "Mark Predecessors")
     if prim == "tc":
         del my[(prim, "advance_mode")]  # we don't have MTEPS for tc
-    my[(prim, "edges")] = my[(prim, "avg_process_time")].copy()
+
+    my[(prim, "edges")] = my[(prim, "avg_process_time_best")].copy()
     my[(prim, "edges")]["x"] = ("num_edges", "Number of Edges", "log")
     my[(prim, "edges")]["title"] = f"{prim_fullname[prim]}: Runtime vs. Number of Edges"
 
