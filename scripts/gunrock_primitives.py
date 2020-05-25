@@ -47,6 +47,7 @@ fnPostprocessDF = [
     mergeMaxIterationIntoMaxIter,
     normalizePRByIterations,
     renameColumnsWithMinus,
+    undirectedAndMarkPred,
     # get rid of all tc + directed
     lambda df: df[(df["primitive"] != "tc") | (df["undirected"] == True)],
 ]
@@ -84,6 +85,7 @@ columnsOfInterest = [
     "advance_mode",
     "undirected",
     "mark_pred",
+    "undirected_markpred",
     "idempotence",
     "pull",
     "64bit_SizeT",
@@ -119,6 +121,7 @@ datatypes = {
     "search_depth": "quantitative",
     "mark_pred": "ordinal",
     "undirected": "ordinal",
+    "undirected_markpred": "ordinal",
     "advance_mode": "nominal",
     "gpuinfo_name": "nominal",
     "gpuinfo_name_full": "nominal",
@@ -151,7 +154,10 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
 
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
         # for SSSP/BFS/DOBFS, mark_pred is significant, but not for the others
-        my[(prim, "mteps")]["col"] = ("mark_pred", "Mark Predecessors")
+        my[(prim, "mteps")]["row"] = (
+            "undirected_markpred",
+            "Undirected / Mark Predecessors",
+        )
 
     # avg_process_time is identical except pick the min
     my[(prim, "avg_process_time")] = my[(prim, "mteps")].copy()
@@ -191,7 +197,10 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
         "title": f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs, per advance mode, measured on V100",
     }
     if prim == "sssp" or prim == "bfs" or prim == "dobfs":
-        my[(prim, "advance_mode")]["col"] = ("mark_pred", "Mark Predecessors")
+        my[(prim, "advance_mode")]["row"] = (
+            "undirected_markpred",
+            "Undirected / Mark Predecessors",
+        )
     if prim == "tc":
         del my[(prim, "advance_mode")]  # we don't have MTEPS for tc
 
