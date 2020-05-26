@@ -344,6 +344,13 @@ def undirectedAndIdempotenceAndMarkPred(df):
     return df
 
 
+def undirectedAndMarkPred(df):
+    df["undirected_markpred"] = df[["undirected", "mark_pred"]].apply(
+        lambda x: " / ".join(x.astype(str)), axis=1
+    )
+    return df
+
+
 def concatFields(name, fieldlist, abbrev=False):
     def fn(df):
         if abbrev == True:
