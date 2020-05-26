@@ -350,6 +350,7 @@ for plot in my.keys():
         )
         .interactive()
     )
+
     if "col" in my[plot]:
         chart[plot] = chart[plot].encode(
             column=alt.Column(
@@ -358,7 +359,7 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["col"][1]),
             )
         )
-        # tooltip |= {my[plot]["col"][0]}
+
     if "row" in my[plot]:
         chart[plot] = chart[plot].encode(
             row=alt.Row(
@@ -367,20 +368,23 @@ for plot in my.keys():
                 header=alt.Header(title=my[plot]["row"][1]),
             )
         )
-        # tooltip |= {my[plot]["row"][0]}
+
     if "color" in my[plot]:
         color = stripShorthand(my[plot]["color"][0])
-        chart[plot] = chart[plot].encode(
-            color=alt.Color(
-                color,
-                type=datatypes[color],
-                legend=alt.Legend(title=my[plot]["color"][1]),
-                # scale=alt.Scale(scheme="dark2"),
-            )
-        )
-        # tooltip |= {my[plot]["color"][0]}
         selection["color"] = alt.selection_multi(fields=[color], bind="legend")
-        chart[plot] = chart[plot].add_selection(selection["color"])
+        chart[plot] = (
+            chart[plot]
+            .encode(
+                color=alt.Color(
+                    color,
+                    type=datatypes[color],
+                    legend=alt.Legend(title=my[plot]["color"][1]),
+                    # scale=alt.Scale(scheme="dark2"),
+                ),
+                opacity=alt.condition(selection["color"], alt.value(1), alt.value(0.2)),
+            )
+            .add_selection(selection["color"])
+        )
 
     if "shape" in my[plot]:
         shape = stripShorthand(my[plot]["shape"][0])
@@ -391,9 +395,9 @@ for plot in my.keys():
                 legend=alt.Legend(title=my[plot]["shape"][1]),
             )
         )
-        # tooltip |= {my[plot]["shape"][0]}
-        selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
-        chart[plot] = chart[plot].add_selection(selection["shape"])
+        # commented out b/c I don't know what to do with shape selection
+        # selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
+        # chart[plot] = chart[plot].add_selection(selection["shape"])
 
     if "title" in my[plot]:
         chart[plot] = chart[plot].properties(title=my[plot]["title"])
