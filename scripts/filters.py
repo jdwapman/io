@@ -616,7 +616,7 @@ def normalizeToGunrock1Plus(dest, quantityToNormalize, columnsToGroup):
         dfgunrock = df.loc[
             df["gunrock_version"] == "1.0+", columnsToGroup + [quantityToNormalize]
         ]
-        suffix = "_1.0+"
+        suffix = "_10+"
         dfmerge = df.merge(dfgunrock, on=columnsToGroup, suffixes=["", suffix])
         # expected this is normalized time (reference is in numerator)
         dfmerge[dest] = (
