@@ -237,7 +237,20 @@ def renameAdvanceModeWithAHyphen(df):
 
 
 def mergeMarkPredecessors(df):
-    return merge(df, dst="mark-pred", src="mark_predecessors", delete=True)
+    # first, if there's no mark_pred, create it
+    if "mark_pred" not in df.columns:
+        if "mark-pred" in df.columns:
+            df = df.rename(columns={"mark-pred": "mark_pred"})
+        elif "mark_predecessors" in df.columns:
+            df = df.rename(columns={"mark_predecessors": "mark_pred"})
+        else:
+            return df
+
+    # now we definitely have a mark_pred
+    for col in ["mark_predecessors", "mark-pred"]:
+        if col in df.columns:
+            df = merge(df, dst="mark_pred", src=col, delete=True)
+    return df
 
 
 def gunrockVersionGPU(df):
@@ -359,14 +372,33 @@ def directionOptimizedOnly(df):
 
 
 def undirectedAndIdempotenceAndMarkPred(df):
+    markpred = "uninitialized"
+    for col in ["mark-pred", "mark_pred"]:
+        if col in df.columns:
+            if markpred != "uninitialized":
+                print("Duplicate markpred in undirectedAndIdempotenceAndMarkPred")
+            markpred = col
     df["undirected_idempotence_markpred"] = df[
-        ["undirected", "idempotence", "mark-pred"]
+        ["undirected", "idempotence", markpred]
     ].apply(lambda x: " / ".join(x.astype(str)), axis=1)
     return df
 
 
 def undirectedAndMarkPred(df):
-    df["undirected_markpred"] = df[["undirected", "mark_pred"]].apply(
+    markpred = "uninitialized"
+    for col in ["mark-pred", "mark_pred"]:
+        if col in df.columns:
+            if markpred != "uninitialized":
+                print("Duplicate markpred in undirectedAndMarkPred")
+            markpred = col
+    df["undirected_markpred"] = df[["undirected", markpred]].apply(
+        lambda x: " / ".join(x.astype(str)), axis=1
+    )
+    return df
+
+
+def undirectedAndPull(df):
+    df["undirected_pull"] = df[["undirected", "pull"]].apply(
         lambda x: " / ".join(x.astype(str)), axis=1
     )
     return df
