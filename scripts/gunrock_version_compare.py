@@ -25,20 +25,23 @@ fnPreprocessDF = [
     # convertCtimeStringToDatetime,
     # normalizePRMTEPS,
     selectAnyOfThese("engine", ["Gunrock"]),  # only Gunrock
-    lambda df: df[df["num_gpus"].isnull() | (df["num_gpus"] == 1)], # single GPU only
+    lambda df: df[df["num_gpus"].isnull() | (df["num_gpus"] == 1)],  # single GPU only
     mergeAlgorithmIntoPrimitive,
     mergeAllUpperCasePrimitives,
     selectAnyOfThese("primitive", prims),
     mergeIdempotentToIdempotence,
+    mergeMarkPredecessors,
     mergeMHyphenTEPSIntoAvgMTEPS,
     mergeElapsedIntoAvgProcessTime,
     mergeMaxIterationIntoMaxIter,
     mergeTraversalModeWithUnderscoreIntoAdvanceModeWithHyphen,
-    mergeMarkPredecessors,
     deleteZero("avg-process-time"),
     mergeMinusSignsIntoUnderscores,
     normalizePRByIterations,
     renameColumnsWithMinus,
+    undirectedAndIdempotenceAndMarkPred,
+    undirectedAndMarkPred,
+    undirectedAndPull,
     # all col names at this point should be 1.0+ schema and underscores only
 ]
 fnFilterDFRows = [
@@ -98,6 +101,10 @@ columnsOfInterest = [
     "idempotence",
     "undirected",
     "mark_pred",
+    "undirected_idempotence_markpred",
+    "undirected_markpred",
+    "undirected_pull",
+    "pull",
     "64bit_SizeT",
     "64bit_VertexT",
     "time",
@@ -128,15 +135,27 @@ datatypes = {
     "nodes_visited": "quantitative",
     "edges_visited": "quantitative",
     "search_depth": "quantitative",
-    "mark_pred": "ordinal",
-    "undirected": "ordinal",
-    "undirected_markpred": "ordinal",
+    "mark_pred": "nominal",
+    "undirected": "nominal",
+    "undirected_markpred": "nominal",
+    "undirected_pull": "nominal",
+    "undirected_idempotence_markpred": "nominal",
     "advance_mode": "nominal",
     "gpuinfo_name": "nominal",
     "gpuinfo_name_full": "nominal",
     "gunrock_version": "nominal",
     "primitive": "nominal",
     "pull": "nominal",
+}
+
+specific = {
+    "bc": ("undirected", "Undirected"),
+    "bfs": (
+        "undirected_idempotence_markpred",
+        "Undirected / Idempotence / Mark Predecessors",
+    ),
+    "pr": ("undirected_pull", "Undirected / Pull"),
+    "sssp": ("undirected_markpred", "Undirected / Mark Predecessors"),
 }
 
 
@@ -148,7 +167,7 @@ my = {}
 
 for prim in prims:
     for gpu in gpus:
-        my[(prim, gpu)] = {
+        my[(prim, gpu, "all")] = {
             "mark": "point",
             "x": ("dataset", "Dataset", "linear"),
             "y": ("speedup_vs_10", "Speedup, normalized to Gunrock 1.0+", "log"),
@@ -161,6 +180,8 @@ for prim in prims:
             ],
             "title": f"{prim_fullname[prim]}: Normalized Performance on {gpu}",
         }
+        my[(prim, gpu, specific[prim][0])] = my[(prim, gpu, "all")].copy()
+        my[(prim, gpu, specific[prim][0])]["row"] = specific[prim]
 
 
 for plot in my.keys():
@@ -229,6 +250,7 @@ for plot in my.keys():
         generateTooltip("undirected"),
         generateTooltip("mark_pred"),
         generateTooltip("idempotence"),
+        generateTooltip("pull"),
         "64bit_SizeT",
         "64bit_VertexT",
     ]
@@ -319,9 +341,11 @@ for plot in my.keys():
 
     chart[plot] = chart[plot].encode(tooltip=list(tooltip))
 
-    plotname = "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1]])).replace(
-        "/", "_"
-    )  # gpu names might have a '/' in them
+    plotname = (
+        "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1], plot[2]]))
+        .replace("/", "_")
+        .replace(" ", "_")
+    )  # gpu names might have a '/' or ' ' in them
     save(
         chart=chart[plot],
         df=dfx,
