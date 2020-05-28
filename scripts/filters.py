@@ -196,11 +196,32 @@ def mergeTraversalModeWithUnderscoreIntoAdvanceModeWithHyphen(df):
     return merge(df, dst="advance-mode", src="traversal_mode", delete=True)
 
 
+def mergeTraversalModeWithUnderscoreIntoAdvanceModeWithUnderscore(df):
+    return merge(df, dst="advance_mode", src="traversal_mode", delete=True)
+
+
 def mergeMaxIterationIntoMaxIter(df):
     if "max_iteration" in df.columns:
         return merge(df, dst="max-iter", src="max_iteration", delete=True)
     else:
         return df
+
+
+def mergeMinusSignsIntoUnderscores(df):
+    for (dst, src) in [
+        ("num_vertices", "num-vertices"),
+        ("num_edges", "num-edges"),
+        ("nodes_visited", "nodes-visited"),
+        ("edges_visited", "edges-visited"),
+        ("gunrock_version", "gunrock-version"),
+        ("64bit_SizeT", "64bit-SizeT"),
+        ("advance_mode", "advance-mode"),
+        ("mark_pred", "mark-pred"),
+        ("search_depth", "search-depth"),
+    ]:
+        if (src in df.columns) and (dst in df.columns):
+            df = merge(df, dst=dst, src=src, delete=True)
+    return df
 
 
 def renameMTEPSToAvgMTEPS(df):
@@ -484,10 +505,25 @@ def keepFastest(columns, sortBy="m_teps"):
 
 def keepFastestAvgProcessTime(columns, sortBy="avg-process-time"):
     def fn(df):
+        df.to_csv("../plots/keepfastestavg_pre.csv")    
+        dfloc = df[(df["primitive"] == "pr") & (df["dataset"] == "hollywood-2009") & (df["gunrock_version"] == "0.4.0") & (df["gpuinfo_name"] == "Tesla K40/80")]
+        dfloc.to_csv("../plots/loc.csv")
+
         idx = df.groupby(columns)[sortBy].transform(min) == df[sortBy]
+        df.to_csv("../plots/keepfastestavg_post.csv")
+        dfloc = df[idx]
+        dfloc = dfloc[(dfloc["primitive"] == "pr") & (dfloc["dataset"] == "hollywood-2009") & (dfloc["gunrock_version"] == "0.4.0") & (dfloc["gpuinfo_name"] == "Tesla K40/80")]
+        dfloc.to_csv("../plots/loc_post.csv")
+        # this appears to be correct
         return df[idx]
 
     return fn
+
+
+def combineGunrock1Plus(df):
+    # All Gunrock 1.0.*  -> 1.0+
+    df.loc[df["gunrock_version"].str.startswith("1."), "gunrock_version"] = "1.0+"
+    return df
 
 
 def normalizeByGunrock(dest, quantityToNormalize, columnsToGroup):
@@ -545,6 +581,29 @@ def normalizeToGPU(dest, quantityToNormalize, columnsToGroup, gpu):
         dfmerge[dest] = (
             dfmerge[quantityToNormalize + suffix] / dfmerge[quantityToNormalize]
         )
+        return dfmerge
+
+    return fn
+
+
+def normalizeToGunrock1Plus(dest, quantityToNormalize, columnsToGroup):
+    # http://stackoverflow.com/questions/41517420/pandas-normalize-values-within-groups-with-one-reference-value-per-group-group#41517726
+    # somehow this filters out all non-1.0+ gunrock_version
+    def fn(df):
+        df.to_csv("../plots/keepnorm1p_pre.csv")    
+        # CHECK HERE IN AM 28 May
+        # the 0.x one we want is in here
+        # but there is no K40 hollywood 1.0+
+        dfgunrock = df.loc[
+            df["gunrock_version"] == "1.0+", columnsToGroup + [quantityToNormalize]
+        ]
+        suffix = "_1.0+"
+        dfmerge = df.merge(dfgunrock, on=columnsToGroup, suffixes=["", suffix])
+        # expected this is normalized time (reference is in numerator)
+        dfmerge[dest] = (
+            dfmerge[quantityToNormalize + suffix] / dfmerge[quantityToNormalize]
+        )
+        dfmerge.to_csv("../plots/keepnorm1p_post.csv")    
         return dfmerge
 
     return fn
