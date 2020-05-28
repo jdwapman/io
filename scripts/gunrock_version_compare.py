@@ -123,29 +123,30 @@ prim_fullname = {
 }
 
 datatypes = {
-    "dataset": "nominal",
+    "advance_mode": "nominal",
     "avg_mteps": "quantitative",
-    "max(avg_mteps)": "quantitative",
     "avg_process_time": "quantitative",
     "avg_process_time_1.0+": "quantitative",
-    "speedup_vs_10": "quantitative",
-    "min(avg_process_time)": "quantitative",
-    "num_vertices": "quantitative",
-    "num_edges": "quantitative",
-    "nodes_visited": "quantitative",
+    "dataset": "nominal",
     "edges_visited": "quantitative",
-    "search_depth": "quantitative",
-    "mark_pred": "nominal",
-    "undirected": "nominal",
-    "undirected_markpred": "nominal",
-    "undirected_pull": "nominal",
-    "undirected_idempotence_markpred": "nominal",
-    "advance_mode": "nominal",
     "gpuinfo_name": "nominal",
     "gpuinfo_name_full": "nominal",
     "gunrock_version": "nominal",
+    "idempotence": "nominal",
+    "mark_pred": "nominal",
+    "max(avg_mteps)": "quantitative",
+    "min(avg_process_time)": "quantitative",
+    "nodes_visited": "quantitative",
+    "num_edges": "quantitative",
+    "num_vertices": "quantitative",
     "primitive": "nominal",
     "pull": "nominal",
+    "search_depth": "quantitative",
+    "speedup_vs_10": "quantitative",
+    "undirected": "nominal",
+    "undirected_idempotence_markpred": "nominal",
+    "undirected_markpred": "nominal",
+    "undirected_pull": "nominal",
 }
 
 specific = {
@@ -218,14 +219,18 @@ for plot in my.keys():
         mmax = re.match(r"max\((.*)\)$", y)
         if mmin:
             return alt.Tooltip(
-                field, alt.Aggregate(alt.ArgminDef(argmin=mmin.group(1)))
+                field=field,
+                type=datatypes[field],
+                aggregate=alt.Aggregate(alt.ArgminDef(argmin=mmin.group(1))),
             )
         elif mmax:
             return alt.Tooltip(
-                field, alt.Aggregate(alt.ArgmaxDef(argmax=mmax.group(1)))
+                field=field,
+                type=datatypes[field],
+                aggregate=alt.Aggregate(alt.ArgmaxDef(argmax=mmax.group(1))),
             )
         else:
-            return field
+            return alt.Tooltip(field=field, type=datatypes[field])
 
     # this is currying. will it bind correctly?
     def generateTooltip(field):
