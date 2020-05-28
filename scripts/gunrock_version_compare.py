@@ -25,6 +25,7 @@ fnPreprocessDF = [
     # convertCtimeStringToDatetime,
     # normalizePRMTEPS,
     selectAnyOfThese("engine", ["Gunrock"]),  # only Gunrock
+    lambda df: df[df["num_gpus"].isnull() | (df["num_gpus"] == 1)], # single GPU only
     mergeAlgorithmIntoPrimitive,
     mergeAllUpperCasePrimitives,
     selectAnyOfThese("primitive", prims),
@@ -67,10 +68,13 @@ fnPostprocessDF = [
 
 # choose input files
 df = filesToDF(roots=roots, fnFilterInputFiles=fnFilterInputFiles)
+df.to_csv("../plots/preprep.csv")    
 for fn in fnPreprocessDF:  # alter entries / compute new entries
     df = fn(df)
+df.to_csv("../plots/afterprep.csv")    
 for fn in fnFilterDFRows:  # remove rows
     df = fn(df)
+df.to_csv("../plots/afterfilter.csv")    
 for fn in fnPostprocessDF:  # alter entries / compute new entries
     df = fn(df)
 
@@ -144,6 +148,8 @@ datatypes = {
 chart = {}
 
 my = {}
+
+df.to_csv("../plots/all.csv")
 
 for prim in prims:
     for gpu in gpus:
