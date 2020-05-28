@@ -341,11 +341,11 @@ for plot in my.keys():
 
     chart[plot] = chart[plot].encode(tooltip=list(tooltip))
 
-    plotname = "_".join(
-        filter(lambda x: bool(x), [name, plot[0], plot[1], plot[2]])
-    ).replace(
-        "/", "_"
-    )  # gpu names might have a '/' in them
+    plotname = (
+        "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1], plot[2]]))
+        .replace("/", "_")
+        .replace(" ", "_")
+    )  # gpu names might have a '/' or ' ' in them
     save(
         chart=chart[plot],
         df=dfx,
