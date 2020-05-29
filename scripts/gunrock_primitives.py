@@ -135,6 +135,8 @@ chart = {}
 
 my = {}
 
+# set up all the plots; each entry in "my" becomes a plot
+
 for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "mteps_best")] = {
         "mark": "point",
@@ -210,6 +212,51 @@ for prim in ["bfs", "dobfs", "sssp", "tc", "bc", "pr"]:
     my[(prim, "edges")]["x"] = ("num_edges", "Number of Edges", "log")
     my[(prim, "edges")]["title"] = f"{prim_fullname[prim]}: Runtime vs. Number of Edges"
 
+# now do some pr-specific plots
+prim = "pr"
+my[("pr", "push_pull_mteps")] = my[("pr", "mteps")].copy()
+my[("pr", "push_pull_mteps")]["shape"] = ("pull", "Pull")
+my[(prim, "push_pull_mteps")][
+    "title"
+] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs for push vs. pull, separating out options (measured in MTEPS)"
+my[("pr", "push_pull_avg_process_time")] = my[("pr", "avg_process_time")].copy()
+my[("pr", "push_pull_avg_process_time")]["shape"] = ("pull", "Pull")
+my[(prim, "avg_process_time")][
+    "title"
+] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs for push vs. pull, separating out options (measured in ms)"
+my[("pr", "push_pull_search_depth")] = {
+    "mark": "point",
+    "x": ("dataset", "Dataset", "linear"),
+    "y": ("search_depth", "Search Depth", "log"),
+    "row": ("undirected", "Undirected"),
+    "color": ("pull", "Pull"),
+    "shape": ("pull", "Pull"),
+    "filter": lambda df, prim=prim: df[
+        (df["primitive"] == prim) & (df["gpuinfo_name"] == "Tesla V100")
+    ],
+    "title": f"{prim_fullname[prim]}: Search depth for push vs. pull, separating out options, measured on V100",
+}
+my[("pr", "push_pull_edges_visited")] = my[("pr", "push_pull_search_depth")].copy()
+my[("pr", "push_pull_edges_visited")]["y"] = (
+    "edges_visited",
+    "Number of Edges Visited/Queued",
+    "log",
+)
+my[("pr", "push_pull_edges_visited")][
+    "title"
+] = f"{prim_fullname[prim]}: Edges Visited/Queued for push vs. pull, separating out options, measured on V100"
+my[("pr", "push_pull_vertices_visited")] = my[("pr", "push_pull_search_depth")].copy()
+my[("pr", "push_pull_vertices_visited")]["y"] = (
+    "nodes_visited",
+    "Number of Vertices Visited/Queued",
+    "log",
+)
+my[("pr", "push_pull_vertices_visited")][
+    "title"
+] = f"{prim_fullname[prim]}: Vertices Visited/Queued for push vs. pull, separating out options, measured on V100"
+#  done with pr-specific plots
+
+
 my[("all_V100", "edges_visited_vs_num_edges")] = {
     "mark": "point",
     "x": ("num_edges", "Number of Edges", "log"),
@@ -249,10 +296,9 @@ my[("all_V100", "search_depth")] = {
     "title": "Runtime vs. Search Depth, measured on V100",
 }
 
-
 for plot in my.keys():
-    # if plot[0] != "all_V100":
-    # continue
+    if plot[0] != "pr":
+        continue
     print(f"*** Processing {plot} ***")
 
     primitive = plot[0]
@@ -387,42 +433,47 @@ for plot in my.keys():
                     legend=alt.Legend(title=my[plot]["color"][1]),
                     # scale=alt.Scale(scheme="dark2"),
                 ),
-                opacity=alt.condition(selection["color"], alt.value(1), alt.value(0.2)),
             )
             .add_selection(selection["color"])
         )
 
     if "shape" in my[plot]:
         shape = stripShorthand(my[plot]["shape"][0])
+        selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
+        chart[plot] = (
+            chart[plot]
+            .encode(
+                shape=alt.Shape(
+                    shape,
+                    type=datatypes[shape],
+                    legend=alt.Legend(title=my[plot]["shape"][1]),
+                ),
+            )
+            .add_selection(selection["shape"])
+        )
+
+    # https://github.com/altair-viz/altair/issues/1890
+    # how to handle both color and shape selection
+    # won't work properly until https://github.com/vega/vega-lite/issues/5553
+    #   is fixed
+    if ("color" in my[plot]) and ("shape" in my[plot]):
         chart[plot] = chart[plot].encode(
-            shape=alt.Shape(
-                shape,
-                type=datatypes[shape],
-                legend=alt.Legend(title=my[plot]["shape"][1]),
+            opacity=alt.condition(
+                selection["color"] & selection["shape"], alt.value(1), alt.value(0.2)
             )
         )
-        # commented out b/c I don't know what to do with shape selection
-        # selection["shape"] = alt.selection_multi(fields=[shape], bind="legend")
-        # chart[plot] = chart[plot].add_selection(selection["shape"])
+    elif "color" in my[plot]:
+        chart[plot] = chart[plot].encode(
+            opacity=alt.condition(selection["color"], alt.value(1), alt.value(0.2))
+        )
+    elif "shape" in my[plot]:
+        chart[plot] = chart[plot].encode(
+            opacity=alt.condition(selection["shape"], alt.value(1), alt.value(0.2))
+        )
 
     if "title" in my[plot]:
         chart[plot] = chart[plot].properties(title=my[plot]["title"])
 
-    if plot[1] == "sel":
-        # input_checkbox = alt.binding_checkbox()
-        # checkbox_selection = alt.selection_single(bind=input_checkbox, name="Big Budget Films")
-        # size_checkbox_condition = alt.condition(checkbox_selection,
-        #                                         alt.SizeValue(25),
-        #                                         alt.Size('Hundred_Million_Production')
-        # )
-        checkbox = {}
-        checkbox_selection = {}
-        for box in ["undirected"]:
-            for l in [box + "_on", box + "off"]:
-                checkbox_selection[l] = alt.selection_single(
-                    bind=alt.binding_checkbox(), name=l
-                )
-                chart[plot] = chart[plot].add_selection(checkbox_selection[l])
     chart[plot] = chart[plot].encode(tooltip=list(tooltip))
 
     plotname = "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1]]))
