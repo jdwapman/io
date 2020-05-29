@@ -221,7 +221,7 @@ my[(prim, "push_pull_mteps")][
 ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs for push vs. pull, separating out options (measured in MTEPS)"
 my[("pr", "push_pull_avg_process_time")] = my[("pr", "avg_process_time")].copy()
 my[("pr", "push_pull_avg_process_time")]["shape"] = ("pull", "Pull")
-my[(prim, "avg_process_time")][
+my[(prim, "push_pull_avg_process_time")][
     "title"
 ] = f"{prim_fullname[prim]}: Fastest Gunrock 1.0+ runs for push vs. pull, separating out options (measured in ms)"
 my[("pr", "push_pull_search_depth")] = {
