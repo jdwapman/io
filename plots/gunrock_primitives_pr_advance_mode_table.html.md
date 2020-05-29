@@ -1,0 +1,7688 @@
+---
+title: Source data for gunrock_primitives_pr_advance_mode
+full_length: true
+---
+
+# Source data for gunrock_primitives_pr_advance_mode
+
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>primitive</th>
+      <th>dataset</th>
+      <th>avg_mteps</th>
+      <th>avg_process_time</th>
+      <th>engine</th>
+      <th>num_vertices</th>
+      <th>num_edges</th>
+      <th>nodes_visited</th>
+      <th>edges_visited</th>
+      <th>search_depth</th>
+      <th>gunrock_version</th>
+      <th>gpuinfo_name</th>
+      <th>gpuinfo_name_full</th>
+      <th>advance_mode</th>
+      <th>undirected</th>
+      <th>mark_pred</th>
+      <th>undirected_markpred</th>
+      <th>idempotence</th>
+      <th>pull</th>
+      <th>64bit_SizeT</th>
+      <th>64bit_VertexT</th>
+      <th>time</th>
+      <th>details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4521.374765</td>
+      <td>0.031340</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/ak2010/pr_ak2010_Thu Oct 31 113822 879 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4549.648548</td>
+      <td>0.031145</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:21 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/ak2010/pr_ak2010_Thu Oct 31 113821 249 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4444.450429</td>
+      <td>0.031882</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/ak2010/pr_ak2010_Thu Oct 31 113822 524 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4332.480603</td>
+      <td>0.032706</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:06 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/ak2010/pr_ak2010_Thu Oct 31 113806 437 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4613.644536</td>
+      <td>0.030713</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/ak2010/pr_ak2010_Thu Oct 31 113822 920 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>ak2010</td>
+      <td>4649.957666</td>
+      <td>0.030473</td>
+      <td>Gunrock</td>
+      <td>45293</td>
+      <td>262406</td>
+      <td>1177618</td>
+      <td>7084962</td>
+      <td>27</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:21 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/ak2010/pr_ak2010_Thu Oct 31 113821 283 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>268.874819</td>
+      <td>38.911391</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>657322961</td>
+      <td>887019159</td>
+      <td>523114664</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:59:52 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 125952 377 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>779.285274</td>
+      <td>52.486803</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>1130550425</td>
+      <td>796042835</td>
+      <td>2045109636</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:54:53 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 125453 879 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>268.877751</td>
+      <td>38.910967</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>657322961</td>
+      <td>887019159</td>
+      <td>523114664</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:59:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 125928 373 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>779.098883</td>
+      <td>52.499360</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>1130550425</td>
+      <td>796042835</td>
+      <td>2045109636</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:54:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 125422 757 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>268.562327</td>
+      <td>38.956668</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>657322961</td>
+      <td>887019159</td>
+      <td>523114664</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:00:17 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 130017 536 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>arabic-2005</td>
+      <td>779.628813</td>
+      <td>52.463675</td>
+      <td>Gunrock</td>
+      <td>22744081</td>
+      <td>1130550425</td>
+      <td>796042835</td>
+      <td>2045109636</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:55:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/arabic-2005/pr_arabic-2005_Thu Oct 31 125527 74 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>14270.498698</td>
+      <td>1.068913</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:52 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134352 223 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>14247.709493</td>
+      <td>1.070623</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:36 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134336 717 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>14261.973351</td>
+      <td>1.069552</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134350 478 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>14277.533061</td>
+      <td>1.068387</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134334 934 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>12551.618865</td>
+      <td>1.215295</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:53 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134353 615 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>asia_osm</td>
+      <td>14272.748374</td>
+      <td>1.068745</td>
+      <td>Gunrock</td>
+      <td>11950757</td>
+      <td>25423206</td>
+      <td>346571953</td>
+      <td>762696180</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/asia_osm/pr_asia_osm_Thu Oct 31 134338 62 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>11983.362288</td>
+      <td>0.144865</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:06 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134206 838 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>12046.054658</td>
+      <td>0.144111</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:03 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134203 549 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>11978.105332</td>
+      <td>0.144928</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:06 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134206 246 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>12023.687063</td>
+      <td>0.144379</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:02 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134202 991 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>11947.967119</td>
+      <td>0.145294</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134207 16 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>belgium_osm</td>
+      <td>12012.930768</td>
+      <td>0.144508</td>
+      <td>Gunrock</td>
+      <td>1441295</td>
+      <td>3099940</td>
+      <td>38914965</td>
+      <td>86798320</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:03 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/belgium_osm/pr_belgium_osm_Thu Oct 31 134203 732 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10322.125348</td>
+      <td>0.080248</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134341 859 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10436.228424</td>
+      <td>0.079371</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:39 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134339 592 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10291.752166</td>
+      <td>0.080485</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134341 508 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10432.050228</td>
+      <td>0.079402</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:39 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134339 212 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10359.881464</td>
+      <td>0.079956</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134341 936 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>caidaRouterLevel</td>
+      <td>10416.342345</td>
+      <td>0.079522</td>
+      <td>Gunrock</td>
+      <td>192244</td>
+      <td>1218132</td>
+      <td>6344052</td>
+      <td>41416488</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:39 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/caidaRouterLevel/pr_caidaRouterLevel_Thu Oct 31 134339 664 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11683.172345</td>
+      <td>0.118801</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123207 581 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11569.658327</td>
+      <td>0.119967</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123204 975 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11657.126675</td>
+      <td>0.119067</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123207 138 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11555.827874</td>
+      <td>0.120111</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123204 558 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11633.572846</td>
+      <td>0.119308</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123207 665 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>citationCiteseer</td>
+      <td>11420.863785</td>
+      <td>0.121530</td>
+      <td>Gunrock</td>
+      <td>268495</td>
+      <td>2313294</td>
+      <td>7786355</td>
+      <td>69398820</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:05 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/citationCiteseer/pr_citationCiteseer_Thu Oct 31 123205 75 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>12031.498559</td>
+      <td>0.075787</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123130 820 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>11727.974707</td>
+      <td>0.077748</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:33 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123033 74 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>11953.282412</td>
+      <td>0.076283</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123130 449 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>12078.785879</td>
+      <td>0.075490</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123127 840 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>11954.776977</td>
+      <td>0.076273</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123130 891 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsCiteseer</td>
+      <td>11769.198380</td>
+      <td>0.077476</td>
+      <td>Gunrock</td>
+      <td>227320</td>
+      <td>1628268</td>
+      <td>6137640</td>
+      <td>45591504</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:33 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coAuthorsCiteseer/pr_coAuthorsCiteseer_Thu Oct 31 123033 163 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>12106.576340</td>
+      <td>0.090446</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:25 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123125 195 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>11235.201901</td>
+      <td>0.097461</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:26 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123026 938 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>12148.634561</td>
+      <td>0.090133</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123124 825 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>10757.032307</td>
+      <td>0.101794</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:26 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123026 366 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>11957.589781</td>
+      <td>0.091573</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123030 122 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coAuthorsDBLP</td>
+      <td>11319.566988</td>
+      <td>0.096735</td>
+      <td>Gunrock</td>
+      <td>299067</td>
+      <td>1955352</td>
+      <td>8074809</td>
+      <td>54749856</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/coAuthorsDBLP/pr_coAuthorsDBLP_Thu Oct 31 123122 839 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>17026.737312</td>
+      <td>0.828833</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123107 523 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>16958.897127</td>
+      <td>0.832148</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:57 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123057 632 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>16982.218354</td>
+      <td>0.831005</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:06 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123106 535 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>17007.852611</td>
+      <td>0.829753</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:56 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123056 683 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>17011.589259</td>
+      <td>0.829571</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:08 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123108 31 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersCiteseer</td>
+      <td>16868.316057</td>
+      <td>0.836617</td>
+      <td>Gunrock</td>
+      <td>434102</td>
+      <td>32073440</td>
+      <td>9116142</td>
+      <td>705615680</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersCiteseer/pr_coPapersCiteseer_Thu Oct 31 123058 203 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16770.266989</td>
+      <td>0.872729</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:49 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123049 888 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16755.130398</td>
+      <td>0.873518</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123041 586 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16807.980383</td>
+      <td>0.870771</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123048 952 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16812.900908</td>
+      <td>0.870516</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123040 632 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16812.174412</td>
+      <td>0.870554</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123050 436 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>coPapersDBLP</td>
+      <td>16769.462732</td>
+      <td>0.872771</td>
+      <td>Gunrock</td>
+      <td>540486</td>
+      <td>30491458</td>
+      <td>12431178</td>
+      <td>731794992</td>
+      <td>24</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:30:42 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/coPapersDBLP/pr_coPapersDBLP_Thu Oct 31 123042 137 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>123.401823</td>
+      <td>0.005944</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:26 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113826 249 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>108.497660</td>
+      <td>0.006760</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113824 517 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>135.465471</td>
+      <td>0.005414</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:25 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113825 925 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>123.193170</td>
+      <td>0.005954</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113824 175 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>123.039876</td>
+      <td>0.005961</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:26 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113826 260 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n10</td>
+      <td>107.821610</td>
+      <td>0.006802</td>
+      <td>Gunrock</td>
+      <td>1024</td>
+      <td>6112</td>
+      <td>5120</td>
+      <td>36672</td>
+      <td>6</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n10/pr_delaunay_n10_Thu Oct 31 113824 529 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>221.387329</td>
+      <td>0.007749</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:15 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113815 725 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>213.843024</td>
+      <td>0.008023</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113827 906 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>244.193897</td>
+      <td>0.007025</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113829 325 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>241.444417</td>
+      <td>0.007105</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113827 574 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>222.314526</td>
+      <td>0.007717</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:15 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113815 736 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n11</td>
+      <td>213.673689</td>
+      <td>0.008029</td>
+      <td>Gunrock</td>
+      <td>2048</td>
+      <td>12254</td>
+      <td>12288</td>
+      <td>85778</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n11/pr_delaunay_n11_Thu Oct 31 113827 917 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>436.775185</td>
+      <td>0.007862</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:33 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113833 149 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>438.845350</td>
+      <td>0.007825</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:31 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113831 430 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>484.547471</td>
+      <td>0.007087</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:32 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113832 811 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>496.233594</td>
+      <td>0.006920</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:31 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113831 80 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>437.630451</td>
+      <td>0.007847</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:33 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113833 162 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n12</td>
+      <td>446.063797</td>
+      <td>0.007698</td>
+      <td>Gunrock</td>
+      <td>4096</td>
+      <td>24528</td>
+      <td>24576</td>
+      <td>171696</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:31 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n12/pr_delaunay_n12_Thu Oct 31 113831 443 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>1005.554230</td>
+      <td>0.006835</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:36 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113836 999 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>888.964237</td>
+      <td>0.007732</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113835 19 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>1139.151310</td>
+      <td>0.006034</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:36 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113836 575 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>993.844719</td>
+      <td>0.006916</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113834 630 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>1018.981629</td>
+      <td>0.006745</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113837 9 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n13</td>
+      <td>893.248992</td>
+      <td>0.007695</td>
+      <td>Gunrock</td>
+      <td>8192</td>
+      <td>49094</td>
+      <td>49152</td>
+      <td>343658</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n13/pr_delaunay_n13_Thu Oct 31 113835 31 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>2051.047463</td>
+      <td>0.006706</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113840 778 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>1964.293866</td>
+      <td>0.007002</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113838 825 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>2004.641524</td>
+      <td>0.006861</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113840 423 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>2098.125575</td>
+      <td>0.006555</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113838 437 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>2055.432125</td>
+      <td>0.006692</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113840 793 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n14</td>
+      <td>1965.186051</td>
+      <td>0.006999</td>
+      <td>Gunrock</td>
+      <td>16384</td>
+      <td>98244</td>
+      <td>98304</td>
+      <td>687708</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n14/pr_delaunay_n14_Thu Oct 31 113838 845 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3692.837738</td>
+      <td>0.007451</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113844 658 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3567.282777</td>
+      <td>0.007714</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113843 62 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3410.788070</td>
+      <td>0.008068</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113844 299 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3948.009878</td>
+      <td>0.006970</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:42 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113842 408 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3675.588814</td>
+      <td>0.007486</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113844 677 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n15</td>
+      <td>3560.435315</td>
+      <td>0.007728</td>
+      <td>Gunrock</td>
+      <td>32768</td>
+      <td>196548</td>
+      <td>196608</td>
+      <td>1375836</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n15/pr_delaunay_n15_Thu Oct 31 113843 81 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>6592.948551</td>
+      <td>0.008348</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113848 149 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>6778.442445</td>
+      <td>0.008120</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:46 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113846 254 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>6945.671519</td>
+      <td>0.007925</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113847 835 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>6796.180093</td>
+      <td>0.008099</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:45 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113845 914 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>7064.699688</td>
+      <td>0.007791</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113848 185 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n16</td>
+      <td>6809.098047</td>
+      <td>0.008083</td>
+      <td>Gunrock</td>
+      <td>65536</td>
+      <td>393150</td>
+      <td>393216</td>
+      <td>2752050</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:46 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n16/pr_delaunay_n16_Thu Oct 31 113846 275 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>10067.665990</td>
+      <td>0.010935</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:51 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113851 822 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>9562.637874</td>
+      <td>0.011512</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113834 414 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>10223.200903</td>
+      <td>0.010769</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:51 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113851 480 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>9922.001641</td>
+      <td>0.011095</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:33 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113833 989 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>9991.179418</td>
+      <td>0.011019</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:51 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113851 847 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n17</td>
+      <td>9612.627607</td>
+      <td>0.011453</td>
+      <td>Gunrock</td>
+      <td>131072</td>
+      <td>786352</td>
+      <td>786432</td>
+      <td>5504464</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:49 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n17/pr_delaunay_n17_Thu Oct 31 113849 769 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>13662.843380</td>
+      <td>0.016116</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113840 274 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>13002.420609</td>
+      <td>0.016935</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113838 223 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>13525.005530</td>
+      <td>0.016280</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:39 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113839 793 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>12917.551050</td>
+      <td>0.017046</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113837 744 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>13445.369458</td>
+      <td>0.016377</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:40 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113840 323 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n18</td>
+      <td>12931.618954</td>
+      <td>0.017027</td>
+      <td>Gunrock</td>
+      <td>262144</td>
+      <td>1572792</td>
+      <td>1572864</td>
+      <td>11009544</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n18/pr_delaunay_n18_Thu Oct 31 113838 264 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>17233.918493</td>
+      <td>0.025554</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:45 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113845 400 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>16059.839690</td>
+      <td>0.027422</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113843 52 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>17219.994258</td>
+      <td>0.025574</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113844 944 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>16263.140732</td>
+      <td>0.027079</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:42 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113842 348 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>17177.291234</td>
+      <td>0.025638</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:45 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113845 449 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n19</td>
+      <td>16168.238141</td>
+      <td>0.027238</td>
+      <td>Gunrock</td>
+      <td>524288</td>
+      <td>3145646</td>
+      <td>3145728</td>
+      <td>22019522</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n19/pr_delaunay_n19_Thu Oct 31 113843 131 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>19195.208066</td>
+      <td>0.045886</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113850 679 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>19047.852068</td>
+      <td>0.046241</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113847 662 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>19194.321564</td>
+      <td>0.045888</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113850 191 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>19081.521354</td>
+      <td>0.046159</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113847 157 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>19216.508709</td>
+      <td>0.045835</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113850 775 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n20</td>
+      <td>17398.633019</td>
+      <td>0.050624</td>
+      <td>Gunrock</td>
+      <td>1048576</td>
+      <td>6291372</td>
+      <td>6291456</td>
+      <td>44039604</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/delaunay_n20/pr_delaunay_n20_Thu Oct 31 113904 51 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20241.306900</td>
+      <td>0.087030</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:59 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113859 312 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20208.827701</td>
+      <td>0.087170</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113854 910 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20235.024376</td>
+      <td>0.087057</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113858 588 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20203.915701</td>
+      <td>0.087191</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113854 260 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20271.418526</td>
+      <td>0.086900</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:59 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113859 507 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n21</td>
+      <td>20233.177317</td>
+      <td>0.087065</td>
+      <td>Gunrock</td>
+      <td>2097152</td>
+      <td>12582816</td>
+      <td>12582912</td>
+      <td>88079712</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:38:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n21/pr_delaunay_n21_Thu Oct 31 113855 85 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20728.553483</td>
+      <td>0.169969</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113912 38 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20717.381254</td>
+      <td>0.170060</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113904 872 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20561.525737</td>
+      <td>0.171349</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:11 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113911 162 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20467.986297</td>
+      <td>0.172132</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113904 21 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20692.046264</td>
+      <td>0.170268</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113912 559 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n22</td>
+      <td>20713.702867</td>
+      <td>0.170090</td>
+      <td>Gunrock</td>
+      <td>4194304</td>
+      <td>25165738</td>
+      <td>25165824</td>
+      <td>176160166</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:05 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n22/pr_delaunay_n22_Thu Oct 31 113905 358 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20229.120234</td>
+      <td>0.348330</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113935 939 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20808.600752</td>
+      <td>0.338630</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:23 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113923 436 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20153.551902</td>
+      <td>0.349637</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113934 45 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20764.060599</td>
+      <td>0.339357</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:22 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113922 130 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20756.283239</td>
+      <td>0.339484</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113937 140 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n23</td>
+      <td>20719.194253</td>
+      <td>0.340091</td>
+      <td>Gunrock</td>
+      <td>8388608</td>
+      <td>50331568</td>
+      <td>50331648</td>
+      <td>352320976</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n23/pr_delaunay_n23_Thu Oct 31 113924 309 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20690.375446</td>
+      <td>0.681131</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:17 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 114017 478 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20641.853264</td>
+      <td>0.682732</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:53 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 113953 848 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20611.143195</td>
+      <td>0.683749</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:15 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 114015 298 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20596.524106</td>
+      <td>0.684234</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 113950 960 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20603.352277</td>
+      <td>0.684008</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:19 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 114019 489 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>delaunay_n24</td>
+      <td>20604.708878</td>
+      <td>0.683963</td>
+      <td>Gunrock</td>
+      <td>16777216</td>
+      <td>100663202</td>
+      <td>100663296</td>
+      <td>704642414</td>
+      <td>7</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:39:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/delaunay_n24/pr_delaunay_n24_Thu Oct 31 113955 800 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13050.067632</td>
+      <td>4.970518</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:45:25 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134525 396 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13355.504061</td>
+      <td>4.856843</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:19 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134419 851 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13372.384773</td>
+      <td>4.850712</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:45:17 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134517 695 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13374.054446</td>
+      <td>4.850107</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134412 416 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13384.061639</td>
+      <td>4.846480</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:45:32 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134532 309 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>europe_osm</td>
+      <td>13351.711336</td>
+      <td>4.858223</td>
+      <td>Gunrock</td>
+      <td>50912018</td>
+      <td>108109320</td>
+      <td>1476448522</td>
+      <td>3243279600</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/europe_osm/pr_europe_osm_Thu Oct 31 134427 384 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12599.229836</td>
+      <td>1.178089</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:21 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134321 773 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12608.307989</td>
+      <td>1.177241</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:06 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134306 831 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12615.098212</td>
+      <td>1.176607</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:19 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134319 857 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12607.088114</td>
+      <td>1.177355</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134304 872 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12620.605020</td>
+      <td>1.176094</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:23 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134323 247 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>germany_osm</td>
+      <td>12623.710046</td>
+      <td>1.175805</td>
+      <td>Gunrock</td>
+      <td>11548845</td>
+      <td>24738362</td>
+      <td>334916505</td>
+      <td>742150860</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:43:08 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/germany_osm/pr_germany_osm_Thu Oct 31 134308 277 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13174.436007</td>
+      <td>0.742940</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134255 205 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13181.298070</td>
+      <td>0.742554</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134244 891 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13166.933524</td>
+      <td>0.743364</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:53 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134253 737 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13182.473797</td>
+      <td>0.742487</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134243 522 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13185.597548</td>
+      <td>0.742311</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:56 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134256 215 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>great-britain_osm</td>
+      <td>13186.181064</td>
+      <td>0.742279</td>
+      <td>Gunrock</td>
+      <td>7733822</td>
+      <td>16313034</td>
+      <td>224280838</td>
+      <td>489391020</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:45 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/great-britain_osm/pr_great-britain_osm_Thu Oct 31 134245 820 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16213.141431</td>
+      <td>4.215987</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124138 769 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16130.460096</td>
+      <td>4.237597</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:05 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124105 491 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16223.498493</td>
+      <td>4.213296</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124135 574 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16275.326879</td>
+      <td>4.199878</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:02 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124102 711 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16240.527877</td>
+      <td>4.208878</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124141 451 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>hollywood-2009</td>
+      <td>16215.283116</td>
+      <td>4.215430</td>
+      <td>Gunrock</td>
+      <td>1139906</td>
+      <td>113923989</td>
+      <td>33057274</td>
+      <td>3417719670</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:41:08 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/hollywood-2009/pr_hollywood-2009_Thu Oct 31 124108 389 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>44.295121</td>
+      <td>12.915249</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>200431133</td>
+      <td>311424414</td>
+      <td>28604127</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:40:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 134058 920 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>3849.141608</td>
+      <td>14.846407</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>309384612</td>
+      <td>266935212</td>
+      <td>2857296052</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:39:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 133927 73 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>44.785484</td>
+      <td>12.773839</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>200431133</td>
+      <td>311424414</td>
+      <td>28604127</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:40:51 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 134051 145 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>3848.139887</td>
+      <td>14.850271</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>309384612</td>
+      <td>266935212</td>
+      <td>2857296052</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:39:18 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 133918 223 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>44.345345</td>
+      <td>12.900622</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>200431133</td>
+      <td>311424414</td>
+      <td>28604127</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:07 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 134107 772 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>indochina-2004</td>
+      <td>3853.672060</td>
+      <td>14.828953</td>
+      <td>Gunrock</td>
+      <td>7414867</td>
+      <td>309384612</td>
+      <td>266935212</td>
+      <td>2857296052</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:39:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/indochina-2004/pr_indochina-2004_Thu Oct 31 133935 927 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13941.594467</td>
+      <td>0.563469</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134229 378 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13923.867430</td>
+      <td>0.564186</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:19 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134219 762 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13955.188649</td>
+      <td>0.562920</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134228 250 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13886.571100</td>
+      <td>0.565702</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:18 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134218 568 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13879.168277</td>
+      <td>0.566003</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134230 115 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>italy_osm</td>
+      <td>13935.003750</td>
+      <td>0.563735</td>
+      <td>Gunrock</td>
+      <td>6686493</td>
+      <td>14027956</td>
+      <td>180535311</td>
+      <td>392782768</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:20 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/italy_osm/pr_italy_osm_Thu Oct 31 134220 461 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12629.249000</td>
+      <td>0.102686</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114050 987 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12401.432448</td>
+      <td>0.104573</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:32 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114032 339 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12866.451126</td>
+      <td>0.100793</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:50 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114050 604 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12565.937621</td>
+      <td>0.103204</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:31 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114031 852 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12709.394989</td>
+      <td>0.102039</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:51 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114051 94 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn16</td>
+      <td>12432.669313</td>
+      <td>0.104310</td>
+      <td>Gunrock</td>
+      <td>65537</td>
+      <td>4987893</td>
+      <td>786444</td>
+      <td>64842609</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:32 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn16/pr_kron_g500-logn16_Thu Oct 31 114032 421 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13277.675860</td>
+      <td>0.203302</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114058 275 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13277.745066</td>
+      <td>0.203301</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114054 848 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13215.236357</td>
+      <td>0.204262</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:57 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114057 762 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13254.980809</td>
+      <td>0.203650</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114054 410 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13186.232474</td>
+      <td>0.204711</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114058 412 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn17</td>
+      <td>13242.887823</td>
+      <td>0.203836</td>
+      <td>Gunrock</td>
+      <td>131073</td>
+      <td>10382205</td>
+      <td>1572876</td>
+      <td>134968665</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn17/pr_kron_g500-logn17_Thu Oct 31 114055 39 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13426.549556</td>
+      <td>0.415942</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114110 131 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13529.642063</td>
+      <td>0.412773</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114048 579 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13433.445391</td>
+      <td>0.415729</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:09 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114109 553 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13547.848850</td>
+      <td>0.412218</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114047 903 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13541.356957</td>
+      <td>0.412416</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114054 643 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn18</td>
+      <td>13530.076230</td>
+      <td>0.412760</td>
+      <td>Gunrock</td>
+      <td>262145</td>
+      <td>21479505</td>
+      <td>3145740</td>
+      <td>279233565</td>
+      <td>13</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:40:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn18/pr_kron_g500-logn18_Thu Oct 31 114048 851 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12704.206472</td>
+      <td>1.113357</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:16 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114116 612 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12826.115564</td>
+      <td>1.102774</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:05 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114105 26 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12746.306967</td>
+      <td>1.109679</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:15 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114115 535 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12783.130841</td>
+      <td>1.106483</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:03 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114103 762 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12632.502529</td>
+      <td>1.119676</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:17 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114117 285 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn19</td>
+      <td>12836.797390</td>
+      <td>1.101857</td>
+      <td>Gunrock</td>
+      <td>524289</td>
+      <td>44200975</td>
+      <td>7864335</td>
+      <td>707215600</td>
+      <td>16</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:05 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn19/pr_kron_g500-logn19_Thu Oct 31 114105 713 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11880.756754</td>
+      <td>2.133820</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114158 797 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11919.748939</td>
+      <td>2.126840</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114137 486 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11939.217089</td>
+      <td>2.123372</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:57 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114157 109 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11929.672710</td>
+      <td>2.125071</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114135 760 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11852.980270</td>
+      <td>2.138821</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:42:00 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114200 125 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn20</td>
+      <td>11873.896197</td>
+      <td>2.135053</td>
+      <td>Gunrock</td>
+      <td>1048577</td>
+      <td>90540715</td>
+      <td>13631501</td>
+      <td>1267570010</td>
+      <td>14</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:41:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn20/pr_kron_g500-logn20_Thu Oct 31 114138 793 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>10188.714187</td>
+      <td>5.439315</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-DGXS-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Jan 30 16:47:49 2020\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/cuda_arch_comparison/PR/kron_g500-logn21/pr_kron_g500-logn21_Thu Jan 30 164749 785 2020.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>10191.643709</td>
+      <td>5.437751</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-DGXS-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Jan 30 16:59:37 2020\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/cuda_arch_comparison/PR/kron_g500-logn21/pr_kron_g500-logn21_Thu Jan 30 165937 116 2020.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>9983.106989</td>
+      <td>5.551340</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:43:21 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn21/pr_kron_g500-logn21_Thu Oct 31 114321 74 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>9975.922439</td>
+      <td>5.555338</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:42:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn21/pr_kron_g500-logn21_Thu Oct 31 114230 890 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>9948.687571</td>
+      <td>5.570546</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:43:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn21/pr_kron_g500-logn21_Thu Oct 31 114328 338 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>kron_g500-logn21</td>
+      <td>9846.129709</td>
+      <td>5.628569</td>
+      <td>Gunrock</td>
+      <td>2097153</td>
+      <td>184732081</td>
+      <td>29360142</td>
+      <td>2770981215</td>
+      <td>15</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 11:42:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/kron_g500-logn21/pr_kron_g500-logn21_Thu Oct 31 114238 825 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>4816.225995</td>
+      <td>0.025840</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134430 904 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>4763.832714</td>
+      <td>0.026124</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134428 943 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>4799.977371</td>
+      <td>0.025928</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134430 575 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>4831.372356</td>
+      <td>0.025759</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134428 601 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>5043.402954</td>
+      <td>0.024676</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134430 951 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>luxembourg_osm</td>
+      <td>5097.779266</td>
+      <td>0.024413</td>
+      <td>Gunrock</td>
+      <td>114599</td>
+      <td>239332</td>
+      <td>2864975</td>
+      <td>6222632</td>
+      <td>26</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:44:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/luxembourg_osm/pr_luxembourg_osm_Thu Oct 31 134428 987 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13264.152765</td>
+      <td>0.206134</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:14 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134214 482 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13309.513980</td>
+      <td>0.205431</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134210 441 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13278.828747</td>
+      <td>0.205906</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:13 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134213 815 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13313.119191</td>
+      <td>0.205375</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:09 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134209 735 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13294.770129</td>
+      <td>0.205659</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:14 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134214 743 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>netherlands_osm</td>
+      <td>13285.939488</td>
+      <td>0.205796</td>
+      <td>Gunrock</td>
+      <td>2216688</td>
+      <td>4882476</td>
+      <td>59850576</td>
+      <td>136709328</td>
+      <td>28</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:42:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/netherlands_osm/pr_netherlands_osm_Thu Oct 31 134210 674 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>9058.700153</td>
+      <td>0.019870</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123212 611 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>8745.293892</td>
+      <td>0.020582</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123210 387 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>8946.814280</td>
+      <td>0.020118</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123212 191 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>8881.789068</td>
+      <td>0.020266</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:09 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123209 969 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>8603.333464</td>
+      <td>0.020921</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:12 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123212 659 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>preferentialAttachment</td>
+      <td>8574.020943</td>
+      <td>0.020993</td>
+      <td>Gunrock</td>
+      <td>100000</td>
+      <td>999970</td>
+      <td>800000</td>
+      <td>8999730</td>
+      <td>9</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Quadro GV100</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/GV100/preferentialAttachment/pr_preferentialAttachment_Thu Oct 31 123210 427 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17943.297813</td>
+      <td>0.259515</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:59 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134159 469 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17950.407350</td>
+      <td>0.259412</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134154 798 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17910.096975</td>
+      <td>0.259996</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:58 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134158 747 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17933.266098</td>
+      <td>0.259660</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134154 80 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17961.779651</td>
+      <td>0.259248</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:59 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134159 730 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>roadNet-CA</td>
+      <td>17955.394715</td>
+      <td>0.259340</td>
+      <td>Gunrock</td>
+      <td>1971282</td>
+      <td>7510570</td>
+      <td>59138460</td>
+      <td>232827670</td>
+      <td>31</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:41:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/roadNet-CA/pr_roadNet-CA_Thu Oct 31 134155 54 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9329.512021</td>
+      <td>2.178045</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134747 698 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9333.019632</td>
+      <td>2.177226</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:26 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134726 372 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9329.900112</td>
+      <td>2.177954</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134744 995 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9322.726779</td>
+      <td>2.179630</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:23 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134723 620 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9328.468193</td>
+      <td>2.178289</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:49 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134749 933 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_central</td>
+      <td>9330.156588</td>
+      <td>2.177894</td>
+      <td>Gunrock</td>
+      <td>14081816</td>
+      <td>33866826</td>
+      <td>408372664</td>
+      <td>1016004780</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:47:28 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_central/pr_road_central_Thu Oct 31 134728 605 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13579.447314</td>
+      <td>2.549822</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:55 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134655 860 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13587.691471</td>
+      <td>2.548275</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:23 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134623 874 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13593.174290</td>
+      <td>2.547247</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:52 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134652 208 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13604.073920</td>
+      <td>2.545206</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:20 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134620 60 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13590.924103</td>
+      <td>2.547669</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:59 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134659 216 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>road_usa</td>
+      <td>13616.593809</td>
+      <td>2.542866</td>
+      <td>Gunrock</td>
+      <td>23947347</td>
+      <td>57708624</td>
+      <td>694473063</td>
+      <td>1731258720</td>
+      <td>30</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:46:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/road_usa/pr_road_usa_Thu Oct 31 134627 382 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>9103.493723</td>
+      <td>5.518301</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>73876201</td>
+      <td>159969876</td>
+      <td>2511790834</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:21 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123221 413 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>10394.194082</td>
+      <td>5.923950</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>90551007</td>
+      <td>159969876</td>
+      <td>3078734238</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123143 49 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>9058.819946</td>
+      <td>5.545514</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>73876201</td>
+      <td>159969876</td>
+      <td>2511790834</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:17 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123217 579 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>10407.804834</td>
+      <td>5.916203</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>90551007</td>
+      <td>159969876</td>
+      <td>3078734238</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123138 910 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>9061.683861</td>
+      <td>5.543762</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>73876201</td>
+      <td>159969876</td>
+      <td>2511790834</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:32:24 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123224 980 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-LiveJournal1</td>
+      <td>10378.295848</td>
+      <td>5.933025</td>
+      <td>Gunrock</td>
+      <td>4847572</td>
+      <td>90551007</td>
+      <td>159969876</td>
+      <td>3078734238</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:31:46 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-LiveJournal1/pr_soc-LiveJournal1_Thu Oct 31 123146 983 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>9892.395803</td>
+      <td>4.642546</td>
+      <td>Gunrock</td>
+      <td>2997167</td>
+      <td>109347380</td>
+      <td>59943340</td>
+      <td>2296294980</td>
+      <td>21</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:40:32 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 124032 200 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>750.111690</td>
+      <td>10.249084</td>
+      <td>Gunrock</td>
+      <td>2997166</td>
+      <td>212698418</td>
+      <td>62940486</td>
+      <td>384397900</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:39:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 123941 155 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>9875.154848</td>
+      <td>4.650651</td>
+      <td>Gunrock</td>
+      <td>2997167</td>
+      <td>109347380</td>
+      <td>59943340</td>
+      <td>2296294980</td>
+      <td>21</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:40:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 124029 67 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>749.740860</td>
+      <td>10.254154</td>
+      <td>Gunrock</td>
+      <td>2997166</td>
+      <td>212698418</td>
+      <td>62940486</td>
+      <td>384397900</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:39:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 123934 981 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>9873.149356</td>
+      <td>4.651596</td>
+      <td>Gunrock</td>
+      <td>2997167</td>
+      <td>109347380</td>
+      <td>59943340</td>
+      <td>2296294980</td>
+      <td>21</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:40:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 124035 328 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-orkut</td>
+      <td>750.288824</td>
+      <td>10.246665</td>
+      <td>Gunrock</td>
+      <td>2997166</td>
+      <td>212698418</td>
+      <td>62940486</td>
+      <td>384397900</td>
+      <td>22</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:39:47 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-orkut/pr_soc-orkut_Thu Oct 31 123947 182 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>223.138460</td>
+      <td>52.878474</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:48:09 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124809 102 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>223.303409</td>
+      <td>52.839414</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:43:19 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124319 597 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>222.600062</td>
+      <td>53.006370</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:47:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124734 788 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>223.280767</td>
+      <td>52.844772</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:42:46 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124246 715 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>223.469957</td>
+      <td>52.800033</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:48:44 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124844 660 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-sinaweibo</td>
+      <td>223.454901</td>
+      <td>52.803591</td>
+      <td>Gunrock</td>
+      <td>58655849</td>
+      <td>522642066</td>
+      <td>1935643017</td>
+      <td>589961060</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:43:54 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-sinaweibo/pr_soc-sinaweibo_Thu Oct 31 124354 742 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>496.036449</td>
+      <td>33.943791</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:37:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123704 873 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>496.345091</td>
+      <td>33.922684</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:33:48 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123348 705 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>495.985169</td>
+      <td>33.947300</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:36:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123643 349 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>494.344852</td>
+      <td>34.059943</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:33:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123327 538 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>497.296699</td>
+      <td>33.857770</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:37:27 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123727 352 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>soc-twitter-2010</td>
+      <td>497.057817</td>
+      <td>33.874042</td>
+      <td>Gunrock</td>
+      <td>21297772</td>
+      <td>530051090</td>
+      <td>702826476</td>
+      <td>841867876</td>
+      <td>34</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:34:10 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/soc-twitter-2010/pr_soc-twitter-2010_Thu Oct 31 123410 629 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>3865.401117</td>
+      <td>20.485605</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>313729716</td>
+      <td>722298993</td>
+      <td>3959254048</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:06:02 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130602 317 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>2295.488331</td>
+      <td>25.084214</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>542132302</td>
+      <td>666737532</td>
+      <td>2879025990</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:03:30 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130330 398 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>3862.186580</td>
+      <td>20.502656</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>313729716</td>
+      <td>722298993</td>
+      <td>3959254048</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:05:49 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130549 945 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>2298.097185</td>
+      <td>25.055737</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>542132302</td>
+      <td>666737532</td>
+      <td>2879025990</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:03:14 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130314 474 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>3863.348906</td>
+      <td>20.496487</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>313729716</td>
+      <td>722298993</td>
+      <td>3959254048</td>
+      <td>40</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:06:14 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130614 846 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2002</td>
+      <td>2296.909707</td>
+      <td>25.068691</td>
+      <td>Gunrock</td>
+      <td>18520487</td>
+      <td>542132302</td>
+      <td>666737532</td>
+      <td>2879025990</td>
+      <td>37</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:03:45 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2002/pr_uk-2002_Thu Oct 31 130345 236 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>190.466689</td>
+      <td>97.548709</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>965455967</td>
+      <td>1578397040</td>
+      <td>928988983</td>
+      <td>41</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:17:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131738 773 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>367.952409</td>
+      <td>106.760116</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>1605519637</td>
+      <td>1381097410</td>
+      <td>1964132084</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:12:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131234 354 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>189.956079</td>
+      <td>97.810924</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>965455967</td>
+      <td>1578397040</td>
+      <td>928988983</td>
+      <td>41</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:16:43 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131643 108 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>367.533978</td>
+      <td>106.881660</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>1605519637</td>
+      <td>1381097410</td>
+      <td>1964132084</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:11:34 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131134 803 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>190.219522</td>
+      <td>97.675462</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>965455967</td>
+      <td>1578397040</td>
+      <td>928988983</td>
+      <td>41</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:18:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131835 43 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>uk-2005</td>
+      <td>367.777425</td>
+      <td>106.810911</td>
+      <td>Gunrock</td>
+      <td>39459926</td>
+      <td>1605519637</td>
+      <td>1381097410</td>
+      <td>1964132084</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:13:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/uk-2005/pr_uk-2005_Thu Oct 31 131337 867 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>8707.218302</td>
+      <td>0.307310</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>3111412</td>
+      <td>42000252</td>
+      <td>133790716</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-DGXS-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Jan 30 16:48:01 2020\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/cuda_arch_comparison/PR/webbase-1M/pr_webbase-1M_Thu Jan 30 164801 691 2020.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>10291.473401</td>
+      <td>0.350671</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>5012388</td>
+      <td>35000210</td>
+      <td>180445968</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-DGXS-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Jan 30 16:47:59 2020\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/cuda_arch_comparison/PR/webbase-1M/pr_webbase-1M_Thu Jan 30 164759 395 2020.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>8545.263904</td>
+      <td>0.313134</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>3111412</td>
+      <td>42000252</td>
+      <td>133790716</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:51:41 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-1M/pr_webbase-1M_Thu Oct 31 125141 634 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>9994.171014</td>
+      <td>0.361102</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>5012388</td>
+      <td>35000210</td>
+      <td>180445968</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:51:37 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-1M/pr_webbase-1M_Thu Oct 31 125137 364 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>8598.131075</td>
+      <td>0.311209</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>3111412</td>
+      <td>42000252</td>
+      <td>133790716</td>
+      <td>43</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:51:42 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-1M/pr_webbase-1M_Thu Oct 31 125142 490 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-1M</td>
+      <td>9975.378211</td>
+      <td>0.361783</td>
+      <td>Gunrock</td>
+      <td>1000006</td>
+      <td>5012388</td>
+      <td>35000210</td>
+      <td>180445968</td>
+      <td>36</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 12:51:38 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-1M/pr_webbase-1M_Thu Oct 31 125138 296 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>174.413852</td>
+      <td>135.860287</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1140387413</td>
+      <td>1493998348</td>
+      <td>1184795802</td>
+      <td>50</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:33:04 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 133304 531 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>184.658442</td>
+      <td>90.307284</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1830349391</td>
+      <td>76292476</td>
+      <td>833800122</td>
+      <td>38</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:27:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 132729 991 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>174.278133</td>
+      <td>135.966089</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1140387413</td>
+      <td>1493998348</td>
+      <td>1184795802</td>
+      <td>50</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:31:42 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 133142 22 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>184.615025</td>
+      <td>90.328522</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1830349391</td>
+      <td>76292476</td>
+      <td>833800122</td>
+      <td>38</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>LB_CULL</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:26:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 132629 73 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>174.442166</td>
+      <td>135.838236</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1140387413</td>
+      <td>1493998348</td>
+      <td>1184795802</td>
+      <td>50</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:34:29 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 133429 57 2019.json">JSON output</a></td>
+    </tr>
+    <tr>
+      <td>pr</td>
+      <td>webbase-2001</td>
+      <td>184.204465</td>
+      <td>90.529849</td>
+      <td>Gunrock</td>
+      <td>118142156</td>
+      <td>1830349391</td>
+      <td>76292476</td>
+      <td>833800122</td>
+      <td>38</td>
+      <td>1.1.0</td>
+      <td>Tesla V100</td>
+      <td>Tesla V100-PCIE-32GB</td>
+      <td>TWC</td>
+      <td>True</td>
+      <td>NaN</td>
+      <td>True / nan</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>Thu Oct 31 13:28:35 2019\n</td>
+      <td><a href="https://github.com/gunrock/io/tree/master/gunrock-output/v1-0-0/pr/V100/webbase-2001/pr_webbase-2001_Thu Oct 31 132835 472 2019.json">JSON output</a></td>
+    </tr>
+  </tbody>
+</table>
