@@ -297,8 +297,6 @@ my[("all_V100", "search_depth")] = {
 }
 
 for plot in my.keys():
-    if plot[0] != "pr":
-        continue
     print(f"*** Processing {plot} ***")
 
     primitive = plot[0]
