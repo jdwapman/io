@@ -188,6 +188,8 @@ for plot in my.keys():
         "primitive",
         "dataset",
         generateTooltip("avg_mteps"),
+        generateTooltip("do_a"),
+        generateTooltip("do_b"),
         generateTooltip("avg_process_time"),
         generateTooltip("advance_mode"),
         generateTooltip("gpuinfo_name"),
