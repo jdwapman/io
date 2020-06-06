@@ -131,6 +131,7 @@ for dataset in df["dataset"].unique():
         # otherwise it binds when it's called, that's bad
         "filter": lambda df, dataset=dataset: df[df["dataset"] == dataset],
         "title": f"Throughput (MTEPS) on {dataset}; max MTEPS = {max_mteps['avg_mteps']:.0f} at (do_a, do_b) = ({max_mteps['do_a']:.0e}, {max_mteps['do_b']:.0e})",
+        "max_color": max_mteps["avg_mteps"],
     }
 
 for plot in my.keys():
@@ -312,6 +313,29 @@ for plot in my.keys():
         chart[plot] = chart[plot].properties(title=my[plot]["title"])
 
     chart[plot] = chart[plot].encode(tooltip=list(tooltip))
+
+    # now add in the text
+    chart[plot] = chart[plot] + alt.Chart(dfx).mark_text(baseline="middle").encode(
+        x=alt.X(
+            my[plot]["x"][0],
+            type=datatypes[my[plot]["x"][0]],
+            axis=alt.Axis(title=my[plot]["x"][1], format=".1",),
+            scale=alt.Scale(type=my[plot]["x"][2]),
+        ),
+        y=alt.Y(
+            my[plot]["y"][0],
+            type=datatypes[my[plot]["y"][0]],
+            # aggregate=my[plot].get("y_aggregate", alt.Undefined),
+            axis=alt.Axis(title=my[plot]["y"][1], format=".1",),
+            scale=alt.Scale(type=my[plot]["y"][2]),
+        ),
+        color=alt.value("black"),
+        text=alt.condition(
+            alt.datum[my[plot]["color"][0]] == my[plot]["max_color"],
+            alt.value(chr(9733)),
+            alt.value(""),
+        ),
+    )
 
     plotname = "_".join(filter(lambda x: bool(x), [name, plot[0], plot[1]]))
     save(
