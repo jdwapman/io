@@ -15,20 +15,27 @@ def main(argv):
     visFile = ""
     useTest = False
     debug = False
+    symmetry = None
 
     try:
-        opts, args = getopt.getopt(argv, "dhi:o:tv:")
+        opts, args = getopt.getopt(argv, "dhi:o:s:tv:")
     except getopt.GetoptError:
-        print("{argv[0]} [-i <inputfile>] [-o <outputfile>] [-v <visfile>]")
+        print(
+            "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>]"
+        )
         sys.exit(2)
     for opt, arg in opts:
         if opt == "-h":
-            print(f"{argv[0]} -i <inputfile> -o <outputfile>")
+            print(
+                "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>]"
+            )
             sys.exit()
         elif opt == "-d":
             debug = True
         elif opt == "-t":
             useTest = True
+        elif opt == "-s":
+            symmetry = arg
         elif opt in ("-i", "--ifile"):
             inputFile = arg
         elif opt in ("-o", "--ofile"):
@@ -114,7 +121,7 @@ def main(argv):
     # now save it
 
     if outputFile:
-        mmwrite(outputFile, rcmMatrix)  # , symmetry="general")
+        mmwrite(outputFile, rcmMatrix, symmetry=symmetry)  # , symmetry="general")
     else:
         sys.stdout.write(rcmMatrix)
 
