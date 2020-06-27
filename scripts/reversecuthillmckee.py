@@ -72,6 +72,7 @@ def main(argv):
         #  [0 0 0 0 0 0 0 1 1 0]]
         # I can't promise this is RCM-correct, but it's the same graph.
         # Note it's symmetric, and mmwrite will output only the lower triangle
+        cooMatrix = csrMatrix.tocoo()
     else:
         if not inputFile:
             inputFile = sys.stdin
@@ -80,27 +81,33 @@ def main(argv):
         csrMatrix = cooMatrix.tocsr()
 
     if visFile:
-        array = csrMatrix.toarray()
-        (dim, dimtemp) = array.shape
+        (dim, dimtemp) = csrMatrix.shape
         assert dim == dimtemp
-        array = array.astype(bool).astype(int)  # now 0s and 1s only
+        # array = csrMatrix.toarray()
+        # array = array.astype(bool).astype(int)  # now 0s and 1s only
         # downscale: every downscale x downscale subarray -> one element
         downscale = dim // 1024
-        visx = ceil(float(dim) / float(downscale))
+        if useTest:
+            downscale = 2
+        visdim = ceil(float(dim) / float(downscale))
         # create a new array
-        visarray = np.ndarray(shape=(visx, visx), dtype="int")
-        imarray = np.ndarray(shape=(visx, visx), dtype="uint8")
-        for x in range(visx):
-            for y in range(visx):
-                visarray[x, y] = np.sum(
-                    array[
-                        x * downscale : (x + 1) * downscale,
-                        y * downscale : (y + 1) * downscale,
-                    ]
+        visarray = np.ndarray(shape=(visdim, visdim), dtype="int")  # nnz
+        imarray = np.ndarray(shape=(visdim, visdim), dtype="uint8")  # int [0,255]
+        for x in range(visdim):
+            for y in range(visdim):
+                subarray = (
+                    csrMatrix[
+                        np.array(range(x * downscale, min((x + 1) * downscale, dim))), :
+                    ][:, np.array(range(y * downscale, min((y + 1) * downscale, dim)))]
+                    .toarray()
+                    .astype(bool)  # non-zeroes become 1
+                    .astype(int)  # and then turn that 1 back to an int
                 )
+                visarray[x, y] = np.sum(subarray)
         vismax = float(np.max(visarray))
-        for x in range(visx):
-            for y in range(visx):
+        for x in range(visdim):
+            for y in range(visdim):
+                # max value gets black (0.0), min value gets white (255.0)
                 imarray[x, y] = floor(255.0 * (1.0 - (float(visarray[x, y]) / vismax)))
         im = Image.fromarray(imarray)
         print(im.format, im.size, im.mode)
@@ -122,8 +129,9 @@ def main(argv):
 
     if outputFile:
         mmwrite(outputFile, rcmMatrix, symmetry=symmetry)  # , symmetry="general")
-    else:
-        sys.stdout.write(rcmMatrix)
+    # this else clause doesn't work, ignore it for now
+    # else:
+    #     sys.stdout.write(rcmMatrix)
 
 
 if __name__ == "__main__":
