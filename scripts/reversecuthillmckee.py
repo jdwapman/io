@@ -81,7 +81,7 @@ def main(argv):
         csrMatrix = cooMatrix.tocsr()
 
     if visFile:
-        (dim, dimtemp) = csrMatrix.shape
+        (dim, dimtemp) = cooMatrix.shape
         assert dim == dimtemp
         # array = csrMatrix.toarray()
         # array = array.astype(bool).astype(int)  # now 0s and 1s only
@@ -93,17 +93,8 @@ def main(argv):
         # create a new array
         visarray = np.ndarray(shape=(visdim, visdim), dtype="int")  # nnz
         imarray = np.ndarray(shape=(visdim, visdim), dtype="uint8")  # int [0,255]
-        for x in range(visdim):
-            for y in range(visdim):
-                subarray = (
-                    csrMatrix[
-                        np.array(range(x * downscale, min((x + 1) * downscale, dim))), :
-                    ][:, np.array(range(y * downscale, min((y + 1) * downscale, dim)))]
-                    .toarray()
-                    .astype(bool)  # non-zeroes become 1
-                    .astype(int)  # and then turn that 1 back to an int
-                )
-                visarray[x, y] = np.sum(subarray)
+        for i, j, v in zip(cooMatrix.row, cooMatrix.col, cooMatrix.data):
+            visarray[i // downscale, j // downscale] += 1
         vismax = float(np.max(visarray))
         for x in range(visdim):
             for y in range(visdim):
