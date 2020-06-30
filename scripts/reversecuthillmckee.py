@@ -12,22 +12,23 @@ import sys, getopt
 def main(argv):
     inputFile = ""
     outputFile = ""
+    permFile = ""
     visFile = ""
     useTest = False
     debug = False
     symmetry = None
 
     try:
-        opts, args = getopt.getopt(argv, "dhi:o:s:tv:")
+        opts, args = getopt.getopt(argv, "dhi:o:p:s:tv:")
     except getopt.GetoptError:
         print(
-            "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>]"
+            "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>] [-p <permfile>]"
         )
         sys.exit(2)
     for opt, arg in opts:
         if opt == "-h":
             print(
-                "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>]"
+                "{argv[0]} [-d] [-t] [-i <inputfile>] [-s <symmetry>] [-o <outputfile>] [-v <visfile>] [-p <permfile>]"
             )
             sys.exit()
         elif opt == "-d":
@@ -42,6 +43,8 @@ def main(argv):
             outputFile = arg
         elif opt in ("-v", "--visfile"):
             visFile = arg
+        elif opt in ("-p", "--permfile"):
+            permFile = arg
 
     if useTest:
         # https://www.geeksforgeeks.org/reverse-cuthill-mckee-algorithm/
@@ -108,6 +111,9 @@ def main(argv):
     # https://scicomp.stackexchange.com/questions/24817/applying-the-result-of-cuthill-mckee-in-scipy   couldn't make that work
     # instead used https://github.com/brightway-lca/brightway2-analyzer/blob/master/bw2analyzer/matrix_grapher.py
     perm = reverse_cuthill_mckee(csrMatrix)
+    if permFile:
+        np.savetxt(permFile, perm, fmt="%u")
+
     if debug:
         print(f"Here's my input matrix, called csrMatrix:\n{csrMatrix.toarray()}")
         print(f"Then I call perm = reverse_cuthill_mckee(csrMatrix)\nperm = {perm}")
