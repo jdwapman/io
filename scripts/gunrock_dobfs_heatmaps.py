@@ -121,7 +121,9 @@ my = {}
 # set up all the plots; each entry in "my" becomes a plot
 
 for dataset in df["dataset"].unique():
-    max_mteps = df[df["dataset"] == dataset].loc[df["avg_mteps"].idxmax()]
+    print(dataset)
+    dfx = df[df["dataset"] == dataset]
+    max_mteps = dfx.loc[dfx["avg_mteps"].idxmax()]
     my[(dataset, "do_ab")] = {
         "mark": "rect",
         "x": ("do_a", "do_a", "linear"),
