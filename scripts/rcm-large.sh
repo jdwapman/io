@@ -1,9 +1,9 @@
 #!/bin/bash
 
 INDIR=${2:-"/nfs/mario-2TB/gunrock_dataset/large"}
-OUTDIR=${2:-"/nfs/mario-2TB/gunrock_dataset/large-rcm"}
+OUTDIR=${2:-"/nfs/mario-26TB/jwapman/large-rcm-perm"}
 
-RCM=${2:-"/home/jowens/working/gunrock-io/scripts/reversecuthillmckee.py"}
+RCM=${2:-"/home/jwapman/Research/Gunrock/io/scripts/reversecuthillmckee.py"}
 
 
 NAME[0]="ak2010"
@@ -81,6 +81,6 @@ for i in {0..71}; do
 
     GRAPHDIR=${NAME[$i]}
     mkdir -p $OUTDIR/$GRAPHDIR
-    echo $RCM -i $INDIR/$GRAPHDIR/$GRAPHDIR.mtx -o $OUTDIR/$GRAPHDIR/$GRAPHDIR.mtx
-    $RCM -i $INDIR/$GRAPHDIR/$GRAPHDIR.mtx -o $OUTDIR/$GRAPHDIR/$GRAPHDIR.mtx
+    echo $RCM -i $INDIR/$GRAPHDIR/$GRAPHDIR.mtx -o $OUTDIR/$GRAPHDIR/$GRAPHDIR.mtx -p $OUTDIR/$GRAPHDIR/$GRAPHDIR-perm.txt
+    $RCM -i $INDIR/$GRAPHDIR/$GRAPHDIR.mtx -o $OUTDIR/$GRAPHDIR/$GRAPHDIR.mtx -p $OUTDIR/$GRAPHDIR/$GRAPHDIR-perm.txt
 done
