@@ -110,6 +110,8 @@ def main(argv):
     # Returns the permutation array that orders a sparse CSR or CSC matrix in Reverse-Cuthill McKee ordering.
     # https://scicomp.stackexchange.com/questions/24817/applying-the-result-of-cuthill-mckee-in-scipy   couldn't make that work
     # instead used https://github.com/brightway-lca/brightway2-analyzer/blob/master/bw2analyzer/matrix_grapher.py
+
+    # Perm format: orig_idx = perm[rcm_idx]
     perm = reverse_cuthill_mckee(csrMatrix)
     if permFile:
         np.savetxt(permFile, perm, fmt="%u")
