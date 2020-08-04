@@ -14,8 +14,8 @@ prims = ["sssp"]
 
 # begin user settings for this script
 roots = [
-    "../gunrock-output/rcm-test",
-    "../gunrock-output/rcm-test-not-rcm",
+    "../gunrock-output/RCM_SSSP_8_3_2020",
+    "../gunrock-output/NORCM_SSSP_8_3_2020",
 ]
 fnFilterInputFiles = [
     fileEndsWithJSON,
@@ -27,6 +27,7 @@ fnPreprocessDF = [
     renameColumnsWithMinus,
     selectAnyOfThese("engine", ["Gunrock"]),  # only Gunrock
     selectAnyOfThese("mark_pred", [True, False]),
+    selectAnyOfThese("undirected", [True]),
     mergeAllUpperCasePrimitives,
     selectAnyOfThese("primitive", prims),
     deleteZero("avg_process_time"),
